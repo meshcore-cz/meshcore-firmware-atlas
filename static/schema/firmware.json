@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://meshcore-atlas/schema/firmware.json",
+  "title": "Firmware",
+  "description": "A MeshCore firmware. The id comes from the directory name, not this file.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "type",
+    "maintainer",
+    "description",
+    "status"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "enum": [
+        "official",
+        "fork",
+        "custom"
+      ]
+    },
+    "maintainer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "active",
+        "maintenance",
+        "inactive",
+        "experimental"
+      ]
+    },
+    "repository": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "latest_version": {
+      "type": "string"
+    },
+    "released": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "changelog": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Release source config. Defaults to GitHub releases parsed from `repository`.",
+      "properties": {
+        "source": {
+          "enum": [
+            "github",
+            "manual",
+            "script"
+          ]
+        },
+        "repo": {
+          "type": "string",
+          "description": "owner/name override"
+        },
+        "script": {
+          "type": "string",
+          "description": "filename in the firmware dir, for source: script"
+        }
+      }
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "status": {
+            "enum": [
+              "supported",
+              "partial",
+              "untested",
+              "unsupported"
+            ]
+          },
+          "target": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.-]+$"
+          },
+          "platformio_board": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.-]+$"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

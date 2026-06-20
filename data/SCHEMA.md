@@ -15,8 +15,12 @@ data/vendors/<id>/vendor.yaml   (+ logo.svg)
 Renaming the directory renames the record. Ids must be kebab-case (`[a-z0-9-]`).
 
 The canonical machine-readable contracts live in [`/schema`](../schema):
-`device.schema.json`, `firmware.schema.json`, `vendor.schema.json`
-(JSON Schema 2020-12). `npm test` validates every file against them.
+`device.yaml`, `firmware.yaml`, `vendor.yaml`, and `changelog.yaml`
+(JSON Schema 2020-12 expressed as YAML). `npm test` validates every file
+against them.
+
+The build step also publishes JSON copies at `/schema/device.json`,
+`/schema/firmware.json`, `/schema/vendor.json`, and `/schema/changelog.json`.
 
 ## Adding a firmware
 

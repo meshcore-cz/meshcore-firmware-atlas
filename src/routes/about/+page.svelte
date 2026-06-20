@@ -28,7 +28,7 @@
   <li class="mb-1.5">Add a record, e.g. <code class="rounded bg-elev2 px-1.5 py-0.5 font-mono text-[0.9em]">data/devices/&lt;id&gt;/device.yaml</code>.</li>
   <li class="mb-1.5">Link a device to its maker with <code class="rounded bg-elev2 px-1.5 py-0.5 font-mono text-[0.9em]">vendorId</code>, and reference device
     ids from a firmware's <code class="rounded bg-elev2 px-1.5 py-0.5 font-mono text-[0.9em]">devices:</code> list.</li>
-  <li class="mb-1.5">Run <code class="rounded bg-elev2 px-1.5 py-0.5 font-mono text-[0.9em]">npm test</code> to validate against the JSON Schemas.</li>
+  <li class="mb-1.5">Run <code class="rounded bg-elev2 px-1.5 py-0.5 font-mono text-[0.9em]">npm test</code> to validate against the YAML schema files.</li>
   <li class="mb-1.5">Open a PR.</li>
 </ol>
 <p class="max-w-[70ch]">See <code class="rounded bg-elev2 px-1.5 py-0.5 font-mono text-[0.9em]">data/SCHEMA.md</code> for the full field reference.</p>

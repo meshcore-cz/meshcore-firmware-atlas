@@ -1,5 +1,6 @@
-// Compiles every YAML file under data/ into a single data.json.
-// Two copies are written, with identical content:
+// Compiles every YAML file under data/ into a single data.json, and publishes
+// JSON copies of the YAML schemas.
+// Two data.json copies are written, with identical content:
 //  - src/lib/generated/data.json : imported by the web app (Vite can't import
 //    from the static/ public dir, so the importable copy lives under src/).
 //  - static/data.json            : published verbatim and served at /data.json.
@@ -23,6 +24,24 @@ function readDir(root, kind, file) {
     out.push({ id: d.name, ...(yaml.load(readFileSync(path, 'utf8')) ?? {}) });
   }
   return out;
+}
+
+function buildSchemas(root) {
+  const schemaDir = join(root, 'schema');
+  const outDir = join(root, 'static', 'schema');
+  mkdirSync(outDir, { recursive: true });
+
+  let count = 0;
+  for (const file of readdirSync(schemaDir).filter((f) => f.endsWith('.yaml')).sort()) {
+    const schema = yaml.load(readFileSync(join(schemaDir, file), 'utf8')) ?? {};
+    const publicName = file.replace(/\.yaml$/, '.json');
+    if (typeof schema.$id === 'string') {
+      schema.$id = schema.$id.replace(/\/schema\/[^/]+$/, `/schema/${publicName}`);
+    }
+    writeFileSync(join(outDir, publicName), JSON.stringify(schema, null, 2) + '\n');
+    count += 1;
+  }
+  return count;
 }
 
 /** Compile the YAML sources and write both data.json copies. Returns counts. */
@@ -87,13 +106,13 @@ export async function buildData(root = defaultRoot) {
     writeFileSync(target, json);
   }
 
-  return dataset.counts;
+  return { ...dataset.counts, schemas: buildSchemas(root) };
 }
 
 // Run as a CLI when invoked directly (npm run build:data / pre-hooks).
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
-  const { firmwares, devices, vendors } = await buildData();
+  const { firmwares, devices, vendors, schemas } = await buildData();
   console.log(
-    `✓ Wrote data.json — ${firmwares} firmware(s), ${devices} device(s), ${vendors} vendor(s).`
+    `✓ Wrote data.json — ${firmwares} firmware(s), ${devices} device(s), ${vendors} vendor(s); ${schemas} schema(s).`
   );
 }

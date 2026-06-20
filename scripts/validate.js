@@ -1,4 +1,4 @@
-// Validates every YAML record against its JSON Schema (schema/*.schema.json)
+// Validates every YAML record against its JSON Schema (schema/*.yaml)
 // and checks referential integrity between firmwares, devices and vendors.
 // Run with: npm run validate
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
@@ -14,9 +14,7 @@ const errors = [];
 const err = (where, msg) => errors.push(`${where}: ${msg}`);
 
 function loadSchema(name) {
-  return ajv.compile(
-    JSON.parse(readFileSync(join(root, 'schema', `${name}.schema.json`), 'utf8'))
-  );
+  return ajv.compile(yaml.load(readFileSync(join(root, 'schema', `${name}.yaml`), 'utf8')));
 }
 
 // Read `data/<kind>/<id>/<file>`, returning { id, dir, data } records.
