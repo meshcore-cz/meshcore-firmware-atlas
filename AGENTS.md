@@ -1,4 +1,4 @@
-# Agent guide — MeshCore Firmware Atlas
+# Agent guide — MeshCore Index
 
 Operational notes for AI agents working in this repo.
 

@@ -37,7 +37,7 @@ function resolveSource(fw) {
 async function fetchGithubRaw(repo) {
   const headers = {
     Accept: 'application/vnd.github+json',
-    'User-Agent': 'meshcore-firmware-atlas',
+    'User-Agent': 'meshcore-index',
     'X-GitHub-Api-Version': '2022-11-28'
   };
   if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
