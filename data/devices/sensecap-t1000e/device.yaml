@@ -11,6 +11,8 @@ aliases:
 image: sensecap_t1000e.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: sensecap-card-tracker-t1000-e
 product_url: https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html
 price:
   amount: 40

@@ -11,6 +11,8 @@ aliases:
 image: xiao_esp32c3.svg
 official: true
 product_url: https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
+refs:
+  mesh-sh-device: seeed-xiao-c3-wio-sx1262
 roles:
   - companion
   - repeater
@@ -24,10 +26,15 @@ transports:
 hardware:
   mcu:
     model: esp32-c3
+    # Source: https://mesh-sn.de/en/devices/details/seeed-xiao-c3-wio-sx1262
+    ramKb: 400
   display:
     status: unknown
   gnss:
     status: unknown
+  leds:
+    status: present
+    description: User LED
 interfaces:
   usb:
     connector: unknown

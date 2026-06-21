@@ -8,6 +8,8 @@ aliases:
   - T-Display-P4
 image: lilygo_tdisplay_p4.svg
 official: true
+refs:
+  mesh-sh-device: lilygo-t-display-p4
 product_url: https://github.com/Xinyuan-LilyGO/T-Display-P4
 description: >-
   ESP32-P4 development board with a 4.05″ MIPI TFT touchscreen (540×1168),

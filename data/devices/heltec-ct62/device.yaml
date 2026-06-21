@@ -10,6 +10,8 @@ aliases:
 product_url: https://heltec.org/project/ht-ct62/
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: heltec-ct62-capsule-sensor
 description: >-
   Compact ESP32-C3 + SX1262 LoRa node module with integrated 2.4 GHz Wi-Fi,
   Bluetooth LE, and IPEX antenna sockets. Designed for low-power IoT use cases

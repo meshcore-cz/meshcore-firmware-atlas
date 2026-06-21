@@ -7,6 +7,8 @@ lifecycle: active
 familyId: uniteng-nano-g2-ultra
 image: nano_g2.svg
 official: true
+refs:
+  mesh-sh-device: nano-g2-ultra
 aliases:
   - Nano G2 Ultra
 product_url: https://wiki.bqvoy.com/en/meshtastic/nano-g2-ultra

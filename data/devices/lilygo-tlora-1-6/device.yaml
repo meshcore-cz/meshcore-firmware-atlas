@@ -11,6 +11,8 @@ aliases:
 image: lilygo_tlora_1.6.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: lilygo-lora32-v21-16
 product_url: https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series
 description: >-
   ESP32-PICO-D4 + SX1276 LoRa development board with SSD1306 OLED and micro-SD

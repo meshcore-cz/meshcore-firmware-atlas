@@ -7,6 +7,8 @@ lifecycle: active
 familyId: lilygo-t5-s3
 image: lilygo_t5_pro.svg
 official: true
+refs:
+  mesh-sh-device: lilygo-t5-e-paper-s3-pro
 product_url: https://lilygo.cc/en-us/products/t5-e-paper-s3-pro
 aliases:
   - LilyGo T5 E-Paper S3 Pro

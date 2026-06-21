@@ -6,6 +6,8 @@ kind: product
 lifecycle: active
 familyId: ikoka-handheld-nrf
 official: true
+refs:
+  mesh-sh-device: ikoka-handheld
 aliases:
   - Ikoka Handheld Meshtastic Device
   - Ikoka Handheld

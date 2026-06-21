@@ -12,6 +12,8 @@ aliases:
 image: heltec_meshpocket.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: meshpocket-qi2-magnetic-charging-power-bank
 product_url: https://heltec.org/project/meshpocket/
 price:
   amount: 60

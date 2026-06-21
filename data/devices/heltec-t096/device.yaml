@@ -10,6 +10,8 @@ aliases:
 product_url: https://heltec.org/project/t096/
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: heltec-mesh-node-t096
 description: >-
   Low-power nRF52840 + SX1262 LoRa development board with integrated GNSS,
   Bluetooth LE, USB-C power/serial, and optional solar input. It is built for

@@ -8,6 +8,8 @@ lifecycle: active
 familyId: rak-wismesh-pocket-v2
 official: true
 product_url: https://store.rakwireless.com/products/wismesh-pocket
+refs:
+  mesh-sh-device: rak-wismesh-pocket-v2
 roles:
   - companion
   - repeater
@@ -19,6 +21,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/rak-wismesh-pocket-v2
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -37,13 +41,20 @@ hardware:
     colors: monochrome
   gnss:
     status: present
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
   power:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 3200
+    batteryChemistry: li-ion
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/rak-wismesh-pocket-v2
+    consumptionIdleMa: 10
+    consumptionTxMa: 85
   physical:
     dimensionsMm:
       width: 90

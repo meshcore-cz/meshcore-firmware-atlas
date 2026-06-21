@@ -1,5 +1,7 @@
 # Source: https://lilygo.cc/en-us/products/t-echo-lilygo · https://github.com/Xinyuan-LilyGO/T-Echo
 name: LilyGo T-Echo
+refs:
+  mesh-sh-device: lilygo-t-echo
 vendorId: lilygo
 kind: product
 lifecycle: active
@@ -31,6 +33,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 2
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-echo
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -52,12 +56,18 @@ hardware:
   gnss:
     status: present
     chip: L76K
+  leds:
+    status: none
   power:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 850
+    batteryChemistry: li-ion
     batteryConnector: MX1.25-2
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-echo
+    consumptionIdleMa: 8
+    consumptionTxMa: 90
   enclosure:
     builtIn: true
   physical:

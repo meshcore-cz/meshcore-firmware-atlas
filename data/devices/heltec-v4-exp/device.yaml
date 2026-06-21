@@ -18,6 +18,8 @@ price:
   amount: 50
   currency: USD
   asOf: 2026-06
+refs:
+  mesh-sh-device: heltec-wifi-lora-32-v4-expansion-housing
 description: >-
   Heltec V4 kit with aluminum/PC enclosure and 320×240 touch front panel for
   Meshtastic/MeshCore handheld use. V4 board, expansion carrier, and LoRa

@@ -4,6 +4,8 @@ vendorId: elecrow
 kind: product
 lifecycle: active
 familyId: elecrow-elecrow-thinknode-m1
+refs:
+  mesh-sh-device: elecrow-thinknode-m1
 aliases:
   - ThinkNode M1
 image: thinknode_m1.svg

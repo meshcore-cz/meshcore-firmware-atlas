@@ -6,6 +6,8 @@ kind: product
 lifecycle: active
 familyId: m5stack-m5stack-unit-c6l
 official: true
+refs:
+  mesh-sh-device: m5stack-unit-c6l
 product_url: https://docs.m5stack.com/en/unit/Unit_C6L
 datasheet: datasheet.pdf
 description: >-

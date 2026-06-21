@@ -11,6 +11,8 @@ aliases:
   - RAK3401 + RAK13302
 image: rak_13302.svg
 official: true
+refs:
+  mesh-sh-device: rak3401-wisblock-1w-booster
 product_url: https://docs.rakwireless.com/product-categories/wisblock/rak13302/overview/
 description: >-
   WisBlock 1 W LoRa booster kit pairing the RAK3401 carrier with the RAK13302

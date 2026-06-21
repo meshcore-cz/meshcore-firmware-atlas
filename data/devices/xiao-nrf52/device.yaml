@@ -12,6 +12,8 @@ aliases:
 image: xiao_nrf52.svg
 official: true
 product_url: https://wiki.seeedstudio.com/XIAO_BLE/
+refs:
+  mesh-sh-device: seeed-xiao-nrf52840-wio-sx1262-kit
 roles:
   - companion
   - repeater
@@ -27,6 +29,9 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://wiki.seeedstudio.com/XIAO_BLE/
+    # Source: https://wiki.seeedstudio.com/xiao_nrf52840%26_wio_SX1262_kit_for_meshtastic/
+    ramKb: 256
   display:
     status: none
   gnss:
@@ -40,6 +45,9 @@ hardware:
     dimensionsMm:
       width: 21
       height: 17.8
+  leds:
+    status: present
+    description: User/status LED
 interfaces:
   usb:
     connector: USB-C

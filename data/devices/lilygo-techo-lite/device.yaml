@@ -9,6 +9,8 @@ aliases:
   - T-Echo Lite
 image: lilygo_techo_lite.svg
 official: true
+refs:
+  mesh-sh-device: lilygo-t-echo-lite
 product_url: https://lilygo.cc/en-us/products/t-echo-lite
 price:
   amount: 27

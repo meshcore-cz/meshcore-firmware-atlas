@@ -9,6 +9,8 @@ variantOf: gatiot-gat562
 aliases:
   - GAT562 Mesh Tracker Pro
 official: true
+refs:
+  mesh-sh-device: gat562-mesh-tracker-pro
 roles:
   - companion
   - repeater
@@ -21,6 +23,8 @@ hardware:
   mcu:
     model: nrf52
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/gat562-mesh-tracker-pro
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -34,14 +38,21 @@ hardware:
     technology: display
   gnss:
     status: present
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
   power:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 2500
+    batteryChemistry: li-ion
     charging: true
     solarInput: false
+    # Source: https://mesh-sn.de/en/devices/details/gat562-mesh-tracker-pro
+    consumptionIdleMa: 8
+    consumptionTxMa: 85
   enclosure:
     builtIn: true
   physical:

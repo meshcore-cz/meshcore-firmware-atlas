@@ -5,6 +5,8 @@ kind: product
 lifecycle: active
 familyId: muziworks-muzi-works-r1-neo
 official: true
+refs:
+  mesh-sh-device: muzi-works-r1-neo
 hardware:
   mcu:
     model: nrf52

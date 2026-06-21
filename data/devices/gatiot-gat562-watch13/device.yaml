@@ -10,6 +10,8 @@ aliases:
   - GAT562 Watch13
   - GAT562 Mesh Watch
 official: true
+refs:
+  mesh-sh-device: gat562-mesh-watch
 datasheet: datasheet.pdf
 roles:
   - companion

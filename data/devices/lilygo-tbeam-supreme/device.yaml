@@ -11,6 +11,8 @@ aliases:
 image: lilygo_tbeam_supreme.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: lilygo-t-beam-supreme-sx1262
 product_url: https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series
 description: >-
   ESP32-S3 + SX1262 LoRa tracker with L76K GNSS, SH1106 OLED, and a rich sensor

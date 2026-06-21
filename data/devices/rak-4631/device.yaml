@@ -12,6 +12,8 @@ aliases:
 image: rak_4631.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: rak4631-wisblock-core
 product_url: https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631/Overview/
 description: >-
   WisBlock Core module pairing an nRF52840 MCU with an SX1262 LoRa

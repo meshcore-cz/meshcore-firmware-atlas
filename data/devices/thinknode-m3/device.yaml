@@ -11,6 +11,8 @@ image: thinknode_m3.svg
 datasheet: datasheet.pdf
 official: true
 product_url: https://www.elecrow.com/thinknode-m3-meshtastic-tracker-with-gps-wifi-ble-function-for-positioning.html
+refs:
+  mesh-sh-device: elecrow-thinknode-m3
 price:
   amount: 40
   currency: USD

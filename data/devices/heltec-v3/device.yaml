@@ -17,6 +17,8 @@ price:
   amount: 18
   currency: USD
   asOf: 2026-06
+refs:
+  mesh-sh-device: heltec-wifi-lora-32-v3
 description: >-
   Classic ESP32-S3 + SX1262 LoRa development board with integrated 0.96-inch
   OLED, Wi-Fi, and BLE. USB-C power and CP2102 serial, SH1.25 battery connector

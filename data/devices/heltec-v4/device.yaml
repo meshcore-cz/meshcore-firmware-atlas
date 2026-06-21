@@ -19,6 +19,8 @@ price:
   amount: 18
   currency: USD
   asOf: 2026-06
+refs:
+  mesh-sh-device: heltec-wifi-lora-32-v4
 description: >-
   ESP32-S3R2 + SX1262 successor to Heltec V3 with 16 MB flash, 2 MB PSRAM, and
   up to 28 dBm LoRa TX power. Same 0.96-inch OLED and largely V3-compatible

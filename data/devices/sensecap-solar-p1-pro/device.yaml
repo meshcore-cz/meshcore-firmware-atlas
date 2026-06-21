@@ -12,6 +12,8 @@ aliases:
 image: sensecap_solar.svg
 official: true
 product_url: https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html
+refs:
+  mesh-sh-device: sensecap-solar-node-p1-pro
 price:
   amount: 96
   currency: USD
@@ -32,6 +34,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/sensecap-solar-node-p1-pro
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -45,15 +49,22 @@ hardware:
   gnss:
     status: present
     chip: L76K
+  leds:
+    status: present
+    description: Status LEDs
   power:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 13400
+    batteryChemistry: li-ion
     charging: true
     solarInput: true
     solarPanelBuiltIn: true
     solarPanelWatts: 5
     pmic: CN3165
+    # Source: https://mesh-sn.de/en/devices/details/sensecap-solar-node-p1-pro
+    consumptionIdleMa: 8
+    consumptionTxMa: 85
   expansion:
     - type: grove
       count: 1

@@ -10,6 +10,8 @@ aliases:
   - RAK10701
 image: rak_wismesh_tag.svg
 official: true
+refs:
+  mesh-sh-device: rak-wismesh-tag
 product_url: https://docs.rakwireless.com/Product-Categories/Meshtastic/WisMesh-Tap/Quickstart/
 description: >-
   All-in-one Meshtastic node based on the RAK10701 Field Tester, with a

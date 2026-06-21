@@ -11,6 +11,8 @@ aliases:
 image: lilygo_t3s3.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: lilygo-t3-s3-sx1262
 product_url: https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series
 description: >-
   Compact ESP32-S3 + SX1262 LoRa development board with SSD1306 OLED, micro-SD

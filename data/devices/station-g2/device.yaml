@@ -7,6 +7,8 @@ lifecycle: active
 familyId: uniteng-station-g2
 image: station_g2.svg
 official: true
+refs:
+  mesh-sh-device: station-g2
 product_url: https://wiki.uniteng.com/en/meshtastic/station-g2
 aliases:
   - Station G2

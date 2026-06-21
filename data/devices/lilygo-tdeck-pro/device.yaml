@@ -11,6 +11,8 @@ aliases:
 image: lilygo_tdeck_pro.svg
 product_url: https://lilygo.cc/en-us/products/t-deck-pro
 official: true
+refs:
+  mesh-sh-device: lilygo-t-deck-pro
 roles:
   - standalone-ui
 transports:

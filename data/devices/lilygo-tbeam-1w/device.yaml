@@ -9,6 +9,8 @@ aliases:
   - T-Beam 1W
 product_url: http://www.lilygo.cn/
 official: true
+refs:
+  mesh-sh-device: lilygo-t-beam-1w
 transports:
   - ble
   - usb

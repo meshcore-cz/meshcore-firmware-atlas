@@ -13,6 +13,8 @@ image: thinknode_m2.svg
 datasheet: datasheet.pdf
 official: true
 product_url: https://www.elecrow.com/thinknode-m2-meshtastic-lora-signal-transceiver-powered-by-esp32-s3-with-1-3-oled-display.html
+refs:
+  mesh-sh-device: elecrow-thinknode-m2
 price:
   amount: 41
   currency: USD

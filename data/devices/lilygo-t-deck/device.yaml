@@ -8,6 +8,8 @@ aliases:
   - T-Deck
 image: lilygo_tdeck.svg
 official: true
+refs:
+  mesh-sh-device: lilygo-t-deck
 product_url: https://lilygo.cc/en-us/products/t-deck
 price:
   amount: 43

@@ -12,6 +12,8 @@ aliases:
 image: lilygo_tbeam.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: lilygo-t-beam-v12-sx1276
 product_url: https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series
 description: >-
   ESP32 + SX1276 LoRa tracker with built-in u-blox GNSS, SSD1306 OLED, and

@@ -9,6 +9,8 @@ aliases:
   - Ebyte EoRa-S3-900TB
 product_url: https://www.cdebyte.com/products/EoRa-S3-900TB
 official: true
+refs:
+  mesh-sh-device: ebyte-eora-s3-900tb
 roles:
   - companion
   - repeater

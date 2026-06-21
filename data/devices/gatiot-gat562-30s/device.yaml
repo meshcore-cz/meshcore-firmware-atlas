@@ -23,10 +23,14 @@ transports:
   - usb
   - wifi
 product_url: https://www.gat-iot.com/products/gat562-30s-mesh-kit/
+refs:
+  mesh-sh-device: gat562-30s-mesh-kit-1w
 hardware:
   mcu:
     model: nrf52
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/gat562-30s-mesh-kit-1w
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -46,6 +50,9 @@ hardware:
   gnss:
     status: present
     chip: ATGM336H
+  leds:
+    status: present
+    description: RGB LEDs
   input:
     - type: joystick
       description: 4-way
@@ -58,6 +65,9 @@ hardware:
     batteryBuiltIn: false
     charging: true
     solarInput: true
+    # Source: https://mesh-sn.de/en/devices/details/gat562-30s-mesh-kit-1w
+    consumptionIdleMa: 15
+    consumptionTxMa: 350
   physical:
     dimensionsMm:
       width: 100

@@ -10,6 +10,8 @@ aliases:
 image: lilygo_twatch_plus.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: lilygo-t-watch-s3-plus
 product_url: https://lilygo.cc/products/t-watch-s3-plus
 description: >-
   ESP32-S3 smartwatch with SX1262 LoRa, 1.3-inch IPS touchscreen, and built-in

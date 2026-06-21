@@ -10,6 +10,8 @@ official: true
 aliases:
   - Seeed Wio Tracker L1 Pro
 product_url: https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html
+refs:
+  mesh-sh-device: seeed-wio-tracker-l1-pro
 price:
   amount: 43
   currency: USD
@@ -30,6 +32,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/seeed-wio-tracker-l1-pro
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -47,6 +51,9 @@ hardware:
   gnss:
     status: present
     chip: L76K
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: joystick
       description: 4-way
@@ -54,8 +61,12 @@ hardware:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 2000
+    batteryChemistry: li-ion
     charging: true
     solarInput: true
+    # Source: https://mesh-sn.de/en/devices/details/seeed-wio-tracker-l1-pro
+    consumptionIdleMa: 5
+    consumptionTxMa: 85
   enclosure:
     builtIn: true
 interfaces:

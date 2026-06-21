@@ -9,6 +9,8 @@ aliases:
 image: heltec_paper.svg
 datasheet: datasheet.pdf
 official: true
+refs:
+  mesh-sh-device: heltec-wireless-paper
 product_url: https://heltec.org/project/wireless-paper/
 price:
   amount: 16
