@@ -12,6 +12,11 @@ refs:
 aliases:
   - Nano G2 Ultra
 product_url: https://wiki.bqvoy.com/en/meshtastic/nano-g2-ultra
+price:
+  # Source: https://shop.uniteng.com/product-category/lora/meshtastic/
+  amount: 86
+  currency: USD
+  asOf: 2026-06
 description: >-
   Pocket nRF52840 tracker with SX1262 LoRa, 1.3-inch OLED, GPS, buzzer, and a
   built-in 1200 mAh battery. Intended for MeshCore companion/repeater use with

@@ -7,6 +7,11 @@ lifecycle: active
 familyId: seeed-sensecap-indicator-esp-now
 official: true
 product_url: https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/
+price:
+  # Source: https://forum.seeedstudio.com/t/i-cant-even-get-started-is-there-phone-support/285080
+  amount: 61
+  currency: USD
+  asOf: 2026-06
 roles:
   - standalone-ui
 description: >-

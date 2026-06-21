@@ -17,6 +17,11 @@ official: true
 product_url: https://heltec.org/project/wireless-tracker-v2/
 refs:
   mesh-sh-device: heltec-wireless-tracker-v2
+price:
+  # Source: https://heltec.org/project/wireless-tracker-v2/
+  amount: 31
+  currency: USD
+  asOf: 2026-06
 description: >-
   ESP32-S3 based tracker with SX1262 LoRa, UC6580 GNSS, Wi-Fi, BLE, and a
   0.96-inch 160×80 TFT display. Built for object tracking and mesh networking,

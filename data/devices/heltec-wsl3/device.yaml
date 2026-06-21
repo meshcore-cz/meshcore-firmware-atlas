@@ -15,6 +15,11 @@ description: >-
   stamp-hole package for embedding into custom products. The V3 revision uses a
   USB-C interface and a smaller low-power form factor than the classic WiFi LoRa
   32 boards.
+price:
+  # Source: https://heltec.org/project/wireless-shell-v3/
+  amount: 12
+  currency: USD
+  asOf: 2026-06
 roles:
   - companion
   - repeater

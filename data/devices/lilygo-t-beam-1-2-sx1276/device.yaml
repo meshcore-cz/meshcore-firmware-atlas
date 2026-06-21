@@ -15,6 +15,11 @@ official: true
 refs:
   mesh-sh-device: lilygo-t-beam-v12-sx1276
 product_url: https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series
+price:
+  # Source: https://lilygo.cc/en-us/products/t-beam-softrf
+  amount: 41
+  currency: USD
+  asOf: 2026-06
 description: >-
   ESP32 + SX1276 LoRa tracker with built-in u-blox GNSS, SSD1306 OLED, and
   AXP2101 power management. USB-C with CH9102 bridge; external IPEX LoRa and

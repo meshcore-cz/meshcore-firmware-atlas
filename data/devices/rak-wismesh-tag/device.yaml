@@ -12,6 +12,11 @@ image: rak_wismesh_tag.svg
 official: true
 refs:
   mesh-sh-device: rak-wismesh-tag
+price:
+  # Source: https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66
+  amount: 39
+  currency: USD
+  asOf: 2026-06
 product_url: https://docs.rakwireless.com/Product-Categories/Meshtastic/WisMesh-Tap/Quickstart/
 description: >-
   All-in-one Meshtastic node based on the RAK10701 Field Tester, with a

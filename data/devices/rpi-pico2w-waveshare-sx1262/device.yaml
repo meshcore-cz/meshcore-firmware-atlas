@@ -8,6 +8,11 @@ familyId: raspberry-pi-pico2-w-waveshare-sx1262
 official: true
 refs:
   mesh-sh-device: raspberry-pi-pico2-w-waveshare-sx1262
+price:
+  # Source: https://www.raspberrypi.com/news/raspberry-pi-pico-2-w-on-sale-now/
+  amount: 20
+  currency: USD
+  asOf: 2026-06
 description: >-
   Raspberry Pi Pico2 W paired with a Waveshare SX1262 LoRa HAT for compact
   MeshCore/Meshtastic builds. RP2350 + Wi-Fi/BLE on the Pico2 W, external

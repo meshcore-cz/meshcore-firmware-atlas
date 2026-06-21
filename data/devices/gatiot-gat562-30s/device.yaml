@@ -25,6 +25,11 @@ transports:
 product_url: https://www.gat-iot.com/products/gat562-30s-mesh-kit/
 refs:
   mesh-sh-device: gat562-30s-mesh-kit-1w
+price:
+  # Source: https://www.keepteen.com/all-products.html
+  amount: 76
+  currency: USD
+  asOf: 2026-06
 hardware:
   mcu:
     model: nrf52

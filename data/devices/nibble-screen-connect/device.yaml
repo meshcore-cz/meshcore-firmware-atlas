@@ -7,6 +7,11 @@ lifecycle: active
 familyId: nibble-nibble-screen-connect
 official: true
 product_url: https://retia.io/products/nibble-screen-connect
+price:
+  # Source: https://retia.io/collections/all
+  amount: 50
+  currency: USD
+  asOf: 2026-06
 description: >-
   Breadboard-friendly Nibble node with a built-in screen, buttons, and a
   through-hole expansion layout aimed at MeshCore and Meshtastic hacking. The

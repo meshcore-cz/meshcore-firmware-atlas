@@ -10,6 +10,11 @@ aliases:
 image: lilygo_tdeck.svg
 official: true
 product_url: https://lilygo.cc/en-us/products/t-deck
+price:
+  # Source: https://lilygo.cc/en-us/products/t-deck-meshtastic
+  amount: 43
+  currency: USD
+  asOf: 2026-06
 description: >-
   Community firmware build of the LilyGo T-Deck handheld, inheriting the same
   ESP32-S3, SX1262, 2.8-inch IPS display, and keyboard/trackball layout as the

@@ -13,6 +13,11 @@ official: true
 product_url: https://heltec.org/project/meshsolar/
 refs:
   mesh-sh-device: heltec-mesh-solar
+price:
+  # Source: https://heltec.org/project/meshsolar/
+  amount: 39
+  currency: USD
+  asOf: 2026-06
 description: >-
   Outdoor solar-ready power and communication platform combining a BMS board
   with an BLE + LoRa control board. Built for long-lived mesh deployments with

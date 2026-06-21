@@ -8,6 +8,11 @@ aliases:
   - T-ETH Elite
 official: true
 product_url: https://lilygo.cc/en-us/products/t-eth-elite-1
+price:
+  # Source: https://lilygo.cc/en-us/products/t-eth-elite-1
+  amount: 23
+  currency: USD
+  asOf: 2026-06
 description: >-
   ESP32-S3R8 board with Wi-Fi, BLE, and built-in Ethernet via W5500, designed
   for always-on wired IoT gateways and automation projects. USB-C power, PoE

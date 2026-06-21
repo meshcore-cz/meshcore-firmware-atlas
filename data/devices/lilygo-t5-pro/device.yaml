@@ -10,6 +10,11 @@ official: true
 refs:
   mesh-sh-device: lilygo-t5-e-paper-s3-pro
 product_url: https://lilygo.cc/en-us/products/t5-e-paper-s3-pro
+price:
+  # Source: https://lilygo.cc/en-us/products/t5-e-paper-s3-pro
+  amount: 84
+  currency: USD
+  asOf: 2026-06
 aliases:
   - LilyGo T5 E-Paper S3 Pro
   - T5 E-Paper S3 Pro

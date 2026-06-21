@@ -9,6 +9,11 @@ image: station_g2.svg
 official: true
 refs:
   mesh-sh-device: station-g2
+price:
+  # Source: https://shop.uniteng.com/product/meshtastic-mesh-device-station-edition/
+  amount: 109
+  currency: USD
+  asOf: 2026-06
 product_url: https://wiki.uniteng.com/en/meshtastic/station-g2
 aliases:
   - Station G2

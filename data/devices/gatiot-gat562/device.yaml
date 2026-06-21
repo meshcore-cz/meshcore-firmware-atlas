@@ -15,6 +15,11 @@ roles:
 transports:
   - ble
   - usb
+price:
+  # Source: https://www.keepteen.com/GAT562-Pocket-Lora-Node-Radio-for-Meshtastic-Meshcore-Mesh-Tracker-with-SX1262-NRF53840-L76K-GPS-p6556031.html
+  amount: 49
+  currency: USD
+  asOf: 2026-06
 hardware:
   mcu:
     model: nrf52

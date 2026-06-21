@@ -7,6 +7,11 @@ familyId: muziworks-muzi-works-r1-neo
 official: true
 refs:
   mesh-sh-device: muzi-works-r1-neo
+price:
+  # Source: https://platfrastructure.life/post/meshtastic-hardware-thoughts/
+  amount: 40
+  currency: USD
+  asOf: 2026-06
 hardware:
   mcu:
     model: nrf52

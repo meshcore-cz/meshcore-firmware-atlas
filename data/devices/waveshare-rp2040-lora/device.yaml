@@ -5,6 +5,11 @@ kind: product
 lifecycle: active
 familyId: waveshare-waveshare-lora
 official: true
+price:
+  # Source: https://www.waveshare.com/rp2040-lora.htm
+  amount: 13
+  currency: USD
+  asOf: 2026-06
 hardware:
   mcu:
     model: rp2040

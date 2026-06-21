@@ -18,6 +18,11 @@ description: >-
   ESP32-S3 + SX1262 LoRa tracker with L76K GNSS, SH1106 OLED, and a rich sensor
   suite (QMI8658 IMU, QMC6310 magnetometer, BME280, PCF8563 RTC). AXP2101 power
   management, M.2 socket, and micro-SD expansion. USB-C with CH9102 bridge.
+price:
+  # Source: https://lilygo.cc/en-us/products/t-beam-supreme-meshtastic
+  amount: 40
+  currency: USD
+  asOf: 2026-06
 roles:
   - companion
   - repeater

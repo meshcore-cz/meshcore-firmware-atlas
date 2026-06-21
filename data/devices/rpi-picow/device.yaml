@@ -14,6 +14,11 @@ description: >-
   lightweight MeshCore and Meshtastic experimentation. The kit emphasizes USB
   flashing and a small RP2040 footprint over integrated display or GNSS
   hardware.
+price:
+  # Source: https://www.raspberrypi.com/products/raspberry-pi-pico/
+  amount: 6
+  currency: USD
+  asOf: 2026-06
 roles:
   - companion
   - repeater

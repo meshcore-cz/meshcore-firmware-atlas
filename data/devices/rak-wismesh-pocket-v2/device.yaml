@@ -10,6 +10,11 @@ official: true
 product_url: https://store.rakwireless.com/products/wismesh-pocket
 refs:
   mesh-sh-device: rak-wismesh-pocket-v2
+price:
+  # Source: https://store.rakwireless.com/products/wismesh-pocket
+  amount: 90
+  currency: USD
+  asOf: 2026-06
 roles:
   - companion
   - repeater

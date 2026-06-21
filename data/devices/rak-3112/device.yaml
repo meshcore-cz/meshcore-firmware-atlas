@@ -14,6 +14,11 @@ description: >-
   ESP32-S3 WisDuo module combining BLE, Wi-Fi, and SX1262 LoRa for compact
   MeshCore and Meshtastic builds. The datasheet covers regional LoRa bands,
   pinout, and certification details for the module.
+price:
+  # Source: https://store.rakwireless.com/products/rak3112-breakout-board-esp32-s3-sx1262
+  amount: 16
+  currency: USD
+  asOf: 2026-06
 roles:
   - companion
   - repeater

@@ -17,6 +17,11 @@ description: >-
   Auxiliary ESP32-C6-MINI-1U provides WiFi 6 and BLE 5.0. Ships in AMOLED and
   TFT display variants; optional keyboard expansion adds a physical QWERTY
   keyboard with CC1101/NRF24L01/NFC radios.
+price:
+  # Source: https://lilygo.cc/en-us/products/t-display-p4
+  amount: 124
+  currency: USD
+  asOf: 2026-06
 roles:
   - standalone-ui
 transports:

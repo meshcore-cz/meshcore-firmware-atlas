@@ -9,6 +9,11 @@ familyId: lilygo-t-lora-c6
 aliases:
   - LilyGo T-Lora C6
 product_url: https://lilygo.cc/en-us/products/t-lora-c6
+price:
+  # Source: https://lilygo.cc/en-us/products/t-lora-c6
+  amount: 17
+  currency: USD
+  asOf: 2026-06
 official: true
 refs:
   mesh-sh-device: lilygo-t-lora-c6

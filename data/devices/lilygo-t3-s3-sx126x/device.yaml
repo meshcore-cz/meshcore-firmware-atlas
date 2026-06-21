@@ -18,6 +18,11 @@ description: >-
   Compact ESP32-S3 + SX1262 LoRa development board with SSD1306 OLED, micro-SD
   slot, and Qwiic expansion connector. USB-C with PH2.0 battery connector and
   optional solar input (V1.3). No on-board BMS — use a protected Li-ion cell.
+price:
+  # Source: https://lilygo.cc/en-us/products/t3s3-v1-0
+  amount: 24
+  currency: USD
+  asOf: 2026-06
 roles:
   - companion
   - repeater

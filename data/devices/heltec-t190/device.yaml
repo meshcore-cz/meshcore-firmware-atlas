@@ -15,6 +15,11 @@ description: >-
   (170×320, ST7789) for Meshtastic/MeshCore. USB-C, SH1.25 battery connector
   with charge management, SH1.0 QuickLink sensor port, and IPEX Wi-Fi/LoRa
   antennas. Two user buttons; no built-in GPS.
+price:
+  # Source: https://heltec.org/project/vision-master-t190/
+  amount: 18
+  currency: USD
+  asOf: 2026-06
 roles:
   - companion
   - repeater
