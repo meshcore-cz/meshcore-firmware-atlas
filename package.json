@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build:data": "node scripts/build-data.js",
+    "brand": "bash scripts/generate-brand-assets.sh",
     "changelogs": "node scripts/update-changelogs.js",
     "predev": "node scripts/build-data.js",
     "dev": "vite dev",

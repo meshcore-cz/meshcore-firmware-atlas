@@ -62,8 +62,8 @@
   <header
     class="sticky top-0 z-10 flex flex-wrap items-center justify-between gap-4 border-b border-edge bg-elev px-[clamp(1rem,4vw,2rem)] py-[0.9rem]"
   >
-    <a class="flex items-center gap-2 text-[1.05rem] font-bold" href="{base}/">
-      <span class="text-[1.3rem] text-accent">◇</span>
+    <a class="flex items-center gap-2.5 text-[1.05rem] font-bold" href="{base}/">
+      <img src="{base}/logo.png" alt="" class="h-8 w-8 shrink-0 rounded-md" width="32" height="32" />
       <span>{SITE_NAME}</span>
     </a>
     <nav class="flex items-center gap-1">
