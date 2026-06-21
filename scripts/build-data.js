@@ -146,6 +146,8 @@ export async function buildData(root = defaultRoot) {
   }
 
   const typeRank = { official: 0, fork: 1, custom: 2 };
+  // Active firmwares first, then everything else; ties broken by type, then name.
+  const statusRank = (s) => (s === 'active' ? 0 : 1);
   const rawFirmwares = readDir(root, 'firmwares', 'firmware.yaml');
   const compatibility = readCompatibility(root);
   const globals = readGlobals(root);
@@ -169,6 +171,9 @@ export async function buildData(root = defaultRoot) {
       return { ...fw, releases: [] };
     })
     .sort((a, b) => {
+      const sa = statusRank(a.status);
+      const sb = statusRank(b.status);
+      if (sa !== sb) return sa - sb;
       const ra = typeRank[a.type] ?? 9;
       const rb = typeRank[b.type] ?? 9;
       return ra !== rb ? ra - rb : a.name.localeCompare(b.name);

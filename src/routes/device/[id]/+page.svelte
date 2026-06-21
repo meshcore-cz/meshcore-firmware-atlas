@@ -388,7 +388,7 @@
     </div>
     {#if d.vendor}
       <a class="mt-2 inline-flex items-center gap-1.5 text-[0.9rem] text-dim hover:text-accent" href="{base}/vendor/{d.vendor.id}/">
-        {#if d.vendor.logoUrl}<img src={d.vendor.logoUrl} alt="" class="h-[22px] w-[22px] rounded object-contain" />{/if}
+        {#if d.vendor.logoUrl}<img src={d.vendor.logoUrl} alt="" class="h-7 w-7 rounded bg-white p-0.5 object-contain" />{/if}
         {d.vendor.name}
       </a>
     {:else if d.vendorName}

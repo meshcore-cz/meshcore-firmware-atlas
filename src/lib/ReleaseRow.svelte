@@ -6,7 +6,7 @@
 </script>
 
 <a
-  href="{base}/firmware/{release.firmware.id}/"
+  href="{base}/firmware/{release.firmware.id}/releases/#release-{release.version}"
   class="flex flex-wrap items-center gap-x-3 gap-y-1 border-b border-edge px-1 py-2.5 hover:bg-elev/60"
 >
   <span class="text-[0.9rem] font-medium text-accent2">{release.firmware.name}</span>

@@ -122,9 +122,9 @@
   <footer
     class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 border-t border-edge px-[clamp(1rem,4vw,2rem)] py-5 text-center text-sm text-dim"
   >
-    <span>Built from human-readable YAML — edit the <code class="rounded bg-elev2 px-1.5 py-0.5 font-mono">data/</code> folder to contribute.</span>
+    <a class="text-accent2 hover:underline" href="/about/">How to contribute</a>
     <span class="text-edge">·</span>
-    <a class="text-accent2 hover:underline" href={REPO_URL} target="_blank" rel="noreferrer">GitHub</a>
+    <span>Open source on <a class="text-accent2 hover:underline" href={REPO_URL} target="_blank" rel="noreferrer">GitHub</a></span>
     {#if updatedLabel}
       <span class="text-edge">·</span>
       <span>Data updated {updatedLabel}</span>

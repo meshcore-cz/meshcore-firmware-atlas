@@ -8,9 +8,9 @@ export const SITE_ORIGIN = (
 
 export const SITE_NAME = 'MeshCore Index';
 
-export const REPO_URL = 'https://github.com/meshcore-cz/meshcore-firmware-atlas';
+export const REPO_URL = 'https://github.com/meshcore-cz/meshcore-index';
 
-// Origin + deploy base path (e.g. "" or "/meshcore-firmware-atlas"). The base
+// Origin + deploy base path (e.g. "" or "/meshcore-index"). The base
 // is injected by vite.config.js from BASE_PATH; SvelteKit's $app/paths `base`
 // is *relative* in this static build, so it can't build absolute URLs.
 const BASE = (import.meta.env?.VITE_BASE_PATH ?? '').replace(/\/+$/, '');

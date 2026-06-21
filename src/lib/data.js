@@ -53,7 +53,7 @@ export const devices = dataset.devices.map((d) => ({
 
 const deviceById = new Map(devices.map((d) => [d.id, d]));
 
-/** All firmwares, ordered by build-data.js (official first, then by name). */
+/** All firmwares, ordered by build-data.js (active first, then by type, then by name). */
 export const firmwares = dataset.firmwares;
 
 export function getFirmware(id) {
