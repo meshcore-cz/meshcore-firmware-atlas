@@ -4,6 +4,7 @@
   import { SITE_NAME, absUrl } from '$lib/seo.js';
   import Seo from '$lib/Seo.svelte';
   import ReleaseRow from '$lib/ReleaseRow.svelte';
+  import { fwCompareIds, toggleFwCompare, clearFwCompare } from '$lib/fwCompare.js';
   import { browser } from '$app/environment';
   import { page } from '$app/stores';
   import { get } from 'svelte/store';
@@ -102,10 +103,29 @@
       class="group flex flex-col gap-2.5 rounded-xl border border-edge bg-elev p-[1.1rem] transition hover:-translate-y-0.5 hover:border-accent"
       href="{base}/firmware/{fw.id}/"
     >
-      <div class="flex items-center justify-between">
-        <span class="rounded-md px-2 py-0.5 text-[0.72rem] font-bold tracking-wide uppercase {TYPE_META[fw.type]?.tw}">
-          {TYPE_META[fw.type]?.label ?? fw.type}
-        </span>
+      <div class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <span class="rounded-md px-2 py-0.5 text-[0.72rem] font-bold tracking-wide uppercase {TYPE_META[fw.type]?.tw}">
+            {TYPE_META[fw.type]?.label ?? fw.type}
+          </span>
+          <button
+            type="button"
+            aria-label="Compare {fw.name}"
+            aria-pressed={$fwCompareIds.includes(fw.id)}
+            onclick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              toggleFwCompare(fw.id);
+            }}
+            class="rounded-md border px-1.5 py-0.5 text-[0.66rem] font-medium transition {$fwCompareIds.includes(
+              fw.id
+            )
+              ? 'border-accent bg-accent text-bg'
+              : 'border-edge text-dim opacity-0 group-hover:opacity-100 hover:text-ink'}"
+          >
+            {$fwCompareIds.includes(fw.id) ? '✓ Compare' : '+ Compare'}
+          </button>
+        </div>
         <span class="text-[0.75rem] {FW_STATUS_TW[fw.status] ?? 'text-dim'}">
           {statusLabels[fw.status] ?? fw.status}
         </span>
@@ -137,4 +157,21 @@
       {/each}
     </ol>
   </section>
+{/if}
+
+{#if $fwCompareIds.length}
+  <div class="pointer-events-none fixed inset-x-0 bottom-4 z-40 flex justify-center px-4">
+    <div class="pointer-events-auto flex items-center gap-3 rounded-full border border-edge bg-elev2 py-2 pr-2 pl-4 shadow-2xl">
+      <span class="text-[0.85rem] text-dim">
+        <span class="font-semibold text-ink">{$fwCompareIds.length}</span> selected
+      </span>
+      <button class="text-[0.85rem] text-dim hover:text-ink" onclick={clearFwCompare}>Clear</button>
+      <a
+        class="rounded-full bg-accent px-4 py-1.5 text-[0.85rem] font-semibold text-bg hover:opacity-90"
+        href="{base}/compare-firmwares/?ids={$fwCompareIds.join(',')}"
+      >
+        Compare →
+      </a>
+    </div>
+  </div>
 {/if}
