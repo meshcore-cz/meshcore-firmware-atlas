@@ -33,6 +33,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/elecrow-thinknode-m3
+    ramKb: 256
   radios:
     - technology: lora
       chip: lr1110
@@ -45,6 +47,9 @@ hardware:
     status: none
   gnss:
     status: present
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
       description: power / SOS
@@ -52,8 +57,12 @@ hardware:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 770
+    batteryChemistry: li-po
     batteryConnector: magnetic
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/elecrow-thinknode-m3
+    consumptionIdleMa: 5
+    consumptionTxMa: 80
   enclosure:
     builtIn: true
     ipRating: IP66

@@ -53,6 +53,9 @@ hardware:
     colors: color
   gnss:
     status: none
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: keyboard
       description: mini QWERTY
@@ -62,7 +65,12 @@ hardware:
   power:
     batterySupported: true
     batteryBuiltIn: true
+    batteryCapacityMah: 2000
+    batteryChemistry: li-po
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-deck
+    consumptionIdleMa: 80
+    consumptionTxMa: 140
   enclosure:
     builtIn: true
 interfaces:

@@ -122,7 +122,7 @@
   <footer
     class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 border-t border-edge px-[clamp(1rem,4vw,2rem)] py-5 text-center text-sm text-dim"
   >
-    <a class="text-accent2 hover:underline" href="/about/">How to contribute</a>
+    <a class="text-accent2 hover:underline" href="{base}/about/">How to contribute</a>
     <span class="text-edge">·</span>
     <span>Open source on <a class="text-accent2 hover:underline" href={REPO_URL} target="_blank" rel="noreferrer">GitHub</a></span>
     {#if updatedLabel}

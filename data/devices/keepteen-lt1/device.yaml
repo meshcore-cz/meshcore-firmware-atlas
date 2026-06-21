@@ -22,6 +22,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/keepteen-lt1
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -38,6 +40,9 @@ hardware:
   gnss:
     status: present
     chip: L76K
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
       description: power / SOS
@@ -45,7 +50,11 @@ hardware:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 2500
+    batteryChemistry: li-po
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/keepteen-lt1
+    consumptionIdleMa: 8
+    consumptionTxMa: 85
   physical:
     dimensionsMm:
       width: 58

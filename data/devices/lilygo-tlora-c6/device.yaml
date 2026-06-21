@@ -24,6 +24,8 @@ hardware:
   mcu:
     model: esp32-c6
     flashMb: 4
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-lora-c6
+    ramKb: 512
   radios:
     - technology: lora
       chip: sx1262
@@ -34,6 +36,9 @@ hardware:
     status: none
   gnss:
     status: none
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
       description: BOOT
@@ -44,6 +49,12 @@ hardware:
       width: 33
       height: 29
       depth: 6
+  power:
+    batterySupported: false
+    charging: false
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-lora-c6
+    consumptionIdleMa: 5
+    consumptionTxMa: 90
 interfaces:
   usb:
     connector: USB-C

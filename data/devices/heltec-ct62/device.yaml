@@ -28,6 +28,8 @@ hardware:
   mcu:
     model: esp32-c3
     flashMb: 4
+    # Source: https://mesh-sn.de/en/devices/details/heltec-ct62-capsule-sensor
+    ramKb: 400
   radios:
     - technology: lora
       chip: sx1262
@@ -41,6 +43,12 @@ hardware:
     status: none
   gnss:
     status: none
+  leds:
+    status: none
+  power:
+    # Source: https://mesh-sn.de/en/devices/details/heltec-ct62-capsule-sensor
+    consumptionIdleMa: 10
+    consumptionTxMa: 80
   physical:
     dimensionsMm:
       width: 17.78

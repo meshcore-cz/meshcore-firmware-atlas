@@ -32,6 +32,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/elecrow-thinknode-m6
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -44,6 +46,9 @@ hardware:
   gnss:
     status: present
     chip: L76K
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
       description: multifunction power button (power on/off, location update, GPS toggle)
@@ -53,10 +58,14 @@ hardware:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 7000
+    batteryChemistry: li-ion
     charging: true
     solarInput: true
     solarPanelBuiltIn: true
     solarPanelWatts: 6
+    # Source: https://mesh-sn.de/en/devices/details/elecrow-thinknode-m6
+    consumptionIdleMa: 10
+    consumptionTxMa: 85
   expansion:
     - type: SP11 aviation
       count: 2

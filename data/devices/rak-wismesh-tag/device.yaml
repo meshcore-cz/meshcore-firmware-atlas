@@ -30,6 +30,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/rak-wismesh-tag
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -50,6 +52,9 @@ hardware:
   gnss:
     status: present
     chip: MIA-M10Q
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
       description: power button (hold 5s on/off, double-click forced uplink, single-click sleep/wake)
@@ -57,8 +62,12 @@ hardware:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 3200
+    batteryChemistry: li-po
     batteryConnector: JST1.25-2
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/rak-wismesh-tag
+    consumptionIdleMa: 5
+    consumptionTxMa: 82
   enclosure:
     builtIn: true
   physical:

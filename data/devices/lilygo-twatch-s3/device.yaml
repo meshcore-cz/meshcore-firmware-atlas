@@ -25,6 +25,8 @@ hardware:
     model: esp32-s3
     flashMb: 16
     psramMb: 8
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-watch-s3
+    ramKb: 512
   radios:
     - technology: lora
       chip: sx1262
@@ -38,10 +40,19 @@ hardware:
     technology: display
   gnss:
     status: none
+  leds:
+    status: present
+    description: Status LEDs
   power:
     batterySupported: true
+    batteryBuiltIn: true
+    batteryCapacityMah: 580
+    batteryChemistry: li-po
     charging: true
     solarInput: false
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-watch-s3
+    consumptionIdleMa: 40
+    consumptionTxMa: 110
 interfaces:
   usb:
     connector: USB-C

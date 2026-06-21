@@ -29,6 +29,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/heltec-mesh-node-t096
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -51,6 +53,9 @@ hardware:
   gnss:
     status: present
     chip: UC6580
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
     - type: button
@@ -60,6 +65,9 @@ hardware:
     charging: true
     solarInput: true
     batteryConnector: SH1.25-2
+    # Source: https://mesh-sn.de/en/devices/details/heltec-mesh-node-t096
+    consumptionIdleMa: 13
+    consumptionTxMa: 130
   physical:
     dimensionsMm:
       width: 52

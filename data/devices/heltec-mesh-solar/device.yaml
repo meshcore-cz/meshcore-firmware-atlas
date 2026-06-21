@@ -28,15 +28,23 @@ transports:
 hardware:
   mcu:
     model: nrf52
+    # Source: https://mesh-sn.de/en/devices/details/heltec-mesh-solar
+    ramKb: 256
   display:
     status: none
   gnss:
     status: none
+  leds:
+    status: present
+    description: Status LEDs
   power:
     batterySupported: true
     batteryBuiltIn: false
     charging: true
     solarInput: true
+    # Source: https://mesh-sn.de/en/devices/details/heltec-mesh-solar
+    consumptionIdleMa: 8
+    consumptionTxMa: 85
   physical:
     weightG: 35
 interfaces:

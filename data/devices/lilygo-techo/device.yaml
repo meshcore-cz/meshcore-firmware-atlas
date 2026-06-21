@@ -18,9 +18,8 @@ price:
   asOf: 2026-06
 description: >-
   Ultra-low-power nRF52840 + SX1262 Meshtastic/MeshCore handheld with a 1.54-inch
-  e-paper display and built-in L76K GNSS. Ships with ABS enclosure, 850 mAh
-  Li-ion battery, and USB-C charging. Bluetooth 5 only — no Wi-Fi. Optional
-  BME280 environmental sensor variant; FCC, CE, and MIC certified.
+  e-paper display and built-in L76K GNSS. Bluetooth 5 only, with an optional
+  BME280 environmental sensor variant and ABS enclosure.
 roles:
   - companion
   - repeater
@@ -61,8 +60,9 @@ hardware:
   power:
     batterySupported: true
     batteryBuiltIn: true
-    batteryCapacityMah: 850
-    batteryChemistry: li-ion
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-echo
+    batteryCapacityMah: 1100
+    batteryChemistry: li-po
     batteryConnector: MX1.25-2
     charging: true
     # Source: https://mesh-sn.de/en/devices/details/lilygo-t-echo

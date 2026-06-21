@@ -36,6 +36,8 @@ hardware:
   mcu:
     model: esp32
     flashMb: 8
+    # Source: https://mesh-sn.de/en/devices/details/heltec-wifi-lora-32-v2
+    ramKb: 520
   radios:
     - technology: lora
       chip: sx1276
@@ -57,11 +59,17 @@ hardware:
     colors: monochrome
   gnss:
     status: none
+  leds:
+    status: present
+    description: White user LED
   power:
     batterySupported: true
     batteryBuiltIn: false
     batteryConnector: SH1.25-2
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/heltec-wifi-lora-32-v2
+    consumptionIdleMa: 50
+    consumptionTxMa: 125
   expansion:
     - type: header-2.54
       count: 2

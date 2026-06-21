@@ -27,6 +27,8 @@ hardware:
   mcu:
     model: esp32-p4
     flashMb: 16
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-display-p4
+    ramKb: 512
   radios:
     - technology: lora
       chip: sx1262
@@ -47,14 +49,21 @@ hardware:
   gnss:
     status: present
     chip: L76K
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: microphone
     - type: speaker
   power:
     batterySupported: true
     batteryBuiltIn: false
+    batteryChemistry: li-ion
     charging: true
     pmic: LGS4056H
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-display-p4
+    consumptionIdleMa: 35
+    consumptionTxMa: 110
   environmental:
     operatingTempC:
       min: -20

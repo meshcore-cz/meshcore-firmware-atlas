@@ -35,6 +35,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/heltec-mesh-node-t114-v2
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -58,6 +60,9 @@ hardware:
   gnss:
     status: present
     chip: L76K
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
       description: user button
@@ -66,6 +71,9 @@ hardware:
     charging: true
     solarInput: true
     batteryConnector: SH1.25-2
+    # Source: https://mesh-sn.de/en/devices/details/heltec-mesh-node-t114-v2
+    consumptionIdleMa: 11
+    consumptionTxMa: 85
   expansion:
     - type: header-2.54
       count: 2

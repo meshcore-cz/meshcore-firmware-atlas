@@ -27,6 +27,8 @@ hardware:
   mcu:
     model: esp32-c6
     flashMb: 16
+    # Source: https://mesh-sn.de/en/devices/details/m5stack-unit-c6l
+    ramKb: 512
   radios:
     - technology: lora
       chip: sx1262
@@ -45,12 +47,18 @@ hardware:
     colors: monochrome
   gnss:
     status: none
+  leds:
+    status: present
+    description: RGB indicator + status LED
   input:
     - type: button
       description: user button
   power:
     batterySupported: false
     charging: false
+    # Source: https://mesh-sn.de/en/devices/details/m5stack-unit-c6l
+    consumptionIdleMa: 1
+    consumptionTxMa: 85
   physical:
     dimensionsMm:
       width: 62

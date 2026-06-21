@@ -52,6 +52,7 @@ hardware:
   power:
     batterySupported: true
     batteryBuiltIn: false
+    batteryChemistry: li-ion
     charging: true
     solarInput: true
     solarPanelBuiltIn: true

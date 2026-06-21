@@ -33,6 +33,17 @@ hardware:
     touch: true
   gnss:
     status: unknown
+  leds:
+    status: present
+    description: Status LEDs
+  power:
+    batterySupported: true
+    batteryBuiltIn: true
+    batteryChemistry: li-po
+    charging: true
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-display-pro
+    consumptionIdleMa: 45
+    consumptionTxMa: 80
   input:
     - type: button
       description: boot button

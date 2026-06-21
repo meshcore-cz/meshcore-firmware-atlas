@@ -38,6 +38,8 @@ hardware:
     model: esp32-s3
     flashMb: 4
     psramMb: 8
+    # Source: https://mesh-sn.de/en/devices/details/elecrow-thinknode-m2
+    ramKb: 512
   radios:
     - technology: lora
       chip: sx1262
@@ -56,6 +58,9 @@ hardware:
     colors: monochrome
   gnss:
     status: none
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: button
       description: PWR button
@@ -69,8 +74,12 @@ hardware:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 1000
+    batteryChemistry: li-po
     batteryConnector: JST1.25-2
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/elecrow-thinknode-m2
+    consumptionIdleMa: 35
+    consumptionTxMa: 120
   enclosure:
     builtIn: true
   physical:

@@ -27,6 +27,8 @@ hardware:
     model: esp32-s3
     flashMb: 16
     psramMb: 8
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t5-e-paper-s3-pro
+    ramKb: 512
   radios:
     - technology: lora
       chip: sx1262
@@ -47,11 +49,19 @@ hardware:
     touch: true
   gnss:
     status: none
+  leds:
+    status: present
+    description: Status LEDs
   power:
     batterySupported: true
-    batteryBuiltIn: false
+    batteryBuiltIn: true
+    batteryCapacityMah: 1500
+    batteryChemistry: li-po
     charging: true
     pmic: BQ25896
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t5-e-paper-s3-pro
+    consumptionIdleMa: 25
+    consumptionTxMa: 110
 interfaces:
   usb:
     connector: USB-C

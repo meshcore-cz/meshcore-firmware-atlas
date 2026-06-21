@@ -10,6 +10,8 @@ refs:
 hardware:
   mcu:
     model: nrf52
+    # Source: https://mesh-sn.de/en/devices/details/muzi-works-r1-neo
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -17,6 +19,18 @@ hardware:
     status: unknown
   gnss:
     status: unknown
+  leds:
+    status: present
+    description: Status LEDs
+  power:
+    batterySupported: true
+    batteryBuiltIn: true
+    batteryCapacityMah: 1500
+    batteryChemistry: li-po
+    charging: true
+    # Source: https://mesh-sn.de/en/devices/details/muzi-works-r1-neo
+    consumptionIdleMa: 8
+    consumptionTxMa: 85
 interfaces:
   wifi:
     status: unknown

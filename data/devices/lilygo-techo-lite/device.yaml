@@ -33,6 +33,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-echo-lite
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -51,11 +53,16 @@ hardware:
     colors: monochrome
   gnss:
     status: none
+  leds:
+    status: none
   power:
     batterySupported: true
     batteryBuiltIn: false
     charging: true
     solarInput: true
+    # Source: https://mesh-sn.de/en/devices/details/lilygo-t-echo-lite
+    consumptionIdleMa: 6
+    consumptionTxMa: 85
   expansion:
     - type: l76k-gnss
       count: 1

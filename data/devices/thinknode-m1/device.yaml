@@ -32,6 +32,8 @@ hardware:
   mcu:
     model: nrf52840
     flashMb: 1
+    # Source: https://mesh-sn.de/en/devices/details/elecrow-thinknode-m1
+    ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
@@ -53,6 +55,9 @@ hardware:
   gnss:
     status: present
     chip: L76K
+  leds:
+    status: present
+    description: Status LEDs
   input:
     - type: encoder
       description: rotary power/backlight knob
@@ -68,7 +73,11 @@ hardware:
     batterySupported: true
     batteryBuiltIn: true
     batteryCapacityMah: 1200
+    batteryChemistry: li-po
     charging: true
+    # Source: https://mesh-sn.de/en/devices/details/elecrow-thinknode-m1
+    consumptionIdleMa: 6
+    consumptionTxMa: 85
   enclosure:
     builtIn: true
   physical:
