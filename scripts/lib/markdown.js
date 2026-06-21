@@ -15,7 +15,7 @@ const allowedTags = [
 ];
 
 /** @param {string|undefined|null} md @returns {string|null} */
-export function renderMarkdown(md) {
+export function renderMarkdown(md, { baseUrl = null } = {}) {
   if (!md) return null;
   const html = marked.parse(md.trim());
   return sanitizeHtml(html, {
@@ -26,7 +26,37 @@ export function renderMarkdown(md) {
     },
     allowedSchemes: ['http', 'https', 'mailto'],
     transformTags: {
-      a: sanitizeHtml.simpleTransform('a', { target: '_blank', rel: 'noopener noreferrer' })
+      a: (tagName, attribs) => ({
+        tagName,
+        attribs: {
+          ...attribs,
+          href: resolveUrl(attribs.href, baseUrl),
+          target: '_blank',
+          rel: 'noopener noreferrer'
+        }
+      }),
+      img: (tagName, attribs) => ({
+        tagName,
+        attribs: {
+          ...attribs,
+          src: resolveUrl(attribs.src, baseUrl)
+        }
+      })
     }
   });
+}
+
+function resolveUrl(value, baseUrl) {
+  if (!value || !baseUrl || value.startsWith('#')) return value;
+  try {
+    return new URL(value, markdownBaseUrl(baseUrl)).toString();
+  } catch {
+    return value;
+  }
+}
+
+function markdownBaseUrl(baseUrl) {
+  const githubRepo = baseUrl.match(/^https:\/\/github\.com\/([^/]+\/[^/#?]+)/);
+  if (githubRepo) return `https://github.com/${githubRepo[1]}/blob/HEAD/`;
+  return baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 }

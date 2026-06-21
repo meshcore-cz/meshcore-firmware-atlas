@@ -215,7 +215,7 @@ export async function buildData(root = defaultRoot) {
           ...latestReleaseSummary(rawReleases),
           releases: rawReleases.map((r) => ({
             ...r,
-            notesHtml: renderMarkdown(r.notes)
+            notesHtml: renderMarkdown(r.notes, { baseUrl: fw.repository })
           })),
           changelogSource: cl.source ?? null,
           changelogUpdatedAt: cl.updatedAt ?? null

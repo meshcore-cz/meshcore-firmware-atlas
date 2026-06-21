@@ -75,7 +75,9 @@
       role="dialog"
       aria-modal="true"
       aria-label="Search the atlas"
+      tabindex="-1"
       onclick={(e) => e.stopPropagation()}
+      onkeydown={(e) => e.stopPropagation()}
     >
       <div class="flex items-center gap-3 border-b border-edge px-4">
         <svg class="h-4 w-4 shrink-0 text-dim" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
