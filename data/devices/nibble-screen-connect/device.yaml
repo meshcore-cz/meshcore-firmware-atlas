@@ -1,13 +1,24 @@
-# Source: meshcore-dev/MeshCore variants/nibble_screen_connect/platformio.ini
+# Source: https://retia.io/products/nibble-screen-connect
+# Source: https://retia.io/blogs/news/introducing-the-nibble-zero
 name: Nibble Screen Connect
 vendorId: nibble
 kind: product
 lifecycle: active
 familyId: nibble-nibble-screen-connect
 official: true
+product_url: https://retia.io/products/nibble-screen-connect
+description: >-
+  Breadboard-friendly Nibble node with a built-in screen, buttons, and a
+  through-hole expansion layout aimed at MeshCore and Meshtastic hacking. The
+  design pairs a Waveshare ESP32-S3 Zero with a Seeed Wio SX1262 radio module.
+transports:
+  - ble
+  - usb
+  - wifi
 hardware:
   mcu:
     model: esp32-s3
+    flashMb: 8
   radios:
     - technology: lora
       chip: sx1262
@@ -15,10 +26,16 @@ hardware:
     status: present
     technology: display
   gnss:
-    status: unknown
+    status: none
+  input:
+    - type: button
+      description: user button
+    - type: button
+      description: reset button
 interfaces:
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
     status: present
+    standard: 802.11 b/g/n

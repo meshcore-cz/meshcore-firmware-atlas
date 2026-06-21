@@ -1,4 +1,5 @@
-# Source: meshcore-dev/flasher.meshcore.io config.json
+# Source: https://docs.rakwireless.com/product-categories/wisduo/rak3112-module/datasheet/
+# Source: https://docs.rakwireless.com/product-categories/wisduo/rak3112-module/overview/
 name: RAK WisBlock 3112
 vendorId: rak
 kind: product
@@ -8,6 +9,11 @@ aliases:
   - RAK3112
 image: rak_3112.svg
 official: true
+product_url: https://docs.rakwireless.com/product-categories/wisduo/rak3112-module/overview/
+description: >-
+  ESP32-S3 WisDuo module combining BLE, Wi-Fi, and SX1262 LoRa for compact
+  MeshCore and Meshtastic builds. The datasheet covers regional LoRa bands,
+  pinout, and certification details for the module.
 roles:
   - companion
   - repeater
@@ -15,22 +21,33 @@ roles:
 transports:
   - ble
   - usb
+  - wifi
 hardware:
   mcu:
-    model: esp32
+    model: esp32-s3
+    flashMb: 16
+    psramMb: 8
+  radios:
+    - technology: lora
+      chip: sx1262
+      frequencyVariants:
+        - '868'
+        - '915'
+      txPowerDbm: 20
   display:
-    status: unknown
+    status: none
   gnss:
-    status: unknown
+    status: none
 interfaces:
   usb:
-    connector: unknown
+    connector: USB-C
     capabilities:
       - power
       - serial
       - flashing
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
     status: present
+    standard: 802.11 b/g/n

@@ -1,4 +1,5 @@
-# Source: meshcore-dev/flasher.meshcore.io config.json
+# Source: https://heltec.org/project/meshsolar/
+# Source: https://docs.heltec.org/en/node/meshsolar/index.html
 name: Heltec MeshSolar / MeshTower
 vendorId: heltec
 kind: product
@@ -6,6 +7,12 @@ lifecycle: active
 familyId: heltec-meshsolar-meshtower
 image: heltec_mesh_solar.svg
 official: true
+product_url: https://heltec.org/project/meshsolar/
+description: >-
+  Outdoor solar-ready power and communication platform combining a BMS board
+  with an BLE + LoRa control board. Built for long-lived mesh deployments with
+  solar charging, interchangeable battery chemistry support, and optional
+  GNSS/display expansion.
 roles:
   - companion
   - repeater
@@ -17,22 +24,25 @@ hardware:
   mcu:
     model: nrf52
   display:
-    status: unknown
+    status: none
   gnss:
-    status: unknown
+    status: none
   power:
     batterySupported: true
+    batteryBuiltIn: false
     charging: true
     solarInput: true
+  physical:
+    weightG: 35
 interfaces:
   usb:
-    connector: unknown
+    connector: USB-C
     capabilities:
       - power
       - serial
       - flashing
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
-    status: unknown
+    status: none

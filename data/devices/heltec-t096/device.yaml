@@ -24,6 +24,7 @@ transports:
 hardware:
   mcu:
     model: nrf52840
+    flashMb: 1
   radios:
     - technology: lora
       chip: sx1262
@@ -45,6 +46,11 @@ hardware:
     charging: true
     solarInput: true
     batteryConnector: SH1.25-2
+  physical:
+    dimensionsMm:
+      width: 52
+      height: 25.4
+      depth: 10.26
   expansion:
     - type: header-2.54
       count: 2

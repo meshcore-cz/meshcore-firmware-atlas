@@ -6,32 +6,39 @@ lifecycle: active
 familyId: raspberry-rpi-pico-2040-waveshare
 image: rpi_picow.svg
 official: true
+description: >-
+  Raspberry Pi Pico 2040 paired with a WaveShare SX1262 LoRa board for
+  lightweight MeshCore and Meshtastic experimentation. The kit emphasizes USB
+  flashing and a small RP2040 footprint over integrated display or GNSS
+  hardware.
 roles:
   - companion
   - repeater
   - room-server
 transports:
-  - ble
   - usb
+  - wifi
 hardware:
   mcu:
     model: rp2040
+    flashMb: 2
   radios:
     - technology: lora
       chip: sx1262
   display:
-    status: unknown
+    status: none
   gnss:
-    status: unknown
+    status: none
 interfaces:
   usb:
-    connector: unknown
+    connector: Micro-USB
     capabilities:
       - power
       - serial
       - flashing
   bluetooth:
     version: unknown
-    ble: true
+    ble: false
   wifi:
-    status: unknown
+    status: present
+    standard: 802.11 b/g/n

@@ -1,10 +1,18 @@
-# Source: meshcore-dev/MeshCore variants/wio-e5-dev/platformio.ini
+# Source: https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/
+# Source: https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/
 name: Seeed Studio Wio-E5 Dev Board
 vendorId: seeed
 kind: dev-board
 lifecycle: active
 familyId: seeed-wio-e5-dev-board
 official: true
+product_url: https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/
+description: >-
+  Compact Wio-E5 development board for STM32WLE5JC / LoRaWAN prototyping,
+  typically bundled with an antenna, USB-C cable, and 2xAA battery holder.
+  Intended for quick bring-up and radio testing rather than a finished enclosure.
+transports:
+  - usb
 hardware:
   mcu:
     model: stm32wl
@@ -16,5 +24,11 @@ hardware:
   gnss:
     status: unknown
 interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+      - flashing
   wifi:
     status: unknown

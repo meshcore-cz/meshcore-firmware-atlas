@@ -1,10 +1,18 @@
-# Source: meshcore-dev/MeshCore variants/wio-e5-mini/platformio.ini
+# Source: https://wiki.seeedstudio.com/LoRa_E5_mini/
+# Source: https://files.seeedstudio.com/products/113990939/LoRa-E5%20mini%20v1.0.pdf
 name: Seeed Studio Wio-E5 mini
 vendorId: seeed
 kind: product
 lifecycle: active
 familyId: seeed-wio-e5-mini
 official: true
+product_url: https://wiki.seeedstudio.com/LoRa_E5_mini/
+description: >-
+  Compact Wio-E5 LoRaWAN development board with factory AT firmware support,
+  USB Type-C programming, and full GPIO breakouts for small prototypes. The
+  board targets rapid radio bring-up in a tiny 50 × 23 mm form factor.
+transports:
+  - usb
 hardware:
   mcu:
     model: stm32wl
@@ -15,6 +23,16 @@ hardware:
     status: unknown
   gnss:
     status: unknown
+  physical:
+    dimensionsMm:
+      width: 50
+      height: 23
 interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+      - flashing
   wifi:
     status: unknown

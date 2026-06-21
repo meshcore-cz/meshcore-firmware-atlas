@@ -1,4 +1,5 @@
-# Source: meshcore-dev/flasher.meshcore.io config.json
+# Source: https://heltec.org/project/wireless-tracker-v2/
+# Source: https://wiki.heltec.org/docs/devices/open-source-hardware/esp32-series/lora-32/wireless-tracker-v2/
 name: Heltec Wireless Tracker v2
 vendorId: heltec
 kind: product
@@ -9,34 +10,64 @@ aliases:
   - Wireless Tracker v2
 image: heltec_wt2.svg
 official: true
+product_url: https://heltec.org/project/wireless-tracker-v2/
+description: >-
+  ESP32-S3 based tracker with SX1262 LoRa, UC6580 GNSS, Wi-Fi, BLE, and a
+  0.96-inch 160×80 TFT display. Built for object tracking and mesh networking,
+  with USB-C, battery management, and solar-panel support.
 roles:
   - companion
   - repeater
   - room-server
+  - standalone-ui
 transports:
   - ble
   - usb
+  - wifi
 hardware:
   mcu:
-    model: esp32
+    model: esp32-s3
+    flashMb: 8
+    psramMb: 8
+  radios:
+    - technology: lora
+      chip: sx1262
+      frequencyVariants:
+        - '863'
+        - '928'
+      txPowerDbm: 28
+      antenna: IPEX-1.0
   display:
-    status: unknown
+    status: present
+    technology: display
+    size: 0.96
+    resolution:
+      width: 160
+      height: 80
+    colors: color
   gnss:
     status: present
-    chip: unknown
+    chip: UC6580
   power:
     batterySupported: true
+    batteryBuiltIn: false
+    batteryConnector: SH1.25-2
     charging: true
-    solarInput: false
+    solarInput: true
+  expansion:
+    - type: header-2.54
+      count: 2
+      pins: 18
 interfaces:
   usb:
-    connector: unknown
+    connector: USB-C
     capabilities:
       - power
       - serial
       - flashing
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
     status: present
+    standard: 802.11 b/g/n

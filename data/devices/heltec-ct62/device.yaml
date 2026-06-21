@@ -24,6 +24,7 @@ transports:
 hardware:
   mcu:
     model: esp32-c3
+    flashMb: 4
   radios:
     - technology: lora
       chip: sx1262
@@ -37,6 +38,11 @@ hardware:
     status: none
   gnss:
     status: none
+  physical:
+    dimensionsMm:
+      width: 17.78
+      height: 17.78
+      depth: 2.8
 interfaces:
   bluetooth:
     version: '5.0'

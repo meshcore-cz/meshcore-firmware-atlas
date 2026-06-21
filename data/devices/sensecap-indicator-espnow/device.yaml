@@ -1,18 +1,39 @@
-# Source: meshcore-dev/MeshCore variants/sensecap_indicator-espnow/platformio.ini
+# Source: https://wiki.seeedstudio.com/Get_started_with_SenseCAP_Indicator/
+# Source: https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/
 name: Seeed Studio SenseCAP Indicator ESP-NOW
 vendorId: seeed
 kind: product
 lifecycle: active
 familyId: seeed-sensecap-indicator-esp-now
 official: true
+product_url: https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/
+description: >-
+  4-inch SenseCAP Indicator touchscreen platform for firmware experiments and
+  mesh-network control panels. The product line pairs ESP32 and RP2040-class
+  logic with Wi-Fi, BLE, and optional LoRa support.
+transports:
+  - ble
+  - usb
+  - wifi
 hardware:
   mcu:
     model: esp32-s3
   display:
     status: present
     technology: display
+    size: 4
+    touch: true
   gnss:
     status: unknown
 interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+      - flashing
+  bluetooth:
+    version: '5.0'
+    ble: true
   wifi:
     status: present

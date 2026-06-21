@@ -57,6 +57,11 @@ hardware:
     charging: true
   enclosure:
     builtIn: false
+  physical:
+    dimensionsMm:
+      width: 88
+      height: 88
+      depth: 25
   environmental:
     operatingTempC:
       min: 0

@@ -1,23 +1,51 @@
-# Source: meshcore-dev/MeshCore variants/lilygo_teth_elite/platformio.ini
+# Source: https://lilygo.cc/en-us/products/t-eth-elite-1
 name: LilyGo T-ETH Elite
 vendorId: lilygo
 kind: product
 lifecycle: active
 familyId: lilygo-t-eth-elite
+aliases:
+  - T-ETH Elite
 official: true
+product_url: https://lilygo.cc/en-us/products/t-eth-elite-1
+description: >-
+  ESP32-S3R8 board with Wi-Fi, BLE, and built-in Ethernet via W5500, designed
+  for always-on wired IoT gateways and automation projects. USB-C power, PoE
+  support, and soldered headers make it a compact network-first controller.
+roles:
+  - companion
+  - repeater
+  - room-server
+transports:
+  - ble
+  - usb
+  - wifi
 hardware:
   mcu:
     model: esp32-s3
+    flashMb: 16
+    psramMb: 8
   radios:
     - technology: lora
       chip: sx1262
   display:
-    status: unknown
+    status: none
   gnss:
-    status: unknown
+    status: none
+  physical:
+    dimensionsMm:
+      width: 50
+      height: 67
 interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+      - flashing
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
     status: present
+    standard: 802.11 b/g/n

@@ -1,24 +1,30 @@
-# Source: meshcore-dev/MeshCore variants/rak3401/platformio.ini + boards/rak3401.json
+# Source: https://docs.rakwireless.com/product-categories/wisblock/rak3401/datasheet/
+# Source: https://docs.rakwireless.com/product-categories/wisblock/rak3401/overview/
 name: RAK WisCore RAK3401
 vendorId: rak
 kind: product
 lifecycle: active
 familyId: rak-wiscore-rak3401
-product_url: https://www.rakwireless.com
+product_url: https://docs.rakwireless.com/product-categories/wisblock/rak3401/overview/
 official: true
+description: >-
+  WisBlock BLE carrier board that exposes the RAK3400 core on a WisBlock-style
+  footprint for development and testing. The datasheet focuses on the nRF52840
+  core, pin mapping, and board dimensions.
 hardware:
   mcu:
     model: nrf52
+    flashMb: 1
   radios:
     - technology: lora
       chip: sx1262
   display:
-    status: unknown
+    status: none
   gnss:
-    status: unknown
+    status: none
 interfaces:
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
-    status: unknown
+    status: none

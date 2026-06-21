@@ -1,4 +1,5 @@
-# Source: meshcore-dev/flasher.meshcore.io config.json
+# Source: https://docs.rakwireless.com/product-categories/wisblock/rak13302/datasheet/
+# Source: https://docs.rakwireless.com/product-categories/wisblock/rak13302/overview/
 name: RAK WisMesh 1W Booster (3401 + 13302)
 vendorId: rak
 kind: kit
@@ -9,6 +10,11 @@ aliases:
   - RAK3401 + RAK13302
 image: rak_13302.svg
 official: true
+product_url: https://docs.rakwireless.com/product-categories/wisblock/rak13302/overview/
+description: >-
+  WisBlock 1 W LoRa booster kit pairing the RAK3401 carrier with the RAK13302
+  LPWAN module and SKY66122 RF amplifier. The kit is aimed at longer-range
+  LoRa operation in the 902-928 MHz band.
 roles:
   - companion
   - repeater
@@ -19,19 +25,26 @@ transports:
 hardware:
   mcu:
     model: nrf52
+    flashMb: 1
+  radios:
+    - technology: lora
+      chip: sx1262
+      frequencyVariants:
+        - '902-928'
+      txPowerDbm: 30
   display:
-    status: unknown
+    status: none
   gnss:
-    status: unknown
+    status: none
 interfaces:
   usb:
-    connector: unknown
+    connector: USB-C
     capabilities:
       - power
       - serial
       - flashing
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
-    status: unknown
+    status: none

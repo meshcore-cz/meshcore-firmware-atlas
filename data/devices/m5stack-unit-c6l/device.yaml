@@ -1,23 +1,65 @@
-# Source: meshcore-dev/MeshCore variants/m5stack_unit_c6l/platformio.ini
+# Source: https://docs.m5stack.com/en/unit/Unit_C6L
+# Source: https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1185/U202-SCH_Unit_C6L_SCH_B0.4.1_20250826_2025_08_26_16_13_36.pdf
 name: M5Stack Unit C6L
 vendorId: m5stack
 kind: product
 lifecycle: active
 familyId: m5stack-m5stack-unit-c6l
 official: true
+product_url: https://docs.m5stack.com/en/unit/Unit_C6L
+datasheet: datasheet.pdf
+description: >-
+  ESP32-C6 LoRa unit with an onboard SX1262 radio, OLED status display, RGB
+  indicator, buzzer, and a user button. The official documentation highlights
+  Wi-Fi 6, Meshtastic support, and the pair of RP-SMA antenna connectors.
+transports:
+  - ble
+  - usb
+  - wifi
 hardware:
   mcu:
     model: esp32-c6
+    flashMb: 16
   radios:
     - technology: lora
       chip: sx1262
+      frequencyVariants:
+        - '868'
+        - '915'
+      txPowerDbm: 22
   display:
-    status: unknown
+    status: present
+    technology: oled
+    controller: SSD1306
+    size: 0.66
+    resolution:
+      width: 64
+      height: 48
+    colors: monochrome
   gnss:
-    status: unknown
+    status: none
+  input:
+    - type: button
+      description: user button
+  power:
+    batterySupported: false
+    charging: false
+  physical:
+    dimensionsMm:
+      width: 62
+      height: 24
+      depth: 8
+    weightG: 13.6
 interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+      - flashing
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
     status: present
+    standard: 802.11 ax
