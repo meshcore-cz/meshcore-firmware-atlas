@@ -8,6 +8,7 @@ familyId: heltec-meshpocket
 aliases:
   - MeshPocket Qi2
   - MeshPocket Power Bank
+  - MeshPocket Qi2 Magnetic Charging Power Bank
 image: heltec_meshpocket.svg
 datasheet: datasheet.pdf
 official: true

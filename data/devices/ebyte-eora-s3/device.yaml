@@ -21,15 +21,24 @@ hardware:
   radios:
     - technology: lora
       chip: sx1262
+      frequencyVariants:
+        - '900'
+      txPowerDbm: 22
   display:
     status: present
     technology: oled
+    controller: SSD1306
     size: 0.96
     colors: monochrome
   gnss:
     status: none
+  environmental:
+    operatingTempC:
+      min: -40
+      max: 85
   power:
     batterySupported: true
+    batteryBuiltIn: false
     charging: true
   physical:
     dimensionsMm:

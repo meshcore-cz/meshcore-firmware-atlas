@@ -7,6 +7,7 @@ familyId: lilygo-t3-s3
 aliases:
   - T3 S3 SX126x
   - T3-S3 SX1262
+  - LilyGo T3 S3 (SX1262)
 image: lilygo_t3s3.svg
 datasheet: datasheet.pdf
 official: true

@@ -7,6 +7,8 @@ familyId: seeed-wio-tracker-l1
 variantOf: wio-tracker-l1
 image: wio_tracker_l1.svg
 official: true
+aliases:
+  - Seeed Wio Tracker L1 Pro
 product_url: https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html
 price:
   amount: 43

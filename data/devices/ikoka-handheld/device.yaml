@@ -8,6 +8,8 @@ familyId: ikoka-handheld-nrf
 official: true
 aliases:
   - Ikoka Handheld Meshtastic Device
+  - Ikoka Handheld
+product_url: https://github.com/ndoo/ikoka-handheld-meshtastic-device
 roles:
   - companion
   - repeater
@@ -38,6 +40,9 @@ hardware:
     colors: monochrome
   gnss:
     status: none
+  input:
+    - type: button
+      description: user button
   power:
     batterySupported: true
     charging: true

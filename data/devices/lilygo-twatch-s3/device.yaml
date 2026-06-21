@@ -1,16 +1,14 @@
-# Source: meshcore-dev/MeshCore variants/gat562_mesh_watch13/platformio.ini
-# Source: https://github.com/gat-iot/GAT562-family
-name: GAT-IoT GAT562 Mesh Watch13
-vendorId: gatiot
+# Source: https://lilygo.cc/en-us/products/t-watch-s3
+# Source: https://wiki.lilygo.cc/get_started/en/Meshtastic/Meshtastic_lilygo.html
+name: LilyGo T-Watch S3
+vendorId: lilygo
 kind: product
 lifecycle: active
-familyId: gatiot-gat562
-variantOf: gatiot-gat562
+familyId: lilygo-t-watch-s3
 aliases:
-  - GAT562 Watch13
-  - GAT562 Mesh Watch
+  - T-Watch S3
 official: true
-datasheet: datasheet.pdf
+product_url: https://lilygo.cc/en-us/products/t-watch-s3
 roles:
   - companion
   - repeater
@@ -19,36 +17,29 @@ roles:
 transports:
   - ble
   - usb
+  - wifi
 hardware:
   mcu:
-    model: nrf52
-    flashMb: 1
+    model: esp32-s3
+    flashMb: 16
+    psramMb: 8
   radios:
     - technology: lora
       chip: sx1262
       frequencyVariants:
+        - '433'
         - '868'
         - '915'
+        - '920'
   display:
     status: present
     technology: display
-    size: 1.3
-    colors: monochrome
   gnss:
-    status: present
-    chip: ATGM336H
-  input:
-    - type: button
-      description: power
+    status: none
   power:
     batterySupported: true
-    batteryBuiltIn: true
-    batteryCapacityMah: 800
     charging: true
     solarInput: false
-  enclosure:
-    builtIn: true
-    ipRating: IP65
 interfaces:
   usb:
     connector: USB-C
@@ -60,4 +51,5 @@ interfaces:
     version: '5.0'
     ble: true
   wifi:
-    status: none
+    status: present
+    standard: 802.11 b/g/n

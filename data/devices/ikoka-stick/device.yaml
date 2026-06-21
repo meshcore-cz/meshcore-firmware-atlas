@@ -9,6 +9,7 @@ image: ikoka_stick.svg
 official: true
 aliases:
   - Ikoka Stick Meshtastic Device
+product_url: https://github.com/ndoo/ikoka-stick-meshtastic-device
 roles:
   - companion
   - repeater
@@ -45,6 +46,7 @@ hardware:
   power:
     batterySupported: true
     charging: true
+    solarInput: false
 interfaces:
   usb:
     connector: USB-C
