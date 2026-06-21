@@ -84,8 +84,22 @@ async function buildReleases(fw, dir, source) {
   throw new Error(`unknown source "${source}"`);
 }
 
+/** Deterministic JSON with recursively sorted keys, for content comparison. */
+function stableStringify(value) {
+  if (Array.isArray(value)) return `[${value.map(stableStringify).join(',')}]`;
+  if (value && typeof value === 'object') {
+    return `{${Object.keys(value)
+      .filter((k) => value[k] !== undefined)
+      .sort()
+      .map((k) => `${JSON.stringify(k)}:${stableStringify(value[k])}`)
+      .join(',')}}`;
+  }
+  return JSON.stringify(value);
+}
+
 const fwBase = join(root, 'data', 'firmwares');
-let updated = 0;
+let changed = 0;
+let unchanged = 0;
 let failed = 0;
 
 for (const d of readdirSync(fwBase, { withFileTypes: true })) {
@@ -106,18 +120,38 @@ for (const d of readdirSync(fwBase, { withFileTypes: true })) {
 
   try {
     const { repo, releases } = await buildReleases(fw, d.name, source);
-    const out = { source, repo: repo ?? undefined, updatedAt: new Date().toISOString(), releases };
-    writeFileSync(
-      join(fwBase, d.name, 'changelog.yaml'),
-      dump(out, { lineWidth: 100, noRefs: true })
-    );
-    console.log(`✓ ${d.name}: ${releases.length} release(s) via ${source}${repo ? ` (${repo})` : ''}`);
-    updated++;
+    const outPath = join(fwBase, d.name, 'changelog.yaml');
+
+    // Preserve the existing `updatedAt` when the actual content (source/repo/
+    // releases) is unchanged, so a refresh that finds no new releases doesn't
+    // churn the file with a fresh timestamp.
+    const existing = existsSync(outPath) ? load(readFileSync(outPath, 'utf8')) ?? {} : null;
+    const body = { source, repo: repo ?? undefined, releases };
+    const isUnchanged =
+      existing &&
+      stableStringify({ source: existing.source, repo: existing.repo, releases: existing.releases }) ===
+        stableStringify(body);
+
+    const updatedAt = isUnchanged ? existing.updatedAt : new Date().toISOString();
+    const out = { source, repo: repo ?? undefined, updatedAt, releases };
+    const yaml = dump(out, { lineWidth: 100, noRefs: true });
+
+    if (!existing || readFileSync(outPath, 'utf8') !== yaml) {
+      writeFileSync(outPath, yaml);
+    }
+
+    if (isUnchanged) {
+      console.log(`· ${d.name}: ${releases.length} release(s) via ${source} — unchanged`);
+      unchanged++;
+    } else {
+      console.log(`✓ ${d.name}: ${releases.length} release(s) via ${source}${repo ? ` (${repo})` : ''}`);
+      changed++;
+    }
   } catch (err) {
     console.error(`✗ ${d.name}: ${err.message}`);
     failed++;
   }
 }
 
-console.log(`\nDone — ${updated} updated, ${failed} failed.`);
-if (failed > 0 && updated === 0) process.exit(1);
+console.log(`\nDone — ${changed} changed, ${unchanged} unchanged, ${failed} failed.`);
+if (failed > 0 && changed === 0 && unchanged === 0) process.exit(1);
