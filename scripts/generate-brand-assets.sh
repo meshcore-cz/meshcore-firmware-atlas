@@ -15,15 +15,19 @@ command -v magick >/dev/null || { echo 'ImageMagick (magick) required' >&2; exit
 
 cp "$src" "$out/logo.png"
 
-for spec in "16:12" "32:26" "180:150" "192:160" "512:430"; do
-  size="${spec%%:*}"
-  inner="${spec##*:}"
-  magick -size "${size}x${size}" xc:"$bg" \
+# Favicons keep the logo's transparent background (xc:none). The apple-touch
+# icon (180) gets a solid background because iOS flattens transparency to black
+# behind a rounded mask, which looks worse than an explicit fill.
+for spec in "16:12:none" "32:26:none" "180:150:$bg" "192:160:none" "512:430:none"; do
+  IFS=: read -r size inner sbg <<<"$spec"
+  magick -size "${size}x${size}" xc:"$sbg" \
     \( "$src" -resize "${inner}x${inner}" \) -gravity center -composite \
     "$out/favicon-${size}x${size}.png"
 done
 
-magick "$out/favicon-16x16.png" "$out/favicon-32x32.png" "$out/favicon.ico"
+# Preserve the alpha channel when packing the .ico (default would drop it).
+magick "$out/favicon-16x16.png" "$out/favicon-32x32.png" \
+  -background none -define icon:auto-resize=16,32 "$out/favicon.ico"
 cp "$out/favicon-180x180.png" "$out/apple-touch-icon.png"
 
 magick -size 1200x630 xc:"$bg" \

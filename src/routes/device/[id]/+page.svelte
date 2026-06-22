@@ -513,7 +513,7 @@
     {#if devicePriceLabel(d)}
       <p class="mt-3 flex items-baseline gap-2">
         <span class="text-[1.25rem] font-bold">{devicePriceLabel(d)}</span>
-        <span class="text-[0.78rem] text-dim">approx.{#if d.price?.asOf} · {d.price.asOf}{/if}</span>
+        <span class="text-[0.78rem] text-dim">approx {#if d.price?.asOf} ({d.price.asOf}){/if}</span>
       </p>
     {/if}
     {#if d.product_url || d.datasheetUrl}

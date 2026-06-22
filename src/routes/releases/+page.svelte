@@ -42,7 +42,7 @@
       <button
         onclick={() => go(n)}
         class="min-w-9 rounded-md border px-3 py-1.5 text-[0.85rem] {n === page
-          ? 'border-accent bg-accent font-semibold text-[#06231a]'
+          ? 'border-accent bg-accent font-semibold text-bg'
           : 'border-edge bg-elev text-dim hover:text-ink'}"
       >{n}</button>
     {/each}

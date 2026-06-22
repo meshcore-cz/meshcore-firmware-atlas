@@ -66,7 +66,7 @@
     class="sticky top-0 z-10 flex flex-wrap items-center justify-between gap-4 border-b border-edge bg-elev px-[clamp(1rem,4vw,2rem)] py-[0.9rem]"
   >
     <a class="flex items-center gap-2.5 text-[1.05rem] font-bold" href="{base}/">
-      <img src="{base}/logo.png" alt="" class="h-8 w-8 shrink-0 rounded-md" width="32" height="32" />
+      <img src="{base}/logo.png" alt="" class="site-logo h-8 w-8 shrink-0" width="32" height="32" />
       <span>{SITE_NAME}</span>
       <span
         class="rounded-full border border-accent2/40 bg-accent2/10 px-1.5 py-0.5 text-[0.62rem] font-semibold uppercase leading-none tracking-wider text-accent2"
@@ -152,3 +152,17 @@
     </div>
   </footer>
 </div>
+
+<style>
+  /* The logo is white line-art on a transparent background: crisp on the dark
+     header, but it disappears on the light theme. A soft shadow lifts it off
+     the dark header; under the light theme we invert it to dark strokes so it
+     stays visible there too. */
+  .site-logo {
+    filter: drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.5));
+  }
+
+  :global(html[data-theme='light']) .site-logo {
+    filter: invert(1) drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.3));
+  }
+</style>

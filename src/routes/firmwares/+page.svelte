@@ -70,8 +70,8 @@
       <button
         onclick={() => (typeFilter = t)}
         class="rounded-full border px-3 py-1.5 text-[0.85rem] {typeFilter === t
-          ? 'border-accent bg-accent font-semibold text-[#06231a]'
-          : 'border-edge bg-elev text-dim hover:text-ink'}"
+          ? 'border-accent bg-accent/15 font-semibold text-accent'
+          : 'border-edge bg-elev text-dim hover:border-accent/60 hover:text-ink'}"
       >
         {t === 'all' ? 'All' : TYPE_META[t].label}
       </button>

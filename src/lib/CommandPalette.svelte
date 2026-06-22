@@ -43,7 +43,6 @@
   }
 
   function onkeydown(e) {
-    if (!open) return;
     if (e.key === 'Escape') {
       e.preventDefault();
       close();
@@ -60,8 +59,6 @@
   }
 </script>
 
-<svelte:window {onkeydown} />
-
 {#if open}
   <!-- Backdrop -->
   <div
@@ -77,7 +74,7 @@
       aria-label="Search the atlas"
       tabindex="-1"
       onclick={(e) => e.stopPropagation()}
-      onkeydown={(e) => e.stopPropagation()}
+      {onkeydown}
     >
       <div class="flex items-center gap-3 border-b border-edge px-4">
         <svg class="h-4 w-4 shrink-0 text-dim" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
