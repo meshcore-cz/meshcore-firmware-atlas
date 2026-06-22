@@ -1,25 +1,53 @@
-# Source: meshcore-dev/flasher.meshcore.io config.json
-name: Nordic nRF54L15 DK
-vendorId: nordic
+# Source: zephcore boards/example_board README and board.overlay
+name: Seeed XIAO nRF54L15 + SX1262
+vendorId: seeed
 kind: dev-board
 lifecycle: unknown
-familyId: nordic-nordic-nrf54l15-dk
+familyId: seeed-xiao-nrf54l15-sx1262
 official: false
+description: >-
+  ZephCore XIAO nRF54L15 target paired with an external SX1262 LoRa module over
+  SPI. Intended as a developer build for testing nRF54L15 BLE/USB companion
+  firmware with MeshCore LoRa packet routing.
 price:
-  # Source: https://eu.mouser.com/ProductDetail/Nordic-Semiconductor/nRF54L15-DK
-  amount: 35
+  # Source: Seeed XIAO nRF54L15 launch pricing estimate
+  amount: 10
   currency: USD
   asOf: 2026-06
+transports:
+  - ble
+  - usb
 hardware:
   mcu:
     model: nrf54l15
     # Source: https://www.nordicsemi.com/Products/nRF54L15
     ramKb: 256
     flashMb: 1.5
+  radios:
+    - technology: lora
+      chip: sx1262
   display:
-    status: unknown
+    status: none
   gnss:
-    status: unknown
+    status: none
+  power:
+    batterySupported: true
+    batteryBuiltIn: false
+    charging: false
+    solarInput: false
+  physical:
+    dimensionsMm:
+      width: 117
+      height: 64
 interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+      - flashing
+  bluetooth:
+    version: unknown
+    ble: true
   wifi:
-    status: unknown
+    status: none

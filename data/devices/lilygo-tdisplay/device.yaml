@@ -28,6 +28,10 @@ hardware:
     psramMb: 8
     # Source: https://mesh-sn.de/en/devices/details/lilygo-t-display-pro
     ramKb: 512
+  radios:
+    - technology: lora
+      chip: sx1262
+      txPowerDbm: 22
   display:
     status: present
     technology: display

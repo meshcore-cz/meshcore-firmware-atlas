@@ -25,6 +25,7 @@ hardware:
   radios:
     - technology: lora
       chip: stm32wl
+      txPowerDbm: 22
   display:
     status: none
   leds:
@@ -46,5 +47,8 @@ interfaces:
       - power
       - serial
       - flashing
+  bluetooth:
+    version: none
+    ble: false
   wifi:
     status: none

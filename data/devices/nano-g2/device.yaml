@@ -35,6 +35,10 @@ hardware:
     flashMb: 2
     # Source: https://mesh-sn.de/en/devices/details/nano-g2-ultra
     ramKb: 256
+  radios:
+    - technology: lora
+      chip: sx1262
+      txPowerDbm: 22
   display:
     status: present
     technology: oled

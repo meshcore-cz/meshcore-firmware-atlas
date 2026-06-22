@@ -34,12 +34,18 @@ hardware:
   radios:
     - technology: lora
       chip: sx1262
+      txPowerDbm: 22
   display:
     status: none
   gnss:
     status: none
   leds:
     status: none
+  power:
+    batterySupported: true
+    batteryBuiltIn: false
+    charging: true
+    solarInput: false
 interfaces:
   usb:
     connector: Micro-USB

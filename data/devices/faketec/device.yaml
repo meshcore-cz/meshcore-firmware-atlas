@@ -8,6 +8,10 @@ aliases:
   - ProMicro nRF52
 image: faketec.svg
 official: true
+description: >-
+  DIY ProMicro nRF52840 MeshCore target with an external SX1262 LoRa module.
+  The upstream firmware profile exposes OLED, GNSS and sensor hooks for
+  community builds, but the exact module and enclosure depend on the builder.
 roles:
   - companion
   - repeater
@@ -22,15 +26,25 @@ transports:
   - usb
 hardware:
   mcu:
-    model: nrf52
+    model: nrf52840
+    flashMb: 1
     # Inferred from the ProMicro nRF52 family
     ramKb: 256
+  radios:
+    - technology: lora
+      chip: sx1262
+      txPowerDbm: 22
   display:
-    status: unknown
+    status: none
   leds:
     status: unknown
   gnss:
-    status: unknown
+    status: none
+  power:
+    batterySupported: false
+    batteryBuiltIn: false
+    charging: false
+    solarInput: false
 interfaces:
   usb:
     connector: unknown
@@ -42,4 +56,4 @@ interfaces:
     version: unknown
     ble: true
   wifi:
-    status: unknown
+    status: none

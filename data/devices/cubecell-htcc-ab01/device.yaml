@@ -9,9 +9,11 @@ aliases:
   - CubeCell Board
   - HTCC-AB01
 official: false
+product_url: https://heltec.org/project/htcc-ab01/
 description: >-
-  Ultra-low-power LoRa development board based on the ASR6601 (Cortex-M4) with integrated
-  SX1262 radio. Designed for solar-powered and battery-operated IoT deployments.
+  Ultra-low-power CubeCell LoRa development board based on ASR6502-class
+  silicon with an integrated SX1262 radio. Designed for solar-powered and
+  battery-operated IoT deployments.
 roles:
   - repeater
 transports:
@@ -37,8 +39,10 @@ variants:
 
 hardware:
   mcu:
-    model: stm32wl
-    flashMb: 0.25
+    model: asr6502
+    flashMb: 0.125
+    # Source: CubeCellMeshCore build output / HTCC-AB01_V2 resources
+    ramKb: 16
   radios:
     - technology: lora
       chip: sx1262
@@ -47,7 +51,7 @@ hardware:
         - '470'
         - '868'
         - '915'
-      txPowerDbm: 22
+      txPowerDbm: 21
       antenna: IPEX-1.0
   display:
     status: none
@@ -58,11 +62,34 @@ hardware:
     batteryBuiltIn: false
     charging: true
     solarInput: true
-    consumptionIdleMa: 0.01
+    # Source: https://wiki.heltec.org/docs/devices/open-source-hardware/cubecell-series/htcc_ab01/
+    consumptionIdleMa: 0.0035
+  expansion:
+    - type: header-2.54
+      count: 2
+      interfaces:
+        - GPIO
+        - SPI
+        - I2C
+        - UART
+        - ADC
+        - PWM
+        - SWD
+  physical:
+    dimensionsMm:
+      width: 40.64
+      height: 22.86
+      depth: 7.6
 interfaces:
   usb:
     connector: Micro-USB
+    bridge: CP2102
     capabilities:
       - power
       - serial
       - flashing
+  bluetooth:
+    version: none
+    ble: false
+  wifi:
+    status: none

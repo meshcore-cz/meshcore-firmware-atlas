@@ -29,6 +29,7 @@ transports:
 hardware:
   mcu:
     model: nrf52840
+    flashMb: 2
     ramKb: 256
   radios:
     - technology: lora
@@ -41,9 +42,17 @@ hardware:
     status: none
   power:
     batterySupported: true
+    batteryBuiltIn: false
     batteryChemistry: other
     charging: true
     solarInput: false
+    batteryConnector: PicoBlade 1.25-2P
+    pmic: BQ25100
+  expansion:
+    - type: qwiic
+      count: 1
+      interfaces:
+        - I2C
 interfaces:
   usb:
     connector: USB-C

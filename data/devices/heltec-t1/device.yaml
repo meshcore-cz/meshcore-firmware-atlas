@@ -20,19 +20,30 @@ transports:
   - usb
 hardware:
   mcu:
-    model: nrf52
+    model: nrf52840
     flashMb: 1
     # Inferred from the nRF52 family used by the board profile
     ramKb: 256
   radios:
     - technology: lora
       chip: sx1262
+      bands:
+        - '470'
+        - '868'
+        - '915'
+      txPowerDbm: 21
+      antenna: IPEX-1.0
   display:
     status: none
   leds:
     status: unknown
   gnss:
     status: none
+  power:
+    batterySupported: true
+    batteryBuiltIn: false
+    charging: true
+    solarInput: false
 interfaces:
   usb:
     connector: unknown

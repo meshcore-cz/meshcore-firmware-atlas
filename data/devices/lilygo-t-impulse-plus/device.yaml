@@ -21,7 +21,7 @@ transports:
   - usb
 hardware:
   mcu:
-    model: nrf52
+    model: nrf52840
     flashMb: 1
     # Source: https://github.com/Xinyuan-LILYGO/T-Impulse-Plus
     ramKb: 256
@@ -39,12 +39,23 @@ hardware:
   gnss:
     status: present
     chip: MIA-M10Q
+  input:
+    - type: button
+      description: TTP223 capacitive touch wake / boot trigger
+  power:
+    batterySupported: true
+    batteryBuiltIn: true
+    charging: true
+    solarInput: false
+    pmic: SGM41562
+    # Source: https://github.com/Xinyuan-LILYGO/T-Impulse-Plus
+    consumptionIdleMa: 0.04
   leds:
     status: present
     description: Status LED
 interfaces:
   bluetooth:
-    version: unknown
+    version: '5.0'
     ble: true
   wifi:
     status: none

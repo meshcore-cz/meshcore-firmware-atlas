@@ -1,9 +1,13 @@
 # Source: meshcore-dev/MeshCore variants/generic_espnow/platformio.ini
-name: Generic ESP-NOW
+name: Generic ESP-NOW Radio
 kind: generic-build
 lifecycle: active
 familyId: generic-espnow
 official: true
+description: >-
+  Generic ESP32-C3 MeshCore target using ESP-NOW as the packet radio. Used when
+  the hardware is Wi-Fi-centric and no vendor-specific board record is
+  available.
 price:
   # Source: bare ESP32-C3 dev-board estimate
   amount: 5
@@ -16,6 +20,9 @@ hardware:
     model: esp32-c3
     # Inferred from the ESP32-C3 family
     ramKb: 400
+  radios:
+    - technology: esp-now
+      chip: esp32-c3
   display:
     status: none
   leds:

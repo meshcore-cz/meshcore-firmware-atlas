@@ -65,6 +65,15 @@ family:
     vendor: Raspberry Pi
     url: https://www.raspberrypi.com/products/rp2040/
     architecture: arm-cortex-m0-plus
+  asr650x:
+    name: ASR Microelectronics ASR650x / ASR605x
+    vendor: ASR Microelectronics
+    url: https://wiki.heltec.org/docs/devices/open-source-hardware/cubecell-series/htcc_ab01/
+    architecture: arm-cortex-m0-plus
+    models:
+      asr6502:
+        name: ASR Microelectronics ASR6502
+        url: https://wiki.heltec.org/docs/devices/open-source-hardware/cubecell-series/htcc_ab01/
   stm32wl:
     name: ST STM32WL
     vendor: STMicroelectronics

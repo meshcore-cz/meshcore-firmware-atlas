@@ -5,23 +5,102 @@ kind: product
 lifecycle: active
 familyId: waveshare-waveshare-lora
 official: true
+product_url: https://www.waveshare.com/rp2040-lora.htm
+description: >-
+  Compact RP2040 + SX1262 LoRa development board sold in LF and HF variants,
+  with castellated GPIO, an IPEX antenna connector, and an optional USB-C FPC
+  adapter for flashing and serial access.
+# Source: https://www.waveshare.com/rp2040-lora.htm
 price:
   # Source: https://www.waveshare.com/rp2040-lora.htm
   amount: 13
   currency: USD
   asOf: 2026-06
+transports:
+  - usb
+# Source: https://www.waveshare.com/rp2040-lora.htm (frequency band options LF/HF and optional kit).
+variants:
+  - name: RP2040-LoRa-LF
+    sku: '26592'
+    bands:
+      - '433'
+      - '470'
+  - name: RP2040-LoRa-HF
+    sku: '26591'
+    bands:
+      - '868'
+      - '915'
+  - name: RP2040-LoRa-LF-Kit
+    sku: '26543'
+    bands:
+      - '433'
+      - '470'
+  - name: RP2040-LoRa-HF-Kit
+    sku: '26542'
+    bands:
+      - '868'
+      - '915'
+
 hardware:
   mcu:
     model: rp2040
+    # Source: https://www.waveshare.com/rp2040-lora.htm
+    flashMb: 2
     # Source: RP2040 family memory map
     ramKb: 264
   radios:
     - technology: lora
       chip: sx1262
+      bands:
+        - '433'
+        - '470'
+        - '868'
+        - '915'
+      txPowerDbm: 22
+      antenna: IPEX-1.0
   display:
-    status: unknown
+    status: none
   gnss:
-    status: unknown
+    status: none
+  power:
+    batterySupported: false
+    batteryBuiltIn: false
+    charging: false
+    solarInput: false
+    # Source: https://www.waveshare.com/rp2040-lora.htm
+    consumptionIdleMa: 5.3
+    consumptionTxMa: 118
+  expansion:
+    - type: castellated-gpio
+      count: 1
+      pins: 20
+      interfaces:
+        - GPIO
+        - SPI
+        - I2C
+        - UART
+    - type: fpc-0.5
+      count: 1
+      pins: 8
+      interfaces:
+        - USB
+  physical:
+    dimensionsMm:
+      width: 21
+      height: 41
+  environmental:
+    operatingTempC:
+      min: -40
+      max: 85
 interfaces:
+  usb:
+    connector: USB-C adapter via 8-pin FPC
+    capabilities:
+      - power
+      - serial
+      - flashing
+  bluetooth:
+    version: none
+    ble: false
   wifi:
-    status: unknown
+    status: none
