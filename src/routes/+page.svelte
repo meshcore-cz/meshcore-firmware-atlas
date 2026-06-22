@@ -18,7 +18,7 @@
 
   // The primary collections, in headline order. `n` is read from the
   // build-time counts so the numbers track the dataset automatically.
-  const sections = [
+  let sections = $derived([
     {
       href: '/networks/',
       label: 'Networks',
@@ -40,7 +40,7 @@
       blurb: 'The official build plus community forks and custom variants.',
       icon: 'M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3H3V5Zm0 5h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9Zm3 3v2h2v-2H6Zm0 4v2h2v-2H6Z'
     }
-  ];
+  ]);
 
   const tools = [
     { href: '/matrix/', label: 'Compatibility matrix' },

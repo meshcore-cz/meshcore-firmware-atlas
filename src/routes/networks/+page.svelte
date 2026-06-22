@@ -1,6 +1,5 @@
 <script>
   import { base } from '$app/paths';
-  import { goto } from '$app/navigation';
   import {
     NETWORK_SCOPE_META,
     networkFlags,
@@ -31,15 +30,6 @@
       liveById = next;
     })
   );
-
-  // Whole-row navigation: clicking anywhere on a row opens the network, unless
-  // the click landed on a real link/button (let those do their own thing) or
-  // the user is selecting text (so text stays selectable/copyable).
-  function rowClick(event, id) {
-    if (event.target.closest('a, button')) return;
-    if (window.getSelection()?.toString()) return;
-    goto(`${base}/network/${id}/`);
-  }
 
   // One frequency label per radio, e.g. "869.618 MHz" (falls back to a band key).
   const radioFreq = (r) =>
@@ -261,8 +251,7 @@
     {@const radios = networkRadioSettings(n)}
     {@const rows = Math.max(radios.length, 1)}
     {@const live = liveById[n.id]}
-    <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_static_element_interactions -->
-    <tbody class="group cursor-pointer hover:bg-elev" onclick={(e) => rowClick(e, n.id)}>
+    <tbody class="group hover:bg-elev">
     {#each radios.length ? radios : [null] as r, i}
       {@const last = i === rows - 1}
       {@const bc = last ? 'border-b border-edge' : 'border-b border-edge/30'}
