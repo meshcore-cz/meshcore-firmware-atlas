@@ -21,4 +21,14 @@ steps:
       DEPLOY_PASSWORD:
         from_secret: DEPLOY_SECRET
     commands:
-      - rclone sync build/ ":sftp,host=sftpgo.pp0.co,port=2222,user=meshcore-ninja,pass=$DEPLOY_PASSWORD:/public/meshcore-ninja/" -v
+      - |
+        test -n "$DEPLOY_PASSWORD" || {
+          echo "DEPLOY_PASSWORD is missing"
+          exit 1
+        }
+
+        RCLONE_PASSWORD="$(printf '%s' "$DEPLOY_PASSWORD" | rclone obscure -)"
+
+        rclone sync build/ \
+          ":sftp,host=sftpgo.pp0.co,port=2222,user=meshcore-ninja,pass=${RCLONE_PASSWORD},shell_type=none:/public/meshcore-ninja/" \
+          -v
