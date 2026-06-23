@@ -1,0 +1,95 @@
+name: Meshy
+kind: client
+status: active
+maturity: beta
+description: >-
+  GTK 4/libadwaita MeshCore client for Linux and macOS with encrypted messaging,
+  contacts, maps, device monitoring, configuration, QR code support and
+  Bluetooth or USB serial connections.
+
+image: meshy.png
+screenshots:
+  - file: screenshot1.png
+    caption: Channel messaging
+  - file: screenshot2.png
+    caption: Contacts and device statistics
+  - file: screenshot3.png
+    caption: Settings and radio configuration
+  - file: screenshot4.png
+    caption: Map view with mesh nodes
+
+maintainers:
+  - name: Jiří Eischmann
+    url: https://codeberg.org/sesivany
+
+repository: https://codeberg.org/sesivany/meshy
+website: https://meshy-app.org/
+license: GPL-3.0-or-later
+
+languages:
+  - python
+
+latest_version: '26.06'
+released: 2026-06-05
+
+platforms:
+  - linux
+  - macos
+interfaces:
+  - gui
+connections:
+  - ble
+  - serial
+  - usb
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+  - monitoring
+  - telemetry
+  - mapping
+  - key-management
+
+install:
+  - type: flatpak
+    package: page.codeberg.sesivany.Meshy
+    url: https://flathub.org/apps/page.codeberg.sesivany.Meshy
+    command: flatpak install flathub page.codeberg.sesivany.Meshy
+  - type: flatpak
+    package: page.codeberg.sesivany.Meshy
+    url: https://meshy-app.org/meshy.flatpakrepo
+    command: flatpak remote-add --if-not-exists meshy https://meshy-app.org/meshy.flatpakrepo
+  - type: homebrew
+    package: meshy
+    url: https://codeberg.org/jreznik/homebrew-meshy
+    command: brew tap jreznik/meshy https://codeberg.org/jreznik/homebrew-meshy && brew install meshy
+  - type: source
+    url: https://codeberg.org/sesivany/meshy
+
+popularity:
+  githubStars: 28
+  githubForks: 12
+  githubWatchers: 5
+  githubOpenIssues: 1
+  latestReleaseDownloads: 8
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - Popularity fields are Codeberg repository signals; latestReleaseDownloads counts Codeberg source archive downloads for tag 26.06.
+    - README describes the app as fairly feature complete and stable but still in active development.
+
+tags:
+  - gtk
+  - libadwaita
+  - flatpak
+  - desktop
+
+last_reviewed: 2026-06-23

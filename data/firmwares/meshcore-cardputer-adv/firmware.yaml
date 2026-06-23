@@ -18,8 +18,6 @@ lineage:
 runtime:
   framework: arduino
   language: cpp
-latest_version: latest
-released: 2026-05-15
 roles:
   - companion
   - standalone-ui

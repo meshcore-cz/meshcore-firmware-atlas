@@ -28,18 +28,18 @@
       icon: 'M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z'
     },
     {
-      href: '/devices/',
-      label: 'Devices',
-      n: data.counts.devices,
-      blurb: 'LoRa hardware that runs MeshCore — specs, radios and node roles.',
-      icon: 'M9 2h6a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v16h6V4H9Zm2 14h2v.5h-2V18Z'
-    },
-    {
       href: '/software/',
       label: 'Software',
       n: data.counts.software,
       blurb: 'Clients, integrations, gateways, tools and libraries for the network.',
       icon: 'M8.7 7.3 4 12l4.7 4.7 1.4-1.4L6.8 12l3.3-3.3-1.4-1.4Zm6.6 0-1.4 1.4L17.2 12l-3.3 3.3 1.4 1.4L20 12l-4.7-4.7Z'
+    },
+    {
+      href: '/devices/',
+      label: 'Devices',
+      n: data.counts.devices,
+      blurb: 'LoRa hardware that runs MeshCore — specs, radios and node roles.',
+      icon: 'M9 2h6a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v16h6V4H9Zm2 14h2v.5h-2V18Z'
     },
     {
       href: '/firmwares/',

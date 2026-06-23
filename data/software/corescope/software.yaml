@@ -1,13 +1,76 @@
 name: CoreScope
 kind: tool
 status: active
+maturity: stable
+description: >-
+  Self-hosted MeshCore packet analyzer with MQTT ingest, live packet feeds,
+  interactive maps, channel chat, packet tracing and per-node analytics.
+image: corescope.png
+
+maintainers:
+  - name: Kpa-clawbot
+    url: https://github.com/Kpa-clawbot
+
+repository: https://github.com/Kpa-clawbot/CoreScope
+documentation: https://github.com/Kpa-clawbot/CoreScope/tree/master/docs
+license: GPL-3.0-or-later
+
+languages:
+  - javascript
+  - go
+
+latest_version: v3.9.2
+released: 2026-06-13
+
+platforms:
+  - docker
+  - linux
+  - web
+interfaces:
+  - web
+  - api
+  - headless
+connections:
+  - mqtt
+  - http
+  - websocket
+capabilities:
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - mapping
+
+install:
+  - type: docker
+    package: ghcr.io/kpa-clawbot/corescope
+    url: https://github.com/Kpa-clawbot/CoreScope/pkgs/container/corescope
+    command: docker run -d --name corescope --restart=unless-stopped -p 80:80 -p 1883:1883 -v /your/data:/app/data ghcr.io/kpa-clawbot/corescope:latest
+  - type: github-release
+    url: https://github.com/Kpa-clawbot/CoreScope/releases
+  - type: source
+    url: https://github.com/Kpa-clawbot/CoreScope
+
+popularity:
+  githubStars: 140
+  githubForks: 34
+  githubWatchers: 2
+  githubOpenIssues: 115
+  githubContributors: 18
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - Latest GitHub release has no binary assets; deployment is documented through the GHCR Docker image or source checkout.
+
 tags:
   - monitoring
-  - map
   - analyzer
-platforms:
-  - web
-description: >-
-  Live MeshCore network monitoring and mapping — packet feeds, node maps and
-  observer stats used by several community networks.
-# repository / website: TODO — fill in canonical URLs.
+  - map
+
+last_reviewed: 2026-06-23

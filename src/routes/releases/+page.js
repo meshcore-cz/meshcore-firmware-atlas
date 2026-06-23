@@ -1,6 +1,6 @@
-import { latestReleases } from '$lib/data.js';
+import { allReleases } from '$lib/data.js';
 
 export function load() {
-  // 0 = no limit: every release group across all firmwares, newest first.
-  return { releases: latestReleases(0) };
+  // Every release group across all firmwares and software, newest first.
+  return { releases: allReleases() };
 }

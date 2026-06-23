@@ -1,0 +1,89 @@
+name: MeshCore Signal Tester
+kind: tool
+status: active
+maturity: stable
+description: >-
+  Web and Android signal-analysis tool for MeshCore companions and repeaters,
+  with grouped packet reception, RSSI/SNR history, repeater statistics,
+  GPS-tagged 3D mapping and CSV capture.
+
+image: logo.svg
+screenshots:
+  - file: charts.webp
+    caption: Repeater statistics and RSSI/SNR history
+  - file: 3dmap.webp
+    caption: GPS-tagged 3D signal map
+  - file: packets.webp
+    caption: Grouped packets with decoded details
+
+maintainers:
+  - name: Aleš Janda
+    url: https://github.com/kybl
+
+repository: https://github.com/kybl/meshcore-signal-tester
+website: https://meshcore.kyblsoft.cz/signal-tester
+license: MIT
+
+languages:
+  - javascript
+  - kotlin
+
+latest_version: v1.2.1
+released: 2026-06-22
+
+platforms:
+  - web
+  - android
+interfaces:
+  - web
+  - mobile
+connections:
+  - ble
+  - serial
+  - usb
+  - tcp
+node_roles:
+  - companion
+  - repeater
+capabilities:
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - mapping
+
+install:
+  - type: web
+    url: https://meshcore.kyblsoft.cz/signal-tester
+  - type: github-release
+    package: meshcore-signal-tester-release.apk
+    url: https://github.com/kybl/meshcore-signal-tester/releases
+  - type: source
+    url: https://github.com/kybl/meshcore-signal-tester
+
+popularity:
+  githubStars: 8
+  githubForks: 0
+  githubWatchers: 1
+  githubOpenIssues: 0
+  githubContributors: 2
+  latestReleaseDownloads: 1
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - The Android app adds background capture and raw TCP connections to WiFi companion firmware.
+    - Browser Bluetooth and serial support depends on the browser and platform.
+
+tags:
+  - signal-testing
+  - field-tool
+  - threejs
+  - packet-capture
+
+last_reviewed: 2026-06-23

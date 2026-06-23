@@ -110,6 +110,30 @@ function deepMerge(base, overlay) {
   return out;
 }
 
+// Attach cached releases from a record's sibling changelog.yaml, if present.
+// Shared by firmwares and software: renders each release's markdown notes and
+// derives latest_version/released from the newest release. Records without a
+// changelog file come back with `releases: []` so callers can treat them
+// uniformly. `renderMarkdown` is passed in (it's dynamically imported by
+// buildData to keep the markdown libs out of other entry points).
+function attachChangelog(root, kind, record, renderMarkdown) {
+  const clPath = join(root, 'data', kind, record.id, 'changelog.yaml');
+  if (!existsSync(clPath)) return { ...record, releases: [] };
+  const cl = load(readFileSync(clPath, 'utf8')) ?? {};
+  const rawReleases = cl.releases ?? [];
+  const { latest_version: _lv, released: _r, ...base } = record;
+  return {
+    ...base,
+    ...latestReleaseSummary(rawReleases),
+    releases: rawReleases.map((r) => ({
+      ...r,
+      notesHtml: renderMarkdown(r.notes, { baseUrl: record.repository })
+    })),
+    changelogSource: cl.source ?? null,
+    changelogUpdatedAt: cl.updatedAt ?? null
+  };
+}
+
 // Read the shared parts catalog (data/globals.yaml). Optional.
 function readGlobals(root) {
   const path = join(root, 'data', 'globals.yaml');
@@ -342,7 +366,9 @@ function buildSitemap(root, { devices, firmwares, vendors, networks, software, g
     ...firmwares.flatMap((f) => [`/firmware/${f.id}/`, `/firmware/${f.id}/releases/`]),
     ...vendors.map((v) => `/vendor/${v.id}/`),
     ...networks.map((n) => `/network/${n.id}/`),
-    ...software.map((s) => `/software/${s.id}/`)
+    ...software.flatMap((s) =>
+      s.releases?.length ? [`/software/${s.id}/`, `/software/${s.id}/releases/`] : [`/software/${s.id}/`]
+    )
   ];
 
   const urls = paths
@@ -379,9 +405,9 @@ export async function buildData(root = defaultRoot) {
   );
   const networkAreas = publishNetworkAreas(root, networks);
 
-  const software = readDir(root, 'software', 'software.yaml', dirDate).sort((a, b) =>
-    a.name.localeCompare(b.name)
-  );
+  const software = readDir(root, 'software', 'software.yaml', dirDate)
+    .map((s) => attachChangelog(root, 'software', s, renderMarkdown))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   const devices = readDir(root, 'devices', 'device.yaml', dirDate)
     .map((d) => ({ ...d, vendorName: vendorById.get(d.vendorId)?.name ?? null }))
@@ -400,26 +426,7 @@ export async function buildData(root = defaultRoot) {
   const globals = readGlobals(root);
 
   const firmwares = rawFirmwares
-    .map((fw) => {
-      // Attach cached releases from the sibling changelog.yaml, if present.
-      const clPath = join(root, 'data', 'firmwares', fw.id, 'changelog.yaml');
-      if (existsSync(clPath)) {
-        const cl = load(readFileSync(clPath, 'utf8')) ?? {};
-        const rawReleases = cl.releases ?? [];
-        const { latest_version: _lv, released: _r, ...fwBase } = fw;
-        return {
-          ...fwBase,
-          ...latestReleaseSummary(rawReleases),
-          releases: rawReleases.map((r) => ({
-            ...r,
-            notesHtml: renderMarkdown(r.notes, { baseUrl: fw.repository })
-          })),
-          changelogSource: cl.source ?? null,
-          changelogUpdatedAt: cl.updatedAt ?? null
-        };
-      }
-      return { ...fw, releases: [] };
-    })
+    .map((fw) => attachChangelog(root, 'firmwares', fw, renderMarkdown))
     .sort((a, b) => {
       const sa = statusRank(a.status);
       const sb = statusRank(b.status);
@@ -430,22 +437,22 @@ export async function buildData(root = defaultRoot) {
     });
 
   // The global data.json is imported into every page's shared bundle, so it must
-  // stay lean. A firmware's releases carry the rendered changelog HTML
+  // stay lean. A record's releases carry the rendered changelog HTML
   // (notes/notesHtml, ~1MB — two thirds of the dataset) plus per-variant URLs and
   // titles. None of that is needed by the release listings (homepage feed,
   // /releases, /firmwares), which only show version/date/prerelease and a variant
-  // count. The firmware detail and releases pages, which DO render notes, fetch
-  // the full per-record /firmware/<id>.json instead. So ship only the listing
-  // fields here; buildRecordJson() writes the full releases per record.
-  const liteFirmwares = firmwares.map((fw) => ({
-    ...fw,
-    releases: (fw.releases ?? []).map(({ version, datetime, date, prerelease }) => ({
+  // count. The firmware and software detail pages, which DO render notes, fetch
+  // the full per-record JSON instead. So ship only the listing fields here;
+  // buildRecordJson() writes the full releases per record.
+  const liteReleases = (releases) =>
+    (releases ?? []).map(({ version, datetime, date, prerelease }) => ({
       version,
       ...(datetime != null ? { datetime } : {}),
       ...(date != null ? { date } : {}),
       ...(prerelease ? { prerelease } : {})
-    }))
-  }));
+    }));
+  const liteFirmwares = firmwares.map((fw) => ({ ...fw, releases: liteReleases(fw.releases) }));
+  const liteSoftware = software.map((s) => ({ ...s, releases: liteReleases(s.releases) }));
 
   const dataset = {
     schemaVersion: 3,
@@ -463,7 +470,7 @@ export async function buildData(root = defaultRoot) {
     devices,
     vendors,
     networks,
-    software,
+    software: liteSoftware,
     compatibility,
     globals
   };

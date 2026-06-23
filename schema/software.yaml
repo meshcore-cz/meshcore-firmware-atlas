@@ -251,6 +251,13 @@ properties:
             - play-store
             - github-release
             - docker
+            - docker-compose
+            - desktop
+            - helm
+            - proxmox-lxc
+            - nixos
+            - bare-metal
+            - flatpak
             - homebrew
             - npm
             - pypi

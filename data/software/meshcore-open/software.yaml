@@ -1,0 +1,107 @@
+name: MeshCore Open
+kind: client
+status: active
+maturity: alpha
+description: >-
+  Unofficial cross-platform Flutter client for MeshCore with encrypted
+  messaging, contacts, channels, offline maps, node configuration and remote
+  repeater administration over Bluetooth, USB or TCP.
+
+image: meshcore-open.png
+screenshots:
+  - file: contacts.jpg
+    caption: Contacts and nearby mesh nodes
+  - file: chat.jpg
+    caption: Encrypted direct messaging
+  - file: map.jpg
+    caption: Live mesh map and route visualization
+  - file: channels.jpg
+    caption: Public channel messaging
+
+maintainers:
+  - name: zjs81
+    url: https://github.com/zjs81
+
+repository: https://github.com/zjs81/meshcore-open
+website: https://meshcoreopen.org/
+documentation: https://meshcoreopen.org/docs/getting-started/
+license: MIT
+
+languages:
+  - dart
+
+latest_version: PRE-BETA-9.5
+released: 2026-06-13
+
+platforms:
+  - android
+  - ios
+  - linux
+  - macos
+  - windows
+  - web
+interfaces:
+  - gui
+  - mobile
+  - web
+connections:
+  - ble
+  - serial
+  - usb
+  - tcp
+  - websocket
+node_roles:
+  - companion
+  - repeater
+  - room-server
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+  - remote-administration
+  - monitoring
+  - telemetry
+  - mapping
+  - notifications
+  - key-management
+
+install:
+  - type: play-store
+    package: com.meshcore.meshcore_open
+    url: https://play.google.com/store/apps/details?id=com.meshcore.meshcore_open
+  - type: app-store
+    url: https://testflight.apple.com/join/QzUGKJ65
+  - type: github-release
+    url: https://github.com/zjs81/meshcore-open/releases
+  - type: source
+    url: https://github.com/zjs81/meshcore-open
+
+popularity:
+  githubStars: 540
+  githubForks: 91
+  githubWatchers: 13
+  githubOpenIssues: 102
+  githubContributors: 31
+  latestReleaseDownloads: 1717
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - iOS currently supports BLE; USB and TCP companion connections are still in progress.
+    - Browser node connections require Chromium with Web Bluetooth or Web Serial support.
+    - Over-the-air firmware updates are listed on the project roadmap and are not yet available.
+
+tags:
+  - flutter
+  - offline
+  - cross-platform
+  - unofficial
+
+last_reviewed: 2026-06-23

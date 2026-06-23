@@ -1,0 +1,79 @@
+name: MeshCore for Home Assistant
+short_name: MeshCore HA
+kind: integration
+status: active
+maturity: beta
+description: >-
+  Custom Home Assistant integration for monitoring and controlling MeshCore
+  nodes over USB, BLE or TCP, with sensors, services, diagnostics and optional
+  map upload support.
+
+maintainers:
+  - name: meshcore-dev
+    url: https://github.com/meshcore-dev
+  - name: Alex Wolden
+    url: https://github.com/awolden
+
+repository: https://github.com/meshcore-dev/meshcore-ha
+documentation: https://meshcore-dev.github.io/meshcore-ha/
+license: MIT
+
+languages:
+  - python
+
+latest_version: v2.8.0
+released: 2026-06-18
+
+platforms:
+  - home-assistant
+interfaces:
+  - gui
+  - api
+connections:
+  - ble
+  - serial
+  - usb
+  - tcp
+  - mqtt
+capabilities:
+  - messaging
+  - contacts
+  - node-configuration
+  - monitoring
+  - telemetry
+  - mapping
+  - automation
+
+install:
+  - type: hacs
+    package: meshcore-dev/meshcore-ha
+    url: https://github.com/meshcore-dev/meshcore-ha
+  - type: source
+    url: https://github.com/meshcore-dev/meshcore-ha
+  - type: manual
+    url: https://meshcore-dev.github.io/meshcore-ha/
+
+popularity:
+  githubStars: 212
+  githubForks: 52
+  githubWatchers: 11
+  githubOpenIssues: 47
+  githubContributors: 30
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - README labels the integration as work in progress and notes BLE has not been thoroughly tested.
+
+tags:
+  - smart-home
+  - hacs
+  - home-assistant
+
+last_reviewed: 2026-06-23

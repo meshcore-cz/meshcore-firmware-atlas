@@ -1,15 +1,18 @@
 <script>
   import { base } from '$app/paths';
   import { displayVersion, fmtDateTime, relativeTime } from '$lib/format.js';
-  // A single release-group row, shared by the homepage feed and /releases.
+  // A single release-group row, shared by the homepage feed and /firmwares.
+  // `release.project` carries the source firmware/software (name + releases-page
+  // href). The mixed /releases page renders its own table instead.
   let { release } = $props();
+  let project = $derived(release.project);
 </script>
 
 <a
-  href="{base}/firmware/{release.firmware.id}/releases/#release-{release.version}"
+  href="{base}{project.href}#release-{release.version}"
   class="flex flex-wrap items-center gap-x-3 gap-y-1 border-b border-edge px-1 py-2.5 hover:bg-elev/60"
 >
-  <span class="text-[0.9rem] font-medium text-accent2">{release.firmware.name}</span>
+  <span class="text-[0.9rem] font-medium text-accent2">{project.name}</span>
   <span class="font-mono text-[0.9rem] font-semibold">{displayVersion(release.version)}</span>
   {#if release.prerelease}
     <span class="rounded bg-warn/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-warn uppercase">Pre</span>

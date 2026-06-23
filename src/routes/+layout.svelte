@@ -47,8 +47,8 @@
   const nav = [
     { href: '/', label: 'Home' },
     { href: '/networks/', label: 'Networks' },
-    { href: '/devices/', label: 'Devices' },
     { href: '/software/', label: 'Software' },
+    { href: '/devices/', label: 'Devices' },
     { href: '/firmwares/', label: 'Firmwares' },
     { href: '/matrix/', label: 'Compatibility' },
     { href: '/about/', label: 'About' }

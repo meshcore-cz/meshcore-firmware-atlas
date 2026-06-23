@@ -537,19 +537,58 @@ export function compatibilityMatrix() {
   return { firmwares: matrixFirmwares, rows };
 }
 
+// Descriptor attached to each release-feed row so ReleaseRow can render and link
+// to the source project, regardless of whether it's a firmware or software.
+// `href` points at the project's releases page; `kind` drives the /releases
+// filter and badge.
+const firmwareReleaseProject = (fw) => ({
+  id: fw.id,
+  name: fw.name,
+  kind: 'firmware',
+  type: fw.type,
+  href: `/firmware/${fw.id}/releases/`
+});
+const softwareReleaseProject = (s) => ({
+  id: s.id,
+  name: s.name,
+  kind: 'software',
+  type: s.kind,
+  href: `/software/${s.id}/releases/`
+});
+
 /**
- * Newest release groups across all firmwares, each tagged with its firmware.
+ * Newest release groups across all firmwares, each tagged with its project.
  * Variants are already collapsed by groupReleases().
  */
 export function latestReleases(limit = 12) {
   const out = [];
   for (const fw of firmwares) {
     for (const g of groupReleases(fw.releases)) {
-      out.push({ firmware: { id: fw.id, name: fw.name, type: fw.type }, ...g });
+      out.push({ project: firmwareReleaseProject(fw), ...g });
     }
   }
   out.sort((a, b) => (b.datetime ?? '').localeCompare(a.datetime ?? ''));
   return limit ? out.slice(0, limit) : out;
+}
+
+/**
+ * Every release group across all firmwares AND software, newest first, each
+ * tagged with its source project. Powers the /releases page.
+ */
+export function allReleases() {
+  const out = [];
+  for (const fw of firmwares) {
+    for (const g of groupReleases(fw.releases)) {
+      out.push({ project: firmwareReleaseProject(fw), ...g });
+    }
+  }
+  for (const s of software) {
+    for (const g of groupReleases(s.releases)) {
+      out.push({ project: softwareReleaseProject(s), ...g });
+    }
+  }
+  out.sort((a, b) => (b.datetime ?? '').localeCompare(a.datetime ?? ''));
+  return out;
 }
 
 /** The single newest release group for each firmware, newest firmware first. */
@@ -557,7 +596,7 @@ export function latestReleasePerFirmware() {
   const out = [];
   for (const fw of firmwares) {
     const [newest] = groupReleases(fw.releases);
-    if (newest) out.push({ firmware: { id: fw.id, name: fw.name, type: fw.type }, ...newest });
+    if (newest) out.push({ project: firmwareReleaseProject(fw), ...newest });
   }
   out.sort((a, b) => (b.datetime ?? '').localeCompare(a.datetime ?? ''));
   return out;

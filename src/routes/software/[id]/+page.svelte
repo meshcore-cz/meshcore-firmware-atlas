@@ -2,12 +2,18 @@
   import { base } from '$app/paths';
   import RecordFooter from '$lib/RecordFooter.svelte';
   import BackLink from '$lib/BackLink.svelte';
-  import { SOFTWARE_KIND_META, SOFTWARE_STATUS_META, LICENSE_TYPE_META, licenseType } from '$lib/data.js';
+  import { SOFTWARE_KIND_META, SOFTWARE_STATUS_META, LICENSE_TYPE_META, licenseType, groupReleases } from '$lib/data.js';
   import { clampDescription } from '$lib/seo.js';
   import Seo from '$lib/Seo.svelte';
+  import ReleaseGroupList from '$lib/ReleaseGroupList.svelte';
+  import ScreenshotGallery from '$lib/ScreenshotGallery.svelte';
   let { data } = $props();
   let s = $derived(data.software);
   let meta = $derived(SOFTWARE_KIND_META[s.kind]);
+
+  const PREVIEW = 3;
+  let releaseGroups = $derived(groupReleases(s.releases));
+  let previewGroups = $derived(releaseGroups.slice(0, PREVIEW));
 
   const MATURITY_META = {
     experimental: { label: 'Experimental', tw: 'bg-bad/15 text-bad' },
@@ -27,7 +33,9 @@
   };
   const INSTALL_LABELS = {
     'app-store': 'App Store', 'play-store': 'Play Store', 'github-release': 'GitHub release',
-    docker: 'Docker', homebrew: 'Homebrew', npm: 'npm', pypi: 'PyPI', cargo: 'Cargo',
+    docker: 'Docker', 'docker-compose': 'Docker Compose', desktop: 'Desktop app', helm: 'Kubernetes / Helm',
+    'proxmox-lxc': 'Proxmox LXC', nixos: 'NixOS Flake', 'bare-metal': 'Bare metal',
+    flatpak: 'Flatpak', homebrew: 'Homebrew', npm: 'npm', pypi: 'PyPI', cargo: 'Cargo',
     'go-install': 'go install', hacs: 'HACS', esphome: 'ESPHome', source: 'Source', web: 'Web', manual: 'Manual'
   };
   const POPULARITY_LABELS = {
@@ -154,21 +162,7 @@
 {#if screenshots.length}
   <section class="mb-7">
     <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Screenshots</h2>
-    <div class="flex flex-wrap gap-4">
-      {#each screenshots as shot (shot.file)}
-        <figure class="m-0">
-          <img
-            src={shot.url}
-            alt={shot.caption ?? s.name}
-            loading="lazy"
-            class="max-h-[440px] rounded-lg border border-edge bg-elev2"
-          />
-          {#if shot.caption}
-            <figcaption class="mt-1.5 max-w-[220px] text-[0.78rem] text-dim">{shot.caption}</figcaption>
-          {/if}
-        </figure>
-      {/each}
-    </div>
+    <ScreenshotGallery shots={screenshots} alt={s.name} />
   </section>
 {/if}
 
@@ -225,6 +219,25 @@
         </li>
       {/each}
     </ul>
+  </section>
+{/if}
+
+{#if releaseGroups.length}
+  <section class="mb-7">
+    <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2 border-b border-edge pb-1.5">
+      <h2 class="text-[1.1rem] font-semibold">Releases</h2>
+      {#if s.changelogUpdatedAt}
+        <span class="text-[0.72rem] text-dim">
+          {s.changelogSource === 'github' ? 'from GitHub · ' : ''}updated {s.changelogUpdatedAt.slice(0, 10)}
+        </span>
+      {/if}
+    </div>
+    <ReleaseGroupList groups={previewGroups} openFirst={false} markFirstLatest={true} />
+    {#if releaseGroups.length > PREVIEW}
+      <a class="mt-3 inline-block text-[0.88rem] text-accent2 hover:underline" href="{base}/software/{s.id}/releases/">
+        Show all {releaseGroups.length} releases →
+      </a>
+    {/if}
   </section>
 {/if}
 

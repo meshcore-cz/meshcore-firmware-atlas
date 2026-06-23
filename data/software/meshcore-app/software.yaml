@@ -22,7 +22,7 @@ website: https://meshcore.nz
 license_type: proprietary
 
 languages:
-   - flutter
+   - dart
 
 latest_version: 1.45.0
 released: 2026-06-14

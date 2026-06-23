@@ -1,12 +1,13 @@
-// Fetches release info for each firmware and writes data/firmwares/<id>/changelog.yaml.
+// Fetches release info for each firmware and software record and writes
+// data/<firmwares|software>/<id>/changelog.yaml.
 //
-// Source resolution per firmware (firmware.yaml):
+// Source resolution per record (firmware.yaml / software.yaml):
 //   changelog.source: github | manual | script
 //     - github (default when `repository` is a GitHub URL): releases pulled from
 //       the GitHub API and the file is overwritten.
 //     - manual: the file is hand-maintained; this script leaves it untouched.
 //     - script: GitHub releases are fetched (for tags/dates/links) and then
-//       passed to a per-firmware enrichment script that lives in the firmware's
+//       passed to a per-record enrichment script that lives in the record's
 //       data folder (changelog.script, default "fetch-changelog.js"). The script
 //       default-exports `async ({ githubReleases, mapRelease, fetch }) => releases`.
 //   changelog.repo: "owner/name" override (else parsed from `repository`).
@@ -63,8 +64,8 @@ function mapRelease(r) {
   return out;
 }
 
-async function buildReleases(fw, dir, source) {
-  const repo = parseRepo(fw);
+async function buildReleases(record, kind, dir, source) {
+  const repo = parseRepo(record);
 
   if (source === 'github') {
     if (!repo) throw new Error('github source but no repo could be resolved');
@@ -72,8 +73,8 @@ async function buildReleases(fw, dir, source) {
   }
 
   if (source === 'script') {
-    const scriptName = fw.changelog?.script ?? 'fetch-changelog.js';
-    const scriptPath = join(root, 'data', 'firmwares', dir, scriptName);
+    const scriptName = record.changelog?.script ?? 'fetch-changelog.js';
+    const scriptPath = join(root, 'data', kind, dir, scriptName);
     if (!existsSync(scriptPath)) throw new Error(`missing changelog script ${scriptName}`);
     const githubReleases = repo ? await fetchGithubRaw(repo) : [];
     const mod = await import(pathToFileURL(scriptPath).href);
@@ -97,59 +98,70 @@ function stableStringify(value) {
   return JSON.stringify(value);
 }
 
-const fwBase = join(root, 'data', 'firmwares');
+// Record collections that carry changelogs, by data folder + manifest filename.
+const COLLECTIONS = [
+  { kind: 'firmwares', file: 'firmware.yaml' },
+  { kind: 'software', file: 'software.yaml' }
+];
+
 let changed = 0;
 let unchanged = 0;
 let failed = 0;
 
-for (const d of readdirSync(fwBase, { withFileTypes: true })) {
-  if (!d.isDirectory()) continue;
-  const fwPath = join(fwBase, d.name, 'firmware.yaml');
-  if (!existsSync(fwPath)) continue;
-  const fw = load(readFileSync(fwPath, 'utf8')) ?? {};
+for (const { kind, file } of COLLECTIONS) {
+  const base = join(root, 'data', kind);
+  if (!existsSync(base)) continue;
 
-  const source = resolveSource(fw);
-  if (source === 'manual') {
-    console.log(`· ${d.name}: manual changelog, skipping`);
-    continue;
-  }
-  if (!source) {
-    console.log(`· ${d.name}: no release source, skipping`);
-    continue;
-  }
+  for (const d of readdirSync(base, { withFileTypes: true })) {
+    if (!d.isDirectory()) continue;
+    const recPath = join(base, d.name, file);
+    if (!existsSync(recPath)) continue;
+    const record = load(readFileSync(recPath, 'utf8')) ?? {};
+    const label = `${kind}/${d.name}`;
 
-  try {
-    const { repo, releases } = await buildReleases(fw, d.name, source);
-    const outPath = join(fwBase, d.name, 'changelog.yaml');
-
-    // Preserve the existing `updatedAt` when the actual content (source/repo/
-    // releases) is unchanged, so a refresh that finds no new releases doesn't
-    // churn the file with a fresh timestamp.
-    const existing = existsSync(outPath) ? load(readFileSync(outPath, 'utf8')) ?? {} : null;
-    const body = { source, repo: repo ?? undefined, releases };
-    const isUnchanged =
-      existing &&
-      stableStringify({ source: existing.source, repo: existing.repo, releases: existing.releases }) ===
-        stableStringify(body);
-
-    const updatedAt = isUnchanged ? existing.updatedAt : new Date().toISOString();
-    const out = { source, repo: repo ?? undefined, updatedAt, releases };
-    const yaml = dump(out, { lineWidth: 100, noRefs: true });
-
-    if (!existing || readFileSync(outPath, 'utf8') !== yaml) {
-      writeFileSync(outPath, yaml);
+    const source = resolveSource(record);
+    if (source === 'manual') {
+      console.log(`· ${label}: manual changelog, skipping`);
+      continue;
+    }
+    if (!source) {
+      console.log(`· ${label}: no release source, skipping`);
+      continue;
     }
 
-    if (isUnchanged) {
-      console.log(`· ${d.name}: ${releases.length} release(s) via ${source} — unchanged`);
-      unchanged++;
-    } else {
-      console.log(`✓ ${d.name}: ${releases.length} release(s) via ${source}${repo ? ` (${repo})` : ''}`);
-      changed++;
+    try {
+      const { repo, releases } = await buildReleases(record, kind, d.name, source);
+      const outPath = join(base, d.name, 'changelog.yaml');
+
+      // Preserve the existing `updatedAt` when the actual content (source/repo/
+      // releases) is unchanged, so a refresh that finds no new releases doesn't
+      // churn the file with a fresh timestamp.
+      const existing = existsSync(outPath) ? load(readFileSync(outPath, 'utf8')) ?? {} : null;
+      const body = { source, repo: repo ?? undefined, releases };
+      const isUnchanged =
+        existing &&
+        stableStringify({ source: existing.source, repo: existing.repo, releases: existing.releases }) ===
+          stableStringify(body);
+
+      const updatedAt = isUnchanged ? existing.updatedAt : new Date().toISOString();
+      const out = { source, repo: repo ?? undefined, updatedAt, releases };
+      const yaml = dump(out, { lineWidth: 100, noRefs: true });
+
+      if (!existing || readFileSync(outPath, 'utf8') !== yaml) {
+        writeFileSync(outPath, yaml);
+      }
+
+      if (isUnchanged) {
+        console.log(`· ${label}: ${releases.length} release(s) via ${source} — unchanged`);
+        unchanged++;
+      } else {
+        console.log(`✓ ${label}: ${releases.length} release(s) via ${source}${repo ? ` (${repo})` : ''}`);
+        changed++;
+      }
+    } catch (err) {
+      console.error(`✗ ${label}: ${err.message}`);
+      failed++;
     }
-  } catch (err) {
-    console.error(`✗ ${d.name}: ${err.message}`);
-    failed++;
   }
 }
 

@@ -1,0 +1,126 @@
+name: MeshMonitor
+kind: tool
+status: active
+maturity: stable
+description: >-
+  Self-hosted multi-protocol dashboard for monitoring and administering
+  MeshCore, Meshtastic and MQTT networks, with unified maps, messaging,
+  telemetry, automation, alerts and per-source access control.
+
+image: meshmonitor.png
+screenshots:
+  - file: dashboard.png
+    caption: Multi-source network dashboard
+  - file: messages.png
+    caption: Unified channel messaging
+  - file: telemetry.png
+    caption: Telemetry dashboards and charts
+  - file: map.png
+    caption: Interactive network map
+
+maintainers:
+  - name: Yeraze
+    url: https://github.com/Yeraze
+
+repository: https://github.com/Yeraze/meshmonitor
+website: https://meshmonitor.org/
+documentation: https://meshmonitor.org/getting-started
+license: BSD-3-Clause
+
+languages:
+  - typescript
+  - javascript
+
+latest_version: v4.11.5
+released: 2026-06-22
+
+platforms:
+  - docker
+  - kubernetes
+  - linux
+  - macos
+  - nixos
+  - proxmox
+  - windows
+  - web
+interfaces:
+  - web
+  - gui
+  - api
+  - headless
+connections:
+  - ble
+  - serial
+  - usb
+  - tcp
+  - mqtt
+  - http
+  - websocket
+node_roles:
+  - companion
+  - repeater
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+  - remote-administration
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - mapping
+  - firmware-update
+  - automation
+  - notifications
+  - bridging
+
+install:
+  - type: docker-compose
+    package: ghcr.io/yeraze/meshmonitor
+    url: https://meshmonitor.org/getting-started.html#quick-start-with-docker-compose
+    command: docker compose up -d
+  - type: desktop
+    package: Windows / macOS
+    url: https://github.com/Yeraze/meshmonitor/releases
+  - type: helm
+    package: meshmonitor
+    url: https://meshmonitor.org/deployment/HELM_GUIDE.html
+  - type: proxmox-lxc
+    url: https://meshmonitor.org/deployment/PROXMOX_LXC_GUIDE.html
+  - type: nixos
+    url: https://github.com/benjajaja/nixos-rk3588/blob/main/configuration.nix#L580
+  - type: bare-metal
+    package: Node.js
+    url: https://meshmonitor.org/deployment/DEPLOYMENT_GUIDE.html#bare-metal-node-js-deployment
+  - type: source
+    url: https://github.com/Yeraze/meshmonitor
+
+popularity:
+  githubStars: 537
+  githubForks: 67
+  githubWatchers: 4
+  githubOpenIssues: 15
+  githubContributors: 31
+  latestReleaseDownloads: 25
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - MeshCore devices connect over USB or TCP; BLE support uses a bridge sidecar.
+    - Native Windows and macOS desktop installers are published with GitHub releases.
+    - Docker images are published for amd64, arm64 and armv7.
+
+tags:
+  - multi-protocol
+  - self-hosted
+  - dashboard
+  - security
+  - mqtt
+
+last_reviewed: 2026-06-23
