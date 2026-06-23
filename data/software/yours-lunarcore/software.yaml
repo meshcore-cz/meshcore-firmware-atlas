@@ -1,0 +1,65 @@
+name: Yours
+kind: client
+status: active
+maturity: experimental
+description: >-
+  Android encrypted mesh-messaging client for LunarCore firmware, exploring
+  Double Ratchet sessions, onion routing, cover traffic, anonymous credentials
+  and privacy-preserving local storage over LoRa.
+
+image: icon.png
+
+maintainers:
+  - name: STCisGOOD
+    url: https://github.com/STCisGOOD
+
+repository: https://github.com/STCisGOOD/yours-x-lunarcore
+license: MIT
+
+languages:
+  - kotlin
+  - rust
+
+platforms:
+  - android
+interfaces:
+  - mobile
+connections:
+  - ble
+node_roles:
+  - companion
+capabilities:
+  - messaging
+  - contacts
+  - key-management
+
+install:
+  - type: source
+    url: https://github.com/STCisGOOD/yours-x-lunarcore
+
+popularity:
+  githubStars: 5
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 0
+  githubContributors: 1
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Requires LunarCore firmware on Heltec V3 hardware rather than standard MeshCore firmware.
+
+tags:
+  - lunarcore
+  - privacy
+  - onion-routing
+  - double-ratchet
+  - experimental
+
+last_reviewed: 2026-06-23

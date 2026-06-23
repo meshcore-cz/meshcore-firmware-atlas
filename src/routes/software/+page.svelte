@@ -1,16 +1,18 @@
 <script>
   import { base } from '$app/paths';
   import { SOFTWARE_KIND_META, softwareKindsInUse, LICENSE_TYPE_META, licenseType, descriptionToPlain } from '$lib/data.js';
+  import { displayVersion, relativeTime, fullDateTime, releaseFreshnessTone } from '$lib/format.js';
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
   import Card from '$lib/Card.svelte';
   import SoftwareIcon from '$lib/SoftwareIcon.svelte';
+  import PlatformIcon from '$lib/PlatformIcon.svelte';
+  import { uniquePlatformsForIcons, platformMeta } from '$lib/platforms.js';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
   let { data } = $props();
 
   const kinds = softwareKindsInUse();
-  const allTags = [...new Set(data.software.flatMap((s) => s.tags ?? []))].sort();
 
   // Filter state is synced to / from the URL so a filtered view is shareable and
   // bookmarkable (matching Devices/Firmwares/Networks). It starts at its defaults
@@ -19,7 +21,6 @@
   // the prerendered list and corrupt hydration.
   let query = $state('');
   let activeKind = $state('all');
-  let activeTags = $state([]);
   let hydrated = $state(false);
 
   onMount(() => {
@@ -27,7 +28,6 @@
     query = p.get('q') ?? '';
     const kind = p.get('kind');
     if (kind && kinds.includes(kind)) activeKind = kind;
-    activeTags = (p.get('tags') ?? '').split(',').filter((t) => allTags.includes(t));
     hydrated = true;
   });
 
@@ -38,13 +38,14 @@
     const p = new URLSearchParams();
     if (query.trim()) p.set('q', query.trim());
     if (activeKind !== 'all') p.set('kind', activeKind);
-    if (activeTags.length) p.set('tags', activeTags.join(','));
     const qs = p.toString();
     history.replaceState(history.state, '', qs ? `${location.pathname}?${qs}` : location.pathname);
   });
 
-  function toggleTag(t) {
-    activeTags = activeTags.includes(t) ? activeTags.filter((x) => x !== t) : [...activeTags, t];
+  // Compact star count: 1240 → "1.2k", 980 → "980".
+  function fmtStars(n) {
+    if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1).replace(/\.0$/, '') + 'k';
+    return String(n);
   }
 
   // Lowercased searchable blob per item; matches name, aliases, description,
@@ -65,10 +66,13 @@
       .toLowerCase();
   }
 
+  function softwareStars(s) {
+    return s.popularity?.githubStars ?? -1;
+  }
+
   let filtered = $derived(
     data.software.filter((s) => {
       if (activeKind !== 'all' && s.kind !== activeKind) return false;
-      if (!activeTags.every((t) => (s.tags ?? []).includes(t))) return false;
       const q = query.trim().toLowerCase();
       return !q || searchText(s).includes(q);
     })
@@ -76,7 +80,11 @@
 
   let groups = $derived(
     kinds
-      .map((k) => ({ kind: k, meta: SOFTWARE_KIND_META[k], items: filtered.filter((s) => s.kind === k) }))
+      .map((k) => ({
+        kind: k,
+        meta: SOFTWARE_KIND_META[k],
+        items: filtered.filter((s) => s.kind === k).sort((a, b) => softwareStars(b) - softwareStars(a))
+      }))
       .filter((g) => g.items.length)
   );
 </script>
@@ -86,9 +94,9 @@
   description={`${data.software.length} MeshCore clients, integrations, gateways, tools, libraries and network apps.`}
 />
 
-<PageHeader title="Software" subtitleClass="max-w-[75ch]">
+<PageHeader collection="software" subtitleClass="max-w-[75ch]">
   MeshCore-related software — clients, integrations, gateways &amp; bridges, tools, libraries and
-  apps that run on the network. Filter by kind or tag.
+  apps that run on the network. Filter by kind or search.
 </PageHeader>
 
 <!-- Search -->
@@ -100,7 +108,7 @@
 />
 
 <!-- Kind filter -->
-<div class="mb-2 flex flex-wrap gap-1.5">
+<div class="mb-7 flex flex-wrap gap-1.5">
   <button
     type="button"
     onclick={() => (activeKind = 'all')}
@@ -118,21 +126,6 @@
     >{SOFTWARE_KIND_META[k].label}</button>
   {/each}
 </div>
-
-<!-- Tag filter -->
-{#if allTags.length}
-  <div class="mb-7 flex flex-wrap gap-1.5">
-    {#each allTags as t (t)}
-      <button
-        type="button"
-        onclick={() => toggleTag(t)}
-        class="rounded-full border px-2 py-0.5 font-mono text-[0.72rem] transition {activeTags.includes(t)
-          ? 'border-accent2 bg-accent2/15 text-accent2'
-          : 'border-edge text-dim hover:text-ink'}"
-      >#{t}</button>
-    {/each}
-  </div>
-{/if}
 
 {#if groups.length}
   {#each groups as g (g.kind)}
@@ -161,12 +154,20 @@
                 </span>
               </span>
               <span class="flex shrink-0 flex-col items-end gap-1">
-                <span class="rounded-md px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide uppercase {g.meta.tw}">
-                  {g.meta.singular}
-                </span>
                 {#if licensing}
                   <span class="rounded-md px-1.5 py-0.5 text-[0.6rem] font-medium whitespace-nowrap {LICENSE_TYPE_META[licensing]?.tw ?? ''}">
                     {LICENSE_TYPE_META[licensing]?.label ?? licensing}
+                  </span>
+                {/if}
+                {#if s.platforms?.length}
+                  {@const iconPlatforms = uniquePlatformsForIcons(s.platforms)}
+                  <span class="flex flex-wrap justify-end gap-1.5">
+                    {#each iconPlatforms.slice(0, 3) as p (p)}
+                      <PlatformIcon platform={p} class="opacity-75" />
+                    {/each}
+                    {#if iconPlatforms.length > 3}
+                      <span class="self-center font-mono text-[0.6rem] text-dim" title={s.platforms.map((p) => platformMeta(p).label).join(', ')}>+{iconPlatforms.length - 3}</span>
+                    {/if}
                   </span>
                 {/if}
               </span>
@@ -175,10 +176,42 @@
               <p class="mt-1.5 line-clamp-3 text-[0.85rem] text-dim">{descriptionToPlain(s.description)}</p>
             {/if}
             {#if s.tags?.length}
-              <div class="mt-2.5 flex flex-wrap gap-1">
+              <div class="my-2.5 flex flex-wrap gap-1">
                 {#each s.tags as t (t)}
                   <span class="rounded-full bg-elev2 px-1.5 py-0.5 font-mono text-[0.66rem] text-dim">#{t}</span>
                 {/each}
+              </div>
+            {/if}
+
+            <!-- Popularity / freshness footer: stars, latest version + when, and
+                 the lead maintainer. Each piece is optional, so the row hides
+                 entirely when a record has none of them. -->
+            {@const stars = s.popularity?.githubStars}
+            {@const author = s.maintainers?.[0]?.name}
+            {#if stars != null || s.latest_version || author}
+              <div class="mt-auto flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-edge/60 pt-2.5 text-[0.72rem] text-dim">
+                {#if stars != null}
+                  <span class="inline-flex items-center gap-1" title="{stars.toLocaleString()} GitHub stars">
+                    <svg class="h-3.5 w-3.5 text-warn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="m12 2 2.9 6.3 6.8.7-5 4.6 1.4 6.7L12 17.8 5.9 20.3l1.4-6.7-5-4.6 6.8-.7L12 2Z" />
+                    </svg>
+                    <span class="tabular-nums">{fmtStars(stars)}</span>
+                  </span>
+                {/if}
+                {#if s.latest_version}
+                  <span class="inline-flex items-center gap-1" title={s.released ? `Released ${fullDateTime(s.released)}` : ''}>
+                    <span class="font-mono text-ink/80">{displayVersion(s.latest_version)}</span>
+                    {#if s.released}<span class="text-dim/80">· <span class={releaseFreshnessTone(s.released)}>{relativeTime(s.released)}</span></span>{/if}
+                  </span>
+                {/if}
+                {#if author}
+                  <span class="inline-flex min-w-0 items-center gap-1">
+                    <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <circle cx="12" cy="8" r="3.2" /><path d="M5 20a7 7 0 0 1 14 0" stroke-linecap="round" />
+                    </svg>
+                    <span class="truncate">{author}{s.maintainers.length > 1 ? ` +${s.maintainers.length - 1}` : ''}</span>
+                  </span>
+                {/if}
               </div>
             {/if}
           </Card>

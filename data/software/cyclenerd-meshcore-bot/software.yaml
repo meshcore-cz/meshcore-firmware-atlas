@@ -1,0 +1,74 @@
+name: Cyclenerd MeshCore Bot
+kind: bot
+status: active
+maturity: stable
+description: >-
+  Lightweight Node.js command bot for private MeshCore channels, providing ping
+  and date responses plus scheduled repeater status collection and optional CSV
+  telemetry logging.
+
+screenshots:
+  - file: bot-log.png
+    caption: MeshCore bot responses and status logging
+  - file: client.jpg
+    caption: Commands sent from a MeshCore client
+
+maintainers:
+  - name: Christian Lueck
+    url: https://github.com/Cyclenerd
+
+repository: https://github.com/Cyclenerd/meshcore-bot
+license: Apache-2.0
+
+languages:
+  - javascript
+
+platforms:
+  - linux
+  - macos
+interfaces:
+  - cli
+  - headless
+connections:
+  - serial
+  - usb
+node_roles:
+  - companion
+  - repeater
+capabilities:
+  - messaging
+  - remote-administration
+  - monitoring
+  - telemetry
+  - automation
+
+install:
+  - type: source
+    url: https://github.com/Cyclenerd/meshcore-bot
+    command: npm ci --production
+
+popularity:
+  githubStars: 28
+  githubForks: 3
+  githubWatchers: 1
+  githubOpenIssues: 4
+  githubContributors: 2
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Responds only in private channels to reduce public-channel spam.
+
+tags:
+  - command-bot
+  - repeater-monitoring
+  - csv
+  - private-channels
+
+last_reviewed: 2026-06-23

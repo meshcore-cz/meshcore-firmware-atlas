@@ -157,7 +157,8 @@ export const SOFTWARE_KIND_META = {
   gateway: { label: 'Gateways & Bridges', singular: 'Gateway / Bridge', order: 2, tw: 'bg-warn/15 text-warn' },
   tool: { label: 'Tools', singular: 'Tool', order: 3, tw: 'bg-ok/15 text-ok' },
   library: { label: 'Libraries & SDKs', singular: 'Library / SDK', order: 4, tw: 'bg-dim/20 text-dim' },
-  'network-app': { label: 'Network Apps', singular: 'Network App', order: 5, tw: 'bg-accent/15 text-accent' }
+  'network-app': { label: 'Network Apps', singular: 'Network App', order: 5, tw: 'bg-accent/15 text-accent' },
+  bot: { label: 'Bots', singular: 'Bot', order: 99, tw: 'bg-accent2/15 text-accent2' }
 };
 
 /** Kinds present in the catalogue, in display order. */

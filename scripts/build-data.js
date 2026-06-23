@@ -134,6 +134,28 @@ function attachChangelog(root, kind, record, renderMarkdown) {
   };
 }
 
+// Read every JSON Schema under schema/*.yaml into one importable bundle for the
+// in-app schema explorer (src/routes/schemas). The full schema object is kept
+// verbatim so the explorer can render properties, descriptions, constraints,
+// $defs and examples; the source-of-truth remains the YAML files.
+function readSchemas(root) {
+  const dir = join(root, 'schema');
+  if (!existsSync(dir)) return [];
+  const out = [];
+  for (const file of readdirSync(dir).filter((f) => f.endsWith('.yaml')).sort()) {
+    const schema = load(readFileSync(join(dir, file), 'utf8')) ?? {};
+    const id = file.replace(/\.yaml$/, '');
+    out.push({
+      id,
+      file: `schema/${file}`,
+      title: typeof schema.title === 'string' ? schema.title : id,
+      description: typeof schema.description === 'string' ? schema.description : '',
+      schema
+    });
+  }
+  return out;
+}
+
 // Read the shared parts catalog (data/globals.yaml). Optional.
 function readGlobals(root) {
   const path = join(root, 'data', 'globals.yaml');
@@ -360,6 +382,7 @@ function buildSitemap(root, { devices, firmwares, vendors, networks, software, g
     '/software/',
     '/matrix/',
     '/releases/',
+    '/schemas/',
     '/about/',
     ...METRICS.map((m) => `/device-rank/${m.id}/`),
     ...devices.map((d) => `/device/${d.id}/`),
@@ -482,6 +505,20 @@ export async function buildData(root = defaultRoot) {
   ]) {
     mkdirSync(dirname(target), { recursive: true });
     writeFileSync(target, json);
+  }
+
+  // Schemas ship as their own bundle, not inside data.json: only the schema
+  // explorer route needs them, and data.json is imported into every page's
+  // shared bundle, so it must stay lean.
+  const schemas = readSchemas(root);
+  const schemaBundle = { generatedAt: dataset.generatedAt, schemas };
+  const schemaJson = JSON.stringify(schemaBundle, null, 2) + '\n';
+  for (const target of [
+    join(root, 'src', 'lib', 'generated', 'schemas.json'),
+    join(root, 'static', 'schemas.json')
+  ]) {
+    mkdirSync(dirname(target), { recursive: true });
+    writeFileSync(target, schemaJson);
   }
 
   const sitemapUrls = buildSitemap(root, {

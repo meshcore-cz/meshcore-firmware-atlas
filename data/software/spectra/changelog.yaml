@@ -1,0 +1,38 @@
+source: manual
+updatedAt: '2026-06-23T00:00:00Z'
+releases:
+  - version: v0.9.0
+    name: v0.9.0
+    datetime: '2026-04-30T22:47:30Z'
+    url: https://forge.hackers.town/Wrewdison/Spectra/releases/tag/v0.9.0
+    prerelease: false
+  - version: v0.8.0
+    name: v0.8.0
+    datetime: '2026-04-02T03:34:47Z'
+    url: https://forge.hackers.town/Wrewdison/Spectra/releases/tag/v0.8.0
+    prerelease: false
+  - version: v0.5.0
+    name: v0.5.0
+    datetime: '2026-03-20T17:04:20Z'
+    url: https://forge.hackers.town/Wrewdison/Spectra/releases/tag/v0.5.0
+    prerelease: false
+  - version: v0.4.0
+    name: v0.4.0
+    datetime: '2026-03-17T21:44:03Z'
+    url: https://forge.hackers.town/Wrewdison/Spectra/releases/tag/v0.4.0
+    prerelease: false
+  - version: v0.3.0
+    name: v0.3.0
+    datetime: '2026-03-16T23:00:28Z'
+    url: https://forge.hackers.town/Wrewdison/Spectra/releases/tag/v0.3.0
+    prerelease: false
+  - version: v0.2.0
+    name: v0.2.0
+    datetime: '2026-03-16T17:14:04Z'
+    url: https://forge.hackers.town/Wrewdison/Spectra/releases/tag/v0.2.0
+    prerelease: false
+  - version: Spectra-v0.1.0
+    name: Spectra-v0.1.0
+    datetime: '2026-03-13T01:42:19Z'
+    url: https://forge.hackers.town/Wrewdison/Spectra/releases/tag/Spectra-v0.1.0
+    prerelease: false

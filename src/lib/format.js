@@ -51,6 +51,20 @@ export function fullDateTime(dt) {
   });
 }
 
+/** Tailwind text colour for a release date — fresh, aging, or stale. */
+export function releaseFreshnessTone(dt) {
+  if (!dt) return 'text-dim/80';
+  const then = new Date(dt).getTime();
+  if (Number.isNaN(then)) return 'text-dim/80';
+  const ageMs = Date.now() - then;
+  if (ageMs < 0) return 'text-dim/80';
+  const day = 24 * 60 * 60 * 1000;
+  if (ageMs <= 7 * day) return 'text-ok';
+  if (ageMs <= 30 * day) return 'text-dim/80';
+  if (ageMs <= 90 * day) return 'text-warn';
+  return 'text-bad';
+}
+
 /** Use relative time only for fresh timestamps, falling back to a full date. */
 export function recentTimeLabel(dt, maxAgeDays = 7) {
   if (!dt) return '';

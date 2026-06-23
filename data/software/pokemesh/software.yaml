@@ -1,0 +1,74 @@
+name: PokeMesh
+kind: bot
+status: active
+maturity: experimental
+description: >-
+  Collaborative Pokémon FireRed game operated through MeshCore channel
+  commands, using vote-based emulator input and a local vision-language model
+  to summarize each game state within mesh message limits.
+
+screenshots:
+  - file: game.png
+    caption: Pokémon FireRed emulator state
+  - file: processed.png
+    caption: Preprocessed game view for local vision analysis
+  - file: chat.jpg
+    caption: PokeMesh commands and game summaries in MeshCore chat
+
+maintainers:
+  - name: Idrees Hassan
+    url: https://github.com/IdreesInc
+
+repository: https://github.com/IdreesInc/PokeMesh
+website: https://discord.gg/6yxE9prcNc
+license: GPL-3.0-only
+
+languages:
+  - python
+  - shell
+
+platforms:
+  - linux
+interfaces:
+  - cli
+  - headless
+connections:
+  - serial
+  - usb
+node_roles:
+  - companion
+capabilities:
+  - messaging
+  - channels
+  - automation
+
+install:
+  - type: source
+    url: https://github.com/IdreesInc/PokeMesh
+
+popularity:
+  githubStars: 8
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 0
+  githubContributors: 1
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Requires a local Pokémon FireRed ROM, development build of mGBA, mGBA-http and a local vision-language model.
+    - Not affiliated with Nintendo, Game Freak or The Pokémon Company.
+
+tags:
+  - game-bot
+  - pokemon
+  - local-ai
+  - collaborative
+
+last_reviewed: 2026-06-23

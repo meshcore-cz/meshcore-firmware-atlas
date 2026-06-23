@@ -1,0 +1,94 @@
+name: Domoticz MeshCore Plugin
+kind: integration
+status: active
+maturity: beta
+description: >-
+  Domoticz integration exposing MeshCore node telemetry, contacts, messaging,
+  maps and historical radio analytics as native devices, dashboards and
+  automation inputs.
+
+screenshots:
+  - file: dashboard.png
+    caption: Domoticz MeshCore dashboard
+  - file: topology.png
+    caption: Mesh topology and routed paths
+  - file: history.png
+    caption: Historical RSSI, SNR and packet analytics
+  - file: firehose.png
+    caption: Live received-packet stream
+
+maintainers:
+  - name: galadril
+    url: https://github.com/galadril
+
+repository: https://github.com/galadril/Domoticz-MeshCore-Plugin
+documentation: https://galadril.github.io/Domoticz-MeshCore-Plugin/
+license: MIT
+
+languages:
+  - python
+  - javascript
+  - html
+
+latest_version: v0.1.0
+released: 2026-05-23
+
+platforms:
+  - domoticz
+  - linux
+  - web
+interfaces:
+  - web
+  - api
+  - headless
+connections:
+  - ble
+  - serial
+  - usb
+  - tcp
+  - websocket
+node_roles:
+  - companion
+  - repeater
+capabilities:
+  - messaging
+  - contacts
+  - remote-administration
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - mapping
+  - automation
+  - notifications
+
+install:
+  - type: manual
+    package: Domoticz plugin
+    url: https://galadril.github.io/Domoticz-MeshCore-Plugin/
+  - type: source
+    url: https://github.com/galadril/Domoticz-MeshCore-Plugin
+
+popularity:
+  githubStars: 1
+  githubForks: 1
+  githubWatchers: 0
+  githubOpenIssues: 1
+  githubContributors: 3
+  latestReleaseDownloads: 0
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+
+tags:
+  - domoticz
+  - home-automation
+  - dashboard
+  - dzvents
+
+last_reviewed: 2026-06-23

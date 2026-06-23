@@ -3,6 +3,7 @@
   import { base } from '$app/paths';
   import { API_BASE, LIVE_ENABLED, poll, fmtRate, agoLabel } from '$lib/pulse.js';
   import Seo from '$lib/Seo.svelte';
+  import PageHeader from '$lib/PageHeader.svelte';
 
   // Reachability + health. `online`: null = checking, true = up, false = down.
   // We don't reuse poll() for health because it swallows failures, and this page
@@ -87,11 +88,10 @@
   description="Live status of the optional MeshCore Ninja metrics API and its per-network analyzer connections."
 />
 
-<h1 class="mb-1 text-[clamp(1.5rem,5vw,2rem)] font-bold">API status</h1>
-<p class="mb-5 max-w-2xl text-dim">
+<PageHeader tool="status" subtitleClass="mb-5 max-w-2xl">
   Health of the optional live-metrics API that powers pkt/m and node counts. The
   catalog itself is fully static and works whether or not this API is up.
-</p>
+</PageHeader>
 
 {#if !LIVE_ENABLED}
   <div class="rounded-xl border border-edge bg-elev p-5">

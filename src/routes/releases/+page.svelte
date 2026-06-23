@@ -1,6 +1,7 @@
 <script>
   import { base } from '$app/paths';
   import Seo from '$lib/Seo.svelte';
+  import PageHeader from '$lib/PageHeader.svelte';
   import Pagination from '$lib/Pagination.svelte';
   import Chip from '$lib/Chip.svelte';
   import { displayVersion, fmtDateTime, relativeTime } from '$lib/format.js';
@@ -103,8 +104,9 @@
   description={`${data.releases.length} MeshCore firmware and software releases across all projects, newest first.`}
 />
 
-<h1 class="mb-1 text-[clamp(1.5rem,5vw,2rem)] font-bold">Releases</h1>
-<p class="mb-4 text-dim">Releases across all firmwares and software, newest first.</p>
+<PageHeader tool="releases" subtitleClass="mb-4">
+  Releases across all firmwares and software, newest first.
+</PageHeader>
 
 <div class="mb-4 flex flex-wrap items-center gap-3">
   <div class="flex flex-wrap gap-1.5">

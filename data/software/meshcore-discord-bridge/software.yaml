@@ -1,0 +1,75 @@
+name: MeshCore Discord Bridge
+kind: bot
+status: active
+maturity: beta
+description: >-
+  Bidirectional Node.js bridge between MeshCore channels and Discord, with
+  multi-channel and multi-server routing, message chunking, flood protection,
+  paced send queues and administrator pause controls.
+
+maintainers:
+  - name: Hude06
+    url: https://github.com/Hude06
+
+repository: https://github.com/Hude06/MeshCoreDiscordBridge
+license_type: source-available
+
+languages:
+  - javascript
+
+latest_version: v1.2
+released: 2026-02-23
+
+platforms:
+  - linux
+  - macos
+  - windows
+interfaces:
+  - cli
+  - headless
+connections:
+  - serial
+  - usb
+  - http
+  - websocket
+node_roles:
+  - companion
+capabilities:
+  - messaging
+  - channels
+  - automation
+  - notifications
+  - bridging
+
+install:
+  - type: source
+    url: https://github.com/Hude06/MeshCoreDiscordBridge
+    command: npm install && pm2 start main.js --name mesh-bridge
+
+popularity:
+  githubStars: 12
+  githubForks: 2
+  githubWatchers: 4
+  githubOpenIssues: 1
+  githubContributors: 2
+  latestReleaseDownloads: 0
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Requires a Discord bot token and privileged message-content intent.
+    - The repository does not currently declare an SPDX license.
+
+tags:
+  - discord
+  - bridge
+  - rate-limiting
+  - message-chunking
+
+last_reviewed: 2026-06-23

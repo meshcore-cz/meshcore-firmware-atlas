@@ -1,0 +1,78 @@
+name: KiekR
+kind: client
+status: active
+maturity: beta
+description: >-
+  Independent iOS and Android MeshCore community toolbox with encrypted
+  messaging, regional path context, repeater diagnostics, MQTT bridging and
+  opt-in cryptographically signed coverage-map contributions.
+
+image: kiekr.jpg
+
+maintainers:
+  - name: Marcel Verdult
+    url: https://kiekr.app/
+
+website: https://kiekr.app/
+documentation: https://kiekr.app/docs
+license_type: proprietary
+
+latest_version: v0.2.4
+released: 2026-06-18
+
+platforms:
+  - android
+  - ios
+interfaces:
+  - mobile
+connections:
+  - ble
+  - mqtt
+  - http
+node_roles:
+  - companion
+  - repeater
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+  - remote-administration
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - mapping
+  - notifications
+  - bridging
+  - key-management
+
+install:
+  - type: play-store
+    package: app.kiekr
+    url: https://play.google.com/apps/testing/app.kiekr
+  - type: app-store
+    package: TestFlight
+    url: https://testflight.apple.com/join/X8wnyh87
+  - type: manual
+    package: Android APK
+    url: https://kiekr.app/download/android/latest
+
+verification:
+  sourceAvailable: false
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - KiekR is an independent client compatible with standard MeshCore companion radios and backup formats.
+    - Coverage contribution is opt-in and offers multiple privacy tiers.
+
+tags:
+  - community-toolbox
+  - regions
+  - coverage-map
+  - mqtt
+  - closed-source
+
+last_reviewed: 2026-06-23

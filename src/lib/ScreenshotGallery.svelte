@@ -95,11 +95,15 @@
       >›</button>
     {/if}
 
-    <figure class="relative z-10 m-0 flex max-h-full flex-col items-center">
+    <figure class="relative z-10 m-0 flex w-full max-w-[92vw] flex-col items-center">
+      <!-- w-full forces a real width so SVGs that only carry a viewBox (no
+           intrinsic size) scale up to fill instead of rendering at their tiny
+           default size; h-auto + the viewBox aspect keep proportions, and
+           max-h caps tall/portrait shots. -->
       <img
         src={current.url}
         alt={current.caption ?? alt}
-        class="max-h-[82vh] max-w-[90vw] rounded-lg border border-white/10 object-contain shadow-2xl"
+        class="h-auto max-h-[85vh] w-full rounded-lg border border-white/10 object-contain shadow-2xl"
       />
       <figcaption class="mt-3 flex items-center gap-2 text-[0.85rem] text-white/80">
         {#if current.caption}<span>{current.caption}</span>{/if}

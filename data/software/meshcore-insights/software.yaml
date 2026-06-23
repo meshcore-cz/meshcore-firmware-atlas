@@ -1,0 +1,97 @@
+name: MeshCore Insights
+kind: client
+status: active
+maturity: beta
+description: >-
+  Desktop MeshCore dashboard with USB and BLE connections, live maps,
+  messaging, node and telemetry analysis, offline map tiles, remote management
+  and a raw event console.
+
+screenshots:
+  - file: screenshot-1.png
+    caption: Live node map and searchable mesh-node list
+  - file: screenshot-2.png
+    caption: Node context menu with messaging and analysis actions
+  - file: screenshot-3.png
+    caption: Channel communications with routed-path visualization
+  - file: screenshot-4.png
+    caption: Contact map popup and mesh path lines
+  - file: screenshot-5.png
+    caption: Offline map tile downloader
+  - file: screenshot-6.png
+    caption: Node status, telemetry and analysis tools
+  - file: screenshot-7.png
+    caption: Remote node management and command responses
+  - file: screenshot-8.png
+    caption: Raw MeshCore event console
+
+maintainers:
+  - name: BomBefok
+    url: https://github.com/BomBefok
+
+repository: https://github.com/BomBefok/MeshcoreInsights
+license: GPL-2.0-only
+
+languages:
+  - python
+
+latest_version: MeshInsights
+released: 2026-03-27
+
+platforms:
+  - linux
+  - macos
+  - windows
+interfaces:
+  - gui
+connections:
+  - ble
+  - serial
+  - usb
+node_roles:
+  - companion
+  - repeater
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - remote-administration
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - mapping
+
+install:
+  - type: github-release
+    url: https://github.com/BomBefok/MeshcoreInsights/releases
+  - type: source
+    url: https://github.com/BomBefok/MeshcoreInsights
+
+popularity:
+  githubStars: 1
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 1
+  githubContributors: 1
+  releaseDownloads: 2
+  latestReleaseDownloads: 2
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - The compiled demo runs for ten minutes; the project states that a free unlock code is available.
+    - A dedicated user manual is bundled inside the compiled release rather than published separately online.
+
+tags:
+  - desktop
+  - offline-maps
+  - remote-management
+  - analytics
+
+last_reviewed: 2026-06-23

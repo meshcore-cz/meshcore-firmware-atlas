@@ -1,0 +1,85 @@
+name: MeshCore Web
+kind: client
+status: active
+maturity: stable
+description: >-
+  Docker-packaged web build of the official MeshCore Companion app, providing
+  browser-based messaging, contacts, channels, topology and repeater management
+  through Web Bluetooth or Web Serial.
+
+image: icon.png
+
+maintainers:
+  - name: aXistem
+    url: https://github.com/aXistem-dev
+  - name: Liam Cottle
+    url: https://github.com/liamcottle
+
+repository: https://github.com/aXistem-dev/meshcore-web
+website: https://app.meshcore.io/
+license_type: proprietary
+
+languages:
+  - javascript
+
+latest_version: v1.45.0
+released: 2026-06-14
+
+platforms:
+  - docker
+  - web
+interfaces:
+  - web
+connections:
+  - ble
+  - serial
+  - usb
+node_roles:
+  - companion
+  - repeater
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+  - remote-administration
+  - monitoring
+  - telemetry
+  - mapping
+
+install:
+  - type: web
+    url: https://app.meshcore.io/
+  - type: docker
+    package: ghcr.io/axistem-dev/meshcore-web
+    url: https://github.com/aXistem-dev/meshcore-web/pkgs/container/meshcore-web
+    command: docker run -d -p 8080:80 --restart unless-stopped ghcr.io/axistem-dev/meshcore-web:latest
+  - type: source
+    url: https://github.com/aXistem-dev/meshcore-web
+
+popularity:
+  githubStars: 2
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 0
+  githubContributors: 2
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: false
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - The repository publishes compiled closed-source Flutter web assets and a container image, not the application source.
+    - Browser radio access requires Chrome or Edge over HTTPS or localhost.
+
+tags:
+  - official-client-build
+  - docker
+  - web-bluetooth
+  - web-serial
+
+last_reviewed: 2026-06-23

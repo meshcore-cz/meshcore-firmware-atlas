@@ -1,0 +1,77 @@
+name: Map Tiles Downloader
+short_name: mt-downloader
+kind: tool
+status: active
+maturity: stable
+description: >-
+  Cross-platform terminal utility for downloading selected OpenStreetMap or
+  Thunderforest areas for offline use in MeshCore and Meshtastic apps, with
+  interactive region selection, size estimates and automation subcommands.
+
+image: icon.png
+screenshots:
+  - file: screenshot.png
+    caption: Interactive offline map region downloader
+
+maintainers:
+  - name: tekk
+    url: https://github.com/tekk
+
+repository: https://github.com/tekk/map-tiles-downloader
+license: CC-BY-4.0
+
+languages:
+  - python
+
+latest_version: v1.3.6
+released: 2026-05-11
+
+platforms:
+  - linux
+  - macos
+  - windows
+  - docker
+interfaces:
+  - tui
+  - cli
+capabilities:
+  - mapping
+
+install:
+  - type: pypi
+    package: mt-downloader
+    url: https://pypi.org/project/mt-downloader/
+    command: pipx install mt-downloader
+  - type: github-release
+    url: https://github.com/tekk/map-tiles-downloader/releases
+  - type: docker
+    url: https://github.com/tekk/map-tiles-downloader
+    command: docker build -t mt-downloader .
+  - type: source
+    url: https://github.com/tekk/map-tiles-downloader
+
+popularity:
+  githubStars: 30
+  githubForks: 3
+  githubWatchers: 0
+  githubOpenIssues: 5
+  githubContributors: 2
+  releaseDownloads: 1026
+  latestReleaseDownloads: 0
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+
+tags:
+  - offline-maps
+  - map-tiles
+  - openstreetmap
+  - meshtastic
+
+last_reviewed: 2026-06-23

@@ -8,6 +8,7 @@
   import { pluralize } from '$lib/format.js';
   import { CAPABILITY_GROUPS } from '$lib/CapabilityMatrix.svelte';
   import Seo from '$lib/Seo.svelte';
+  import PageHeader from '$lib/PageHeader.svelte';
   import Button from '$lib/Button.svelte';
 
   let { data } = $props();
@@ -122,8 +123,9 @@
 
 <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
   <div>
-    <h1 class="text-[clamp(1.5rem,5vw,2rem)] font-bold">Compare firmwares</h1>
-    <p class="text-dim">{pluralize(selected.length, 'firmware')} selected.</p>
+    <PageHeader tool="compare-firmwares" subtitleClass="mb-0">
+      {pluralize(selected.length, 'firmware')} selected.
+    </PageHeader>
   </div>
   <a class="text-[0.9rem] text-accent2 hover:underline" href="{base}/firmwares/">+ Add firmwares</a>
 </div>

@@ -1,0 +1,69 @@
+name: MeshCore Map Uploader
+kind: bot
+status: active
+maturity: stable
+description: >-
+  Headless automation service that listens for MeshCore repeater and room-server
+  advertisements through a USB or Wi-Fi companion and uploads them to the
+  public MeshCore map.
+
+maintainers:
+  - name: recrof
+    url: https://github.com/recrof
+
+repository: https://github.com/recrof/map.meshcore.dev-uploader
+license: MIT
+
+languages:
+  - javascript
+
+platforms:
+  - linux
+  - docker
+interfaces:
+  - cli
+  - headless
+connections:
+  - serial
+  - usb
+  - tcp
+  - http
+node_roles:
+  - companion
+  - repeater
+  - room-server
+capabilities:
+  - mapping
+  - automation
+
+install:
+  - type: docker-compose
+    url: https://github.com/recrof/map.meshcore.dev-uploader
+    command: docker compose up -d
+  - type: source
+    url: https://github.com/recrof/map.meshcore.dev-uploader
+    command: npm install . && node index.mjs
+
+popularity:
+  githubStars: 30
+  githubForks: 7
+  githubWatchers: 3
+  githubOpenIssues: 4
+  githubContributors: 3
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+
+tags:
+  - map-uploader
+  - adverts
+  - automation
+  - headless
+
+last_reviewed: 2026-06-23

@@ -1,0 +1,85 @@
+name: Spectra
+kind: gateway
+status: active
+maturity: beta
+description: >-
+  Rust bridge connecting MeshCore or Meshtastic radios to the Veilid
+  privacy-preserving DHT, with feed-based pub/sub messaging, a cyberpunk TUI,
+  headless daemon mode and remote attachment over a Unix socket.
+
+image: splash.png
+
+maintainers:
+  - name: Wrewdison
+    url: https://forge.hackers.town/Wrewdison
+
+repository: https://forge.hackers.town/Wrewdison/Spectra
+license_type: source-available
+
+languages:
+  - rust
+
+latest_version: v0.9.0
+released: 2026-04-30
+
+platforms:
+  - linux
+  - macos
+interfaces:
+  - tui
+  - cli
+  - headless
+connections:
+  - serial
+  - usb
+  - ipc
+  - websocket
+node_roles:
+  - companion
+capabilities:
+  - messaging
+  - channels
+  - node-configuration
+  - monitoring
+  - bridging
+
+install:
+  - type: github-release
+    package: Linux binary
+    url: https://forge.hackers.town/Wrewdison/Spectra/releases
+  - type: manual
+    url: https://forge.hackers.town/Wrewdison/Spectra/raw/branch/main/install.sh
+    command: curl -fsSL https://forge.hackers.town/Wrewdison/Spectra/raw/branch/main/install.sh | sudo bash
+  - type: source
+    url: https://forge.hackers.town/Wrewdison/Spectra
+    command: cargo build --release
+
+popularity:
+  githubStars: 0
+  githubForks: 0
+  githubWatchers: 1
+  githubOpenIssues: 0
+  releaseDownloads: 175
+  latestReleaseDownloads: 26
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Popularity fields are Forgejo repository signals.
+    - Supports stock MeshCore companion firmware, MeshCore KISS radios and Meshtastic serial radios.
+    - The repository does not currently declare an SPDX license.
+
+tags:
+  - veilid
+  - dht
+  - bridge
+  - meshtastic
+  - terminal
+
+last_reviewed: 2026-06-23

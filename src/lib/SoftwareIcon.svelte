@@ -8,6 +8,7 @@
   import Wrench from '@lucide/svelte/icons/wrench';
   import Library from '@lucide/svelte/icons/library';
   import Globe from '@lucide/svelte/icons/globe';
+  import Bot from '@lucide/svelte/icons/bot';
   import Box from '@lucide/svelte/icons/box';
 
   let {
@@ -26,7 +27,8 @@
     gateway: Network,
     tool: Wrench,
     library: Library,
-    'network-app': Globe
+    'network-app': Globe,
+    bot: Bot
   };
   let Icon = $derived(ICONS[kind] ?? Box);
 </script>

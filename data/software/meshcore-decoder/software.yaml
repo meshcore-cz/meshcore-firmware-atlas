@@ -1,0 +1,65 @@
+name: MeshCore Decoder
+kind: library
+status: active
+maturity: beta
+description: >-
+  TypeScript library and command-line decoder for MeshCore radio packets,
+  including packet structure analysis, channel decryption, signatures,
+  authentication tokens and region transport codes.
+
+maintainers:
+  - name: Michael Hart
+    url: https://github.com/michaelhart
+
+repository: https://github.com/michaelhart/meshcore-decoder
+license: MIT
+
+latest_version: 0.3.0
+
+languages:
+  - typescript
+platforms:
+  - linux
+  - macos
+  - windows
+  - web
+interfaces:
+  - api
+  - cli
+capabilities:
+  - packet-analysis
+  - key-management
+
+install:
+  - type: npm
+    package: "@michaelhart/meshcore-decoder"
+    url: https://www.npmjs.com/package/@michaelhart/meshcore-decoder
+    command: npm install @michaelhart/meshcore-decoder
+  - type: source
+    url: https://github.com/michaelhart/meshcore-decoder
+
+popularity:
+  githubStars: 48
+  githubForks: 11
+  githubWatchers: 3
+  githubOpenIssues: 8
+  githubContributors: 3
+  lastChecked: 2026-06-24
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-24
+  notes:
+    - Package version 0.3.0 is declared in package.json; no GitHub release is published.
+
+tags:
+  - sdk
+  - protocol
+  - decoder
+  - cryptography
+
+last_reviewed: 2026-06-24

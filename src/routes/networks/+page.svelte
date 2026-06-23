@@ -173,7 +173,7 @@
   description={`${data.networks.length} organized MeshCore meshes — their radio settings, coverage and how to join.`}
 />
 
-<PageHeader title="Networks">
+<PageHeader collection="networks">
   Organized regional and national MeshCore meshes — their radio settings, coverage and how to
   join.
 </PageHeader>

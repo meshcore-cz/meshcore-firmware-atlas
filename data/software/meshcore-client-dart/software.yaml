@@ -1,0 +1,62 @@
+name: meshcore_client
+kind: library
+status: active
+maturity: alpha
+description: >-
+  Flutter and Dart implementation of the MeshCore BLE companion protocol,
+  providing connection management, queued commands, binary frame parsing,
+  cryptography and application-facing data models.
+
+maintainers:
+  - name: dz0ny
+    url: https://github.com/dz0ny
+
+repository: https://github.com/dz0ny/meshcore_client
+license_type: source-available
+
+latest_version: 0.1.0
+
+languages:
+  - dart
+platforms:
+  - android
+  - ios
+interfaces:
+  - api
+connections:
+  - ble
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+
+install:
+  - type: source
+    url: https://github.com/dz0ny/meshcore_client
+
+popularity:
+  githubStars: 2
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 0
+  githubContributors: 1
+  lastChecked: 2026-06-24
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-24
+  notes:
+    - The package declares publish_to none and is installed from source.
+    - No license file or SPDX license declaration was present when reviewed.
+
+tags:
+  - sdk
+  - protocol
+  - flutter
+
+last_reviewed: 2026-06-24

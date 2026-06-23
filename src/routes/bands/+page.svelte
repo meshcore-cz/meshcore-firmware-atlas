@@ -5,6 +5,7 @@
   import { goto } from '$app/navigation';
   import { getDevice, deviceMcuLabel, deviceRadioLabel } from '$lib/data.js';
   import Seo from '$lib/Seo.svelte';
+  import PageHeader from '$lib/PageHeader.svelte';
   import Chip from '$lib/Chip.svelte';
   let { data } = $props();
   let selectedRevision = $state('latest');
@@ -103,12 +104,11 @@
   description="The regional LoRa frequency bands MeshCore devices use, with their frequency ranges and how many catalogued boards support each."
 />
 
-<h1 class="mb-1 text-[clamp(1.5rem,5vw,2rem)] font-bold">Frequency bands</h1>
-<p class="mb-5 max-w-2xl text-dim">
+<PageHeader tool="bands" subtitleClass="mb-5 max-w-2xl">
   Regional LoRa bands a MeshCore device's radio can operate on. A network picks
   one band; only devices whose radio supports it can join. Pick a band to see
   every catalogued board that supports it.
-</p>
+</PageHeader>
 
 {#if device}
   <div class="mb-5 flex items-center gap-3 rounded-xl border border-accent2/40 bg-accent2/5 p-3">

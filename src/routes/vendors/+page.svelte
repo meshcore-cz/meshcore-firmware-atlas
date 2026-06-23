@@ -13,7 +13,7 @@
   description={`${data.vendors.length} hardware makers whose boards run MeshCore firmware.`}
 />
 
-<PageHeader title="Vendors" subtitleClass="max-w-[60ch]">
+<PageHeader collection="vendors" subtitleClass="max-w-[60ch]">
   Hardware makers whose boards run MeshCore firmware — every vendor and the boards they make, most
   prolific first.
 </PageHeader>

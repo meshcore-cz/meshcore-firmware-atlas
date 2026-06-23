@@ -292,7 +292,7 @@
   description={`Browse ${data.devices.length} LoRa devices known to run MeshCore — filter by MCU, radio, node role, connectivity, price and more.`}
 />
 
-<PageHeader title="Devices">LoRa hardware known to run one or more MeshCore firmwares.</PageHeader>
+<PageHeader collection="devices">LoRa hardware known to run one or more MeshCore firmwares.</PageHeader>
 
 {#if favoriteDevices.length}
   <section class="mb-4 rounded-xl border border-accent/35 bg-accent/10 p-4">

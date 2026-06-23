@@ -6,6 +6,8 @@
   import Button from '$lib/Button.svelte';
   import Card from '$lib/Card.svelte';
   import ShortcutHint from '$lib/ShortcutHint.svelte';
+  import { COLLECTIONS, HOME_COLLECTIONS } from '$lib/collections.js';
+  import { HOME_TOOL_IDS, TOOLS, toolHomeLabel } from '$lib/tools.js';
   let { data } = $props();
 
   const homeJsonLd = {
@@ -19,46 +21,24 @@
 
   // The primary collections, in headline order. `n` is read from the
   // build-time counts so the numbers track the dataset automatically.
-  let sections = $derived([
-    {
-      href: '/networks/',
-      label: 'Networks',
-      n: data.counts.networks,
-      blurb: 'Regional & national meshes — radio settings, coverage and how to join.',
-      icon: 'M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z'
-    },
-    {
-      href: '/software/',
-      label: 'Software',
-      n: data.counts.software,
-      blurb: 'Clients, integrations, gateways, tools and libraries for the network.',
-      icon: 'M8.7 7.3 4 12l4.7 4.7 1.4-1.4L6.8 12l3.3-3.3-1.4-1.4Zm6.6 0-1.4 1.4L17.2 12l-3.3 3.3 1.4 1.4L20 12l-4.7-4.7Z'
-    },
-    {
-      href: '/devices/',
-      label: 'Devices',
-      n: data.counts.devices,
-      blurb: 'LoRa hardware that runs MeshCore — specs, radios and node roles.',
-      icon: 'M9 2h6a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v16h6V4H9Zm2 14h2v.5h-2V18Z'
-    },
-    {
-      href: '/firmwares/',
-      label: 'Firmwares',
-      n: data.counts.firmwares,
-      blurb: 'The official build plus community forks and custom variants.',
-      icon: 'M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3H3V5Zm0 5h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9Zm3 3v2h2v-2H6Zm0 4v2h2v-2H6Z'
-    }
-  ]);
+  let sections = $derived(
+    HOME_COLLECTIONS.map((c) => ({
+      ...c,
+      n: data.counts[c.id]
+    }))
+  );
 
   const tools = [
-    { href: '/matrix/', label: 'Compatibility matrix' },
-    { href: '/device-rank/', label: 'Device ranking' },
-    { href: '/compare/', label: 'Compare devices' },
-    { href: '/compare-firmwares/', label: 'Compare firmwares' },
-    { href: '/releases/', label: 'All releases' },
-    { href: '/vendors/', label: 'Vendors' },
-    { href: '/bands/', label: 'Frequency bands' },
-    { href: '/status/', label: 'API status' }
+    ...HOME_TOOL_IDS.map((id) => ({
+      href: TOOLS[id].href,
+      label: toolHomeLabel(id),
+      icon: TOOLS[id].icon
+    })),
+    {
+      href: COLLECTIONS.vendors.href,
+      label: COLLECTIONS.vendors.label,
+      icon: COLLECTIONS.vendors.icon
+    }
   ];
 </script>
 
@@ -92,11 +72,10 @@
 
 <section class="mb-8 grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(230px,1fr))]">
   {#each sections as s}
+    {@const Icon = s.icon}
     <Card href="{base}{s.href}" class="flex flex-col gap-2 p-5">
       <div class="flex items-center justify-between">
-        <svg class="h-6 w-6 text-accent" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d={s.icon} />
-        </svg>
+        <Icon class="h-6 w-6 text-accent" aria-hidden="true" />
         <span class="font-mono text-[1.4rem] font-bold tabular-nums">{s.n}</span>
       </div>
       <h2 class="text-[1.1rem] font-semibold group-hover:text-accent">{s.label}</h2>
@@ -126,10 +105,12 @@
   <h2 class="mb-3 text-[1.1rem] font-semibold">Tools</h2>
   <div class="flex flex-wrap gap-2">
     {#each tools as t}
+      {@const Icon = t.icon}
       <a
-        class="rounded-lg border border-edge bg-elev px-3.5 py-2 text-[0.9rem] text-dim transition hover:border-accent hover:text-ink"
+        class="inline-flex items-center gap-2 rounded-lg border border-edge bg-elev px-3.5 py-2 text-[0.9rem] text-dim transition hover:border-accent hover:text-ink"
         href="{base}{t.href}"
       >
+        <Icon class="h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
         {t.label}
       </a>
     {/each}

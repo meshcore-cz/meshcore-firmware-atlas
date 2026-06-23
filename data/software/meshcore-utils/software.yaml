@@ -1,0 +1,64 @@
+name: MeshCore Utils
+short_name: mc-keygen
+kind: tool
+status: active
+maturity: stable
+description: >-
+  High-performance Rust vanity Ed25519 key generator for MeshCore, with
+  multi-prefix searches, JSON output, CPU threading and optional CUDA or Metal
+  GPU acceleration.
+
+maintainers:
+  - name: Sam Schlegel
+    url: https://github.com/samschlegel
+
+repository: https://github.com/samschlegel/meshcore-utils
+documentation: https://github.com/samschlegel/meshcore-utils/blob/master/docs/gpu.md
+license: Apache-2.0
+
+languages:
+  - rust
+  - cuda
+  - metal
+
+platforms:
+  - linux
+  - macos
+  - windows
+interfaces:
+  - cli
+  - tui
+capabilities:
+  - key-management
+
+install:
+  - type: source
+    url: https://github.com/samschlegel/meshcore-utils
+    command: cargo build --release
+
+popularity:
+  githubStars: 14
+  githubForks: 8
+  githubWatchers: 2
+  githubOpenIssues: 7
+  githubContributors: 2
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - CUDA requires the NVIDIA toolkit; Metal acceleration requires macOS with Apple Silicon or a supported AMD GPU.
+
+tags:
+  - key-generator
+  - ed25519
+  - gpu
+  - cuda
+  - metal
+
+last_reviewed: 2026-06-23

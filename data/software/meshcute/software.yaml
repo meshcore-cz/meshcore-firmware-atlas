@@ -1,0 +1,63 @@
+name: MeshCute
+kind: tool
+status: active
+maturity: experimental
+description: >-
+  Portable BLE, Wi-Fi and receive-only LoRa scanner for the [[device:m5stack-cardputer-adv|M5Stack Cardputer
+  Adv]], intended for quickly diagnosing radio visibility and signal strength at
+  MeshCore or Meshtastic meetups.
+
+image: meshcute.png
+
+maintainers:
+  - name: Dennis Eichardt
+    url: https://github.com/MadScientistCH
+
+repository: https://github.com/MadScientistCH/meshcute
+license: GPL-3.0-only
+
+languages:
+  - cpp
+
+platforms:
+  - esp32
+  - m5stack-cardputer
+interfaces:
+  - gui
+connections:
+  - ble
+capabilities:
+  - monitoring
+  - packet-analysis
+
+install:
+  - type: source
+    url: https://github.com/MadScientistCH/meshcute
+
+popularity:
+  githubStars: 3
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 4
+  githubContributors: 1
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - LoRa scanning is receive-only and currently hard-coded for the Swiss MeshCore community radio preset.
+    - Requires the M5Stack Cap LoRa-1262 accessory for LoRa scanning.
+
+tags:
+  - scanner
+  - cardputer
+  - receive-only
+  - diagnostics
+  - meshtastic
+
+last_reviewed: 2026-06-23

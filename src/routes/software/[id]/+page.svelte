@@ -9,6 +9,7 @@
   import ScreenshotGallery from '$lib/ScreenshotGallery.svelte';
   import RichText from '$lib/RichText.svelte';
   import SoftwareIcon from '$lib/SoftwareIcon.svelte';
+  import PlatformIcon from '$lib/PlatformIcon.svelte';
   let { data } = $props();
   let s = $derived(data.software);
   let meta = $derived(SOFTWARE_KIND_META[s.kind]);
@@ -65,31 +66,35 @@
   let maintainers = $derived(s.maintainers ?? []);
   let licensing = $derived(licenseType(s));
 
+  // Link the latest-version field to its release card when one is on the page.
+  let latestReleaseId = $derived(
+    s.latest_version && releaseGroups.some((g) => g.version === s.latest_version)
+      ? `release-${s.latest_version}`
+      : null
+  );
+
   let specs = $derived(
     [
       meta ? { label: 'Kind', value: meta.label } : null,
       s.maturity ? { label: 'Maturity', value: MATURITY_META[s.maturity]?.label ?? s.maturity } : null,
-      maintainers.length
-        ? {
-            label: maintainers.length > 1 ? 'Maintainers' : 'Maintainer',
-            value: maintainers.map((m) => m.name).join(', '),
-            url: maintainers.length === 1 ? maintainers[0].url ?? null : null
-          }
-        : null,
       s.languages?.length
         ? { label: s.languages.length > 1 ? 'Languages' : 'Language', value: s.languages.join(', ') }
         : null,
       licensing ? { label: 'Licensing', value: LICENSE_TYPE_META[licensing]?.label ?? licensing, tw: LICENSE_TYPE_META[licensing]?.tw } : null,
-      s.license ? { label: 'License', value: s.license } : null,
       s.latest_version
-        ? { label: 'Latest version', value: s.released ? `${s.latest_version} · ${s.released}` : s.latest_version }
-        : null
+        ? {
+            label: 'Latest version',
+            value: s.released ? `${s.latest_version} · ${s.released}` : s.latest_version,
+            anchor: latestReleaseId ? `#${latestReleaseId}` : null
+          }
+        : null,
+      s.license ? { label: 'License', value: s.license } : null,
+      s.platforms?.length ? { label: 'Platforms', platforms: s.platforms } : null
     ].filter(Boolean)
   );
 
   let chipGroups = $derived(
     [
-      s.platforms?.length ? { label: 'Platforms', items: s.platforms } : null,
       s.interfaces?.length ? { label: 'Interfaces', items: s.interfaces.map((i) => INTERFACE_LABELS[i] ?? i) } : null,
       s.connections?.length ? { label: 'Connections', items: s.connections.map((c) => CONNECTION_LABELS[c] ?? c) } : null,
       s.capabilities?.length ? { label: 'Capabilities', items: s.capabilities.map((c) => CAPABILITY_LABELS[c] ?? c) } : null,
@@ -157,22 +162,41 @@
   </div>
 </header>
 
-{#if screenshots.length}
-  <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Screenshots</h2>
-    <ScreenshotGallery shots={screenshots} alt={s.name} />
-  </section>
-{/if}
-
-{#if specs.length}
-  <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Details</h2>
-    <dl class="grid gap-x-6 gap-y-3 [grid-template-columns:repeat(auto-fill,minmax(140px,1fr))]">
+{#if specs.length || maintainers.length}
+  <dl class="mb-7 rounded-xl border border-edge bg-elev p-[1.1rem]">
+    {#if maintainers.length}
+      <!-- Maintainer can be a long list, so it gets its own row above the
+           compact metadata grid instead of distorting the columns. -->
+      <div class="mb-3 border-b border-edge pb-3">
+        <dt class="text-[0.72rem] tracking-wide text-dim uppercase">{maintainers.length > 1 ? 'Maintainers' : 'Maintainer'}</dt>
+        <dd class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.95rem]">
+          {#each maintainers as m, i (m.name)}
+            {#if i > 0}<span class="text-muted">·</span>{/if}
+            {#if m.url}
+              <a class="text-accent2 hover:underline" href={m.url} target="_blank" rel="noreferrer">{m.name} ↗</a>
+            {:else}
+              <span>{m.name}</span>
+            {/if}
+          {/each}
+        </dd>
+      </div>
+    {/if}
+    <div class="grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-4">
       {#each specs as spec (spec.label)}
-        <div>
+        <div class={spec.platforms ? 'col-span-2' : ''}>
           <dt class="text-[0.72rem] tracking-wide text-dim uppercase">{spec.label}</dt>
-          <dd class="mt-0.5 text-[0.95rem]">
-            {#if spec.url}
+          <dd class="mt-1 text-[0.95rem]">
+            {#if spec.platforms}
+              <span class="flex flex-wrap items-center gap-1.5">
+                {#each spec.platforms as platform (platform)}
+                  <span class="inline-flex items-center rounded-md bg-elev2 px-2 py-0.5">
+                    <PlatformIcon {platform} showLabel size={16} />
+                  </span>
+                {/each}
+              </span>
+            {:else if spec.anchor}
+              <a class="text-accent2 hover:underline" href={spec.anchor}>{spec.value}</a>
+            {:else if spec.url}
               <a class="text-accent2 hover:underline" href={spec.url} target="_blank" rel="noreferrer">{spec.value}</a>
             {:else if spec.tw}
               <span class="inline-block rounded px-1.5 py-0.5 text-[0.78rem] font-medium {spec.tw}">{spec.value}</span>
@@ -180,22 +204,34 @@
           </dd>
         </div>
       {/each}
-    </dl>
+    </div>
+  </dl>
+{/if}
+
+{#if screenshots.length}
+  <section class="mb-7">
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Screenshots</h2>
+    <ScreenshotGallery shots={screenshots} alt={s.name} />
   </section>
 {/if}
 
 {#if chipGroups.length}
   <section class="mb-7">
     <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Capabilities</h2>
-    <div class="space-y-3">
+    <!-- Grouped cards mirror the firmware CapabilityMatrix; each item is a
+         capability the software has, so all entries render as present (✓). -->
+    <div class="grid gap-3 [grid-template-columns:repeat(auto-fill,minmax(190px,1fr))]">
       {#each chipGroups as grp (grp.label)}
-        <div>
-          <h3 class="mb-1.5 text-[0.72rem] tracking-wide text-dim uppercase">{grp.label}</h3>
-          <div class="flex flex-wrap gap-1.5">
+        <div class="rounded-xl border border-edge bg-elev p-3.5">
+          <h3 class="mb-2 text-[0.72rem] font-semibold tracking-wide text-dim uppercase">{grp.label}</h3>
+          <ul class="flex flex-col gap-1.5">
             {#each grp.items as item (item)}
-              <span class="rounded-md bg-elev2 px-2 py-0.5 text-[0.8rem]">{item}</span>
+              <li class="flex items-center gap-2 text-[0.88rem]">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-ok/15 text-[0.7rem] text-ok">✓</span>
+                <span>{item}</span>
+              </li>
             {/each}
-          </div>
+          </ul>
         </div>
       {/each}
     </div>

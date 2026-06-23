@@ -1,0 +1,103 @@
+name: MeshCore Bot
+short_name: agessaman bot
+kind: bot
+status: active
+maturity: stable
+description: >-
+  Extensible Python MeshCore service bot with keyword and plugin commands,
+  weather and alert services, scheduling, rate limits, web administration and
+  optional Discord, Telegram, MQTT, webhook and map integrations.
+
+image: icon.png
+
+maintainers:
+  - name: agessaman
+    url: https://github.com/agessaman
+
+repository: https://github.com/agessaman/meshcore-bot
+documentation: https://agessaman.github.io/meshcore-bot/
+license_type: source-available
+
+languages:
+  - python
+  - javascript
+  - html
+
+latest_version: v0.9.3
+released: 2026-05-31
+
+platforms:
+  - linux
+  - docker
+  - nixos
+  - web
+interfaces:
+  - web
+  - tui
+  - api
+  - headless
+connections:
+  - ble
+  - serial
+  - usb
+  - tcp
+  - mqtt
+  - http
+  - websocket
+node_roles:
+  - companion
+  - repeater
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - remote-administration
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - automation
+  - notifications
+  - bridging
+
+install:
+  - type: docker-compose
+    url: https://agessaman.github.io/meshcore-bot/docker/
+    command: docker compose up -d --build
+  - type: nixos
+    package: meshcore-bot
+    url: https://github.com/agessaman/meshcore-bot
+  - type: bare-metal
+    package: Python / systemd
+    url: https://agessaman.github.io/meshcore-bot/service-installation/
+    command: sudo ./install-service.sh
+  - type: source
+    url: https://github.com/agessaman/meshcore-bot
+
+popularity:
+  githubStars: 163
+  githubForks: 63
+  githubWatchers: 6
+  githubOpenIssues: 31
+  githubContributors: 13
+  latestReleaseDownloads: 0
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - The project warns operators to avoid duplicate bots and constrain response scope to protect mesh airtime.
+    - The repository does not currently declare an SPDX license.
+
+tags:
+  - command-bot
+  - weather
+  - service-plugins
+  - self-hosted
+  - web-dashboard
+
+last_reviewed: 2026-06-23

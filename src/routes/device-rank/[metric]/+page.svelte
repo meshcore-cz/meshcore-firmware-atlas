@@ -8,6 +8,7 @@
   import { METRICS } from '$lib/metrics.js';
   import { favoriteIds } from '$lib/favorites.js';
   import Seo from '$lib/Seo.svelte';
+  import PageHeader from '$lib/PageHeader.svelte';
   import Button from '$lib/Button.svelte';
   import Tooltip from '$lib/Tooltip.svelte';
   import ArrowUpDown from '@lucide/svelte/icons/arrow-up-down';
@@ -69,10 +70,9 @@
 
 <BackLink href="{base}/devices/">All devices</BackLink>
 
-<h1 class="mb-1 text-[clamp(1.5rem,5vw,2rem)] font-bold">Device ranking</h1>
-<p class="mb-4 max-w-[60ch] text-dim">
+<PageHeader tool="device-rank" subtitleClass="mb-4 max-w-[60ch]">
   Every device ranked by a single spec. Pick a metric and the table re-sorts.
-</p>
+</PageHeader>
 
 <div class="mb-5 flex flex-wrap gap-1.5">
   {#each METRICS as m (m.id)}

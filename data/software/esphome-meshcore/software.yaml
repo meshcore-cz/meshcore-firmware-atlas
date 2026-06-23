@@ -1,0 +1,69 @@
+name: ESPHome MeshCore
+kind: integration
+status: active
+maturity: experimental
+description: >-
+  ESPHome external component that turns XIAO nRF52840 and SX1262 hardware into
+  remotely managed MeshCore sensor nodes, exposing ESPHome switches, sensors,
+  fans and lights through Companion commands.
+
+maintainers:
+  - name: netmilk
+    url: https://github.com/netmilk
+
+repository: https://github.com/netmilk/esphome-meshcore
+license_type: source-available
+
+languages:
+  - cpp
+  - python
+
+platforms:
+  - esphome
+  - nrf52
+interfaces:
+  - headless
+connections:
+  - spi
+node_roles:
+  - sensor
+capabilities:
+  - node-configuration
+  - remote-administration
+  - telemetry
+  - automation
+
+install:
+  - type: esphome
+    package: meshcore_sensor
+    url: https://github.com/netmilk/esphome-meshcore
+  - type: source
+    url: https://github.com/netmilk/esphome-meshcore
+
+popularity:
+  githubStars: 15
+  githubForks: 1
+  githubWatchers: 2
+  githubOpenIssues: 0
+  githubContributors: 1
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Developed and tested specifically for the Seeed XIAO nRF52840 with an SX1262 radio; ESP32 and ESP8266 are not supported.
+    - The repository does not currently declare an SPDX license.
+
+tags:
+  - esphome
+  - sensor-node
+  - xiao
+  - nrf52840
+  - sx1262
+
+last_reviewed: 2026-06-23

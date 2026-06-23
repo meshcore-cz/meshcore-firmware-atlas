@@ -1,0 +1,71 @@
+name: MeshCoreCompanion
+kind: library
+status: active
+maturity: beta
+description: >-
+  Portable C99 client library for the MeshCore Companion Radio serial protocol,
+  with a thin Arduino C++ wrapper for embedded hosts and direct C support for
+  desktop, Linux, ESP-IDF and STM32 applications.
+
+maintainers:
+  - name: SH3D
+    url: https://github.com/SH3D
+  - name: Scott Penrose
+
+repository: https://github.com/SH3D/meshcore_c
+website: https://gitea.sh3d.com.au/Sh3d/meshcore_c
+license: MIT
+
+latest_version: 0.2.2
+
+languages:
+  - c
+  - cpp
+platforms:
+  - arduino
+  - linux
+  - esp-idf
+  - stm32
+interfaces:
+  - api
+connections:
+  - serial
+  - usb
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+  - monitoring
+  - telemetry
+
+install:
+  - type: source
+    url: https://github.com/SH3D/meshcore_c
+
+popularity:
+  githubStars: 0
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 0
+  githubContributors: 0
+  lastChecked: 2026-06-24
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-24
+  notes:
+    - The GitHub repository is a mirror; the canonical source is hosted on SH3D Gitea.
+    - Version 0.2.2 is declared in library.properties; no GitHub release is published.
+
+tags:
+  - sdk
+  - protocol
+  - embedded
+  - arduino
+
+last_reviewed: 2026-06-24

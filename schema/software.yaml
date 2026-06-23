@@ -37,7 +37,7 @@ properties:
   kind:
     description: >-
       Primary software category: Clients · Integrations · Gateways & Bridges ·
-      Tools · Libraries & SDKs · Network Apps.
+      Tools · Libraries & SDKs · Network Apps · Bots.
     type: string
     enum:
       - client
@@ -46,6 +46,7 @@ properties:
       - tool
       - library
       - network-app
+      - bot
 
   status:
     description: Current maintenance and project lifecycle status.

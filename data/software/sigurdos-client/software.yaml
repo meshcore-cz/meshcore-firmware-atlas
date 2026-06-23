@@ -1,0 +1,94 @@
+name: SigurdOS Client
+kind: client
+status: active
+maturity: alpha
+description: >-
+  Cross-platform Flutter MeshCore client forked from MeshCore Open, adding a
+  SigurdOS pixel-art theme while retaining messaging, maps, device management
+  and repeater administration over BLE, USB and TCP.
+
+image: sigurdos.png
+screenshots:
+  - file: contacts.jpg
+    caption: Mesh contacts
+  - file: chat.jpg
+    caption: Encrypted direct messaging
+  - file: map.jpg
+    caption: Mesh map and node positions
+  - file: channels.jpg
+    caption: Channel messaging
+
+maintainers:
+  - name: Hermes Gadget
+    url: https://github.com/hermes-gadget
+
+repository: https://github.com/hermes-gadget/SigurdOS-client
+documentation: https://github.com/hermes-gadget/SigurdOS-client/blob/dev/docs/BLE_PROTOCOL.md
+license: GPL-3.0-or-later
+
+languages:
+  - dart
+
+platforms:
+  - android
+  - ios
+  - linux
+  - macos
+  - windows
+  - web
+interfaces:
+  - mobile
+  - gui
+  - web
+connections:
+  - ble
+  - serial
+  - usb
+  - tcp
+  - websocket
+node_roles:
+  - companion
+  - repeater
+  - room-server
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+  - remote-administration
+  - monitoring
+  - telemetry
+  - mapping
+  - notifications
+  - key-management
+
+install:
+  - type: source
+    url: https://github.com/hermes-gadget/SigurdOS-client
+
+popularity:
+  githubStars: 1
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 0
+  githubContributors: 29
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-23
+  notes:
+    - Community fork of MeshCore Open with SigurdOS branding and ecosystem-specific integration.
+    - Over-the-air firmware updates are still listed as a future feature.
+
+tags:
+  - flutter
+  - sigurdos
+  - pixel-art
+  - meshcore-open-fork
+
+last_reviewed: 2026-06-23

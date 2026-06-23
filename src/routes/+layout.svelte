@@ -13,6 +13,8 @@
   import Button from '$lib/Button.svelte';
   import AtlasTooltip from '$lib/Tooltip.svelte';
   import ShortcutHint from '$lib/ShortcutHint.svelte';
+  import { NAV_COLLECTIONS } from '$lib/collections.js';
+  import { TOOLS } from '$lib/tools.js';
   import pkg from '../../package.json';
   let { children } = $props();
 
@@ -46,12 +48,9 @@
 
   const nav = [
     { href: '/', label: 'Home' },
-    { href: '/networks/', label: 'Networks' },
-    { href: '/software/', label: 'Software' },
-    { href: '/devices/', label: 'Devices' },
-    { href: '/firmwares/', label: 'Firmwares' },
+    ...NAV_COLLECTIONS.map((c) => ({ href: c.href, label: c.label })),
     { href: '/matrix/', label: 'Compatibility' },
-    { href: '/about/', label: 'About' }
+    { href: TOOLS.about.href, label: TOOLS.about.label }
   ];
 
   function isActive(href) {

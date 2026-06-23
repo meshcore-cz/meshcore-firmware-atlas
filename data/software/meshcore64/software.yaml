@@ -1,0 +1,76 @@
+name: MeshCore64
+kind: client
+status: active
+maturity: alpha
+description: >-
+  Commodore 64 MeshCore chat client using a SwiftLink-compatible serial
+  cartridge to connect to a TCP companion bridge, with channel and direct
+  messaging, delivery acknowledgements and persistent configuration.
+
+image: demo.png
+screenshots:
+  - file: demo.png
+    caption: MeshCore channel messaging on a Commodore 64
+
+maintainers:
+  - name: swannman
+    url: https://github.com/swannman
+
+repository: https://github.com/swannman/meshcore64
+license: MIT
+
+languages:
+  - c
+  - assembly
+
+latest_version: v0.1.0
+released: 2026-03-09
+
+platforms:
+  - commodore-64
+interfaces:
+  - tui
+connections:
+  - serial
+  - tcp
+node_roles:
+  - companion
+capabilities:
+  - messaging
+  - contacts
+  - channels
+
+install:
+  - type: github-release
+    package: meshcore64.d64
+    url: https://github.com/swannman/meshcore64/releases
+  - type: source
+    url: https://github.com/swannman/meshcore64
+
+popularity:
+  githubStars: 3
+  githubForks: 0
+  githubWatchers: 1
+  githubOpenIssues: 3
+  githubContributors: 1
+  releaseDownloads: 10
+  latestReleaseDownloads: 10
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Requires SwiftLink or compatible ACIA emulation and a TCP serial bridge to a MeshCore companion device.
+
+tags:
+  - commodore-64
+  - retrocomputing
+  - swiftlink
+  - petscii
+
+last_reviewed: 2026-06-23

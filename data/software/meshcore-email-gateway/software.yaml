@@ -1,0 +1,75 @@
+name: MeshCore Email Gateway
+kind: gateway
+status: active
+maturity: alpha
+description: >-
+  Bidirectional gateway between conventional SMTP/IMAP email and MeshCore
+  direct messages, with BLE, serial or TCP radio connections, a management API,
+  live status updates and an optional browser interface.
+
+maintainers:
+  - name: MGJ520
+    url: https://github.com/MGJ520
+
+repository: https://github.com/MGJ520/MeshCore-Email-Gateway
+license: MIT
+
+languages:
+  - python
+  - html
+
+platforms:
+  - linux
+  - macos
+  - windows
+  - web
+interfaces:
+  - web
+  - api
+  - headless
+connections:
+  - ble
+  - serial
+  - usb
+  - tcp
+  - websocket
+node_roles:
+  - companion
+capabilities:
+  - messaging
+  - contacts
+  - monitoring
+  - notifications
+  - bridging
+
+install:
+  - type: source
+    url: https://github.com/MGJ520/MeshCore-Email-Gateway
+    command: pip install -r requirements.txt && python server.py
+
+popularity:
+  githubStars: 5
+  githubForks: 1
+  githubWatchers: 0
+  githubOpenIssues: 0
+  githubContributors: 1
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Email delivery requires operator-supplied SMTP and IMAP credentials.
+    - Runs in simulation mode when the MeshCore Python package is unavailable.
+
+tags:
+  - email
+  - smtp
+  - imap
+  - self-hosted
+
+last_reviewed: 2026-06-23

@@ -1,7 +1,7 @@
 <script>
   import { base } from '$app/paths';
-  import { TYPE_META, FW_STATUS_TW, LICENSE_TYPE_META, licenseType, descriptionToPlain } from '$lib/data.js';
-  import { pluralize } from '$lib/format.js';
+  import { TYPE_META, LICENSE_TYPE_META, licenseType, descriptionToPlain } from '$lib/data.js';
+  import { pluralize, displayVersion, relativeTime, fullDateTime, releaseFreshnessTone } from '$lib/format.js';
   import Seo from '$lib/Seo.svelte';
   import ReleaseRow from '$lib/ReleaseRow.svelte';
   import Button from '$lib/Button.svelte';
@@ -40,12 +40,11 @@
     history.replaceState(history.state, '', qs ? `${location.pathname}?${qs}` : location.pathname);
   });
 
-  const statusLabels = {
-    active: 'Active',
-    maintenance: 'Maintenance',
-    inactive: 'Inactive',
-    experimental: 'Experimental'
-  };
+  // Compact star count: 1240 → "1.2k", 980 → "980".
+  function fmtStars(n) {
+    if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1).replace(/\.0$/, '') + 'k';
+    return String(n);
+  }
 
   let filtered = $derived(
     data.firmwares.filter((fw) => {
@@ -67,7 +66,7 @@
   description="Official and community MeshCore firmwares — the official build plus community forks and custom variants, with node roles and supported devices."
 />
 
-<PageHeader title="Firmwares" subtitleClass="max-w-[60ch]">
+<PageHeader collection="firmwares" subtitleClass="max-w-[60ch]">
   The official MeshCore build plus community forks and custom variants — with node roles and the
   <a class="text-accent2 hover:underline" href="{base}/devices/">devices</a> they run on.
 </PageHeader>
@@ -99,11 +98,6 @@
           <span class="rounded-md px-2 py-0.5 text-[0.72rem] font-bold tracking-wide uppercase {TYPE_META[fw.type]?.tw}">
             {TYPE_META[fw.type]?.label ?? fw.type}
           </span>
-          {#if licensing}
-            <span class="rounded-md px-1.5 py-0.5 text-[0.66rem] font-medium {LICENSE_TYPE_META[licensing]?.tw ?? ''}">
-              {LICENSE_TYPE_META[licensing]?.label ?? licensing}
-            </span>
-          {/if}
           <Button
             variant=""
             size="none"
@@ -123,9 +117,11 @@
             {$fwCompareIds.includes(fw.id) ? '✓ Compare' : '+ Compare'}
           </Button>
         </div>
-        <span class="text-[0.75rem] {FW_STATUS_TW[fw.status] ?? 'text-dim'}">
-          {statusLabels[fw.status] ?? fw.status}
-        </span>
+        {#if licensing}
+          <span class="shrink-0 rounded-md px-1.5 py-0.5 text-[0.66rem] font-medium {LICENSE_TYPE_META[licensing]?.tw ?? ''}">
+            {LICENSE_TYPE_META[licensing]?.label ?? licensing}
+          </span>
+        {/if}
       </div>
       <h2 class="text-[1.15rem] font-semibold">{fw.name}</h2>
       <p class="line-clamp-3 text-[0.9rem] text-dim">{descriptionToPlain(fw.description)}</p>
@@ -134,9 +130,31 @@
           <span class="rounded bg-elev2 px-2 py-0.5 text-[0.72rem] text-dim">{role}</span>
         {/each}
       </div>
-      <div class="flex items-center justify-between border-t border-edge pt-2.5 text-[0.8rem] text-dim">
-        <span>{fw.maintainer}</span>
-        {#if fw.latest_version}<span class="font-mono">{fw.latest_version}</span>{/if}
+      <!-- Popularity / freshness footer — mirrors the Software list layout:
+           stars, latest version + when, and the maintainer, all left-aligned. -->
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-edge pt-2.5 text-[0.72rem] text-dim">
+        {#if fw.popularity?.githubStars != null}
+          <span class="inline-flex items-center gap-1" title="{fw.popularity.githubStars.toLocaleString()} GitHub stars">
+            <svg class="h-3.5 w-3.5 text-warn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="m12 2 2.9 6.3 6.8.7-5 4.6 1.4 6.7L12 17.8 5.9 20.3l1.4-6.7-5-4.6 6.8-.7L12 2Z" />
+            </svg>
+            <span class="tabular-nums">{fmtStars(fw.popularity.githubStars)}</span>
+          </span>
+        {/if}
+        {#if fw.latest_version}
+          <span class="inline-flex items-center gap-1" title={fw.released ? `Released ${fullDateTime(fw.released)}` : ''}>
+            <span class="font-mono text-ink/80">{displayVersion(fw.latest_version)}</span>
+            {#if fw.released}<span class="text-dim/80">· <span class={releaseFreshnessTone(fw.released)}>{relativeTime(fw.released)}</span></span>{/if}
+          </span>
+        {/if}
+        {#if fw.maintainer}
+          <span class="inline-flex min-w-0 items-center gap-1">
+            <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.2" /><path d="M5 20a7 7 0 0 1 14 0" stroke-linecap="round" />
+            </svg>
+            <span class="truncate">{fw.maintainer}</span>
+          </span>
+        {/if}
       </div>
     </Card>
   {/each}

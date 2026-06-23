@@ -1,0 +1,65 @@
+name: MeshCoreKmp
+kind: library
+status: active
+maturity: beta
+description: >-
+  Kotlin Multiplatform library for discovering and connecting to MeshCore
+  companion nodes over Bluetooth, with high-level APIs for contacts, channels,
+  messaging, acknowledgements and device configuration.
+
+maintainers:
+  - name: Adam Brown
+    url: https://github.com/Wavesonics
+
+repository: https://github.com/Wavesonics/MeshCoreKmp
+license: MIT
+
+latest_version: v0.12.2
+released: 2026-03-06
+
+languages:
+  - kotlin
+platforms:
+  - android
+  - ios
+interfaces:
+  - api
+connections:
+  - ble
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+
+install:
+  - type: manual
+    package: com.darkrockstudios:meshcore
+    url: https://central.sonatype.com/artifact/com.darkrockstudios/meshcore
+  - type: source
+    url: https://github.com/Wavesonics/MeshCoreKmp
+
+popularity:
+  githubStars: 1
+  githubForks: 0
+  githubWatchers: 0
+  githubOpenIssues: 0
+  githubContributors: 1
+  lastChecked: 2026-06-24
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: false
+  lastChecked: 2026-06-24
+  notes:
+    - Published to Maven Central for Android and iOS Kotlin Multiplatform targets.
+
+tags:
+  - sdk
+  - protocol
+  - kotlin-multiplatform
+
+last_reviewed: 2026-06-24

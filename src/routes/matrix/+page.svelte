@@ -3,6 +3,7 @@
   import { STATUS_META, TYPE_META } from '$lib/data.js';
   import { favoriteIds } from '$lib/favorites.js';
   import Seo from '$lib/Seo.svelte';
+  import PageHeader from '$lib/PageHeader.svelte';
   let { data } = $props();
 
   // Track the hovered cell so we can highlight its whole row + column for
@@ -29,11 +30,10 @@
   description={`Device × firmware support across ${data.rows.length} devices and ${data.firmwares.length} MeshCore firmwares — at a glance.`}
 />
 
-<h1 class="mb-1 text-[clamp(1.5rem,5vw,2rem)] font-bold">Compatibility matrix</h1>
-<p class="mb-4 max-w-[60ch] text-dim">
+<PageHeader tool="matrix" subtitleClass="mb-4 max-w-[60ch]">
   Device × firmware support across all {data.rows.length} devices. A dot means no
   firmware lists that board yet. Hover a cell for notes.
-</p>
+</PageHeader>
 
 <div class="mb-5 flex flex-wrap gap-2">
   {#each Object.values(STATUS_META) as meta}

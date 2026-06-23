@@ -1,0 +1,71 @@
+name: MeshChaTUI
+kind: client
+status: active
+maturity: alpha
+description: >-
+  Textual terminal client for Linux with a unified chronological message view,
+  serial or BLE radio connections, channels, contacts, direct messaging,
+  delivery confirmation and command-palette navigation.
+
+image: screenshot.svg
+screenshots:
+  - file: screenshot.svg
+    caption: Unified channel and direct-message terminal interface
+
+maintainers:
+  - name: g-d-j-evans
+    url: https://github.com/g-d-j-evans
+
+repository: https://github.com/g-d-j-evans/MeschaTUI
+license_type: source-available
+
+languages:
+  - python
+
+platforms:
+  - linux
+interfaces:
+  - tui
+connections:
+  - ble
+  - serial
+  - usb
+node_roles:
+  - companion
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - monitoring
+
+install:
+  - type: source
+    url: https://github.com/g-d-j-evans/MeschaTUI
+    command: pip install -r requirements.txt && python run.py
+
+popularity:
+  githubStars: 0
+  githubForks: 1
+  githubWatchers: 0
+  githubOpenIssues: 1
+  githubContributors: 2
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - The author describes this as a personal learning project with no current packaging plan.
+    - The repository does not currently declare an SPDX license.
+
+tags:
+  - terminal
+  - textual
+  - unified-inbox
+  - linux
+
+last_reviewed: 2026-06-23

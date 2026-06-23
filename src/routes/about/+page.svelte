@@ -2,6 +2,7 @@
   import { base } from '$app/paths';
   import { REPO_URL } from '$lib/seo.js';
   import Seo from '$lib/Seo.svelte';
+  import PageHeader from '$lib/PageHeader.svelte';
 </script>
 
 <Seo
@@ -9,7 +10,7 @@
   description="How MeshCore Ninja works — a community-maintained, open-data catalog of MeshCore networks, devices and firmwares, generated from human-readable YAML."
 />
 
-<h1 class="mb-2 text-[clamp(1.5rem,5vw,2rem)] font-bold">About</h1>
+<PageHeader tool="about" />
 <p class="max-w-[70ch]">
   <strong>MeshCore Ninja</strong> is a community-maintained catalogue for the
   <a class="text-accent2 hover:underline" href="https://meshcore.io" target="_blank" rel="noreferrer">MeshCore</a>

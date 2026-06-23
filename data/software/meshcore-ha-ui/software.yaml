@@ -1,0 +1,80 @@
+name: MeshCore UI for Home Assistant
+short_name: MeshCore HA UI
+kind: integration
+status: active
+maturity: beta
+description: >-
+  Home Assistant sidebar dashboard layered on meshcore-ha, adding persistent
+  channel and direct messaging, contacts, maps, live node statistics, sensors
+  and a raw MeshCore command console.
+
+image: icon.png
+
+maintainers:
+  - name: Ratty7198
+    url: https://github.com/Ratty7198
+
+repository: https://github.com/Ratty7198/MeshCore-HA-UI
+license: MIT
+
+languages:
+  - javascript
+  - python
+
+latest_version: Alpha_4.3
+released: 2026-03-28
+
+platforms:
+  - home-assistant
+  - web
+interfaces:
+  - web
+connections:
+  - websocket
+node_roles:
+  - companion
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - remote-administration
+  - monitoring
+  - telemetry
+  - mapping
+  - automation
+  - notifications
+
+install:
+  - type: hacs
+    package: meshcore_ui
+    url: https://github.com/Ratty7198/MeshCore-HA-UI
+  - type: manual
+    url: https://github.com/Ratty7198/MeshCore-HA-UI
+
+popularity:
+  githubStars: 7
+  githubForks: 1
+  githubWatchers: 1
+  githubOpenIssues: 5
+  githubContributors: 1
+  latestReleaseDownloads: 0
+  lastChecked: 2026-06-23
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: false
+  lastChecked: 2026-06-23
+  notes:
+    - Requires a working meshcore-ha integration and does not connect to radios directly.
+    - The repository URL currently redirects from an earlier Daring-Designs project location.
+
+tags:
+  - home-assistant
+  - hacs
+  - dashboard
+  - persistent-messaging
+
+last_reviewed: 2026-06-23
