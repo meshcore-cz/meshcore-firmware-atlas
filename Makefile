@@ -35,13 +35,13 @@ test: test-api test-web ## Run all tests (Go + data validation)
 clean: clean-api clean-web ## Remove all build artifacts
 
 .PHONY: release
-release: ## Check, commit, tag, and push a release, for example make release VERSION=v0.2.0
+release: ## Check, commit, tag, and push a release, for example make release VERSION=v2026.6.0
 	@test -n "$(VERSION)" || { \
-		echo "Missing VERSION. Example: make release VERSION=v0.2.0"; \
+		echo "Missing VERSION. Example: make release VERSION=v2026.6.0"; \
 		exit 1; \
 	}
-	@echo "$(VERSION)" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?(\+[0-9A-Za-z.-]+)?$$' || { \
-		echo "Invalid VERSION: $(VERSION). Expected format: v0.2.0"; \
+	@echo "$(VERSION)" | grep -Eq '^v20[0-9]{2}\.([1-9]|1[0-2])\.(0|[1-9][0-9]*)(-[0-9A-Za-z.-]+)?(\+[0-9A-Za-z.-]+)?$$' || { \
+		echo "Invalid VERSION: $(VERSION). Expected CalVer format: v2026.6.0"; \
 		exit 1; \
 	}
 	@test "$$(git branch --show-current)" = "$(RELEASE_BRANCH)" || { \

@@ -42,10 +42,18 @@ Run `npm test` after every data change. Before authoring or editing data, read [
 
 ## Releases
 
+MeshCore Ninja uses calendar versioning:
+
+- `YYYY` — release year
+- `M` — release month, without leading zero
+- `PATCH` — release number within that month, starting at `0`
+
+Examples: `2026.6.0`, `2026.6.1`, `2026.7.0`.
+
 Releases are cut from `main` with a clean, up-to-date working tree:
 
 ```bash
-make release VERSION=v0.2.0
+make release VERSION=v2026.6.0
 ```
 
 The release helper bumps `package.json` / `package-lock.json`, runs checks,
