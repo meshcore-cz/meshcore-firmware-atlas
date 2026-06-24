@@ -1,7 +1,74 @@
 source: github
 repo: ALLFATHER-BV/wadamesh
-updatedAt: '2026-06-24T09:37:48.552Z'
+updatedAt: '2026-06-24T16:32:46.402Z'
 releases:
+  - version: beta_16
+    name: wadamesh beta_16
+    datetime: '2026-06-24T13:45:58Z'
+    url: https://github.com/ALLFATHER-BV/wadamesh/releases/tag/beta_16
+    prerelease: false
+    notes: >-
+      **wadamesh beta_16** — Heltec V4 Expansion Kit support, European keyboards, and Wi-Fi updates
+      (with rollback) are back.
+
+
+      Flash or update at **https://flasher.wadamesh.com**, or grab it on-device under **Settings →
+      About** if you're on a normally-flashed board.
+
+
+      ---
+
+
+      ## New
+
+
+      ### Heltec V4 Expansion Kit · thanks @samuelcoustet (#29)
+
+      If you've got the sensor expansion board on a Heltec V4, there's finally a proper home for it:
+      a dedicated **Sensors** tab (temperature, humidity, pressure, GPS and battery, each with a
+      small history chart), an environment readout on the Home screen, and an on-device **mesh
+      console** for poking at the radio directly. None of it shows up on a bare V4 — it only appears
+      when a sensor board is actually detected, so nothing changes for everyone else.
+
+
+      Worth being honest about this one: it was a real grind to land. It came in as a big pull
+      request built against an old beta, so getting it in cleanly meant re-doing most of it by hand
+      against current code and carefully gating every piece so it can't bloat or destabilise the
+      T-Deck and Tanmatsu builds. The original work is @samuelcoustet's — thank you.
+
+
+      ### European keyboards · thanks @samuelcoustet (#29)
+
+      French, Dutch, German, Spanish and Italian layouts, both on-screen and on the T-Deck's
+      physical keyboard. Choose one of those as your interface language and the matching layout is
+      selected automatically.
+
+
+      ### Wi-Fi updates are back — and you can roll back
+
+      On a normally-flashed device (not installed through the Launcher), firmware updates over Wi-Fi
+      return: **Settings → About**, no cable needed. New this round: **Install a previous version**
+      — pick one of the last few betas and reinstall it over Wi-Fi, with an "are you sure?" first
+      since it's a downgrade.
+
+
+      ## Fixed · thanks @tun0
+
+      - Closing a dialog no longer lets a scroll carry through to the page behind it (#50).
+
+      - The contact action sheet no longer overflows the screen in landscape (#49).
+
+      - The per-channel region field now shows your default region as the hint, instead of a generic
+      placeholder (#48).
+
+      - The status-bar clock no longer overlaps the node name on the V4.
+
+
+      ---
+
+
+      Everything from beta_15 is included. Thanks to @samuelcoustet and @tun0 for the contributions
+      this round.
   - version: beta_15
     name: wadamesh beta_15
     datetime: '2026-06-24T09:02:52Z'

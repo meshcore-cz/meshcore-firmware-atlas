@@ -1,6 +1,6 @@
 source: github
 repo: MichTronics/MeshCoreNG
-updatedAt: '2026-06-24T05:07:51.906Z'
+updatedAt: '2026-06-24T16:32:38.948Z'
 releases:
   - version: repeater-v1.1.2
     name: Repeater Firmware v1.1.2
@@ -26,6 +26,11 @@ releases:
     name: ESPNow Bridge Firmware v1.1.2
     datetime: '2026-06-24T01:32:48Z'
     url: https://github.com/MichTronics/MeshCoreNG/releases/tag/bridge-espnow-v1.1.2
+    prerelease: false
+  - version: bridge-ble-v1.1.2
+    name: BLE Bridge Firmware v1.1.2
+    datetime: '2026-06-24T14:43:27Z'
+    url: https://github.com/MichTronics/MeshCoreNG/releases/tag/bridge-ble-v1.1.2
     prerelease: false
   - version: repeater-v1.1.1
     name: Repeater Firmware v1.1.1
@@ -96,9 +101,4 @@ releases:
     name: TCP+BLE Bridge Firmware v1.1.0
     datetime: '2026-06-19T00:01:38Z'
     url: https://github.com/MichTronics/MeshCoreNG/releases/tag/bridge-tcp-ble-v1.1.0
-    prerelease: false
-  - version: bridge-rs232-v1.1.0
-    name: RS232 Bridge Firmware v1.1.0
-    datetime: '2026-06-19T00:07:03Z'
-    url: https://github.com/MichTronics/MeshCoreNG/releases/tag/bridge-rs232-v1.1.0
     prerelease: false

@@ -1,7 +1,28 @@
 source: github
 repo: danst0/fennek
-updatedAt: '2026-06-23T09:49:37.083Z'
+updatedAt: '2026-06-24T16:32:31.635Z'
 releases:
+  - version: v2.6.3
+    name: v2.6.3
+    datetime: '2026-06-24T13:45:28Z'
+    url: https://github.com/danst0/fennek/releases/tag/v2.6.3
+    prerelease: false
+    notes: >-
+      App-Kacheln im Launcher zeigen jetzt selbst gezeichnete Icons statt Text (Note, Kopfhörer,
+      Buch, Mesh, Zahnrad, Würfel, Ordner, Notizblatt, Wecker, Pin, Gyro, Operatoren, Karteikarten,
+      Kalender, Todo).
+
+
+      OTA: firmware.bin angehängt.
+  - version: v2.6.2
+    name: v2.6.2
+    datetime: '2026-06-24T12:51:56Z'
+    url: https://github.com/danst0/fennek/releases/tag/v2.6.2
+    prerelease: false
+    notes: >-
+      Rechnen-App: Schätz-Wertung + 20-s-Ziel (gedeckelte Zahlenbereiche, Toleranzfenster für große
+      Produkte/Geld-Prozente/SHARE/GROWTH, Sekunden-Anzeige). Kalender: CalDAV-Abo (iCloud u. a.)
+      via `caldav:`-Feed mit Basic-Auth, Zugangsdaten in Settings-App/Konsole.
   - version: v2.6.0
     name: v2.6.0
     datetime: '2026-06-22T16:46:35Z'
@@ -344,51 +365,3 @@ releases:
 
 
       **Full changelog:** [CHANGELOG.md](https://github.com/danst0/fennek/blob/main/CHANGELOG.md)
-  - version: v1.7.1
-    name: Fennek v1.7.1
-    datetime: '2026-06-13T04:08:05Z'
-    url: https://github.com/danst0/fennek/releases/tag/v1.7.1
-    prerelease: false
-    notes: >-
-      ## ✨ Added
-
-      - **Settings backup as INI** (`services/settingsfile`): export/import all NVS settings to/from
-      an SD file. SPI-free serialization on a RAM buffer, SD I/O isolated under `spiLock`. Per-book
-      bookmarks/reading positions are excluded (CRC32-hashed keys). New console command +
-      `main`/`power` wiring.
-
-
-      ## 📝 Docs
-
-      - Added `CHANGELOG.md` and GitHub releases for v1.3.0–v1.7.0.
-
-      - README now ships in **English (default)**, German (`README.de.md`) and Swedish
-      (`README.sv.md`) with a language switcher and release/changelog badges.
-
-
-      📋 Full history: [CHANGELOG.md](https://github.com/danst0/fennek/blob/main/CHANGELOG.md)
-  - version: v1.7.0
-    name: Fennek v1.7.0
-    datetime: '2026-06-13T04:03:33Z'
-    url: https://github.com/danst0/fennek/releases/tag/v1.7.0
-    prerelease: false
-    notes: >-
-      ## ✨ Added
-
-      - **"+ New Channel" UI** for joining hashtag channels — a "► New Channel" row at the top of
-      the chat list opens a join screen (keyboard types the `#name`, PSK derived from it, persisted
-      to `channels.txt` on SD; jumps straight into the new channel after joining).
-
-
-      ## 🔄 Changed
-
-      - **Robust time synchronization without a hardware RTC.** Canonical clock is now ESP32 system
-      time (`SystemRTCClock`), which survives deep sleep. New `services/timesync` coordinator:
-      opportunistic NTP (when Wi-Fi is up) + a top-up before auto-standby, with Mesh adverts as a
-      passive source. Quality model (`estErr = learned drift × time since sync`) with exponential
-      back-off, `s_clockConfident` bootstrap for the first advert after boot, POSIX time zone
-      (default `Europe/Berlin` incl. DST), settings rows "Time zone"/"Time", and console `time` /
-      `time set` / `time sync` / `tz`.
-
-
-      📋 Full history: [CHANGELOG.md](https://github.com/danst0/fennek/blob/main/CHANGELOG.md)
