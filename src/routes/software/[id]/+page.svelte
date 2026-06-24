@@ -3,7 +3,7 @@
   import RecordFooter from '$lib/RecordFooter.svelte';
   import BackLink from '$lib/BackLink.svelte';
   import { SOFTWARE_KIND_META, SOFTWARE_STATUS_META, LICENSE_TYPE_META, licenseType, groupReleases, descriptionToPlain } from '$lib/data.js';
-  import { clampDescription } from '$lib/seo.js';
+  import { clampDescription, ogImageFor } from '$lib/seo.js';
   import Seo from '$lib/Seo.svelte';
   import ReleaseGroupList from '$lib/ReleaseGroupList.svelte';
   import ScreenshotGallery from '$lib/ScreenshotGallery.svelte';
@@ -121,7 +121,7 @@
   );
 </script>
 
-<Seo title={s.name} description={description} />
+<Seo title={s.name} description={description} type="article" image={ogImageFor('software', s.id)} />
 
 <BackLink href="{base}/software/">All software</BackLink>
 

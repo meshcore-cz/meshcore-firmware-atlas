@@ -30,6 +30,19 @@ const TYPE_META = {
   custom: { label: 'Custom' }
 };
 
+// Software kind → kicker label. Mirrors SOFTWARE_KIND_META (singular) in
+// src/lib/data.js (kept inline so this script stays runnable under plain Node).
+const SOFTWARE_KIND_LABEL = {
+  client: 'Client',
+  integration: 'Integration',
+  gateway: 'Gateway / Bridge',
+  monitoring: 'Monitoring',
+  utility: 'Utility',
+  bot: 'Bot',
+  library: 'Library / SDK',
+  'network-app': 'Network App'
+};
+
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..');
 
@@ -94,6 +107,37 @@ function svgToPngDataUri(svgBuf, width) {
   return { uri: dataUri(png, 'image/png'), bytes: png };
 }
 
+// Intrinsic pixel size of a PNG or JPEG buffer, read from the file header.
+// Returns null for anything we can't parse.
+function rasterSize(buf) {
+  if (buf.length > 24 && buf.readUInt32BE(0) === 0x89504e47) {
+    return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) }; // PNG IHDR
+  }
+  if (buf[0] === 0xff && buf[1] === 0xd8) {
+    let o = 2; // JPEG: walk segments to the SOFn frame header
+    while (o + 9 < buf.length) {
+      if (buf[o] !== 0xff) { o++; continue; }
+      const marker = buf[o + 1];
+      if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+        return { h: buf.readUInt16BE(o + 5), w: buf.readUInt16BE(o + 7) };
+      }
+      o += 2 + buf.readUInt16BE(o + 2);
+    }
+  }
+  return null;
+}
+
+// Normalize a raster image (png/jpeg) to a clean PNG data URI by rendering it
+// through resvg. Satori's own JPEG decoder chokes on some files (EXIF, etc.),
+// so re-encoding sidesteps that. Falls back to embedding the bytes as-is if the
+// intrinsic size can't be read.
+function rasterToPngDataUri(buf, mime, width) {
+  const size = rasterSize(buf);
+  if (!size) return { uri: dataUri(buf, mime), bytes: buf };
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size.w}" height="${size.h}"><image width="${size.w}" height="${size.h}" href="${dataUri(buf, mime)}"/></svg>`;
+  return svgToPngDataUri(Buffer.from(svg), width);
+}
+
 // Resolve + load a device's art SVG (data/devices/<id>/*.svg).
 function loadDeviceImage(id) {
   const dir = join(root, 'data', 'devices', id);
@@ -118,6 +162,23 @@ function loadVendorImage(id) {
   }
   const mime = /\.png$/i.test(file) ? 'image/png' : 'image/jpeg';
   return { uri: dataUri(buf, mime), bytes: buf };
+}
+
+// Resolve + load a software icon (data/software/<id>/<image>). Filename comes
+// from the item's `image` field; svg is rasterized, png/jpg embedded as-is.
+function loadSoftwareImage(id, file) {
+  if (!file) return null;
+  const path = join(root, 'data', 'software', id, file);
+  if (!existsSync(path)) return null;
+  const buf = readFileSync(path);
+  if (/\.svg$/i.test(file)) return svgToPngDataUri(buf, 400);
+  // Sniff magic bytes rather than trust the extension. Only png/jpeg can be
+  // rasterized here; webp and other formats render no tile, exactly like an
+  // item with no icon at all.
+  const png = buf.length > 8 && buf.readUInt32BE(0) === 0x89504e47;
+  const jpg = buf[0] === 0xff && buf[1] === 0xd8;
+  if (!png && !jpg) return null;
+  return rasterToPngDataUri(buf, png ? 'image/png' : 'image/jpeg', 400);
 }
 
 // ── Shared chrome ────────────────────────────────────────────────────────────
@@ -322,6 +383,51 @@ function vendorCard(v, img) {
   );
 }
 
+function softwareCard(s, img) {
+  const accent = C.accent2;
+  const kindLabel = SOFTWARE_KIND_LABEL[s.kind] ?? 'Software';
+  const chips = [];
+  const stars = s.popularity?.githubStars;
+  if (stars) chips.push(chip(`${stars} stars`));
+  if (Array.isArray(s.platforms) && s.platforms.length) {
+    chips.push(chip(s.platforms.slice(0, 3).map((p) => p.toUpperCase()).join(' · ')));
+  }
+  if (s.license) chips.push(chip(s.license));
+
+  const tile = img
+    ? h(
+        'div',
+        {
+          display: 'flex',
+          width: '200px',
+          height: '200px',
+          backgroundColor: C.elev,
+          border: `1px solid ${C.edge}`,
+          borderRadius: '32px',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '20px'
+        },
+        [{ type: 'img', props: { src: img.uri, style: { maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' } } }]
+      )
+    : null;
+
+  return frame(
+    [
+      h('div', { display: 'flex', flex: 1, alignItems: 'center', gap: '44px' }, [
+        tile,
+        h('div', { display: 'flex', flexDirection: 'column', gap: '22px', flex: 1 }, [
+          kicker(kindLabel, accent),
+          text(s.name, { fontSize: titleSize(s.name, 72, 46), fontWeight: 700, color: C.ink, lineHeight: 1.05 }),
+          s.description ? text(clamp(s.description, 140), { fontSize: 28, color: C.dim, lineHeight: 1.35 }) : null,
+          chips.length ? h('div', { display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '4px' }, chips) : null
+        ].filter(Boolean))
+      ].filter(Boolean))
+    ],
+    accent
+  );
+}
+
 const NETWORK_SCOPE_LABEL = {
   general: 'General',
   national: 'National',
@@ -390,12 +496,12 @@ async function main() {
   const outRoot = join(root, 'static', 'og');
   const cacheDir = join(root, '.cache', 'og');
   mkdirSync(cacheDir, { recursive: true });
-  for (const kind of ['device', 'firmware', 'vendor', 'network']) mkdirSync(join(outRoot, kind), { recursive: true });
+  for (const kind of ['device', 'firmware', 'software', 'vendor', 'network']) mkdirSync(join(outRoot, kind), { recursive: true });
 
   const manifestPath = join(cacheDir, 'manifest.json');
   const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) : {};
   const next = {};
-  const valid = { device: new Set(), firmware: new Set(), vendor: new Set(), network: new Set() };
+  const valid = { device: new Set(), firmware: new Set(), software: new Set(), vendor: new Set(), network: new Set() };
   let generated = 0;
   let cached = 0;
 
@@ -407,6 +513,10 @@ async function main() {
   }
   for (const fw of data.firmwares) {
     jobs.push(['firmware', fw, null, sha(TEMPLATE_VERSION, fw)]);
+  }
+  for (const s of data.software ?? []) {
+    const img = loadSoftwareImage(s.id, s.image);
+    jobs.push(['software', s, img, sha(TEMPLATE_VERSION, s, img?.bytes ?? '')]);
   }
   for (const v of data.vendors) {
     const img = loadVendorImage(v.id);
@@ -439,16 +549,18 @@ async function main() {
         ? deviceCard(item, img)
         : kind === 'firmware'
           ? firmwareCard(item)
-          : kind === 'network'
-            ? networkCard(item, item._deviceCount)
-            : vendorCard(item, img);
+          : kind === 'software'
+            ? softwareCard(item, img)
+            : kind === 'network'
+              ? networkCard(item, item._deviceCount)
+              : vendorCard(item, img);
     writeFileSync(outPath, await render(tree));
     generated++;
   }
 
   // Prune PNGs whose id no longer exists.
   let removed = 0;
-  for (const kind of ['device', 'firmware', 'vendor', 'network']) {
+  for (const kind of ['device', 'firmware', 'software', 'vendor', 'network']) {
     const dir = join(outRoot, kind);
     for (const f of readdirSync(dir)) {
       if (f.endsWith('.png') && !valid[kind].has(f)) {

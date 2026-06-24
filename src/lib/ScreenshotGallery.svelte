@@ -7,6 +7,10 @@
   let index = $state(0);
 
   let current = $derived(shots[index]);
+  // SVGs often carry only a viewBox (no intrinsic px size) and render tiny
+  // unless forced to fill a width; raster shots size to their own aspect so the
+  // border — and the nav arrows — hug the actual image instead of a wide box.
+  let currentIsSvg = $derived(/\.svg(?:[?#]|$)/i.test(current?.file ?? current?.url ?? ''));
 
   function show(i) {
     index = i;
@@ -80,31 +84,35 @@
       class="absolute top-4 right-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/40 text-lg text-white/80 transition hover:bg-black/70 hover:text-white"
     >✕</button>
 
-    {#if shots.length > 1}
-      <button
-        type="button"
-        onclick={() => step(-1)}
-        aria-label="Previous screenshot"
-        class="absolute left-2 z-10 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-black/40 text-2xl text-white/80 transition hover:bg-black/70 hover:text-white sm:left-5"
-      >‹</button>
-      <button
-        type="button"
-        onclick={() => step(1)}
-        aria-label="Next screenshot"
-        class="absolute right-2 z-10 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-black/40 text-2xl text-white/80 transition hover:bg-black/70 hover:text-white sm:right-5"
-      >›</button>
-    {/if}
-
-    <figure class="relative z-10 m-0 flex w-full max-w-[92vw] flex-col items-center">
-      <!-- w-full forces a real width so SVGs that only carry a viewBox (no
-           intrinsic size) scale up to fill instead of rendering at their tiny
-           default size; h-auto + the viewBox aspect keep proportions, and
-           max-h caps tall/portrait shots. -->
-      <img
-        src={current.url}
-        alt={current.caption ?? alt}
-        class="h-auto max-h-[85vh] w-full rounded-lg border border-white/10 object-contain shadow-2xl"
-      />
+    <figure class="relative z-10 m-0 flex max-h-[92vh] max-w-full flex-col items-center">
+      <!-- The image+arrows wrapper shrinks to the rendered image width (raster
+           shots size by their own aspect) so the arrows can sit just outside the
+           actual image edges — for a narrow portrait shot they stay close in the
+           dark margin instead of at the far viewport edges. The image max-width
+           leaves ~4rem of room each side so the outside arrows never clip. -->
+      <div class="relative flex min-h-0 items-center justify-center">
+        <img
+          src={current.url}
+          alt={current.caption ?? alt}
+          class="max-h-[85vh] max-w-[calc(100vw-9rem)] rounded-lg border border-white/10 object-contain shadow-2xl sm:max-w-[calc(100vw-13rem)] {currentIsSvg
+            ? 'h-auto w-full'
+            : 'h-auto w-auto'}"
+        />
+        {#if shots.length > 1}
+          <button
+            type="button"
+            onclick={() => step(-1)}
+            aria-label="Previous screenshot"
+            class="absolute top-1/2 right-full mr-3 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/40 text-2xl text-white/80 transition hover:bg-black/70 hover:text-white sm:mr-7"
+          >‹</button>
+          <button
+            type="button"
+            onclick={() => step(1)}
+            aria-label="Next screenshot"
+            class="absolute top-1/2 left-full ml-3 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/40 text-2xl text-white/80 transition hover:bg-black/70 hover:text-white sm:ml-7"
+          >›</button>
+        {/if}
+      </div>
       <figcaption class="mt-3 flex items-center gap-2 text-[0.85rem] text-white/80">
         {#if current.caption}<span>{current.caption}</span>{/if}
         {#if shots.length > 1}<span class="text-white/50">{index + 1} / {shots.length}</span>{/if}
