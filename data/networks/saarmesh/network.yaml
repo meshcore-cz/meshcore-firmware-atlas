@@ -1,0 +1,74 @@
+# Sources:
+# - https://saarmesh.de/
+# - https://saarmesh.de/meshcore/
+# - https://saarmesh.de/regions/
+# - https://live.saarmesh.de/api/observers
+name: SaarMesh
+short_name: SaarMesh
+description: >-
+  Regional MeshCore community building resilient LoRa infrastructure across
+  Saarland and coordinating with the wider SaarLorLux area. The project
+  provides technical documentation, regional scopes, a live network map and
+  community support.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - DE
+
+regions:
+  - code: europe
+    name: Europe
+  - code: eu
+    name: European Union
+  - code: de
+    name: Germany
+  - code: de-sl
+    name: Saarland
+    parent: de
+  - code: saarlorlux
+    name: SaarLorLux
+    parent: de-sl
+  - code: saarland
+    name: Saarland
+    parent: saarlorlux
+  - code: saarbruecken
+    name: Saarbrücken
+    parent: saarland
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  region_code: saarlorlux
+  public_channel: '#saarland'
+  app_preset: 'EU/UK (Narrow)'
+
+community:
+  website: https://saarmesh.de/
+  telegram: https://t.me/saarmesh
+
+maps:
+  - name: SaarMesh live map
+    url: https://live.saarmesh.de/
+
+analyzers:
+  - name: SaarMesh CoreScope
+    url: https://live.saarmesh.de/
+
+resources:
+  getting_started: https://saarmesh.de/mitmachen/
+  links:
+    - name: MeshCore overview
+      url: https://saarmesh.de/meshcore/
+    - name: Regional scopes
+      url: https://saarmesh.de/regions/
+    - name: Live map information
+      url: https://saarmesh.de/live-karte/
+    - name: Hardware
+      url: https://saarmesh.de/hardware/

@@ -37,6 +37,10 @@ community:
   website: https://mesh.om3kff.sk/
   discord: https://discord.gg/Zx5JuhszUb
 
+analyzers:
+  - name: analyzer.868.sk
+    url: https://analyzer.868.sk/
+
 resources:
   getting_started: https://mesh.om3kff.sk/
   links:

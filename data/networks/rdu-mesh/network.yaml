@@ -1,0 +1,56 @@
+# Sources:
+# - https://rdumesh.org/
+# - https://rdumesh.org/about-rdumesh/
+# - https://rdumesh.org/map/
+# - https://analyzer.n4vx.net/api/observers
+name: RDUMesh
+also_known_as:
+  - RDU Mesh
+short_name: RDUMesh
+description: >-
+  Community-owned, off-grid MeshCore network serving Raleigh, Durham, Chapel
+  Hill and the surrounding North Carolina Piedmont. The network builds
+  solar-powered relay infrastructure across a documented 16-county Research
+  Triangle service area.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - US
+
+regions:
+  - code: us
+    name: United States
+  - code: us-nc
+    name: North Carolina
+    parent: us
+  - code: us-nc-rdu
+    name: Research Triangle
+    parent: us-nc
+
+radio:
+  frequency: '915'
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/5
+  app_preset: 'USA/Canada (Recommended)'
+
+community:
+  website: https://rdumesh.org/
+  discord: https://discord.gg/kKt8sjHrGF
+
+analyzers:
+  - name: RDUMesh CoreScope
+    url: https://analyzer.n4vx.net
+
+resources:
+  getting_started: https://rdumesh.org/about-rdumesh/
+  links:
+    - name: RDUMesh service area and organization
+      url: https://rdumesh.org/about-rdumesh/
+    - name: RDUMesh map
+      url: https://rdumesh.org/map/

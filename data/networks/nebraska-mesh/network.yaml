@@ -1,0 +1,64 @@
+# Sources:
+# - https://www.nebraskamesh.net/
+# - https://www.nebraskamesh.net/about.html
+# - https://www.nebraskamesh.net/help.html
+name: Nebraska Mesh
+also_known_as:
+  - Nebraska MeshCore
+short_name: Nebraska Mesh
+description: >-
+  Volunteer-run statewide MeshCore network connecting Nebraska communities
+  through community-operated LoRa nodes and solar repeaters. Originating around
+  Omaha, it has expanded through Lincoln, Grand Island and rural counties with
+  shared configuration standards, maps, analyzers and Discord coordination.
+scope: national
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - US
+
+regions:
+  - code: us
+    name: United States
+  - code: us-ne
+    name: Nebraska
+    parent: us
+
+radio:
+  frequency: '915'
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/8
+  path_hash_mode: 2-Byte
+  region_code: us-ne
+  public_channel: Public
+
+community:
+  website: https://www.nebraskamesh.net/
+  discord: https://discord.gg/aCd5yJvJaD
+
+maps:
+  - name: Nebraska Mesh map
+    url: https://oma.meshmapper.net
+
+analyzers:
+  - name: Nebraska Mesh Analyzer
+    url: https://analyzer.nebraskamesh.net/
+  - name: The Dad Nerd CoreScope
+    url: https://analyzer.thedadnerd.com/
+
+resources:
+  getting_started: https://www.nebraskamesh.net/help.html
+  links:
+    - name: About Nebraska Mesh
+      url: https://www.nebraskamesh.net/about.html
+    - name: Events
+      url: https://www.nebraskamesh.net/events.html
+    - name: Nebraska Mesh Bot
+      url: https://bot.lnkmeshbot.net/
+    - name: Bot documentation and policy
+      url: https://www.nebraskamesh.net/bots.html

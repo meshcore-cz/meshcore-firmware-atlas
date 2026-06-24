@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Inland NW Mesh area",
+        "source": "Approximate coordination area based on communities listed at inlandnwmesh.org"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-118.4, 45.75],
+            [-116.95, 45.75],
+            [-115.1, 46.4],
+            [-115.1, 49.0],
+            [-118.4, 49.0],
+            [-118.4, 45.75]
+          ]
+        ]
+      }
+    }
+  ]
+}

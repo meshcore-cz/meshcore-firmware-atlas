@@ -1,0 +1,65 @@
+# Sources:
+# - https://madmesh.net/
+# - https://madmesh.net/getting-started
+# - https://madmesh.net/coverage
+name: Madison Mesh
+also_known_as:
+  - MadMesh
+short_name: Madison Mesh
+description: >-
+  Community-owned mesh radio network in Madison, Wisconsin, focused primarily
+  on MeshCore while also supporting Meshtastic. Local hobbyists build and host
+  off-grid nodes across the Madison area, sharing setup guides, a live map and
+  Discord coordination.
+scope: local
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - US
+
+regions:
+  - code: us
+    name: United States
+  - code: us-wi
+    name: Wisconsin
+    parent: us
+  - code: us-wi-msn
+    name: Madison
+    parent: us-wi
+
+radio:
+  frequency: '915'
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/5
+  region_code: us-wi-msn
+  public_channel: Public
+  app_preset: 'USA/Canada (Recommended)'
+
+community:
+  website: https://madmesh.net/
+  discord: https://discord.gg/fd3JUZc2CN
+
+maps:
+  - name: Madison MeshCore map
+    url: https://msn.meshmapper.net/
+
+analyzers:
+  - name: RF Lab CoreScope
+    url: https://map.rflab.io/
+
+resources:
+  getting_started: https://madmesh.net/getting-started
+  links:
+    - name: Coverage and antenna guide
+      url: https://madmesh.net/coverage
+    - name: Build a node
+      url: https://madmesh.net/build-a-node
+    - name: Host a node
+      url: https://madmesh.net/host-a-node
+    - name: Madison Mesh GitHub
+      url: https://github.com/karsey24/madmesh.net

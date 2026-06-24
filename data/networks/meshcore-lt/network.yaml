@@ -1,0 +1,33 @@
+# Source: user-supplied analyzer screenshot (2026-06-24)
+name: Lithuania
+also_known_as:
+  - MeshCore Lithuania
+short_name: MeshCore LT
+description: >-
+  Emerging MeshCore network in Lithuania. No public community or coordination
+  information is available yet; an analyzer has been observed operating on the
+  standard EU/UK Narrow radio preset.
+scope: national
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - LT
+
+regions:
+  - code: lt
+    name: Lithuania
+
+analyzers:
+  - name: meshcore.packetstory.com
+    url: https://meshcore.packetstory.com
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  app_preset: 'EU/UK (Narrow)'

@@ -28,6 +28,12 @@ community:
   contact: kontakt[at]lorameshcore.pl
   facebook: https://www.facebook.com/groups/meshcorepolska
 
+analyzers:
+  - name: jomesh.com
+    url: https://jomesh.com
+  - name: MeshCore PL Analyzer
+    url: http://83.25.86.144/
+
 maps:
   - name: MeshCore map
     url: https://meshcore.co.uk/map.html

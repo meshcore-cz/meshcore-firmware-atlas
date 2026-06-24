@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Greater Montréal Mesh area","source":"Approximate footprint based on Montréal Mesh published coverage goals"},"geometry":{"type":"Polygon","coordinates":[[[-74.08,45.38],[-73.92,45.28],[-73.35,45.34],[-73.12,45.52],[-73.22,45.78],[-73.55,45.88],[-73.92,45.76],[-74.08,45.55],[-74.08,45.38]]]}}]}

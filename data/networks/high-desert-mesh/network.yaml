@@ -1,0 +1,40 @@
+# Sources:
+# - https://hdmesh.org/
+# - https://analyzer.dllama.net/api/observers
+name: High Desert Mesh
+also_known_as:
+  - High Desert Emergency Mesh Network
+short_name: HD Mesh
+description: >-
+  Community emergency communications network serving the Southern California
+  high desert, including Victorville, Lancaster, Apple Valley, Palmdale, Phelan
+  and Wrightwood. The wider community supports multiple LoRa mesh technologies,
+  with active MeshCore traffic monitored through a regional CoreScope instance.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - US
+
+radio:
+  frequency: '915'
+  frequency_mhz: 927.875
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/5
+
+community:
+  website: https://hdmesh.org/
+  discord: https://discord.gg/BN2Sjw4qn4
+
+analyzers:
+  - name: High Desert Mesh CoreScope
+    url: https://analyzer.dllama.net/
+
+resources:
+  links:
+    - name: High Desert Mesh monitoring dashboard
+      url: https://monitor.hdmesh.org/

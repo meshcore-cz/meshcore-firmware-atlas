@@ -1,0 +1,91 @@
+# Sources:
+# - https://scotmesh.mm7roq.compute.oarc.uk/
+# - https://wiki.scotmesh.uk/en/MeshCore/repeater-quick-setup
+# - https://wiki.scotmesh.uk/en/MeshCore/regions
+name: ScotMesh
+also_known_as:
+  - Scottish Mesh Community
+short_name: ScotMesh
+description: >-
+  Community-run MeshCore network building resilient long-range communications
+  across Scotland. ScotMesh uses explicit regional scopes to limit flood
+  traffic, with public community tools, a live map, CoreScope analysis and MQTT
+  observer infrastructure.
+scope: national
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - GB
+
+regions:
+  - code: sco
+    name: Scotland
+  - code: cen
+    name: Central Scotland
+    parent: sco
+  - code: fif
+    name: Fife
+    parent: sco
+  - code: tay
+    name: Tayside
+    parent: sco
+  - code: gla
+    name: Glasgow area
+    parent: cen
+  - code: edi
+    name: Edinburgh area
+    parent: cen
+  - code: fal
+    name: Falkirk area
+    parent: cen
+  - code: dun
+    name: Dundee area
+    parent: tay
+  - code: per
+    name: Perth area
+    parent: tay
+  - code: ang
+    name: Angus area
+    parent: tay
+  - code: ioi
+    name: Island of Ireland peering
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  path_hash_mode: 3-Byte
+  tx_power_dbm: 22
+  duty_cycle_pct: 10
+  region_code: sco
+  public_channel: '#scotland'
+  app_preset: 'EU/UK (Narrow)'
+
+community:
+  website: https://scotmesh.mm7roq.compute.oarc.uk/
+  forum: https://scotmesh.uk/
+  discord: https://discord.gg/ytxfyuDmSt
+  facebook: https://www.facebook.com/groups/26406719398968062
+
+maps:
+  - name: ScotMesh live map
+    url: https://scotmesh-map.mm7roq.compute.oarc.uk/
+
+analyzers:
+  - name: ScotMesh CoreScope
+    url: https://scotmesh-corescope.mm7roq.compute.oarc.uk/
+
+resources:
+  getting_started: https://wiki.scotmesh.uk/en/MeshCore/getting-started
+  links:
+    - name: ScotMesh Wiki
+      url: https://wiki.scotmesh.uk/en/MeshCore/MeshCore
+    - name: Region and repeater policy
+      url: https://wiki.scotmesh.uk/en/MeshCore/regions
+    - name: MQTT observer setup
+      url: https://scotmesh.mm7roq.compute.oarc.uk/

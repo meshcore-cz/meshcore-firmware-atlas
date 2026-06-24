@@ -1,0 +1,67 @@
+# Sources:
+# - https://www.montrealmesh.ca/en/
+# - https://www.montrealmesh.ca/en/deployment/coverage/
+# - https://analyzer.montrealmesh.ca/api/observers
+name: Montréal Mesh
+also_known_as:
+  - Montréal Island Mesh Enthusiasts
+  - MIME
+  - MontrealMesh
+short_name: Montréal Mesh
+description: >-
+  Community of hobbyists, builders and experimenters operating MeshCore and
+  Meshtastic across Montréal Island and its surrounding suburbs. Its MeshCore
+  deployment uses fixed repeaters for city-scale coverage, with expansion
+  goals covering Laval, Longueuil and the wider Greater Montréal area.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - CA
+
+regions:
+  - code: ca
+    name: Canada
+  - code: ca-qc
+    name: Québec
+    parent: ca
+  - code: ca-qc-yul
+    name: Greater Montréal
+    parent: ca-qc
+
+radio:
+  frequency: '915'
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/5
+  app_preset: 'USA/Canada (Recommended)'
+
+community:
+  website: https://www.montrealmesh.ca/en/
+  discord: https://discord.gg/xSpMaErKk4
+
+maps:
+  - name: Montréal MeshCore map
+    url: https://analyzer.montrealmesh.ca/#/map
+  - name: Montréal wardrive coverage map
+    url: https://yul.meshmapper.net/
+
+analyzers:
+  - name: Montréal Mesh CoreScope
+    url: https://analyzer.montrealmesh.ca/
+
+resources:
+  getting_started: https://www.montrealmesh.ca/en/meshcore/general-howto/
+  links:
+    - name: MeshCore FAQ
+      url: https://www.montrealmesh.ca/en/meshcore/general-faq/
+    - name: Coverage and expansion goals
+      url: https://www.montrealmesh.ca/en/deployment/coverage/
+    - name: Recommended companion devices
+      url: https://www.montrealmesh.ca/en/hardware/recommended-companions/
+    - name: Repeater deployment guide
+      url: https://www.montrealmesh.ca/en/deployment/repeaters/

@@ -35,6 +35,10 @@ maps:
   - name: Regions map
     url: https://meshcore-de.fyi/region_karte
 
+analyzers:
+  - name: analyzer.meshcorenetz.de
+    url: https://analyzer.meshcorenetz.de
+
 resources:
   getting_started: https://meshcore-de.fyi/
   links:

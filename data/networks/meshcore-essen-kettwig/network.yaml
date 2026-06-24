@@ -1,0 +1,66 @@
+# Sources:
+# - https://jonathansalim.de/
+# - https://jonathansalim.de/wp-json/wp/v2/pages/670
+# - https://corescope.lima11.de/api/observers
+name: MeshCore Essen-Kettwig
+also_known_as:
+  - Bürgerfunkinitiative Essen-Kettwig
+short_name: Essen-Kettwig
+description: >-
+  Public off-grid MeshCore network centered on Essen-Kettwig and extending
+  toward the Ruhrlandklinik and Mülheim Airport. The community operates a
+  resilient local communications network and distributes regional civil
+  protection alerts over MeshCore.
+scope: local
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - DE
+
+regions:
+  - code: europe
+    name: Europe
+  - code: eu
+    name: European Union
+  - code: de
+    name: Germany
+  - code: de-nw
+    name: North Rhine-Westphalia
+    parent: de
+  - code: de-nw-essen-kettwig
+    name: Essen-Kettwig
+    parent: de-nw
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  app_preset: 'EU/UK (Narrow)'
+
+community:
+  website: https://jonathansalim.de/
+  discord: https://discord.com/invite/bSuST8xvet
+  contact: https://jonathansalim.de/#kontakt
+
+maps:
+  - name: Essen-Kettwig network area
+    url: https://jonathansalim.de/#map
+
+analyzers:
+  - name: Essen CoreScope
+    url: https://corescope.lima11.de/
+
+resources:
+  getting_started: https://jonathansalim.de/#settings
+  links:
+    - name: MeshCore FAQ
+      url: https://jonathansalim.de/meshcore-faq/
+    - name: MeshCore channels
+      url: https://jonathansalim.de/meshcore-kanaele/
+    - name: Firmware guide
+      url: https://jonathansalim.de/firmware-v7-14-leitfaden-fuer-meshcore-benutzer/
