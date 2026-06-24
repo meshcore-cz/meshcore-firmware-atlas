@@ -115,3 +115,23 @@ interfaces:
       - power
       - serial
       - flashing
+
+# Community 3D-printable models hosted on Printables. `type` is "case" (default)
+# or "accessory"; `likes` is the host's like count, used to rank models. `image`
+# is the model's social cover thumbnail (remote URL); `url` links to the model.
+prints:
+  - name: M5 Stack Cardputer ADV Hardcase + LoRa Cap
+    type: case
+    date: 2026-02-24
+    author: SmonSE
+    url: https://www.printables.com/model/1280112-m5-stack-cardputer-adv-hardcase-lora-cap
+    image: https://media.printables.com/media/prints/1db6ce5e-4595-4724-9f47-4b9e0f564e6d/images/12035705_4afa7a50-df77-4e13-b0f4-004a9b35f8bd_2506cfe8-cb85-4fc8-ae3a-82a85a371de1/img_01.png
+    likes: 23
+
+  - name: M5Stack Cardputer Case
+    type: case
+    date: 2024-08-12
+    author: hippazoid
+    url: https://www.printables.com/model/971640-m5stack-cardputer-case
+    image: https://media.printables.com/media/prints/971640/images/7419667_576acff9-68d3-489d-9600-dcbc57dbd32b_583beefe-d298-40d9-a32b-21fb9a94faae/thumbs/cover/800x800/jpeg/img_2595.jpg
+    likes: 77

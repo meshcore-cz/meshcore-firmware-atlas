@@ -79,3 +79,15 @@ interfaces:
     ble: true
   wifi:
     status: none
+
+# Community 3D-printable models hosted on Printables. `type` is "case" (default)
+# or "accessory"; `likes` is the host's like count, used to rank models. `image`
+# is the model's social cover thumbnail (remote URL); `url` links to the model.
+prints:
+  - name: Rak WisMesh 1 Watt Booster 3401 + 13302 Simple Case
+    type: enclosure
+    date: 2026-02-15
+    author: ElderMillennial
+    url: https://www.printables.com/model/1586212-rak-wismesh-1-watt-booster-3401-13302-simple-case
+    image: https://media.printables.com/media/prints/c1adac04-6b5e-4197-9b2e-911618699e78/images/11939675_f7c5a2ea-79bb-4038-b2d3-2dad659e5857_9bb3877a-117b-449f-bef6-a4eea8b64458/image-2.webp
+    likes: 17

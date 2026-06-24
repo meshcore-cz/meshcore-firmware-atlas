@@ -113,3 +113,15 @@ interfaces:
     ble: true
   wifi:
     status: present
+
+# Community 3D-printable models hosted on Printables. `type` is "case" (default)
+# or "accessory"; `likes` is the host's like count, used to rank models. `image`
+# is the model's social cover thumbnail (remote URL); `url` links to the model.
+prints:
+  - name: Heltec Wireless Tracker case for Meshtastic
+    type: case
+    date: 2024-08-23
+    author: TonyG
+    url: https://www.printables.com/model/616628-heltec-wireless-tracker-case-for-meshtastic
+    image: https://media.printables.com/media/prints/616628/images/4911801_c4aa5e66-5395-450a-8b0d-5f05ad825f4b_81529a41-e680-4daf-9e62-9a325bc1405a/20231018_223857.jpg
+    likes: 350

@@ -93,3 +93,15 @@ interfaces:
   wifi:
     status: present
     standard: 802.11 ax
+
+# Community 3D-printable models hosted on Printables. `type` is "case" (default)
+# or "accessory"; `likes` is the host's like count, used to rank models. `image`
+# is the model's social cover thumbnail (remote URL); `url` links to the model.
+prints:
+  - name: Protective case lanyard for M5 Unit-C6L Lora module
+    type: case
+    date: 2025-11-17
+    author: tawr
+    url: https://www.printables.com/model/1482962-protective-case-lanyard-for-m5-unit-c6l-lora-modul
+    image: https://media.printables.com/media/prints/f93b0b86-52a6-491e-9172-c1d36a4d766e/images/11184408_29ff23bc-d56e-441c-9bd8-5561d86b30cc_f7c1d76f-664b-4a9d-ae88-101eca0e6ab5/20251116_040041-collage.jpg
+    likes: 3

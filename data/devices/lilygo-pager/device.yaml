@@ -103,3 +103,23 @@ interfaces:
   wifi:
     status: present
     standard: 802.11 b/g/n
+
+# Community 3D-printable models hosted on Printables. `type` is "case" (default)
+# or "accessory"; `likes` is the host's like count, used to rank models. `image`
+# is the model's social cover thumbnail (remote URL); `url` links to the model.
+prints:
+  - name: Expanded back for the Lilygo T-Lora Pager
+    type: case
+    date: 2025-09-13
+    author: cod3doomy
+    url: https://www.printables.com/model/1401310-expanded-back-for-the-lilygo-t-lora-pager
+    image: https://media.printables.com/media/prints/a3da0b13-bb61-4e62-9220-42ca0b7e0727/images/10636873_6cd9d196-a7b1-4196-b1c7-8366892fdf57_f791b690-e665-4749-875f-3eecd11f276e/thumbs/cover/800x800/jpeg/2025-07-31-11-39-51.jpg
+    likes: 13
+
+  - name: Lilygo T-Pager BackPack Panel
+    type: accessory
+    date: 2025-10-08
+    author: tawr
+    url: https://www.printables.com/model/1430860-lilygo-t-pager-backpack-panel
+    image: https://media.printables.com/media/prints/47607431-1634-4e97-9837-816fd9412c8d/images/10803524_dbf5c334-de9e-41cd-bcc3-b46d04c2e254_e57ccf7e-da33-4659-931d-067e83a05f04/20251002_221538-collage.jpg
+    likes: 6

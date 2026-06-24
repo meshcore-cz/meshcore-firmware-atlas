@@ -115,3 +115,15 @@ interfaces:
     ble: true
   wifi:
     status: none
+
+# Community 3D-printable models hosted on Printables. `type` is "case" (default)
+# or "accessory"; `likes` is the host's like count, used to rank models. `image`
+# is the model's social cover thumbnail (remote URL); `url` links to the model.
+prints:
+  - name: SenseCAP Solar Node P1-Pro - Mast Holder Adapter (10-70mm)
+    type: accessory
+    date: 2026-01-25
+    author: yourmum
+    url: https://www.printables.com/model/1570453-sensecap-solar-node-p1-pro-mast-holder-adapter-10
+    image: https://media.printables.com/media/prints/0f266645-fe3c-4c3d-a274-8f0966e37c6e/images/11831627_7a53500e-ce05-44d1-9009-6ed94ecca467_ad7b9a72-1884-44a0-916f-2895b94b2920/thumbs/cover/800x800/jpeg/img_0990.jpg
+    likes: 9
