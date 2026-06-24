@@ -1,7 +1,179 @@
 source: github
 repo: OffbandMesh/meshcore-firmware
-updatedAt: '2026-06-21T09:55:39.988Z'
+updatedAt: '2026-06-24T05:07:56.565Z'
 releases:
+  - version: offband-v1.1.0
+    name: Offband offband-v1.1.0
+    datetime: '2026-06-24T04:41:17Z'
+    url: https://github.com/OffbandMesh/meshcore-firmware/releases/tag/offband-v1.1.0
+    prerelease: false
+    notes: >-
+      The headline is **Epic F: the companion-API config command** — a WiFi observer can now be
+
+      configured entirely from the app (WiFi, the full MQTT broker pool, display) over BLE —
+
+      plus the observer config/NVS-layer hardening that came out of bench-validating it. Still
+
+      on the **MeshCore 1.16.0** base.
+
+
+      ### Added
+
+      - **Companion-API config command (Epic F, #159)** — configure a WiFi observer from the
+        MeshCore/Offband app over BLE: WiFi credentials, the full MQTT broker pool (per-slot
+        url / port / transport / auth / JWT claims / CA-cert / topic-prefix / IATA),
+        enable / disable / clear a slot, and display settings. Wholly observer-gated and surfaced
+        behind a new `WIFI_OBSERVER_SUPPORT` capability bit + `FIRMWARE_VER_CODE 14`, so stock
+        companions are unaffected. (#160–#169)
+      - **Per-broker live state in the broker read** (#172) — each slot now reports its live
+        connection state (`connecting` / `up` / `backoff` / `held` …) + last-error class, so the
+        app shows whether a broker actually connected, not just that it's enabled.
+      - **Resolved-default hints** (#173, #186) — when `jwt_owner` / `iata_override` are unset,
+        the read shows the value the device will actually use at connect (its own pubkey / the
+        global IATA) as a placeholder instead of a confusing blank — in both the pool dump and
+        the per-field read.
+
+      ### Changed
+
+      - **Honest observer config writes (SAFELANE §6, #181)** — the config / NVS write path used
+        to silently swallow failures (a broker disable could ACK success while nothing changed).
+        Every writer, the live-reload path, and the crash logger itself now surface + log
+        failures with context. This is what root-caused #179.
+      - **Compact broker config storage + seamless migration** (#182) — broker config is stored
+        as small per-key entries (no blank fields) rather than one ~1 KB blob, so writes fit a
+        near-full NVS; a one-time **invisible boot migration** reclaims space on upgrade, so the
+        operator never sees a transient write error.
+      - **CoreScope (okimesh) default broker** → `mqtt://mqtt1.okimesh.org:1883` (#170).
+
+      - **Offband tell in MQTT** (#174) — observer nodes append a 📡 to their display name in
+        MQTT payloads, so feeds / maps can flag Offband observers.
+
+      ### Fixed
+
+      - **#179** — a broker disable ACK'd success while the dump still reported `enabled=1`.
+        Root-caused as a near-full-NVS write failure the old code lied about; fixed by #181
+        (honest write) + #182 (storage that fits). Verified on hardware.
+      - **Observer capped at 1 concurrent TLS broker** (#171) — a heap guard stops the OOM reboot
+        when a 2nd TLS/wss broker's ~60 KB mbedTLS context exhausts the Heltec V3 heap. Measured
+        on hardware (1 wss ≈ 63 KB free, 2 wss ≈ crash).
+      - **BLE connect survives the client's reconnect-thrash** (#178) — a deeper ESP32 BLE frame
+        queue (4 → 12) + stream terminators on reconnect, so a mid-stream reconnect can't leave
+        the app's contact / settings sync hung. Affects companion **and** observer. (The root —
+        the client's uncapped reconnect retry — is paced client-side in meshcore-client.)
+      - **Crash log reliable for the whole boot** (#183) — the 1 Hz heartbeat was flooding the
+        4 KB RTC crash-ring (wrapped in ~50 s) and evicting real crash diagnostics; the heartbeat
+        now writes the ring every 30 s / on a sharp heap drop, so a post-reboot dump keeps the
+        evidence that explains a crash past boot+50 s.
+
+      ### CI / build
+
+      - **Heltec T114** (nRF52) companion added to the CI matrix (#185) — first nRF52-companion
+        build coverage (complements the existing RAK4631 repeater).
+
+
+      ---
+
+
+      ### Which file do I download?
+
+
+      | File | What it is | When to use it |
+
+      |---|---|---|
+
+      | `*-merged.bin` (ESP32 — Heltec V3/V4, XIAO) | **Full image** — bootloader + partition table
+      + app in one, flashed at `0x0` after a chip erase. Self-contained, works on a blank chip. |
+      **First install / clean setup.** In a web flasher this is the **"Full Firmware"** option. |
+
+      | `*.bin` (ESP32) | **App only** — flashed at the app offset (`0x10000`); the bootloader m
+
+      …
+  - version: offband-v1.1.0-rc1
+    name: Offband offband-v1.1.0-rc1
+    datetime: '2026-06-24T04:24:07Z'
+    url: https://github.com/OffbandMesh/meshcore-firmware/releases/tag/offband-v1.1.0-rc1
+    prerelease: true
+    notes: >-
+      The headline is **Epic F: the companion-API config command** — a WiFi observer can now be
+
+      configured entirely from the app (WiFi, the full MQTT broker pool, display) over BLE —
+
+      plus the observer config/NVS-layer hardening that came out of bench-validating it. Still
+
+      on the **MeshCore 1.16.0** base.
+
+
+      ### Added
+
+      - **Companion-API config command (Epic F, #159)** — configure a WiFi observer from the
+        MeshCore/Offband app over BLE: WiFi credentials, the full MQTT broker pool (per-slot
+        url / port / transport / auth / JWT claims / CA-cert / topic-prefix / IATA),
+        enable / disable / clear a slot, and display settings. Wholly observer-gated and surfaced
+        behind a new `WIFI_OBSERVER_SUPPORT` capability bit + `FIRMWARE_VER_CODE 14`, so stock
+        companions are unaffected. (#160–#169)
+      - **Per-broker live state in the broker read** (#172) — each slot now reports its live
+        connection state (`connecting` / `up` / `backoff` / `held` …) + last-error class, so the
+        app shows whether a broker actually connected, not just that it's enabled.
+      - **Resolved-default hints** (#173, #186) — when `jwt_owner` / `iata_override` are unset,
+        the read shows the value the device will actually use at connect (its own pubkey / the
+        global IATA) as a placeholder instead of a confusing blank — in both the pool dump and
+        the per-field read.
+
+      ### Changed
+
+      - **Honest observer config writes (SAFELANE §6, #181)** — the config / NVS write path used
+        to silently swallow failures (a broker disable could ACK success while nothing changed).
+        Every writer, the live-reload path, and the crash logger itself now surface + log
+        failures with context. This is what root-caused #179.
+      - **Compact broker config storage + seamless migration** (#182) — broker config is stored
+        as small per-key entries (no blank fields) rather than one ~1 KB blob, so writes fit a
+        near-full NVS; a one-time **invisible boot migration** reclaims space on upgrade, so the
+        operator never sees a transient write error.
+      - **CoreScope (okimesh) default broker** → `mqtt://mqtt1.okimesh.org:1883` (#170).
+
+      - **Offband tell in MQTT** (#174) — observer nodes append a 📡 to their display name in
+        MQTT payloads, so feeds / maps can flag Offband observers.
+
+      ### Fixed
+
+      - **#179** — a broker disable ACK'd success while the dump still reported `enabled=1`.
+        Root-caused as a near-full-NVS write failure the old code lied about; fixed by #181
+        (honest write) + #182 (storage that fits). Verified on hardware.
+      - **Observer capped at 1 concurrent TLS broker** (#171) — a heap guard stops the OOM reboot
+        when a 2nd TLS/wss broker's ~60 KB mbedTLS context exhausts the Heltec V3 heap. Measured
+        on hardware (1 wss ≈ 63 KB free, 2 wss ≈ crash).
+      - **BLE connect survives the client's reconnect-thrash** (#178) — a deeper ESP32 BLE frame
+        queue (4 → 12) + stream terminators on reconnect, so a mid-stream reconnect can't leave
+        the app's contact / settings sync hung. Affects companion **and** observer. (The root —
+        the client's uncapped reconnect retry — is paced client-side in meshcore-client.)
+      - **Crash log reliable for the whole boot** (#183) — the 1 Hz heartbeat was flooding the
+        4 KB RTC crash-ring (wrapped in ~50 s) and evicting real crash diagnostics; the heartbeat
+        now writes the ring every 30 s / on a sharp heap drop, so a post-reboot dump keeps the
+        evidence that explains a crash past boot+50 s.
+
+      ### CI / build
+
+      - **Heltec T114** (nRF52) companion added to the CI matrix (#185) — first nRF52-companion
+        build coverage (complements the existing RAK4631 repeater).
+
+
+      ---
+
+
+      ### Which file do I download?
+
+
+      | File | What it is | When to use it |
+
+      |---|---|---|
+
+      | `*-merged.bin` (ESP32 — Heltec V3/V4, XIAO) | **Full image** — bootloader + partition table
+      + app in one, flashed at `0x0` after a chip erase. Self-contained, works on a blank chip. |
+      **First install / clean setup.** In a web flasher this is the **"Full Firmware"** option. |
+
+      | `*.bin` (ESP32) | **App only** — flashed at the app offset (`0x10000`); the bootloader m
+
+      …
   - version: offband-v1.0.0
     name: Offband offband-v1.0.0
     datetime: '2026-06-18T00:46:24Z'
