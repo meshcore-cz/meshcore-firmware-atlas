@@ -401,6 +401,7 @@ function buildSitemap(root, { devices, firmwares, vendors, networks, software, g
     '/releases/',
     '/schemas/',
     '/bundle/',
+    '/gallery/',
     '/about/',
     ...METRICS.map((m) => `/device-rank/${m.id}/`),
     ...devices.map((d) => `/device/${d.id}/`),

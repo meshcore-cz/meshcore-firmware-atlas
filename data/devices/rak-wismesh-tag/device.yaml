@@ -97,3 +97,25 @@ interfaces:
     ble: true
   wifi:
     status: none
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Holster for RAK Wismesh Tag Meshtastic Node"
+    type: accessory
+    author: "Scott W"
+    url: "https://www.printables.com/model/1448177-holster-for-rak-wismesh-tag-meshtastic-node"
+    image: "https://media.printables.com/media/prints/1ef4bfc1-f0f3-42c7-b806-008ebaafc4a3/images/10918528_7a977112-48ec-4156-91b6-7c1d6bc5bee6_06ddcaa7-a81a-4e41-a9f7-feeda5a14ddd/thumbs/cover/1200x630/jpg/1000042722.jpg"
+    likes: 15
+  - name: "Holster for RAK Wismesh Tag Meshtastic Node (Remix)"
+    type: accessory
+    author: "RaspberryPi0"
+    url: "https://www.printables.com/model/1628784-holster-for-rak-wismesh-tag-meshtastic-node-remix"
+    image: "https://media.printables.com/media/prints/af108a5d-a40a-465e-ac3a-e15c693515eb/images/12251223_a383dc29-a8b6-46e0-ae81-71f142cd71c9_918d3730-cedc-4f06-b344-f0e3ac9d9380/thumbs/cover/1200x630/jpg/pxl_20260307_153136689.jpg"
+    likes: 4
+  - name: "RAK WisMesh Tag Charging Sled"
+    type: accessory
+    author: "Archdale"
+    url: "https://www.printables.com/model/1428441-rak-wismesh-tag-charging-sled"
+    image: "https://media.printables.com/media/prints/c2e46e6d-072e-4ea4-922b-36dd9d4ec6eb/images/10773177_62023c39-4e51-47e9-9f70-6caa3e2d02ff_d15c2fdd-9f05-4453-8014-ef209e0eabe0/thumbs/cover/1200x630/jpg/pxl_20250920_020248048.jpg"
+    likes: 24

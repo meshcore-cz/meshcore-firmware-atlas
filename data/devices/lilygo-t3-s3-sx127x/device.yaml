@@ -105,3 +105,31 @@ interfaces:
   wifi:
     status: present
     standard: 802.11 b/g/n
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "LILYGO T3-S3 v1.2 Slimline Case with Button"
+    type: enclosure
+    author: "Andrew Yong"
+    url: "https://www.printables.com/model/876074-lilygo-t3-s3-v12-slimline-case-with-button"
+    image: "https://media.printables.com/media/prints/876074/images/6720144_5da1b972-aaad-49e0-a07c-0c916792fa91_5cee504b-ede1-4a6f-b6fc-3b930b89eaa4/thumbs/cover/1200x630/png/large_display_d6607272-5ac7-44a4-9a05-b9c4a8009049_876074.png"
+    likes: 19
+  - name: "LILYGO T3-S3 v1.2 Slimline Case with Button, Clip, and space for battery."
+    type: enclosure
+    author: "Vladi"
+    url: "https://www.printables.com/model/1303593-lilygo-t3-s3-v12-slimline-case-with-button-clip-an"
+    image: "https://media.printables.com/media/prints/501d4d88-5dad-4cc1-8bed-41840cecf64a/images/9828601_2f8bee00-ec8b-4252-a6f4-aef253f3722f_18934c63-4511-4330-9411-21455e9ec2a9/thumbs/cover/1200x630/jpg/pxl_20250521_183232046.jpg"
+    likes: 9
+  - name: "LilyGo T3 S3 Case"
+    type: enclosure
+    author: "peteigel"
+    url: "https://www.printables.com/model/1363530-lilygo-t3-s3-case"
+    image: "https://media.printables.com/media/prints/4a93a0a2-4577-42a5-be44-978c3d7a1347/images/10294380_6323780f-7dff-4193-9a08-59e9233bfb5b_44d4eda1-e78f-4243-a9dd-43c4b3b684e4/thumbs/cover/1200x630/jpg/photo-00-hero.jpg"
+    likes: 8
+  - name: "LilyGo T3S3 V1 Meshtastic Case"
+    type: enclosure
+    author: "Planmarks"
+    url: "https://www.printables.com/model/1441805-lilygo-t3s3-v1-meshtastic-case"
+    image: "https://media.printables.com/media/prints/fcd05a88-efa4-4a68-b486-1b80100052b5/images/10870487_2337a632-de69-4ac0-856f-3a1b63c4338f_009e505c-bfe7-404c-b502-68844db727fc/thumbs/cover/1200x630/jpg/photo_2025-10-11_17-41-40.jpg"
+    likes: 6

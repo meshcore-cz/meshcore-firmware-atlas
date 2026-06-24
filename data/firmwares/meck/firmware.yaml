@@ -60,6 +60,10 @@ devices:
   - id: lilygo-tdeck-pro
     status: supported
     notes: T-Deck Pro variant with ESP32-S3 and e-paper display.
+  # Source: README and release assets for T-Deck Max
+  - id: lilygo-tdeck-max
+    status: supported
+    notes: T-Deck Max variant with 4G, GPS, and e-paper display.
   # Source: Meck variant lilygo_t5s3_epaper_pro, release asset Meck-T5S3Pro-BLE
   - id: lilygo-t5-pro
     status: supported

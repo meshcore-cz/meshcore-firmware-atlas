@@ -121,3 +121,25 @@ interfaces:
   wifi:
     status: present
     standard: 802.11 b/g/n
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Heltec Meshtastic case"
+    type: enclosure
+    author: "jameslee"
+    url: "https://www.printables.com/model/245140-heltec-meshtastic-case"
+    image: "https://media.printables.com/media/prints/245140/images/2208153_95ab2a4e-b267-46ea-9ff0-9f9d29f63db4/thumbs/cover/1200x630/jpg/large_display_small_245140.jpg"
+    likes: 49
+  - name: "GDMK Heltec v2/v3 mini & matchbox (Smallest modular case project) Meshtastic inspired"
+    type: enclosure
+    author: "Gendemik"
+    url: "https://www.printables.com/model/873255-gdmk-heltec-v2v3-mini-matchbox-smallest-modular-ca"
+    image: "https://media.printables.com/media/prints/873255/images/6700978_c91ad4f4-0368-4289-9a50-fd1cbc092d39_56e751cd-7b8d-4f75-9959-3da747cfe6b7/thumbs/cover/1200x630/jpeg/img_7124.jpg"
+    likes: 49
+  - name: "meshtastic / meshcore heltec v2 battery case with two 18650 with bms tp4056"
+    type: enclosure
+    author: "Gungriffonbr"
+    url: "https://www.printables.com/model/1217040-meshtastic-meshcore-heltec-v2-battery-case-with-tw"
+    image: "https://media.printables.com/media/prints/1217040/images/9132422_8c4eebaa-f57e-4120-babf-a1534ff819e6_668cfe7a-94b9-4942-bbad-4b2c4dec921e/thumbs/cover/1200x630/jpg/481264292_10236381747554890_2669966886608215747_n.jpg"
+    likes: 18

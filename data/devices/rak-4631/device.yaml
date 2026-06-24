@@ -99,13 +99,13 @@ interfaces:
 # social cover thumbnail (remote URL); `url` links to the printable.
 prints:
   - name: MagSafe Meshtastic/MeshCore Case for RAK WisBlock Mini
-    type: case
+    type: enclosure
     date: 2026-02-08
     author: Alec P
     url: https://www.printables.com/model/1591447-magsafe-meshtasticmeshcore-case
     image: https://media.printables.com/media/prints/4175bff2-dd4c-4168-894d-7d1b45e684af/images/11976497_04c99ff5-04e0-40b8-8fd8-f988e465d83f_9a0a0a10-f665-4f02-a6b0-277445f1bc87/thumbs/cover/1200x630/webp/magsafe-node.webp
   - name: MagSafe LoRa Radio Case - Meshtastic/MeshCore
-    type: case
+    type: enclosure
     date: 2026-02-28
     author: shreyashgupta
     url: https://www.printables.com/model/1540100-magsafe-lora-radio-case-meshtastic-meshcore-rak-wi
@@ -122,3 +122,34 @@ prints:
     author: zerofox3D
     url: https://www.printables.com/model/1283453-hermes-external-solar-node-enclosure-for-meshcore
     image: https://media.printables.com/media/prints/087ab57b-956e-4375-b006-35b406a076ba/images/9656322_8a76cb0a-d7ea-4a22-9c92-b125f3f1d5a5_74592dc7-7d23-4b51-ad5a-9650636a8a99/thumbs/cover/1200x630/webp/hermes04new.webp
+
+  - name: "RAK19007/RAK5005 case for Meshtastic"
+    type: enclosure
+    author: "TonyG"
+    url: "https://www.printables.com/model/286657-rak19007rak5005-case-for-meshtastic"
+    image: "https://media.printables.com/media/prints/286657/images/6007880_e2b43e24-6d42-42a0-afed-a0833d46c9df_678e4461-f801-4855-b6ce-3be0cf9f9c30/thumbs/cover/1200x630/jpg/20231023_194451.jpg"
+    likes: 429
+  - name: "Case for RAK Wireless 19007 Meshtastic board"
+    type: enclosure
+    author: "MeshtasticCmoi"
+    url: "https://www.printables.com/model/870329-case-for-rak-wireless-19007-meshtastic-board"
+    image: "https://media.printables.com/media/prints/870329/images/6680869_c2c6e650-680c-48e7-a134-208ab2681f5a_c1fecbe9-0565-4744-8b6b-084884302bbd/thumbs/cover/1200x630/jpg/img_20240506_101328.jpg"
+    likes: 19
+  - name: "Batpack - Case for RAK 19007 Meshtastic Kit"
+    type: enclosure
+    author: "Andy F"
+    url: "https://www.printables.com/model/1006075-batpack-case-for-rak-19007-meshtastic-kit"
+    image: "https://media.printables.com/media/prints/1006075/images/7652855_467d65ef-3480-4ff8-847f-c6318089cec6_f18ec145-7aa7-4f79-82a1-d171482fb46b/thumbs/cover/1200x630/jpg/case.jpg"
+    likes: 54
+  - name: "Snap Fit MagSafe Meshtastic Case for RAK 19007"
+    type: enclosure
+    author: "garthvh"
+    url: "https://www.printables.com/model/83162-snap-fit-magsafe-meshtastic-case-for-rak-19007"
+    image: "https://media.printables.com/media/prints/83162/images/5433775_4f01b684-8c3c-4388-a274-391e450b9449_ddd0728b-3c1d-4970-978b-d8c0e2a937a6/thumbs/cover/1200x630/jpeg/magsafe.jpg"
+    likes: 31
+  - name: "MTK Pocket Case for Meshtastic"
+    type: enclosure
+    author: "BenP"
+    url: "https://www.printables.com/model/1012594-mtk-pocket-case-for-meshtastic"
+    image: "https://media.printables.com/media/prints/1012594/images/7696681_705f3914-a3da-4564-bef8-50103c418314_e4308ed9-702c-4303-8211-700cad921cf7/thumbs/cover/1200x630/jpeg/signal-2024-09-19-144326_006.jpg"
+    likes: 30

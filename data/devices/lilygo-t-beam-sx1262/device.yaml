@@ -107,3 +107,31 @@ interfaces:
   wifi:
     status: present
     standard: 802.11 b/g/n
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "T-Beam v1.x case for Meshtastic"
+    type: enclosure
+    author: "TonyG"
+    url: "https://www.printables.com/model/127253-t-beam-v1x-case-for-meshtastic"
+    image: "https://media.printables.com/media/prints/127253/images/4587451_e14771d6-5bf0-40f3-91c6-b1c3499315ee/thumbs/cover/1200x630/jpg/20230904_230851.jpg"
+    likes: 547
+  - name: "T-beam Enclosure Urban (Meshtastic)"
+    type: enclosure
+    author: "Canine Defense Technologies"
+    url: "https://www.printables.com/model/485729-t-beam-enclosure-urban-meshtastic"
+    image: "https://media.printables.com/media/prints/485729/images/3966240_947a3b06-1b84-422f-b996-1e6bec6fe354/thumbs/cover/1200x630/jpg/20230520_0040080.jpg"
+    likes: 81
+  - name: "K-TAC Rugged T-Beam Enclosure 1"
+    type: enclosure
+    author: "Canine Defense Technologies"
+    url: "https://www.printables.com/model/164885-k-tac-rugged-t-beam-enclosure-1"
+    image: "https://media.printables.com/media/prints/164885/images/2535360_a2f0eb0d-9a79-4d2f-b4df-3b3f618bad22/thumbs/cover/1200x630/jpg/9710471652563942410.jpg"
+    likes: 66
+  - name: "Lilygo T-Beam V1.x TB1 Case by Alley Cat"
+    type: enclosure
+    author: "Alley Cat"
+    url: "https://www.printables.com/model/730602-lilygo-t-beam-v1x-tb1-case-by-alley-cat"
+    image: "https://media.printables.com/media/prints/730602/images/7324370_7d70e611-2f15-4b1a-a6de-684e3ee6def2_9f317104-4157-4272-940c-ef9be1a1a100/thumbs/cover/1200x630/png/tb1.png"
+    likes: 213

@@ -57,3 +57,37 @@ interfaces:
     ble: true
   wifi:
     status: none
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Faketec nrf52 Meshtastic Case with Encoder/Buzzer/GPS/Environment sensor, M5Stack CardKB Keyboard-ready"
+    type: enclosure
+    author: "Timurey"
+    url: "https://www.printables.com/model/1102989-faketec-nrf52-meshtastic-case-with-encoderbuzzergp"
+    image: "https://media.printables.com/media/prints/1102989/images/8338239_175b357c-e55f-4cdc-a6fd-f6a461aad25f_084fee12-dbd6-475a-94f4-8fe9e6bf3758/thumbs/cover/1200x630/jpeg/img_7848.jpg"
+    likes: 51
+  - name: "Faketec V4 case Meshtastic MeshPhone with GPS and Oled"
+    type: enclosure
+    author: "PunsiPuny"
+    url: "https://www.printables.com/model/1442889-faketec-v4-case-meshtastic-meshphone-with-gps-and"
+    image: "https://media.printables.com/media/prints/42159f2d-6471-42bc-8ba2-dc520f23596f/images/11993722_ecd8d906-92ee-4dbf-b897-5a2f808d75e2_d11a6fb4-3529-4bcc-a2a9-503c23830011/thumbs/cover/1200x630/jpeg/img_0805.jpg"
+    likes: 49
+  - name: "FakeTec TakNode"
+    type: enclosure
+    author: "jtljac"
+    url: "https://www.printables.com/model/1605730-faketec-taknode"
+    image: "https://media.printables.com/media/prints/d5d31fba-115e-47fd-9ff0-5987e206ebe6/images/12083892_2a4ffe23-1725-47e8-8e45-4029d9e02400_bf9d94a7-9a0c-41f5-8ce7-6434cf612d5c/thumbs/cover/1200x630/jpg/short.jpg"
+    likes: 7
+  - name: "CoreFrame Faketec node"
+    type: enclosure
+    author: "Antgans"
+    url: "https://www.printables.com/model/1660082-coreframe-faketec-node"
+    image: "https://media.printables.com/media/prints/6bb22d28-a2a8-4821-89e4-4b384d64c9c7/images/12474913_d0d078f2-ff64-4dac-95a2-28435bfef16c_93dd6b17-06a7-4f5e-bf00-7ab93adaacdb/thumbs/cover/1200x630/jpg/photo_5913262230008958571_y.jpg"
+    likes: 8
+  - name: "Minimesh | Standalone fakeTec Messenger Node (Heltec V3 Now Supported!)"
+    type: enclosure
+    author: "dj505"
+    url: "https://www.printables.com/model/1274135-minimesh-standalone-faketec-messenger-node-heltec"
+    image: "https://media.printables.com/media/prints/e5c18c30-6c77-41b0-9628-2b6cac56d7c8/images/9581517_cb568930-97ed-4be1-a413-b47e6599db8e_1307cf57-c689-41a5-93a7-66f9b87fb339/thumbs/cover/1200x630/jpg/20250423_103329.jpg"
+    likes: 35

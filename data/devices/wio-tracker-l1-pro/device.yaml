@@ -104,3 +104,25 @@ interfaces:
     ble: true
   wifi:
     status: none
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Wio Tracker L1 Pro for Meshtastic Enclosure Casing"
+    type: enclosure
+    author: "Seeed Studio"
+    url: "https://www.printables.com/model/1355571-wio-tracker-l1-pro-for-meshtastic-enclosure-casing"
+    image: "https://media.printables.com/media/prints/302c1a04-ad76-40bf-b0f0-c214eda0a839/images/10236085_990054ee-ab85-4945-9e6d-6815960fbccd_69d9f16c-7360-41d0-867e-5fcbbc4b9178/thumbs/cover/1200x630/png/screenshot-2025-07-15-at-094347.png"
+    likes: 116
+  - name: "Wio Tracker L1 Pro Housing Original & Wide (organized)"
+    type: enclosure
+    author: "vidision"
+    url: "https://www.printables.com/model/1456983-wio-tracker-l1-pro-housing-original-wide-organized"
+    image: "https://media.printables.com/media/prints/4f22cd9a-2829-4347-b32f-5c0178d1821a/images/10986998_5755f32d-73f5-498a-9ce6-0b2fb65fedaa_b5cb44ee-19be-4750-b699-85c7b3624fff/thumbs/cover/1200x630/jpeg/d8318fd7-aa5f-4eef-bc99-3b516d540df7_1_201_a.jpg"
+    likes: 14
+  - name: "Wio Tracker L1 Pro PLUS case"
+    type: enclosure
+    author: "austin g"
+    url: "https://www.printables.com/model/1398351-wio-tracker-l1-pro-plus-case"
+    image: "https://media.printables.com/media/prints/01201864-4beb-418a-8e08-c6afcdce38d1/images/11936274_1db31c8f-6bb9-4e0d-a3f7-2568e9954652_b762c928-04c3-4df2-8811-be61c9d21913/thumbs/cover/1200x630/png/screenshot-2026-02-04-202534.png"
+    likes: 58

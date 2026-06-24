@@ -188,3 +188,46 @@ prints:
     author: zerofox3D
     url: https://www.printables.com/model/1283453-hermes-external-solar-node-enclosure-for-meshcore
     image: https://media.printables.com/media/prints/087ab57b-956e-4375-b006-35b406a076ba/images/9656322_8a76cb0a-d7ea-4a22-9c92-b125f3f1d5a5_74592dc7-7d23-4b51-ad5a-9650636a8a99/thumbs/cover/1200x630/webp/hermes04new.webp
+
+  - name: "Heltec v3 case for Meshtastic"
+    type: enclosure
+    author: "TonyG"
+    url: "https://www.printables.com/model/561389-heltec-v3-case-for-meshtastic"
+    image: "https://media.printables.com/media/prints/561389/images/4499535_c5303493-5377-475b-a288-24a5fb1791a2/thumbs/cover/1200x630/jpg/20230403_203322.jpg"
+    likes: 1566
+  - name: "Meshtastic Heltec V3 Enclosure - Long for 18650"
+    type: enclosure
+    author: "Gremlin87"
+    url: "https://www.printables.com/model/914549-meshtastic-heltec-v3-enclosure-long-for-18650"
+    image: "https://media.printables.com/media/prints/914549/images/6985074_b172ca25-9929-4974-82ca-9cbcb03ff5d9_038d4777-02b0-4853-bc73-f3310b7507cf/thumbs/cover/1200x630/jpg/20240616_120105.jpg"
+    likes: 117
+  - name: "Meshtastic Pocket Heltec V3"
+    type: enclosure
+    author: "CodeChomper"
+    url: "https://www.printables.com/model/970684-meshtastic-pocket-heltec-v3"
+    image: "https://media.printables.com/media/prints/970684/images/7405457_eb02287b-3ff7-4ff8-bc63-c95c9dc513e1_756aabbc-497c-4a97-a76a-ea46fb9ada31/thumbs/cover/1200x630/jpg/meshtasticpocket.jpg"
+    likes: 66
+  - name: "Nibbler Meshtastic powered Case for Heltec V3 and T114"
+    type: enclosure
+    author: "zerofox3D"
+    url: "https://www.printables.com/model/856982-nibbler-meshtastic-powered-case-for-heltec-v3-and"
+    image: "https://media.printables.com/media/prints/856982/images/7742712_749ff2c9-ce4a-42a1-ba04-87c24eb4bd1e_7a8aa93d-6ac3-4c9b-a16b-b19bde9738d9/thumbs/cover/1200x630/png/nibblerplust114_grn02.png"
+    likes: 216
+  - name: "Heltec LoRa32 V3 Meshtastic Case with Encoder/Buzzer/GPS/Environment sensor, M5Stack CardKB Keyboard-ready"
+    type: enclosure
+    author: "slabua"
+    url: "https://www.printables.com/model/882598-heltec-lora32-v3-meshtastic-case-with-encoderbuzze"
+    image: "https://media.printables.com/media/prints/882598/images/6765449_ea43a154-95f0-4681-a919-4d87421f9817_834fab84-a73e-4c85-b4ad-4508a43bc181/thumbs/cover/1200x630/jpg/large_display_444f6460-8b3f-47da-babc-0d15010d7cf4_882598.jpg"
+    likes: 415
+  - name: "Pager Style Holster for the muzi.works H1 Heltec V3 Case"
+    type: accessory
+    author: "Alley Cat"
+    url: "https://www.printables.com/model/936466-pager-style-holster-for-the-muziworks-h1-heltec-v3"
+    image: "https://media.printables.com/media/prints/936466/images/7157647_9c9c0fb0-ab62-4755-87cf-4d95d3d71c20_a8308210-aa40-44b9-9318-89b831dee52d/thumbs/cover/1200x630/jpg/img_4968.jpg"
+    likes: 221
+  - name: "Belt Holster for Meshtastic H1 Case"
+    type: accessory
+    author: "Brian"
+    url: "https://www.printables.com/model/924569-belt-holster-for-meshtastic-h1-case"
+    image: "https://media.printables.com/media/prints/924569/images/7052940_74eb841a-9f83-4f48-90d1-57e23a6d41a8_9069ef29-9419-413a-a3e6-346f42771d6b/thumbs/cover/1200x630/jpg/img_1071.jpg"
+    likes: 26

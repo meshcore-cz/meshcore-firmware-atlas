@@ -122,3 +122,19 @@ interfaces:
   wifi:
     status: present
     standard: 802.11 b/g/n
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Vision Master E290 case for Meshtastic"
+    type: enclosure
+    author: "HarukiToreda"
+    url: "https://www.printables.com/model/970665-vision-master-e290-case-for-meshtastic"
+    image: "https://media.printables.com/media/prints/970665/images/7405343_67011cd5-6d1e-4d20-be38-69cf46ea50f3_1800d6b7-a68b-4b90-a09d-c22c3a80d1d5/thumbs/cover/1200x630/jpg/20240810_214723.jpg"
+    likes: 32
+  - name: "Heltec VisionMaster E290 LoRa mesh node slipcase, slim and fat designs."
+    type: enclosure
+    author: "Easy Target"
+    url: "https://www.printables.com/model/1146246-heltec-visionmaster-e290-lora-mesh-node-slipcase-s"
+    image: "https://media.printables.com/media/prints/1146246/images/8652442_37031338-f2e7-4238-b8d6-c94bb8641537_d57c676e-8c3b-4da9-aae9-56ef8be544ab/thumbs/cover/1200x630/jpg/heltec-visionmaster-e290-1.jpg"
+    likes: 34

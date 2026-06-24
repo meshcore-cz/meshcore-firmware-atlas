@@ -134,3 +134,16 @@ prints:
     url: https://www.printables.com/model/1264151-meshtastic-xiao-esp32s3-wio-sx1262-case
     image: https://media.printables.com/media/prints/ccb753b1-a73f-435f-8c1b-bd4290adc214/images/9493247_7ba793cb-8fce-4352-91f6-744005c31f48_6a2b1af9-aac9-4462-a6cf-bb69172cf4d5/thumbs/cover/1200x630/jpg/img_20250413_194954_555.jpg
     likes: 50
+
+  - name: "Meshtastic Seeed Studio XIAO ESP32S3 & Wio SX1262 case with molle clip support needed"
+    type: enclosure
+    author: "Adukko"
+    url: "https://www.printables.com/model/1418606-meshtastic-seeed-studio-xiao-esp32s3-wio-sx1262-ca"
+    image: "https://media.printables.com/media/prints/6fe11e04-61a3-4fa1-a4fe-a3b1f9359671/images/10703766_e75839d3-d5a0-47b2-b54f-815f0b6e0846_291c96b6-440d-4782-b0c9-fb77c7d12920/thumbs/cover/1200x630/jpg/pxl_20250918_221041008.jpg"
+    likes: 14
+  - name: "Nap CubeNode; The case for seeed xiao Esp32 + Wio-sx1262"
+    type: enclosure
+    author: "Nallo"
+    url: "https://www.printables.com/model/1313588-nap-cubenode-the-case-for-seeed-xiao-esp32-wio-sx1"
+    image: "https://media.printables.com/media/prints/6fb75edb-c2ea-4a54-9708-51557af384c6/images/9910305_e079ee08-2c42-46e8-9aef-b45bf72218f7_92abfa67-0600-47d4-87e0-5b3ee999a656/thumbs/cover/1200x630/jpg/20250531_105457.jpg"
+    likes: 13

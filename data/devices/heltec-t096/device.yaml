@@ -124,3 +124,16 @@ prints:
     url: https://www.printables.com/model/1707209-heltec-mesh-node-t096-solar-case-1100mah
     image: https://media.printables.com/media/prints/7db02b35-aa08-4001-b65a-a40a9cc5ed21/images/12822294_f828b2d4-a9e9-4b7e-af3c-8dbbff85c12f_19f6a5d9-c4ea-4d48-aa18-6694edf2269e/thumbs/cover/1200x630/jpg/img_20260503_013415.jpg
     likes: 6
+
+  - name: "Heltec T096 Mini 1000mah"
+    type: enclosure
+    author: "xodaraP_motnahP"
+    url: "https://www.printables.com/model/1715257-heltec-t096-mini-1000mah"
+    image: "https://media.printables.com/media/prints/00a067eb-6a07-4372-b31c-f0a06d457223/images/12871176_8f8f33bb-9eea-422f-8c7d-25401341d8c4_747c1cf2-d97c-413c-8972-970a635d0d5f/thumbs/cover/1200x630/jpg/20260509_000919.jpg"
+    likes: 3
+  - name: "Heltec T096 and Wireless Tracker V2 Vega case"
+    type: enclosure
+    author: "Rinordine"
+    url: "https://www.printables.com/model/1730121-heltec-t096-and-wireless-tracker-v2-vega-case"
+    image: "https://media.printables.com/media/prints/c6806123-c93c-434a-8e98-02399bd19101/images/12974076_05602cd5-0911-4a11-bff8-c70af0dec18d_a9fa13e7-7a72-4a2f-b18a-08017c8e2faa/thumbs/cover/1200x630/jpg/img_20260522_143210_hdr.jpg"
+    likes: 2

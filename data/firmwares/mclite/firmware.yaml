@@ -54,6 +54,6 @@ devices:
     status: supported
     notes: T-Deck Plus — primary target with QWERTY keyboard, trackball, GPS.
   # Source: README supported hardware section — T-Watch Ultra
-  - id: lilygo-twatch-s3
+  - id: lilygo-twatch-ultra
     status: supported
     notes: T-Watch Ultra — wrist-worn with AMOLED touchscreen.

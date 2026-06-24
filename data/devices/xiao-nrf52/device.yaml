@@ -134,3 +134,16 @@ prints:
     url: https://www.printables.com/model/1636351-tube-case-for-seeed-studio-xiao-nrf52840-wio-sx126
     image: https://media.printables.com/media/prints/1bb1db37-a03e-4ecd-8c1c-d63a85e5c6eb/images/12316319_56f2dd6e-4c1d-409a-b47a-15711cfc33f7_119861b7-68ad-4104-b36a-8d8236e24bc2/thumbs/cover/1200x630/jpg/20260315_153346.jpg
     likes: 22
+
+  - name: "Xiao nRF enclosure for sma antenna meshtastic meshcore"
+    type: enclosure
+    author: "dreimal_8"
+    url: "https://www.printables.com/model/1492529-xiao-nrf-enclosure-for-sma-antenna-meshtastic-mesh"
+    image: "https://media.printables.com/media/prints/c105d8c7-27eb-4d17-a262-f64dca037580/images/11246517_24bd1c4c-6ab5-4f4f-86e9-5d66c9acd3fe_6657c9f7-0807-4307-97bd-c091165b046a/thumbs/cover/1200x630/jpeg/img_5430.jpg"
+    likes: 55
+  - name: "MeshComp M1"
+    type: enclosure
+    author: "em117"
+    url: "https://www.printables.com/model/1561749-meshcomp-m1"
+    image: "https://media.printables.com/media/prints/6112235a-6678-45f2-8fd9-ffb3de2e5405/images/11768821_e41be090-20e2-41a6-a776-8c39ec63dfb6_1353db45-07d0-446b-ae92-681440aac3f1/thumbs/cover/1200x630/png/img_1792.png"
+    likes: 26

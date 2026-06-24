@@ -1,0 +1,102 @@
+# Source: https://heltec.org/project/htcc-ab02/
+name: Heltec CubeCell HTCC-AB02
+vendorId: heltec
+kind: dev-board
+lifecycle: active
+familyId: heltec-cubecell
+aliases:
+  - CubeCell Dev-Board Plus
+  - HTCC-AB02
+official: true
+product_url: https://heltec.org/project/htcc-ab02/
+price:
+  # Source: https://heltec.org/project/htcc-ab02/
+  amount: 16
+  currency: USD
+  asOf: 2026-06
+description: >-
+  CubeCell LoRa dev board based on ASR6502 + SX1262 with a 0.96-inch OLED,
+  battery management, solar support, and a CP2102 USB-serial bridge. A compact
+  low-power MeshCore repeater platform.
+roles:
+  - repeater
+transports:
+  - usb
+# Source: https://heltec.org/project/htcc-ab02/ (variation data embedded in product page).
+variants:
+  - name: 433MHz
+    sku: ZC-148-2-433
+    bands:
+      - '433'
+  - name: 470~510MHz
+    sku: ZC-148-2-470
+    bands:
+      - '470'
+  - name: 863~870MHz
+    sku: ZC-149-2-868
+    bands:
+      - '868'
+  - name: 902~928MHz
+    sku: ZC-149-2-915
+    bands:
+      - '915'
+
+hardware:
+  mcu:
+    model: asr6502
+    flashMb: 0.125
+    ramKb: 16
+  radios:
+    - technology: lora
+      chip: sx1262
+      bands:
+        - '433'
+        - '470'
+        - '868'
+        - '915'
+      txPowerDbm: 22
+      antenna: IPEX-1.0
+  display:
+    status: present
+    technology: oled
+    controller: SSD1306
+    size: 0.96
+    resolution:
+      width: 128
+      height: 64
+    colors: monochrome
+  gnss:
+    status: none
+  leds:
+    status: present
+    description: Status LED
+  input:
+    - type: button
+      description: USER button
+    - type: button
+      description: RESET button
+  power:
+    batterySupported: true
+    batteryBuiltIn: false
+    batteryConnector: SH1.25-2
+    charging: true
+    solarInput: true
+  physical:
+    dimensionsMm:
+      width: 51.9
+      height: 25
+      depth: 8
+    weightG: 30
+interfaces:
+  usb:
+    connector: Micro-USB
+    bridge: CP2102
+    capabilities:
+      - power
+      - serial
+      - flashing
+  bluetooth:
+    version: none
+    ble: false
+  wifi:
+    status: none

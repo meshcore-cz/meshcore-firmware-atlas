@@ -51,3 +51,6 @@ devices:
   # Source: README — primary target Heltec CubeCell HTCC-AB01
   - id: cubecell-htcc-ab01
     status: supported
+  # Source: README / release notes — Heltec CubeCell HTCC-AB02
+  - id: cubecell-htcc-ab02
+    status: supported

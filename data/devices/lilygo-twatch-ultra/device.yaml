@@ -1,0 +1,84 @@
+# Source: https://lilygo.cc/en-us/products/t-watch-ultra
+name: LilyGo T-Watch Ultra
+vendorId: lilygo
+kind: product
+lifecycle: active
+familyId: lilygo-t-watch-ultra
+aliases:
+  - T-Watch Ultra
+official: true
+product_url: https://lilygo.cc/en-us/products/t-watch-ultra
+price:
+  # Source: https://lilygo.cc/en-us/products/t-watch-ultra
+  amount: 78
+  currency: USD
+  asOf: 2026-06
+description: >-
+  ESP32-S3 smartwatch with SX1262 LoRa, 2.06-inch AMOLED touchscreen, built-in
+  GNSS, NFC, vibration motor, audio, and SD card support. A wearable MeshCore
+  target for compact on-wrist communication.
+roles:
+  - companion
+  - standalone-ui
+transports:
+  - ble
+  - usb
+  - wifi
+hardware:
+  mcu:
+    model: esp32-s3
+    flashMb: 16
+    psramMb: 8
+  radios:
+    - technology: lora
+      chip: sx1262
+      bands:
+        - '868'
+        - '915'
+        - '920'
+      txPowerDbm: 22
+  display:
+    status: present
+    technology: display
+    controller: CO5300
+    size: 2.06
+    resolution:
+      width: 410
+      height: 502
+    colors: color
+    touch: true
+  gnss:
+    status: present
+  leds:
+    status: present
+    description: Status LEDs
+  input:
+    - type: microphone
+    - type: speaker
+    - type: button
+      description: power button
+  power:
+    batterySupported: true
+    batteryBuiltIn: true
+    batteryCapacityMah: 1100
+    batteryChemistry: li-po
+    charging: true
+    batteryConnector: Built-in LiPo 1100mAh
+  physical:
+    dimensionsMm:
+      width: 49
+      height: 63.5
+      depth: 22
+interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+      - flashing
+  bluetooth:
+    version: '5.0'
+    ble: true
+  wifi:
+    status: present
+    standard: 802.11 b/g/n

@@ -95,3 +95,31 @@ interfaces:
     ble: true
   wifi:
     status: none
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "RAK WisBlock Outdoor concept WisMesh Repeater"
+    type: case
+    author: "Bernd Giesecke"
+    url: "https://www.printables.com/model/1388878-rak-wisblock-outdoor-concept-wismesh-repeater"
+    image: "https://media.printables.com/media/prints/4743576b-6d64-40da-ae6b-ded65b9f07f4/images/10486320_57dafae9-fddd-48eb-8960-e9c1aa5f1b87_d4772e4d-bc00-4042-9ffe-d5993675f9a9/thumbs/cover/1200x630/jpg/outdoor-rainproof.jpg"
+    likes: 7
+  - name: "Rainproof WisMesh Starter Kit Enclosures"
+    type: case
+    author: "Bernd Giesecke"
+    url: "https://www.printables.com/model/1557918-rainproof-wismesh-starter-kit-enclosures"
+    image: "https://media.printables.com/media/prints/b57e1211-dde1-4b65-87ec-3a445914a5ce/images/11741595_762c79c7-4c88-4ba7-8646-5d10d741546e_dc6a6319-ba5d-44e6-8254-a180a70f699c/thumbs/cover/1200x630/jpg/18-collection-2.jpg"
+    likes: 7
+  - name: "RAK Wismesh Solar Repeater Mini Unify Wall Mounting Brackets - Meshtastic"
+    type: accessory
+    author: "bytemaster0"
+    url: "https://www.printables.com/model/1585900-rak-wismesh-solar-repeater-mini-unify-wall-mountin"
+    image: "https://media.printables.com/media/prints/7766d014-b32b-49e1-a020-5ff82a95a0de/images/11937089_248a71ee-824c-4228-84f7-81d0b6a672e5_6c94740b-ae34-41b8-9c5d-81c5fc3d902f/thumbs/cover/1200x630/jpg/20260204_231218.jpg"
+    likes: 5
+  - name: "Railing mount for RAK WisMesh Repeater Mini"
+    type: accessory
+    author: "bombjulie"
+    url: "https://www.printables.com/model/1587265-railing-mount-for-rak-wismesh-repeater-mini"
+    image: "https://media.printables.com/media/prints/9cf88dbb-2c80-43cd-b818-2b027fabd2ec/images/11947489_35f47078-9142-4398-8129-c659100118b3_db411dca-296f-41e9-bd6c-cbe6e519e6f1/thumbs/cover/1200x630/jpg/rak-mount.jpg"
+    likes: 2

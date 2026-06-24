@@ -71,6 +71,8 @@ hardware:
       description: io12 button
     - type: button
       description: io16 button
+  enclosure:
+    builtIn: true
 interfaces:
   usb:
     connector: unknown
@@ -84,3 +86,13 @@ interfaces:
   wifi:
     status: present
     standard: 802.11 b/g/n
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Lilygo T-display case"
+    type: case
+    author: "Kisssys"
+    url: "https://www.printables.com/model/1432006-lilygo-t-display-case"
+    image: "https://media.printables.com/media/prints/006c1ddc-1fc1-4f74-83eb-546a81aa17ac/images/10799606_b9fc1df8-27bc-4d94-994e-e32c154b46fb_5e510866-6e91-4018-9400-b0529accf323/thumbs/cover/1200x630/jpg/img_2878.jpg"
+    likes: 1

@@ -135,3 +135,28 @@ prints:
     author: 3dMikL
     url: https://www.printables.com/model/1732324-heltec-t114-case
     image: https://media.printables.com/media/prints/702885d8-4215-41f7-9780-c6b36ed44aea/images/12989798_1f4f4b10-1f04-46a1-9348-d28f1e83dfd1_59023379-ead0-424e-9645-246381e4f0e0/thumbs/cover/1200x630/jpg/img20260524171923.jpg
+
+  - name: "NRF-TXT - Standalone Meshtastic communicator (Heltec T114 V2)"
+    type: enclosure
+    author: "HarukiToreda"
+    url: "https://www.printables.com/model/1083609-nrf-txt-standalone-meshtastic-communicator-heltec"
+    image: "https://media.printables.com/media/prints/93c40c8d-6f7e-4deb-b3fc-417798953bd3/images/10482290_d69ccde9-4bee-4a23-a7e1-c67dfc27dafd_63e1d9c4-79e5-4f79-9980-2704ce02d899/thumbs/cover/1200x630/jpg/cover.jpg"
+    likes: 113
+  - name: "NexGen3D: Meshtastic ATAK Heltec T114 Case V2"
+    type: enclosure
+    author: "NexGen-3D-Printing"
+    url: "https://www.printables.com/model/1017019-nexgen3d-meshtastic-atak-heltec-t114-case-v2"
+    image: "https://media.printables.com/media/prints/1017019/images/7807416_791b32b1-9aa7-4670-ae0b-60c0fe5ce081_22c0cd3e-aff0-4076-864a-89fcdbfa798c/thumbs/cover/1200x630/jpg/img_20241005_061850_055.jpg"
+    likes: 123
+  - name: "Pager Style Holster for the muzi.works H2T Heltec T114 Case"
+    type: accessory
+    author: "Alley Cat"
+    url: "https://www.printables.com/model/1080074-pager-style-holster-for-the-muziworks-h2t-heltec-t"
+    image: "https://media.printables.com/media/prints/1080074/images/8167286_ee2de363-f730-41ef-947d-77270d19ae20_92d929e4-012a-4339-b7e5-73c542a8f2e8/thumbs/cover/1200x630/png/h2t_holster_v1_2024-nov-19_10-06-48pm-000_customizedview24728132071.png"
+    likes: 99
+  - name: "NexGen3D: Magnetic Dock for the T114 ATAK Mobile Case"
+    type: accessory
+    author: "NexGen-3D-Printing"
+    url: "https://www.printables.com/model/1003414-nexgen3d-magnetic-dock-for-the-t114-atak-mobile-ca"
+    image: "https://media.printables.com/media/prints/1003414/images/7634486_66d08931-32b5-4f97-b4ed-5240479d385b_eb148168-1202-4ad5-ac5c-dc73335544a0/thumbs/cover/1200x630/jpg/img_20240911_080812_430.jpg"
+    likes: 24

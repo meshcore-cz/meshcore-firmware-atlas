@@ -100,20 +100,45 @@ interfaces:
 # social cover thumbnail (remote URL); `url` links to the printable.
 prints:
   - name: LilyGo T-Deck TD1 Case
-    type: enclosure
+    type: case
     date: 2024-01-30
     author: Alley Cat
     url: https://www.printables.com/model/741124-lilygo-t-deck-td1-case
     image: https://media.printables.com/media/prints/741124/images/5836685_5e1663e2-de82-4e65-89bd-bea12ce70f31_0dcada23-8b25-4993-8ee0-9382003cc6ad/thumbs/cover/1200x630/jpg/dji_20240129121353_0197_d.jpg
   - name: Zoidberg LilyGo T-Deck Case
-    type: enclosure
+    type: case
     date: 2025-05-04
     author: zerofox3D
     url: https://www.printables.com/model/1285162-zoidberg-lilygo-t-deck-tkeyboard-meshtastic-powere
     image: https://media.printables.com/media/prints/8956d33c-f1ca-47b8-bb13-fe1a15248a76/images/9672388_acbdc751-3390-44ff-8740-a75ca006b91b_a671845c-48fa-4997-860c-db656be8a743/thumbs/cover/1200x630/webp/zoidberg_red01.webp
   - name: T-Deck Amped (AirBuddy Amp Enclosure)
-    type: enclosure
+    type: case
     date: 2025-05-26
     author: Blackout Comms
     url: https://www.printables.com/model/1308645-t-deck-amped-featuring-airbuddy-amp
     image: https://media.printables.com/media/prints/36feb3e5-16e1-4b4a-bc96-c808d9663391/images/9870974_46140fda-5a5f-4744-84c4-2fb4449cb5fb_4055dd83-979f-4924-b9d4-2584b2891584/thumbs/cover/1200x630/png/holding_front_closer.png
+
+  - name: "Lilygo T-Deck Meshtastic Slim Case"
+    type: case
+    author: "Brian Flores"
+    url: "https://www.printables.com/model/873518-lilygo-t-deck-meshtastic-slim-case"
+    image: "https://media.printables.com/media/prints/873518/images/6702521_ad8a676b-d22f-415a-9754-9568e23a12ed_e4d4e8e6-55a3-43ac-b7a4-271d20b57d12/thumbs/cover/1200x630/jpg/pxl_20240509_012908933portrait.jpg"
+    likes: 118
+  - name: "Lilygo TDeck Meshtastic with battery"
+    type: case
+    author: "Jozsef Kiraly"
+    url: "https://www.printables.com/model/846335-lilygo-tdeck-meshtastic-with-battery"
+    image: "https://media.printables.com/media/prints/846335/images/6513370_b8fe60e7-5f8f-4c48-981c-6d2d8c5b5293_16be26ed-ffb3-42b6-933f-84190e1753b3/thumbs/cover/1200x630/jpg/large_display_d79f5adb-9b1d-4484-b4aa-314fcdba58e0.jpg"
+    likes: 70
+  - name: "Meshtastic Lilygo T-Deck 10000mAh"
+    type: case
+    author: "LWC"
+    url: "https://www.printables.com/model/931587-meshtastic-lilygo-t-deck-10000mah"
+    image: "https://media.printables.com/media/prints/931587/images/7101320_df098782-580a-49e0-8cdf-55d27d7e859f_25869358-b023-4d69-94cc-8681756c0d69/thumbs/cover/1200x630/jpg/1720009887389.jpg"
+    likes: 114
+  - name: "Meshtastic Slim T-Deck REMIX with fast charging"
+    type: case
+    author: "LWC"
+    url: "https://www.printables.com/model/927143-meshtastic-slim-t-deck-remix-with-fast-charging"
+    image: "https://media.printables.com/media/prints/927143/images/7071113_a24d5c1f-7761-44cc-9658-a3dd4b1b991d_ad9c0833-58c4-40eb-bc5c-4fe9cc2cc5e7/thumbs/cover/1200x630/jpg/1719666976757.jpg"
+    likes: 48

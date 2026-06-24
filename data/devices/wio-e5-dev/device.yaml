@@ -60,3 +60,13 @@ interfaces:
       - flashing
   wifi:
     status: none
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Wio-E5 Grove Case"
+    type: enclosure
+    author: "406FPV"
+    url: "https://www.printables.com/model/535202-wio-e5-grove-case"
+    image: "https://media.printables.com/media/prints/535202/images/4316279_6b70a8dc-4662-4b17-b1f8-8a6f6d9b8ca1/thumbs/cover/1200x630/jpg/20230724_134013.jpg"
+    likes: 5

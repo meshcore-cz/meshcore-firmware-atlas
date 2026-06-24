@@ -10,9 +10,10 @@ import Braces from '@lucide/svelte/icons/braces';
 import Activity from '@lucide/svelte/icons/activity';
 import Boxes from '@lucide/svelte/icons/boxes';
 import Database from '@lucide/svelte/icons/database';
+import Images from '@lucide/svelte/icons/images';
 import Info from '@lucide/svelte/icons/info';
 
-/** @typedef {'matrix' | 'device-rank' | 'compare' | 'compare-firmwares' | 'releases' | 'languages' | 'bands' | 'prints' | 'schemas' | 'bundle' | 'status' | 'about'} ToolId */
+/** @typedef {'matrix' | 'device-rank' | 'compare' | 'compare-firmwares' | 'releases' | 'languages' | 'bands' | 'prints' | 'gallery' | 'schemas' | 'bundle' | 'status' | 'about'} ToolId */
 
 /** @type {Record<ToolId, { id: ToolId, label: string, href: string, icon: import('svelte').Component, home?: boolean, homeLabel?: string }>} */
 export const TOOLS = {
@@ -43,6 +44,13 @@ export const TOOLS = {
     label: '3D Prints',
     href: '/prints/',
     icon: Boxes,
+    home: true
+  },
+  gallery: {
+    id: 'gallery',
+    label: 'Device gallery',
+    href: '/gallery/',
+    icon: Images,
     home: true
   },
   'device-rank': {
@@ -109,6 +117,7 @@ export const HOME_TOOL_IDS = [
   'device-rank',
   'releases',
   'prints',
+  'gallery',
   'compare',
   'compare-firmwares',
   'languages',

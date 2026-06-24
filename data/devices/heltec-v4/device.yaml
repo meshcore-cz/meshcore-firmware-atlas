@@ -147,3 +147,28 @@ prints:
     url: https://www.printables.com/model/1283453-hermes-external-solar-node-enclosure-for-meshcore
     image: https://media.printables.com/media/prints/087ab57b-956e-4375-b006-35b406a076ba/images/9656322_8a76cb0a-d7ea-4a22-9c92-b125f3f1d5a5_74592dc7-7d23-4b51-ad5a-9650636a8a99/thumbs/cover/1200x630/webp/hermes04new.webp
     likes: 90
+
+  - name: "Compact 18650 Heltec V4 Case for Meshtastic"
+    type: enclosure
+    author: "Doprint"
+    url: "https://www.printables.com/model/1447609-compact-18650-heltec-v4-case-for-meshtastic"
+    image: "https://media.printables.com/media/prints/d39b9ca7-5d48-4e98-9b40-d2d558312e1e/images/10911805_b7b4592e-a9a6-475f-9909-d345eb4c0fc9_96abd3ee-8d92-4e26-8936-3c5fa925f7c0/thumbs/cover/1200x630/jpg/heltec_v4.jpg"
+    likes: 39
+  - name: "Heltec V4 Meshtastic Enclosure"
+    type: enclosure
+    author: "Rob W1RCP"
+    url: "https://www.printables.com/model/1619198-heltec-v4-meshtastic-enclosure"
+    image: "https://media.printables.com/media/prints/7b5dae83-fac1-4dd4-8457-c56142a3b76a/images/12179671_1ea3e298-7c89-4181-8920-d2be9fe2d563_b9539e98-8681-419d-9ed6-8ee134b82dbd/thumbs/cover/1200x630/jpeg/img_4079.jpg"
+    likes: 0
+  - name: "Compact case for Heltec v4 GPS Meshtastic node"
+    type: enclosure
+    author: "Gleb Mayorov"
+    url: "https://www.printables.com/model/1462479-compact-case-for-heltec-v4-gps-meshtastic-node"
+    image: "https://media.printables.com/media/prints/c3d23e9b-eb73-4cc9-9978-f45881e0858a/images/11039381_d45b18bb-4764-40bf-91b4-947393cca8de_a1c2d5a6-f912-486f-be62-0c6ce6c6557a/thumbs/cover/1200x630/jpg/img_20251030_122259.jpg"
+    likes: 47
+  - name: "H1 Big Case for Heltec V4 running Meshtastic for standard & bendable antennas"
+    type: enclosure
+    author: "Christian Undso"
+    url: "https://www.printables.com/model/1445795-h1-big-case-for-heltec-v4-running-meshtastic-for-s"
+    image: "https://media.printables.com/media/prints/71778ded-8f4c-48df-bc09-b28790f98a2f/images/10898403_f7d1186e-435b-4bec-aa95-c5874b5ec6fe_a4510d30-6afc-47af-a935-f26c888bf313/thumbs/cover/1200x630/jpg/p1043545.jpg"
+    likes: 122

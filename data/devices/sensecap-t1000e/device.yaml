@@ -111,3 +111,22 @@ prints:
     url: https://www.printables.com/model/1465002-tough-molle-holster-for-seeed-sensecap-t1000-e-mes
     image: https://media.printables.com/media/prints/ebabc3d2-b4e1-477b-ac59-3c0ee60f17c5/images/11043961_8a0592ac-fcae-4692-9742-25f2a4dd6111_f46a2a7e-af2d-4c18-ab79-746514de43f0/thumbs/cover/1200x630/jpeg/758e6e0f-85d1-40a8-8ddd-a37a912064e1_1_102_o.jpg
     likes: 58
+
+  - name: "Holster for Seeed Studio T1000-E Meshtastic Tracker (UPDATE)"
+    type: accessory
+    author: "Alley Cat"
+    url: "https://www.printables.com/model/1070854-holster-for-seeed-studio-t1000-e-meshtastic-tracke"
+    image: "https://media.printables.com/media/prints/460c5ca8-36ce-42ba-8482-35b89350be5e/images/10105467_9551a68d-e8c9-401c-b7e6-94a9620bb515_dcb62dab-aec6-47ac-94f0-586b35da217c/thumbs/cover/1200x630/png/seeed_v1_2025-jun-25_11-04-35pm-000_customizedview8054152544.png"
+    likes: 207
+  - name: "Case for seeed studio SenseCAP Card Tracker T1000-E"
+    type: case
+    author: "admin"
+    url: "https://www.printables.com/model/1445441-case-for-seeed-studio-sensecap-card-tracker-t1000"
+    image: "https://media.printables.com/media/prints/f04feeba-3799-4612-b608-9b62023332bd/images/10895474_81db9285-5e32-474d-a6a4-ec277be8c5d1_05b70151-39e4-4c62-b116-8fa4e1e226eb/thumbs/cover/1200x630/png/sensecap-t1000-e-case.png"
+    likes: 18
+  - name: "Simple Meshtastic solar node"
+    type: accessory
+    author: "Blackout Concepts"
+    url: "https://www.printables.com/model/1049537-simple-meshtastic-solar-node"
+    image: "https://media.printables.com/media/prints/1049537/images/7952141_c0ef43a1-e416-48f0-aef5-301a50d86408_2cf19313-b7f0-403a-93f0-7b35ef35add2/thumbs/cover/1200x630/jpg/20241023_213438.jpg"
+    likes: 19

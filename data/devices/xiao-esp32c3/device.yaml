@@ -86,3 +86,13 @@ interfaces:
     ble: true
   wifi:
     status: present
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Seeed Studio Xiao ESP32C3 enclosure"
+    type: enclosure
+    author: "blalor"
+    url: "https://www.printables.com/model/539193-seeed-studio-xiao-esp32c3-enclosure"
+    image: "https://media.printables.com/media/prints/539193/images/4343951_9aa9716c-87af-401f-9ca4-e7320fefa4c9/thumbs/cover/1200x630/jpeg/img_0137.jpg"
+    likes: 60

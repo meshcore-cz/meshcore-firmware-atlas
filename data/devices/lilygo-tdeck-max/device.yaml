@@ -1,0 +1,88 @@
+# Source: https://wiki.lilygo.cc/products/t-deck-series/t-deck-max/
+# Source: https://lilygo.cc/en-us/products/t-deck-max
+name: LilyGo T-Deck Max
+vendorId: lilygo
+kind: product
+lifecycle: active
+familyId: lilygo-t-deck
+revision: max
+aliases:
+  - T-Deck MAX
+  - T-Deck Max
+official: true
+product_url: https://lilygo.cc/en-us/products/t-deck-max
+price:
+  # Source: https://lilygo.cc/en-us/products/t-deck-max
+  amount: 110
+  currency: USD
+  asOf: 2026-06
+description: >-
+  ESP32-S3 handheld built on the T-Deck Pro platform with SX1262 LoRa,
+  3.1-inch e-paper display, QWERTY keyboard, GNSS, audio, 4G module support,
+  and a larger battery system. Designed for portable MeshCore and IoT
+  communications.
+roles:
+  - companion
+  - repeater
+  - room-server
+  - standalone-ui
+transports:
+  - ble
+  - usb
+  - wifi
+hardware:
+  mcu:
+    model: esp32-s3
+    flashMb: 16
+    psramMb: 8
+  radios:
+    - technology: lora
+      chip: sx1262
+      bands:
+        - '433'
+        - '868'
+        - '915'
+        - '920'
+      txPowerDbm: 22
+  display:
+    status: present
+    technology: e-paper
+    controller: GDEQ031T10
+    size: 3.1
+    resolution:
+      width: 320
+      height: 240
+    touch: true
+    colors: grayscale
+  gnss:
+    status: present
+    chip: MIA-M10Q
+  leds:
+    status: present
+    description: Status LEDs
+  input:
+    - type: keyboard
+      description: TCA8418 mechanical keyboard
+    - type: microphone
+    - type: speaker
+  power:
+    batterySupported: true
+    batteryBuiltIn: true
+    batteryCapacityMah: 1500
+    batteryChemistry: li-po
+    charging: true
+    # Source: https://wiki.lilygo.cc/products/t-deck-series/t-deck-max/
+    batteryConnector: Built-in LiPo 1500mAh
+interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+      - flashing
+  bluetooth:
+    version: '5.0'
+    ble: true
+  wifi:
+    status: present
+    standard: 802.11 b/g/n

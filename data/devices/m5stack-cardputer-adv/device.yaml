@@ -103,6 +103,8 @@ hardware:
     operatingTempC:
       min: 0
       max: 40
+  enclosure:
+    builtIn: true
 interfaces:
   bluetooth:
     ble: true

@@ -112,3 +112,31 @@ interfaces:
   wifi:
     status: present
     standard: 802.11 b/g/n
+
+# Community 3D-printable enclosures and accessories hosted on Printables.
+# `image` is the model's social cover thumbnail (remote URL); `url` links to the printable.
+prints:
+  - name: "Heltec Wireless Paper case for Meshtastic"
+    type: enclosure
+    author: "HorusTheForest"
+    url: "https://www.printables.com/model/925338-heltec-wireless-paper-case-for-meshtastic"
+    image: "https://media.printables.com/media/prints/925338/images/7058078_1a46211a-02ef-4ccf-8407-70912d4c2f78_5a9913fa-4df8-4f91-83f7-7295ac1fa9f5/thumbs/cover/1200x630/jpg/dscf6442.jpg"
+    likes: 85
+  - name: "HP - Heltec Wireless Paper Case for Meshtastic"
+    type: enclosure
+    author: "HarukiToreda"
+    url: "https://www.printables.com/model/956383-hp-heltec-wireless-paper-case-for-meshtastic"
+    image: "https://media.printables.com/media/prints/3c8d7d31-7240-4cd5-bee6-528bc619dccb/images/12206224_8b0042ba-7854-4d9a-b3a5-02fb67dd1286_eb966f0b-9ab3-4f29-8ac7-c99a9645d647/thumbs/cover/1200x630/png/black-angles-ad.png"
+    likes: 140
+  - name: "Heltec Wireless Paper Slim Case"
+    type: enclosure
+    author: "Synaptic84"
+    url: "https://www.printables.com/model/807288-heltec-wireless-paper-slim-case"
+    image: "https://media.printables.com/media/prints/807288/images/6244646_09eb10c3-922d-4c4a-9515-83c615618ec6_6ee62532-1185-43fe-ab27-259b386cbcc7/thumbs/cover/1200x630/png/large_display_dd8caae3-727b-4004-a67f-de9a943ccb09_807288.png"
+    likes: 66
+  - name: "18650 Enclosure for Heltec Wireless Paper Meshtastic Radio"
+    type: enclosure
+    author: "MortalWombat"
+    url: "https://www.printables.com/model/822280-18650-enclosure-for-heltec-wireless-paper-meshtast"
+    image: "https://media.printables.com/media/prints/822280/images/6346968_cef9df36-cb45-4b13-adc4-8a88aa3046a0_5669d014-301a-4aba-813c-b398b872d547/thumbs/cover/1200x630/jpg/pxl_20240327_180232989.jpg"
+    likes: 43
