@@ -39,6 +39,7 @@ jobs:
         run: npm test
 
       - name: Commit changes
+        id: commit
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -46,8 +47,18 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if git diff --quiet -- data/firmwares; then
             echo "No changelog changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git add data/firmwares/*/changelog.yaml
             git commit -m "chore: update firmware changelogs"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Pushes made with GITHUB_TOKEN don't trigger the push-based deploy
+      # workflow, so kick it off explicitly when the changelog actually changed.
+      - name: Trigger deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main
