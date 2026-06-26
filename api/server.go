@@ -33,6 +33,7 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("/api/nodes", s.instrument("/api/nodes", s.handleNodes))
 	mux.HandleFunc("/api/nodes/", s.instrument("/api/nodes/:pubkey", s.handleNodeSub))
 	mux.HandleFunc("/api/map", s.instrument("/api/map", s.handleMap))
+	mux.HandleFunc("/api/route", s.instrument("/api/route", s.handleRoute))
 	mux.HandleFunc("/api/observers", s.instrument("/api/observers", s.handleObservers))
 	// Prometheus/VictoriaMetrics scrape endpoint. Left un-instrumented to avoid
 	// the scraper polluting the API latency histograms.
@@ -368,6 +369,76 @@ func anyInSet(values []string, set map[string]bool) bool {
 		}
 	}
 	return false
+}
+
+// routeHopView is one leg of a computed route, ready for JSON. The endpoint
+// pubkeys are implied by the surrounding nodes list (hop i joins nodes[i] and
+// nodes[i+1]), so only the link's own stats live here.
+type routeHopView struct {
+	PacketCount    uint64   `json:"packetCount"`
+	RecentActivity float64  `json:"recentActivity"`
+	FirstSeen      int64    `json:"firstSeen"`
+	LastSeen       int64    `json:"lastSeen"`
+	Networks       []string `json:"networks"`
+}
+
+// handleRoute serves a best-effort path between two nodes over the observed-link
+// graph:
+//
+//	GET /api/route?from={pubkey}&to={pubkey}&active=&networks=
+//
+// The path is the lowest-cost route where each hop is weighted by how recent and
+// busy that link is (see route.go). active/networks narrow the graph exactly like
+// the links endpoint. When the two nodes are not connected through the filtered
+// graph, found is false and nodes/hops are empty. Each node carries the same
+// metadata shape as a link neighbor, so the frontend can draw the polyline and
+// label each hop without follow-up requests.
+func (s *Server) handleRoute(w http.ResponseWriter, r *http.Request) {
+	qv := r.URL.Query()
+	from, okFrom := normalizePub(qv.Get("from"))
+	to, okTo := normalizePub(qv.Get("to"))
+	if !okFrom || !okTo {
+		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "invalid from/to pubkey"})
+		return
+	}
+
+	netFilter := parseStringSet(qv.Get("networks"))
+	var since int64
+	if d, ok := parseActive(qv.Get("active")); ok {
+		since = nowUnix() - int64(d.Seconds())
+	}
+
+	now := nowUnix()
+	res := s.links.RouteBetween(from, to, now, since, netFilter)
+
+	var imported []*ImportedNode
+	if s.imported != nil {
+		imported = s.imported.Records()
+	}
+
+	nodes := make([]linkNeighborView, 0, len(res.Nodes))
+	for _, pk := range res.Nodes {
+		nodes = append(nodes, s.neighborView(pk, imported))
+	}
+	hops := make([]routeHopView, 0, len(res.Hops))
+	for _, h := range res.Hops {
+		hops = append(hops, routeHopView{
+			PacketCount:    h.PacketCount,
+			RecentActivity: round2(h.RecentActivity),
+			FirstSeen:      h.FirstSeen,
+			LastSeen:       h.LastSeen,
+			Networks:       h.Networks,
+		})
+	}
+
+	w.Header().Set("Cache-Control", "public, max-age=15")
+	writeJSON(w, http.StatusOK, map[string]any{
+		"from":  hex.EncodeToString(from[:]),
+		"to":    hex.EncodeToString(to[:]),
+		"found": res.Found,
+		"nodes": nodes,
+		"hops":  hops,
+	})
 }
 
 // handleMap serves a viewport query against the node registry as a GeoJSON
