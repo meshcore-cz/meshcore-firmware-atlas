@@ -5,6 +5,7 @@ import { gzipSync, zstdCompressSync } from 'node:zlib';
 import dataset from '$lib/generated/data.json';
 import { bundleSizeTree } from '$lib/bundleSize.js';
 import { imageSizes } from '$lib/imageSizes.server.js';
+import { geojsonSizes } from '$lib/geojsonSizes.server.js';
 import { generatedAt } from '$lib/data.js';
 
 export function load() {
@@ -14,5 +15,5 @@ export function load() {
     gzip: gzipSync(minified, { level: 9 }).length,
     zstd: zstdCompressSync(minified).length
   };
-  return { ...bundleSizeTree(), generatedAt, compressed, images: imageSizes() };
+  return { ...bundleSizeTree(), generatedAt, compressed, images: imageSizes(), geojson: geojsonSizes() };
 }

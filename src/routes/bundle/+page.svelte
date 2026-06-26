@@ -38,6 +38,13 @@
   let showAllImages = $state(false);
   let visibleImages = $derived(showAllImages ? data.images.items : data.images.items.slice(0, IMG_TOP));
 
+  // Network area shapes (GeoJSON) — one source file per network, served separately
+  // from the JSON bundle. Show the biggest few by default.
+  const GEO_TOP = 12;
+  let showAllGeojson = $state(false);
+  let visibleGeojson = $derived(showAllGeojson ? data.geojson.items : data.geojson.items.slice(0, GEO_TOP));
+  const fmtKm2 = (n) => (n == null ? '—' : `${n.toLocaleString()} km²`);
+
   const COLLECTION_META = {
     devices: { label: 'Device', tw: 'bg-accent/15 text-accent' },
     vendors: { label: 'Vendor', tw: 'bg-warn/15 text-warn' },
@@ -244,6 +251,75 @@
         onclick={() => (showAllImages = !showAllImages)}
       >
         {showAllImages ? `Show top ${IMG_TOP}` : `Show all ${data.images.items.length} items`}
+      </button>
+    </div>
+  {/if}
+</section>
+
+<!-- Network area shapes: per-network area.geojson files, published to
+     /network-area/ and fetched at runtime as one combined all.geojson — separate
+     from the data bundle above. -->
+<section class="mt-9">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-edge pb-1.5">
+    <div class="flex flex-wrap items-baseline gap-x-2.5 gap-y-0.5">
+      <h2 class="text-[1.1rem] font-semibold">Network area shapes</h2>
+      <span class="text-[0.78rem] text-dim">GeoJSON served separately — not part of the data bundle above</span>
+    </div>
+    <span class="text-[0.8rem] text-dim">
+      {data.geojson.count} areas ·
+      <span class="font-medium text-ink">{formatBytes(data.geojson.total)}</span> source
+      {#if data.geojson.combinedBytes}
+        · <span class="font-medium text-ink">{formatBytes(data.geojson.combinedBytes)}</span> combined
+        (<a class="text-accent2 hover:underline" href="{base}/network-area/all.geojson">all.geojson</a>, one map request)
+      {/if}
+    </span>
+  </div>
+
+  <div class="overflow-hidden rounded-xl border border-edge">
+    <table class="w-full border-collapse text-[0.92rem]">
+      <thead>
+        <tr class="border-b border-edge bg-elev2 text-left text-[0.8rem] uppercase tracking-wide text-dim">
+          <th class="px-4 py-2.5 font-semibold">Network</th>
+          <th class="hidden px-4 py-2.5 text-right font-semibold sm:table-cell">Area</th>
+          <th class="hidden px-4 py-2.5 font-semibold sm:table-cell">Share</th>
+          <th class="px-4 py-2.5 text-right font-semibold">Size</th>
+          <th class="px-4 py-2.5 text-right font-semibold">Bytes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {#each visibleGeojson as it (it.id)}
+          <tr class="border-b border-edge transition hover:bg-elev">
+            <td class="px-4 py-2.5">
+              <span class="flex items-center gap-2">
+                <a class="font-medium text-accent2 hover:underline" href="{base}{it.href}">{it.name}</a>
+                <span class="font-mono text-[0.72rem] text-dim">{it.id}</span>
+              </span>
+            </td>
+            <td class="hidden px-4 py-2.5 text-right tabular-nums text-dim sm:table-cell">{fmtKm2(it.areaKm2)}</td>
+            <td class="hidden px-4 py-2.5 sm:table-cell">
+              <span class="flex items-center gap-2">
+                <span class="h-2 flex-1 overflow-hidden rounded-full bg-elev2">
+                  <span class="block h-full rounded-full bg-accent2" style="width:{Math.max((it.bytes / data.geojson.total) * 100, 0.5)}%"></span>
+                </span>
+                <span class="w-12 shrink-0 text-right text-[0.78rem] tabular-nums text-dim">{pctLabel(it.bytes / data.geojson.total)}</span>
+              </span>
+            </td>
+            <td class="px-4 py-2.5 text-right font-medium tabular-nums">{formatBytes(it.bytes)}</td>
+            <td class="px-4 py-2.5 text-right font-mono text-[0.82rem] tabular-nums text-dim">{it.bytes.toLocaleString()}</td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
+  </div>
+
+  {#if data.geojson.items.length > GEO_TOP}
+    <div class="mt-3 text-center">
+      <button
+        type="button"
+        class="rounded-lg border border-edge bg-elev px-3.5 py-1.5 text-[0.85rem] text-dim transition hover:border-accent/60 hover:text-ink"
+        onclick={() => (showAllGeojson = !showAllGeojson)}
+      >
+        {showAllGeojson ? `Show top ${GEO_TOP}` : `Show all ${data.geojson.items.length} areas`}
       </button>
     </div>
   {/if}
