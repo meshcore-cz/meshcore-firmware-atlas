@@ -567,6 +567,18 @@ export async function buildData(root = defaultRoot) {
   const liteFirmwares = firmwares.map((fw) => ({ ...fw, releases: liteReleases(fw.releases) }));
   const liteSoftware = software.map((s) => ({ ...s, releases: liteReleases(s.releases) }));
 
+  // Optional GitHub contributors, refreshed out-of-band by enrich-contributors.js
+  // (network-backed, so not fetched during build). Absent on a fresh checkout.
+  let contributors = [];
+  const contributorsPath = join(root, 'data', 'contributors.json');
+  if (existsSync(contributorsPath)) {
+    try {
+      contributors = JSON.parse(readFileSync(contributorsPath, 'utf8')).contributors ?? [];
+    } catch {
+      contributors = [];
+    }
+  }
+
   const dataset = {
     schemaVersion: 3,
     generatedAt: new Date().toISOString(),
@@ -585,6 +597,7 @@ export async function buildData(root = defaultRoot) {
     networks,
     software: liteSoftware,
     compatibility,
+    contributors,
     globals
   };
 

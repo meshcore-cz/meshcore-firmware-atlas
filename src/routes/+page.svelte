@@ -40,6 +40,10 @@
       icon: COLLECTIONS.vendors.icon
     }
   ];
+
+  // GitHub contributors, populated by scripts/enrich-contributors.js (may be empty).
+  let contributors = $derived(data.contributors ?? []);
+  const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
 </script>
 
 <Seo
@@ -117,3 +121,38 @@
     {/each}
   </div>
 </section>
+
+{#if contributors.length}
+  <section class="mt-10 border-t border-edge pt-6">
+    <div class="mb-3 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+      <h2 class="text-[1.1rem] font-semibold">Contributors</h2>
+      <span class="text-[0.8rem] text-dim">
+        {plural(contributors.length, 'person')} who built this catalog ·
+        <a class="text-accent2 hover:underline" href="{REPO_URL}/graphs/contributors" target="_blank" rel="noreferrer">on GitHub ↗</a>
+      </span>
+    </div>
+    <ul class="flex flex-wrap gap-2.5">
+      {#each contributors as c (c.login)}
+        <li>
+          <a
+            class="flex items-center gap-2 rounded-full border border-edge bg-elev py-1 pr-3 pl-1 text-[0.85rem] text-dim transition hover:border-accent hover:text-ink"
+            href={c.htmlUrl}
+            target="_blank"
+            rel="noreferrer"
+            title="{c.login} — {plural(c.contributions, 'commit')}"
+          >
+            <img
+              class="h-7 w-7 shrink-0 rounded-full bg-elev2"
+              src="{c.avatarUrl}&s=56"
+              alt=""
+              width="28"
+              height="28"
+              loading="lazy"
+            />
+            <span class="font-medium text-ink">{c.login}</span>
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </section>
+{/if}

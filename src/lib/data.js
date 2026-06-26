@@ -79,6 +79,10 @@ export const firmwares = dataset.firmwares;
 /** All networks (from data.json), ordered by name in build-data.js. */
 export const networks = dataset.networks ?? [];
 
+/** GitHub contributors (from data.json), ranked by commit count. Populated by
+ * scripts/enrich-contributors.js; empty until that has run. */
+export const contributors = dataset.contributors ?? [];
+
 const networkById = new Map(networks.map((n) => [n.id, n]));
 
 export function getFirmware(id) {

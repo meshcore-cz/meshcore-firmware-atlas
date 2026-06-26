@@ -1,4 +1,4 @@
-import { networks, devices, firmwares, software, vendors } from '$lib/data.js';
+import { networks, devices, firmwares, software, vendors, contributors } from '$lib/data.js';
 
 export function load() {
   return {
@@ -8,6 +8,7 @@ export function load() {
       firmwares: firmwares.length,
       software: software.length,
       vendors: vendors.length
-    }
+    },
+    contributors
   };
 }
