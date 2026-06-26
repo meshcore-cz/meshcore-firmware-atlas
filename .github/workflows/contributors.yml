@@ -1,0 +1,65 @@
+name: Update contributors
+
+on:
+  schedule:
+    # Once a day at 06:00 UTC.
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: contributors
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Fetch repo contributors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # Pull the GitHub contributor list (avatars + commit counts) into
+      # data/contributors.json; the homepage renders it.
+      - name: Fetch contributors
+        run: node scripts/enrich-contributors.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Make sure the data still builds before committing.
+      - name: Validate
+        run: npm test
+
+      - name: Commit changes
+        id: commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/contributors.json; then
+            echo "No contributor changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git add data/contributors.json
+            git commit -m "chore: update contributors"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Pushes made with GITHUB_TOKEN don't trigger the push-based deploy
+      # workflow, so kick it off explicitly when the list actually changed.
+      - name: Trigger deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main
