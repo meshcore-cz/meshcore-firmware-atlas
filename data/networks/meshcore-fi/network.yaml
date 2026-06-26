@@ -1,0 +1,27 @@
+name: Finland
+also_known_as:
+  - MeshCore Finland
+short_name: MeshCore FI
+description: >-
+  MeshCore community in Finland, monitored through a public CoreScope analyzer.
+scope: national
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - FI
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  public_channel: Public
+
+analyzers:
+  # Source: node-name/TLD scan of map.meshcore.io 2026-06-26 — CoreScope at corescope.meshcore.fi (518 nodes, Finland)
+  - name: MeshCore Finland CoreScope
+    url: https://corescope.meshcore.fi

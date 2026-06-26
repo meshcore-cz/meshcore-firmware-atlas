@@ -1,0 +1,31 @@
+name: MeshCore Khabarovsk
+also_known_as:
+  - MeshCore Khabarovsk
+short_name: MeshCore KHV
+description: >-
+  MeshCore community around Khabarovsk in the Russian Far East, served by a
+  public CoreScope analyzer hosted locally.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - RU
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  tx_power_dbm: 22
+  duty_cycle_pct: 10
+  path_hash_mode: 2-Byte
+  public_channel: Public
+
+analyzers:
+  # Source: ZoomEye scan 2026-06-26 — CoreScope at 62.182.196.25:9443 (Khabarovsk observer, iata KHV)
+  - name: CoreScope (Khabarovsk)
+    url: https://62.182.196.25:9443

@@ -27,6 +27,9 @@ analyzers:
   # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 172.245.19.203 (846 nodes, north GA)
   - name: CoreScope (meshstat.com)
     url: https://meshstat.com
-  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 192.3.62.166:3000 (312 nodes, Marietta GA)
-  - name: CoreScope (Marietta)
+  # Source: Shodan/Censys + GitHub scan 2026-06-26 — CoreScope at corescope.csramsh.org (314 nodes, GA)
+  - name: CoreScope (csramsh.org)
+    url: https://corescope.csramsh.org
+  # Source: ZoomEye scan 2026-06-26 — CoreScope at 192.3.62.166:3000 (Augusta GA observer, iata AGS)
+  - name: CoreScope (Augusta)
     url: http://192.3.62.166:3000

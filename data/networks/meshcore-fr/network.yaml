@@ -34,6 +34,9 @@ community:
 analyzers:
   - name: meshstats.serveurperso.in
     url: https://meshstats.serveurperso.in
+  # Source: ZoomEye scan 2026-06-26 — CoreScope at 51.91.10.197:3000 (Paris observer, iata PAR)
+  - name: CoreScope (Paris VPS)
+    url: http://51.91.10.197:3000
 
 resources:
   getting_started: https://www.meshcore.fr/#        

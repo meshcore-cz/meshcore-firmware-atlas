@@ -38,3 +38,6 @@ community:
 analyzers:
   - name: scope.chicagooffline.com
     url: https://scope.chicagooffline.com
+  # Source: node-name scan of map.meshcore.io 2026-06-26 — CoreScope at corescope.chimesh.org (175 nodes, Chicago area)
+  - name: Chicagoland Mesh CoreScope
+    url: https://corescope.chimesh.org

@@ -48,6 +48,9 @@ maps:
 analyzers:
   - name: analyzer.louisianamesh.org
     url: https://analyzer.gulfcoastmesh.org/
+  # Source: node-name scan of map.meshcore.io 2026-06-26 — CoreScope at live.ecmesh.us (1109 nodes, Louisiana)
+  - name: ECMesh CoreScope
+    url: https://live.ecmesh.us
 
 resources:
   getting_started: https://louisianamesh.org/setup

@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Southern California MeshCore",
+        "source": "Approximate coverage around observer location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.7437,
+              33.5522
+            ],
+            [
+              -117.7437,
+              33.5522
+            ],
+            [
+              -117.7437,
+              34.5522
+            ],
+            [
+              -118.7437,
+              34.5522
+            ],
+            [
+              -118.7437,
+              33.5522
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

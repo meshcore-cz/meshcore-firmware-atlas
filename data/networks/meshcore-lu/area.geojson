@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luxembourg",
+        "source": "Approximate coverage around observer location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.6,
+              49.3
+            ],
+            [
+              6.6,
+              49.3
+            ],
+            [
+              6.6,
+              50.3
+            ],
+            [
+              5.6,
+              50.3
+            ],
+            [
+              5.6,
+              49.3
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

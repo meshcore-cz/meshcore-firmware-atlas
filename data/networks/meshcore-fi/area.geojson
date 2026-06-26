@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finland",
+        "source": "Approximate coverage"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.0,
+              59.0
+            ],
+            [
+              30.0,
+              59.0
+            ],
+            [
+              30.0,
+              69.0
+            ],
+            [
+              20.0,
+              69.0
+            ],
+            [
+              20.0,
+              59.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

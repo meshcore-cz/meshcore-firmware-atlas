@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MeshCore Russia",
+        "source": "Approximate coverage around observer location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              134.5721,
+              47.9814
+            ],
+            [
+              135.5721,
+              47.9814
+            ],
+            [
+              135.5721,
+              48.9814
+            ],
+            [
+              134.5721,
+              48.9814
+            ],
+            [
+              134.5721,
+              47.9814
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

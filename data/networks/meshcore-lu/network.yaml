@@ -1,0 +1,28 @@
+name: Luxembourg
+also_known_as:
+  - MeshCore Luxembourg
+short_name: MeshCore LU
+description: >-
+  MeshCore community in Luxembourg and the surrounding Greater Region,
+  monitored through a public CoreScope analyzer.
+scope: national
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - LU
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  public_channel: Public
+
+analyzers:
+  # Source: node-name scan of map.meshcore.io 2026-06-26 — CoreScope at live.meshnet.lu (705 nodes, Luxembourg)
+  - name: Meshnet.lu CoreScope
+    url: https://live.meshnet.lu

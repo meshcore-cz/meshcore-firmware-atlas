@@ -46,6 +46,10 @@ analyzers:
   - name: live.tennmesh.com
     url: https://live.tennmesh.com
 
+  # Source: node-name scan of map.meshcore.io 2026-06-26 — CoreScope at analyzer.nashme.sh (768 nodes, Nashville TN)
+  - name: NashMe.sh CoreScope
+    url: https://analyzer.nashme.sh
+
 resources:
   getting_started: https://tennmesh.com/connect/
   links:
