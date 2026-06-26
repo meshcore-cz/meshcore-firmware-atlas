@@ -1,0 +1,34 @@
+name: Pioneer Valley Mesh
+short_name: PV Mesh
+description: >-
+  MeshCore community in the Pioneer Valley of western Massachusetts, with 50
+  nodes across the Connecticut River Valley. Runs the USA/Canada preset on
+  910.525 MHz (62.5 kHz / SF7 / CR4/5) with a CoreScope analyzer.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - US
+
+radio:
+  frequency: '915'
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/5
+  path_hash_mode: 2-Byte
+  public_channel: Public
+
+community:
+  website: https://pvmesh.org/
+
+analyzers:
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 147.93.176.22:8181 (50 nodes, MA)
+  - name: CoreScope
+    url: http://147.93.176.22:8181
+
+resources:
+  getting_started: https://pvmesh.org/

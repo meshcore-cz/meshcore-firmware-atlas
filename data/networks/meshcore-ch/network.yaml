@@ -38,5 +38,10 @@ maps:
   - name: MeshCore map
     url: https://www.meshcore.ch/map/
 
+analyzers:
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 185.225.232.7:3000 (407 nodes, Basel/CH-DE border)
+  - name: CoreScope (Basel)
+    url: http://185.225.232.7:3000
+
 resources:
   getting_started: https://www.meshcore.ch/settings/

@@ -76,6 +76,9 @@ maps:
 analyzers:
   - name: cornmeister.nl
     url: https://cornmeister.nl
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope instance at fedora.ictravi.com (226 nodes, NL)
+  - name: CoreScope (ictravi.com)
+    url: https://fedora.ictravi.com
 
 resources:
   getting_started: https://www.localmesh.nl/en/meshcore-setup/

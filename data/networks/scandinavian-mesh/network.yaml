@@ -1,0 +1,32 @@
+name: Scandinavia Mesh
+short_name: SE/DK Mesh
+description: >-
+  Cross-border Scandinavian MeshCore mesh spanning southern Sweden and
+  Denmark, with 890+ nodes around the Öresund/Kattegat region. Runs the EU/UK
+  Narrow preset on the 868 MHz band with a dedicated CoreScope analyzer.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - SE
+    - DK
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  tx_power_dbm: 22
+  duty_cycle_pct: 10
+  path_hash_mode: 2-Byte
+  public_channel: Public
+  app_preset: EU/UK (Narrow)
+
+analyzers:
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 90.229.176.168:8888 (889 nodes, SE/DK)
+  - name: CoreScope
+    url: http://90.229.176.168:8888

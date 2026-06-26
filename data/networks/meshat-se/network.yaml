@@ -27,8 +27,10 @@ community:
   matrix: https://matrix.to/#/#sweden-mesh:swecyb.com
 
 analyzers:
-  - name: meshcore-edge.meshat.se
-    url: https://meshcore-edge.meshat.se
+  # Source: Shodan/Censys scan 2026-06-26 — meshcore-edge.meshat.se DNS no longer resolves;
+  # meshcore.meshat.se is the current working CoreScope (185.57.105.35, 50 nodes)
+  - name: meshcore.meshat.se
+    url: http://meshcore.meshat.se
 
 resources:
   status_page: https://status.meshat.se/

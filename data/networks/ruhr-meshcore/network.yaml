@@ -1,0 +1,32 @@
+name: Ruhr MeshCore
+short_name: Ruhr MC
+description: >-
+  Large MeshCore community in Germany's North Rhine-Westphalia region, with
+  1,150+ nodes centered on the Ruhr area (Bochum, Bottrop, Bonn,
+  Kamp-Lintfort) and extending into the Rhineland and Münsterland. Runs the
+  EU/UK Narrow preset on the 868 MHz band.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - DE
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  tx_power_dbm: 22
+  duty_cycle_pct: 10
+  path_hash_mode: 2-Byte
+  public_channel: Public
+  app_preset: EU/UK (Narrow)
+
+analyzers:
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 130.61.131.142:8015 (1153 nodes, NRW/Ruhr)
+  - name: CoreScope
+    url: http://130.61.131.142:8015

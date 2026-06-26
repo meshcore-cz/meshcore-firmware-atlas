@@ -1,0 +1,28 @@
+name: Victoria Mesh
+short_name: VIC Mesh
+description: >-
+  MeshCore community in Victoria, Australia, with 50+ nodes spanning the
+  Mallee region and Melbourne area. Runs on the Australian 915 MHz band
+  with a CoreScope analyzer.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - AU
+
+radio:
+  frequency: '915'
+  frequency_mhz: 916.575
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/8
+  public_channel: Public
+  app_preset: Australia (Narrow)
+
+analyzers:
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 46.250.247.10:8880 (50 nodes, VIC)
+  - name: CoreScope
+    url: http://46.250.247.10:8880

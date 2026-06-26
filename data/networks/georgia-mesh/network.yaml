@@ -1,0 +1,32 @@
+name: Georgia Mesh
+short_name: GA Mesh
+description: >-
+  MeshCore community in northern Georgia, USA, with 840+ nodes spanning
+  Lawrenceville, Marietta, and the north Georgia mountain area. Runs on the
+  US 915 MHz band with a CoreScope analyzer and a separate instance on
+  meshstat.com.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - US
+
+radio:
+  frequency: '915'
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/8
+  path_hash_mode: 2-Byte
+  public_channel: Public
+
+analyzers:
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 172.245.19.203 (846 nodes, north GA)
+  - name: CoreScope (meshstat.com)
+    url: https://meshstat.com
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 192.3.62.166:3000 (312 nodes, Marietta GA)
+  - name: CoreScope (Marietta)
+    url: http://192.3.62.166:3000

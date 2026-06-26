@@ -1,0 +1,33 @@
+name: Saarland-Luxembourg Mesh
+short_name: DE-SL/LX Mesh
+description: >-
+  Cross-border MeshCore mesh spanning Germany's Saarland and neighbouring
+  Luxembourg, with 690+ nodes around Merzig, Saarbrücken, and Mamer.
+  Runs the EU/UK Narrow preset on the 868 MHz band with a dedicated CoreScope
+  analyzer.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - DE
+    - LU
+
+radio:
+  frequency: '868'
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  tx_power_dbm: 22
+  duty_cycle_pct: 10
+  path_hash_mode: 2-Byte
+  public_channel: Public
+  app_preset: EU/UK (Narrow)
+
+analyzers:
+  # Source: Shodan/Censys scan 2026-06-26 — CoreScope at 46.62.210.168:18080 (686 nodes, DE-SL/LX)
+  - name: CoreScope
+    url: http://46.62.210.168:18080
