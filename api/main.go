@@ -46,6 +46,11 @@ func main() {
 	imported := newImportRegistry()
 	metrics := NewMetrics()
 
+	// Live advert feed: every observed advert is fanned out to subscribed
+	// browsers over /api/live so the map can pulse new sightings in real time.
+	hub := newHub()
+	registry.SetAdvertHook(hub.Broadcast)
+
 	// Pre-create the analyzer gauges so every configured analyzer reports
 	// "disconnected" (0) immediately, rather than appearing only after its first
 	// connection attempt.
@@ -256,7 +261,7 @@ func main() {
 
 	srv := &http.Server{
 		Addr:         *addr,
-		Handler:      NewServer(store, registry, observers, links, imported, metrics, *allowOrigin).Handler(),
+		Handler:      NewServer(store, registry, observers, links, imported, metrics, hub, *allowOrigin).Handler(),
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 15 * time.Second,
 	}

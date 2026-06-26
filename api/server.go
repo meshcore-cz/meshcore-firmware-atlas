@@ -16,11 +16,12 @@ type Server struct {
 	links       *LinkRegistry
 	imported    *ImportRegistry
 	metrics     *Metrics
+	hub         *Hub
 	allowOrigin string
 }
 
-func NewServer(store *Store, nodes *NodeRegistry, observers *ObserverRegistry, links *LinkRegistry, imported *ImportRegistry, metrics *Metrics, allowOrigin string) *Server {
-	return &Server{store: store, nodes: nodes, observers: observers, links: links, imported: imported, metrics: metrics, allowOrigin: allowOrigin}
+func NewServer(store *Store, nodes *NodeRegistry, observers *ObserverRegistry, links *LinkRegistry, imported *ImportRegistry, metrics *Metrics, hub *Hub, allowOrigin string) *Server {
+	return &Server{store: store, nodes: nodes, observers: observers, links: links, imported: imported, metrics: metrics, hub: hub, allowOrigin: allowOrigin}
 }
 
 func (s *Server) Handler() http.Handler {
@@ -40,7 +41,19 @@ func (s *Server) Handler() http.Handler {
 	if s.metrics != nil {
 		mux.Handle("/metrics", s.metrics.handler())
 	}
-	return s.withCORS(gzipMiddleware(mux))
+	wrapped := s.withCORS(gzipMiddleware(mux))
+	if s.hub == nil {
+		return wrapped
+	}
+	// The live advert feed upgrades to a WebSocket, which hijacks the underlying
+	// connection — so it must bypass the gzip middleware. A dedicated outer mux
+	// routes the upgrade directly to the hub; everything else falls through to the
+	// gzipped+CORS REST handler. (The more specific "/api/live" pattern wins over
+	// "/" in Go's ServeMux.)
+	root := http.NewServeMux()
+	root.Handle("/", wrapped)
+	root.HandleFunc("/api/live", s.hub.ServeWS)
+	return root
 }
 
 // gzipMiddleware compresses responses for clients that accept gzip. The map

@@ -70,6 +70,16 @@ type NodeRegistry struct {
 	nodes      map[string]*NodeRecord
 	pending    []AdvertObservation // adverts observed but not yet persisted
 	maxAdverts int                 // per-node rolling advert cap
+	onAdvert   func(LiveAdvert)    // optional live-feed hook, invoked outside the lock
+}
+
+// SetAdvertHook registers a callback fired once per observed advert (after the
+// registry is updated, outside the lock). Used to fan adverts out to the live
+// WebSocket. Pass nil to disable.
+func (r *NodeRegistry) SetAdvertHook(fn func(LiveAdvert)) {
+	r.mu.Lock()
+	r.onAdvert = fn
+	r.mu.Unlock()
 }
 
 func newNodeRegistry(maxAdverts int) *NodeRegistry {
@@ -98,9 +108,9 @@ func (r *NodeRegistry) Observe(a AdvertObservation) {
 		return
 	}
 	r.mu.Lock()
-	defer r.mu.Unlock()
 
 	n := r.nodes[a.PubKey]
+	isNew := n == nil
 	if n == nil {
 		n = &NodeRecord{PubKey: a.PubKey, FirstAdvertAt: a.At}
 		r.nodes[a.PubKey] = n
@@ -132,6 +142,25 @@ func (r *NodeRegistry) Observe(a AdvertObservation) {
 
 	// Buffer for the append-only adverts history (drained by the periodic flush).
 	r.pending = append(r.pending, a)
+
+	hook := r.onAdvert
+	r.mu.Unlock()
+
+	// Fan out to the live feed outside the lock: the hub send is non-blocking,
+	// but JSON marshaling shouldn't hold up the hot advert path.
+	if hook != nil {
+		hook(LiveAdvert{
+			PubKey:    a.PubKey,
+			Name:      a.Name,
+			Type:      a.NodeType,
+			HasGPS:    a.HasGPS,
+			Lat:       a.Lat,
+			Lon:       a.Lon,
+			NetworkID: a.NetworkID,
+			At:        a.At,
+			New:       isNew,
+		})
+	}
 }
 
 // PendingAdverts returns a copy of the adverts observed since the last flush,
