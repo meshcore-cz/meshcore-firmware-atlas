@@ -20,7 +20,6 @@ node_modules
 /static/network-area/
 /static/compatibility/
 /static/software/
-/static/contributors/
 /static/sitemap.xml
 /static/robots.txt
 /static/releases.xml
