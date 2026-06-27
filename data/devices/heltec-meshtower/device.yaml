@@ -10,7 +10,6 @@ aliases:
   - Heltec MeshTower
   - MeshTower
   - MeshTower V1
-image: heltec_meshtower.svg
 flasherListed: true
 product_url: https://heltec.org/project/meshtower/
 description: >-
