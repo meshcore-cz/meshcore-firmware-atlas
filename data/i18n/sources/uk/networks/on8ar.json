@@ -1,0 +1,15 @@
+{
+  "resource": "network/on8ar",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Бельгійський хаб MeshCore та середовище CoreScope під управлінням ON8AR відображають бельгійський трафік MeshCore у реальному часі, вузли, спостерігачів та статистику пакетів, інтегруючись у ширшу спільноту Radio-Actief / RRY бельгійського MeshCore.",
+      "sourceHash": "sha256:d0d00df67b8ccc9fe8313048b1ed9e63584d4595347ca1f8eaa4a61b3f2682a7",
+      "generatedAt": "2026-06-27T16:56:02.568Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9729,
+      "promptTokens": 175,
+      "completionTokens": 1496
+    }
+  }
+}

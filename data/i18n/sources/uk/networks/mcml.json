@@ -1,0 +1,15 @@
+{
+  "resource": "network/mcml",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Створена спільнотою мережа MeshCore для регіону Мюнстерланд у Північному Рейні-Вестфалії (Німеччина), яка забезпечує текстовий зв'язок на великі відстані повністю без інтернету чи стільникових мереж.",
+      "sourceHash": "sha256:438f6f3725762ce9131223674d56083bfd5fea34b4ca17f9e93835d9cd7221c9",
+      "generatedAt": "2026-06-27T16:54:02.383Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9194,
+      "promptTokens": 162,
+      "completionTokens": 1112
+    }
+  }
+}

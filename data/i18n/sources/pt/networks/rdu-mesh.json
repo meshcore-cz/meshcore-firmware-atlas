@@ -1,0 +1,15 @@
+{
+  "resource": "network/rdu-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore comunitária e independente da rede que atende Raleigh, Durham, Chapel Hill e a região do Piedmont, na Carolina do Norte, e seus arredores. A rede constrói uma infraestrutura de repetidores alimentada por energia solar em uma área de atendimento documentada de 16 condados do Triângulo de Pesquisa.",
+      "sourceHash": "sha256:e4a771b40a147a032b382c71a6d6214cceca29b6e3c274e06c59baa260a478b1",
+      "generatedAt": "2026-06-27T14:48:58.166Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4653,
+      "promptTokens": 171,
+      "completionTokens": 1302
+    }
+  }
+}

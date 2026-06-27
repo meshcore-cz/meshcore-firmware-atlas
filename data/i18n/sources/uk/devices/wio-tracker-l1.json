@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-tracker-l1",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата розробника з низьким енергоспоживанням Meshtastic/MeshCore із LoRa, L76K GNSS, 1.3-дюймовим OLED-дисплеєм стану та 4-позиційним джойстиком. Підтримує USB-C, сонячне живлення та зовнішній літій-іонний акумулятор через роз'єм JST. Лише плата — без вбудованого акумулятора та корпусу.",
+      "sourceHash": "sha256:798cf5312ddfe83e96242a8889c961e42c66753156c75fd1c34e004dc20127ee",
+      "generatedAt": "2026-06-27T15:14:01.533Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20927,
+      "promptTokens": 190,
+      "completionTokens": 957
+    }
+  }
+}

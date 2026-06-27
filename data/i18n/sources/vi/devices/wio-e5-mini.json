@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-e5-mini",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo phát triển Wio-E5 LoRaWAN nhỏ gọn, hỗ trợ firmware AT xuất xưởng với kích thước chỉ 50 × 23 mm. Sản phẩm được thiết kế để thiết lập LoRa nhanh chóng và thử nghiệm nguyên mẫu cấp GPIO, thay vì để lắp vào vỏ hoàn chỉnh.",
+      "sourceHash": "sha256:f5b089a1b8f3bd8466a5704b2d1b6151b126ef6bba9d46bf52cba42c934716aa",
+      "generatedAt": "2026-06-27T15:42:22.621Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4686,
+      "promptTokens": 176,
+      "completionTokens": 966
+    }
+  }
+}

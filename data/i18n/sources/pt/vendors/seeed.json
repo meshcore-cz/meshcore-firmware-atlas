@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/seeed",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Empresa de plataformas de hardware responsável pelas linhas de produtos XIAO, Wio e SenseCAP LoRa.",
+      "sourceHash": "sha256:4b333ad52a8ce3e55a44f0dfc298b907549cea207ac623b0bb525768c6ec0ef5",
+      "generatedAt": "2026-06-27T14:44:47.932Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2503,
+      "promptTokens": 148,
+      "completionTokens": 632
+    }
+  }
+}

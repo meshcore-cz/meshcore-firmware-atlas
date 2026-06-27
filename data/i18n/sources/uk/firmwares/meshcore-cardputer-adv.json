@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Форк MeshCore, орієнтований на Cardputer-ADV, призначений для M5Stack Cardputer-Adv у парі з модулем розширення Cap LoRa-1262. Він додає цільову платформу `cardputer_adv` зі спеціальним інтерфейсом для портативних пристроїв, BLE-транспортом для супутнього пристрою, сховищем на SD-карті, введенням з клавіатури та підтримкою GNSS.",
+      "sourceHash": "sha256:ab037b4731c0918480bf6c11b6141e03a5ea4e096823c63e5ab7a8b95d3e013a",
+      "generatedAt": "2026-06-27T15:41:26.347Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7383,
+      "promptTokens": 189,
+      "completionTokens": 1295
+    },
+    "features": {
+      "value": "[\"Спеціальний інтерфейс для Cardputer\",\"Транспортний рівень для BLE-супутника\",\"Зберігання повідомлень і налаштувань на SD-карті\",\"Введення з клавіатури\",\"Підтримка GNSS\"]",
+      "sourceHash": "sha256:9a7dcd2229b87b6795ac962705826bc6a8bfa5d12209b3bfc688d20b01d916ce",
+      "generatedAt": "2026-06-27T15:41:32.831Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6483,
+      "promptTokens": 153,
+      "completionTokens": 1121
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/nano-g2",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kapesní tracker nRF52840 s modulem SX1262 LoRa, 1,3palcovým OLED displejem, GPS, bzučákem a vestavěnou baterií 1200 mAh. Je určen pro použití jako doprovodné zařízení nebo opakovač v síti MeshCore, podporuje Bluetooth 5.4 a má kompaktní provedení s vypínačem.",
+      "sourceHash": "sha256:1f4743e6c70f5755c2e2005df20f33c73beb88ace7a71f322c5c1c5048490835",
+      "generatedAt": "2026-06-27T11:00:14.951Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

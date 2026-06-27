@@ -1,0 +1,15 @@
+{
+  "resource": "device/cubecell-htcc-ab01",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển CubeCell LoRa siêu tiết kiệm năng lượng dựa trên vi mạch dòng ASR6502, tích hợp vô tuyến SX1262. Thiết kế dành cho các triển khai IoT chạy bằng năng lượng mặt trời và pin.",
+      "sourceHash": "sha256:b9c751f0ee31f39b3c442d4f9f68b16ab5db03faf4f62382ca31212bc99524b2",
+      "generatedAt": "2026-06-27T15:32:33.253Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13925,
+      "promptTokens": 165,
+      "completionTokens": 806
+    }
+  }
+}

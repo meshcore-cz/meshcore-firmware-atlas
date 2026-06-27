@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshy",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Клієнт MeshCore на базі GTK 4/libadwaita для Linux та macOS з можливістю обміну шифрованими повідомленнями, роботи з контактами та картами, моніторингу пристроїв, налаштувань, підтримки QR-кодів, а також підключення через Bluetooth або послідовний порт USB.",
+      "sourceHash": "sha256:c460876277520fde366eca6cb22a26d0c8c29226c330511a700c978edce586c3",
+      "generatedAt": "2026-06-27T16:26:34.608Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11140,
+      "promptTokens": 166,
+      "completionTokens": 1626
+    },
+    "screenshots.screenshot1.png.caption": {
+      "value": "Обмін повідомленнями в каналах",
+      "sourceHash": "sha256:84f950f864adf2f9f4b23cc83849a9df21f105ae261c51e0929296490dc3f6d1",
+      "generatedAt": "2026-06-27T16:26:37.944Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3335,
+      "promptTokens": 131,
+      "completionTokens": 428
+    },
+    "screenshots.screenshot2.png.caption": {
+      "value": "Статистика контактів та пристроїв",
+      "sourceHash": "sha256:e55af28dd1ae67001c5a9d7c4b1521a8bc27844ffad593b18d65b5be750c9a90",
+      "generatedAt": "2026-06-27T16:26:42.207Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4261,
+      "promptTokens": 133,
+      "completionTokens": 660
+    },
+    "screenshots.screenshot3.png.caption": {
+      "value": "Налаштування та конфігурація радіо",
+      "sourceHash": "sha256:95063b72ae78c978c40770078e1869dfa1e4c3ceea0706600c69f45e3ff4a732",
+      "generatedAt": "2026-06-27T16:26:46.199Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3991,
+      "promptTokens": 133,
+      "completionTokens": 587
+    },
+    "screenshots.screenshot4.png.caption": {
+      "value": "Перегляд карти з вузлами сітчастої мережі",
+      "sourceHash": "sha256:8f71f09e10d2f092bcd18b13c8d43b7c210538c44f26395d784a566d870cf399",
+      "generatedAt": "2026-06-27T16:26:51.514Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5315,
+      "promptTokens": 134,
+      "completionTokens": 862
+    },
+    "tags": {
+      "value": "[\"gtk\",\"libadwaita\",\"flatpak\",\"робочий стіл\"]",
+      "sourceHash": "sha256:b729815a58879f0b863d417836fb3729d6241af4add5c3307cacb1af937fc981",
+      "generatedAt": "2026-06-27T16:26:57.281Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5767,
+      "promptTokens": 142,
+      "completionTokens": 797
+    },
+    "verificationNotes.popularity-fields-are-codeberg-repository-signal": {
+      "value": "Поля популярності — це сигнали репозиторію Codeberg; latestReleaseDownloads підраховує кількість завантажень архіву вихідного коду з Codeberg для тегу 26.06.",
+      "sourceHash": "sha256:e159deb7297f36c4a95505e16445c14b8334a2fe1ba2442e8c4bf39e2cf27740",
+      "generatedAt": "2026-06-27T16:27:02.882Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5600,
+      "promptTokens": 154,
+      "completionTokens": 788
+    },
+    "verificationNotes.readme-describes-the-app-as-fairly-feature-compl": {
+      "value": "У README зазначено, що додаток є досить функціонально завершеним і стабільним, але його активна розробка триває.",
+      "sourceHash": "sha256:acd9ab88e89514420de58a84ccbb2aea342747cbf3c6646351fb5872c8dc5c85",
+      "generatedAt": "2026-06-27T16:28:18.834Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 75952,
+      "promptTokens": 145,
+      "completionTokens": 1321
+    }
+  }
+}

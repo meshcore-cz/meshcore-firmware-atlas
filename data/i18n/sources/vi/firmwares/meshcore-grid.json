@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-grid",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware thiết bị cầm tay MeshCore ưu tiên thao tác cảm ứng, tích hợp giao diện GRID độc lập cho nhắn tin, khám phá, danh bạ, điều khiển vô tuyến, cài đặt BLE và quản lý nguồn.",
+      "sourceHash": "sha256:e4b493d7fb52ed361ba476761351dffe81adf6f10a99c61b8ce05a47cf0c62ee",
+      "generatedAt": "2026-06-27T15:58:04.206Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5976,
+      "promptTokens": 156,
+      "completionTokens": 823
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Yêu cầu cấu hình Heltec V4 có màn hình TFT và bộ điều khiển cảm ứng FT6336.",
+      "sourceHash": "sha256:320cc6125167bc7e9a89256ff72456216f22b03c559f02698c1ae62b795004c7",
+      "generatedAt": "2026-06-27T15:58:33.517Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 29311,
+      "promptTokens": 146,
+      "completionTokens": 713
+    },
+    "features": {
+      "value": "[\"Giao diện cảm ứng độc lập\",\"Nhắn tin trực tiếp và theo kênh\",\"Quản lý liên hệ và quảng cáo\",\"Điều khiển đài phát thanh trên thiết bị\"]",
+      "sourceHash": "sha256:18e802340d04a52812c57d456bc6e2fdc70c8bb579fd216319845f950a6e6a9d",
+      "generatedAt": "2026-06-27T15:58:38.470Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4952,
+      "promptTokens": 150,
+      "completionTokens": 524
+    }
+  }
+}

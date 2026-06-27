@@ -1,0 +1,12 @@
+{
+  "resource": "device/muziworks-base-duo",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní vývojová deska BASE System pro dvoupásmové uzly Meshtastic kombinuje MCU nRF52840 s LoRa modulem LR1121. Nabízí oddělené anténní konektory pro pásma sub-GHz a 2,4 GHz, rozšíření QWIIC/STEMMA QT a podporu nabíjení baterií a solárních panelů.",
+      "sourceHash": "sha256:fd006660f8612d2df7d62032143d8b0bf1b9a702bdb36a154f988b4c222ed8a7",
+      "generatedAt": "2026-06-27T10:53:38.046Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

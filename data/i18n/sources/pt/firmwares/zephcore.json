@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/zephcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Porte do MeshCore feito do zero, do Arduino para o Zephyr RTOS. Substitui o loop do Arduino pelas primitivas orientadas a eventos do Zephyr, permitindo que a CPU entre em repouso entre os eventos, e busca a compatibilidade total de protocolo com o firmware original do MeshCore e os aplicativos móveis do MeshCore.",
+      "sourceHash": "sha256:b89eb0b866233c243cb7624a75365b6a3cd86c2025524aabdc727edcd93b7751",
+      "generatedAt": "2026-06-27T14:27:12.218Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2960,
+      "promptTokens": 184,
+      "completionTokens": 821
+    },
+    "deviceNotes.xiao-nrf54l15": {
+      "value": "Ativação inicial; nem todos os periféricos estão conectados.",
+      "sourceHash": "sha256:0e81acccc7ba2c2fe3a154e23ef5b0f9e8367652e3c6e216a29f0a3595c111f1",
+      "generatedAt": "2026-06-27T14:27:15.387Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3169,
+      "promptTokens": 138,
+      "completionTokens": 781
+    },
+    "features": {
+      "value": "[\"Arquitetura orientada a eventos do Zephyr RTOS\",\"Economia de energia de RX baseada em CAD\",\"Janela de contenção adaptável\",\"Controle de energia adaptável\",\"Suporte a atualizações DFU / OTA\",\"Observador em modo de escuta (WiFi + MQTT)\",\"Compatível com o protocolo dos aplicativos MeshCore\"]",
+      "sourceHash": "sha256:c5938d681bdf2509ed7544b22e71ce1805f87a09e4d39e4b439ac74239ddaec7",
+      "generatedAt": "2026-06-27T14:27:19.641Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4254,
+      "promptTokens": 177,
+      "completionTokens": 1257
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/sensecap-t1000e",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Tracker Meshtastic/MeshCore velikosti kreditní karty s čipy nRF52840, Semtech LR1110 LoRa (863–928 MHz) a MediaTek AG3335 GNSS. Vestavěná baterie 700 mAh, senzory teploty a světla, bzučák a pouzdro s krytím IP65. Nabíjí se přes přiložený magnetický USB kabel; konfigurace probíhá pouze přes BLE – bez displeje a Wi-Fi.",
+      "sourceHash": "sha256:b49e74e8d3e4a580821d76935e3b4c145622ae37154225e28754743a5e413ce2",
+      "generatedAt": "2026-06-27T10:57:12.072Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ch",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore comunitária de abrangência nacional que cobre a Suíça na banda de 869.618 MHz (62.5 kHz / SF8 / CR4/8), coordenada pela comunidade meshcore.ch, com um mapa mundial partilhado e uma predefinição de ciclo de trabalho de 10%.",
+      "sourceHash": "sha256:3d2ce4b0b6f915b74cc1b04a24726c148282a2a5effa69ab41eb0c86c12ff745",
+      "generatedAt": "2026-06-27T14:49:37.553Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7729,
+      "promptTokens": 181,
+      "completionTokens": 1566
+    }
+  }
+}

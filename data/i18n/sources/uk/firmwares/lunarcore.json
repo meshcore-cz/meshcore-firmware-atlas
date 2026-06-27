@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/lunarcore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Мультипротокольна прошивка ESP32-S3 LoRa, що поєднує режими роботи MeshCore, Meshtastic та RNode/KISS, із вбудованим режимом ретранслятора MeshCore.",
+      "sourceHash": "sha256:ac0d05c7a09a52174863cf1be3cd3f5a8b4bb020dc5b8b1415640184a63487cf",
+      "generatedAt": "2026-06-27T15:43:35.843Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6010,
+      "promptTokens": 163,
+      "completionTokens": 1032
+    },
+    "deviceNotes.heltec-v3": {
+      "value": "У файлі README проєкту вказано Heltec WiFi LoRa 32 V3 як цільове обладнання.",
+      "sourceHash": "sha256:1e201732a0e1df3b91368bb5b6a564de2d2242f10218836d299a1f720dd20f0e",
+      "generatedAt": "2026-06-27T15:43:40.664Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4820,
+      "promptTokens": 148,
+      "completionTokens": 780
+    },
+    "features": {
+      "value": "[\"Протоколи MeshCore, Meshtastic та RNode/KISS\", \"Вбудований режим ретранслятора MeshCore\", \"BLE, Wi-Fi та USB-послідовний порт\"]",
+      "sourceHash": "sha256:5b4db5b9e4b88276452168bed2dabd3306720591313f6fc982bc706f39a4781c",
+      "generatedAt": "2026-06-27T15:43:44.085Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3421,
+      "promptTokens": 159,
+      "completionTokens": 549
+    }
+  }
+}

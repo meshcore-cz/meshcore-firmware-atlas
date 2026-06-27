@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-no",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Trung tâm tài liệu cộng đồng MeshCore Na Uy trên trang MeshWiki.no, nơi chia sẻ cấu hình sẵn EU/UK Narrow dành cho Na Uy ở tần số 869.618 MHz, kèm theo hướng dẫn về dải tần 869 MHz tại địa phương, ghi chú thiết lập bộ lặp, hướng dẫn lắp ráp linh kiện và các liên kết bản đồ công khai.",
+      "sourceHash": "sha256:b41cd70344f2a00640471062273175665cd1a625e0bd4ed7b45324423e0370df",
+      "generatedAt": "2026-06-27T16:52:28.304Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16380,
+      "promptTokens": 180,
+      "completionTokens": 966
+    }
+  }
+}

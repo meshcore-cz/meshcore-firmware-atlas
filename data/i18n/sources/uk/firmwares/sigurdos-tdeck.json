@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/sigurdos-tdeck",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Автономна позамережева прошивка MeshCore для обміну повідомленнями на LilyGo T-Deck, оснащена сенсорним інтерфейсом у стилі лаунчера, збереженням історії чатів, картами, діагностикою та підтримкою оновлень через Wi-Fi або GitHub.",
+      "sourceHash": "sha256:380fd3ec395e47743c577a81b03b712c90c12ac353abee45a138813706916d5e",
+      "generatedAt": "2026-06-27T15:40:24.872Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7221,
+      "promptTokens": 167,
+      "completionTokens": 1199
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "Проєкт повідомляє про успішне прошивання бета-версії кількома користувачами.",
+      "sourceHash": "sha256:ae0e0a495a6344e6206fd9c34e3670947201e9273130ad241a4329c0146be10c",
+      "generatedAt": "2026-06-27T15:40:29.646Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4773,
+      "promptTokens": 139,
+      "completionTokens": 877
+    },
+    "features": {
+      "value": "[\"Автономні прямі та канальні повідомлення\",\"Керування сенсорним екраном, трекболом та клавіатурою\",\"Карти, GPS та діагностика сигналу\",\"Оновлення OTA через Wi-Fi та GitHub\"]",
+      "sourceHash": "sha256:33cb201e2a086ffd7852f2de5e22fe7fecad1dc4e686f2e51627989050764577",
+      "generatedAt": "2026-06-27T15:40:34.100Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4454,
+      "promptTokens": 159,
+      "completionTokens": 902
+    }
+  }
+}

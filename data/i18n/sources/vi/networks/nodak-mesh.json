@@ -1,0 +1,15 @@
+{
+  "resource": "network/nodak-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới mesh do cộng đồng quản lý, xây dựng cơ sở hạ tầng truyền thông ngoài lưới bền vững trên khắp Bắc Dakota bằng cách sử dụng MeshCore và Meshtastic. Các thành viên tích cực tại Fargo, Bismarck, Grand Forks, Minot và các vùng nông thôn, hoạt động trên cấu hình sẵn 915 MHz Mỹ/Canada cùng kênh công khai #nodakmesh.",
+      "sourceHash": "sha256:8944e902331fe40b1429a6868c9f55d84e41bbfcea3d4affe1d990146a889d3a",
+      "generatedAt": "2026-06-27T16:52:06.436Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11635,
+      "promptTokens": 190,
+      "completionTokens": 937
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/aurora",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Автономна прошивка MeshCore для текстового спілкування на LilyGo T-Deck із підтримкою публічних, приватних та прямих повідомлень, керування контактами, налаштуванням радіомодуля та супутнього додатка через BLE.",
+      "sourceHash": "sha256:1b06c154384ff7052da6435584b0db2d142b14f74538c7daec1f8818b025046d",
+      "generatedAt": "2026-06-27T15:42:41.533Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7401,
+      "promptTokens": 164,
+      "completionTokens": 849
+    },
+    "features": {
+      "value": "[\"Публічні, приватні та прямі повідомлення\",\"Локальні контакти та налаштування радіомодуля\",\"Імпорт та експорт налаштувань\",\"Підтримка супутнього додатка BLE\"]",
+      "sourceHash": "sha256:6e3d2e9dad40ceca1f1ce0c96814bdebf4d3475a964569292707527a6771f4dc",
+      "generatedAt": "2026-06-27T15:42:47.293Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5759,
+      "promptTokens": 154,
+      "completionTokens": 1182
+    }
+  }
+}

@@ -1,5 +1,6 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
@@ -95,26 +96,21 @@
   function rowClick(event, key) {
     if (event.target.closest('a')) return;
     if (window.getSelection?.().toString()) return;
-    goto(`${base}/devices/?band=${key}`);
+    goto(href(`/devices/?band=${key}`));
   }
 </script>
 
-<Seo
-  title="Frequency bands"
-  description="The regional LoRa frequency bands MeshCore devices use, with their frequency ranges and how many catalogued boards support each."
-/>
+<Seo title={m.tool_bands_label()} description={m.bands_seo_desc()} />
 
 <PageHeader tool="bands" subtitleClass="mb-5 max-w-2xl">
-  Regional LoRa bands a MeshCore device's radio can operate on. A network picks
-  one band; only devices whose radio supports it can join. Pick a band to see
-  every catalogued board that supports it.
+  {m.bands_intro()}
 </PageHeader>
 
 {#if device}
   <div class="mb-5 flex items-center gap-3 rounded-xl border border-accent2/40 bg-accent2/5 p-3">
     <a
       class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-elev2 p-1 text-muted"
-      href="{base}/device/{device.id}/"
+      href={href(`/device/${device.id}/`)}
     >
       {#if device.imageUrl}
         <img src={device.imageUrl} alt="" class="max-h-full max-w-full object-contain" />
@@ -123,8 +119,8 @@
       {/if}
     </a>
     <div class="min-w-0 flex-1">
-      <div class="text-[0.75rem] uppercase tracking-wide text-dim">Supported bands for</div>
-      <a class="block truncate font-semibold hover:text-accent hover:underline" href="{base}/device/{device.id}/" title={device.name}>
+      <div class="text-[0.75rem] uppercase tracking-wide text-dim">{m.bands_supported_for()}</div>
+      <a class="block truncate font-semibold hover:text-accent hover:underline" href={href(`/device/${device.id}/`)} title={device.name}>
         {device.name}
       </a>
       <div class="truncate font-mono text-[0.75rem] text-dim">
@@ -132,14 +128,14 @@
       </div>
     </div>
     {#if showRevisionFilter}
-      <div class="flex flex-wrap justify-end gap-1.5" aria-label="Filter bands by hardware revision">
+      <div class="flex flex-wrap justify-end gap-1.5" aria-label={m.bands_filter_revision_aria()}>
         <Chip
           tone="accent2"
           pressed={selectedRevision === 'all'}
           onPressedChange={() => (selectedRevision = 'all')}
           class="text-[0.75rem] font-semibold"
         >
-          All revisions
+          {m.bands_all_revisions()}
         </Chip>
         {#each deviceVariantRevisions as revision}
           <Chip
@@ -153,7 +149,7 @@
         {/each}
       </div>
     {/if}
-    <a class="shrink-0 text-[0.8rem] text-dim hover:text-accent hover:underline" href="{base}/bands/">Clear</a>
+    <a class="shrink-0 text-[0.8rem] text-dim hover:text-accent hover:underline" href={href('/bands/')}>{m.compare_bar_clear()}</a>
   </div>
 {/if}
 
@@ -161,11 +157,11 @@
   <table class="w-full border-collapse text-[0.92rem]">
     <thead>
       <tr class="border-b border-edge bg-elev2 text-left text-[0.8rem] uppercase tracking-wide text-dim">
-        <th class="px-4 py-2.5 font-semibold">Region</th>
-        <th class="px-4 py-2.5 font-semibold">Band</th>
-        <th class="px-4 py-2.5 font-semibold">Frequency range</th>
-        {#if device}<th class="px-4 py-2.5 font-semibold">Variants</th>{/if}
-        <th class="px-4 py-2.5 text-right font-semibold">Devices</th>
+        <th class="px-4 py-2.5 font-semibold">{m.bands_col_region()}</th>
+        <th class="px-4 py-2.5 font-semibold">{m.dev_facet_band()}</th>
+        <th class="px-4 py-2.5 font-semibold">{m.bands_col_freq_range()}</th>
+        {#if device}<th class="px-4 py-2.5 font-semibold">{m.bands_col_variants()}</th>{/if}
+        <th class="px-4 py-2.5 text-right font-semibold">{m.collection_devices_label()}</th>
       </tr>
     </thead>
     <tbody>
@@ -177,7 +173,7 @@
           onclick={(e) => rowClick(e, b.key)}
         >
           <td class="px-4 py-3 {supported ? 'border-l-2 border-accent2' : ''}">
-            <a class="font-semibold text-accent2 group-hover:underline" href="{base}/devices/?band={b.key}">
+            <a class="font-semibold text-accent2 group-hover:underline" href={href(`/devices/?band=${b.key}`)}>
               {b.region ?? b.name}
             </a>
           </td>
@@ -197,7 +193,7 @@
                   {/each}
                 </div>
               {:else if supported}
-                <span class="text-dim">Radio support</span>
+                <span class="text-dim">{m.bands_radio_support()}</span>
               {:else}
                 <span class="text-muted">—</span>
               {/if}
@@ -205,7 +201,7 @@
           {/if}
           <td class="px-4 py-3 text-right tabular-nums">
             {#if b.deviceCount > 0}
-              <a class="text-accent2 hover:underline" href="{base}/devices/?band={b.key}">
+              <a class="text-accent2 hover:underline" href={href(`/devices/?band=${b.key}`)}>
                 {b.deviceCount}
               </a>
             {:else}

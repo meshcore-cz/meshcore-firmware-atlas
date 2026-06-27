@@ -1,0 +1,15 @@
+{
+  "resource": "network/ruhr-meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Grande comunidade MeshCore na região de Renânia do Norte-Vestfália, na Alemanha, com mais de 1.150 nós concentrados na região do Ruhr (Bochum, Bottrop, Bonn, Kamp-Lintfort) e abrangendo a Renânia e Münsterland. Utiliza a predefinição EU/UK Narrow na banda de 868 MHz.",
+      "sourceHash": "sha256:f9fa57050ed12e4b8b74362fd5355e5ca1459d2236070ae69a17b4e31226839f",
+      "generatedAt": "2026-06-27T14:49:01.101Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2935,
+      "promptTokens": 200,
+      "completionTokens": 840
+    }
+  }
+}

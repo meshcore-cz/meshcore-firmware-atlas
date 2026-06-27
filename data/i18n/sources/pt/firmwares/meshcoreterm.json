@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/meshcoreterm",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um firmware complementar com tema retrô baseado no MeshCore, que oferece um teclado na tela completo, navegação por hardware (D-pad, joystick, trackball) e recursos de gerenciamento para o nome do dispositivo, WiFi, PIN do BLE, parâmetros de rádio e configuração de GPS. Oferece suporte a vários dispositivos com binários pré-compilados e sem necessidade de atualização online.",
+      "sourceHash": "sha256:04b6dcb5dc77fbed177c28f20ff0a6d5e5834ddaa834110b12608a6cd92dd861",
+      "generatedAt": "2026-06-27T14:25:41.126Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3948,
+      "promptTokens": 188,
+      "completionTokens": 1218
+    },
+    "deviceNotes.sensecap-indicator-espnow": {
+      "value": "Seeed SenseCAP Indicator (variante TFT).",
+      "sourceHash": "sha256:358d3cb4801701a5ca30bd44c1a404d5e945d3fa4ac70726d44fe4000c4ff570",
+      "generatedAt": "2026-06-27T14:25:42.888Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1760,
+      "promptTokens": 139,
+      "completionTokens": 366
+    },
+    "deviceNotes.thinknode-m3": {
+      "value": "Elecrow 3.5\" ThinkNode M3.",
+      "sourceHash": "sha256:c8d11c41466844ccc497d2796bd0d38e418741a5867f216fa1dfc4a62dc23d7a",
+      "generatedAt": "2026-06-27T14:25:44.021Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1133,
+      "promptTokens": 142,
+      "completionTokens": 162
+    },
+    "deviceNotes.thinknode-m5": {
+      "value": "ThinkNode M5 de 7\" da Elecrow.",
+      "sourceHash": "sha256:1a99e1898b2b259887261b363e8233540d247a7085dabe8d0d6a738b0f6a70ac",
+      "generatedAt": "2026-06-27T14:25:46.787Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2765,
+      "promptTokens": 140,
+      "completionTokens": 646
+    },
+    "features": {
+      "value": "[\"Interface com tema retrô\",\"Teclado virtual com modos de maiúsculas, minúsculas e símbolos\",\"Navegação por hardware (D-pad, joystick, trackball T-Deck)\",\"Gerenciamento de dispositivos (nome, WiFi, PIN BLE, parâmetros de rádio, GPS)\",\"Barra de status com selos de transporte e indicador de bateria\",\"Persistência via NVS/Preferences\"]",
+      "sourceHash": "sha256:eefcd621537126a13a20b73612f742938cbe00b36b233d33bd0493d871a36639",
+      "generatedAt": "2026-06-27T14:25:51.755Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4967,
+      "promptTokens": 191,
+      "completionTokens": 1494
+    }
+  }
+}

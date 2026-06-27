@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-superbase-kit",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Готовий до використання автономний комплект Meshtastic на базі Base Uno та Super IO, оснащений OLED-екраном, навігаційною панеллю, цифровим компасом, GPS/BDS, зумером, 3D-друкованим корпусом, чохлом та акумулятором.",
+      "sourceHash": "sha256:7a55725c33e01bdac51b7782cdb5426c514477fbc564c6c89fd247d76af86a21",
+      "generatedAt": "2026-06-27T15:00:35.448Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3748,
+      "promptTokens": 175,
+      "completionTokens": 1040
+    }
+  }
+}

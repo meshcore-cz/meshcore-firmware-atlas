@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-khv",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore na região de Khabarovsk, no Extremo Oriente Russo, atendida por um analisador CoreScope público hospedado localmente.",
+      "sourceHash": "sha256:92cadf89a4e5df359ab08a2667183d7ddcbf264e03eb874199c43d2037361402",
+      "generatedAt": "2026-06-27T14:47:39.458Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2676,
+      "promptTokens": 153,
+      "completionTokens": 670
+    }
+  }
+}

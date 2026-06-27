@@ -1,0 +1,159 @@
+{
+  "resource": "taxonomy",
+  "locale": "vi",
+  "fields": {
+    "softwareCapabilities.messaging": {
+      "value": "Tin nhắn",
+      "sourceHash": "sha256:eebdbb25cbbc7651f9519d09e94ca52598e5531655ad0c4f8cf402c4cda1bff1",
+      "generatedAt": "2026-06-27T16:56:20.208Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4490,
+      "promptTokens": 130,
+      "completionTokens": 372
+    },
+    "softwareCapabilities.contacts": {
+      "value": "Liên hệ",
+      "sourceHash": "sha256:b450645debe2cf0a590edd7f78d36eccd465027d389652dc30d6350542587c04",
+      "generatedAt": "2026-06-27T16:56:32.116Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11908,
+      "promptTokens": 130,
+      "completionTokens": 656
+    },
+    "softwareCapabilities.channels": {
+      "value": "Kênh",
+      "sourceHash": "sha256:4c8906cf76f5740ab8792aef9f0033fe21a92045e90b357816064e9f6860a03e",
+      "generatedAt": "2026-06-27T16:56:34.166Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2048,
+      "promptTokens": 130,
+      "completionTokens": 296
+    },
+    "softwareCapabilities.node-configuration": {
+      "value": "Cấu hình Node",
+      "sourceHash": "sha256:e0dde250b79923419ea543629f525199103fa150fc1f187ea0124d8f13250b89",
+      "generatedAt": "2026-06-27T16:56:37.931Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3764,
+      "promptTokens": 131,
+      "completionTokens": 357
+    },
+    "softwareCapabilities.remote-administration": {
+      "value": "Quản trị từ xa",
+      "sourceHash": "sha256:0059282f62856d1f3e28681b109374a21e3ac317aa6e72ef80d4c77cf9acd3be",
+      "generatedAt": "2026-06-27T16:56:41.871Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3939,
+      "promptTokens": 131,
+      "completionTokens": 328
+    },
+    "softwareCapabilities.monitoring": {
+      "value": "Giám sát",
+      "sourceHash": "sha256:1dc83f605edf0ae29b9e25c0b6b233972528a78394d5f362b8cbdead1ff75eca",
+      "generatedAt": "2026-06-27T16:56:45.863Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3990,
+      "promptTokens": 130,
+      "completionTokens": 348
+    },
+    "softwareCapabilities.telemetry": {
+      "value": "Viễn trắc",
+      "sourceHash": "sha256:e87c57f595420aa9027e059cf6e0052e578c1af6eba2d1cf341517c9e9389145",
+      "generatedAt": "2026-06-27T16:56:51.299Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5436,
+      "promptTokens": 131,
+      "completionTokens": 713
+    },
+    "softwareCapabilities.packet-analysis": {
+      "value": "Phân tích gói tin",
+      "sourceHash": "sha256:843a795705996506084ca4dec1c4928932f80b1d9f69fce6caac962bd0d8ecba",
+      "generatedAt": "2026-06-27T16:56:54.159Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2859,
+      "promptTokens": 131,
+      "completionTokens": 326
+    },
+    "softwareCapabilities.mapping": {
+      "value": "Ánh xạ",
+      "sourceHash": "sha256:1ff9a5f8b4bd530e726c82924b08bf653263a5cf1a9084f782836e3700e73b22",
+      "generatedAt": "2026-06-27T16:56:57.380Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3220,
+      "promptTokens": 130,
+      "completionTokens": 361
+    },
+    "softwareCapabilities.flashing": {
+      "value": "Nạp firmware",
+      "sourceHash": "sha256:7bb5b737b003499407e778e975452a357f8614d4f8400f59103e85e53dffae48",
+      "generatedAt": "2026-06-27T16:57:06.591Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9211,
+      "promptTokens": 131,
+      "completionTokens": 536
+    },
+    "softwareCapabilities.firmware-update": {
+      "value": "Cập nhật firmware",
+      "sourceHash": "sha256:b13011c3cb2eaffd3ff5df8a29864300f7d3ab7958296d855f7a80b9a79a03c2",
+      "generatedAt": "2026-06-27T16:57:09.878Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3286,
+      "promptTokens": 132,
+      "completionTokens": 341
+    },
+    "softwareCapabilities.automation": {
+      "value": "Tự động hóa",
+      "sourceHash": "sha256:d909750b1bbb71a39b6330ba8f81f4f8f6e889ed96d7ab366e74857909750c64",
+      "generatedAt": "2026-06-27T16:57:15.541Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5661,
+      "promptTokens": 130,
+      "completionTokens": 267
+    },
+    "softwareCapabilities.notifications": {
+      "value": "Thông báo",
+      "sourceHash": "sha256:788011833a5a0f22db90c91e8eb7bd8e9f5cd423354ff5ef8c338e7895f44ba9",
+      "generatedAt": "2026-06-27T16:57:17.663Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2122,
+      "promptTokens": 130,
+      "completionTokens": 278
+    },
+    "softwareCapabilities.bridging": {
+      "value": "Cầu nối",
+      "sourceHash": "sha256:8d0f66fdc53d2a11020048b89c567451bbd567d77d98f895ea48709976460505",
+      "generatedAt": "2026-06-27T16:57:23.156Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5492,
+      "promptTokens": 132,
+      "completionTokens": 487
+    },
+    "softwareCapabilities.proxying": {
+      "value": "Ủy quyền",
+      "sourceHash": "sha256:457f4fde4f667ea60924c095e7d00ef4041b7ffca469fc55b1b042001a5e2756",
+      "generatedAt": "2026-06-27T16:57:27.522Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4365,
+      "promptTokens": 131,
+      "completionTokens": 713
+    },
+    "softwareCapabilities.key-management": {
+      "value": "Quản lý khóa",
+      "sourceHash": "sha256:26870b40df08e701d2c8ed0d3c3f8efc5d2f7aa3add6f2b4386f2937d0146c59",
+      "generatedAt": "2026-06-27T16:57:30.870Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3347,
+      "promptTokens": 131,
+      "completionTokens": 312
+    },
+    "softwareCapabilities.simulation": {
+      "value": "Mô phỏng",
+      "sourceHash": "sha256:45314e97b0c26a862b5411d0a943d801583e13bb5d104382ed7a2f4773969e66",
+      "generatedAt": "2026-06-27T16:57:33.350Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2479,
+      "promptTokens": 130,
+      "completionTokens": 351
+    }
+  }
+}

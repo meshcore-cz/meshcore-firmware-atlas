@@ -1,0 +1,15 @@
+{
+  "resource": "device/ikoka-handheld",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa mesh portátil de longo alcance baseada no XIAO nRF52840 e em um módulo LoRa EBYTE E22, com um display OLED de 0,96 polegadas e carregamento opcional de bateria de lítio. O conjunto de recursos varia conforme a seleção de componentes, mas o projeto é voltado para a construção de dispositivos complementares e repetidores compactos.",
+      "sourceHash": "sha256:eb3fbc91235c9f36a93b9e768227472ff353758c46fb3ff0539096db22a4103e",
+      "generatedAt": "2026-06-27T14:08:03.206Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13851,
+      "promptTokens": 187,
+      "completionTokens": 826
+    }
+  }
+}

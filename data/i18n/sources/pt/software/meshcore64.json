@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore64",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Cliente de chat MeshCore para Commodore 64 que usa um cartucho serial compatível com SwiftLink para se conectar a uma ponte TCP complementar, com mensagens diretas e em canais, confirmações de entrega e configuração persistente.",
+      "sourceHash": "sha256:c8e7822bbd03308c831ea936dee6ef1a673b6536dfea3243bdf0c2b1449deebd",
+      "generatedAt": "2026-06-27T14:37:53.694Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2992,
+      "promptTokens": 166,
+      "completionTokens": 785
+    },
+    "screenshots.demo.png.caption": {
+      "value": "Mensagens de canal do MeshCore no Commodore 64",
+      "sourceHash": "sha256:e3b2daed63bd7a948ab97465c8cf7fec2154864e5e7eb975ed9386d335f69c94",
+      "generatedAt": "2026-06-27T14:37:56.131Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2437,
+      "promptTokens": 139,
+      "completionTokens": 560
+    },
+    "tags": {
+      "value": "[\"commodore-64\",\"retrocomputação\",\"swiftlink\",\"petscii\"]",
+      "sourceHash": "sha256:5dbfa693f69d4499beb7db9e0833a8219a804c8ee383f42ea1765ab4b6f97737",
+      "generatedAt": "2026-06-27T14:37:58.593Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2462,
+      "promptTokens": 148,
+      "completionTokens": 568
+    },
+    "verificationNotes.requires-swiftlink-or-compatible-acia-emulation-": {
+      "value": "Requer SwiftLink ou uma emulação ACIA compatível e uma ponte serial TCP para um dispositivo complementar MeshCore.",
+      "sourceHash": "sha256:2d89a555be3b6454b731e1b6028dc1ae03f9e6627f440c56f85fa422ecab3a1e",
+      "generatedAt": "2026-06-27T14:38:01.362Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2769,
+      "promptTokens": 149,
+      "completionTokens": 670
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resource": "software/pymc-console",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Painel web para o [[software:pymc-repeater|pyMC Repeater]] com inspeção de pacotes em tempo real, análise de topologia e de rotas, estatísticas de RF, mapeamento de terreno, radar de qualidade da ligação, monitorização do sistema e um terminal interativo para o repetidor.",
+      "sourceHash": "sha256:a7acac247bc01ebaf54919894ea3700ef985bbc35d4b919a9954e9dca2568dfd",
+      "generatedAt": "2026-06-27T14:40:44.763Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3801,
+      "promptTokens": 174,
+      "completionTokens": 1087
+    },
+    "screenshots.topology.png.caption": {
+      "value": "Análise aprofundada da topologia e mapeamento do terreno.",
+      "sourceHash": "sha256:5ef9b2bce3a9112ca97cbe0bc37e1d70209b6cc8e01c509408b78408addde66d",
+      "generatedAt": "2026-06-27T14:40:47.433Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2670,
+      "promptTokens": 135,
+      "completionTokens": 652
+    },
+    "screenshots.link-quality.png.caption": {
+      "value": "Radar de qualidade do enlace direcional",
+      "sourceHash": "sha256:b436f75410bfe2d7b667e81f61ca1f4568188a581699a1b35fd437acfc4df281",
+      "generatedAt": "2026-06-27T14:40:50.218Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2784,
+      "promptTokens": 134,
+      "completionTokens": 637
+    },
+    "screenshots.statistics.png.caption": {
+      "value": "Estatísticas de RF e tempo no ar",
+      "sourceHash": "sha256:c1bcb6cc6fbf71241605ba2678f9a1c71bcf0f369880b93f80f6121a0ba63d48",
+      "generatedAt": "2026-06-27T14:40:53.021Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2803,
+      "promptTokens": 134,
+      "completionTokens": 647
+    },
+    "screenshots.terminal.png.caption": {
+      "value": "Terminal repetidor, registos e temas",
+      "sourceHash": "sha256:5bdf11840fdde6fca46a4db9cb02a4088265425aa89a7c1ae8b28434d72f5a63",
+      "generatedAt": "2026-06-27T14:40:55.634Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2613,
+      "promptTokens": 136,
+      "completionTokens": 581
+    },
+    "tags": {
+      "value": "[\"repetidor\",\"topologia\",\"análise-de-rf\",\"raspberry-pi\",\"painel\"]",
+      "sourceHash": "sha256:ecf0689de1e3a2699e95a41104b8f0b91244a7850a465e01edc9118ccd09b164",
+      "generatedAt": "2026-06-27T14:40:59.355Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3721,
+      "promptTokens": 147,
+      "completionTokens": 964
+    },
+    "verificationNotes.requires-an-existing-pymc-repeater-installation-": {
+      "value": "Requer uma instalação prévia do pyMC Repeater e substitui apenas os recursos do painel web.",
+      "sourceHash": "sha256:bd48f5322714c6f2bd808cce2148f3fe487ab9e7a8b4faa96a318bd972bcc8b5",
+      "generatedAt": "2026-06-27T14:41:02.354Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2998,
+      "promptTokens": 145,
+      "completionTokens": 737
+    },
+    "verificationNotes.repeater-service-lifecycle-and-radio-configurati": {
+      "value": "O ciclo de vida do serviço de repetidor e a configuração de rádio continuam a pertencer ao pyMC Repeater.",
+      "sourceHash": "sha256:976d991e2a805116a213b8ff3a67fc48e67084cc503bb69c91130a7b38575890",
+      "generatedAt": "2026-06-27T14:41:05.924Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3569,
+      "promptTokens": 144,
+      "completionTokens": 894
+    }
+  }
+}

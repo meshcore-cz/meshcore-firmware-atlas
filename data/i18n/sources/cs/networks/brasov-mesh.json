@@ -1,0 +1,15 @@
+{
+  "resource": "network/brasov-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní síť MeshCore pro rumunský Brașov, která využívá předvolbu EU/UK narrow na frekvenci 869.618 MHz. Skupina zaměřená na začátečníky sdílí hardwarové návody, mapy pokrytí a poskytuje podporu Rumunům, kteří s MeshCore teprve začínají.",
+      "sourceHash": "sha256:8265651024371e1acfe8a8d60d6a6c01c2caa7cce70784c8304547399269354d",
+      "generatedAt": "2026-06-27T12:01:12.068Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9779,
+      "promptTokens": 176,
+      "completionTokens": 1202
+    }
+  }
+}

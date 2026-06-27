@@ -1,0 +1,15 @@
+{
+  "resource": "network/eu-uk-deprecated",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cài đặt tần số radio chính thức cho ứng dụng MeshCore — 869.525MHz / SF11 / BW250 / CR5.",
+      "sourceHash": "sha256:ef954b20939722491e56017b032e9fc19918fb7e5b38f878a342df0b41a81a8a",
+      "generatedAt": "2026-06-27T16:47:04.954Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1104,
+      "promptTokens": 153,
+      "completionTokens": 68
+    }
+  }
+}

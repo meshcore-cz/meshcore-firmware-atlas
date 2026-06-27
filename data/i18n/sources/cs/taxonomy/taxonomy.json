@@ -1,0 +1,108 @@
+{
+  "resource": "taxonomy",
+  "locale": "cs",
+  "fields": {
+    "softwareCapabilities.messaging": {
+      "value": "Zprávy",
+      "sourceHash": "sha256:eebdbb25cbbc7651f9519d09e94ca52598e5531655ad0c4f8cf402c4cda1bff1",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.contacts": {
+      "value": "Kontakty",
+      "sourceHash": "sha256:b450645debe2cf0a590edd7f78d36eccd465027d389652dc30d6350542587c04",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.channels": {
+      "value": "Kanály",
+      "sourceHash": "sha256:4c8906cf76f5740ab8792aef9f0033fe21a92045e90b357816064e9f6860a03e",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.node-configuration": {
+      "value": "Konfigurace uzlu",
+      "sourceHash": "sha256:e0dde250b79923419ea543629f525199103fa150fc1f187ea0124d8f13250b89",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.remote-administration": {
+      "value": "Vzdálená správa",
+      "sourceHash": "sha256:0059282f62856d1f3e28681b109374a21e3ac317aa6e72ef80d4c77cf9acd3be",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.monitoring": {
+      "value": "Monitoring",
+      "sourceHash": "sha256:1dc83f605edf0ae29b9e25c0b6b233972528a78394d5f362b8cbdead1ff75eca",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.telemetry": {
+      "value": "Telemetrie",
+      "sourceHash": "sha256:e87c57f595420aa9027e059cf6e0052e578c1af6eba2d1cf341517c9e9389145",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.packet-analysis": {
+      "value": "Analýza paketů",
+      "sourceHash": "sha256:843a795705996506084ca4dec1c4928932f80b1d9f69fce6caac962bd0d8ecba",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.mapping": {
+      "value": "Mapování",
+      "sourceHash": "sha256:1ff9a5f8b4bd530e726c82924b08bf653263a5cf1a9084f782836e3700e73b22",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.flashing": {
+      "value": "Flasování",
+      "sourceHash": "sha256:7bb5b737b003499407e778e975452a357f8614d4f8400f59103e85e53dffae48",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.firmware-update": {
+      "value": "Aktualizace firmwaru",
+      "sourceHash": "sha256:b13011c3cb2eaffd3ff5df8a29864300f7d3ab7958296d855f7a80b9a79a03c2",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.automation": {
+      "value": "Automatizace",
+      "sourceHash": "sha256:d909750b1bbb71a39b6330ba8f81f4f8f6e889ed96d7ab366e74857909750c64",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.notifications": {
+      "value": "Notifikace",
+      "sourceHash": "sha256:788011833a5a0f22db90c91e8eb7bd8e9f5cd423354ff5ef8c338e7895f44ba9",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.bridging": {
+      "value": "Mostování",
+      "sourceHash": "sha256:8d0f66fdc53d2a11020048b89c567451bbd567d77d98f895ea48709976460505",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.proxying": {
+      "value": "Proxy",
+      "sourceHash": "sha256:457f4fde4f667ea60924c095e7d00ef4041b7ffca469fc55b1b042001a5e2756",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.key-management": {
+      "value": "Správa klíčů",
+      "sourceHash": "sha256:26870b40df08e701d2c8ed0d3c3f8efc5d2f7aa3add6f2b4386f2937d0146c59",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    },
+    "softwareCapabilities.simulation": {
+      "value": "Simulace",
+      "sourceHash": "sha256:45314e97b0c26a862b5411d0a943d801583e13bb5d104382ed7a2f4773969e66",
+      "generatedAt": "2026-06-27T12:14:58.278Z",
+      "model": "manual"
+    }
+  }
+}

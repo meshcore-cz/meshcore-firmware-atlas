@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-impulse-plus",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị đeo tay nRF52840 tiết kiệm năng lượng, tích hợp SX1262 LoRa, màn hình OLED 64x32, GPS và cơ chế đánh thức bằng nút cảm ứng. Được thiết kế làm thiết bị đồng hành có thể đeo cho MeshCore, với dòng điện tiêu thụ ở chế độ ngủ sâu cực thấp.",
+      "sourceHash": "sha256:620a057838509946d0daa090e80d754bec401d7bbe473b524558a549d3c490ed",
+      "generatedAt": "2026-06-27T15:37:57.064Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5371,
+      "promptTokens": 175,
+      "completionTokens": 925
+    }
+  }
+}

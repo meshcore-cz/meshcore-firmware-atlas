@@ -1,0 +1,15 @@
+{
+  "resource": "device/ikoka-handheld",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch lưới cầm tay tầm xa dựa trên XIAO nRF52840 kết hợp mô-đun LoRa EBYTE E22, có màn hình OLED 0,96 inch và tùy chọn sạc pin lithium. Bộ tính năng thay đổi tùy theo linh kiện được chọn, nhưng thiết kế này nhắm tới các bản dựng thiết bị đồng hành nhỏ gọn và bộ lặp tín hiệu.",
+      "sourceHash": "sha256:eb3fbc91235c9f36a93b9e768227472ff353758c46fb3ff0539096db22a4103e",
+      "generatedAt": "2026-06-27T15:35:19.476Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8688,
+      "promptTokens": 187,
+      "completionTokens": 1129
+    }
+  }
+}

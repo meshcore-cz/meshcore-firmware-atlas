@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-deck-community",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Збірка прошивки від спільноти для портативного пристрою LilyGo T-Deck, яка зберігає ті самі ESP32-S3, SX1262, 2.8-дюймовий IPS-дисплей та компонування клавіатури й трекбола, що й комерційна версія T-Deck.",
+      "sourceHash": "sha256:d55e78ec72e9037f2daa0333105f2b7d4b237c8eb6d038e2d8bca7a21e52a233",
+      "generatedAt": "2026-06-27T14:59:08.897Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5489,
+      "promptTokens": 175,
+      "completionTokens": 1649
+    }
+  }
+}

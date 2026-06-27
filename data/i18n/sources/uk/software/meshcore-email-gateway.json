@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-email-gateway",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Двонаправлений шлюз між звичайною електронною поштою SMTP/IMAP та прямими повідомленнями MeshCore. Підтримує з'єднання через BLE, послідовний порт або TCP-радіо, а також пропонує API для керування, оновлення стану в реальному часі та опціональний вебінтерфейс.",
+      "sourceHash": "sha256:9e9b7bf0a9ca5eb45deacaf3723436304c86cd18292d0f1ae920e8dc4a5318e6",
+      "generatedAt": "2026-06-27T15:49:43.988Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6660,
+      "promptTokens": 167,
+      "completionTokens": 1407
+    },
+    "tags": {
+      "value": "[\"електронна пошта\", \"SMTP\", \"IMAP\", \"власний хостинг\"]",
+      "sourceHash": "sha256:47053f0dfc3e8225bc02b3e0db8da2bd81e2301b1a11d52ecf021b2ad908aa7f",
+      "generatedAt": "2026-06-27T15:49:50.384Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6396,
+      "promptTokens": 140,
+      "completionTokens": 949
+    },
+    "verificationNotes.email-delivery-requires-operator-supplied-smtp-a": {
+      "value": "Для доставки електронної пошти потрібні облікові дані SMTP та IMAP, надані оператором.",
+      "sourceHash": "sha256:2c23ce5df56a87da5f7fe0e9b118012bdb991ae7937bdd7d435e956f2f2b7844",
+      "generatedAt": "2026-06-27T15:49:55.104Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4719,
+      "promptTokens": 141,
+      "completionTokens": 682
+    },
+    "verificationNotes.runs-in-simulation-mode-when-the-meshcore-python": {
+      "value": "Працює в режимі симуляції за відсутності Python-пакета MeshCore.",
+      "sourceHash": "sha256:1996a5b76d8f8de2890ac0719a35c7ae1c10d8ac76918bf3526aa376bfbfbd78",
+      "generatedAt": "2026-06-27T15:49:58.094Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2990,
+      "promptTokens": 142,
+      "completionTokens": 585
+    }
+  }
+}

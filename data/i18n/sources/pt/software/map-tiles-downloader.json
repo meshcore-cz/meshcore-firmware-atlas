@@ -1,0 +1,33 @@
+{
+  "resource": "software/map-tiles-downloader",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Utilitário de terminal multiplataforma para baixar áreas selecionadas do OpenStreetMap ou Thunderforest para uso offline nos aplicativos MeshCore e Meshtastic, com seleção interativa de regiões, estimativas de tamanho e subcomandos de automação.",
+      "sourceHash": "sha256:6f1bebfe940dc879d7546827fc94adbb6d24ef28978d203d1aef2883c0727374",
+      "generatedAt": "2026-06-27T14:29:39.681Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2586,
+      "promptTokens": 167,
+      "completionTokens": 729
+    },
+    "screenshots.screenshot.png.caption": {
+      "value": "Transferidor interativo de regiões de mapas offline",
+      "sourceHash": "sha256:95ad67226934851bcbd625f4587128f7b9f1ccafc170e1f4a07e3b624bf0ac83",
+      "generatedAt": "2026-06-27T14:29:44.110Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4429,
+      "promptTokens": 134,
+      "completionTokens": 1111
+    },
+    "tags": {
+      "value": "[\"mapas offline\", \"blocos de mapa\", \"openstreetmap\", \"meshtastic\"]",
+      "sourceHash": "sha256:95b80b8840fc45754a25d20974964936e847323f3216865cfc263b42742c0f9a",
+      "generatedAt": "2026-06-27T14:29:49.693Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5582,
+      "promptTokens": 146,
+      "completionTokens": 1395
+    }
+  }
+}

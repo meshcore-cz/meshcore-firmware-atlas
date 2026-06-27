@@ -1,0 +1,15 @@
+{
+  "resource": "device/generic-espnow",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Універсальна цільова платформа ESP32-C3 MeshCore, яка використовує ESP-NOW як пакетне радіо. Застосовується для апаратного забезпечення, орієнтованого на Wi-Fi, за відсутності профілю плати від конкретного виробника.",
+      "sourceHash": "sha256:b49098186890d66e965b9ece320e1fc2f608cbd55604ef0f1475cc7b70faa97b",
+      "generatedAt": "2026-06-27T14:56:36.648Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3844,
+      "promptTokens": 163,
+      "completionTokens": 1095
+    }
+  }
+}

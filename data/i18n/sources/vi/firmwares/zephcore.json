@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/zephcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Chuyển đổi toàn diện MeshCore từ Arduino sang Zephyr RTOS. Thay thế vòng lặp Arduino bằng các nguyên thủy hướng sự kiện của Zephyr để CPU chuyển sang chế độ ngủ giữa các sự kiện, đồng thời hướng tới khả năng tương thích hoàn toàn về giao thức với firmware MeshCore gốc và các ứng dụng di động MeshCore.",
+      "sourceHash": "sha256:b89eb0b866233c243cb7624a75365b6a3cd86c2025524aabdc727edcd93b7751",
+      "generatedAt": "2026-06-27T15:55:03.964Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4073,
+      "promptTokens": 184,
+      "completionTokens": 750
+    },
+    "deviceNotes.xiao-nrf54l15": {
+      "value": "Khởi tạo ban đầu; chưa kết nối đầy đủ thiết bị ngoại vi.",
+      "sourceHash": "sha256:0e81acccc7ba2c2fe3a154e23ef5b0f9e8367652e3c6e216a29f0a3595c111f1",
+      "generatedAt": "2026-06-27T15:55:07.221Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3256,
+      "promptTokens": 138,
+      "completionTokens": 634
+    },
+    "features": {
+      "value": "[\"Kiến trúc hướng sự kiện của Zephyr RTOS\",\"Tiết kiệm năng lượng RX dựa trên CAD\",\"Cửa sổ tranh chấp thích ứng\",\"Điều khiển công suất thích ứng\",\"Hỗ trợ cập nhật DFU / OTA\",\"Bộ quan sát chỉ nghe (WiFi + MQTT)\",\"Tương thích giao thức với ứng dụng MeshCore\"]",
+      "sourceHash": "sha256:c5938d681bdf2509ed7544b22e71ce1805f87a09e4d39e4b439ac74239ddaec7",
+      "generatedAt": "2026-06-27T15:55:16.345Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9124,
+      "promptTokens": 177,
+      "completionTokens": 949
+    }
+  }
+}

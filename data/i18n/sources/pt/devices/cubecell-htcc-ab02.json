@@ -1,0 +1,15 @@
+{
+  "resource": "device/cubecell-htcc-ab02",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento CubeCell LoRa baseada no ASR6502 + SX1262, com tela OLED de 0,96 polegadas, gerenciamento de bateria, suporte a energia solar e ponte USB-serial CP2102. Uma plataforma de repetidor MeshCore compacta e de baixo consumo de energia.",
+      "sourceHash": "sha256:2c652cd7faa0bf1332fa6483cbdb7ddcec2bf91502e3659e5c5f14c225a92f73",
+      "generatedAt": "2026-06-27T14:01:40.831Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16630,
+      "promptTokens": 180,
+      "completionTokens": 834
+    }
+  }
+}

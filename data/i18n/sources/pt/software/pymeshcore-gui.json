@@ -1,0 +1,33 @@
+{
+  "resource": "software/pymeshcore-gui",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Cliente para desktop Qt experimental e multiplataforma, construído com PySide6 e meshcore-py, com foco no chat do MeshCore, em prototipagem e em um fluxo de trabalho de desenvolvimento extensível e de código aberto.",
+      "sourceHash": "sha256:b511a4bd27d32abda5c61a7de848591d5af8d6f282ef0ecdd229dcae8cdccecf",
+      "generatedAt": "2026-06-27T14:41:38.245Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2730,
+      "promptTokens": 163,
+      "completionTokens": 752
+    },
+    "tags": {
+      "value": "[\"qt\",\"pyside6\",\"desktop\",\"experimental\"]",
+      "sourceHash": "sha256:4b7aac97761cbf530c1106bf29e716bb4e52d5b94c4e74c61b9919ebf2723d6d",
+      "generatedAt": "2026-06-27T14:41:40.757Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2511,
+      "promptTokens": 141,
+      "completionTokens": 543
+    },
+    "verificationNotes.the-project-explicitly-describes-itself-as-an-ea": {
+      "value": "O projeto descreve-se explicitamente como uma versão experimental inicial, com APIs e estrutura interna instáveis.",
+      "sourceHash": "sha256:3a6150ae79fc20e196a4d1c01d94d1b9ec0f7ef55c75323f8256526fd1bb75ea",
+      "generatedAt": "2026-06-27T14:41:43.246Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2488,
+      "promptTokens": 146,
+      "completionTokens": 604
+    }
+  }
+}

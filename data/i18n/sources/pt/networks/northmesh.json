@@ -1,0 +1,15 @@
+{
+  "resource": "network/northmesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Mapa em tempo real das redes mesh MeshCore e LoRa para o norte da Inglaterra e do Reino Unido, com monitoramento de repetidores, atividade de pacotes, cobertura de RF e nós conectados via MQTT.",
+      "sourceHash": "sha256:a2e34142f3c0d262c757f50c6bb88097b671729dc0b1ced058ce4f1c368a85c6",
+      "generatedAt": "2026-06-27T14:48:20.951Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2924,
+      "promptTokens": 160,
+      "completionTokens": 778
+    }
+  }
+}

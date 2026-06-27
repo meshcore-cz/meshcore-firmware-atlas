@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-nrf52",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa nRF52840 do tamanho de um polegar utilizada como placa principal no kit Seeed XIAO nRF52840 + Wio-SX1262. A placa base oferece BLE, gravação por USB e um formato compacto, ideal para vestíveis; o LoRa é fornecido pelo módulo Wio-SX1262 separado.",
+      "sourceHash": "sha256:fe6a77fdb726ca93c513d09d614a7dfa051d5f448c85ccefad5e6a690f84d09b",
+      "generatedAt": "2026-06-27T14:20:28.174Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4030,
+      "promptTokens": 193,
+      "completionTokens": 1231
+    }
+  }
+}

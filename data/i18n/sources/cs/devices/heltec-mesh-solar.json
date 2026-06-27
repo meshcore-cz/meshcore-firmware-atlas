@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-mesh-solar",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Základní deska pro venkovní napájení a komunikaci s podporou solárního nabíjení, která kombinuje desku BMS s řídicí deskou BLE + LoRa. Platforma stojící za uzly MeshTower – navržená pro dlouhodobá nasazení mesh sítí se solárním nabíjením, podporou různých chemických typů akumulátorů a volitelným rozšířením o GNSS/displej.",
+      "sourceHash": "sha256:bcd12bbc4bc3f77ad20009a1d27afd76ebdf3989342dfa432f6ca2a45b522c1e",
+      "generatedAt": "2026-06-27T10:46:12.094Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

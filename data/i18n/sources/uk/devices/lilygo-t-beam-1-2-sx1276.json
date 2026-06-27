@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-beam-1-2-sx1276",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Трекер ESP32 + SX1276 LoRa зі вбудованим GNSS-модулем u-blox, дисплеєм SSD1306 OLED та мікросхемою керування живленням AXP2101. Роз'єм USB-C із мостом CH9102; зовнішні антени IPEX для LoRa та Wi-Fi. Це варіант сімейства T-Beam на базі SX1276, який широко використовується для створення супутніх вузлів та репітерів Meshtastic/MeshCore.",
+      "sourceHash": "sha256:bae1982bcdeebbe0ac97dc20441339dc594146faf1f0443c091ae7d5a8e87f66",
+      "generatedAt": "2026-06-27T14:58:48.776Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8925,
+      "promptTokens": 207,
+      "completionTokens": 1026
+    }
+  }
+}

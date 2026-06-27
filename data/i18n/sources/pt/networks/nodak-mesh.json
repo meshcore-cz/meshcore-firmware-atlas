@@ -1,0 +1,15 @@
+{
+  "resource": "network/nodak-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede mesh gerida pela comunidade que constrói uma infraestrutura de comunicação resiliente fora da rede em toda a Dakota do Norte, utilizando MeshCore e Meshtastic. Conta com membros ativos em Fargo, Bismarck, Grand Forks, Minot e áreas rurais, a operar na predefinição EUA/Canadá de 915 MHz com o canal público #nodakmesh.",
+      "sourceHash": "sha256:8944e902331fe40b1429a6868c9f55d84e41bbfcea3d4affe1d990146a889d3a",
+      "generatedAt": "2026-06-27T14:48:18.027Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4276,
+      "promptTokens": 190,
+      "completionTokens": 1322
+    }
+  }
+}

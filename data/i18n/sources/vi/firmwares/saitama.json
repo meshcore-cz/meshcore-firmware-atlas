@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/saitama",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Phần sụn mã nguồn mở độc lập cho thiết bị mạng lưới LoRa dựa trên MeshCore, được thiết kế riêng cho LilyGo T-Deck và T-Deck Plus. Cung cấp tính năng nhắn tin tương đương điện thoại thông minh, bản đồ GPS, truyền thông được mã hóa và nhiều tính năng khác — tất cả đều chạy trực tiếp trên thiết bị mà không cần điện thoại, internet hay giấy phép.",
+      "sourceHash": "sha256:3d224624362fd60e16ed166143ad555021fe2c142b3a3482fd8e3ad864e664bc",
+      "generatedAt": "2026-06-27T15:53:38.849Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4723,
+      "promptTokens": 189,
+      "completionTokens": 1089
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "T-Deck Plus — mục tiêu chính, đã biên dịch và thử nghiệm trên phần cứng.",
+      "sourceHash": "sha256:afbaade2850405a1cf9914b2add3534650c78bc9cfaa6d4f7ad23218a3fc080f",
+      "generatedAt": "2026-06-27T15:53:43.179Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4329,
+      "promptTokens": 142,
+      "completionTokens": 713
+    },
+    "features": {
+      "value": "[\"Nhắn tin độc lập (không cần điện thoại)\",\"Bản đồ GPS\",\"Truyền thông được mã hóa\",\"Nhắn tin trực tiếp và theo kênh\",\"Không cần tài khoản hoặc giấy phép\"]",
+      "sourceHash": "sha256:95751333e85508ee8c0aed13e4d748e16790eb7964a15f995e3e625123ff8c92",
+      "generatedAt": "2026-06-27T15:53:48.666Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5486,
+      "promptTokens": 155,
+      "completionTokens": 992
+    }
+  }
+}

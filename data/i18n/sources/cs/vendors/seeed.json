@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/seeed",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Společnost vyvíjející hardwarové platformy, která stojí za produktovými řadami XIAO, Wio a SenseCAP LoRa.",
+      "sourceHash": "sha256:4b333ad52a8ce3e55a44f0dfc298b907549cea207ac623b0bb525768c6ec0ef5",
+      "generatedAt": "2026-06-27T11:59:57.651Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 28764,
+      "promptTokens": 148,
+      "completionTokens": 872
+    }
+  }
+}

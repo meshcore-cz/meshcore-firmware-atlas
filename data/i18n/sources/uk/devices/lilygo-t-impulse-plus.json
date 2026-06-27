@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-impulse-plus",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Енергоефективний браслет nRF52840 із SX1262 LoRa, OLED-дисплеєм 64x32, GPS та пробудженням від сенсорної кнопки. Створений для носимих пристроїв-компаньйонів MeshCore із дуже низьким струмом у режимі глибокого сну.",
+      "sourceHash": "sha256:620a057838509946d0daa090e80d754bec401d7bbe473b524558a549d3c490ed",
+      "generatedAt": "2026-06-27T14:59:40.711Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3551,
+      "promptTokens": 175,
+      "completionTokens": 1016
+    }
+  }
+}

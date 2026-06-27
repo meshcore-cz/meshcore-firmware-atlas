@@ -1,0 +1,69 @@
+{
+  "resource": "software/meshcore-signal-tester",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Веб- та Android-інструмент для аналізу сигналу пристроїв-компаньйонів та репітерів MeshCore. Підтримує груповий прийом пакетів, перегляд історії RSSI/SNR, статистику репітерів, 3D-картографування з GPS-мітками та запис даних у CSV.",
+      "sourceHash": "sha256:b76346c1faf3603909ceef9a39b9235ce32ab38eee8432f253e6e504fd527636",
+      "generatedAt": "2026-06-27T16:15:58.141Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8619,
+      "promptTokens": 169,
+      "completionTokens": 1666
+    },
+    "screenshots.charts.webp.caption": {
+      "value": "Статистика репітера та історія RSSI/SNR",
+      "sourceHash": "sha256:b921ad54a85ec37470672ffc97e99e683d0fcf9b560e62c1707d4d9d203c6aaa",
+      "generatedAt": "2026-06-27T16:16:00.254Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2113,
+      "promptTokens": 138,
+      "completionTokens": 326
+    },
+    "screenshots.3dmap.webp.caption": {
+      "value": "3D-карта сигналу з GPS-прив'язкою",
+      "sourceHash": "sha256:d9d7f372bd6c6c009e9ccf2ec31aab806b7fe74bb3a9a3cc30cca13a2b41b447",
+      "generatedAt": "2026-06-27T16:16:06.599Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6345,
+      "promptTokens": 137,
+      "completionTokens": 687
+    },
+    "screenshots.packets.webp.caption": {
+      "value": "Згруповані пакети з декодованими деталями",
+      "sourceHash": "sha256:a399a8d012ff9b2c29d40a44f2c97551f8e7a5b7c5fbccaec0b1f16754d2a332",
+      "generatedAt": "2026-06-27T16:16:12.102Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5502,
+      "promptTokens": 135,
+      "completionTokens": 697
+    },
+    "tags": {
+      "value": "[\"тестування сигналу\",\"польовий інструмент\",\"threejs\",\"захоплення пакетів\"]",
+      "sourceHash": "sha256:6594c6c357bb5ffa81ccf6bd490d1e14cf15964426a9da19810e644a13fd4dca",
+      "generatedAt": "2026-06-27T16:16:18.800Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6698,
+      "promptTokens": 143,
+      "completionTokens": 766
+    },
+    "verificationNotes.the-android-app-adds-background-capture-and-raw-": {
+      "value": "Додаток для Android додає до мікропрограми WiFi-компаньйона підтримку фонового захоплення даних та прямих TCP-з'єднань.",
+      "sourceHash": "sha256:63c6cc13b24e7f1fce97f036a40723716805058b855dfd04f2ea614b2a65fb59",
+      "generatedAt": "2026-06-27T16:16:26.312Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7511,
+      "promptTokens": 144,
+      "completionTokens": 1125
+    },
+    "verificationNotes.browser-bluetooth-and-serial-support-depends-on-": {
+      "value": "Підтримка Bluetooth і послідовних портів у браузері залежить від конкретного браузера та платформи.",
+      "sourceHash": "sha256:cac261d316db620be6aa71b5db5c4ade6f749ced361bc642af7f3529e3358786",
+      "generatedAt": "2026-06-27T16:16:32.459Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6147,
+      "promptTokens": 141,
+      "completionTokens": 1055
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/m5stack-unit-c6l",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Unidade ESP32-C6 LoRa com rádio SX1262 integrado, ecrã de estado OLED, indicador RGB, buzzer e botão de utilizador. A documentação do fabricante destaca o Wi-Fi 6, o suporte a Meshtastic e o par de conectores de antena RP-SMA.",
+      "sourceHash": "sha256:d8741705041a787f7bae0b0238c3655b8e8af4748e64e53be386c8848a21fe3d",
+      "generatedAt": "2026-06-27T14:16:07.141Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11233,
+      "promptTokens": 183,
+      "completionTokens": 658
+    }
+  }
+}

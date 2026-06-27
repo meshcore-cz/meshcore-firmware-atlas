@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-pager",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативний пейджер Meshtastic/MeshCore на базі ESP32-S3 із SX1262 LoRa, 2.33-дюймовим IPS-дисплеєм, QWERTY-клавіатурою та поворотним енкодером. Вбудований GNSS-модуль u-blox MIA-M10Q, акумулятор на 1500 мА·год, мікрофон/динамік, NFC та інерціальний модуль BHI260AP AI IMU. Wi-Fi та BLE. Опціональний LR1121 або інші варіанти радіомодулів доступні для вибору під час покупки.",
+      "sourceHash": "sha256:b7af97f37b5b02c4e798f28826c53bd973d48223fabef014df2cf9874eac1398",
+      "generatedAt": "2026-06-27T14:59:45.902Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5190,
+      "promptTokens": 218,
+      "completionTokens": 1605
+    }
+  }
+}

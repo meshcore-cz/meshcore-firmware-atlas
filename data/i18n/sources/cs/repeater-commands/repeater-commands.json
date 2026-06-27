@@ -1,0 +1,102 @@
+{
+  "resource": "repeater-commands",
+  "locale": "cs",
+  "fields": {
+    "rc.groups.power": {
+      "value": "{\n  \"label\": \"Napájení a restart\",\n  \"commands\": {\n    \"reboot\": {\n      \"desc\": \"Restartuje uzel.\"\n    },\n    \"poweroff\": {\n      \"desc\": \"Vypne zařízení (alias: shutdown).\"\n    },\n    \"shutdown\": {\n      \"desc\": \"Totéž jako poweroff.\"\n    },\n    \"clkreboot\": {\n      \"desc\": \"Resetuje hodiny na pevný epoch a poté restartuje.\"\n    },\n    \"start.ota\": {\n      \"desc\": \"Spustí aktualizaci firmwaru přes vzduch (OTA).\"\n    },\n    \"erase\": {\n      \"desc\": \"Naformátuje souborový systém — smaže všechna nastavení (tovární reset).\"\n    },\n    \"powersaving\": {\n      \"desc\": \"Režim nízké spotřeby (nRF52: okamžitě, ESP32: po 2 min).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:d5788157c006f5a07cb8414c3131be266bea4876c298dbeb3fd095eff4728245",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.info": {
+      "value": "{\n  \"label\": \"Identita a informace\",\n  \"commands\": {\n    \"ver\": {\n      \"desc\": \"Verze firmwaru a datum sestavení.\"\n    },\n    \"board\": {\n      \"desc\": \"Hardware / název výrobce.\"\n    },\n    \"role\": {\n      \"desc\": \"Nakonfigurovaná role uzlu.\"\n    },\n    \"public.key\": {\n      \"desc\": \"Veřejný klíč tohoto uzlu (hex).\"\n    },\n    \"prv.key\": {\n      \"desc\": \"Soukromý klíč — přegeneruje klíče uzlu.\"\n    },\n    \"name\": {\n      \"desc\": \"Název uzlu zobrazený v reklamách.\"\n    },\n    \"owner.info\": {\n      \"desc\": \"Poznámka vlastníka / kontaktu (pro nové řádky použijte |).\"\n    },\n    \"bootloader.ver\": {\n      \"desc\": \"Verze zavaděče (pouze pro nRF52).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:135809f6aa8335c35dc35f5babb28da81b68e13befc1b174ec3947feb6ec3a6d",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.access": {
+      "value": "{\n  \"label\": \"Hesla a řízení přístupu\",\n  \"commands\": {\n    \"password\": {\n      \"desc\": \"Nastavte heslo správce.\"\n    },\n    \"guest.password\": {\n      \"desc\": \"Nastavte heslo pro hosta (pouze pro čtení).\"\n    },\n    \"allow.read.only\": {\n      \"desc\": \"Povolit hostům číst konfiguraci bez hesla správce.\"\n    },\n    \"setperm\": {\n      \"desc\": \"Nastavte oprávnění klienta: 0 host · 1 pouze pro čtení · 2 čtení a zápis · 3 správce.\"\n    },\n    \"get.acl\": {\n      \"desc\": \"Vypsat seznam řízení přístupu.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:75140e652df344753cfad827323faad4c062a87aa18e726f46716c970e76621e",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.radio": {
+      "value": "{\n  \"label\": \"Rádio\",\n  \"commands\": {\n    \"radio\": {\n      \"desc\": \"Frekvence LoRa (MHz), šířka pásma (kHz), faktor rozprostření a kódový poměr.\",\n      \"range\": \"frekvence 150–2500 · šířka pásma 7.8–500 · SF 5–12 · CR 5–8\"\n    },\n    \"freq\": {\n      \"desc\": \"Pouze frekvence (MHz).\"\n    },\n    \"tx\": {\n      \"desc\": \"Vysílací výkon.\",\n      \"range\": \"-9 až 30 dBm\"\n    },\n    \"tempradio\": {\n      \"desc\": \"Dočasně přepne parametry rádia a poté je automaticky vrátí zpět.\",\n      \"range\": \"min > 0\"\n    },\n    \"radio.rxgain\": {\n      \"desc\": \"Zvýšený zisk RX (SX1262/1268/LR1110).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:2f44981a1f672bd41b25a1760d190ca34c45ebeef604449716cf0be67f614d8d",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.forwarding": {
+      "value": "{\n  \"label\": \"Přeposílání a směrování\",\n  \"commands\": {\n    \"repeat\": {\n      \"desc\": \"Zda tento uzel opakuje (přeposílá) pakety.\"\n    },\n    \"loop.detect\": {\n      \"desc\": \"Přísnost detekce smyček směrování.\"\n    },\n    \"path.hash.mode\": {\n      \"desc\": \"Velikost hashe ID cesty.\",\n      \"range\": \"0, 1 nebo 2\"\n    },\n    \"flood.max\": {\n      \"desc\": \"Maximální počet skoků pro vymezené záplavy.\",\n      \"range\": \"0–64\"\n    },\n    \"flood.max.unscoped\": {\n      \"desc\": \"Maximální počet skoků pro neohraničené všesměrové šíření.\",\n      \"range\": \"0–64\"\n    },\n    \"flood.max.advert\": {\n      \"desc\": \"Maximální počet skoků pro šíření oznámení.\",\n      \"range\": \"0–64\"\n    },\n    \"multi.acks\": {\n      \"desc\": \"Povolit více ACK na paket.\",\n      \"range\": \"0 or 1\"\n    }\n  }\n}",
+      "sourceHash": "sha256:34a3a6a7c6adb8155a38426a1d2f42bc81266e18c3a1eb4abd5a627ea923653d",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.timing": {
+      "value": "{\n  \"label\": \"Timing & airtime\",\n  \"commands\": {\n    \"dutycycle\": {\n      \"desc\": \"Target TX duty-cycle percent.\",\n      \"range\": \"1–100\"\n    },\n    \"af\": {\n      \"desc\": \"Airtime factor.\"\n    },\n    \"rxdelay\": {\n      \"desc\": \"Base receive delay.\",\n      \"range\": \"0–20\"\n    },\n    \"txdelay\": {\n      \"desc\": \"Flood retransmit delay factor.\",\n      \"range\": \"0–2\"\n    },\n    \"direct.txdelay\": {\n      \"desc\": \"Direct-traffic delay factor.\",\n      \"range\": \"0–2\"\n    },\n    \"int.thresh\": {\n      \"desc\": \"Interference (noise) threshold.\"\n    },\n    \"agc.reset.interval\": {\n      \"desc\": \"AGC reset interval (rounded to multiples of 4s).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:758448b2188b6ad32be29f5021a83cae993754e3c467d77e6f3a80a334d0f429",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.advert": {
+      "value": "{\n  \"label\": \"Advertising\",\n  \"commands\": {\n    \"advert\": {\n      \"desc\": \"Send a flood advertisement now.\"\n    },\n    \"advert.zerohop\": {\n      \"desc\": \"Send a zero-hop (neighbours-only) advert now.\"\n    },\n    \"advert.interval\": {\n      \"desc\": \"Zero-hop advert interval.\",\n      \"range\": \"60–240 min (0 = off)\"\n    },\n    \"flood.advert.interval\": {\n      \"desc\": \"Flood advert interval.\",\n      \"range\": \"3–168 h (0 = off)\"\n    }\n  }\n}",
+      "sourceHash": "sha256:3646d01f716bf9fa6de899d020efb8a93b05dc26df1d5bc1d97ba315ee8fcdca",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.location": {
+      "value": "{\n  \"label\": \"Location\",\n  \"commands\": {\n    \"lat\": {\n      \"desc\": \"Node latitude.\"\n    },\n    \"lon\": {\n      \"desc\": \"Node longitude.\"\n    },\n    \"adc.multiplier\": {\n      \"desc\": \"Battery ADC calibration (0 = board default).\",\n      \"range\": \"0–10\"\n    }\n  }\n}",
+      "sourceHash": "sha256:0873fede7da84c28875bd01a8991f543cda080934172c45c336a164d8a13bd36",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.neighbors": {
+      "value": "{\n  \"label\": \"Neighbours\",\n  \"commands\": {\n    \"neighbors\": {\n      \"desc\": \"List recently heard neighbours.\"\n    },\n    \"neighbor.remove\": {\n      \"desc\": \"Forget a neighbour by public key.\"\n    },\n    \"discover.neighbors\": {\n      \"desc\": \"Send a zero-hop neighbour-discovery request.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:41c43163720a0688fb434f5a5a61230ad57c8afae44cbebe82f5e4224c9d4824",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.clock": {
+      "value": "{\n  \"label\": \"Clock\",\n  \"commands\": {\n    \"clock\": {\n      \"desc\": \"Show current UTC time.\"\n    },\n    \"clock.sync\": {\n      \"desc\": \"Sync clock to the sender’s timestamp.\"\n    },\n    \"time\": {\n      \"desc\": \"Set clock to a Unix epoch (cannot go backwards).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:641c8b99ace38f890c1f5673418b3d84903c1b8fe811806c42edfafcefce85f7",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.stats": {
+      "value": "{\n  \"label\": \"Stats & logging\",\n  \"commands\": {\n    \"clear.stats\": {\n      \"desc\": \"Reset all statistics counters.\"\n    },\n    \"stats-core\": {\n      \"desc\": \"Battery, uptime, queue length, debug flags.\"\n    },\n    \"stats-radio\": {\n      \"desc\": \"Noise floor, RSSI/SNR, airtime, errors.\"\n    },\n    \"stats-packets\": {\n      \"desc\": \"Sent / received packet counters.\"\n    },\n    \"log.start\": {\n      \"desc\": \"Start capturing the receive log to storage.\"\n    },\n    \"log.stop\": {\n      \"desc\": \"Stop capturing the receive log.\"\n    },\n    \"log.erase\": {\n      \"desc\": \"Delete the stored log.\"\n    },\n    \"log\": {\n      \"desc\": \"Dump the stored log to the serial console.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:5476582e3894dab7089ff326ba288c835930a2744f5339e75ecc1386b65752e3",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.regions": {
+      "value": "{\n  \"label\": \"Regions\",\n  \"commands\": {\n    \"region\": {\n      \"desc\": \"List all defined regions.\"\n    },\n    \"region.get\": {\n      \"desc\": \"Show one region and its parent / flood flag.\"\n    },\n    \"region.put\": {\n      \"desc\": \"Create a region (flood allowed by default).\"\n    },\n    \"region.def\": {\n      \"desc\": \"Define a hierarchy in one line (| or , branches).\"\n    },\n    \"region.remove\": {\n      \"desc\": \"Delete a region (must be empty).\"\n    },\n    \"region.load\": {\n      \"desc\": \"Begin bulk indented region load (blank line ends it).\"\n    },\n    \"region.save\": {\n      \"desc\": \"Persist region changes to storage.\"\n    },\n    \"region.home\": {\n      \"desc\": \"View or set the home region.\"\n    },\n    \"region.default\": {\n      \"desc\": \"View or set the default scope (<null> to clear).\"\n    },\n    \"region.allowf\": {\n      \"desc\": \"Allow flooding in a region (* = wildcard).\"\n    },\n    \"region.denyf\": {\n      \"desc\": \"Deny flooding in a region.\"\n    },\n    \"region.list\": {\n      \"desc\": \"List regions by flood permission.\"\n    }\n  },\n  \"blurb\": \"Region scoping controls where floods propagate. `region` with no argument lists every defined region.\"\n}",
+      "sourceHash": "sha256:820afdfc5fedbb3c41df015059da7392c18bf1e7d2571e98d9f543a254010258",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.gps": {
+      "value": "{\n  \"label\": \"GPS\",\n  \"commands\": {\n    \"gps\": {\n      \"desc\": \"Show GPS status (fix, sats).\"\n    },\n    \"gps.on\": {\n      \"desc\": \"Enable the GPS hardware.\"\n    },\n    \"gps.off\": {\n      \"desc\": \"Disable the GPS hardware.\"\n    },\n    \"gps.sync\": {\n      \"desc\": \"Sync the clock from GPS time.\"\n    },\n    \"gps.setloc\": {\n      \"desc\": \"Copy the current GPS fix into node lat/lon.\"\n    },\n    \"gps.advert\": {\n      \"desc\": \"View / set the location-sharing policy for adverts.\"\n    }\n  },\n  \"blurb\": \"Available only on GPS-enabled builds.\"\n}",
+      "sourceHash": "sha256:c638f806e84b7f7b271a23285fb9c8c6de4d3c28cc6243ce8c0b8a2f0cf85b9e",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.sensors": {
+      "value": "{\n  \"label\": \"Sensors\",\n  \"commands\": {\n    \"sensor.list\": {\n      \"desc\": \"List custom sensor variables.\"\n    },\n    \"sensor.get\": {\n      \"desc\": \"Read one sensor variable.\"\n    },\n    \"sensor.set\": {\n      \"desc\": \"Write one sensor variable.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:d62c05fac6368dec62d760971de438161d1a4c9d654930bde7d7563fe2f63428",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.groups.bridge": {
+      "value": "{\n  \"label\": \"Bridge & power mgmt\",\n  \"commands\": {\n    \"bridge.type\": {\n      \"desc\": \"Configured bridge type (rs232 / espnow / none).\"\n    },\n    \"bridge.enabled\": {\n      \"desc\": \"Enable / disable the bridge.\"\n    },\n    \"bridge.delay\": {\n      \"desc\": \"Bridge routing delay.\",\n      \"range\": \"0–10000 ms\"\n    },\n    \"bridge.source\": {\n      \"desc\": \"Which packet stream to bridge.\"\n    },\n    \"bridge.baud\": {\n      \"desc\": \"RS-232 baud rate.\",\n      \"range\": \"9600–115200\"\n    },\n    \"bridge.channel\": {\n      \"desc\": \"ESP-NOW channel.\",\n      \"range\": \"1–14\"\n    },\n    \"bridge.secret\": {\n      \"desc\": \"ESP-NOW shared secret (≤15 chars).\"\n    },\n    \"pwrmgt.support\": {\n      \"desc\": \"Whether power management is supported.\"\n    },\n    \"pwrmgt.source\": {\n      \"desc\": \"Current power source (external / battery).\"\n    },\n    \"pwrmgt.bootreason\": {\n      \"desc\": \"Last reset / shutdown reason.\"\n    },\n    \"pwrmgt.bootmv\": {\n      \"desc\": \"Boot voltage in mV.\"\n    }\n  },\n  \"blurb\": \"Bridge keys appear only on bridge builds; pwrmgt on nRF52 power-managed builds.\"\n}",
+      "sourceHash": "sha256:ffd6ee8519f1d36279bb792688e37367f19b6e53bb79398bad84f122aa3e0b37",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    },
+    "rc.flags": {
+      "value": "{\n  \"serial\": {\n    \"label\": \"Pouze USB\",\n    \"desc\": \"Pouze sériová konzole — nepřijímáno přes vzduch.\"\n  },\n  \"reboot\": {\n    \"label\": \"Restart\",\n    \"desc\": \"Projeví se až po restartu.\"\n  },\n  \"destructive\": {\n    \"label\": \"Pozor\",\n    \"desc\": \"Nezvratné — před spuštěním dvakrát zkontrolujte.\"\n  },\n  \"build\": {\n    \"label\": \"Podle sestavení\",\n    \"desc\": \"Pouze na firmwaru zkompilovaném s touto funkcí.\"\n  }\n}",
+      "sourceHash": "sha256:ee17f77f365fc1e75425e01eeb7a3ad688b20460cb43694b9f5037a894499aae",
+      "generatedAt": "2026-06-27T13:31:26.521Z",
+      "model": "manual"
+    }
+  }
+}

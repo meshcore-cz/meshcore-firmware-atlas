@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-web-keygen",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Trình tạo khóa Ed25519 hoạt động hoàn toàn trên trình duyệt để tạo định danh MeshCore có tiền tố khóa công khai thập lục phân tùy chỉnh, giúp người vận hành tránh xung đột tiền tố ngắn mà không cần gửi khóa riêng tư đến máy chủ.",
+      "sourceHash": "sha256:251586a2196c8e8c07fd2c647ce211498664ad13ccac3d567434c1ebc3f5ba13",
+      "generatedAt": "2026-06-27T16:22:18.052Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 29716,
+      "promptTokens": 162,
+      "completionTokens": 757
+    },
+    "tags": {
+      "value": "[\"trình tạo khóa\",\"quyền riêng tư\",\"ed25519\",\"chỉ trên trình duyệt\"]",
+      "sourceHash": "sha256:a89ed712b284d62fb6d8cc6767b1bb881ee61eb2c5da402135fcb222cbe405e7",
+      "generatedAt": "2026-06-27T16:22:21.266Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3214,
+      "promptTokens": 142,
+      "completionTokens": 545
+    },
+    "verificationNotes.key-generation-runs-locally-in-browser-workers-a": {
+      "value": "Quá trình tạo khóa chạy cục bộ trong các worker của trình duyệt và không truyền đi khóa đã tạo.",
+      "sourceHash": "sha256:55790caf9cdf6d517b29590785c6478cf0e6e183cbae12f21dee406621cad755",
+      "generatedAt": "2026-06-27T16:22:27.771Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6504,
+      "promptTokens": 143,
+      "completionTokens": 1098
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Kho lưu trữ hiện không khai báo giấy phép SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:22:30.350Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2577,
+      "promptTokens": 139,
+      "completionTokens": 374
+    }
+  }
+}

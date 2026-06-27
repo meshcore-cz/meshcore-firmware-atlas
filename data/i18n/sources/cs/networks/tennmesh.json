@@ -1,0 +1,15 @@
+{
+  "resource": "network/tennmesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní síť Tennessee MeshCore pro textovou komunikaci mimo běžnou síť napříč státem, která nabízí doporučená nastavení, pokyny k zprovoznění, veřejné kanály, hlášení a živou mapu CoreScope.",
+      "sourceHash": "sha256:6f7e8c83fdbfff2ec5fdc6fc18c0bccf017943b0a54c1c40e5d69db3e4480771",
+      "generatedAt": "2026-06-27T12:13:23.754Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9926,
+      "promptTokens": 162,
+      "completionTokens": 1138
+    }
+  }
+}

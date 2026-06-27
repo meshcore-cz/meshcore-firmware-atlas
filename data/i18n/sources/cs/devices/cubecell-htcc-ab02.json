@@ -1,0 +1,12 @@
+{
+  "resource": "device/cubecell-htcc-ab02",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vývojová deska CubeCell LoRa založená na ASR6502 + SX1262 s 0,96palcovým OLED displejem, řízením nabíjení baterie, podporou solárního napájení a USB-sériovým převodníkem CP2102. Kompaktní platforma opakovače MeshCore s nízkou spotřebou.",
+      "sourceHash": "sha256:2c652cd7faa0bf1332fa6483cbdb7ddcec2bf91502e3659e5c5f14c225a92f73",
+      "generatedAt": "2026-06-27T10:45:35.578Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-tracker-l1-pro",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Готовий до використання портативний пристрій Meshtastic/MeshCore із платою L1 у міцному корпусі, 1.3-дюймовим OLED-дисплеєм, вбудованим акумулятором на 2000 mAh, 4-позиційним джойстиком та L76K GNSS. Підтримує заряджання через USB-C та від сонячної панелі.",
+      "sourceHash": "sha256:ce74e926f7761ab4676c475c46036cd8fa0f941b4038d230659807dfccc2d1e4",
+      "generatedAt": "2026-06-27T15:14:31.451Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17354,
+      "promptTokens": 185,
+      "completionTokens": 949
+    }
+  }
+}

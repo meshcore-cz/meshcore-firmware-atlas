@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-tbeam-supreme",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "LoRa tracker ESP32-S3 + SX1262 s modulem L76K GNSS, displejem SH1106 OLED a bohatou sadou senzorů (QMI8658 IMU, magnetometr QMC6310, BME280, PCF8563 RTC). Správa napájení AXP2101, patice M.2 a rozšíření o micro-SD. USB-C s převodníkem CH9102.",
+      "sourceHash": "sha256:fa59d9bc7baf64fbd5b4485a2017ae05107046332668046b097120689d8d11d4",
+      "generatedAt": "2026-06-27T10:50:25.425Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

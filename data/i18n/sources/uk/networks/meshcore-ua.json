@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ua",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Українська публічна волонтерська мережа MeshCore для стійкого децентралізованого зв'язку LoRa по всій країні. Мережа координується через meshcore-ua.net, де доступні ретранслятори, боти, канали, завантаження прошивок та підтримка спільноти в Telegram.",
+      "sourceHash": "sha256:c9c47d0b5af794e7fd33a3183ecf5b28b97ee17e874c7176c961d23cc8876d7f",
+      "generatedAt": "2026-06-27T16:59:44.435Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8369,
+      "promptTokens": 170,
+      "completionTokens": 1624
+    }
+  }
+}

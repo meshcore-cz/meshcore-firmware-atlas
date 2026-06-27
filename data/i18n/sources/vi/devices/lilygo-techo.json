@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-techo",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị cầm tay Meshtastic/MeshCore siêu tiết kiệm điện năng với nRF52840 + SX1262, màn hình e-paper 1,54-inch và GNSS L76K tích hợp sẵn. Chỉ hỗ trợ Bluetooth 5, có tùy chọn biến thể cảm biến môi trường BME280 và vỏ ABS.",
+      "sourceHash": "sha256:28f4dd1b6309ea945c5ff350db721e370e0356816e50e25a5038b54df630480e",
+      "generatedAt": "2026-06-27T15:37:24.624Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9509,
+      "promptTokens": 185,
+      "completionTokens": 1036
+    }
+  }
+}

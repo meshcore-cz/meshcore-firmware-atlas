@@ -1,0 +1,12 @@
+{
+  "resource": "device/wio-e5-dev",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní vývojová deska Wio-E5 pro prototypování s STM32WLE5JC / LoRaWAN, vybavená externí anténou a rozvedenými GPIO piny. Je určena pro rychlé uvedení do provozu a testování rádiového spojení, nikoliv jako hotový produkt v krytu.",
+      "sourceHash": "sha256:23d00d05ce0815a6b3faffc6c1ceae5ed8bb01a5fe843d4e78329d427bd81953",
+      "generatedAt": "2026-06-27T10:57:48.769Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

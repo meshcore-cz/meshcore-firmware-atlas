@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-ha",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vlastní integrace do Home Assistant pro sledování a ovládání uzlů MeshCore přes USB, BLE nebo TCP, včetně senzorů, služeb, diagnostiky a volitelné podpory nahrávání map.",
+      "sourceHash": "sha256:3b8c26928eae3bd2d6e93644f8a33b5a034c681e1bff56369cc8ae1289bd15bf",
+      "generatedAt": "2026-06-27T11:31:57.108Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7403,
+      "promptTokens": 159,
+      "completionTokens": 1028
+    },
+    "verificationNotes.readme-labels-the-integration-as-work-in-progres": {
+      "value": "Soubor README označuje integraci jako rozpracovanou a zmiňuje, že BLE nebylo důkladně otestováno.",
+      "sourceHash": "sha256:7762165f79adc264ff5919fd50cf3e60f72559e6eb4f603a3c96c4f51a6d6a28",
+      "generatedAt": "2026-06-27T11:32:02.766Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5657,
+      "promptTokens": 146,
+      "completionTokens": 689
+    },
+    "tags": {
+      "value": "[\"chytrá-domácnost\",\"hacs\",\"home-assistant\"]",
+      "sourceHash": "sha256:d42e3c990c4de5863d1245291a4c2fc9507bd82d17df4ef5dfa7e9c385324b8e",
+      "generatedAt": "2026-06-27T13:41:03.233Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6324,
+      "promptTokens": 140,
+      "completionTokens": 267
+    }
+  }
+}

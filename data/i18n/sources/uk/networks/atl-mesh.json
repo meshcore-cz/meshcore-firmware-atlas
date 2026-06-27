@@ -1,0 +1,15 @@
+{
+  "resource": "network/atl-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore в агломерації Атланти (штат Джорджія), яка розбудовує автономну сітчасту комунікацію в місті та прилеглих округах.",
+      "sourceHash": "sha256:b627042bcd44a8c21ea12b55e466fe874c704ba02dbefbfb635bb7150c05fdf5",
+      "generatedAt": "2026-06-27T16:46:16.297Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11256,
+      "promptTokens": 150,
+      "completionTokens": 1318
+    }
+  }
+}

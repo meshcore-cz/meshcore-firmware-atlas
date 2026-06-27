@@ -1,0 +1,78 @@
+{
+  "resource": "software/sigurdos-client",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Кросплатформний Flutter-клієнт MeshCore, створений на основі MeshCore Open. Додає тему SigurdOS у стилі піксель-арт, зберігаючи при цьому обмін повідомленнями, карти, керування пристроями та адміністрування репітерів через BLE, USB та TCP.",
+      "sourceHash": "sha256:af2abb6c542994d0b87942994db6693b14374ef6ad65d9b79a2f04638a8de785",
+      "generatedAt": "2026-06-27T16:39:36.021Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10012,
+      "promptTokens": 169,
+      "completionTokens": 1365
+    },
+    "screenshots.contacts.jpg.caption": {
+      "value": "Контакти Mesh",
+      "sourceHash": "sha256:15790efbf31cf337d1af68c6f28db1cb6d9ecb983111af6bbdea9b0c81933c58",
+      "generatedAt": "2026-06-27T16:39:39.185Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3164,
+      "promptTokens": 131,
+      "completionTokens": 435
+    },
+    "screenshots.chat.jpg.caption": {
+      "value": "Зашифровані прямі повідомлення",
+      "sourceHash": "sha256:f7a506a0dd7aa910aaa85ba60676f98ae484042ff3b925d1c03ab6a7e2fcbefd",
+      "generatedAt": "2026-06-27T16:39:44.118Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4932,
+      "promptTokens": 133,
+      "completionTokens": 498
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Карта сітки та розташування вузлів",
+      "sourceHash": "sha256:fbaec063e1478e8c719e9d765fa70f3d2fa5fcac6499f0e3c98c419152092c2b",
+      "generatedAt": "2026-06-27T16:39:52.413Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8295,
+      "promptTokens": 134,
+      "completionTokens": 703
+    },
+    "screenshots.channels.jpg.caption": {
+      "value": "Обмін повідомленнями в каналах",
+      "sourceHash": "sha256:84f950f864adf2f9f4b23cc83849a9df21f105ae261c51e0929296490dc3f6d1",
+      "generatedAt": "2026-06-27T16:39:58.052Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5638,
+      "promptTokens": 131,
+      "completionTokens": 429
+    },
+    "tags": {
+      "value": "[\"flutter\",\"sigurdos\",\"піксель-арт\",\"meshcore-open-fork\"]",
+      "sourceHash": "sha256:05d9b430a5d0c834612f9d5eee94ab8b433a20c1b52d7cbc84d5009539854531",
+      "generatedAt": "2026-06-27T16:40:08.413Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10361,
+      "promptTokens": 145,
+      "completionTokens": 1029
+    },
+    "verificationNotes.community-fork-of-meshcore-open-with-sigurdos-br": {
+      "value": "Спільнотний форк MeshCore Open з брендингом SigurdOS та інтеграцією, специфічною для екосистеми.",
+      "sourceHash": "sha256:f223103eae94c8892d2c8fc681f501bbd9335ef04148ddcf7cc6a5d0de5841f2",
+      "generatedAt": "2026-06-27T16:40:16.650Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8236,
+      "promptTokens": 145,
+      "completionTokens": 1078
+    },
+    "verificationNotes.over-the-air-firmware-updates-are-still-listed-a": {
+      "value": "Оновлення прошивки по повітрю досі значиться серед запланованих функцій.",
+      "sourceHash": "sha256:a2359935533fd3836c9d3eb3e808c84311403df2d7d6cd49c8f5b0f81d592f07",
+      "generatedAt": "2026-06-27T16:40:21.795Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5145,
+      "promptTokens": 142,
+      "completionTokens": 849
+    }
+  }
+}

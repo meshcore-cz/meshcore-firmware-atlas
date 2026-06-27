@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-wsl3",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Módulo compacto ESP32-S3 + SX1262 LoRa com Wi-Fi e BLE, projetado em encapsulamento com furos de pastilha para integração em produtos personalizados. A revisão V3 utiliza uma interface USB-C e um formato mais compacto e de baixo consumo de energia em comparação às placas clássicas WiFi LoRa 32.",
+      "sourceHash": "sha256:ef34335d4d8d28cf4f7e018d3d1180e129fb4282852142e54a60ce6f32676f40",
+      "generatedAt": "2026-06-27T14:07:49.354Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16491,
+      "promptTokens": 185,
+      "completionTokens": 1001
+    }
+  }
+}

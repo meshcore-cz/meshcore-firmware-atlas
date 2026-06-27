@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-web",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Webové sestavení doprovodné aplikace MeshCore od Liama Cottlea v Dockeru, které nabízí zasílání zpráv, správu kontaktů, kanálů, topologie a opakovačů přímo v prohlížeči pomocí Web Bluetooth nebo Web Serial.",
+      "sourceHash": "sha256:89170e4e7b963fbbd887c129a826eb3f23262abe694eac9e1776378804035085",
+      "generatedAt": "2026-06-27T11:41:55.263Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7346,
+      "promptTokens": 167,
+      "completionTokens": 623
+    },
+    "verificationNotes.the-repository-publishes-compiled-closed-source-": {
+      "value": "Repozitář publikuje zkompilované webové assety Flutteru s uzavřeným zdrojovým kódem a obraz kontejneru, nikoliv zdrojový kód aplikace.",
+      "sourceHash": "sha256:4c550055308e2ef33e6a4e80b287c6cf6ae21eaf8a4b583e6d2675955bcc2bd4",
+      "generatedAt": "2026-06-27T11:42:02.791Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7529,
+      "promptTokens": 148,
+      "completionTokens": 807
+    },
+    "verificationNotes.browser-radio-access-requires-chrome-or-edge-ove": {
+      "value": "Přístup k rádiu z prohlížeče vyžaduje Chrome nebo Edge přes HTTPS nebo na localhostu.",
+      "sourceHash": "sha256:24850e70480fd230c4469ba63efbb77a622942bd5d436b9c480ccf922dec8998",
+      "generatedAt": "2026-06-27T11:42:12.638Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9846,
+      "promptTokens": 141,
+      "completionTokens": 997
+    },
+    "tags": {
+      "value": "[\"sestavení doprovodného klienta\", \"Docker\", \"Web Bluetooth\", \"Web Serial\"]",
+      "sourceHash": "sha256:6499c66452a6696ff452599c9a057ceb48aea289a7d95ca53f7b0fbd5d7d7533",
+      "generatedAt": "2026-06-27T13:44:47.780Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20808,
+      "promptTokens": 145,
+      "completionTokens": 1402
+    }
+  }
+}

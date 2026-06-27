@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-nrf52",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch nRF52840 kích thước bằng ngón tay cái đóng vai trò là bo mạch chủ trong bộ kit Seeed XIAO nRF52840 + Wio-SX1262. Bo mạch cơ sở này hỗ trợ BLE, nạp code qua USB cùng thiết kế nhỏ gọn phù hợp cho thiết bị đeo; kết nối LoRa được cung cấp bởi mô-đun Wio-SX1262 riêng biệt.",
+      "sourceHash": "sha256:fe6a77fdb726ca93c513d09d614a7dfa051d5f448c85ccefad5e6a690f84d09b",
+      "generatedAt": "2026-06-27T15:42:43.934Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5444,
+      "promptTokens": 193,
+      "completionTokens": 1111
+    }
+  }
+}

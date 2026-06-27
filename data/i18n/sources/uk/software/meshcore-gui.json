@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-gui",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Самохостована десктопна та безінтерфейсна платформа MeshCore з обміном повідомленнями, картами, архівами, BBS та автоматизацією ботів, REST API, декодуванням пакетів і опціональним мостом між частотами для двох парних радіостанцій.",
+      "sourceHash": "sha256:197032e42cb25d8186a457beca3910d9d404fc7900578332bb587512e8dfc53a",
+      "generatedAt": "2026-06-27T15:50:20.236Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4360,
+      "promptTokens": 169,
+      "completionTokens": 982
+    },
+    "tags": {
+      "value": "[\"nicegui\",\"bbs\",\"бот\",\"крос-частотний\",\"самохостинг\"]",
+      "sourceHash": "sha256:4318c4773abbbc267803c010f79724722ae2f60f3fd49f2dfbc4c3d54903e856",
+      "generatedAt": "2026-06-27T15:50:32.691Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12455,
+      "promptTokens": 145,
+      "completionTokens": 903
+    },
+    "verificationNotes.usb-serial-is-the-most-broadly-supported-transpo": {
+      "value": "Послідовний порт USB має найширшу підтримку серед каналів передачі даних, а BLE протестовано лише на Linux за допомогою BlueZ та D-Bus.",
+      "sourceHash": "sha256:e630725f2706a0832b5f9f209fa841c3d70baf9735c11407a82da098c2029f2d",
+      "generatedAt": "2026-06-27T15:50:55.793Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 23101,
+      "promptTokens": 152,
+      "completionTokens": 913
+    },
+    "verificationNotes.designed-for-local-operation-and-exposes-a-read-": {
+      "value": "Призначено для локальної роботи та надає REST API лише для читання без автентифікації.",
+      "sourceHash": "sha256:e838386a36c68249c647fd9166f7816a0fd650b2e555685d448b297640b56521",
+      "generatedAt": "2026-06-27T15:51:01.238Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5444,
+      "promptTokens": 143,
+      "completionTokens": 653
+    }
+  }
+}

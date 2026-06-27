@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-13302",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Kit amplificador LoRa de 1 W WisBlock que combina a placa base RAK3401 com o módulo LPWAN RAK13302 e o amplificador de RF SKY66122. O kit é voltado para a operação LoRa de longo alcance na banda de 902-928 MHz.",
+      "sourceHash": "sha256:b3d868b70335eb5f2313d8a0cb907ef67843e85e333fa2bd1315161f630de15e",
+      "generatedAt": "2026-06-27T14:19:16.118Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11055,
+      "promptTokens": 185,
+      "completionTokens": 864
+    }
+  }
+}

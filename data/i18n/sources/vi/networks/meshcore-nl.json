@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-nl",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng vô tuyến khẩn cấp Dutch LocalMesh dành cho người dùng MeshCore tại Hà Lan, sử dụng cấu hình sẵn của Hà Lan trên băng tần EU 868 MHz, với quyền truy cập kênh công khai, phạm vi trạm lặp khu vực và một cộng đồng năng động do người dân điều hành.",
+      "sourceHash": "sha256:ae729b1bbf65c740dfe7d81106fbb7bc66ce02c8f5d38a02c72d228b69e67ae0",
+      "generatedAt": "2026-06-27T16:51:42.292Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2992,
+      "promptTokens": 172,
+      "completionTokens": 553
+    }
+  }
+}

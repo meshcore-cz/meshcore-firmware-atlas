@@ -1,0 +1,15 @@
+{
+  "resource": "network/colorado-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng cộng đồng Colorado MeshCore dành cho khu vực Front Range và toàn bang Colorado, tích hợp cổng thông tin MeshCore LoRa 915 MHz, bản đồ trực tuyến nền tảng CoreScope, công cụ điều hành, hướng dẫn sử dụng và kênh điều phối Discord nhằm đảm bảo truyền thông ngoài lưới bền bỉ.",
+      "sourceHash": "sha256:0ae1356e249c20d88e0f95b4f07c0bf0c01c98210746dc1805a4e4c145c63438",
+      "generatedAt": "2026-06-27T16:46:23.282Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7229,
+      "promptTokens": 173,
+      "completionTokens": 1208
+    }
+  }
+}

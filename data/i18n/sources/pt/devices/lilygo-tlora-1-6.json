@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tlora-1-6",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento ESP32-PICO-D4 + SX1276 LoRa com ecrã OLED SSD1306 e ranhura para micro-SD. USB-C com ponte CH9102 e conector de bateria PH2.0. Sem BMS integrado — utilize uma célula Li-ion protegida.",
+      "sourceHash": "sha256:d41b34a19c56ab6dc63dc7e01ea210a053e5734bfeca90ba2d9b103376db745c",
+      "generatedAt": "2026-06-27T14:09:31.373Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 46130,
+      "promptTokens": 183,
+      "completionTokens": 783
+    }
+  }
+}

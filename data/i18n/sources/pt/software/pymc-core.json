@@ -1,0 +1,51 @@
+{
+  "resource": "software/pymc-core",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Implementação em Python do protocolo MeshCore e da pilha de roteamento para a construção de nós de malha e aplicações, com mensagens criptografadas, gestão de identidades, tratamento de eventos e suporte opcional direto ao rádio SX1262 via SPI.",
+      "sourceHash": "sha256:d0e37835a3fd7f30338364958a0af39b3f8d8b9802bfa217c9fa2fd6e04f13e1",
+      "generatedAt": "2026-06-27T14:41:08.499Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2566,
+      "promptTokens": 166,
+      "completionTokens": 699
+    },
+    "tags": {
+      "value": "[\"sdk\",\"protocolo\",\"roteamento\",\"sx1262\",\"raspberry-pi\"]",
+      "sourceHash": "sha256:de45c3f26464af78212b5f8f94f7a5f06f28c34fa1596cc93e1810183314244c",
+      "generatedAt": "2026-06-27T14:41:10.754Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2245,
+      "promptTokens": 146,
+      "completionTokens": 487
+    },
+    "verificationNotes.releases-are-published-to-pypi-rather-than-githu": {
+      "value": "Os lançamentos são publicados no PyPI em vez de no GitHub Releases.",
+      "sourceHash": "sha256:e7f84a5fd0805dc87f0d928f366c890a1aadbfde27e584be0cd01de9dd3eff81",
+      "generatedAt": "2026-06-27T14:41:13.836Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3081,
+      "promptTokens": 141,
+      "completionTokens": 723
+    },
+    "verificationNotes.direct-hardware-support-targets-raspberry-pi-cla": {
+      "value": "O suporte direto a hardware destina-se a sistemas da classe Raspberry Pi equipados com rádios SX1262 SPI; os componentes do protocolo podem ser usados sem hardware de rádio adicional.",
+      "sourceHash": "sha256:d49d1f2fab2f04ffd287d9a897165ace87fb0722e447195ab7b4c6c15df3f398",
+      "generatedAt": "2026-06-27T14:41:16.009Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2173,
+      "promptTokens": 153,
+      "completionTokens": 504
+    },
+    "verificationNotes.the-project-describes-itself-as-protocol-compati": {
+      "value": "O projeto se descreve como compatível com o protocolo, mas ainda não é tão otimizado quanto a implementação original em C++ do MeshCore.",
+      "sourceHash": "sha256:5454fc203a4f22ae61018bac06b281d6792bc4f35547e62c761175b76f28ec0e",
+      "generatedAt": "2026-06-27T14:41:17.387Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1378,
+      "promptTokens": 150,
+      "completionTokens": 261
+    }
+  }
+}

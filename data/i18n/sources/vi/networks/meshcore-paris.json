@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-paris",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tại Paris và khu vực Đại Paris (Grand Paris), xây dựng mạng lưới LoRa ngoại tuyến tầm xa bao phủ toàn khu vực đô thị.",
+      "sourceHash": "sha256:0ddef1706e124dd25c6883575fe732d881e30fbb9a14e3fb8a1cab13d5e31109",
+      "generatedAt": "2026-06-27T16:52:45.955Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3690,
+      "promptTokens": 157,
+      "completionTokens": 545
+    }
+  }
+}

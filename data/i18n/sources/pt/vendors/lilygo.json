@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/lilygo",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fabricante de dispositivos LoRa portáteis integrados e placas de desenvolvimento (T-Beam, T-Deck, T-Echo, …).",
+      "sourceHash": "sha256:716350345c2e626648e7bd92b3edce755a6b5214af0a309ad6d8bc6f77a371b2",
+      "generatedAt": "2026-06-27T14:44:35.034Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2595,
+      "promptTokens": 154,
+      "completionTokens": 691
+    }
+  }
+}

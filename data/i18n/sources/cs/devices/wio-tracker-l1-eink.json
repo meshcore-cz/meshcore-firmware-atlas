@@ -1,0 +1,12 @@
+{
+  "resource": "device/wio-tracker-l1-eink",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Úsporný uzel Meshtastic/MeshCore s technologií LoRa, modulem L76K GNSS a odnímatelným 2,13\" E-ink displejem pro vysoce úsporné aktualizace stavu. Podporuje napájení přes USB-C, solární panel a Li-ion akumulátor.",
+      "sourceHash": "sha256:a718c17fbcc8440fe5a15e0ff19a980501a7856cd30f57332fc93cf0873e2f98",
+      "generatedAt": "2026-06-27T10:57:31.820Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

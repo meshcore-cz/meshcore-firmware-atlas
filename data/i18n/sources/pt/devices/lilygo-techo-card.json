@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-techo-card",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó do tamanho de um cartão de baixo consumo com nRF52840 + SX1262, ecrã OLED de 0,42 polegadas, L76K GNSS, IMU ICM20948, altifalante, microfone e LED WS2812. Painel solar para alimentação contínua. Apenas Bluetooth 5 — sem Wi-Fi.",
+      "sourceHash": "sha256:59f0497dee00118a2512aa839c63f99a6573a17f0ee06446c2896f8883d0ad5c",
+      "generatedAt": "2026-06-27T14:13:12.862Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16789,
+      "promptTokens": 192,
+      "completionTokens": 1113
+    }
+  }
+}

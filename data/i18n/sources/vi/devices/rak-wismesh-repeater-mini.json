@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-wismesh-repeater-mini",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ lặp tín hiệu ngoài trời nhỏ gọn, hỗ trợ năng lượng mặt trời, được xây dựng dựa trên RAK4631 và bo mạch nền RAK19003 Mini. Thiết bị được đóng gói trong vỏ bảo vệ IP67 Unify đi kèm pin tích hợp, BLE, cổng USB và ăng-ten LoRa ngoài. Sản phẩm được bán với nhiều phiên bản khu vực 8xx và 9xx để triển khai nhanh chóng ngoài lưới điện.",
+      "sourceHash": "sha256:bde7a35d33edd36a5c691d29e51939d71b997101c625aaee101620350d1d29db",
+      "generatedAt": "2026-06-27T15:40:28.781Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6306,
+      "promptTokens": 193,
+      "completionTokens": 1181
+    }
+  }
+}

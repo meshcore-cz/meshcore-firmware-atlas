@@ -1,0 +1,12 @@
+{
+  "resource": "device/sensecap-solar-p1-pro",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Solární uzel nebo opakovač Meshtastic/MeshCore s integrovaným modulem XIAO L76K GNSS a čtyřmi předinstalovanými bateriemi 18650 o kapacitě 3350 mAh. Využívá stejné jádro XIAO nRF52840 Plus a Wio-SX1262 jako model P1, doplněné o 5W solární panel a venkovní kryt s ochranou IPX6 a rozšiřujícím portem Grove.",
+      "sourceHash": "sha256:df0994863cd92b04c9f0817be704f226ba72295f3484beb3660364897805cb94",
+      "generatedAt": "2026-06-27T10:57:02.069Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

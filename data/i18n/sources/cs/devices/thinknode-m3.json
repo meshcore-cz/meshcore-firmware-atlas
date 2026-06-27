@@ -1,0 +1,12 @@
+{
+  "resource": "device/thinknode-m3",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Tracker nRF52840 + LR1110 ve velikosti kreditní karty určený pro Meshtastic/MeshCore nebo LoRaWAN (samostatné SKU firmwaru). Určení polohy zajišťuje GNSS, skenování Wi-Fi a BLE beaconů přes LR1110. Součástí jsou senzory teploty, vlhkosti a akcelerometr. Vestavěná baterie 770 mAh, magnetické nabíjení, tlačítko SOS a krytí IP66. Bez displeje – konfigurace probíhá pouze přes BLE.",
+      "sourceHash": "sha256:3425f830f10f4aca036786077d82d7a08dc1377b18eca5339714577401eab4c5",
+      "generatedAt": "2026-06-27T10:44:05.683Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

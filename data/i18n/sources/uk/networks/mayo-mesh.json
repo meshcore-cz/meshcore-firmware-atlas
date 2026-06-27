@@ -1,0 +1,15 @@
+{
+  "resource": "network/mayo-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Волонтерська група користувачів mesh-радіомережі в ірландському графстві Мейо, яка експериментує з MeshCore та Meshtastic. Її мережа MeshCore використовує пресет EU/UK Narrow, забезпечує роботу ретрансляторів у Мейо/Коннахті та з'єднується з ширшою ірландською mesh-мережею.",
+      "sourceHash": "sha256:603f3cbf9fb5df1d52d6ee70b4c8876680866538fc07c453b3d3a6010aa87be4",
+      "generatedAt": "2026-06-27T16:52:37.052Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8667,
+      "promptTokens": 179,
+      "completionTokens": 1262
+    }
+  }
+}

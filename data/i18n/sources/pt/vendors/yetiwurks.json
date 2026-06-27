@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/yetiwurks",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fabricante norte-americano de acessórios de comunicação robustos e hardware Meshtastic, incluindo repetidores externos e estações-base montados a partir de kits RAK WisBlock.",
+      "sourceHash": "sha256:c17a0428755826df3d5d5db832bda75854aa9cea09ca510e6a31587c5d8f01f6",
+      "generatedAt": "2026-06-27T14:44:53.182Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2922,
+      "promptTokens": 159,
+      "completionTokens": 800
+    }
+  }
+}

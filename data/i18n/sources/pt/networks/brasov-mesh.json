@@ -1,0 +1,15 @@
+{
+  "resource": "network/brasov-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore comunitária para Brașov, na Roménia, a operar na predefinição estreita UE/UK a 869.618 MHz. Grupo voltado para iniciantes que partilha guias de hardware, mapas de cobertura e suporte para romenos a dar os primeiros passos no MeshCore.",
+      "sourceHash": "sha256:8265651024371e1acfe8a8d60d6a6c01c2caa7cce70784c8304547399269354d",
+      "generatedAt": "2026-06-27T14:45:22.815Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3821,
+      "promptTokens": 176,
+      "completionTokens": 1054
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/cubecell-htcc-ab02",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата розробника CubeCell LoRa на базі ASR6502 + SX1262 з 0.96-дюймовим OLED-дисплеєм, керуванням живленням від акумулятора, підтримкою сонячних панелей та USB-послідовним перетворювачем CP2102. Компактна платформа ретранслятора MeshCore з низьким енергоспоживанням.",
+      "sourceHash": "sha256:2c652cd7faa0bf1332fa6483cbdb7ddcec2bf91502e3659e5c5f14c225a92f73",
+      "generatedAt": "2026-06-27T14:56:49.462Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3704,
+      "promptTokens": 180,
+      "completionTokens": 1046
+    }
+  }
+}

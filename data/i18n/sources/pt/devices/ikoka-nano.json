@@ -1,0 +1,15 @@
+{
+  "resource": "device/ikoka-nano",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó Meshtastic compacto baseado no Seeed XIAO nRF52840 e no módulo LoRa EBYTE E22. Placa de pequeno porte, alimentada por bateria, com conectores USB-C e Qwiic; sem tela integrada — projetada para funcionar como um pequeno companheiro/repetidor ou nó remoto.",
+      "sourceHash": "sha256:27a883e7f49594c637a53ceda91a38807eb8e8f543fb75f1502ed93fdf01f545",
+      "generatedAt": "2026-06-27T14:08:23.699Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20492,
+      "promptTokens": 185,
+      "completionTokens": 1195
+    }
+  }
+}

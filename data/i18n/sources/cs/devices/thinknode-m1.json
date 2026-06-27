@@ -1,0 +1,12 @@
+{
+  "resource": "device/thinknode-m1",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kapesní transceiver nRF52840 + SX1262 Meshtastic/MeshCore s displejem E-Paper o úhlopříčce 1,54 palce, předním podsvícením, GPS, RTC, bzučákem a akumulátorem 1200 mAh. Dodává se v krytu z ABS+PC s LoRa anténou RP-SMA a podporou nabíjení a programování přes USB-C.",
+      "sourceHash": "sha256:39e99825c1389fc4f9833b0df874d4215c09f9531a71d1ed89e325f3e6da76d7",
+      "generatedAt": "2026-06-27T10:43:43.302Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

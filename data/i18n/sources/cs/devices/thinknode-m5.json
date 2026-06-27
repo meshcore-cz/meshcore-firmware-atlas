@@ -1,0 +1,12 @@
+{
+  "resource": "device/thinknode-m5",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kapesní transceiver ESP32-S3 + SX1262 Meshtastic/MeshCore s 1,54palcovým displejem E-Paper, předním podsvícením, GPS, RTC, bzučákem a akumulátorem 1200 mAh. Dodává se v ABS krytu s RP-SMA LoRa anténou a nabíjením/programováním přes USB-C.",
+      "sourceHash": "sha256:6cb246166c0e36c5f1eda735d9a7c71915b1986bc8e48f62a619e7172223c5f8",
+      "generatedAt": "2026-06-27T10:44:17.612Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

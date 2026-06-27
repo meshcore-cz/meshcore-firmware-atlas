@@ -1,0 +1,15 @@
+{
+  "resource": "network/ct-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Grupo de utilizadores de tecnologias mesh em Connecticut, gerido por voluntários e direcionado a operadores de MeshCore e Meshtastic. Conta com um mapa MeshCore em tempo real, comunidade no Discord, ferramentas de cobertura MeshMapper e recursos locais de MQTT/observador para a região de BDL.",
+      "sourceHash": "sha256:da2736de478db3582619535868e22f7301b9ece6eaa346c66325a80d71818d43",
+      "generatedAt": "2026-06-27T14:45:53.926Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3917,
+      "promptTokens": 172,
+      "completionTokens": 1048
+    }
+  }
+}

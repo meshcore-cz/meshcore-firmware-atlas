@@ -1,0 +1,42 @@
+{
+  "resource": "software/kiekr",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nezávislá komunitní sada nástrojů MeshCore pro iOS a Android se šifrovanou komunikací, kontextem regionálních tras, diagnostikou opakovačů, přemostěním MQTT a dobrovolnými kryptograficky podepsanými příspěvky do mapy pokrytí.",
+      "sourceHash": "sha256:ae5d2e9b9de9156a92fa9c06a20f2f4097827afa83398cb427de86d9991a55ca",
+      "generatedAt": "2026-06-27T11:28:15.639Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12024,
+      "promptTokens": 162,
+      "completionTokens": 1209
+    },
+    "verificationNotes.kiekr-is-an-independent-client-compatible-with-s": {
+      "value": "KiekR je nezávislý klient kompatibilní se standardními doprovodnými radiostanicemi MeshCore a formáty záloh.",
+      "sourceHash": "sha256:945a07e80503c9870986aa6e860fb49f1708e723b439ed4fa6650c1befa6aefd",
+      "generatedAt": "2026-06-27T11:28:26.948Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11309,
+      "promptTokens": 147,
+      "completionTokens": 543
+    },
+    "verificationNotes.coverage-contribution-is-opt-in-and-offers-multi": {
+      "value": "Přispívání k pokrytí je volitelné a nabízí několik úrovní soukromí.",
+      "sourceHash": "sha256:d52c341951f6986225fb8e0e43915c6cfe0dddf5141ab0150cb2758ebb840ddb",
+      "generatedAt": "2026-06-27T11:28:34.701Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7752,
+      "promptTokens": 140,
+      "completionTokens": 867
+    },
+    "tags": {
+      "value": "[\"komunitní-sada-nástrojů\",\"regiony\",\"mapa-pokrytí\",\"mqtt\",\"uzavřený-zdrojový-kód\"]",
+      "sourceHash": "sha256:21e1ce603974a39eb8c3319d3860860c35e86de5eb2a3752bf0370dfa8882ea7",
+      "generatedAt": "2026-06-27T13:39:32.864Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13276,
+      "promptTokens": 144,
+      "completionTokens": 863
+    }
+  }
+}

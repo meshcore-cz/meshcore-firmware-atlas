@@ -1,0 +1,15 @@
+{
+  "resource": "network/new-zealand",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cấu hình radio chính thức của ứng dụng MeshCore — 917.375MHz / SF11 / BW250 / CR5.",
+      "sourceHash": "sha256:114dd31abdc3fc0c72bbee4e6079f248b5acaaef80c40627240ebce91246ccb4",
+      "generatedAt": "2026-06-27T16:51:54.800Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4765,
+      "promptTokens": 153,
+      "completionTokens": 532
+    }
+  }
+}

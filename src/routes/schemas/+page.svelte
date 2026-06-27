@@ -3,6 +3,7 @@
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { REPO_URL } from '$lib/seo.js';
+  import { m } from '$lib/paraglide/messages.js';
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
   import Chip from '$lib/Chip.svelte';
@@ -10,6 +11,12 @@
 
   let { data } = $props();
   const schemas = data.schemas;
+
+  // Inline link for the intro prose rendered with {@html}; only our own
+  // trusted markup is injected.
+  const introVars = {
+    dataJson: `<a class="text-accent2 hover:underline" href="${base}/data.json">data.json</a>`
+  };
 
   // Selected schema, deep-linkable via the URL hash (e.g. /schemas/#network).
   // The hash only exists client-side; this page is prerendered, so default to
@@ -45,16 +52,10 @@
   let requiredSet = $derived(new Set(selected?.schema?.required ?? []));
 </script>
 
-<Seo
-  title="Schema explorer"
-  description="Browse the full MeshCore Ninja data schemas — every property, type, constraint, description and example for networks, devices, firmwares, software and more."
-/>
+<Seo title={m.tool_schemas_label()} description={m.schema_seo_desc()} />
 
 <PageHeader tool="schemas" subtitleClass="max-w-[72ch]">
-  Every record in the catalog is validated against a JSON Schema. Browse the full shape of each
-  collection below — properties, types, constraints, descriptions and examples. The schemas are the
-  source of truth for the YAML in
-  <a class="text-accent2 hover:underline" href="{base}/data.json">data.json</a>.
+  {@html m.schema_intro(introVars)}
 </PageHeader>
 
 <div class="mb-6 flex flex-wrap gap-2">
@@ -78,7 +79,7 @@
         class="rounded-lg border border-edge bg-elev px-3 py-1.5 text-[0.85rem] text-dim transition hover:border-accent hover:text-ink"
         onclick={() => (showRaw = !showRaw)}
       >
-        {showRaw ? 'Hide JSON' : 'View JSON'}
+        {showRaw ? m.schema_hide_json() : m.schema_view_json()}
       </button>
       <a
         class="rounded-lg border border-edge bg-elev px-3 py-1.5 text-[0.85rem] text-dim transition hover:border-accent hover:text-ink"
@@ -86,7 +87,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        Source
+        {m.dev_facet_source()}
       </a>
     </div>
   </div>
@@ -96,9 +97,9 @@
   {/if}
 
   <div class="mb-3 flex items-center gap-3 text-[0.8rem]">
-    <button class="text-dim transition hover:text-accent" onclick={() => setAll(true)}>Expand all</button>
+    <button class="text-dim transition hover:text-accent" onclick={() => setAll(true)}>{m.schema_expand_all()}</button>
     <span class="text-edge">·</span>
-    <button class="text-dim transition hover:text-accent" onclick={() => setAll(false)}>Collapse all</button>
+    <button class="text-dim transition hover:text-accent" onclick={() => setAll(false)}>{m.schema_collapse_all()}</button>
   </div>
 
   <section class="flex flex-col gap-4 rounded-xl border border-edge bg-elev p-5">

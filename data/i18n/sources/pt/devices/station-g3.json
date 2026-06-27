@@ -1,0 +1,15 @@
+{
+  "resource": "device/station-g3",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa Modular Station com uma placa secundária de MCU ESP32-S3, uma placa secundária de RF e um ecrã OLED de 1,3 polegadas. Projetada para alimentação externa de 9-19 V e compatibilidade de firmware com os perfis Station G2.",
+      "sourceHash": "sha256:ac46a2814408df5d6baf23b50acd3b6177442b6240dd731a1f8a15931a5d047c",
+      "generatedAt": "2026-06-27T14:21:05.494Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4596,
+      "promptTokens": 177,
+      "completionTokens": 1279
+    }
+  }
+}

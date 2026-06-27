@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m5",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Transceptor portátil ESP32-S3 + SX1262 Meshtastic/MeshCore com ecrã E-Paper de 1,54 polegadas, luz frontal, GPS, RTC, buzzer e bateria de 1200 mAh. É enviado numa caixa em ABS com antena LoRa RP-SMA e carregamento/programação por USB-C.",
+      "sourceHash": "sha256:6cb246166c0e36c5f1eda735d9a7c71915b1986bc8e48f62a619e7172223c5f8",
+      "generatedAt": "2026-06-27T13:59:17.593Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15585,
+      "promptTokens": 196,
+      "completionTokens": 925
+    }
+  }
+}

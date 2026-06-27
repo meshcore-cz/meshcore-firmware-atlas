@@ -1,0 +1,15 @@
+{
+  "resource": "network/on8ar",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Belgický MeshCore hub a prostředí CoreScope provozované stanicí ON8AR. Zobrazuje živý provoz sítě MeshCore v Belgii, uzly, pozorovatele a statistiky paketů a zároveň se napojuje na širší belgickou komunitu Radio-Actief / RRY MeshCore.",
+      "sourceHash": "sha256:d0d00df67b8ccc9fe8313048b1ed9e63584d4595347ca1f8eaa4a61b3f2682a7",
+      "generatedAt": "2026-06-27T12:10:26.676Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12264,
+      "promptTokens": 175,
+      "completionTokens": 1368
+    }
+  }
+}

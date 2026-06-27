@@ -1,0 +1,15 @@
+{
+  "resource": "network/montreal-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade de entusiastas, criadores e experimentadores que operam MeshCore e Meshtastic na Ilha de Montréal e nos subúrbios vizinhos. A implantação do MeshCore utiliza repetidores fixos para garantir cobertura em toda a cidade, com planos de expansão para Laval, Longueuil e a região da Grande Montréal.",
+      "sourceHash": "sha256:460bb38882b7f8608d104b7b2327de81e6748d1917f91c768e88bc1c5c1ba301",
+      "generatedAt": "2026-06-27T14:47:46.671Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3615,
+      "promptTokens": 185,
+      "completionTokens": 1052
+    }
+  }
+}

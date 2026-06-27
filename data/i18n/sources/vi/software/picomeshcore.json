@@ -1,0 +1,42 @@
+{
+  "resource": "software/picomeshcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Tiện ích đồng hành MMBasic MeshCore gọn nhẹ dành cho Raspberry Pi Pico chạy PicoMite, có menu terminal để xử lý tin nhắn, danh bạ, quảng cáo, cấu hình radio và chẩn đoán qua UART.",
+      "sourceHash": "sha256:4f91c70f8c3a0d47e66111722904d7bac7c97a46bb8a63799296af3dcb59968d",
+      "generatedAt": "2026-06-27T16:29:14.970Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6336,
+      "promptTokens": 167,
+      "completionTokens": 1057
+    },
+    "tags": {
+      "value": "[\"raspberry-pi-pico\",\"mmbasic\",\"uart\",\"trình khách nhúng\"]",
+      "sourceHash": "sha256:d0ffcd2aa02df4ded4372b1b389c0d3063c2e74189f8bc501a0374cfa574f804",
+      "generatedAt": "2026-06-27T16:29:23.265Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8293,
+      "promptTokens": 147,
+      "completionTokens": 1160
+    },
+    "verificationNotes.requires-custom-uart-companion-firmware-on-the-a": {
+      "value": "Yêu cầu firmware đồng hành UART tùy chỉnh trên radio MeshCore được kết nối.",
+      "sourceHash": "sha256:dd2921b042040e8ffdc1ce36b83df41eb8b74832e7e3a8f6ba6276dcac9d14ad",
+      "generatedAt": "2026-06-27T16:29:28.768Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5503,
+      "promptTokens": 141,
+      "completionTokens": 240
+    },
+    "verificationNotes.contacts-and-messages-are-not-persisted-across-p": {
+      "value": "Danh bạ và tin nhắn không được lưu lại sau khi khởi động lại Pico.",
+      "sourceHash": "sha256:f193d331cc9d45a3934bfcd8e2b25ca7cd1cfe8dc0ea1693d7aa2f6843b9f3cc",
+      "generatedAt": "2026-06-27T16:29:34.140Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5371,
+      "promptTokens": 141,
+      "completionTokens": 823
+    }
+  }
+}

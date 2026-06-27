@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-e213",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vývojová deska ESP32-S3R8 s E-Ink displejem, volitelným LoRa modulem SX1262 a senzorovými porty QuickLink. Kompatibilní s Meshtastic/MeshCore; LoRa je volitelnou součástí konfigurace při sestavování a není dostupná ve všech variantách (SKU).",
+      "sourceHash": "sha256:f6083e6bd25b2901752f726a8f9787234ff22a32ad51d9c7bac3cde7f3a5d8f4",
+      "generatedAt": "2026-06-27T10:48:04.368Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

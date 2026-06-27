@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-mg24",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch chủ XIAO MG24 kết hợp với mô-đun SX1262 LoRa ngoài qua SPI, dùng cho các bản dựng ZephCore MeshCore. MG24 mang đến kết nối BLE công suất thấp cùng thiết kế nhỏ gọn chuẩn XIAO cho các hệ thống đồng hành/trạm lặp nhỏ.",
+      "sourceHash": "sha256:7a41a1abbde8492cce5274fe3c16087abc16a0a046798d87350b7ca64372baa2",
+      "generatedAt": "2026-06-27T15:43:06.647Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11454,
+      "promptTokens": 177,
+      "completionTokens": 934
+    }
+  }
+}

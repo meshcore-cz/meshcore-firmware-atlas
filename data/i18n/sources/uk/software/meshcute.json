@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcute",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативний сканер BLE, Wi-Fi та LoRa у режимі лише прийому для [[device:m5stack-cardputer-adv|M5Stack Cardputer Adv]], призначений для швидкої діагностики радіовидимості та рівня сигналу під час зустрічей MeshCore або Meshtastic.",
+      "sourceHash": "sha256:b9ebc168dd58830713747fe6699cbd740c55057930e41a07f69611cce82e4106",
+      "generatedAt": "2026-06-27T16:23:13.168Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4679,
+      "promptTokens": 178,
+      "completionTokens": 918
+    },
+    "tags": {
+      "value": "[\"сканер\",\"cardputer\",\"тільки прийом\",\"діагностика\",\"meshtastic\"]",
+      "sourceHash": "sha256:2d0f1e02de3ea3084199dc9c80adf070febfcc274292ff54f342bbce65f7e5f0",
+      "generatedAt": "2026-06-27T16:23:16.982Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3813,
+      "promptTokens": 145,
+      "completionTokens": 614
+    },
+    "verificationNotes.lora-scanning-is-receive-only-and-currently-hard": {
+      "value": "Сканування LoRa працює лише на прийом і наразі жорстко задано для радіопресету спільноти Swiss MeshCore.",
+      "sourceHash": "sha256:169c9bc406e3d5af02293e0ca85cb7d50c8b1a712c5388d36ae2f56e1e403f3c",
+      "generatedAt": "2026-06-27T16:23:22.611Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5629,
+      "promptTokens": 148,
+      "completionTokens": 849
+    },
+    "verificationNotes.requires-the-m5stack-cap-lora-1262-accessory-for": {
+      "value": "Потребує аксесуара M5Stack Cap LoRa-1262 для сканування LoRa.",
+      "sourceHash": "sha256:ca9d459f0b903c5d952ab92a3c2421216a422d6091a15f25235f62aff51f570d",
+      "generatedAt": "2026-06-27T16:23:27.829Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5217,
+      "promptTokens": 146,
+      "completionTokens": 874
+    }
+  }
+}

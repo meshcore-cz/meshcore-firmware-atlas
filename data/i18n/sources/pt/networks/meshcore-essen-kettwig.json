@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-essen-kettwig",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede pública MeshCore off-grid centrada em Essen-Kettwig, que se estende em direção à Ruhrlandklinik e ao Aeroporto de Mülheim. A comunidade opera uma rede de comunicação local resiliente e distribui alertas regionais de proteção civil através do MeshCore.",
+      "sourceHash": "sha256:4628b8b3bd391566b60054556334eec58bde886ecaca30c3d3b36df578caf7fe",
+      "generatedAt": "2026-06-27T14:47:36.782Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3344,
+      "promptTokens": 173,
+      "completionTokens": 952
+    }
+  }
+}

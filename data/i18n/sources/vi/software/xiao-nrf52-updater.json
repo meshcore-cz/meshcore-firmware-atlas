@@ -1,0 +1,51 @@
+{
+  "resource": "software/xiao-nrf52-updater",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware cập nhật độc lập dành cho các bo mạch Seeed XIAO nRF52840 và RAK4631, giúp nạp các gói firmware Nordic Legacy DFU qua Bluetooth cho các nút nRF52 MeshCore ở gần, bao gồm cả tính năng bảo trì bằng máy bay không người lái cho các bộ lặp khó tiếp cận.",
+      "sourceHash": "sha256:de57ad07f5d331fbe8340f40981bc1dc2c71873d8b159ec420a6f5825f3c1d46",
+      "generatedAt": "2026-06-27T16:41:31.836Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7070,
+      "promptTokens": 183,
+      "completionTokens": 842
+    },
+    "tags": {
+      "value": "[\"cập nhật firmware bluetooth\", \"nrf52\", \"drone\", \"không cần giám sát\", \"bảo trì tại hiện trường\"]",
+      "sourceHash": "sha256:cebbef8781418c2f01ca2c1707aae51b64f1693905cfee9f928c76574bfbb5b8",
+      "generatedAt": "2026-06-27T16:41:42.299Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10462,
+      "promptTokens": 149,
+      "completionTokens": 1550
+    },
+    "verificationNotes.supports-nordic-legacy-dfu-including-buttonless-": {
+      "value": "Hỗ trợ Nordic Legacy DFU, bao gồm cả chuyển đổi không cần nút nhấn từ chế độ ứng dụng.",
+      "sourceHash": "sha256:47a9050f020aeb8da3ac6ab10b41f79350fa1efb6d6b76d9696a1e0f1445b12d",
+      "generatedAt": "2026-06-27T16:41:47.176Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4877,
+      "promptTokens": 144,
+      "completionTokens": 545
+    },
+    "verificationNotes.release-builds-target-seeed-xiao-nrf52840-and-ra": {
+      "value": "Các bản dựng phát hành hướng tới Seeed XIAO nRF52840 và RAK4631 đi kèm RAK15001 QSPI flash.",
+      "sourceHash": "sha256:249dfc34dfb30e24b89aa25775ca7127e264ff863ba824572c73beb852baa399",
+      "generatedAt": "2026-06-27T16:41:52.201Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5023,
+      "promptTokens": 157,
+      "completionTokens": 871
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Kho lưu trữ hiện không khai báo giấy phép SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:41:55.874Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3672,
+      "promptTokens": 139,
+      "completionTokens": 449
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/fennek",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Альтернативна відкрита прошивка для LilyGO T-Deck Pro — музика, аудіокниги, електронні книги та чат у LoRa-мережі через MeshCore. Серед можливостей: головний екран із меню запуску, підтримка сенсорної та фізичної клавіатури, читалка EPUB, програвач аудіокниг і вивід звуку через ЦАП PCM5102A.",
+      "sourceHash": "sha256:1ce02557a6325b69d29293cfc034d7ce057ccd418cf1828b929e4b84fce9434b",
+      "generatedAt": "2026-06-27T15:32:16.827Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24160,
+      "promptTokens": 189,
+      "completionTokens": 1590
+    },
+    "features": {
+      "value": "[\"Запускач головного екрана\",\"Відтворення музики (ЦАП PCM5102A)\",\"Програвач аудіокниг\",\"Читалка EPUB і TXT із кешем індексу сторінок\",\"LoRa mesh-чат через MeshCore\",\"Підтримка сенсорного екрана та фізичної клавіатури\",\"Позиція читання для кожної книги\"]",
+      "sourceHash": "sha256:24ebed7c6260373947c8d6ac5551da43ae7648781f94872f8eb1814618ef9731",
+      "generatedAt": "2026-06-27T15:32:29.298Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12470,
+      "promptTokens": 179,
+      "completionTokens": 839
+    }
+  }
+}

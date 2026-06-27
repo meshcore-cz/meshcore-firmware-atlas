@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-khv",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tại khu vực Khabarovsk, Viễn Đông Nga, được phục vụ bởi trình phân tích CoreScope công khai được lưu trữ cục bộ.",
+      "sourceHash": "sha256:92cadf89a4e5df359ab08a2667183d7ddcbf264e03eb874199c43d2037361402",
+      "generatedAt": "2026-06-27T16:50:48.330Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4040,
+      "promptTokens": 153,
+      "completionTokens": 622
+    }
+  }
+}

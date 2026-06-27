@@ -1,0 +1,15 @@
+{
+  "resource": "device/tenstar-c3",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch đích ESP32-C3 MeshCore được bán hoặc lựa chọn trong các bản dựng LoRa SX1262 và SX1268. Thiết bị này hỗ trợ Wi-Fi, Bluetooth LE và nạp firmware qua USB cho các nút mạng đồng hành giá rẻ, bộ lặp hoặc máy chủ phòng.",
+      "sourceHash": "sha256:75aac1a664504c8ff96854579addb74d602d8aec44b069be98109327f9672ba8",
+      "generatedAt": "2026-06-27T15:43:19.894Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7335,
+      "promptTokens": 174,
+      "completionTokens": 1166
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resource": "software/meshcore-hub",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Plataforma auto-hospedada de coleta de rede MeshCore que ingere eventos de pacotes decodificados via MQTT, persiste mensagens e telemetria, e oferece um painel web, API REST, autenticação, métricas e suporte a observador remoto.",
+      "sourceHash": "sha256:7eb1062b7e025acc76ed0b0fee12851f254760722dcdc7228f00c44ce6a3d76a",
+      "generatedAt": "2026-06-27T14:31:46.574Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3227,
+      "promptTokens": 168,
+      "completionTokens": 893
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Painel de rede do MeshCore Hub",
+      "sourceHash": "sha256:59fc6c58003249c55003c9238aff44bd410289d069d4e8d436aa9fae441fc20d",
+      "generatedAt": "2026-06-27T14:31:48.195Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1621,
+      "promptTokens": 134,
+      "completionTokens": 308
+    },
+    "tags": {
+      "value": "[\"coletor\",\"mqtt\",\"auto-hospedado\",\"observabilidade\",\"multiobservador\"]",
+      "sourceHash": "sha256:31117120c11128f0411d1d25be7950d5268504ff509f514a86a49ce979c425a5",
+      "generatedAt": "2026-06-27T14:31:50.747Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2551,
+      "promptTokens": 145,
+      "completionTokens": 615
+    },
+    "verificationNotes.uses-meshcore-packet-capture-observers-to-decode": {
+      "value": "Utiliza observadores do meshcore-packet-capture para decodificar o tráfego de RF e publicar eventos normalizados no MQTT.",
+      "sourceHash": "sha256:53f3ba05809ee2b0e3dcae2a7babfff26b91c1bc65716b03ba92c99deeaf6e20",
+      "generatedAt": "2026-06-27T14:31:53.784Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3037,
+      "promptTokens": 148,
+      "completionTokens": 725
+    },
+    "verificationNotes.postgresql-is-becoming-the-required-database-bac": {
+      "value": "O PostgreSQL está se tornando o back-end de banco de dados obrigatório; o SQLite permanece com suporte temporário durante a migração.",
+      "sourceHash": "sha256:06c3aa26048c4748b3db746dfa7c518c6d43d46e6b6ceeb75c155b10ff283034",
+      "generatedAt": "2026-06-27T14:31:56.847Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3062,
+      "promptTokens": 145,
+      "completionTokens": 735
+    }
+  }
+}

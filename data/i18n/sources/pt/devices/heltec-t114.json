@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t114",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento compacta nRF52840 + SX1262 para Meshtastic/MeshCore e LoRaWAN. Com display TFT opcional de 1,14 polegadas e módulo GNSS L76K, conectores duplos para bateria e energia solar, antena LoRa IPEX-1 e USB-C. Sem bateria integrada.",
+      "sourceHash": "sha256:d41173b5256216872fd4295334b059d4afa9f73ec7c69fa383afaed144d44767",
+      "generatedAt": "2026-06-27T14:04:23.725Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 23073,
+      "promptTokens": 194,
+      "completionTokens": 908
+    }
+  }
+}

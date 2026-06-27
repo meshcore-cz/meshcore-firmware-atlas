@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m1",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Transceptor portátil nRF52840 + SX1262 Meshtastic/MeshCore com ecrã E-Paper de 1,54 polegadas, luz frontal, GPS, RTC, buzzer e bateria de 1200 mAh. É enviado numa caixa ABS+PC com antena LoRa RP-SMA e carregamento/programação por USB-C.",
+      "sourceHash": "sha256:39e99825c1389fc4f9833b0df874d4215c09f9531a71d1ed89e325f3e6da76d7",
+      "generatedAt": "2026-06-27T13:58:14.778Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 23271,
+      "promptTokens": 199,
+      "completionTokens": 1244
+    }
+  }
+}

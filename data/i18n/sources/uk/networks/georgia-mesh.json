@@ -1,0 +1,15 @@
+{
+  "resource": "network/georgia-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore у північній Джорджії (США), що налічує понад 840 вузлів у Лоуренсвіллі, Маріетті та гірських районах північної Джорджії. Працює в американському діапазоні 915 МГц з аналізатором CoreScope та окремим екземпляром на meshstat.com.",
+      "sourceHash": "sha256:132a5a4a725394a844e322e2c1ec2873f2d8cb26c8035b50651c46152cbffa49",
+      "generatedAt": "2026-06-27T16:50:33.108Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6816,
+      "promptTokens": 181,
+      "completionTokens": 1274
+    }
+  }
+}

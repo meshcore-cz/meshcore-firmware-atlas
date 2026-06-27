@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/keepteen",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Tvůrce uzlu Keepteen LT1.",
+      "sourceHash": "sha256:53576e8cfdafa5cccc00b01fcf27328947c5667d6cdc63ef916c6a37404ac685",
+      "generatedAt": "2026-06-27T11:58:49.832Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3381,
+      "promptTokens": 139,
+      "completionTokens": 364
+    }
+  }
+}

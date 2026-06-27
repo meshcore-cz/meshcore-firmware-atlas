@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore64",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Chatovací klient MeshCore pro Commodore 64, který se pomocí sériové kartridže kompatibilní se SwiftLink připojuje k doprovodnému TCP mostu. Podporuje komunikaci v kanálech i přímé zprávy, potvrzení o doručení a trvalé uložení nastavení.",
+      "sourceHash": "sha256:c8e7822bbd03308c831ea936dee6ef1a673b6536dfea3243bdf0c2b1449deebd",
+      "generatedAt": "2026-06-27T11:43:22.434Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10710,
+      "promptTokens": 166,
+      "completionTokens": 1417
+    },
+    "screenshots.demo.png.caption": {
+      "value": "Zasílání zpráv v kanálu MeshCore na počítači Commodore 64",
+      "sourceHash": "sha256:e3b2daed63bd7a948ab97465c8cf7fec2154864e5e7eb975ed9386d335f69c94",
+      "generatedAt": "2026-06-27T11:43:26.719Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4285,
+      "promptTokens": 139,
+      "completionTokens": 522
+    },
+    "verificationNotes.requires-swiftlink-or-compatible-acia-emulation-": {
+      "value": "Vyžaduje SwiftLink nebo kompatibilní emulaci ACIA a sériový most přes TCP pro připojení k doprovodnému zařízení MeshCore.",
+      "sourceHash": "sha256:2d89a555be3b6454b731e1b6028dc1ae03f9e6627f440c56f85fa422ecab3a1e",
+      "generatedAt": "2026-06-27T11:43:32.941Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6222,
+      "promptTokens": 149,
+      "completionTokens": 718
+    },
+    "tags": {
+      "value": "[\"commodore-64\",\"retrocomputing\",\"swiftlink\",\"petscii\"]",
+      "sourceHash": "sha256:5dbfa693f69d4499beb7db9e0833a8219a804c8ee383f42ea1765ab4b6f97737",
+      "generatedAt": "2026-06-27T13:46:07.716Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11118,
+      "promptTokens": 148,
+      "completionTokens": 394
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-italia",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede mesh MeshCore da comunidade, com cobertura nacional em Itália, que utiliza a predefinição padrão de banda estreita UE/UK (869.618 MHz / 62.5 kHz / SF8 / CR4/8) para se manter interoperável com as redes europeias vizinhas. Uma infraestrutura distribuída e não centralizada, coordenada pela comunidade meshcoreitalia.",
+      "sourceHash": "sha256:0e1b3ab42ae6a6f9ac46f7509656999219341c56b006f345c5252f311a25348f",
+      "generatedAt": "2026-06-27T14:46:58.657Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4221,
+      "promptTokens": 194,
+      "completionTokens": 1255
+    }
+  }
+}

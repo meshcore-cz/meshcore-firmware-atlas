@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/mesh-loader",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Carregador de boot duplo que instala imagens modificadas do MeshCore e do Meshtastic em partições separadas do ESP32, permitindo alternar o firmware na inicialização sem precisar regravar a flash.",
+      "sourceHash": "sha256:28921c48b789c353eb7a00aaed9efcaa0229c1514aa96513834844fe88776510",
+      "generatedAt": "2026-06-27T14:26:42.666Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3091,
+      "promptTokens": 159,
+      "completionTokens": 807
+    },
+    "features": {
+      "value": "[\"Inicialização dupla com MeshCore e Meshtastic\", \"Sistemas de ficheiros independentes para o firmware\", \"Memorização da seleção de inicialização\"]",
+      "sourceHash": "sha256:d25f84390a1ab4eb5d7d3267733c5595b5044b1e1297f7b98aab3697f110bc87",
+      "generatedAt": "2026-06-27T14:26:47.773Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5107,
+      "promptTokens": 150,
+      "completionTokens": 1412
+    }
+  }
+}

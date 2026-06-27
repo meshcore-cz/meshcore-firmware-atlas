@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-ninja",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Otevřený webový katalog ekosystému MeshCore. Zahrnuje hardware, firmware, software, výrobce a regionální sítě a nabízí strukturované specifikace, údaje o kompatibilitě a nástroje pro filtrování a porovnávání.",
+      "sourceHash": "sha256:d2e70e3ae8d46f317618d8d4e6ec916d1838dca4f079aaa21d663e5eb201be56",
+      "generatedAt": "2026-06-27T11:34:31.029Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8017,
+      "promptTokens": 161,
+      "completionTokens": 1102
+    },
+    "verificationNotes.catalog-data-and-schemas-are-dedicated-to-cc0-ap": {
+      "value": "Katalogová data a schémata jsou uvolněny pod licencí CC0; kód aplikace je licencován pod MIT.",
+      "sourceHash": "sha256:668d986541aa1861084a69dffd02c5f976492df26c23eaaa57d1af04e90f7671",
+      "generatedAt": "2026-06-27T11:34:37.629Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6600,
+      "promptTokens": 145,
+      "completionTokens": 711
+    },
+    "tags": {
+      "value": "[\"katalog\", \"kompatibilita\", \"hardware\", \"firmware\", \"sítě\"]",
+      "sourceHash": "sha256:1fe62ae95912ceae809923a9c2f7e36c6ece6e51df6e8efe1c5666a8025ab958",
+      "generatedAt": "2026-06-27T13:42:11.789Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19014,
+      "promptTokens": 143,
+      "completionTokens": 384
+    }
+  }
+}

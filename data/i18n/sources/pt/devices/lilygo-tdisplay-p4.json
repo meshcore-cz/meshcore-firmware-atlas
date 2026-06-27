@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tdisplay-p4",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento ESP32-P4 com ecrã tátil MIPI TFT de 4.05″ (540×1168), SX1262 LoRa, L76K GNSS, câmara MIPI, altifalante, microfone e IMU ICM20948. O ESP32-C6-MINI-1U auxiliar fornece Wi-Fi 6 e BLE 5.0. Disponível em variantes de ecrã AMOLED e TFT; uma expansão de teclado opcional adiciona um teclado físico QWERTY com rádios CC1101/NRF24L01/NFC.",
+      "sourceHash": "sha256:8467ea029365a4b591a48b4b0fc69c34df36296267eee1ba6382871e789e5aca",
+      "generatedAt": "2026-06-27T14:12:45.327Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 27858,
+      "promptTokens": 236,
+      "completionTokens": 1402
+    }
+  }
+}

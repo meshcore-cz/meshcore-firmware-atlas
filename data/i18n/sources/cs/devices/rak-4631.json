@@ -1,0 +1,12 @@
+{
+  "resource": "device/rak-4631",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Modul WisBlock Core kombinuje MCU nRF52840 s LoRa transceiverem SX1262 (RAK4630 stamp) a je určen pro připojení do základní desky WisBlock (RAK5005-O / RAK19007). Nabízí podporu BLE 5.0, výstup LoRa 22 dBm a odběr ve spánku 2,0 µA. Tvoří základ produktů RAK WisMesh Base, WisMesh Tap a Meshtastic Starter Kit.",
+      "sourceHash": "sha256:1f5163ea78383211cebb2ff86cfab5aa83a88c322e93c46fe7e79668b87ea6aa",
+      "generatedAt": "2026-06-27T10:55:04.023Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

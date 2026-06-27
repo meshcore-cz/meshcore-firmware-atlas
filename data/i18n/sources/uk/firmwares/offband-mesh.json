@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/offband-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Форк MeshCore для покращення та оптимізації прошивки з підтримкою різних ролей. Активні ролі включають компаньйон/спостерігач із публікацією даних спостереження через WiFi+MQTT, міграцією на NimBLE та вебінтерфейсом, а також ретранслятор із мостом MQTT-to-Mosquitto, пакетною телеметрією через WiFi та налаштуванням пам'яті й енергоспоживання.",
+      "sourceHash": "sha256:ba1c741372827b5f3ba1d0e6e24982cc9cae4e4d5f49282b66413916d17d2a9b",
+      "generatedAt": "2026-06-27T15:38:34.663Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10952,
+      "promptTokens": 186,
+      "completionTokens": 2028
+    },
+    "features": {
+      "value": "[\"Супутній додаток/спостерігач із публікацією спостережень через WiFi+MQTT\",\"Перехід на NimBLE (з відмовою від Bluedroid)\",\"Діагностика CrashLog / стійкість до перезавантажень\",\"Міст MQTT до Mosquitto (повторювач)\",\"Пакетна телеметрія через WiFi\",\"Оптимізація пам'яті (heap) та енергоспоживання для ESP32-S3\",\"Вебінтерфейс\"]",
+      "sourceHash": "sha256:55f2b45a824d3d98659d1ebe4d1baf1be089ee3ab2bd730ed2b136f6fd94c75b",
+      "generatedAt": "2026-06-27T15:38:44.455Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9792,
+      "promptTokens": 195,
+      "completionTokens": 1934
+    }
+  }
+}

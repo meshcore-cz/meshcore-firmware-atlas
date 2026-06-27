@@ -1,0 +1,15 @@
+{
+  "resource": "network/ruhr-meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Velká komunita MeshCore v německém Severním Porýní-Vestfálsku má 1 150+ uzlů soustředěných v Porúří (Bochum, Bottrop, Bonn, Kamp-Lintfort), které zasahují až do Porýní a Münsterlandu. Využívá předvolbu EU/UK Narrow v pásmu 868 MHz.",
+      "sourceHash": "sha256:f9fa57050ed12e4b8b74362fd5355e5ca1459d2236070ae69a17b4e31226839f",
+      "generatedAt": "2026-06-27T12:11:35.225Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9154,
+      "promptTokens": 200,
+      "completionTokens": 1386
+    }
+  }
+}

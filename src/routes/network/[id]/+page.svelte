@@ -1,5 +1,7 @@
 <script>
   import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import RecordFooter from '$lib/RecordFooter.svelte';
   import BackLink from '$lib/BackLink.svelte';
   import {
@@ -8,6 +10,8 @@
     networkBandLabel,
     networkFlags,
     networkRadioLabel,
+    networkScopeLabel,
+    networkStatusLabel,
     bandLabel,
     networkRadioSettings,
     networkRegions,
@@ -43,16 +47,16 @@
   function radioSpecs(radio) {
     const frequency = networkRadioLabel(radio);
     return [
-      frequency ? { label: 'Frequency', value: frequency } : null,
-      radio?.bandwidth_khz != null ? { label: 'Bandwidth', value: `${radio.bandwidth_khz} kHz` } : null,
-      radio?.spreading_factor != null ? { label: 'Spreading factor', value: `SF${radio.spreading_factor}` } : null,
-      radio?.coding_rate ? { label: 'Coding rate', value: radio.coding_rate } : null,
-      radio?.tx_power_dbm != null ? { label: 'TX power', value: `${radio.tx_power_dbm} dBm` } : null,
-      radio?.duty_cycle_pct != null ? { label: 'Duty cycle', value: `${radio.duty_cycle_pct}%` } : null,
-      radio?.path_hash_mode ? { label: 'Path hash', value: radio.path_hash_mode } : null,
-      radio?.region_code ? { label: 'Region', value: radio.region_code } : null,
-      radio?.max_hops != null ? { label: 'Max hops', value: String(radio.max_hops) } : null,
-      radio?.public_channel ? { label: 'Public channel', value: radio.public_channel } : null
+      frequency ? { label: m.networks_col_frequency(), value: frequency } : null,
+      radio?.bandwidth_khz != null ? { label: m.nd_bandwidth(), value: `${radio.bandwidth_khz} kHz` } : null,
+      radio?.spreading_factor != null ? { label: m.nd_spreading_factor(), value: `SF${radio.spreading_factor}` } : null,
+      radio?.coding_rate ? { label: m.nd_coding_rate(), value: radio.coding_rate } : null,
+      radio?.tx_power_dbm != null ? { label: m.dd_tx_power(), value: `${radio.tx_power_dbm} dBm` } : null,
+      radio?.duty_cycle_pct != null ? { label: m.nd_duty_cycle(), value: `${radio.duty_cycle_pct}%` } : null,
+      radio?.path_hash_mode ? { label: m.nd_path_hash(), value: radio.path_hash_mode } : null,
+      radio?.region_code ? { label: m.bands_col_region(), value: radio.region_code } : null,
+      radio?.max_hops != null ? { label: m.nd_max_hops(), value: String(radio.max_hops) } : null,
+      radio?.public_channel ? { label: m.nd_public_channel(), value: radio.public_channel } : null
     ].filter(Boolean);
   }
 
@@ -64,7 +68,7 @@
     radioSettings
       .map((radio, index) => ({
         radio,
-        title: radio.name ?? (radioSettings.length > 1 ? `Radio preset ${index + 1}` : 'Radio preset'),
+        title: radio.name ?? (radioSettings.length > 1 ? m.nd_radio_preset_n({ n: index + 1 }) : m.nd_radio_preset()),
         description: radio.description,
         appPreset: radio.app_preset,
         specs: radioSpecs(radio)
@@ -76,8 +80,8 @@
   // handle rather than a URL, so they render as plain text when not a link.
   let communityLinks = $derived(
     [
-      n.community?.website ? { label: 'Website', url: n.community.website } : null,
-      n.community?.forum ? { label: 'Forum', url: n.community.forum } : null,
+      n.community?.website ? { label: m.spec_website(), url: n.community.website } : null,
+      n.community?.forum ? { label: m.nd_forum(), url: n.community.forum } : null,
       n.community?.discord ? { label: 'Discord', url: n.community.discord } : null,
       n.community?.telegram ? { label: 'Telegram', url: n.community.telegram } : null,
       n.community?.matrix ? { label: 'Matrix', url: /^https?:\/\//.test(n.community.matrix) ? n.community.matrix : null, text: n.community.matrix } : null,
@@ -85,7 +89,7 @@
       n.community?.reddit ? { label: 'Reddit', url: n.community.reddit } : null,
       n.community?.youtube ? { label: 'YouTube', url: n.community.youtube } : null,
       n.community?.peertube ? { label: 'PeerTube', url: n.community.peertube } : null,
-      n.community?.contact ? { label: 'Contact', url: /^https?:\/\//.test(n.community.contact) ? n.community.contact : `mailto:${n.community.contact}`, text: n.community.contact } : null
+      n.community?.contact ? { label: m.nd_contact(), url: /^https?:\/\//.test(n.community.contact) ? n.community.contact : `mailto:${n.community.contact}`, text: n.community.contact } : null
     ].filter(Boolean)
   );
 
@@ -93,9 +97,9 @@
   let analyzers = $derived(n.analyzers ?? []);
 
   const RESOURCE_LABELS = {
-    getting_started: 'Getting started',
-    repeater_list: 'Repeater list',
-    status_page: 'Status page'
+    getting_started: m.nd_getting_started(),
+    repeater_list: m.nd_repeater_list(),
+    status_page: m.nd_status_page()
   };
   let resourceLinks = $derived(
     [
@@ -132,7 +136,7 @@
   jsonLd={networkJsonLd}
 />
 
-<BackLink href="{base}/networks/">All networks</BackLink>
+<BackLink href={href('/networks/')}>{m.back_networks()}</BackLink>
 
 <header class="mb-6">
   <div class="flex flex-wrap items-center gap-3">
@@ -148,12 +152,12 @@
     <h1 class="text-[clamp(1.5rem,5vw,2rem)] font-bold">{n.name}</h1>
     {#if n.scope}
       <span class="rounded-md px-2 py-0.5 text-[0.72rem] font-bold tracking-wide uppercase {NETWORK_SCOPE_META[n.scope]?.tw ?? 'bg-elev2 text-dim'}">
-        {NETWORK_SCOPE_META[n.scope]?.label ?? n.scope}
+        {networkScopeLabel(n.scope)}
       </span>
     {/if}
     {#if n.status}
       <span class="text-[0.85rem] font-medium {NETWORK_STATUS_META[n.status]?.tw ?? 'text-dim'}">
-        {NETWORK_STATUS_META[n.status]?.label ?? n.status}
+        {networkStatusLabel(n.status)}
       </span>
     {/if}
     {#if isAppPresetNetwork(n)}
@@ -168,7 +172,7 @@
   {/if}
   {#if n.areaKm2 != null}
     <p class="mt-1 text-[0.85rem] text-dim">
-      Coverage area <span class="font-mono text-ink">≈ {n.areaKm2.toLocaleString()} km²</span>
+      {m.nd_coverage_area()} <span class="font-mono text-ink">≈ {n.areaKm2.toLocaleString()} km²</span>
     </p>
   {/if}
   {#if n.description}<RichText class="mt-1 max-w-[70ch] text-dim" text={n.description} />{/if}
@@ -190,7 +194,7 @@
 
 {#if joinPresets.length}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">How to join</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.nd_how_to_join()}</h2>
     <div class="grid gap-3 {joinPresets.length > 1 ? '[grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]' : ''}">
       {#each joinPresets as preset}
         <div class="rounded-xl border border-edge bg-elev p-[1.1rem]">
@@ -199,9 +203,9 @@
               <h3 class="font-semibold">{preset.title}</h3>
               {#if preset.appPreset}
                 <p class="mt-1 flex flex-wrap items-center gap-1.5 text-[0.82rem]">
-                  <span class="text-dim">App preset:</span>
+                  <span class="text-dim">{m.nd_app_preset()}</span>
                   <span class="rounded-md border border-accent2/30 bg-accent2/10 px-2 py-0.5 font-mono text-[0.8rem] font-medium text-accent2">{preset.appPreset}</span>
-                  <span class="text-dim">— select this by name in the MeshCore app</span>
+                  <span class="text-dim">{m.nd_app_preset_hint()}</span>
                 </p>
               {/if}
               {#if preset.description}<RichText class="mt-0.5 text-[0.85rem] text-dim" text={preset.description} />{/if}
@@ -223,14 +227,14 @@
 
 {#if regions.length}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Regions</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.nd_regions()}</h2>
     <div class="flex flex-wrap gap-2">
       {#each regions as r}
         <span
           class="inline-flex items-center gap-2 rounded-md border border-edge bg-elev px-2.5 py-1 text-[0.85rem] {r.parent
             ? ''
             : 'font-semibold'}"
-          title={r.parent ? `Subdivision of ${r.parent}` : 'National region'}
+          title={r.parent ? m.nd_subdivision_of({ parent: r.parent }) : m.nd_national_region()}
         >
           {r.name}
           <span class="font-mono text-[0.72rem] text-dim">{r.code}</span>
@@ -250,7 +254,7 @@
 
 {#if maps.length}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Maps</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.nd_maps()}</h2>
     {@render linkButtons(maps)}
   </section>
 {/if}
@@ -258,11 +262,11 @@
 {#if analyzers.length}
   <section class="mb-7">
     <h2 class="mb-3 flex items-center gap-2 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">
-      Analyzers
+      {m.nd_analyzers()}
       {#if LIVE_ENABLED && live}
         <span class="inline-flex items-center gap-1.5 text-[0.72rem] font-normal text-dim">
           <span class="h-1.5 w-1.5 rounded-full {live.analyzersConnected ? 'bg-accent' : 'bg-dim'}"></span>
-          live
+          {m.nd_live()}
         </span>
       {/if}
     </h2>
@@ -271,11 +275,11 @@
       <!-- Network-wide live rollup (deduplicated across all analyzers). -->
       <div class="mb-4 grid gap-2 [grid-template-columns:repeat(auto-fit,minmax(110px,1fr))]">
         {#each [
-          { label: 'pkt/m', value: fmtRate(live.pktPerMin) },
-          { label: 'Unique packets', value: live.uniquePackets.toLocaleString() },
-          { label: 'Observations', value: live.observations.toLocaleString() },
-          { label: 'Observers', value: live.observers.toLocaleString() },
-          { label: 'Analyzers', value: `${live.analyzersConnected}/${live.analyzersTotal}` }
+          { label: m.nd_pktm(), value: fmtRate(live.pktPerMin) },
+          { label: m.nd_unique_packets(), value: live.uniquePackets.toLocaleString() },
+          { label: m.nd_observations(), value: live.observations.toLocaleString() },
+          { label: m.nd_observers(), value: live.observers.toLocaleString() },
+          { label: m.nd_analyzers(), value: `${live.analyzersConnected}/${live.analyzersTotal}` }
         ] as stat}
           <div class="rounded-xl border border-edge bg-elev px-3 py-2">
             <div class="text-[0.68rem] tracking-wide text-dim uppercase">{stat.label}</div>
@@ -303,21 +307,21 @@
               <a class="truncate font-medium text-accent2 hover:underline" href={a.url} target="_blank" rel="noreferrer" title={a.url}>{a.name} ↗</a>
               <span
                 class="inline-flex shrink-0 items-center gap-1.5 text-[0.72rem] {la?.connected ? 'text-accent' : 'text-dim'}"
-                title={la?.connected ? 'Connected' : la?.lastError || 'Not connected'}
+                title={la?.connected ? m.nd_connected() : la?.lastError || m.nd_not_connected()}
               >
                 <span class="h-1.5 w-1.5 rounded-full {la?.connected ? 'bg-accent' : 'bg-bad'}"></span>
-                {la?.connected ? 'online' : 'offline'}
+                {la?.connected ? m.nd_online() : m.nd_offline()}
               </span>
             </div>
             {#if la?.connected || la?.observations}
               <dl class="mt-2.5 grid grid-cols-2 gap-x-3 gap-y-1.5 text-[0.8rem]">
-                <div><dt class="text-[0.66rem] tracking-wide text-dim uppercase">pkt/m</dt><dd class="font-mono tabular-nums">{fmtRate(la.pktPerMin)}</dd></div>
-                <div><dt class="text-[0.66rem] tracking-wide text-dim uppercase">Observers</dt><dd class="font-mono tabular-nums">{la.observers.toLocaleString()}</dd></div>
-                <div><dt class="text-[0.66rem] tracking-wide text-dim uppercase">Unique</dt><dd class="font-mono tabular-nums">{la.uniquePackets.toLocaleString()}</dd></div>
-                <div><dt class="text-[0.66rem] tracking-wide text-dim uppercase">Observations</dt><dd class="font-mono tabular-nums">{la.observations.toLocaleString()}</dd></div>
+                <div><dt class="text-[0.66rem] tracking-wide text-dim uppercase">{m.nd_pktm()}</dt><dd class="font-mono tabular-nums">{fmtRate(la.pktPerMin)}</dd></div>
+                <div><dt class="text-[0.66rem] tracking-wide text-dim uppercase">{m.nd_observers()}</dt><dd class="font-mono tabular-nums">{la.observers.toLocaleString()}</dd></div>
+                <div><dt class="text-[0.66rem] tracking-wide text-dim uppercase">{m.nd_unique()}</dt><dd class="font-mono tabular-nums">{la.uniquePackets.toLocaleString()}</dd></div>
+                <div><dt class="text-[0.66rem] tracking-wide text-dim uppercase">{m.nd_observations()}</dt><dd class="font-mono tabular-nums">{la.observations.toLocaleString()}</dd></div>
               </dl>
               {#if agoLabel(la.lastPacketAt)}
-                <p class="mt-2 text-[0.72rem] text-dim">last packet {agoLabel(la.lastPacketAt)}</p>
+                <p class="mt-2 text-[0.72rem] text-dim">{m.nd_last_packet({ ago: agoLabel(la.lastPacketAt) })}</p>
               {/if}
             {/if}
           </div>
@@ -331,23 +335,22 @@
 
 {#if resourceLinks.length}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Resources</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.nd_resources()}</h2>
     {@render linkButtons(resourceLinks)}
   </section>
 {/if}
 
 <section class="mb-7">
   <h2 class="border-b border-edge pb-1.5 text-[1.1rem] font-semibold">
-    Compatible devices ({data.devices.length})
+    {m.nd_compatible_devices({ count: data.devices.length })}
   </h2>
   {#if data.devices.length}
     <p class="mt-2 text-[0.85rem] text-dim">
-      Devices whose radios support {networkBandLabel(n) ?? 'this network'} band(s). Pick one, flash a
-      MeshCore firmware, then apply the radio preset above.
+      {m.nd_compatible_blurb({ band: networkBandLabel(n) ?? m.nd_this_network() })}
     </p>
     <div class="mt-3 grid gap-2 [grid-template-columns:repeat(auto-fill,minmax(240px,1fr))]">
       {#each data.devices as d (d.id)}
-        <a class="flex items-center gap-3 rounded-xl border border-edge bg-elev px-3.5 py-2.5 hover:border-accent" href="{base}/device/{d.id}/">
+        <a class="flex items-center gap-3 rounded-xl border border-edge bg-elev px-3.5 py-2.5 hover:border-accent" href={href(`/device/${d.id}/`)}>
           <div class="flex h-[46px] w-[46px] shrink-0 items-center justify-center overflow-hidden rounded-lg bg-elev2">
             {#if d.imageUrl}<img src={d.imageUrl} alt={d.name} loading="lazy" class="max-h-full max-w-full object-contain" />{/if}
           </div>
@@ -361,9 +364,9 @@
   {:else}
     <p class="mt-3 text-dim">
       {#if networkBandLabel(n)}
-        No catalogued devices match this network's band yet.
+        {m.nd_no_compatible()}
       {:else}
-        Add a <code>radio.frequency</code> or <code>radios[].frequency</code> band to list compatible devices.
+        {m.nd_no_compatible_hint({ freq: 'radio.frequency', radios: 'radios[].frequency' })}
       {/if}
     </p>
   {/if}
@@ -374,24 +377,23 @@
     <details>
       <summary class="cursor-pointer list-none border-b border-edge pb-1.5 text-[1.1rem] font-semibold marker:content-none">
         <span class="inline-flex items-center gap-2">
-          Incompatible devices ({data.incompatibleDevices.length})
-          <span class="text-[0.8rem] font-normal text-dim">— show</span>
+          {m.nd_incompatible_devices({ count: data.incompatibleDevices.length })}
+          <span class="text-[0.8rem] font-normal text-dim">{m.nd_incompatible_show()}</span>
         </span>
       </summary>
       <p class="mt-2 text-[0.85rem] text-dim">
-        These devices' radios don't cover {networkBandLabel(n) ?? 'this network'} band(s), so they
-        can't join this network — their supported bands are shown below.
+        {m.nd_incompatible_blurb({ band: networkBandLabel(n) ?? m.nd_this_network() })}
       </p>
       <div class="mt-3 grid gap-2 [grid-template-columns:repeat(auto-fill,minmax(240px,1fr))]">
         {#each data.incompatibleDevices as d (d.id)}
-          <a class="flex items-center gap-3 rounded-xl border border-edge bg-elev px-3.5 py-2.5 opacity-70 hover:border-bad hover:opacity-100" href="{base}/device/{d.id}/">
+          <a class="flex items-center gap-3 rounded-xl border border-edge bg-elev px-3.5 py-2.5 opacity-70 hover:border-bad hover:opacity-100" href={href(`/device/${d.id}/`)}>
             <div class="flex h-[46px] w-[46px] shrink-0 items-center justify-center overflow-hidden rounded-lg bg-elev2 grayscale">
               {#if d.imageUrl}<img src={d.imageUrl} alt={d.name} loading="lazy" class="max-h-full max-w-full object-contain" />{/if}
             </div>
             <div>
               <span class="block text-[0.9rem]">{d.name}</span>
               <span class="block font-mono text-[0.76rem] text-dim">
-                {[...new Set((d.hardware?.radios ?? []).flatMap((r) => r.bands ?? []))].map((b) => bandLabel(b) ?? b).join(', ') || 'No LoRa band'}
+                {[...new Set((d.hardware?.radios ?? []).flatMap((r) => r.bands ?? []))].map((b) => bandLabel(b) ?? b).join(', ') || m.nd_no_lora_band()}
               </span>
             </div>
           </a>

@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-team",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Cliente de mensagens e rastreamento de grupo para Android, voltado para caçadores e equipes em áreas remotas, que utiliza telemetria MeshCore para posições offline, mapas de equipe e coordenação.",
+      "sourceHash": "sha256:e3e6920c6bfcf47cae16883df832a4b6d678d0c0ff70b8e1cc0fc9ad60e311fb",
+      "generatedAt": "2026-06-27T14:36:00.092Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3114,
+      "promptTokens": 156,
+      "completionTokens": 853
+    },
+    "screenshots.home.jpg.caption": {
+      "value": "Status da equipe e navegação",
+      "sourceHash": "sha256:12c3c8119e8f946de6eb210f21b2abb34bff63ebaccfb198a3f44aca53804e5d",
+      "generatedAt": "2026-06-27T14:36:02.331Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2237,
+      "promptTokens": 133,
+      "completionTokens": 481
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Mapa de localização da equipe off-grid",
+      "sourceHash": "sha256:3f1fa2ca86b683d9f746a09c436709d1f42eba5370bc34ccd38c31b2e7dec973",
+      "generatedAt": "2026-06-27T14:36:06.076Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3744,
+      "promptTokens": 134,
+      "completionTokens": 870
+    },
+    "screenshots.messages.jpg.caption": {
+      "value": "Mensagens de equipe",
+      "sourceHash": "sha256:107eab2a042fb8dbef5e05a47b068f66e6877281bf5d6114a8cd39340e012f86",
+      "generatedAt": "2026-06-27T14:36:09.528Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3452,
+      "promptTokens": 131,
+      "completionTokens": 823
+    },
+    "screenshots.settings.jpg.caption": {
+      "value": "Aplicações e configurações de rádio",
+      "sourceHash": "sha256:d2e0861a50ed378e8c60a729666d5a60f39aa5098aaf1424252017565709af04",
+      "generatedAt": "2026-06-27T14:36:10.120Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 591,
+      "promptTokens": 133,
+      "completionTokens": 11
+    },
+    "tags": {
+      "value": "[\"rastreamento-de-equipe\",\"áreas-remotas\",\"caça\",\"beta-fechado\"]",
+      "sourceHash": "sha256:8a06cb541974e874adc4f2876730eb0f1dbaf179335232de7f80573ad6eb1fb2",
+      "generatedAt": "2026-06-27T14:36:12.883Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2763,
+      "promptTokens": 142,
+      "completionTokens": 701
+    },
+    "verificationNotes.this-repository-is-deprecated-current-testing-mo": {
+      "value": "Este repositório foi descontinuado; os testes atuais foram movidos para uma faixa fechada do Google Play, acessível por meio do Grupo do Google vinculado.",
+      "sourceHash": "sha256:ce93c1c90cadfd91d97e0dcc0f1052a9b73c0642100a57c8ce231cdcd1ec80c7",
+      "generatedAt": "2026-06-27T14:36:15.687Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2803,
+      "promptTokens": 150,
+      "completionTokens": 718
+    },
+    "verificationNotes.the-repository-contains-documentation-and-screen": {
+      "value": "O repositório contém documentação e capturas de ecrã, mas não distribui código-fonte.",
+      "sourceHash": "sha256:2e84105656a98d69955fe80b36b06e0af1a219fd10106bc9ad2831302469470e",
+      "generatedAt": "2026-06-27T14:36:19.565Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3877,
+      "promptTokens": 141,
+      "completionTokens": 1089
+    }
+  }
+}

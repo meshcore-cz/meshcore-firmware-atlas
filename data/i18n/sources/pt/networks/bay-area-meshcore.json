@@ -1,0 +1,15 @@
+{
+  "resource": "network/bay-area-meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade ativa do MeshCore na região da Baía de São Francisco e na Costa Central da Califórnia, com 700+ nós que se estendem de Cotati a San Jose. Opera na banda de 915 MHz dos EUA e conta com um analisador CoreScope e uma comunidade no Discord.",
+      "sourceHash": "sha256:4db4e25d7eb1c7cf45501de77e7c1f964dfef01f23bf73845525d72ccde76e59",
+      "generatedAt": "2026-06-27T14:45:18.994Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3360,
+      "promptTokens": 176,
+      "completionTokens": 959
+    }
+  }
+}

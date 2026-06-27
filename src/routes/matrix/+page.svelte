@@ -1,6 +1,7 @@
 <script>
-  import { base } from '$app/paths';
-  import { STATUS_META, TYPE_META } from '$lib/data.js';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
+  import { STATUS_META, matrixStatusLabel, firmwareTypeLabel } from '$lib/data.js';
   import { favoriteIds } from '$lib/favorites.js';
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
@@ -26,18 +27,17 @@
 </script>
 
 <Seo
-  title="Compatibility Matrix"
-  description={`Device × firmware support across ${data.rows.length} devices and ${data.firmwares.length} MeshCore firmwares — at a glance.`}
+  title={m.tool_matrix_label()}
+  description={m.matrix_seo_desc({ devices: data.rows.length, firmwares: data.firmwares.length })}
 />
 
 <PageHeader tool="matrix" subtitleClass="mb-4 max-w-[60ch]">
-  Device × firmware support across all {data.rows.length} devices. A dot means no
-  firmware lists that board yet. Hover a cell for notes.
+  {m.matrix_intro({ count: data.rows.length })}
 </PageHeader>
 
 <div class="mb-5 flex flex-wrap gap-2">
-  {#each Object.values(STATUS_META) as meta}
-    <span class="rounded-full px-2.5 py-0.5 text-[0.78rem] {meta.tw}">{meta.symbol} {meta.label}</span>
+  {#each Object.entries(STATUS_META) as [status, meta]}
+    <span class="rounded-full px-2.5 py-0.5 text-[0.78rem] {meta.tw}">{meta.symbol} {matrixStatusLabel(status)}</span>
   {/each}
 </div>
 
@@ -59,7 +59,7 @@
   <table class="table-fixed border-collapse" style="width: max(100%, {180 + data.firmwares.length * 46}px);">
     <thead>
       <tr>
-        <th class="sticky top-0 left-0 z-30 w-[180px] border-b border-edge bg-elev px-3.5 py-2.5 text-left align-bottom text-[0.8rem] text-dim">Device</th>
+        <th class="sticky top-0 left-0 z-30 w-[180px] border-b border-edge bg-elev px-3.5 py-2.5 text-left align-bottom text-[0.8rem] text-dim">{m.cmd_type_device()}</th>
         {#each data.firmwares as fw, fi}
           <th
             class="group sticky top-0 z-20 h-[150px] w-[46px] border-b border-l border-edge bg-elev p-0 text-center align-bottom {fi === hoverCol ? HL : ''}"
@@ -67,14 +67,14 @@
           >
             <a
               class="mx-auto inline-block rotate-180 pb-2.5 text-[0.78rem] leading-[1.05] font-semibold text-accent2 [writing-mode:vertical-rl] hover:underline"
-              href="{base}/firmware/{fw.id}/"
+              href={href(`/firmware/${fw.id}/`)}
             >{fw.name}</a>
             <!-- Instant tooltip, anchored below the header so it isn't clipped
                  by the table's horizontal scroll container. -->
             <span
               class="pointer-events-none absolute top-full left-1/2 z-30 hidden -translate-x-1/2 translate-y-1 rounded-md border border-edge bg-elev2 px-2 py-1 text-[0.72rem] font-medium whitespace-nowrap text-ink shadow-lg group-hover:block"
             >
-              {fw.name} · <span class="text-dim">{TYPE_META[fw.type]?.label ?? fw.type}</span>
+              {fw.name} · <span class="text-dim">{firmwareTypeLabel(fw.type)}</span>
             </span>
           </th>
         {/each}
@@ -88,7 +88,7 @@
             class="sticky left-0 z-10 border-b border-edge bg-elev px-3.5 py-1.5 text-left font-medium group-hover:bg-elev2 {ri === hoverRow ? HL : isFav ? FAV_HL : ''} {isFav ? 'border-l-2 border-l-accent' : ''}"
             onmouseenter={() => { hoverRow = ri; hoverCol = -1; }}
           >
-            <a class="flex items-center gap-2.5 text-[0.88rem] hover:text-accent" href="{base}/device/{row.device.id}/">
+            <a class="flex items-center gap-2.5 text-[0.88rem] hover:text-accent" href={href(`/device/${row.device.id}/`)}>
               <span class="flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded bg-elev2 p-0.5 text-muted">
                 {#if row.device.imageUrl}
                   <img src={row.device.imageUrl} alt="" class="max-h-full max-w-full object-contain" />
@@ -101,7 +101,7 @@
               </span>
               <span class={isFav ? 'font-semibold text-accent' : ''}>{row.device.name}</span>
               {#if isFav}
-                <span class="text-[0.85rem] text-amber-400" title="Favourite device" aria-label="Favourite">★</span>
+                <span class="text-[0.85rem] text-amber-400" title={m.matrix_favourite_device()} aria-label={m.matrix_favourite()}>★</span>
               {/if}
             </a>
           </th>
@@ -112,7 +112,7 @@
               class="cursor-default border-b border-l border-edge text-center text-base {meta
                 ? meta.cell
                 : 'text-edge'} {ri === hoverRow || fi === hoverCol ? HL : isFav ? FAV_HL : ''}"
-              title={cell ? `${meta?.label}${cell.target ? ' · ' + cell.target : ''}${cell.notes ? ' — ' + cell.notes : ''}` : 'No data'}
+              title={cell ? `${matrixStatusLabel(cell.status)}${cell.target ? ' · ' + cell.target : ''}${cell.notes ? ' — ' + cell.notes : ''}` : m.matrix_no_data()}
               onmouseenter={() => { hoverRow = ri; hoverCol = fi; }}
             >
               {meta ? meta.symbol : '·'}

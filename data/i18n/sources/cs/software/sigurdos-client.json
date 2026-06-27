@@ -1,0 +1,78 @@
+{
+  "resource": "software/sigurdos-client",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Multiplatformní Flutter klient MeshCore odvozený z MeshCore Open přidává pixel-art motiv SigurdOS a zároveň zachovává zasílání zpráv, mapy, správu zařízení a opakovačů přes BLE, USB a TCP.",
+      "sourceHash": "sha256:af2abb6c542994d0b87942994db6693b14374ef6ad65d9b79a2f04638a8de785",
+      "generatedAt": "2026-06-27T11:55:16.091Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11465,
+      "promptTokens": 169,
+      "completionTokens": 1353
+    },
+    "screenshots.contacts.jpg.caption": {
+      "value": "Kontakty Mesh",
+      "sourceHash": "sha256:15790efbf31cf337d1af68c6f28db1cb6d9ecb983111af6bbdea9b0c81933c58",
+      "generatedAt": "2026-06-27T11:55:22.032Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5940,
+      "promptTokens": 131,
+      "completionTokens": 590
+    },
+    "screenshots.chat.jpg.caption": {
+      "value": "Šifrované přímé zprávy",
+      "sourceHash": "sha256:f7a506a0dd7aa910aaa85ba60676f98ae484042ff3b925d1c03ab6a7e2fcbefd",
+      "generatedAt": "2026-06-27T11:55:27.305Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5273,
+      "promptTokens": 133,
+      "completionTokens": 555
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Mapa sítě a pozice uzlů",
+      "sourceHash": "sha256:fbaec063e1478e8c719e9d765fa70f3d2fa5fcac6499f0e3c98c419152092c2b",
+      "generatedAt": "2026-06-27T11:55:32.735Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5429,
+      "promptTokens": 134,
+      "completionTokens": 570
+    },
+    "screenshots.channels.jpg.caption": {
+      "value": "Zasílání zpráv v kanálech",
+      "sourceHash": "sha256:84f950f864adf2f9f4b23cc83849a9df21f105ae261c51e0929296490dc3f6d1",
+      "generatedAt": "2026-06-27T11:55:36.757Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4022,
+      "promptTokens": 131,
+      "completionTokens": 466
+    },
+    "verificationNotes.community-fork-of-meshcore-open-with-sigurdos-br": {
+      "value": "Komunitní fork projektu MeshCore Open se značkou SigurdOS a integrací specifickou pro daný ekosystém.",
+      "sourceHash": "sha256:f223103eae94c8892d2c8fc681f501bbd9335ef04148ddcf7cc6a5d0de5841f2",
+      "generatedAt": "2026-06-27T11:56:07.548Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 30790,
+      "promptTokens": 145,
+      "completionTokens": 987
+    },
+    "verificationNotes.over-the-air-firmware-updates-are-still-listed-a": {
+      "value": "Bezdrátové aktualizace firmwaru jsou stále uváděny jako plánovaná funkce.",
+      "sourceHash": "sha256:a2359935533fd3836c9d3eb3e808c84311403df2d7d6cd49c8f5b0f81d592f07",
+      "generatedAt": "2026-06-27T11:56:13.042Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5494,
+      "promptTokens": 142,
+      "completionTokens": 666
+    },
+    "tags": {
+      "value": "[\"flutter\",\"sigurdos\",\"pixel-art\",\"meshcore-open-fork\"]",
+      "sourceHash": "sha256:05d9b430a5d0c834612f9d5eee94ab8b433a20c1b52d7cbc84d5009539854531",
+      "generatedAt": "2026-06-27T13:50:02.239Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 21062,
+      "promptTokens": 145,
+      "completionTokens": 736
+    }
+  }
+}

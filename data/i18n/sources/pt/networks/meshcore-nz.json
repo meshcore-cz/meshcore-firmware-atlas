@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-nz",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede comunitária nacional MeshCore da Nova Zelândia para mensagens off-grid resilientes, com coordenação de locais de repetidores, recursos de administração de nós, NZ MeshMapper, monitoramento do CoreScope, planejamento de prefixos e suporte à comunidade.",
+      "sourceHash": "sha256:33c4f9f0402bddcb17c72d7a00f0ce55bc3cce3429124a7f432f36d317a92ff3",
+      "generatedAt": "2026-06-27T14:48:13.062Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3026,
+      "promptTokens": 165,
+      "completionTokens": 853
+    }
+  }
+}

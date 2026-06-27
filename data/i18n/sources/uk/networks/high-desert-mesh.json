@@ -1,0 +1,15 @@
+{
+  "resource": "network/high-desert-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Громадська мережа екстреного зв'язку, яка обслуговує високогірну пустелю Південної Каліфорнії, зокрема Вікторвілл, Ланкастер, Еппл-Веллі, Палмдейл, Фелан та Райтвуд. Ширша спільнота підтримує кілька технологій mesh-мереж LoRa, а активний трафік MeshCore відстежується через регіональний екземпляр CoreScope.",
+      "sourceHash": "sha256:f3f1de6314e3d55e90a71b607eaf67ee8eb446890e5870eaef46628920b67626",
+      "generatedAt": "2026-06-27T16:51:18.113Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12892,
+      "promptTokens": 182,
+      "completionTokens": 1441
+    }
+  }
+}

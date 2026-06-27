@@ -1,0 +1,15 @@
+{
+  "resource": "network/southern-california-meshcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tại Nam California tập trung quanh khu vực Los Angeles, có một trình phân tích CoreScope công khai tại vùng đô thị LAX.",
+      "sourceHash": "sha256:4ffe79e25bd55a6ce42adfcd6f52573f0dac02d6ca02e5b1f707d99b77a6376e",
+      "generatedAt": "2026-06-27T16:54:10.009Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5330,
+      "promptTokens": 155,
+      "completionTokens": 617
+    }
+  }
+}

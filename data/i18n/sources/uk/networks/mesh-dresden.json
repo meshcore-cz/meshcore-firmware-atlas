@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-dresden",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Волонтерська спільнота MeshCore та Meshtastic для Дрездена та всієї Саксонії. Експлуатує автономні ретранслятори на сонячних батареях у діапазоні 868 МГц (ЄС), охоплюючи регіони в межах Дрездена та публічні канали з хештегами для місцевого спілкування, підтримки та зустрічей.",
+      "sourceHash": "sha256:fc4aee749316e2929a958e0c07b7dbbed64df6fc737e6cced41b21a6a2999b18",
+      "generatedAt": "2026-06-27T16:52:43.661Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6608,
+      "promptTokens": 181,
+      "completionTokens": 1422
+    }
+  }
+}

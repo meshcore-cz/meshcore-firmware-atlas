@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-essen-kettwig",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Veřejná off-grid MeshCore síť s centrem v Essen-Kettwig, která zasahuje směrem ke klinice Ruhrlandklinik a letišti Mülheim. Komunita provozuje odolnou lokální komunikační síť a přes MeshCore šíří regionální výstrahy civilní ochrany.",
+      "sourceHash": "sha256:4628b8b3bd391566b60054556334eec58bde886ecaca30c3d3b36df578caf7fe",
+      "generatedAt": "2026-06-27T12:07:45.541Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7942,
+      "promptTokens": 173,
+      "completionTokens": 1006
+    }
+  }
+}

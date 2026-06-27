@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-wt2",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Трекер на базі ESP32-S3 з SX1262 LoRa, UC6580 GNSS, Wi-Fi, BLE та 0,96-дюймовим TFT-дисплеєм 160×80. Пристрій розроблено для відстеження об'єктів та побудови mesh-мереж, він оснащений портом USB-C, системою керування акумулятором та підтримкою сонячних панелей.",
+      "sourceHash": "sha256:1b3b6c809471e2e0dc68f5b616a41166f409dc7294c5a301441431cfb2cd3b87",
+      "generatedAt": "2026-06-27T14:58:08.020Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5233,
+      "promptTokens": 188,
+      "completionTokens": 1666
+    }
+  }
+}

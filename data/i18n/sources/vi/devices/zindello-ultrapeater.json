@@ -1,0 +1,15 @@
+{
+  "resource": "device/zindello-ultrapeater",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch mở rộng bộ lặp LoRa 1 W được thiết kế để xếp chồng lên Luckfox Pico Ultra/W, tích hợp module radio EBYTE E22/E22P có sẵn LNA và bộ lọc thông dải tùy chọn. Cấp nguồn qua PoE hoặc USB-C, sẵn sàng lắp trên cột và đi kèm script cài đặt pyMC_Repeater.",
+      "sourceHash": "sha256:4f7e7ec14c7379ec05bc08a2fc5bfe3a25e7d7cb24595fd312ab14cd48dc3a9d",
+      "generatedAt": "2026-06-27T15:44:13.797Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8156,
+      "promptTokens": 191,
+      "completionTokens": 1174
+    }
+  }
+}

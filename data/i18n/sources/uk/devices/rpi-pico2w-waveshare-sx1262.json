@@ -1,0 +1,15 @@
+{
+  "resource": "device/rpi-pico2w-waveshare-sx1262",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Raspberry Pi Pico2 W у парі з Waveshare SX1262 LoRa HAT для створення компактних конфігурацій MeshCore/Meshtastic. Pico2 W базується на RP2350 з підтримкою Wi-Fi/BLE, HAT забезпечує підключення зовнішньої антени, а простий комплект із живленням від USB підходить для бюджетного тестування.",
+      "sourceHash": "sha256:0cf33b19a8dab4ab4d435f2b547c656e029acf0b5860f2f025901ac375f32892",
+      "generatedAt": "2026-06-27T15:01:18.876Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3849,
+      "promptTokens": 194,
+      "completionTokens": 1183
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/cubecell-htcc-ab01",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vývojová deska CubeCell LoRa s velmi nízkou spotřebou, postavená na čipu třídy ASR6502 a vybavená integrovaným rádiovým modulem SX1262. Určena pro nasazení IoT s napájením ze solárních panelů a baterií.",
+      "sourceHash": "sha256:b9c751f0ee31f39b3c442d4f9f68b16ab5db03faf4f62382ca31212bc99524b2",
+      "generatedAt": "2026-06-27T10:45:26.389Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

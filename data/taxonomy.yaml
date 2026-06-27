@@ -1,0 +1,22 @@
+# Shared taxonomy labels — canonical English strings for fixed enum values
+# referenced across the catalog. Locale overlays translate these once per slug
+# (see data/i18n/sources/<locale>/taxonomy/taxonomy.json).
+
+softwareCapabilities:
+  messaging: Messaging
+  contacts: Contacts
+  channels: Channels
+  node-configuration: Node configuration
+  remote-administration: Remote administration
+  monitoring: Monitoring
+  telemetry: Telemetry
+  packet-analysis: Packet analysis
+  mapping: Mapping
+  flashing: Flashing
+  firmware-update: Firmware update
+  automation: Automation
+  notifications: Notifications
+  bridging: Bridging
+  proxying: Proxying
+  key-management: Key management
+  simulation: Simulation

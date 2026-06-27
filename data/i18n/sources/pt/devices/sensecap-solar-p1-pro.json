@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-solar-p1-pro",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó ou repetidor Meshtastic/MeshCore alimentado por energia solar, com GNSS XIAO L76K integrado e quatro baterias 18650 de 3350 mAh pré-instaladas. Conta com o mesmo núcleo XIAO nRF52840 Plus e Wio-SX1262 do P1, além de um painel solar de 5W e uma caixa para uso externo IPX6 com porta de expansão Grove.",
+      "sourceHash": "sha256:df0994863cd92b04c9f0817be704f226ba72295f3484beb3660364897805cb94",
+      "generatedAt": "2026-06-27T14:19:45.332Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3615,
+      "promptTokens": 209,
+      "completionTokens": 1164
+    }
+  }
+}

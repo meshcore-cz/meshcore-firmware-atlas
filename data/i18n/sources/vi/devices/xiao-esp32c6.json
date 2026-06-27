@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-esp32c6",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch ESP32-C6 XIAO chỉ nhỏ bằng ngón tay cái, hỗ trợ Wi-Fi 6, BLE 5 và vô tuyến Thread/Zigbee. MeshCore sử dụng bo mạch này làm thiết bị đồng hành nhỏ gọn hoặc máy chủ lặp tín hiệu khi gắn kèm mô-đun LoRa Wio-SX1262.",
+      "sourceHash": "sha256:c0446f50916798e71fb5a6560fab218cab55b4ec7e8174c2c819495a25cbcc63",
+      "generatedAt": "2026-06-27T15:42:33.464Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5627,
+      "promptTokens": 184,
+      "completionTokens": 1055
+    }
+  }
+}

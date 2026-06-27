@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-base-duo",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento compacta BASE System para nós Meshtastic de banda dupla, combinando um microcontrolador nRF52840 com um rádio LoRa LR1121, conectores de antena separados para sub-GHz e 2.4 GHz, expansão QWIIC/STEMMA QT e carregamento de bateria/solar.",
+      "sourceHash": "sha256:fd006660f8612d2df7d62032143d8b0bf1b9a702bdb36a154f988b4c222ed8a7",
+      "generatedAt": "2026-06-27T14:16:34.392Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10476,
+      "promptTokens": 187,
+      "completionTokens": 835
+    }
+  }
+}

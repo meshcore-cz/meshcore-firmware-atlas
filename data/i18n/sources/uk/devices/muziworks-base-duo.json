@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-base-duo",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактна плата розробника BASE System для дводіапазонних вузлів Meshtastic, яка поєднує мікроконтролер nRF52840 з LoRa-радіомодулем LR1121, має окремі роз'єми для антен sub-GHz та 2.4 GHz, підтримує розширення QWIIC/STEMMA QT та акумуляторне або сонячне заряджання.",
+      "sourceHash": "sha256:fd006660f8612d2df7d62032143d8b0bf1b9a702bdb36a154f988b4c222ed8a7",
+      "generatedAt": "2026-06-27T15:00:19.319Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3874,
+      "promptTokens": 187,
+      "completionTokens": 1157
+    }
+  }
+}

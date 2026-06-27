@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "O firmware de referência MeshCore — uma biblioteca e firmware C++ leve para roteamento de pacotes em múltiplos saltos via rádios LoRa. Ele impulsiona redes mesh descentralizadas e autorreparáveis para comunicação off-grid, de emergência e tática, com imagens pré-compiladas e um gravador web.",
+      "sourceHash": "sha256:123159709a38040b42972325ef252ce34949e5ba91df24b6d741fb7857ae6a76",
+      "generatedAt": "2026-06-27T14:21:38.825Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4123,
+      "promptTokens": 180,
+      "completionTokens": 1123
+    },
+    "deviceNotes.heltec-meshtower": {
+      "value": "A mesma placa base MeshSolar; utiliza a compilação heltec_mesh_solar.",
+      "sourceHash": "sha256:0fe9d96a80f245a3d2335a68e6bf70eccfe70b820e2035f0dcb00ec660ee9697",
+      "generatedAt": "2026-06-27T14:21:41.576Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2749,
+      "promptTokens": 144,
+      "completionTokens": 614
+    },
+    "features": {
+      "value": "[\"Roteamento de pacotes em múltiplos saltos\",\"Mensagens diretas com criptografia de ponta a ponta\",\"Clientes complementares BLE / USB / TCP\",\"Clientes para Web, iOS, Android, Python e NodeJS\",\"Gerenciamento nativo de tráfego flood-advert (1.16+)\",\"Ferramenta de gravação web\"]",
+      "sourceHash": "sha256:b40ebfa18391613a9ebb86dc1d7bf8e6126434031883fff89218c89dfbaaf6b6",
+      "generatedAt": "2026-06-27T14:21:45.935Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4357,
+      "promptTokens": 179,
+      "completionTokens": 1231
+    }
+  }
+}

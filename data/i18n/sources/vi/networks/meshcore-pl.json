@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-pl",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng LoRa MeshCore Ba Lan đang xây dựng mạng lưới mesh khẩn cấp/ngoại tuyến toàn quốc trên cấu hình sẵn EU/UK Narrow, được điều phối thông qua lorameshcore.pl cùng các hướng dẫn cài đặt, hướng dẫn bộ lặp, tài liệu bộ phân tích và liên kết cộng đồng.",
+      "sourceHash": "sha256:05e360532fbfed50f9223ee69be6ada19cec17a0cd7e6088f818ebe961811d85",
+      "generatedAt": "2026-06-27T16:52:58.979Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9567,
+      "promptTokens": 173,
+      "completionTokens": 1344
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-wm1110",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Módulo de posicionamento por fusão que combina o LR1110 com o nRF52840 para IoT de longo alcance, BLE e varredura passiva de Wi-Fi/GNSS. Módulo compacto de 20×20 mm sem revestimento, projetado para ser o núcleo de rádio em projetos de rastreamento e geolocalização, sem ecrã ou invólucro.",
+      "sourceHash": "sha256:fa96a4f4fc45055a154333ef7a37256fa2e493ba8e74a626f4e455242a09e2f9",
+      "generatedAt": "2026-06-27T14:21:13.195Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4447,
+      "promptTokens": 185,
+      "completionTokens": 1311
+    }
+  }
+}

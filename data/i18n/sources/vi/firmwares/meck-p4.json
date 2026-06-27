@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meck-p4",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Phiên bản port Meck (một nhánh rẽ của MeshCore) sang LilyGo T-Display P4, chạy trên vi điều khiển chính ESP32-P4. Chip ESP32-C6 tích hợp sẵn cung cấp kết nối WiFi đồng hành cho ứng dụng MeshCore; hiện chưa hỗ trợ BLE. Giao diện cảm ứng hoàn chỉnh với bàn phím ảo, nhắn tin theo kênh, quản trị repeater, theo dõi tuyến đường, quảng bá vị trí và các kênh riêng tư.",
+      "sourceHash": "sha256:f7e2233727f31efc01469e501b2791d8ebe90a19dc9ffa0311600dc43a9d33fd",
+      "generatedAt": "2026-06-27T15:47:59.870Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6988,
+      "promptTokens": 207,
+      "completionTokens": 1304
+    },
+    "features": {
+      "value": "[\"MCU chính ESP32-P4 kèm ESP32-C6 hỗ trợ WiFi\",\"Giao diện cảm ứng tích hợp bàn phím ảo\",\"Tiết kiệm điện năng khi tắt màn hình\",\"Tin nhắn theo kênh và tin nhắn riêng\",\"Quản trị bộ tiếp sóng và máy chủ phòng\",\"Truy vết đường đi và xem lộ trình\",\"Quảng bá vị trí và chia sẻ vị trí\",\"Kênh riêng tư\",\"Trình chỉnh sửa lộ trình theo từng liên hệ\",\"Phạm vi khu vực\"]",
+      "sourceHash": "sha256:f81f9509ac8efbb676b7b531d62cdd7bd78579a2f9360fd3cfa79ad41c4af5b8",
+      "generatedAt": "2026-06-27T15:48:15.439Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15568,
+      "promptTokens": 191,
+      "completionTokens": 1492
+    }
+  }
+}

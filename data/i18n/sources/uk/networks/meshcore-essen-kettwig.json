@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-essen-kettwig",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Публічна автономна мережа MeshCore з центром у Essen-Kettwig, яка розширюється у напрямку Ruhrlandklinik та аеропорту Mülheim. Спільнота керує стійкою локальною мережею зв'язку та розповсюджує регіональні оповіщення з цивільного захисту через MeshCore.",
+      "sourceHash": "sha256:4628b8b3bd391566b60054556334eec58bde886ecaca30c3d3b36df578caf7fe",
+      "generatedAt": "2026-06-27T16:53:18.331Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9775,
+      "promptTokens": 173,
+      "completionTokens": 1107
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshy",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Klient MeshCore založený na GTK 4/libadwaita pro Linux a macOS. Nabízí šifrované zprávy, kontakty, mapy, sledování zařízení, konfiguraci, podporu QR kódů a sériové připojení přes Bluetooth nebo USB.",
+      "sourceHash": "sha256:c460876277520fde366eca6cb22a26d0c8c29226c330511a700c978edce586c3",
+      "generatedAt": "2026-06-27T11:46:54.973Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12994,
+      "promptTokens": 166,
+      "completionTokens": 1513
+    },
+    "screenshots.screenshot1.png.caption": {
+      "value": "Zasílání zpráv v kanálech",
+      "sourceHash": "sha256:84f950f864adf2f9f4b23cc83849a9df21f105ae261c51e0929296490dc3f6d1",
+      "generatedAt": "2026-06-27T11:46:59.860Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4884,
+      "promptTokens": 131,
+      "completionTokens": 509
+    },
+    "screenshots.screenshot2.png.caption": {
+      "value": "Kontakty a statistiky zařízení",
+      "sourceHash": "sha256:e55af28dd1ae67001c5a9d7c4b1521a8bc27844ffad593b18d65b5be750c9a90",
+      "generatedAt": "2026-06-27T11:47:04.466Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4606,
+      "promptTokens": 133,
+      "completionTokens": 351
+    },
+    "screenshots.screenshot3.png.caption": {
+      "value": "Nastavení a konfigurace rádia",
+      "sourceHash": "sha256:95063b72ae78c978c40770078e1869dfa1e4c3ceea0706600c69f45e3ff4a732",
+      "generatedAt": "2026-06-27T11:47:10.395Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5929,
+      "promptTokens": 133,
+      "completionTokens": 468
+    },
+    "screenshots.screenshot4.png.caption": {
+      "value": "Zobrazení mapy s uzly mesh sítě",
+      "sourceHash": "sha256:8f71f09e10d2f092bcd18b13c8d43b7c210538c44f26395d784a566d870cf399",
+      "generatedAt": "2026-06-27T11:47:16.845Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6449,
+      "promptTokens": 134,
+      "completionTokens": 644
+    },
+    "verificationNotes.popularity-fields-are-codeberg-repository-signal": {
+      "value": "Pole popularity představují signály repozitáře Codeberg; latestReleaseDownloads počítá stažení zdrojových archivů Codeberg pro tag 26.06.",
+      "sourceHash": "sha256:e159deb7297f36c4a95505e16445c14b8334a2fe1ba2442e8c4bf39e2cf27740",
+      "generatedAt": "2026-06-27T11:47:23.701Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6856,
+      "promptTokens": 154,
+      "completionTokens": 522
+    },
+    "verificationNotes.readme-describes-the-app-as-fairly-feature-compl": {
+      "value": "README uvádí, že aplikace je poměrně funkčně kompletní a stabilní, ale stále se aktivně vyvíjí.",
+      "sourceHash": "sha256:acd9ab88e89514420de58a84ccbb2aea342747cbf3c6646351fb5872c8dc5c85",
+      "generatedAt": "2026-06-27T11:47:35.487Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11786,
+      "promptTokens": 145,
+      "completionTokens": 945
+    },
+    "tags": {
+      "value": "[\"gtk\",\"libadwaita\",\"flatpak\",\"desktop\"]",
+      "sourceHash": "sha256:b729815a58879f0b863d417836fb3729d6241af4add5c3307cacb1af937fc981",
+      "generatedAt": "2026-06-27T13:47:22.368Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5582,
+      "promptTokens": 142,
+      "completionTokens": 227
+    }
+  }
+}

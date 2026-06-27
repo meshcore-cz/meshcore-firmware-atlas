@@ -1,0 +1,15 @@
+{
+  "resource": "network/northmesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Živá mapa mesh sítí MeshCore a LoRa pro severní Anglii a Spojené království, která sleduje opakovače, aktivitu paketů, RF pokrytí a uzly připojené přes MQTT.",
+      "sourceHash": "sha256:a2e34142f3c0d262c757f50c6bb88097b671729dc0b1ced058ce4f1c368a85c6",
+      "generatedAt": "2026-06-27T12:09:54.199Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9286,
+      "promptTokens": 160,
+      "completionTokens": 858
+    }
+  }
+}

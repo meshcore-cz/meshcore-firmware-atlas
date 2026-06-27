@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-si",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Національна мережа MeshCore у Словенії, яка працює на стандартному вузькому пресеті EU/UK з картою CoreScope у реальному часі та регіональним покриттям ретрансляторів.",
+      "sourceHash": "sha256:322235cd3b5d559cb88597bc39b53f823daef5fc285511e31a1da1c5ec7ea4d3",
+      "generatedAt": "2026-06-27T16:58:57.638Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15023,
+      "promptTokens": 157,
+      "completionTokens": 690
+    }
+  }
+}

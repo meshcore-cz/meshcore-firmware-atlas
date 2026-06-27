@@ -1,0 +1,12 @@
+{
+  "resource": "device/rpi-picow",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Raspberry Pi Pico 2040 spárovaná s deskou WaveShare SX1262 LoRa pro jednoduché experimentování s MeshCore a Meshtastic. Sada klade důraz na flashování přes USB a kompaktní rozměry RP2040 na úkor integrovaného displeje nebo GNSS hardwaru.",
+      "sourceHash": "sha256:b24b629380034efce554927b8a136e1b7531a1f2cc42c68a495397309b9a9f98",
+      "generatedAt": "2026-06-27T10:56:29.756Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

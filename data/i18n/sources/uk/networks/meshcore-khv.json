@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-khv",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore у районі Хабаровська на російському Далекому Сході, яку обслуговує локально розміщений публічний аналізатор CoreScope.",
+      "sourceHash": "sha256:92cadf89a4e5df359ab08a2667183d7ddcbf264e03eb874199c43d2037361402",
+      "generatedAt": "2026-06-27T16:53:24.924Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6593,
+      "promptTokens": 153,
+      "completionTokens": 783
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t3-s3-sx127x",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento ESP32-S3 + SX1276 LoRa compacta com display OLED SSD1306, slot para micro-SD e conector de expansão Qwiic. Possui USB-C, conector de bateria PH2.0 e entrada solar opcional (V1.3). Sem BMS integrado — utilize uma célula Li-ion protegida.",
+      "sourceHash": "sha256:94ec673ed9061cb2baeb90f20149d7cc21fdf26b4972ec4004faa833986c7ff6",
+      "generatedAt": "2026-06-27T14:15:40.141Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15840,
+      "promptTokens": 192,
+      "completionTokens": 924
+    }
+  }
+}

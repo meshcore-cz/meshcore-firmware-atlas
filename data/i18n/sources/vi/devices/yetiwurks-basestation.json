@@ -1,0 +1,15 @@
+{
+  "resource": "device/yetiwurks-basestation",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Trạm gốc và bộ lặp tín hiệu ngoài trời sử dụng nền tảng RAK WisBlock trong vỏ bảo vệ IP65, được thiết kế quanh bộ kit khởi đầu RAK19003 + RAK4631 kèm ăng-ten ngoài, cổng chuyển tiếp USB-C và đầu vào năng lượng mặt trời. Thiết bị sử dụng viên pin 18650 có thể tháo rời thay cho khối pin tích hợp.",
+      "sourceHash": "sha256:3adb3696e48f340eee246f16029b2a800bfc47df058f007ef97b75c470d3ef7c",
+      "generatedAt": "2026-06-27T15:44:05.639Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7591,
+      "promptTokens": 187,
+      "completionTokens": 1498
+    }
+  }
+}

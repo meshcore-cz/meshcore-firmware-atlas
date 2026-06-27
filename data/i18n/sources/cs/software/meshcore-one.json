@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-one",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nativní klient MeshCore a síťový nástroj pro iPhone, iPad a počítače Mac s čipy Apple Silicon, který kombinuje zasílání zpráv s offline mapami, trasováním trasy, analýzou přímé viditelnosti RF signálu, zachytáváním paketů a vzdálenou správou uzlů.",
+      "sourceHash": "sha256:0ad0f9e672db68d0c110c07e2cceb64d4c693bf406cfd2885aead1a4e5f26b20",
+      "generatedAt": "2026-06-27T11:34:45.618Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7988,
+      "promptTokens": 169,
+      "completionTokens": 923
+    },
+    "verificationNotes.requires-ios-or-ipados-18-or-an-apple-silicon-ma": {
+      "value": "Vyžaduje iOS nebo iPadOS 18, případně Mac s čipem Apple Silicon.",
+      "sourceHash": "sha256:6d4b3fd98f6902d22f93ea5ec5983286b0fee9dc24fa4f8bb3051d318fd80ce9",
+      "generatedAt": "2026-06-27T11:34:50.155Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4537,
+      "promptTokens": 142,
+      "completionTokens": 453
+    },
+    "verificationNotes.github-releases-provide-unsigned-ipa-files-testf": {
+      "value": "Na GitHubu jsou k dispozici nepodepsané soubory IPA; TestFlight je jednodušší způsob instalace betaverze.",
+      "sourceHash": "sha256:41c2973b8f2af1a02f0e6b5ef179a9c5dadde8e4619242b6acaf4e2a7c3e8369",
+      "generatedAt": "2026-06-27T11:35:01.074Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10919,
+      "promptTokens": 145,
+      "completionTokens": 894
+    },
+    "tags": {
+      "value": "[\"apple\",\"nativní\",\"offline\",\"rf-analýza\",\"vzdálený-terminál\"]",
+      "sourceHash": "sha256:866ffd166b164a44156a48135561a0bc8c76b844a8050c6e24abc297310d1b88",
+      "generatedAt": "2026-06-27T13:42:21.790Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10001,
+      "promptTokens": 142,
+      "completionTokens": 742
+    }
+  }
+}

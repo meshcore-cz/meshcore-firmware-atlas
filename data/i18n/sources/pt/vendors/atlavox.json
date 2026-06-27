@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/atlavox",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fabricante e revendedor de hardware Meshtastic e MeshCore sediado em Rhode Island, incluindo montagens personalizadas de nós portáteis e solares RAK WisBlock.",
+      "sourceHash": "sha256:0082a3034111ddc0e87a3941aebd5b73f271087be72df0bb5b687a0b47b5e2d1",
+      "generatedAt": "2026-06-27T14:44:21.904Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3706,
+      "promptTokens": 157,
+      "completionTokens": 946
+    }
+  }
+}

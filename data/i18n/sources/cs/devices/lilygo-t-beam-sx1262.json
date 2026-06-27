@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-t-beam-sx1262",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Tracker ESP32 + SX1262 LoRa s integrovaným modulem u-blox GNSS, displejem SSD1306 OLED a řízením napájení AXP2101. Rozhraní USB-C s můstkem CH9102; externí antény IPEX pro LoRa a Wi-Fi. Běžně se využívá pro klientské uzly a opakovače v sítích Meshtastic/MeshCore.",
+      "sourceHash": "sha256:e0dae925e5050e2715d59beb19a641589e092e28474d972062b2adf7b70ac8a3",
+      "generatedAt": "2026-06-27T10:49:51.789Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

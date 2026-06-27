@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv-sosprz",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Fork uživatelského rozhraní MeshCore pro M5Stack Cardputer ADV, distribuovaný v binární podobě a dodávaný jako obrazy ESP32-S3 připravené k flashování pro jeho rozhraní s klávesnicí a displejem.",
+      "sourceHash": "sha256:35605e5737a6b4e481f685f2fcd88f585708f6d3e694ef7efe08ade51f27e299",
+      "generatedAt": "2026-06-27T11:16:59.774Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6767,
+      "promptTokens": 161,
+      "completionTokens": 756
+    },
+    "verificationNotes.the-repository-contains-release-binaries-and-fla": {
+      "value": "Repozitář obsahuje vydané binární soubory a poznámky k flashování, neobsahuje však zdrojový kód firmwaru ani licenci.",
+      "sourceHash": "sha256:11184b73346e0b9944f92bb8bcb234803f12cba1f7d171dcdf67e104a2dedf92",
+      "generatedAt": "2026-06-27T11:17:06.324Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6534,
+      "promptTokens": 144,
+      "completionTokens": 880
+    },
+    "features": {
+      "value": "[\"Uživatelské rozhraní klávesnice a displeje Cardputer ADV\",\"Předkompilované obrazy firmwaru ESP32-S3\"]",
+      "sourceHash": "sha256:dc03637703f47a5ab83a7419fcb6c6f567b214bb35f31171b3c5eb4cccd53d4e",
+      "generatedAt": "2026-06-27T12:29:21.930Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8476,
+      "promptTokens": 147,
+      "completionTokens": 497
+    }
+  }
+}

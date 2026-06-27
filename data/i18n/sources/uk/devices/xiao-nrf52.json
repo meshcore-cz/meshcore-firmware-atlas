@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-nrf52",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата nRF52840 розміром з великий палець, що слугує основною платою у наборі Seeed XIAO nRF52840 + Wio-SX1262. Базова плата забезпечує підтримку BLE, прошивання через USB та компактний форм-фактор, зручний для носимих пристроїв; зв'язок LoRa забезпечується окремим модулем Wio-SX1262.",
+      "sourceHash": "sha256:fe6a77fdb726ca93c513d09d614a7dfa051d5f448c85ccefad5e6a690f84d09b",
+      "generatedAt": "2026-06-27T15:15:51.466Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13730,
+      "promptTokens": 193,
+      "completionTokens": 1067
+    }
+  }
+}

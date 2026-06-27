@@ -1,0 +1,15 @@
+{
+  "resource": "network/inland-nw-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Dobrovolnicky provozovaná síť MeshCore pokrývající Spokane, Coeur d'Alene, oblast Palouse a Lewiston/Clarkston, s dalším rozšiřováním napříč východním Washingtonem a Idahem. Komunita se zaměřuje na odolnou komunikaci nezávislou na síti pomocí nezávisle napájených uzlů LoRa.",
+      "sourceHash": "sha256:a5f7afb43e9561e670eaaca715a32e8e334e50a7eabd48f80418d361ace86ec0",
+      "generatedAt": "2026-06-27T12:05:55.322Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8694,
+      "promptTokens": 179,
+      "completionTokens": 1350
+    }
+  }
+}

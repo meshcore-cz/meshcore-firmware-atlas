@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-paper",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vývojová deska ESP32-S3FN8 + SX1262 s 2,13\" černobílým E-Ink displejem. Napájení a programování přes USB-C, bateriový konektor SH1.25; kompatibilní s Meshtastic/MeshCore.",
+      "sourceHash": "sha256:cf327931bb20a7a91c8a656b8d4024c9debf799e76d797ab56b45f339ecac4df",
+      "generatedAt": "2026-06-27T10:48:28.486Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

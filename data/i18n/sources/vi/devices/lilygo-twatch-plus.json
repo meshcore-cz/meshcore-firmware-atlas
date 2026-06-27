@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-twatch-plus",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Đồng hồ thông minh ESP32-S3 tích hợp SX1262 LoRa, màn hình cảm ứng IPS 1.3-inch và GNSS tích hợp sẵn (u-blox MIA-M10Q hoặc Quectel LS550G). Đi kèm quản lý nguồn AXP2101, cảm biến gia tốc BMA423, bộ điều khiển rung, micro, loa và bộ phát hồng ngoại.",
+      "sourceHash": "sha256:d3ea6893229da682763fd4aee64d2bc072233917e24037ddfac845bf153cc12d",
+      "generatedAt": "2026-06-27T15:38:14.573Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8972,
+      "promptTokens": 197,
+      "completionTokens": 1345
+    }
+  }
+}

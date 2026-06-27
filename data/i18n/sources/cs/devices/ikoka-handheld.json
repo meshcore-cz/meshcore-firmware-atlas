@@ -1,0 +1,12 @@
+{
+  "resource": "device/ikoka-handheld",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Ruční deska pro mesh sítě s dlouhým dosahem založená na XIAO nRF52840 a modulu EBYTE E22 LoRa, s 0,96palcovým OLED displejem a volitelným nabíjením lithiové baterie. Rozsah funkcí se mění podle výběru součástek, ale konstrukce je určena pro kompaktní sestavení doplňkových zařízení a opakovačů.",
+      "sourceHash": "sha256:eb3fbc91235c9f36a93b9e768227472ff353758c46fb3ff0539096db22a4103e",
+      "generatedAt": "2026-06-27T10:49:09.732Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

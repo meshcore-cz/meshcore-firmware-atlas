@@ -1,0 +1,15 @@
+{
+  "resource": "network/nsw-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới mesh và cơ sở kiến thức do cộng đồng duy trì tại Sydney và New South Wales, hiện khuyến nghị MeshCore cho hầu hết người tham gia, đồng thời xuất bản các hồ sơ vô tuyến Úc, bản đồ, người quan sát, bộ lặp tín hiệu và kênh điều phối Discord.",
+      "sourceHash": "sha256:1bead559f415745063ee06738ca0abda0d6e4e1b2e01a1a48d180112852b6c82",
+      "generatedAt": "2026-06-27T16:52:36.628Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8323,
+      "promptTokens": 169,
+      "completionTokens": 1234
+    }
+  }
+}

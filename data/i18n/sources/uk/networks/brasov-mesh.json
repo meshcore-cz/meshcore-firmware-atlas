@@ -1,0 +1,15 @@
+{
+  "resource": "network/brasov-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота мережі MeshCore у Брашові (Румунія), що працює на вузькосмуговому налаштуванні EU/UK на частоті 869.618 МГц. Зручна для новачків група, де публікуються апаратні посібники, карти покриття та надається підтримка румунам, які роблять перші кроки з MeshCore.",
+      "sourceHash": "sha256:8265651024371e1acfe8a8d60d6a6c01c2caa7cce70784c8304547399269354d",
+      "generatedAt": "2026-06-27T16:47:21.157Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15924,
+      "promptTokens": 176,
+      "completionTokens": 1260
+    }
+  }
+}

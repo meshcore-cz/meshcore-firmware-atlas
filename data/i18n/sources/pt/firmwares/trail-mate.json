@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/trail-mate",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware offline-first para dispositivos portáteis focado em navegação e comunicação LoRa, com rotas de pacotes nativas para MeshCore e Meshtastic, mapas, coordenação de equipa e ferramentas de dispositivo orientadas para o trabalho de campo.",
+      "sourceHash": "sha256:8cb098405113beaac49b75d1f6f0c4b36bb66db5b01b843bc955732190a1b632",
+      "generatedAt": "2026-06-27T14:27:04.102Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3192,
+      "promptTokens": 160,
+      "completionTokens": 831
+    },
+    "features": {
+      "value": "[\"Mensagens via MeshCore e Meshtastic\",\"Mapas GPS e gravação de trilhas\",\"Localização da equipe e troca de pontos de passagem\",\"Transmissão via USB host-link\"]",
+      "sourceHash": "sha256:4f5cfc1a9dd8e78e478ac5e05d7edb46b058c9998cfcf445be37ea278400e898",
+      "generatedAt": "2026-06-27T14:27:09.257Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5154,
+      "promptTokens": 155,
+      "completionTokens": 1388
+    }
+  }
+}

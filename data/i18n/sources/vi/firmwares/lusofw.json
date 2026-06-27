@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/lusofw",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản phân phối firmware MeshCore cộng đồng dành cho cộng đồng Bồ Đào Nha, đi kèm cài đặt vô tuyến mặc định theo chuẩn Bồ Đào Nha, thực thi duty-cycle, đồng bộ thời gian mạng, kiểm soát flood-advert cùng các bản dựng repeater và bridge được chọn lọc.",
+      "sourceHash": "sha256:b873964349f2581796e0c7ff241ec4ad5c5fc9ddd3a9047b2835834169cea04d",
+      "generatedAt": "2026-06-27T15:49:00.050Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6734,
+      "promptTokens": 168,
+      "completionTokens": 1113
+    },
+    "deviceNotes.heltec-v4-exp": {
+      "value": "Sử dụng mục tiêu phát hành Heltec V4 TFT.",
+      "sourceHash": "sha256:c077efae98137d562d06266b165e29a58561ae42b20991de84f816dd2883588c",
+      "generatedAt": "2026-06-27T15:49:02.628Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2577,
+      "promptTokens": 139,
+      "completionTokens": 394
+    },
+    "features": {
+      "value": "[\"Cài đặt mặc định cho vô tuyến và khu vực Bồ Đào Nha\",\"Thực thi chu kỳ làm việc\",\"Đồng bộ thời gian mạng\",\"Lên lịch và giảm thiểu quảng bá tràn\",\"Bản dựng cầu nối bộ lặp ESP-NOW và RS-232\",\"Điều khiển tăng cường độ lợi thu cho SX126x\",\"Các bản phát hành được chọn lọc, hỗ trợ nạp qua trình duyệt\"]",
+      "sourceHash": "sha256:411bbf90ea0a69cdedbabf8cfccd2125d34dbd6e257dd40a434973ee95468b1f",
+      "generatedAt": "2026-06-27T15:49:17.499Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14870,
+      "promptTokens": 183,
+      "completionTokens": 1441
+    },
+    "verificationNotes.release-assets-include-sha-1-checksum-files": {
+      "value": "Các tệp đính kèm bản phát hành bao gồm tệp tổng kiểm SHA-1.",
+      "sourceHash": "sha256:09bd82bc037f2d20056e605e66c08374dae00ce4739355bdccfc06689f00f48b",
+      "generatedAt": "2026-06-27T15:49:21.759Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4259,
+      "promptTokens": 138,
+      "completionTokens": 738
+    },
+    "verificationNotes.published-releases-are-curated-repeater-and-repe": {
+      "value": "Các bản phát hành đã công bố là các bản dựng repeater và repeater-bridge được chọn lọc.",
+      "sourceHash": "sha256:f7b5fdc052a23c7cab873f463ef7759847ee9a032757aa4d2ff041d7b700aff3",
+      "generatedAt": "2026-06-27T15:49:24.807Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3048,
+      "promptTokens": 142,
+      "completionTokens": 577
+    }
+  }
+}

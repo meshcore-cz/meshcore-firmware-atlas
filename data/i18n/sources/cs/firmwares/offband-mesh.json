@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/offband-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Fork MeshCore pro vylepšení a optimalizaci firmwaru napříč rolemi. Aktivní role zahrnují companion/observer s publikováním pozorování přes WiFi+MQTT, migraci na NimBLE, webové rozhraní a opakovač s přemostěním MQTT do Mosquitto, burst-WiFi telemetrií a laděním haldy a spotřeby.",
+      "sourceHash": "sha256:ba1c741372827b5f3ba1d0e6e24982cc9cae4e4d5f49282b66413916d17d2a9b",
+      "generatedAt": "2026-06-27T11:20:48.894Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13486,
+      "promptTokens": 186,
+      "completionTokens": 1229
+    },
+    "features": {
+      "value": "[\"Doprovodná aplikace/sledovač s publikováním dat přes WiFi+MQTT\",\"Migrace na NimBLE (z Bluedroidu)\",\"Záznam pádů (CrashLog) a diagnostika odolnosti vůči restartům\",\"Propojení MQTT a Mosquitto (repeater)\",\"Telemetrie v režimu Burst-WiFi\",\"Optimalizace haldy a spotřeby pro ESP32-S3\",\"Webové rozhraní\"]",
+      "sourceHash": "sha256:55f2b45a824d3d98659d1ebe4d1baf1be089ee3ab2bd730ed2b136f6fd94c75b",
+      "generatedAt": "2026-06-27T12:32:37.947Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 34359,
+      "promptTokens": 195,
+      "completionTokens": 1676
+    }
+  }
+}

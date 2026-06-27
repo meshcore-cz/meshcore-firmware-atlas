@@ -1,0 +1,12 @@
+{
+  "resource": "device/atlavox-beacon",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Venkovní solární uzel Meshtastic/MeshCore založený na RAK19007 + RAK4631, vybavený 5 W panelem, LiPo baterií 5000 mAh a krytím IP67. Je určen pro samostatné nasazení opakovačů a umožňuje párování přes Bluetooth i voděodolný servisní přístup přes USB-C.",
+      "sourceHash": "sha256:fff8a8024c132e309739ea063a5e03692a4aeab3a8558f65638442b230cf14e6",
+      "generatedAt": "2026-06-27T10:43:20.711Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

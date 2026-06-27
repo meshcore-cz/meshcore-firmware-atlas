@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-solar-p1",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút hoặc bộ lặp Meshtastic/MeshCore tiết kiệm, chạy bằng năng lượng mặt trời để triển khai ngoài trời. Tích hợp XIAO nRF52840 Plus và Wio-SX1262 với tấm pin năng lượng mặt trời 5W tích hợp sẵn và vỏ chuẩn IPX6. Có bốn khe cắm pin 18650 (không bao gồm pin) và mô-đun GPS XIAO L76K tùy chọn; thiết bị không tích hợp sẵn GPS hay pin.",
+      "sourceHash": "sha256:0862e4405f5d508f3aeb4392889f0b52f9a771cf249a6741826d152c4720c9ab",
+      "generatedAt": "2026-06-27T15:40:53.718Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7469,
+      "promptTokens": 210,
+      "completionTokens": 1203
+    }
+  }
+}

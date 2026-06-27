@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/offband-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản phân nhánh của MeshCore dành cho việc cải tiến và tối ưu hóa firmware đa vai trò. Các vai trò đang hoạt động bao gồm companion/observer với tính năng xuất bản dữ liệu quan sát qua WiFi+MQTT, chuyển đổi sang NimBLE, giao diện web, và bộ lặp với cầu nối MQTT-to-Mosquitto, truyền dữ liệu từ xa burst-WiFi, tinh chỉnh heap và điện năng.",
+      "sourceHash": "sha256:ba1c741372827b5f3ba1d0e6e24982cc9cae4e4d5f49282b66413916d17d2a9b",
+      "generatedAt": "2026-06-27T15:53:18.309Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7732,
+      "promptTokens": 186,
+      "completionTokens": 1544
+    },
+    "features": {
+      "value": "[\"Ứng dụng đồng hành/trình quan sát xuất bản dữ liệu quan sát qua WiFi+MQTT\",\"Di chuyển sang NimBLE (rời bỏ Bluedroid)\",\"Chẩn đoán CrashLog / khả năng chịu lỗi khi khởi động\",\"Cầu nối MQTT sang Mosquitto (bộ lặp)\",\"Truyền dữ liệu telemetry qua WiFi dạng burst\",\"Tối ưu hóa bộ nhớ heap và mức tiêu thụ điện năng cho ESP32-S3\",\"Giao diện Web\"]",
+      "sourceHash": "sha256:55f2b45a824d3d98659d1ebe4d1baf1be089ee3ab2bd730ed2b136f6fd94c75b",
+      "generatedAt": "2026-06-27T15:53:34.123Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15814,
+      "promptTokens": 195,
+      "completionTokens": 1788
+    }
+  }
+}

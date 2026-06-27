@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-is",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade islandesa de MeshCore que constrói redes de comunicação mesh off-grid em toda a Islândia.",
+      "sourceHash": "sha256:922bf562062900157eadf40e5d5e9fd7ebc9480f040ac663cad9a76f23dc1e4b",
+      "generatedAt": "2026-06-27T14:46:46.079Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4025,
+      "promptTokens": 143,
+      "completionTokens": 1013
+    }
+  }
+}

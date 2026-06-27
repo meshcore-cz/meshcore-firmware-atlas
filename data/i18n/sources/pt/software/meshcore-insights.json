@@ -1,0 +1,114 @@
+{
+  "resource": "software/meshcore-insights",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Painel do MeshCore para desktop com conexões USB e BLE, mapas em tempo real, mensagens, análise de nós e telemetria, blocos de mapas offline, gerenciamento remoto e um console de eventos brutos.",
+      "sourceHash": "sha256:8c2dc40eb15ae92a4c41e57accfac42d8bc1fd50121d6081143dca76f9cff7a3",
+      "generatedAt": "2026-06-27T14:32:00.698Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3850,
+      "promptTokens": 161,
+      "completionTokens": 1017
+    },
+    "screenshots.screenshot-1.png.caption": {
+      "value": "Mapa de nós em tempo real e lista de nós da rede mesh pesquisável",
+      "sourceHash": "sha256:9cd8250a89cc4279dd0839b28732986ee42a53fc862e23e1ed865b6d1dd241c3",
+      "generatedAt": "2026-06-27T14:32:01.464Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 765,
+      "promptTokens": 137,
+      "completionTokens": 18
+    },
+    "screenshots.screenshot-2.png.caption": {
+      "value": "Menu de contexto do nó com ações de mensagens e análise.",
+      "sourceHash": "sha256:3ce068b83cb77ec1e5de6018da0de4475caf6f278de2db25ec36b579fe29270b",
+      "generatedAt": "2026-06-27T14:32:03.575Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2111,
+      "promptTokens": 137,
+      "completionTokens": 503
+    },
+    "screenshots.screenshot-3.png.caption": {
+      "value": "Comunicação por canais com visualização do caminho roteado",
+      "sourceHash": "sha256:a8496be5ef2a5d76fa196af94a5046c010ad4542e24691ef27c895ee20d2f057",
+      "generatedAt": "2026-06-27T14:32:06.172Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2597,
+      "promptTokens": 135,
+      "completionTokens": 581
+    },
+    "screenshots.screenshot-4.png.caption": {
+      "value": "Pop-up do mapa de contato e linhas de caminho da malha",
+      "sourceHash": "sha256:55a0565f6a40888edaf63885ecc2c4b50fcd0ed7938b3d7a5f52882eccf77940",
+      "generatedAt": "2026-06-27T14:32:08.975Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2803,
+      "promptTokens": 136,
+      "completionTokens": 630
+    },
+    "screenshots.screenshot-5.png.caption": {
+      "value": "Ferramenta de download de blocos de mapa offline",
+      "sourceHash": "sha256:9f8b7dc8d47608b23a955d5877a6a0f66bd75cb815e93651f1be0f26a2cbdac8",
+      "generatedAt": "2026-06-27T14:33:40.073Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 91112,
+      "promptTokens": 133,
+      "completionTokens": 38249
+    },
+    "screenshots.screenshot-6.png.caption": {
+      "value": "Ferramentas de estado dos nós, telemetria e análise",
+      "sourceHash": "sha256:2b4ff8525cc4e434c8ba0cd64f914e9f43bf0d6828fd4c19be3b3f842345e874",
+      "generatedAt": "2026-06-27T14:33:44.052Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3979,
+      "promptTokens": 136,
+      "completionTokens": 993
+    },
+    "screenshots.screenshot-7.png.caption": {
+      "value": "Gestão de nós remotos e respostas a comandos",
+      "sourceHash": "sha256:68ab47d4ae7727b0a4212b44c1b1e0214a7328efa86f0eea53da68f40d471c80",
+      "generatedAt": "2026-06-27T14:33:44.680Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 628,
+      "promptTokens": 135,
+      "completionTokens": 16
+    },
+    "screenshots.screenshot-8.png.caption": {
+      "value": "Console de eventos não processados do MeshCore",
+      "sourceHash": "sha256:7802c399265233b2adcbd089ba501c6d11db4107343404508a900e8e48adbedb",
+      "generatedAt": "2026-06-27T14:33:47.164Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2483,
+      "promptTokens": 134,
+      "completionTokens": 578
+    },
+    "tags": {
+      "value": "[\"desktop\",\"mapas offline\",\"gestão remota\",\"análise de dados\"]",
+      "sourceHash": "sha256:a2c092945d4cbc72e1f4c1850135a84d87a2303ad1790b75f1b5aad911c1cd35",
+      "generatedAt": "2026-06-27T14:33:50.569Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3405,
+      "promptTokens": 141,
+      "completionTokens": 831
+    },
+    "verificationNotes.the-compiled-demo-runs-for-ten-minutes-the-proje": {
+      "value": "A demonstração compilada dura dez minutos. O projeto informa que está disponível um código de desbloqueio gratuito.",
+      "sourceHash": "sha256:d1d6191a14c00d54d83c0aa99952905ad4701117b46143c5d253316853d789f6",
+      "generatedAt": "2026-06-27T14:33:53.694Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3125,
+      "promptTokens": 148,
+      "completionTokens": 780
+    },
+    "verificationNotes.a-dedicated-user-manual-is-bundled-inside-the-co": {
+      "value": "Um manual do utilizador dedicado está incluído na versão compilada, em vez de ser publicado online separadamente.",
+      "sourceHash": "sha256:54602b83c34e38f75c7547ccb764c7e18151019d37e0cee005a920c52f04cd0d",
+      "generatedAt": "2026-06-27T14:33:57.161Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3466,
+      "promptTokens": 145,
+      "completionTokens": 936
+    }
+  }
+}

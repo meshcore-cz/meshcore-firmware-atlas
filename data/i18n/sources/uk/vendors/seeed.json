@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/seeed",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компанія-розробник апаратних платформ, якій належать продуктові лінійки XIAO, Wio та SenseCAP LoRa.",
+      "sourceHash": "sha256:4b333ad52a8ce3e55a44f0dfc298b907549cea207ac623b0bb525768c6ec0ef5",
+      "generatedAt": "2026-06-27T16:45:36.714Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9423,
+      "promptTokens": 148,
+      "completionTokens": 1148
+    }
+  }
+}

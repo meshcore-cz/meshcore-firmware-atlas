@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/taptap",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fork do MeshCore para pequenos dispositivos no estilo de rastreadores, que adiciona mensagens predefinidas acionadas por botão, inserção por código Morse, alertas sonoros e comandos de texto remotos para operação sem ecrã.",
+      "sourceHash": "sha256:efbeea6d735bcb40f81a5012dd4fd999f7a3089da3f649e0e6b55bd741b4e500",
+      "generatedAt": "2026-06-27T14:28:03.650Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3398,
+      "promptTokens": 159,
+      "completionTokens": 920
+    },
+    "features": {
+      "value": "[\"Mensagens predefinidas acionadas por botão\", \"Entrada de mensagens em código Morse\", \"Alertas de buzina RTTTL e CW\", \"Comandos de canal remoto\"]",
+      "sourceHash": "sha256:b586165700f3c36f983411588c1550ccbe24a85ea6cc9ace14c41c6a86e88cd3",
+      "generatedAt": "2026-06-27T14:28:06.240Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2590,
+      "promptTokens": 154,
+      "completionTokens": 666
+    }
+  }
+}

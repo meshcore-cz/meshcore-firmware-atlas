@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-tlora-1-6",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vývojová deska ESP32-PICO-D4 + SX1276 LoRa s displejem SSD1306 OLED a slotem pro micro-SD. Konektor USB-C s převodníkem CH9102 a bateriovým konektorem PH2.0. Deska neobsahuje BMS – použijte chráněný Li-ion článek.",
+      "sourceHash": "sha256:d41b34a19c56ab6dc63dc7e01ea210a053e5734bfeca90ba2d9b103376db745c",
+      "generatedAt": "2026-06-27T10:49:41.374Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

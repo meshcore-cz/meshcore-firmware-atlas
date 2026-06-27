@@ -1,0 +1,15 @@
+{
+  "resource": "network/eastmesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Мережа спільноти MeshCore для південного сходу Австралії, що базується у Вікторії та з'єднана через NSW/ACT/Тасманію, підтримує автономний обмін повідомленнями, реагування на надзвичайні ситуації, використання на відкритому повітрі та mesh-інфраструктуру, а також пропонує публічну карту, вікі, Discord, інстанцію CoreScope та збірки прошивки EastMesh.",
+      "sourceHash": "sha256:461392dfa711fb9568eaace5efa7c7a3457b9265e0fcf78fe432f38026d6977d",
+      "generatedAt": "2026-06-27T16:49:27.818Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6633,
+      "promptTokens": 181,
+      "completionTokens": 1302
+    }
+  }
+}

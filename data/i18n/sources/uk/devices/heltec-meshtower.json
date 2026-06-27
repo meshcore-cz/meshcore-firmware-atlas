@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshtower",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Вуличний сонячний ретрансляційний вузол на базі плати Heltec MeshSolar — плата BMS у парі з платою керування BLE + LoRa для довготривалого автономного покриття mesh-мережі. MeshTower першого покоління, на зміну якому прийшов MeshTower V2.",
+      "sourceHash": "sha256:e7cacb5cda67a2a3ff7d648a47a62820141546d944915201407c071fdfcdfb50",
+      "generatedAt": "2026-06-27T14:57:10.423Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4517,
+      "promptTokens": 180,
+      "completionTokens": 1079
+    }
+  }
+}

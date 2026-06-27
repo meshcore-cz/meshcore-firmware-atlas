@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-t3-s3-sx127x",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní vývojová deska ESP32-S3 + SX1276 LoRa s displejem SSD1306 OLED, slotem pro micro-SD a rozšiřujícím konektorem Qwiic. Je vybavena portem USB-C, bateriovým konektorem PH2.0 a volitelným solárním vstupem (V1.3). Deska neobsahuje integrovaný BMS – používejte chráněný Li-ion článek.",
+      "sourceHash": "sha256:94ec673ed9061cb2baeb90f20149d7cc21fdf26b4972ec4004faa833986c7ff6",
+      "generatedAt": "2026-06-27T10:53:01.209Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/trail-mate",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware thiết bị cầm tay ưu tiên ngoại tuyến phục vụ điều hướng và truyền thông LoRa, tích hợp sẵn đường truyền gói tin MeshCore và Meshtastic, kèm theo bản đồ, công cụ điều phối đội nhóm và các công cụ thiết bị chuyên dụng cho hiện trường.",
+      "sourceHash": "sha256:8cb098405113beaac49b75d1f6f0c4b36bb66db5b01b843bc955732190a1b632",
+      "generatedAt": "2026-06-27T15:54:56.451Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11432,
+      "promptTokens": 160,
+      "completionTokens": 933
+    },
+    "features": {
+      "value": "[\"Nhắn tin qua MeshCore và Meshtastic\",\"Bản đồ GPS và ghi lại lộ trình\",\"Vị trí nhóm và trao đổi điểm mốc\",\"Luồng kết nối máy chủ qua USB\"]",
+      "sourceHash": "sha256:4f5cfc1a9dd8e78e478ac5e05d7edb46b058c9998cfcf445be37ea278400e898",
+      "generatedAt": "2026-06-27T15:54:59.891Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3439,
+      "promptTokens": 155,
+      "completionTokens": 624
+    }
+  }
+}

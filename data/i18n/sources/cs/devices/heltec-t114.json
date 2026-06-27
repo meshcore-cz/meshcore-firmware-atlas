@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-t114",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní vývojová deska s nRF52840 a SX1262 pro Meshtastic/MeshCore a LoRaWAN. Volitelný 1,14palcový TFT displej a GNSS modul L76K, konektory pro dvě baterie a solární panel, LoRa anténa IPEX-1 a USB-C. Bez integrované baterie.",
+      "sourceHash": "sha256:d41173b5256216872fd4295334b059d4afa9f73ec7c69fa383afaed144d44767",
+      "generatedAt": "2026-06-27T10:46:47.307Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

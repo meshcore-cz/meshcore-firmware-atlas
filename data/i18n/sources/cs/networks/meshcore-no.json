@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-no",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Norské komunitní dokumentační centrum MeshCore na MeshWiki.no, které sdílí předvolbu EU/UK Narrow pro Norsko na frekvenci 869.618 MHz, pokyny pro využití pásma 869 MHz, poznámky k nastavení opakovačů, návody na sestavení komponent a odkazy na veřejné mapy.",
+      "sourceHash": "sha256:b41cd70344f2a00640471062273175665cd1a625e0bd4ed7b45324423e0370df",
+      "generatedAt": "2026-06-27T12:10:02.607Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8407,
+      "promptTokens": 180,
+      "completionTokens": 1071
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resource": "software/xiao-nrf52-updater",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware autônomo de atualização para as placas Seeed XIAO nRF52840 e RAK4631 que grava pacotes de firmware Nordic Legacy DFU em nós MeshCore nRF52 próximos via Bluetooth, incluindo a manutenção assistida por drones de repetidores de difícil acesso.",
+      "sourceHash": "sha256:de57ad07f5d331fbe8340f40981bc1dc2c71873d8b159ec420a6f5825f3c1d46",
+      "generatedAt": "2026-06-27T14:43:56.239Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3376,
+      "promptTokens": 183,
+      "completionTokens": 927
+    },
+    "tags": {
+      "value": "[\"bluetooth-dfu\",\"nrf52\",\"drone\",\"desassistido\",\"manutenção-em-campo\"]",
+      "sourceHash": "sha256:cebbef8781418c2f01ca2c1707aae51b64f1693905cfee9f928c76574bfbb5b8",
+      "generatedAt": "2026-06-27T14:44:00.842Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4602,
+      "promptTokens": 149,
+      "completionTokens": 1202
+    },
+    "verificationNotes.supports-nordic-legacy-dfu-including-buttonless-": {
+      "value": "Suporta o Nordic Legacy DFU, incluindo a transição sem botão do modo de aplicação.",
+      "sourceHash": "sha256:47a9050f020aeb8da3ac6ab10b41f79350fa1efb6d6b76d9696a1e0f1445b12d",
+      "generatedAt": "2026-06-27T14:44:03.358Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2516,
+      "promptTokens": 144,
+      "completionTokens": 631
+    },
+    "verificationNotes.release-builds-target-seeed-xiao-nrf52840-and-ra": {
+      "value": "As builds de lançamento são direcionadas para o Seeed XIAO nRF52840 e o RAK4631 com flash QSPI RAK15001.",
+      "sourceHash": "sha256:249dfc34dfb30e24b89aa25775ca7127e264ff863ba824572c73beb852baa399",
+      "generatedAt": "2026-06-27T14:44:06.606Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3248,
+      "promptTokens": 157,
+      "completionTokens": 838
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "O repositório não declara uma licença SPDX no momento.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:44:08.434Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1828,
+      "promptTokens": 139,
+      "completionTokens": 433
+    }
+  }
+}

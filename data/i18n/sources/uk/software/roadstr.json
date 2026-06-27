@@ -1,0 +1,60 @@
+{
+  "resource": "software/roadstr",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Децентралізований додаток для повідомлень про дорожні події для Android та веб-версії, що використовує підписані події Nostr, запити geohash та інтеграцію з OsmAnd. Його компактний транспортний формат MeshCore описано, але ще не реалізовано.",
+      "sourceHash": "sha256:eb34d07ca64bc0887975c09b547d38c93a5fb173c67adcfb8195ff00f70acc61",
+      "generatedAt": "2026-06-27T16:36:41.853Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7731,
+      "promptTokens": 170,
+      "completionTokens": 1119
+    },
+    "screenshots.web.png.caption": {
+      "value": "Карта дорожніх подій у браузері",
+      "sourceHash": "sha256:f4b19527b7de259876e1b483e9a13ebb0b3ea1ff4e9f74105586e6267e504967",
+      "generatedAt": "2026-06-27T16:36:55.367Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13514,
+      "promptTokens": 133,
+      "completionTokens": 571
+    },
+    "screenshots.android.png.caption": {
+      "value": "Інтеграція дорожніх подій для Android та OsmAnd",
+      "sourceHash": "sha256:d3be235f51f325cf7192bc9653ae13fd2f4b53a00df4adb6276d737866012ef1",
+      "generatedAt": "2026-06-27T16:37:01.344Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5976,
+      "promptTokens": 137,
+      "completionTokens": 1117
+    },
+    "tags": {
+      "value": "[\"nostr\",\"дорожні-події\",\"osmand\",\"децентралізований\",\"запланований-meshcore\"]",
+      "sourceHash": "sha256:22c076958f730e0d394c502b2e69f1e4285561309918e5bee31221fd695f2122",
+      "generatedAt": "2026-06-27T16:37:08.364Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7020,
+      "promptTokens": 149,
+      "completionTokens": 840
+    },
+    "verificationNotes.current-releases-exchange-events-through-nostr-r": {
+      "value": "Актуальні версії обмінюються подіями через реле Nostr; транспорт MeshCore та міст між mesh-мережею та інтернетом поки що заплановані.",
+      "sourceHash": "sha256:0dcfc7719035f8568f82e38a69c4c1e6bb2a0287c9b7d1b9017b21b818abe88f",
+      "generatedAt": "2026-06-27T16:37:18.718Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10354,
+      "promptTokens": 152,
+      "completionTokens": 1204
+    },
+    "verificationNotes.the-android-application-integrates-with-osmand-f": {
+      "value": "Android-застосунок інтегрується з OsmAnd для відображення маршруту та сповіщень про наближення.",
+      "sourceHash": "sha256:660051f150ead763d1ea83b6e10722b9ebf9f0b3f1a2854f11f50c5662db80fa",
+      "generatedAt": "2026-06-27T16:37:33.008Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14290,
+      "promptTokens": 144,
+      "completionTokens": 501
+    }
+  }
+}

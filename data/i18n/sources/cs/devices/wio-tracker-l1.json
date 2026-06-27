@@ -1,0 +1,12 @@
+{
+  "resource": "device/wio-tracker-l1",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Úsporná vývojová deska Meshtastic/MeshCore s LoRa, L76K GNSS, 1,3palcovým OLED stavovým displejem a 4směrovým joystickem. Podporuje napájení přes USB-C, solární panel a externí Li-ion baterii přes JST konektor. Dodává se pouze deska – bez integrované baterie a krytu.",
+      "sourceHash": "sha256:798cf5312ddfe83e96242a8889c961e42c66753156c75fd1c34e004dc20127ee",
+      "generatedAt": "2026-06-27T10:57:23.466Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

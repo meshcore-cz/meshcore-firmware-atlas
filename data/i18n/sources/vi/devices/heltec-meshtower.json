@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshtower",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút lặp lại năng lượng mặt trời dùng ngoài trời, được phát triển trên bo mạch nền Heltec MeshSolar — kết hợp bo mạch BMS với bo mạch điều khiển BLE + LoRa nhằm tạo vùng phủ mesh ngoài lưới điện, hoạt động bền bỉ. Đây là MeshTower thế hệ đầu tiên, hiện đã được thay thế bằng MeshTower V2.",
+      "sourceHash": "sha256:e7cacb5cda67a2a3ff7d648a47a62820141546d944915201407c071fdfcdfb50",
+      "generatedAt": "2026-06-27T15:33:46.871Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6639,
+      "promptTokens": 180,
+      "completionTokens": 1149
+    }
+  }
+}

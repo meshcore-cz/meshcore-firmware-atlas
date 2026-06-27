@@ -1,4 +1,5 @@
 // Utility / tool pages — labels, routes, icons and where each appears in the UI.
+import { m } from '$lib/paraglide/messages.js';
 import Grid2X2Check from '@lucide/svelte/icons/grid-2x2-check';
 import Trophy from '@lucide/svelte/icons/trophy';
 import Code from '@lucide/svelte/icons/code';
@@ -13,8 +14,9 @@ import Database from '@lucide/svelte/icons/database';
 import Images from '@lucide/svelte/icons/images';
 import Info from '@lucide/svelte/icons/info';
 import Terminal from '@lucide/svelte/icons/terminal';
+import Globe from '@lucide/svelte/icons/globe';
 
-/** @typedef {'repeater-commands' | 'matrix' | 'device-rank' | 'compare' | 'compare-firmwares' | 'releases' | 'languages' | 'bands' | 'prints' | 'gallery' | 'schemas' | 'bundle' | 'status' | 'about'} ToolId */
+/** @typedef {'repeater-commands' | 'matrix' | 'device-rank' | 'compare' | 'compare-firmwares' | 'releases' | 'languages' | 'vendor-countries' | 'bands' | 'prints' | 'gallery' | 'schemas' | 'bundle' | 'status' | 'about'} ToolId */
 
 /** @type {Record<ToolId, { id: ToolId, label: string, href: string, icon: import('svelte').Component, home?: boolean, homeLabel?: string }>} */
 export const TOOLS = {
@@ -89,6 +91,13 @@ export const TOOLS = {
     icon: Code,
     home: true
   },
+  'vendor-countries': {
+    id: 'vendor-countries',
+    label: 'Vendor countries',
+    href: '/vendor-countries/',
+    icon: Globe,
+    home: true
+  },
   schemas: {
     id: 'schemas',
     label: 'Schema explorer',
@@ -118,6 +127,15 @@ export const TOOLS = {
   }
 };
 
+/** Related tool shortcuts shown in each collection page header. */
+export const COLLECTION_TOOL_IDS = {
+  networks: ['bands'],
+  firmwares: ['releases', 'matrix'],
+  devices: ['device-rank', 'gallery'],
+  software: ['releases', 'languages'],
+  vendors: ['vendor-countries']
+};
+
 /** Tool links on the home page Tools section, in display order. */
 export const HOME_TOOL_IDS = [
   'repeater-commands',
@@ -130,6 +148,7 @@ export const HOME_TOOL_IDS = [
   'compare',
   'compare-firmwares',
   'languages',
+  'vendor-countries',
   'schemas',
   'bundle',
   'status'
@@ -140,8 +159,25 @@ export function toolById(id) {
   return id ? (TOOLS[id] ?? null) : null;
 }
 
+/**
+ * Localized label for a tool. Message keys replace hyphens with underscores
+ * (e.g. `repeater-commands` → `tool_repeater_commands_label`). Falls back to the
+ * English label baked into TOOLS.
+ * @param {ToolId | string} id
+ */
+export function toolLabel(id) {
+  return m[`tool_${String(id).replaceAll('-', '_')}_label`]?.() ?? TOOLS[id]?.label ?? String(id);
+}
+
 /** @param {ToolId} id */
 export function toolHomeLabel(id) {
-  const tool = TOOLS[id];
-  return tool?.homeLabel ?? tool?.label ?? id;
+  const key = String(id).replaceAll('-', '_');
+  return m[`tool_${key}_home_label`]?.() ?? toolLabel(id);
+}
+
+/** Shorter label for collection-page header shortcuts (e.g. "Ranking" vs "Device ranking"). */
+/** @param {ToolId | string} id */
+export function toolShortLabel(id) {
+  const key = String(id).replaceAll('-', '_');
+  return m[`tool_${key}_short_label`]?.() ?? toolLabel(id);
 }

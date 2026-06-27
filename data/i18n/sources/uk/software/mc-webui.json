@@ -1,0 +1,78 @@
+{
+  "resource": "software/mc-webui",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Самохостинговий вебклієнт MeshCore, орієнтований на мобільні пристрої, з підтримкою каналів та прямих повідомлень, керуванням контактами, повнотекстовим пошуком, картами, налаштуваннями пристроїв, інтерактивною консоллю та постійними архівами SQLite.",
+      "sourceHash": "sha256:f3847271d82e9a25774450ab0fb3717f8d00940c92a235b400a3839b328b7b53",
+      "generatedAt": "2026-06-27T15:45:57.490Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6069,
+      "promptTokens": 164,
+      "completionTokens": 984
+    },
+    "screenshots.main-window.png.caption": {
+      "value": "Обмін повідомленнями в каналах та бічна панель робочого стола",
+      "sourceHash": "sha256:dd22b9fa6c337fd6890173c378d7863407657d8423ef7924021a86c5fcf85bca",
+      "generatedAt": "2026-06-27T15:46:03.014Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5523,
+      "promptTokens": 134,
+      "completionTokens": 1000
+    },
+    "screenshots.direct-messages.png.caption": {
+      "value": "Особисті повідомлення та відстеження доставки",
+      "sourceHash": "sha256:cd11cddddbfcb18baab08affc34af5be4101991e45250ca0461e59eb092adced",
+      "generatedAt": "2026-06-27T15:46:06.809Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3795,
+      "promptTokens": 134,
+      "completionTokens": 598
+    },
+    "screenshots.map.png.caption": {
+      "value": "Карта контактів MeshCore",
+      "sourceHash": "sha256:f70256b479c4494cb61f227d5aed4110d2eef182e4826658069efecfd85741c9",
+      "generatedAt": "2026-06-27T15:46:10.432Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3622,
+      "promptTokens": 133,
+      "completionTokens": 355
+    },
+    "screenshots.console.png.caption": {
+      "value": "Інтерактивна командна консоль MeshCore",
+      "sourceHash": "sha256:aacdbdce0bb56de663cc75d8fc8c1bf2419ad8d7f72df759409261808350d62f",
+      "generatedAt": "2026-06-27T15:46:13.145Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2713,
+      "promptTokens": 134,
+      "completionTokens": 279
+    },
+    "tags": {
+      "value": "[\"веб-клієнт\", \"власний хостинг\", \"docker\", \"pwa\", \"віддалений термінал\"]",
+      "sourceHash": "sha256:14ef1a4f8c215705ed8f41c0bc25e50afa08029468319d70a965b32536296a82",
+      "generatedAt": "2026-06-27T15:46:20.131Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6986,
+      "promptTokens": 145,
+      "completionTokens": 966
+    },
+    "verificationNotes.designed-for-trusted-local-networks-and-does-not": {
+      "value": "Призначено для довірених локальних мереж і не забезпечує автентифікацію; не слід надавати прямий доступ до нього з інтернету.",
+      "sourceHash": "sha256:69099e5766131adcfcd6e0aed9dbaa78d4848d071c13fafa16c3bd4effc3296c",
+      "generatedAt": "2026-06-27T15:46:26.009Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5878,
+      "promptTokens": 150,
+      "completionTokens": 982
+    },
+    "verificationNotes.multi-architecture-images-are-published-for-amd6": {
+      "value": "Публікуються образи для кількох архітектур: amd64, arm64 та armv7.",
+      "sourceHash": "sha256:9d241895e4202871789f5d01b00c44ca539176696c55f937c893fc6be80da8f6",
+      "generatedAt": "2026-06-27T15:46:29.252Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3243,
+      "promptTokens": 146,
+      "completionTokens": 611
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/zindello-ultrapeaterzero",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "1 W LoRa opakovač ve formátu HAT srovnatelný s rozměry Raspberry Pi Zero 2 W, vybavený rádiovým modulem EBYTE E22/E22P s integrovaným LNA a volitelnou pásmovou propustí. Snižující měnič s širokým rozsahem vstupního napětí a instalační skripty pyMC_Repeater z něj vytvářejí kompaktní a přenosný opakovač MeshCore.",
+      "sourceHash": "sha256:63460016297a8c3c7d830a91f99c4d091f1c4decb845510535fff75bd0734537",
+      "generatedAt": "2026-06-27T11:01:35.925Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-decoder",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Бібліотека TypeScript та декодер командного рядка для радіопакетів MeshCore, включно з аналізом структури пакетів, розшифруванням каналів, підписами, токенами автентифікації та регіональними транспортними кодами.",
+      "sourceHash": "sha256:05123319cd64ce74d091324dd20f16f9fd267ef1101bb6c4c9d4f764af1655f2",
+      "generatedAt": "2026-06-27T15:48:35.949Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8295,
+      "promptTokens": 159,
+      "completionTokens": 883
+    },
+    "tags": {
+      "value": "[\"SDK\",\"протокол\",\"декодер\",\"криптографія\"]",
+      "sourceHash": "sha256:1ad65163d3f16587608efd60e8f01fd51faa7a3372e0487bd568661a4252ad8c",
+      "generatedAt": "2026-06-27T15:48:38.430Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2480,
+      "promptTokens": 139,
+      "completionTokens": 430
+    },
+    "verificationNotes.package-version-0-3-0-is-declared-in-package-jso": {
+      "value": "Версія пакунка 0.3.0 вказана у package.json; реліз на GitHub не опубліковано.",
+      "sourceHash": "sha256:6b8f543682ec72a82b0cfe04e6098cc46e068886a3cda06792a333bd67a25a96",
+      "generatedAt": "2026-06-27T15:48:46.419Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7988,
+      "promptTokens": 149,
+      "completionTokens": 1017
+    }
+  }
+}

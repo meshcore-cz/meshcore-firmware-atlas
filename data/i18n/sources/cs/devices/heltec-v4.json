@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-v4",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nástupce modelu Heltec V3 s čipy ESP32-S3R2 a SX1262, 16 MB flash paměti, 2 MB PSRAM a výkonem vysílání LoRa až 28 dBm. Zachovává stejný 0,96palcový OLED displej a rozložení pinů z velké části kompatibilní s V3, navíc ale přidává solární vstup, volitelnou hlavičku GNSS a vestavěnou anténu FPC pro 2,4 GHz. Nativní USB-C (bez CP2102). Běžně se používá pro Meshtastic a MeshCore.",
+      "sourceHash": "sha256:077f6b0df2c7d8f60fcb09d763150df7954cad9b593f449335e2247afdc2f9d2",
+      "generatedAt": "2026-06-27T10:47:35.922Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

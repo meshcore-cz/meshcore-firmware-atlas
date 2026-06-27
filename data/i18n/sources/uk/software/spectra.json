@@ -1,0 +1,51 @@
+{
+  "resource": "software/spectra",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Міст на Rust для з'єднання радіостанцій MeshCore або Meshtastic із DHT-мережею Veilid, що забезпечує конфіденційність. Підтримує обмін повідомленнями pub/sub на основі стрічок, TUI у стилі кіберпанк, режим фонового демона та віддалене підключення через Unix-сокет.",
+      "sourceHash": "sha256:3f4aa44d8fdac5493bed60c604c17525d033a4e8a42193ccdde8fc02e8e43e9e",
+      "generatedAt": "2026-06-27T16:40:33.135Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11339,
+      "promptTokens": 176,
+      "completionTokens": 1752
+    },
+    "tags": {
+      "value": "[\"veilid\",\"DHT\",\"міст\",\"meshtastic\",\"термінал\"]",
+      "sourceHash": "sha256:3b6a0ea4c1d8eb97bee45442d104b30838a525c07e53c024fb0f326823b646a0",
+      "generatedAt": "2026-06-27T16:41:08.823Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 35689,
+      "promptTokens": 145,
+      "completionTokens": 271
+    },
+    "verificationNotes.popularity-fields-are-forgejo-repository-signals": {
+      "value": "Поля популярності — це сигнали репозиторіїв Forgejo.",
+      "sourceHash": "sha256:049de99c4505842217ab62ba8244233151dd77bdeb73a8af07c5cb5cafb4a041",
+      "generatedAt": "2026-06-27T16:41:14.199Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5375,
+      "promptTokens": 138,
+      "completionTokens": 559
+    },
+    "verificationNotes.supports-stock-meshcore-companion-firmware-meshc": {
+      "value": "Підтримує стандартну супровідну прошивку MeshCore, радіостанції MeshCore KISS та радіостанції Meshtastic з послідовним інтерфейсом.",
+      "sourceHash": "sha256:37b68c8054aa014bdefa404cc80e38a5b39b6f3282299edf5593d0de2cf4a2d5",
+      "generatedAt": "2026-06-27T16:41:23.613Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9414,
+      "promptTokens": 149,
+      "completionTokens": 1185
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "У репозиторії наразі не вказано ліцензію SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:41:27.701Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4088,
+      "promptTokens": 139,
+      "completionTokens": 486
+    }
+  }
+}

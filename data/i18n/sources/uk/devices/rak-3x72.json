@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-3x72",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Модуль WisDuo LPWAN на базі STM32WL зі вбудованим трансивером LoRa для створення компактних mesh-мереж та вбудованих пристроїв. Профіль MeshCore орієнтований на інтеграцію самого модуля, а не готового портативного пристрою чи пристрою з дисплеєм.",
+      "sourceHash": "sha256:61451a72423f144967dd5baa1b69c314223acc6bc7c2b87a69438dd0de18e52c",
+      "generatedAt": "2026-06-27T15:00:51.835Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3938,
+      "promptTokens": 173,
+      "completionTokens": 1113
+    }
+  }
+}

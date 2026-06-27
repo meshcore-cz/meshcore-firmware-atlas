@@ -1,5 +1,7 @@
 <script>
   import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import Seo from '$lib/Seo.svelte';
   import { SITE_NAME } from '$lib/seo.js';
   import PageHeader from '$lib/PageHeader.svelte';
@@ -11,7 +13,7 @@
   import { onMount } from 'svelte';
   let { data } = $props();
 
-  const releaseHref = (r) => `${base}${r.project.href}#release-${r.version}`;
+  const releaseHref = (r) => `${href(r.project.href)}#release-${r.version}`;
 
   // Make the whole row navigate to the release, but don't hijack a real click on
   // the project link, a modified click (open-in-new-tab etc.), or a text
@@ -59,9 +61,9 @@
     software: data.releases.filter((r) => r.project.kind === 'software').length
   };
   const KINDS = [
-    { id: 'all', label: 'All' },
-    { id: 'firmware', label: 'Firmwares' },
-    { id: 'software', label: 'Software' }
+    { id: 'all', label: m.filter_all() },
+    { id: 'firmware', label: m.collection_firmwares_label() },
+    { id: 'software', label: m.collection_software_label() }
   ];
 
   let filtered = $derived(
@@ -101,8 +103,8 @@
 </script>
 
 <Seo
-  title="Releases"
-  description={`${data.releases.length} MeshCore firmware and software releases across all projects, newest first.`}
+  title={m.tool_releases_label()}
+  description={m.rel_seo_desc({ count: data.releases.length })}
 />
 
 <svelte:head>
@@ -110,11 +112,11 @@
 </svelte:head>
 
 <PageHeader tool="releases" subtitleClass="mb-4">
-  Releases across all firmwares and software, newest first.
+  {m.rel_intro()}
   <a
     href="{base}/releases.xml"
     class="ml-2 inline-flex items-center gap-1 text-accent hover:underline"
-    title="RSS feed"
+    title={m.rel_rss_feed()}
   >
     <svg viewBox="0 0 24 24" class="size-4 fill-current" aria-hidden="true">
       <path
@@ -135,24 +137,24 @@
   </div>
   <input
     type="search"
-    placeholder="Search project or version…"
+    placeholder={m.rel_search_placeholder()}
     bind:value={query}
     class="min-w-[200px] flex-1 rounded-lg border border-edge bg-bg px-3 py-2 text-[0.9rem] outline-none focus:border-transparent focus:ring-2 focus:ring-accent"
   />
 </div>
 
-<p class="mb-4 text-[0.85rem] text-dim">{filtered.length} releases</p>
+<p class="mb-4 text-[0.85rem] text-dim">{m.rel_count({ count: filtered.length })}</p>
 
 {#if pageItems.length}
   <div class="overflow-x-auto">
     <table class="w-full min-w-[640px] border-collapse text-[0.9rem]">
       <thead>
         <tr class="text-left text-[0.72rem] tracking-wide text-dim uppercase">
-          <th class="border-b border-edge px-2.5 py-2 font-semibold">Type</th>
-          <th class="border-b border-edge px-2.5 py-2 font-semibold">Project</th>
-          <th class="border-b border-edge px-2.5 py-2 font-semibold">Version</th>
-          <th class="border-b border-edge px-2.5 py-2 font-semibold">Released</th>
-          <th class="border-b border-edge px-2.5 py-2 text-right font-semibold">Date</th>
+          <th class="border-b border-edge px-2.5 py-2 font-semibold">{m.fw_facet_type()}</th>
+          <th class="border-b border-edge px-2.5 py-2 font-semibold">{m.rel_col_project()}</th>
+          <th class="border-b border-edge px-2.5 py-2 font-semibold">{m.rel_col_version()}</th>
+          <th class="border-b border-edge px-2.5 py-2 font-semibold">{m.rel_col_released()}</th>
+          <th class="border-b border-edge px-2.5 py-2 text-right font-semibold">{m.rel_col_date()}</th>
         </tr>
       </thead>
       <tbody>
@@ -161,7 +163,7 @@
           <tr class="cursor-pointer hover:bg-elev/60" onclick={(e) => onRowClick(e, r)}>
             <td class="border-b border-edge px-2.5 py-2.5 align-middle">
               <span class="rounded px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide uppercase {KIND_BADGE[r.project.kind]}">
-                {r.project.kind === 'software' ? 'Software' : 'Firmware'}
+                {r.project.kind === 'software' ? m.cmd_type_software() : m.cmd_type_firmware()}
               </span>
             </td>
             <td class="border-b border-edge px-2.5 py-2.5 align-middle">
@@ -170,10 +172,10 @@
             <td class="border-b border-edge px-2.5 py-2.5 align-middle whitespace-nowrap">
               <span class="font-mono font-semibold">{displayVersion(r.version)}</span>
               {#if r.prerelease}
-                <span class="ml-1.5 rounded bg-warn/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-warn uppercase">Pre</span>
+                <span class="ml-1.5 rounded bg-warn/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-warn uppercase">{m.release_pre()}</span>
               {/if}
               {#if r.variants.length > 1}
-                <span class="ml-1.5 text-[0.75rem] text-dim">{r.variants.length} variants</span>
+                <span class="ml-1.5 text-[0.75rem] text-dim">{m.rel_variants({ count: r.variants.length })}</span>
               {/if}
             </td>
             <td class="border-b border-edge px-2.5 py-2.5 align-middle whitespace-nowrap text-[0.82rem] text-dim">
@@ -190,5 +192,5 @@
 
   <Pagination count={filtered.length} perPage={PER_PAGE} bind:page />
 {:else}
-  <p class="rounded-xl border border-edge bg-elev p-8 text-center text-dim">No releases match these filters.</p>
+  <p class="rounded-xl border border-edge bg-elev p-8 text-center text-dim">{m.rel_no_match()}</p>
 {/if}

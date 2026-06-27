@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/easyskymesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Прошивка MeshCore, орієнтована на енергозбереження, із експериментальними розширеними функціями та виправленнями помилок, призначена для розгортання репітерів і датчиків з наднизьким енергоспоживанням. Її мета — збільшити час роботи від батареї (наприклад, ~16µA у вимкненому стані) з подальшим наміром передати ці покращення в основний код MeshCore.",
+      "sourceHash": "sha256:8954ebc43a4d9696ea9afed4ce07f448923acf5f7c2a5e17082a19ddd02e30b8",
+      "generatedAt": "2026-06-27T15:22:19.267Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15076,
+      "promptTokens": 181,
+      "completionTokens": 1012
+    },
+    "deviceNotes.xiao-esp32s3": {
+      "value": "Показники енергозбереження залежать від ревізії плати.",
+      "sourceHash": "sha256:e106b2db9e31af9877e5d75db8ed875a5bad29caeb620dfd91ecd72b24fc9768",
+      "generatedAt": "2026-06-27T15:22:27.773Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8505,
+      "promptTokens": 137,
+      "completionTokens": 415
+    },
+    "features": {
+      "value": "[\"Робота в режимі наднизького енергоспоживання (~16 мкА у вимкненому стані)\",\"Інтеграція датчиків\",\"Автоматичний перезапуск / сторожовий таймер\",\"Дальня передача повідомлень у mesh-мережі\"]",
+      "sourceHash": "sha256:ada9a7e303d7fc83eecf0a85cd756872cf8ca4fc0740ac6402968e45f7f7a0cd",
+      "generatedAt": "2026-06-27T15:22:41.253Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13480,
+      "promptTokens": 155,
+      "completionTokens": 980
+    }
+  }
+}

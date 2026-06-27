@@ -1,0 +1,15 @@
+{
+  "resource": "device/m5stack-unit-c6l",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị ESP32-C6 LoRa tích hợp vô tuyến SX1262, màn hình trạng thái OLED, đèn báo RGB, buzzer và nút nhấn người dùng. Tài liệu từ nhà sản xuất nhấn mạnh các tính năng như Wi-Fi 6, hỗ trợ Meshtastic cùng cặp đầu nối ăng-ten RP-SMA.",
+      "sourceHash": "sha256:d8741705041a787f7bae0b0238c3655b8e8af4748e64e53be386c8848a21fe3d",
+      "generatedAt": "2026-06-27T15:38:46.267Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6931,
+      "promptTokens": 183,
+      "completionTokens": 946
+    }
+  }
+}

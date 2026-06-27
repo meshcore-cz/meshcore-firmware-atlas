@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/uart-cz",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fabricante independente de placas base solares para redes mesh, PCBs de gestão de bateria e estações de nó LoRa para exteriores totalmente montadas.",
+      "sourceHash": "sha256:d7d33a5880e2d3a4948fb1b8f3acd2b461c89527c70fdcb29267ae479a5c0743",
+      "generatedAt": "2026-06-27T14:45:00.146Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3143,
+      "promptTokens": 154,
+      "completionTokens": 815
+    }
+  }
+}

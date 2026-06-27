@@ -1,0 +1,15 @@
+{
+  "resource": "network/puget-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Волонтерська спільнота, яка розгортає автономні мережі зв'язку в регіоні П'юджет-Саунд, зокрема MeshCore, Meshtastic та AREDN. Зосереджена на підготовці до стихійних лих та реагуванні на них. Активно розгортає MeshCore на базі пресету 915 МГц США/Канада, охоплюючи Сіетл, Такому та прилеглі території.",
+      "sourceHash": "sha256:b2fd6bbe14d828f4ee0242e48be1405ad835bcd06c1f696f5d8dd4e66dbf097a",
+      "generatedAt": "2026-06-27T16:57:48.218Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9434,
+      "promptTokens": 191,
+      "completionTokens": 1713
+    }
+  }
+}

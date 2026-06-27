@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t190",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата розробника ESP32-S3R8 з опціональним модулем SX1262 LoRa та вбудованим 1.9-дюймовим дисплеєм TFT (170×320, ST7789) для Meshtastic/MeshCore. Порт USB-C, роз'єм для акумулятора SH1.25 із керуванням заряджанням, порт для датчиків SH1.0 QuickLink та антени IPEX для Wi-Fi/LoRa. Дві кнопки користувача; без вбудованого GPS.",
+      "sourceHash": "sha256:7889758862afbe52251c8fb89ac4cd6680fffa76e6622546bf2c661d6cd55431",
+      "generatedAt": "2026-06-27T14:57:28.705Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4259,
+      "promptTokens": 213,
+      "completionTokens": 1323
+    }
+  }
+}

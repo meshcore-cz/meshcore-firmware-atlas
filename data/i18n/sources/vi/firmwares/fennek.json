@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/fennek",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Một firmware mã nguồn mở thay thế cho LilyGO T-Deck Pro — nghe nhạc, sách nói, sách điện tử và nhắn tin qua mạng lưới LoRa bằng MeshCore. Bao gồm trình khởi chạy màn hình chính, hỗ trợ bàn phím cảm ứng và vật lý, trình đọc EPUB, trình phát sách nói và xuất âm thanh qua DAC PCM5102A.",
+      "sourceHash": "sha256:1ce02557a6325b69d29293cfc034d7ce057ccd418cf1828b929e4b84fce9434b",
+      "generatedAt": "2026-06-27T15:48:22.327Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6886,
+      "promptTokens": 189,
+      "completionTokens": 650
+    },
+    "features": {
+      "value": "[\"Trình khởi chạy màn hình chính\",\"Phát nhạc (PCM5102A DAC)\",\"Trình phát sách nói\",\"Trình đọc EPUB và TXT với bộ nhớ đệm chỉ mục trang\",\"Trò chuyện qua mạng lưới LoRa bằng MeshCore\",\"Hỗ trợ cảm ứng + bàn phím vật lý\",\"Lưu vị trí đọc theo từng sách\"]",
+      "sourceHash": "sha256:24ebed7c6260373947c8d6ac5551da43ae7648781f94872f8eb1814618ef9731",
+      "generatedAt": "2026-06-27T15:48:27.997Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5670,
+      "promptTokens": 179,
+      "completionTokens": 882
+    }
+  }
+}

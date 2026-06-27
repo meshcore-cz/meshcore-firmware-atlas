@@ -1,7 +1,9 @@
 <script>
   import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import { onMount } from 'svelte';
-  import { networkBands, bandLabel } from '$lib/data.js';
+  import { networkBands, bandLabel, networkScopeLabel, networkStatusLabel } from '$lib/data.js';
   import { LIVE_ENABLED, fmtRate } from '$lib/pulse.js';
   import { ToggleGroup } from 'bits-ui';
   import Button from '$lib/Button.svelte';
@@ -168,7 +170,7 @@
       const hasUnbanded = areaNetworks.some((n) => !primaryBand(n));
       bandLegend = [
         ...presentBands.map((b) => ({ key: b, label: bandLabel(b) ?? b, color: bandColor.get(b) })),
-        ...(hasUnbanded ? [{ key: null, label: 'Unknown', color: NO_BAND_COLOR }] : [])
+        ...(hasUnbanded ? [{ key: null, label: m.spec_unknown(), color: NO_BAND_COLOR }] : [])
       ];
 
       // Color for a network in the current mode. Read at draw time and on every
@@ -264,18 +266,20 @@
 
       function netBlock(n) {
         const tags =
-          (n.scope ? `<span class="mc-tag">${escapeHtml(n.scope)}</span>` : '') +
-          (n.status && n.status !== 'active' ? `<span class="mc-tag mc-tag-warn">${escapeHtml(n.status)}</span>` : '');
+          (n.scope ? `<span class="mc-tag">${escapeHtml(networkScopeLabel(n.scope))}</span>` : '') +
+          (n.status && n.status !== 'active'
+            ? `<span class="mc-tag mc-tag-warn">${escapeHtml(networkStatusLabel(n.status))}</span>`
+            : '');
         const radios = radiosOf(n).map(radioRow).join('');
         const live = LIVE_ENABLED ? liveRef.current[n.id] : null;
         const liveCol = LIVE_ENABLED
-          ? `<div class="mc-livecol"><div class="mc-stat"><span class="mc-statnum">${live ? escapeHtml(fmtRate(live.pktPerMin)) : '—'}</span><span class="mc-statlbl">pkt/m</span></div><div class="mc-stat"><span class="mc-statnum">${live && live.nodes != null ? live.nodes.toLocaleString() : '—'}</span><span class="mc-statlbl">nodes</span></div></div>`
+          ? `<div class="mc-livecol"><div class="mc-stat"><span class="mc-statnum">${live ? escapeHtml(fmtRate(live.pktPerMin)) : '—'}</span><span class="mc-statlbl">${escapeHtml(m.nd_pktm())}</span></div><div class="mc-stat"><span class="mc-statnum">${live && live.nodes != null ? live.nodes.toLocaleString() : '—'}</span><span class="mc-statlbl">${escapeHtml(m.net_map_nodes())}</span></div></div>`
           : '';
-        return `<a class="mc-net" href="${base}/network/${n.id}/"><span class="mc-accent" style="background:${networkColor(n)}"></span><div class="mc-main"><div class="mc-headrow"><span class="mc-name">${escapeHtml(n.name)}</span><span class="mc-tags">${tags}</span></div>${radios ? `<div class="mc-radios">${radios}</div>` : ''}</div>${liveCol}</a>`;
+        return `<a class="mc-net" href="${href(`/network/${n.id}/`)}"><span class="mc-accent" style="background:${networkColor(n)}"></span><div class="mc-main"><div class="mc-headrow"><span class="mc-name">${escapeHtml(n.name)}</span><span class="mc-tags">${tags}</span></div>${radios ? `<div class="mc-radios">${radios}</div>` : ''}</div>${liveCol}</a>`;
       }
 
       const popupHtml = (nets) =>
-        `<div class="mc-popup">${nets.length > 1 ? `<div class="mc-count">${nets.length} networks here</div>` : ''}${nets.map(netBlock).join('')}</div>`;
+        `<div class="mc-popup">${nets.length > 1 ? `<div class="mc-count">${escapeHtml(m.net_map_networks_here({ count: nets.length }))}</div>` : ''}${nets.map(netBlock).join('')}</div>`;
 
       // Ray-casting point-in-polygon over the raw GeoJSON, so a click reports
       // EVERY network whose shape covers it — not just Leaflet's topmost layer.
@@ -332,7 +336,7 @@
         // area shows and it falls back to the default framing.
         applyVisibility(visibleIds);
       } else {
-        status = 'No valid network area shapes found yet.';
+        status = m.net_map_no_shapes();
       }
 
       // Areas are drawn and the view is framed — reveal the map.
@@ -404,8 +408,8 @@
   >
     <div class="flex flex-wrap items-center justify-between gap-2 border-b border-edge px-4 py-3">
       <div>
-        <h2 class="text-[1.05rem] font-semibold">Network areas</h2>
-        <p class="text-[0.82rem] text-dim">Published coverage/coordination shapes from network records.</p>
+        <h2 class="text-[1.05rem] font-semibold">{m.net_map_title()}</h2>
+        <p class="text-[0.82rem] text-dim">{m.net_map_intro()}</p>
       </div>
       <div class="flex items-center gap-2">
         <ToggleGroup.Root
@@ -413,28 +417,30 @@
           value={colorMode}
           onValueChange={(v) => v && setColorMode(v)}
           class="flex overflow-hidden rounded-md border border-edge text-[0.72rem]"
-          aria-label="Color areas by"
+          aria-label={m.net_map_color_by_aria()}
         >
           <ToggleGroup.Item
             value="network"
             class="px-2.5 py-1 transition outline-none data-[state=on]:bg-elev2 data-[state=on]:text-ink data-[state=off]:text-dim data-[state=off]:hover:text-ink"
-          >Network</ToggleGroup.Item>
+          >{m.net_map_color_network()}</ToggleGroup.Item>
           <ToggleGroup.Item
             value="band"
             class="border-l border-edge px-2.5 py-1 transition outline-none data-[state=on]:bg-elev2 data-[state=on]:text-ink data-[state=off]:text-dim data-[state=off]:hover:text-ink"
-          >Band</ToggleGroup.Item>
+          >{m.net_map_color_band()}</ToggleGroup.Item>
         </ToggleGroup.Root>
         <span class="rounded-md bg-elev2 px-2 py-1 text-[0.72rem] text-dim">
-          {networks.filter((n) => n.areaUrl && (!visibleIds || visibleIds.has(n.id))).length} shaped
+          {m.net_map_shaped_count({
+            count: networks.filter((n) => n.areaUrl && (!visibleIds || visibleIds.has(n.id))).length
+          })}
         </span>
-        <Tooltip text={fullscreen ? 'Exit full screen (Esc)' : 'Full screen'}>
+        <Tooltip text={fullscreen ? m.net_map_exit_fullscreen() : m.net_map_fullscreen()}>
           {#snippet trigger(props)}
             <Button
               {...props}
               variant="subtle"
               size="icon"
               onclick={toggleFullscreen}
-              aria-label={fullscreen ? 'Exit full screen' : 'Full screen map'}
+              aria-label={fullscreen ? m.net_map_exit_fullscreen_aria() : m.net_map_fullscreen_aria()}
               class="h-[30px] w-[30px] border-edge text-dim hover:border-accent hover:text-ink"
             >
               {#if fullscreen}
@@ -486,7 +492,7 @@
                 <rect x="8" y="3" width="8" height="14" rx="4" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M12 6v2" stroke-linecap="round" />
               </svg>
-              Click to scroll-zoom
+              {m.net_map_scroll_zoom()}
             </span>
           {/if}
         </div>
@@ -498,7 +504,7 @@
           class="absolute inset-0 z-[1100] flex flex-col items-center justify-center gap-3 bg-bg"
         >
           <span class="map-spinner" aria-hidden="true"></span>
-          <p class="text-[0.82rem] text-dim">Loading network areas…</p>
+          <p class="text-[0.82rem] text-dim">{m.net_map_loading()}</p>
         </div>
       {/if}
     </div>

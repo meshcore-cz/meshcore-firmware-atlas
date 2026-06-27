@@ -1,0 +1,51 @@
+{
+  "resource": "software/nrf-dfu-py",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Multiplatformní nástroj v Pythonu s grafickým i příkazovým rozhraním pro aktualizaci zařízení Nordic nRF51/nRF52 přes Bluetooth. Podporuje režimy DFU bez tlačítka a Legacy DFU a umožňuje nastavení skenování, opakování pokusů, potvrzování paketů a MTU.",
+      "sourceHash": "sha256:acab1233e668eee8f5ccae88b333d54c9bb59b7b812a8f0309b2cd859967f521",
+      "generatedAt": "2026-06-27T11:52:23.151Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10360,
+      "promptTokens": 173,
+      "completionTokens": 999
+    },
+    "verificationNotes.supports-nordic-legacy-dfu-only-secure-dfu-is-no": {
+      "value": "Podporuje pouze Nordic Legacy DFU; Secure DFU není podporováno.",
+      "sourceHash": "sha256:aac1ba3229f2e4a3af39d7a55d02f4345a76240376dbb151e0877b62c3655118",
+      "generatedAt": "2026-06-27T11:52:29.337Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6186,
+      "promptTokens": 144,
+      "completionTokens": 465
+    },
+    "verificationNotes.ci-publishes-standalone-gui-builds-for-windows-l": {
+      "value": "CI publikuje samostatné buildy grafického rozhraní pro Windows, Linux x64/ARM64 a macOS Intel/Apple Silicon.",
+      "sourceHash": "sha256:3d6f4e785248cae3ee7f7515b2d260d244d778c26a15f238faedea1c64b84464",
+      "generatedAt": "2026-06-27T11:52:35.450Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6113,
+      "promptTokens": 151,
+      "completionTokens": 599
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Repozitář v současné době neuvádí licenci SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T11:52:40.725Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5275,
+      "promptTokens": 139,
+      "completionTokens": 443
+    },
+    "tags": {
+      "value": "[\"bluetooth-dfu\",\"nrf52\",\"multiplatformní\",\"desktop\"]",
+      "sourceHash": "sha256:65da5596fa2c999030e6e51fa382102081304ba3f37fe85a03e1e294d6d10814",
+      "generatedAt": "2026-06-27T13:49:00.043Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17605,
+      "promptTokens": 144,
+      "completionTokens": 1005
+    }
+  }
+}

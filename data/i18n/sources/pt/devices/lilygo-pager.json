@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-pager",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Pager portátil ESP32-S3 para Meshtastic/MeshCore com SX1262 LoRa, ecrã IPS de 2,33 polegadas, teclado QWERTY e codificador rotativo. Equipado com GNSS u-blox MIA-M10Q integrado, bateria de 1500 mAh, microfone/altifalante, NFC e IMU de IA BHI260AP. Suporta Wi-Fi e BLE. Variantes de rádio opcionais, como o LR1121 ou outras, disponíveis no momento da compra.",
+      "sourceHash": "sha256:b7af97f37b5b02c4e798f28826c53bd973d48223fabef014df2cf9874eac1398",
+      "generatedAt": "2026-06-27T14:14:34.366Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13254,
+      "promptTokens": 218,
+      "completionTokens": 752
+    }
+  }
+}

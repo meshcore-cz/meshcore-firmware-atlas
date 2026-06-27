@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-client-dart",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Triển khai giao thức đồng hành BLE của MeshCore bằng Flutter và Dart, cung cấp khả năng quản lý kết nối, hàng đợi lệnh, phân tích khung nhị phân, mã hóa và mô hình dữ liệu cho ứng dụng.",
+      "sourceHash": "sha256:05a52871704a3af419efea64258c25e5f5d12fa2db3ca281005349ea2e9402d4",
+      "generatedAt": "2026-06-27T16:22:37.895Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7544,
+      "promptTokens": 159,
+      "completionTokens": 1025
+    },
+    "tags": {
+      "value": "[\"SDK\", \"giao thức\", \"Flutter\"]",
+      "sourceHash": "sha256:4cef831297b1b718ad603140a7aafa77a5b16fe612806335a4f2fae7f852cf22",
+      "generatedAt": "2026-06-27T16:22:43.558Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5662,
+      "promptTokens": 136,
+      "completionTokens": 748
+    },
+    "verificationNotes.the-package-declares-publish-to-none-and-is-inst": {
+      "value": "Gói này khai báo `publish_to none` và được cài đặt từ mã nguồn.",
+      "sourceHash": "sha256:91a7ac823d8a1832b3398b560ab41ecb2a822642f34e872843043c07b4c3d3ef",
+      "generatedAt": "2026-06-27T16:22:47.186Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3627,
+      "promptTokens": 141,
+      "completionTokens": 515
+    },
+    "verificationNotes.no-license-file-or-spdx-license-declaration-was-": {
+      "value": "Khi xem xét, không tìm thấy tệp giấy phép hay khai báo giấy phép SPDX nào.",
+      "sourceHash": "sha256:e93ad868f410f62d61d990606a67bd4f19e27a9f2914a2d14d44128840979635",
+      "generatedAt": "2026-06-27T16:22:51.093Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3906,
+      "promptTokens": 141,
+      "completionTokens": 622
+    }
+  }
+}

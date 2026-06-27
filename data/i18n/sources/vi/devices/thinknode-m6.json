@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m6",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút mạng Meshtastic/MeshCore ngoài trời chuẩn IP65 dùng năng lượng mặt trời, tích hợp nRF52840, SX1262 LoRa và L76K GPS. Tích hợp sẵn tấm pin 6W và bộ pin kép 18650 dung lượng ~7000 mAh; chỉ cấu hình qua BLE — không có màn hình trên thiết bị.",
+      "sourceHash": "sha256:7317c284edf0885095e93e1ff6270c4ea6b0cc60b803bf405c8b6808c5e5456a",
+      "generatedAt": "2026-06-27T15:31:23.975Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17199,
+      "promptTokens": 185,
+      "completionTokens": 1065
+    }
+  }
+}

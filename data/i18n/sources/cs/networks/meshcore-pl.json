@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-pl",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Polská komunita LoRa MeshCore buduje s využitím předvolby EU/UK Narrow celonárodní nouzovou a off-gridovou mesh síť. Koordinace probíhá prostřednictvím webu lorameshcore.pl, který nabízí průvodce nastavením, pokyny pro opakovače, dokumentaci k analyzátoru a komunitní odkazy.",
+      "sourceHash": "sha256:05e360532fbfed50f9223ee69be6ada19cec17a0cd7e6088f818ebe961811d85",
+      "generatedAt": "2026-06-27T12:10:53.109Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8380,
+      "promptTokens": 173,
+      "completionTokens": 945
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tlora-1-6",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển ESP32-PICO-D4 + SX1276 LoRa tích hợp màn hình OLED SSD1306 và khe cắm micro-SD. Cổng USB-C với chip chuyển đổi CH9102 và đầu nối pin PH2.0. Không tích hợp BMS — vui lòng sử dụng pin Li-ion có mạch bảo vệ.",
+      "sourceHash": "sha256:d41b34a19c56ab6dc63dc7e01ea210a053e5734bfeca90ba2d9b103376db745c",
+      "generatedAt": "2026-06-27T15:36:10.463Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4819,
+      "promptTokens": 183,
+      "completionTokens": 777
+    }
+  }
+}

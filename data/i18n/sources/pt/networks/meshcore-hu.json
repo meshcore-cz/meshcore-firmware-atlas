@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-hu",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade húngara do MeshCore para mensagens off-grid baseadas em LoRa, coordenada através do mc868.hu com grupos no Telegram e no Facebook, um analisador CoreScope local e configurações de rádio EU/UK Narrow para a rede mesh nacional de 868 MHz.",
+      "sourceHash": "sha256:14ec03c5dffa66052854a7b6f715804e1a2289f350102469f6faf39fb478ab63",
+      "generatedAt": "2026-06-27T14:46:42.052Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3309,
+      "promptTokens": 175,
+      "completionTokens": 843
+    }
+  }
+}

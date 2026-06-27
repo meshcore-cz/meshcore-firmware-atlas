@@ -1,0 +1,15 @@
+{
+  "resource": "network/inland-nw-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore gerida por voluntários que abrange Spokane, Coeur d'Alene, o Palouse e Lewiston/Clarkston, com expansão mais ampla pelo leste de Washington e Idaho. A comunidade foca-se em comunicações resilientes fora da rede através de nós LoRa com alimentação independente.",
+      "sourceHash": "sha256:a5f7afb43e9561e670eaaca715a32e8e334e50a7eabd48f80418d361ace86ec0",
+      "generatedAt": "2026-06-27T14:46:50.086Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4006,
+      "promptTokens": 179,
+      "completionTokens": 1106
+    }
+  }
+}

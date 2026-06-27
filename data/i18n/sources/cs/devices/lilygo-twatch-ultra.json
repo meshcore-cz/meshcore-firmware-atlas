@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-twatch-ultra",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Chytré hodinky ESP32-S3 s modulem SX1262 LoRa, 2,06palcovým dotykovým displejem AMOLED, integrovaným GNSS, NFC, vibračním motorem, zvukovým modulem a podporou SD karet. Nositelné zařízení MeshCore pro kompaktní komunikaci na zápěstí.",
+      "sourceHash": "sha256:46a554e4f73e06914c5c90967f1b9b1a9528ad9dc2f9dc94853ba1809ecf12cf",
+      "generatedAt": "2026-06-27T10:52:42.262Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

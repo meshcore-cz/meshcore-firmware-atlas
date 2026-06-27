@@ -1,0 +1,15 @@
+{
+  "resource": "network/colorado-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede comunitária MeshCore do Colorado para a região de Front Range e todo o estado, com um portal MeshCore LoRa 915 MHz, mapa ao vivo com suporte do CoreScope, ferramentas para operadores, guias e coordenação no Discord para comunicações resilientes off-grid.",
+      "sourceHash": "sha256:0ae1356e249c20d88e0f95b4f07c0bf0c01c98210746dc1805a4e4c145c63438",
+      "generatedAt": "2026-06-27T14:45:50.009Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3409,
+      "promptTokens": 173,
+      "completionTokens": 901
+    }
+  }
+}

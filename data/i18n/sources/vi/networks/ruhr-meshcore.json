@@ -1,0 +1,15 @@
+{
+  "resource": "network/ruhr-meshcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore lớn tại khu vực North Rhine-Westphalia của Đức, với 1.150+ node tập trung ở khu vực Ruhr (Bochum, Bottrop, Bonn, Kamp-Lintfort) và lan rộng sang Rhineland cùng Münsterland. Hoạt động với cấu hình EU/UK Narrow trên băng tần 868 MHz.",
+      "sourceHash": "sha256:f9fa57050ed12e4b8b74362fd5355e5ca1459d2236070ae69a17b4e31226839f",
+      "generatedAt": "2026-06-27T16:53:29.086Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6508,
+      "promptTokens": 200,
+      "completionTokens": 1179
+    }
+  }
+}

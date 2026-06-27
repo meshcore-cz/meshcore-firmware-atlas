@@ -1,0 +1,60 @@
+{
+  "resource": "software/pymc-repeater",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Lehký démon opakovače MeshCore v jazyce Python určený pro hardware třídy Pi a vestavěné linuxové systémy. Poskytuje přímou podporu pro rádia SX1262 nebo modemy KISS, směrování paketů, vyhledávání sousedních uzlů a lokální monitorovací panel. Server pro [[software:pymc-console|pyMC Console]].",
+      "sourceHash": "sha256:50a070542b8df7001e27f3367cfb3ed8409aab5e5c1f4e94bc25945ee568bd26",
+      "generatedAt": "2026-06-27T11:51:20.258Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13442,
+      "promptTokens": 182,
+      "completionTokens": 1391
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Řídicí panel pro sledování stavu opakovače a paketů",
+      "sourceHash": "sha256:01ad412e72dffcb9f7d354c4ed3fc44407ef2dc32e0a7b22e87d70b2464d20cc",
+      "generatedAt": "2026-06-27T11:51:29.602Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9345,
+      "promptTokens": 136,
+      "completionTokens": 887
+    },
+    "screenshots.statistics.png.caption": {
+      "value": "Statistiky provozu a výkonu opakovače",
+      "sourceHash": "sha256:810d31e0df6a35c3218e677e61dfbf5bd64aa91c85a3a38c54e141d7ac86c5e5",
+      "generatedAt": "2026-06-27T11:51:37.006Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7413,
+      "promptTokens": 135,
+      "completionTokens": 521
+    },
+    "verificationNotes.supports-native-spi-sx1262-radios-ch341-usb-to-s": {
+      "value": "Podporuje nativní SPI rádia SX1262, USB/SPI adaptéry CH341 a sériové modemy KISS. Koncentrátory SX1302/SX1303 podporovány nejsou.",
+      "sourceHash": "sha256:5a95dfd5135cb40f9f4dd60c4ac2252ebf1feb3932d13dc9a41810b4fc0bc184",
+      "generatedAt": "2026-06-27T11:51:44.163Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7160,
+      "promptTokens": 166,
+      "completionTokens": 795
+    },
+    "verificationNotes.the-project-asks-operators-to-test-carefully-bef": {
+      "value": "Projekt doporučuje operátorům provést důkladné testování před nasazením do produkce, protože reálné pokrytí sítě je stále omezené.",
+      "sourceHash": "sha256:d32400ec6566f94fd8bb793ad16bc086bc85781315e6737c93ddeaa847f61b75",
+      "generatedAt": "2026-06-27T11:51:56.103Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11945,
+      "promptTokens": 148,
+      "completionTokens": 1111
+    },
+    "tags": {
+      "value": "[\"opakovač\",\"raspberry-pi\",\"sx1262\",\"kiss\",\"vlastní hosting\"]",
+      "sourceHash": "sha256:0505e6865d3f5075b970abb6e4a163276b091b0407223fdf7035b1fa40fbce84",
+      "generatedAt": "2026-06-27T13:48:36.193Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11675,
+      "promptTokens": 150,
+      "completionTokens": 708
+    }
+  }
+}

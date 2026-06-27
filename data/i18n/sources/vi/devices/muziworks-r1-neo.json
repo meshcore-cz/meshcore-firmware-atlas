@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-r1-neo",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị cầm tay Meshtastic nhỏ gọn, được lắp ráp sẵn tại nhà máy, tích hợp GPS/BDS, thiết kế kín chịu thời tiết, một nút bấm mềm và thời lượng pin nhiều ngày từ khối pin nội bộ.",
+      "sourceHash": "sha256:646fd9a0a399e51dce7a43fbf086b5ff0e8fbeb9befa6b7e315003c3c9a47a02",
+      "generatedAt": "2026-06-27T15:39:26.553Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5637,
+      "promptTokens": 165,
+      "completionTokens": 1083
+    }
+  }
+}

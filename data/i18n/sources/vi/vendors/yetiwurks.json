@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/yetiwurks",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nhà sản xuất tại Mỹ chuyên sản xuất phụ kiện truyền thông bền bỉ và phần cứng Meshtastic, bao gồm cả trạm lặp ngoài trời và trạm cơ sở được xây dựng dựa trên bộ kit RAK WisBlock.",
+      "sourceHash": "sha256:c17a0428755826df3d5d5db832bda75854aa9cea09ca510e6a31587c5d8f01f6",
+      "generatedAt": "2026-06-27T16:44:13.050Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9718,
+      "promptTokens": 159,
+      "completionTokens": 694
+    }
+  }
+}

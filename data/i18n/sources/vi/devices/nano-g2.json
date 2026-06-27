@@ -1,0 +1,15 @@
+{
+  "resource": "device/nano-g2",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị theo dõi nRF52840 bỏ túi với SX1262 LoRa, màn hình OLED 1.3 inch, GPS, còi báo và pin tích hợp 1200 mAh. Dùng làm thiết bị đồng hành/trạm lặp cho MeshCore, hỗ trợ Bluetooth 5.4 và có thiết kế nhỏ gọn tích hợp công tắc bật/tắt.",
+      "sourceHash": "sha256:1f4743e6c70f5755c2e2005df20f33c73beb88ace7a71f322c5c1c5048490835",
+      "generatedAt": "2026-06-27T15:43:33.988Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12961,
+      "promptTokens": 190,
+      "completionTokens": 1429
+    }
+  }
+}

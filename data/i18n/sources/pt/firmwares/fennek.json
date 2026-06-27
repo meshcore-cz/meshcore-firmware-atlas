@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/fennek",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um firmware de código aberto alternativo para o LilyGO T-Deck Pro — música, audiolivros, eBooks e chat em malha LoRa via MeshCore. Inclui um lançador de tela inicial, suporte a teclado físico e toque, leitor de EPUB, reprodutor de audiolivros e saída de áudio via DAC PCM5102A.",
+      "sourceHash": "sha256:1ce02557a6325b69d29293cfc034d7ce057ccd418cf1828b929e4b84fce9434b",
+      "generatedAt": "2026-06-27T14:23:34.545Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4599,
+      "promptTokens": 189,
+      "completionTokens": 1261
+    },
+    "features": {
+      "value": "[\"Launcher da tela inicial\",\"Reprodução de música (DAC PCM5102A)\",\"Reprodutor de audiolivros\",\"Leitor de EPUB e TXT com cache de índice de páginas\",\"Chat em malha LoRa via MeshCore\",\"Suporte a toque e teclado físico\",\"Posição de leitura por livro\"]",
+      "sourceHash": "sha256:24ebed7c6260373947c8d6ac5551da43ae7648781f94872f8eb1814618ef9731",
+      "generatedAt": "2026-06-27T14:23:38.235Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3690,
+      "promptTokens": 179,
+      "completionTokens": 1083
+    }
+  }
+}

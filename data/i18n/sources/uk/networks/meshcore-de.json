@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-de",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Німецькомовна спільнота MeshCore та вікі-хаб для Німеччини, де зібрано посібники з налаштування, відомості про регіональні групи, рекомендовані конфігурації, нотатки щодо апаратного забезпечення та онлайн-простори для координації користувачів MeshCore.",
+      "sourceHash": "sha256:a592817c4e1c5c2d6ceb72daf9570ec13105a9081514421a117346a42a2eab88",
+      "generatedAt": "2026-06-27T16:50:40.126Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7017,
+      "promptTokens": 161,
+      "completionTokens": 1291
+    }
+  }
+}

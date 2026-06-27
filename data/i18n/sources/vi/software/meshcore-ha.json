@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-ha",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Tích hợp tùy chỉnh cho Home Assistant giúp theo dõi và điều khiển các nút MeshCore qua USB, BLE hoặc TCP, bao gồm cảm biến, dịch vụ, công cụ chẩn đoán và tùy chọn hỗ trợ tải bản đồ lên.",
+      "sourceHash": "sha256:3b8c26928eae3bd2d6e93644f8a33b5a034c681e1bff56369cc8ae1289bd15bf",
+      "generatedAt": "2026-06-27T16:08:37.050Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7072,
+      "promptTokens": 159,
+      "completionTokens": 1050
+    },
+    "tags": {
+      "value": "[\"nhà thông minh\",\"hacs\",\"home-assistant\"]",
+      "sourceHash": "sha256:d42e3c990c4de5863d1245291a4c2fc9507bd82d17df4ef5dfa7e9c385324b8e",
+      "generatedAt": "2026-06-27T16:08:40.580Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3528,
+      "promptTokens": 140,
+      "completionTokens": 549
+    },
+    "verificationNotes.readme-labels-the-integration-as-work-in-progres": {
+      "value": "README cho biết phần tích hợp đang trong quá trình phát triển và lưu ý rằng BLE chưa được kiểm thử kỹ lưỡng.",
+      "sourceHash": "sha256:7762165f79adc264ff5919fd50cf3e60f72559e6eb4f603a3c96c4f51a6d6a28",
+      "generatedAt": "2026-06-27T16:08:49.599Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9019,
+      "promptTokens": 146,
+      "completionTokens": 679
+    }
+  }
+}

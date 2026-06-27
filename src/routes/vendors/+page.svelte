@@ -1,21 +1,25 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import { pluralize } from '$lib/format.js';
   import { deviceMcuLabel, deviceRadioLabel, deviceShortName } from '$lib/data.js';
   import Seo from '$lib/Seo.svelte';
   import Avatar from '$lib/Avatar.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
+  import ToolLink from '$lib/ToolLink.svelte';
   let { data } = $props();
 </script>
 
 <Seo
-  title="Vendors"
-  description={`${data.vendors.length} hardware makers whose boards run MeshCore firmware.`}
+  title={m.collection_vendors_label()}
+  description={m.vendors_seo_desc({ count: data.vendors.length })}
 />
 
 <PageHeader collection="vendors" subtitleClass="max-w-[60ch]">
-  Hardware makers whose boards run MeshCore firmware — every vendor and the boards they make, most
-  prolific first.
+  {#snippet actions()}
+    <ToolLink id="vendor-countries" />
+  {/snippet}
+  {m.vendors_intro()}
 </PageHeader>
 
 <div class="space-y-12">
@@ -23,7 +27,7 @@
     <section>
       <!-- Vendor header -->
       <div class="mb-4 flex items-center gap-4 border-b border-edge pb-4">
-        <a href="{base}/vendor/{v.id}/" class="shrink-0">
+        <a href={href(`/vendor/${v.id}/`)} class="shrink-0">
           <Avatar
             src={v.logoUrl}
             alt={v.name}
@@ -39,13 +43,13 @@
         </a>
         <div class="min-w-0 flex-1">
           <h2 class="text-[1.3rem] leading-tight font-bold">
-            <a class="hover:text-accent" href="{base}/vendor/{v.id}/">{v.name}</a>
+            <a class="hover:text-accent" href={href(`/vendor/${v.id}/`)}>{v.name}</a>
           </h2>
           <span class="text-[0.88rem] text-dim">
             {v.country ? `${v.country} · ` : ''}{pluralize(v.devices.length, 'device')}
           </span>
         </div>
-        <a class="shrink-0 text-[0.85rem] text-accent2 hover:underline" href="{base}/vendor/{v.id}/">View vendor →</a>
+        <a class="shrink-0 text-[0.85rem] text-accent2 hover:underline" href={href(`/vendor/${v.id}/`)}>{m.vendors_view()}</a>
       </div>
 
       <!-- Vendor's products -->
@@ -54,7 +58,7 @@
           {#each v.devices as d (d.id)}
             <a
               class="group flex items-center gap-3 rounded-xl border border-edge bg-elev px-3.5 py-2.5 hover:border-accent"
-              href="{base}/device/{d.id}/"
+              href={href(`/device/${d.id}/`)}
             >
               <div class="flex h-[46px] w-[46px] shrink-0 items-center justify-center overflow-hidden rounded-lg bg-elev2">
                 {#if d.imageUrl}<img src={d.imageUrl} alt={d.name} loading="lazy" class="max-h-full max-w-full object-contain" />{/if}
@@ -67,7 +71,7 @@
           {/each}
         </div>
       {:else}
-        <p class="text-[0.9rem] text-dim">No devices recorded yet.</p>
+        <p class="text-[0.9rem] text-dim">{m.vendors_no_devices()}</p>
       {/if}
     </section>
   {/each}

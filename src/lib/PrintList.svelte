@@ -3,8 +3,9 @@
   // `activeType` comes from the route (/prints/ or /prints/<type>/) so each
   // filtered view is its own prerendered page. The free-text query stays
   // client-side, mirrored to `?q=`. Mirrors FirmwareList.svelte.
-  import { base } from '$app/paths';
-  import { PRINT_TYPE_META, printType, deviceMcuLabel, deviceRadioLabel } from '$lib/data.js';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
+  import { printType, deviceMcuLabel, deviceRadioLabel, printTypeLabel, printTypeSingular } from '$lib/data.js';
   import { pluralize } from '$lib/format.js';
   import PageHeader from '$lib/PageHeader.svelte';
   import Box from '@lucide/svelte/icons/box';
@@ -58,7 +59,7 @@
   const chipBase = 'rounded-full border px-3 py-1.5 text-[0.85rem] transition select-none';
   const chipOn = 'border-accent bg-accent/15 text-accent';
   const chipOff = 'border-edge bg-elev text-dim hover:border-accent/60 hover:text-ink';
-  const typeHref = (t) => (t === 'all' ? `${base}/prints/` : `${base}/prints/${t}/`);
+  const typeHref = (t) => (t === 'all' ? href('/prints/') : href(`/prints/${t}/`));
 
   // Solid, high-contrast badge over the (busy) cover photo — one colour per type.
   const TYPE_BADGE = {
@@ -101,23 +102,22 @@
 </script>
 
 <PageHeader tool="prints" subtitleClass="max-w-[60ch]">
-  Community and vendor 3D-printable models for MeshCore hardware — enclosures, cases and
-  accessories you can print yourself, newest first.
+  {m.print_list_subtitle()}
 </PageHeader>
 
 <div class="mb-4 flex flex-wrap items-center gap-4">
   <input
     type="search"
-    placeholder="Search prints, authors, devices…"
+    placeholder={m.print_list_search()}
     bind:value={query}
     class="min-w-[220px] flex-1 rounded-lg border border-edge bg-bg px-3 py-2.5 text-[0.95rem] outline-none focus:border-transparent focus:ring-2 focus:ring-accent"
   />
   <!-- Type filter — links so each view is its own prerendered route. -->
   <div class="flex flex-wrap gap-1.5">
-    <a href={typeHref('all')} class="{chipBase} {activeType === 'all' ? chipOn : chipOff}">All</a>
+    <a href={typeHref('all')} class="{chipBase} {activeType === 'all' ? chipOn : chipOff}">{m.filter_all()}</a>
     {#each types as t (t)}
       <a href={typeHref(t)} class="{chipBase} {activeType === t ? chipOn : chipOff}">
-        {PRINT_TYPE_META[t]?.label ?? t}
+        {printTypeLabel(t)}
       </a>
     {/each}
   </div>
@@ -139,7 +139,7 @@
             <Box class="h-12 w-12" aria-hidden="true" />
           {/if}
           <span class="absolute top-1.5 left-1.5 rounded-md px-2 py-0.5 text-[0.66rem] font-semibold tracking-wide uppercase shadow-sm {TYPE_BADGE[type] ?? 'bg-elev2 text-dim'}">
-            {PRINT_TYPE_META[type]?.singular ?? type}
+            {printTypeSingular(type)}
           </span>
           {#if p.likes != null}
             <span class="absolute top-1.5 right-1.5 inline-flex items-center gap-1 rounded-full bg-black/65 px-1.5 py-0.5 text-[0.7rem] font-medium text-white backdrop-blur-sm" title="{p.likes.toLocaleString()} likes on {printHost(p.url)}">
@@ -150,7 +150,7 @@
         </div>
         <div class="flex flex-1 flex-col gap-0.5 p-3">
           <span class="text-[0.9rem] leading-tight font-medium group-hover:text-accent" title={p.name}>{p.name}</span>
-          {#if p.author}<span class="text-[0.78rem] text-dim">by {p.author}</span>{/if}
+          {#if p.author}<span class="text-[0.78rem] text-dim">{m.print_by({ author: p.author })}</span>{/if}
           <span class="mt-1.5 flex flex-wrap items-center gap-x-2 text-[0.72rem] text-dim">
             <span class="text-accent2">{printHost(p.url)} ↗</span>
             {#if dateLabel(p.date)}<span>· {dateLabel(p.date)}</span>{/if}
@@ -159,7 +159,7 @@
       </a>
       <!-- Device footer — which board this print is for, linking to its profile. -->
       <a
-        href="{base}/device/{p.device.id}/"
+        href={href(`/device/${p.device.id}/`)}
         class="flex items-center gap-2.5 border-t border-edge px-3 py-2 transition hover:bg-elev2"
         title="View {p.device.name}"
       >
@@ -188,16 +188,16 @@
       disabled={page === 1}
       onclick={() => (page = Math.max(1, page - 1))}
     >
-      ← Prev
+      ← {m.pagination_prev()}
     </button>
-    <span class="text-[0.85rem] text-dim tabular-nums">Page {page} of {pageCount}</span>
+    <span class="text-[0.85rem] text-dim tabular-nums">{m.print_page_of({ page, total: pageCount })}</span>
     <button
       type="button"
       class="rounded-lg border border-edge bg-elev px-3 py-1.5 text-[0.85rem] text-dim transition hover:border-accent/60 hover:text-ink disabled:cursor-not-allowed disabled:opacity-40"
       disabled={page === pageCount}
       onclick={() => (page = Math.min(pageCount, page + 1))}
     >
-      Next →
+      {m.pagination_next()} →
     </button>
   </div>
 {/if}

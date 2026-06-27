@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/lusofw",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Дистрибутив прошивки MeshCore від спільноти для португальських користувачів, з радіоналаштуваннями за замовчуванням, орієнтованими на Португалію, контролем дотримання робочого циклу, синхронізацією мережевого часу, керуванням flood-advert та відібраними збірками для репітерів і мостів.",
+      "sourceHash": "sha256:b873964349f2581796e0c7ff241ec4ad5c5fc9ddd3a9047b2835834169cea04d",
+      "generatedAt": "2026-06-27T15:32:56.151Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14996,
+      "promptTokens": 168,
+      "completionTokens": 1458
+    },
+    "deviceNotes.heltec-v4-exp": {
+      "value": "Використовує ціль випуску Heltec V4 TFT.",
+      "sourceHash": "sha256:c077efae98137d562d06266b165e29a58561ae42b20991de84f816dd2883588c",
+      "generatedAt": "2026-06-27T15:32:58.726Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2575,
+      "promptTokens": 139,
+      "completionTokens": 377
+    },
+    "features": {
+      "value": "[\"Радіо та регіональні налаштування за замовчуванням для Португалії\",\"Контроль дотримання робочого циклу\",\"Синхронізація мережевого часу\",\"Планування та скорочення трансльованих оголошень\",\"Збірки моста-репітера для ESP-NOW та RS-232\",\"Налаштування посиленого підсилення прийому для SX126x\",\"Відібрані випуски для прошивки через браузер\"]",
+      "sourceHash": "sha256:411bbf90ea0a69cdedbabf8cfccd2125d34dbd6e257dd40a434973ee95468b1f",
+      "generatedAt": "2026-06-27T15:33:04.332Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5605,
+      "promptTokens": 183,
+      "completionTokens": 833
+    },
+    "verificationNotes.release-assets-include-sha-1-checksum-files": {
+      "value": "Файли релізу містять файли контрольних сум SHA-1.",
+      "sourceHash": "sha256:09bd82bc037f2d20056e605e66c08374dae00ce4739355bdccfc06689f00f48b",
+      "generatedAt": "2026-06-27T15:33:21.277Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16944,
+      "promptTokens": 138,
+      "completionTokens": 923
+    },
+    "verificationNotes.published-releases-are-curated-repeater-and-repe": {
+      "value": "Опубліковані випуски — це відібрані збірки repeater та repeater-bridge.",
+      "sourceHash": "sha256:f7b5fdc052a23c7cab873f463ef7759847ee9a032757aa4d2ff041d7b700aff3",
+      "generatedAt": "2026-06-27T15:33:26.765Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5488,
+      "promptTokens": 142,
+      "completionTokens": 845
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-paperui",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore pro přenosné zařízení LilyGo T5 ePaper S3 Pro, zaměřený na e-papír, nabízí samostatné zasílání zpráv, kontakty, vyhledávání zařízení, GPS, mapy a nastavení zařízení optimalizované pro dotykové ovládání.",
+      "sourceHash": "sha256:2c18c1e23eb96c2ae622588c276ede00f5d447feda3aea55090cf98c0f381f28",
+      "generatedAt": "2026-06-27T11:18:23.039Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24282,
+      "promptTokens": 166,
+      "completionTokens": 1511
+    },
+    "deviceNotes.lilygo-t5-pro": {
+      "value": "Pro běžné používání je vyžadováno zařízení LilyGo T5 ePaper S3 Pro a SD karta.",
+      "sourceHash": "sha256:89d7b3b5c4c8457715a6fa7b8c0ca4c2e3cef78536e370f478a7564a24eb3a05",
+      "generatedAt": "2026-06-27T11:18:28.703Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5663,
+      "promptTokens": 148,
+      "completionTokens": 637
+    },
+    "features": {
+      "value": "[\"Rozhraní pro zasílání zpráv na e-papíru\", \"Kontakty a vyhledávání uzlů\", \"GPS, mapy a trasové body\", \"Webový nástroj pro flashování\"]",
+      "sourceHash": "sha256:79e44108b22128680d020598974a7c6590788b10015223fc21e6be26d69ac85e",
+      "generatedAt": "2026-06-27T12:30:04.700Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14856,
+      "promptTokens": 151,
+      "completionTokens": 969
+    }
+  }
+}

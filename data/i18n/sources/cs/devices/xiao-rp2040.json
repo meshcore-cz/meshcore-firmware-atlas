@@ -1,0 +1,12 @@
+{
+  "resource": "device/xiao-rp2040",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Miniaturní deska RP2040 XIAO s programováním přes USB, 14pinovým provedením a standardními LED diodami pro uživatele a nabíjení od Seeed. Vhodná pro drobné řídicí projekty doprovodných zařízení a jednoduchou propojovací logiku periferií.",
+      "sourceHash": "sha256:7739fe7a96e1757555e7b3844f8bc662880f26b1e66953f556ab966ada5a58e2",
+      "generatedAt": "2026-06-27T10:58:52.321Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

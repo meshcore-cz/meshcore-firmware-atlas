@@ -1,0 +1,15 @@
+{
+  "resource": "network/southern-california-meshcore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore у Південній Каліфорнії, зосереджена в районі Лос-Анджелеса, із публічним аналізатором CoreScope у агломерації LAX.",
+      "sourceHash": "sha256:4ffe79e25bd55a6ce42adfcd6f52573f0dac02d6ca02e5b1f707d99b77a6376e",
+      "generatedAt": "2026-06-27T16:59:08.660Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11022,
+      "promptTokens": 155,
+      "completionTokens": 2051
+    }
+  }
+}

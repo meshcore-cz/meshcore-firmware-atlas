@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-team",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Aplikace pro Android pro týmové sledování a komunikaci, určená pro lovce a týmy v odlehlých oblastech. Využívá telemetrii MeshCore ke sledování pozice mimo dosah sítě, tvorbě týmových map a koordinaci.",
+      "sourceHash": "sha256:e3e6920c6bfcf47cae16883df832a4b6d678d0c0ff70b8e1cc0fc9ad60e311fb",
+      "generatedAt": "2026-06-27T11:39:14.577Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8901,
+      "promptTokens": 156,
+      "completionTokens": 1174
+    },
+    "screenshots.home.jpg.caption": {
+      "value": "Stav týmu a navigace",
+      "sourceHash": "sha256:12c3c8119e8f946de6eb210f21b2abb34bff63ebaccfb198a3f44aca53804e5d",
+      "generatedAt": "2026-06-27T11:39:18.323Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3745,
+      "promptTokens": 133,
+      "completionTokens": 326
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Mapa pozic týmu mimo síť",
+      "sourceHash": "sha256:3f1fa2ca86b683d9f746a09c436709d1f42eba5370bc34ccd38c31b2e7dec973",
+      "generatedAt": "2026-06-27T11:39:23.991Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5668,
+      "promptTokens": 134,
+      "completionTokens": 530
+    },
+    "screenshots.messages.jpg.caption": {
+      "value": "Týmová komunikace",
+      "sourceHash": "sha256:107eab2a042fb8dbef5e05a47b068f66e6877281bf5d6114a8cd39340e012f86",
+      "generatedAt": "2026-06-27T11:39:27.725Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3734,
+      "promptTokens": 131,
+      "completionTokens": 356
+    },
+    "screenshots.settings.jpg.caption": {
+      "value": "Nastavení aplikace a rádia",
+      "sourceHash": "sha256:d2e0861a50ed378e8c60a729666d5a60f39aa5098aaf1424252017565709af04",
+      "generatedAt": "2026-06-27T11:39:30.521Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2795,
+      "promptTokens": 133,
+      "completionTokens": 249
+    },
+    "verificationNotes.this-repository-is-deprecated-current-testing-mo": {
+      "value": "Tento repozitář je vyřazen; aktuální testování se přesunulo na uzavřenou stopu Google Play, která je přístupná přes odkazovanou skupinu Google.",
+      "sourceHash": "sha256:ce93c1c90cadfd91d97e0dcc0f1052a9b73c0642100a57c8ce231cdcd1ec80c7",
+      "generatedAt": "2026-06-27T11:39:39.973Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9451,
+      "promptTokens": 150,
+      "completionTokens": 1090
+    },
+    "verificationNotes.the-repository-contains-documentation-and-screen": {
+      "value": "Repozitář obsahuje dokumentaci a snímky obrazovky, ale neposkytuje žádný zdrojový kód.",
+      "sourceHash": "sha256:2e84105656a98d69955fe80b36b06e0af1a219fd10106bc9ad2831302469470e",
+      "generatedAt": "2026-06-27T11:39:44.799Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4826,
+      "promptTokens": 141,
+      "completionTokens": 596
+    },
+    "tags": {
+      "value": "[\"sledování-týmu\",\"divočina\",\"lov\",\"uzavřená-beta\"]",
+      "sourceHash": "sha256:8a06cb541974e874adc4f2876730eb0f1dbaf179335232de7f80573ad6eb1fb2",
+      "generatedAt": "2026-06-27T13:43:44.156Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 26980,
+      "promptTokens": 142,
+      "completionTokens": 421
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-deck",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Кишеньковий пристрій Meshtastic/MeshCore на базі ESP32-S3 з опціональним SX1262 LoRa, 2.8-дюймовим IPS-дисплеєм, міні-QWERTY-клавіатурою та трекболом. Вбудовані мікрофон і динамік для автономного обміну повідомленнями та роботи з інтерфейсом. Підтримка Wi-Fi та BLE; вбудований GPS відсутній (зовнішній модуль опціонально).",
+      "sourceHash": "sha256:b85d5af62aaa694c494dff22522e4aa7f260a76fb0853882f0f384cc39205898",
+      "generatedAt": "2026-06-27T14:59:03.408Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5336,
+      "promptTokens": 194,
+      "completionTokens": 1416
+    }
+  }
+}

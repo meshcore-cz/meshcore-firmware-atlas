@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-e5-dev",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento Wio-E5 compacta para prototipagem com STM32WLE5JC / LoRaWAN, equipada com antena externa e pinos de expansão GPIO. Projetada para inicialização rápida e testes de rádio, em vez de um invólucro finalizado.",
+      "sourceHash": "sha256:23d00d05ce0815a6b3faffc6c1ceae5ed8bb01a5fe843d4e78329d427bd81953",
+      "generatedAt": "2026-06-27T14:20:07.706Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3062,
+      "promptTokens": 173,
+      "completionTokens": 830
+    }
+  }
+}

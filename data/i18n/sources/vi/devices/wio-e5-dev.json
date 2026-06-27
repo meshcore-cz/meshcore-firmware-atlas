@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-e5-dev",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển Wio-E5 nhỏ gọn dành cho phát triển nguyên mẫu STM32WLE5JC / LoRaWAN, đi kèm ăng-ten ngoài và các chân kết nối GPIO. Thiết kế này phục vụ cho việc khởi động nhanh và kiểm tra vô tuyến, thay vì dùng trong một vỏ hoàn chỉnh.",
+      "sourceHash": "sha256:23d00d05ce0815a6b3faffc6c1ceae5ed8bb01a5fe843d4e78329d427bd81953",
+      "generatedAt": "2026-06-27T15:42:17.935Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6703,
+      "promptTokens": 173,
+      "completionTokens": 1240
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/muziworks-r1-neo",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní, továrně sestavené ruční zařízení Meshtastic s integrovaným modulem GPS/BDS, utěsněním odolným vůči povětrnostním vlivům, jediným soft-touch tlačítkem a výdrží baterie na několik dní díky vestavěnému akumulátoru.",
+      "sourceHash": "sha256:646fd9a0a399e51dce7a43fbf086b5ff0e8fbeb9befa6b7e315003c3c9a47a02",
+      "generatedAt": "2026-06-27T10:54:07.181Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

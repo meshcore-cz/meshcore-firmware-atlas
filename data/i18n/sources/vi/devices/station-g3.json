@@ -1,0 +1,15 @@
+{
+  "resource": "device/station-g3",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch Modular Station có bo mạch con MCU ESP32-S3, bo mạch con RF và màn hình OLED 1.3 inch. Thiết kế để sử dụng nguồn cấp ngoài 9-19 V và tương thích firmware với các cấu hình Station G2.",
+      "sourceHash": "sha256:ac46a2814408df5d6baf23b50acd3b6177442b6240dd731a1f8a15931a5d047c",
+      "generatedAt": "2026-06-27T15:43:46.192Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6624,
+      "promptTokens": 177,
+      "completionTokens": 870
+    }
+  }
+}

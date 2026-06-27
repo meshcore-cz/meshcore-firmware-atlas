@@ -1,0 +1,15 @@
+{
+  "resource": "network/saarland-luxembourg-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới MeshCore xuyên biên giới bao phủ Saarland của Đức và nước Luxembourg láng giềng, với hơn 690 nút tại khu vực Merzig, Saarbrücken và Mamer. Hệ thống sử dụng cấu hình sẵn EU/UK Narrow trên băng tần 868 MHz kèm theo bộ phân tích CoreScope chuyên dụng.",
+      "sourceHash": "sha256:1e90ca1a0b6ef8b73142ded381f0c3489f03e264ea7e0818f306544ae2387b9e",
+      "generatedAt": "2026-06-27T16:53:33.132Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4045,
+      "promptTokens": 184,
+      "completionTokens": 615
+    }
+  }
+}

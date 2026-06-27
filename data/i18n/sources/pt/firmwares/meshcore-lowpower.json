@@ -1,0 +1,78 @@
+{
+  "resource": "firmware/meshcore-lowpower",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um firmware MeshCore otimizado para baixo consumo de energia com suspensão profunda, uma interface de usuário completa para tela complementar com conectividade multi-transporte (BLE + USB + WiFi em uma única compilação), controles avançados de rádio e rede, um portal de configuração via navegador e análise de duração da bateria — projetado para operação off-grid de vários dias.",
+      "sourceHash": "sha256:2405964fabf6c7278fd46ddb5b5cb8eeca274fc863535ad3947fd7d0fd283877",
+      "generatedAt": "2026-06-27T14:24:14.356Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4083,
+      "promptTokens": 187,
+      "completionTokens": 1156
+    },
+    "deviceNotes.rak-4631": {
+      "value": "Utiliza a placa base RAK19003 para análise de consumo de energia.",
+      "sourceHash": "sha256:e64febbc7fef69675d911f2109b7cacba3555a99117c91f99b3242bc81091824",
+      "generatedAt": "2026-06-27T14:24:16.514Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2157,
+      "promptTokens": 140,
+      "completionTokens": 455
+    },
+    "deviceNotes.atlavox-m1": {
+      "value": "Usa o alvo RAK4631; o mesmo que rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T14:24:19.027Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2512,
+      "promptTokens": 145,
+      "completionTokens": 612
+    },
+    "deviceNotes.atlavox-beacon": {
+      "value": "Utiliza o destino RAK4631; o mesmo que rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T14:24:21.250Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2223,
+      "promptTokens": 145,
+      "completionTokens": 507
+    },
+    "deviceNotes.rak-wismesh-repeater-mini": {
+      "value": "Utiliza o alvo RAK4631; o mesmo que rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T14:24:23.347Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2097,
+      "promptTokens": 145,
+      "completionTokens": 499
+    },
+    "deviceNotes.yetiwurks-basestation": {
+      "value": "Usa o alvo RAK4631; o mesmo que rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T14:24:25.777Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2430,
+      "promptTokens": 145,
+      "completionTokens": 598
+    },
+    "deviceNotes.uart-solar-node-station": {
+      "value": "Utiliza o alvo RAK4631; o mesmo que rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T14:24:28.234Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2456,
+      "promptTokens": 145,
+      "completionTokens": 603
+    },
+    "features": {
+      "value": "[\"Otimização profunda de energia com perfil de corrente em repouso\",\"Build complementar unificado para BLE + USB + WiFi (binário único)\",\"Portal de configuração no navegador (backup, restauro, flash, reinicialização)\",\"Backup/restauro complementar (preferências, credenciais de WiFi, predefinições)\",\"Ganho de Rx adaptativo e reforçado no Heltec V4.2\",\"Seleção de constelação GPS e intervalo de atualização do GPS em tempo de execução\",\"Proteção contra bateria fraca e leitura de tensão\",\"Exibição multilingue nativa no display TFT colorido Heltec T096\",\"Detecção automática de FEM KCT8103L no Heltec V4.3\"]",
+      "sourceHash": "sha256:35ccc4a3b2140c6384c6b6f8f2522903d0010c1e24af1cd55e69698335b16a49",
+      "generatedAt": "2026-06-27T14:24:35.807Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7572,
+      "promptTokens": 239,
+      "completionTokens": 2414
+    }
+  }
+}

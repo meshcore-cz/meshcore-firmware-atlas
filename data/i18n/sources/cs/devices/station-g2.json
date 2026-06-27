@@ -1,0 +1,12 @@
+{
+  "resource": "device/station-g2",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Mesh zařízení ESP32-S3 třídy Station s výkonným LoRa front-endem, optimalizované pro vyšší citlivost příjmu a výkon vysílání 35 dBm. Určeno pro stálé instalace nebo montáž do vozidla s externí anténou.",
+      "sourceHash": "sha256:be61d9f55d3d9d29b8a5c577cd206c31f91d581720ec1d9fc17abbd13236ea0b",
+      "generatedAt": "2026-06-27T11:00:29.511Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

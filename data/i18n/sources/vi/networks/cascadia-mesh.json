@@ -1,0 +1,15 @@
+{
+  "resource": "network/cascadia-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore Tây Bắc Thái Bình Dương trải dài qua British Columbia, Washington, Oregon và Bắc California, tập trung vào các trạm chuyển tiếp năng lượng mặt trời, kênh công cộng và hành lang xa lộ Interstate 5 kết nối các cụm khu vực.",
+      "sourceHash": "sha256:59d1063bcf4432beef2056063b95af8a347c68944c18553fe09ba25444f55637",
+      "generatedAt": "2026-06-27T16:45:55.556Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7018,
+      "promptTokens": 164,
+      "completionTokens": 689
+    }
+  }
+}

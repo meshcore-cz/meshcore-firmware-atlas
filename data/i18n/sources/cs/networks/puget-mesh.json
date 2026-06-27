@@ -1,0 +1,15 @@
+{
+  "resource": "network/puget-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Dobrovolnická komunita budující v regionu Puget Sound nezávislé komunikační sítě, včetně MeshCore, Meshtastic a AREDN. Zaměřuje se na připravenost na živelní pohromy a nouzový provoz, přičemž aktivně rozvíjí síť MeshCore s využitím předvolby USA/Kanada 915 MHz, která pokrývá Seattle, Tacoma a okolní oblasti.",
+      "sourceHash": "sha256:b2fd6bbe14d828f4ee0242e48be1405ad835bcd06c1f696f5d8dd4e66dbf097a",
+      "generatedAt": "2026-06-27T12:11:14.100Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10733,
+      "promptTokens": 191,
+      "completionTokens": 1464
+    }
+  }
+}

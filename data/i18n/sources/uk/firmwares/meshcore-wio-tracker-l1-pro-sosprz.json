@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-wio-tracker-l1-pro-sosprz",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Бінарний дистрибутив форку MeshCore для Seeed Studio Wio Tracker L1 Pro, який додає повноцінний вбудований інтерфейс користувача для обміну повідомленнями, роботи з контактами, налаштування радіомодуля та керування репітерами.",
+      "sourceHash": "sha256:150f77781c5fcb2bb8279091bb6319f85828ad2299d3282a8a2ba7f4bda69b96",
+      "generatedAt": "2026-06-27T15:36:47.060Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11157,
+      "promptTokens": 166,
+      "completionTokens": 1508
+    },
+    "features": {
+      "value": "[\"Обмін прямими повідомленнями та спілкування в каналах на пристрої\",\"Контакти, оголошення та історія повідомлень\",\"Адміністрування радіостанцій та ретрансляторів\",\"Прошивка за допомогою UF2 та браузера\"]",
+      "sourceHash": "sha256:dade16b47333b3fe0ccdc26762eb6628bef64f086fda44badf3cd8f5f3d0b257",
+      "generatedAt": "2026-06-27T15:36:56.082Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9022,
+      "promptTokens": 158,
+      "completionTokens": 1636
+    },
+    "verificationNotes.the-repository-contains-release-binaries-and-usa": {
+      "value": "Репозиторій містить бінарні файли випуску та примітки щодо використання, але не містить вихідного коду мікропрограми чи ліцензії.",
+      "sourceHash": "sha256:a5803d718d32e6d7588b32374bf6515d69d627c75fc2c8b24b61b44c60683fe8",
+      "generatedAt": "2026-06-27T15:37:01.457Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5374,
+      "promptTokens": 144,
+      "completionTokens": 1030
+    }
+  }
+}

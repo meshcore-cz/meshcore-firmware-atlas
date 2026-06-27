@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tdisplay-p4",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата розробника ESP32-P4 із сенсорним MIPI TFT-екраном 4.05″ (540×1168), SX1262 LoRa, L76K GNSS, MIPI-камерою, динаміком, мікрофоном та IMU ICM20948. Допоміжний модуль ESP32-C6-MINI-1U забезпечує підтримку Wi-Fi 6 та BLE 5.0. Постачається у варіантах з AMOLED та TFT-дисплеями; опціональний модуль клавіатури додає фізичну QWERTY-клавіатуру з радіомодулями CC1101/NRF24L01/NFC.",
+      "sourceHash": "sha256:8467ea029365a4b591a48b4b0fc69c34df36296267eee1ba6382871e789e5aca",
+      "generatedAt": "2026-06-27T14:59:17.971Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4901,
+      "promptTokens": 236,
+      "completionTokens": 1340
+    }
+  }
+}

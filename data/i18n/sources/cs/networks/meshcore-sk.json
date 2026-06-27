@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-sk",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Slovenská národní síť MeshCore, kterou koordinují mesh.om3kff.sk a komunitní Discord. Funguje na předvolbě EU/UK (Narrow) v pásmu 869.618 MHz (62.5 kHz / SF8) – s kódovým poměrem 4/5 – a sdílí mezinárodní kanál Public propojený s maďarskou a rakouskou sítí, plus národní kanál #slovakia.",
+      "sourceHash": "sha256:687d3b9df7424618168dc42fcefdef6fd9db9013f75f43a95c6823f32cdb20c8",
+      "generatedAt": "2026-06-27T12:12:13.010Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9229,
+      "promptTokens": 214,
+      "completionTokens": 1503
+    }
+  }
+}

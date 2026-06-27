@@ -1,0 +1,69 @@
+{
+  "resource": "software/meshcore-signal-tester",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Công cụ phân tích tín hiệu trên Web và Android dành cho thiết bị đồng hành và bộ lặp MeshCore, bao gồm tính năng nhận gói tin theo nhóm, lịch sử RSSI/SNR, thống kê bộ lặp, bản đồ 3D có gắn thẻ GPS và thu thập dữ liệu CSV.",
+      "sourceHash": "sha256:b76346c1faf3603909ceef9a39b9235ce32ab38eee8432f253e6e504fd527636",
+      "generatedAt": "2026-06-27T16:17:15.836Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6419,
+      "promptTokens": 169,
+      "completionTokens": 922
+    },
+    "screenshots.charts.webp.caption": {
+      "value": "Thống kê bộ lặp và lịch sử RSSI/SNR",
+      "sourceHash": "sha256:b921ad54a85ec37470672ffc97e99e683d0fcf9b560e62c1707d4d9d203c6aaa",
+      "generatedAt": "2026-06-27T16:17:18.215Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2378,
+      "promptTokens": 138,
+      "completionTokens": 419
+    },
+    "screenshots.3dmap.webp.caption": {
+      "value": "Bản đồ tín hiệu 3D có đánh dấu GPS",
+      "sourceHash": "sha256:d9d7f372bd6c6c009e9ccf2ec31aab806b7fe74bb3a9a3cc30cca13a2b41b447",
+      "generatedAt": "2026-06-27T16:17:28.775Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10560,
+      "promptTokens": 137,
+      "completionTokens": 785
+    },
+    "screenshots.packets.webp.caption": {
+      "value": "Các gói tin được nhóm kèm chi tiết đã giải mã",
+      "sourceHash": "sha256:a399a8d012ff9b2c29d40a44f2c97551f8e7a5b7c5fbccaec0b1f16754d2a332",
+      "generatedAt": "2026-06-27T16:18:04.639Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 35863,
+      "promptTokens": 135,
+      "completionTokens": 235
+    },
+    "tags": {
+      "value": "[\"kiểm tra tín hiệu\",\"công cụ hiện trường\",\"threejs\",\"bắt gói tin\"]",
+      "sourceHash": "sha256:6594c6c357bb5ffa81ccf6bd490d1e14cf15964426a9da19810e644a13fd4dca",
+      "generatedAt": "2026-06-27T16:18:08.253Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3605,
+      "promptTokens": 143,
+      "completionTokens": 545
+    },
+    "verificationNotes.the-android-app-adds-background-capture-and-raw-": {
+      "value": "Ứng dụng Android bổ sung tính năng chụp nền và kết nối TCP thô cho firmware đồng hành WiFi.",
+      "sourceHash": "sha256:63c6cc13b24e7f1fce97f036a40723716805058b855dfd04f2ea614b2a65fb59",
+      "generatedAt": "2026-06-27T16:18:14.291Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6037,
+      "promptTokens": 144,
+      "completionTokens": 955
+    },
+    "verificationNotes.browser-bluetooth-and-serial-support-depends-on-": {
+      "value": "Khả năng hỗ trợ Bluetooth và serial của trình duyệt tùy thuộc vào trình duyệt và nền tảng.",
+      "sourceHash": "sha256:cac261d316db620be6aa71b5db5c4ade6f749ced361bc642af7f3529e3358786",
+      "generatedAt": "2026-06-27T16:18:23.747Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9455,
+      "promptTokens": 141,
+      "completionTokens": 1406
+    }
+  }
+}

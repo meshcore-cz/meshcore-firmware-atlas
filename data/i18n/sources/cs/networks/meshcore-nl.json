@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-nl",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nizozemská nouzová rádiová síť LocalMesh pro uživatele MeshCore v Nizozemsku využívá předvolbu Netherlands v pásmu 868 MHz (EU) a nabízí přístup na veřejné kanály, regionální dosahy opakovačů a aktivní komunitu občanů.",
+      "sourceHash": "sha256:ae729b1bbf65c740dfe7d81106fbb7bc66ce02c8f5d38a02c72d228b69e67ae0",
+      "generatedAt": "2026-06-27T12:08:59.917Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8149,
+      "promptTokens": 172,
+      "completionTokens": 1029
+    }
+  }
+}

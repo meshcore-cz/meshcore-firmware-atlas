@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/lusofw",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Uma distribuição de firmware MeshCore da comunidade para a comunidade portuguesa, com predefinições de rádio para Portugal, imposição do ciclo de trabalho, sincronização de hora de rede, controlos de anúncios de inundação e compilações selecionadas de repetidores e pontes.",
+      "sourceHash": "sha256:b873964349f2581796e0c7ff241ec4ad5c5fc9ddd3a9047b2835834169cea04d",
+      "generatedAt": "2026-06-27T14:23:48.312Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3974,
+      "promptTokens": 168,
+      "completionTokens": 1165
+    },
+    "deviceNotes.heltec-v4-exp": {
+      "value": "Utiliza o alvo de lançamento Heltec V4 TFT.",
+      "sourceHash": "sha256:c077efae98137d562d06266b165e29a58561ae42b20991de84f816dd2883588c",
+      "generatedAt": "2026-06-27T14:23:51.243Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2929,
+      "promptTokens": 139,
+      "completionTokens": 586
+    },
+    "features": {
+      "value": "[\"Predefinições de rádio e região para Portugal\",\"Aplicação do ciclo de trabalho\",\"Sincronização de hora de rede\",\"Agendamento e redução de anúncios de inundação\",\"Compilações de ponte repetidora para ESP-NOW e RS-232\",\"Controlos de ganho de receção amplificado para SX126x\",\"Versões selecionadas para flash via navegador\"]",
+      "sourceHash": "sha256:411bbf90ea0a69cdedbabf8cfccd2125d34dbd6e257dd40a434973ee95468b1f",
+      "generatedAt": "2026-06-27T14:23:54.602Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3358,
+      "promptTokens": 183,
+      "completionTokens": 894
+    },
+    "verificationNotes.release-assets-include-sha-1-checksum-files": {
+      "value": "Os recursos da versão incluem ficheiros de soma de verificação SHA-1.",
+      "sourceHash": "sha256:09bd82bc037f2d20056e605e66c08374dae00ce4739355bdccfc06689f00f48b",
+      "generatedAt": "2026-06-27T14:23:56.807Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2205,
+      "promptTokens": 138,
+      "completionTokens": 501
+    },
+    "verificationNotes.published-releases-are-curated-repeater-and-repe": {
+      "value": "As versões publicadas são compilações selecionadas de repetidor e repetidor-ponte.",
+      "sourceHash": "sha256:f7b5fdc052a23c7cab873f463ef7759847ee9a032757aa4d2ff041d7b700aff3",
+      "generatedAt": "2026-06-27T14:24:00.193Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3385,
+      "promptTokens": 142,
+      "completionTokens": 860
+    }
+  }
+}

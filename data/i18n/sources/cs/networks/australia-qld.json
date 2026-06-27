@@ -1,0 +1,15 @@
+{
+  "resource": "network/australia-qld",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Oficiální předvolba rádia aplikace MeshCore — 923.125MHz / SF8 / BW62.5 / CR5.",
+      "sourceHash": "sha256:45f218c29a90efe01372f7311c1351cb468e298c906d0149e12d4e2d2dbbfcc4",
+      "generatedAt": "2026-06-27T12:00:52.391Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3489,
+      "promptTokens": 154,
+      "completionTokens": 259
+    }
+  }
+}

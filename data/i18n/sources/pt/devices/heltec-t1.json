@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t1",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dispositivo de malha Heltec nRF52 + SX1262 compacto para projetos LoRa portáteis de baixo consumo. O alvo de firmware upstream já existe, mas a página pública do produto ainda tem poucas informações.",
+      "sourceHash": "sha256:38aa7a4618890b2960b8385c5e9e4a81933383b669f454a7a79d8f0ad9b0706c",
+      "generatedAt": "2026-06-27T14:02:40.445Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 59613,
+      "promptTokens": 164,
+      "completionTokens": 949
+    }
+  }
+}

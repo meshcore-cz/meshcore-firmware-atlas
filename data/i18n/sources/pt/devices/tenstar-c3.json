@@ -1,0 +1,15 @@
+{
+  "resource": "device/tenstar-c3",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "A placa-alvo ESP32-C3 MeshCore é vendida ou selecionada nas versões SX1262 e SX1268 LoRa. Oferece Wi-Fi, Bluetooth LE e gravação via USB para nós auxiliares, repetidores ou servidores de sala de baixo custo.",
+      "sourceHash": "sha256:75aac1a664504c8ff96854579addb74d602d8aec44b069be98109327f9672ba8",
+      "generatedAt": "2026-06-27T14:20:47.971Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4981,
+      "promptTokens": 174,
+      "completionTokens": 1386
+    }
+  }
+}

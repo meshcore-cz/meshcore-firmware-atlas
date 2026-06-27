@@ -1,0 +1,15 @@
+{
+  "resource": "network/mcml",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới MeshCore do cộng đồng điều hành dành cho khu vực Münsterland thuộc bang North Rhine-Westphalia, Đức, cho phép nhắn tin tầm xa hoàn toàn không cần kết nối internet hay mạng di động.",
+      "sourceHash": "sha256:438f6f3725762ce9131223674d56083bfd5fea34b4ca17f9e93835d9cd7221c9",
+      "generatedAt": "2026-06-27T16:51:31.823Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3980,
+      "promptTokens": 162,
+      "completionTokens": 688
+    }
+  }
+}

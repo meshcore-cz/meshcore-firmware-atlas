@@ -1,0 +1,15 @@
+{
+  "resource": "device/gatiot-gat562",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Кишеньковий трекер nRF52840 із SX1262 LoRa, L76K GNSS, OLED-дисплеєм, Bluetooth, заряджанням через USB-C та вбудованою батареєю на 2500 мА·год для роботи з Meshtastic/MeshCore.",
+      "sourceHash": "sha256:bca321de5ddbecc331a40f290380e5e534a71424d6a57f8dbd48e147eb7b1a46",
+      "generatedAt": "2026-06-27T14:56:29.582Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2522,
+      "promptTokens": 177,
+      "completionTokens": 704
+    }
+  }
+}

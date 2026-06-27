@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-base-duo",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển BASE System nhỏ gọn cho các node Meshtastic dải kép, kết hợp MCU nRF52840 với bộ thu phát LoRa LR1121, có đầu nối anten riêng biệt cho dải sub-GHz và 2.4 GHz, hỗ trợ mở rộng QWIIC/STEMMA QT và sạc pin/năng lượng mặt trời.",
+      "sourceHash": "sha256:fd006660f8612d2df7d62032143d8b0bf1b9a702bdb36a154f988b4c222ed8a7",
+      "generatedAt": "2026-06-27T15:39:00.618Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7625,
+      "promptTokens": 187,
+      "completionTokens": 1012
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-r1-neo",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dispositivo portátil Meshtastic compacto e montado em fábrica, com GPS/BDS integrado, vedação resistente às intempéries, um único botão de toque suave e bateria interna com autonomia para vários dias.",
+      "sourceHash": "sha256:646fd9a0a399e51dce7a43fbf086b5ff0e8fbeb9befa6b7e315003c3c9a47a02",
+      "generatedAt": "2026-06-27T14:17:19.186Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13759,
+      "promptTokens": 165,
+      "completionTokens": 833
+    }
+  }
+}

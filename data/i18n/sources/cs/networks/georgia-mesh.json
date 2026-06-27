@@ -1,0 +1,15 @@
+{
+  "resource": "network/georgia-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita MeshCore v severní Georgii (USA) sdružuje 840+ uzlů pokrývajících Lawrenceville, Mariettu a horské oblasti severní Georgie. Provoz probíhá na americkém frekvenčním pásmu 915 MHz a využívá analyzátor CoreScope spolu se samostatnou instancí na meshstat.com.",
+      "sourceHash": "sha256:132a5a4a725394a844e322e2c1ec2873f2d8cb26c8035b50651c46152cbffa49",
+      "generatedAt": "2026-06-27T12:04:58.541Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9492,
+      "promptTokens": 181,
+      "completionTokens": 1441
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/wio-wm1110",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Fúzní lokalizační modul kombinující LR1110 a nRF52840 pro IoT s dlouhým dosahem, BLE a pasivní skenování Wi-Fi/GNSS. Kompaktní holý modul o rozměrech 20×20 mm určený jako radiové jádro pro projekty sledování a geolokace, bez displeje a krytu.",
+      "sourceHash": "sha256:fa96a4f4fc45055a154333ef7a37256fa2e493ba8e74a626f4e455242a09e2f9",
+      "generatedAt": "2026-06-27T11:01:06.502Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

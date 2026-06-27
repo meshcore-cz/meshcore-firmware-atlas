@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tdeck-max",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dispositivo portátil ESP32-S3 baseado na plataforma T-Deck Pro com SX1262 LoRa, ecrã de tinta eletrónica de 3,1 polegadas, teclado QWERTY, GNSS, áudio, suporte para módulo 4G e um sistema de bateria de maior capacidade. Concebido para comunicações portáteis MeshCore e IoT.",
+      "sourceHash": "sha256:416caa8b93de794d92fe9e9d053fe83f34c6046ab316b6b0a56570bfa727374f",
+      "generatedAt": "2026-06-27T14:12:17.464Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13845,
+      "promptTokens": 190,
+      "completionTokens": 882
+    }
+  }
+}

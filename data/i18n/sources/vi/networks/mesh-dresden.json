@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-dresden",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore và Meshtastic do tình nguyện viên vận hành dành cho Dresden và vùng Saxony rộng lớn hơn. Hệ thống vận hành các trạm chuyển tiếp tự động sử dụng năng lượng mặt trời trên băng tần 868 MHz của EU, cùng với các khu vực mạng thuộc Dresden và các kênh hashtag công khai để trò chuyện nội bộ, hỗ trợ và gặp mặt.",
+      "sourceHash": "sha256:fc4aee749316e2929a958e0c07b7dbbed64df6fc737e6cced41b21a6a2999b18",
+      "generatedAt": "2026-06-27T16:50:16.114Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8893,
+      "promptTokens": 181,
+      "completionTokens": 1164
+    }
+  }
+}

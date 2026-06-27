@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-t096",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nízkopříkonová vývojová deska nRF52840 + SX1262 pro LoRa s integrovaným modulem GNSS, Bluetooth LE, napájením a sériovou linkou přes USB-C a volitelným vstupem pro solární napájení. Je určena pro aplikace Meshtastic, MeshCore a LoRaWAN s externími anténami LoRa a GNSS s konektory IPEX.",
+      "sourceHash": "sha256:6681fe13ff52517fb888e93a3cbf1fb1e81f3d5999c32829a359b4e1fc33e4f4",
+      "generatedAt": "2026-06-27T10:46:33.964Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

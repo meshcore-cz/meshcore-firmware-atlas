@@ -1,0 +1,15 @@
+{
+  "resource": "network/madison-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede de rádio em malha comunitária em Madison, Wisconsin, focada principalmente no MeshCore, mas também com suporte ao Meshtastic. Entusiastas locais constroem e hospedam nós off-grid pela região de Madison e compartilham guias de configuração, um mapa em tempo real e coordenação no Discord.",
+      "sourceHash": "sha256:0144a3ecaf6314c02e2700d1a5272a2ecb07e4647f39d9b0c8c09d8eb4533a6c",
+      "generatedAt": "2026-06-27T14:47:11.909Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4074,
+      "promptTokens": 176,
+      "completionTokens": 1185
+    }
+  }
+}

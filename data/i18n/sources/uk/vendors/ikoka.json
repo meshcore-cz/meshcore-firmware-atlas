@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/ikoka",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Виробник компактних mesh-вузлів Ikoka Nano / Stick.",
+      "sourceHash": "sha256:40369f478d0fa80beb62c693d2ec5cea6aa1222e6777b973771a1ec22216e8ba",
+      "generatedAt": "2026-06-27T16:44:47.445Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2849,
+      "promptTokens": 140,
+      "completionTokens": 381
+    }
+  }
+}

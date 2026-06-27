@@ -1,0 +1,15 @@
+{
+  "resource": "network/high-desert-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới thông tin liên lạc khẩn cấp cộng đồng phục vụ khu vực cao nguyên Nam California, bao gồm Victorville, Lancaster, Apple Valley, Palmdale, Phelan và Wrightwood. Cộng đồng mở rộng hỗ trợ nhiều công nghệ mạng mắt lưới LoRa, với lưu lượng MeshCore đang hoạt động được giám sát thông qua một phiên bản CoreScope cấp khu vực.",
+      "sourceHash": "sha256:f3f1de6314e3d55e90a71b607eaf67ee8eb446890e5870eaef46628920b67626",
+      "generatedAt": "2026-06-27T16:48:18.449Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6149,
+      "promptTokens": 182,
+      "completionTokens": 1003
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-techo",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Mimořádně úsporné ruční zařízení Meshtastic/MeshCore s čipy nRF52840 a SX1262, e-paper displejem o úhlopříčce 1,54 palce a integrovaným modulem L76K GNSS. Podporuje pouze Bluetooth 5 a je dostupné ve volitelné variantě se senzorem prostředí BME280 a krytem z ABS plastu.",
+      "sourceHash": "sha256:28f4dd1b6309ea945c5ff350db721e370e0356816e50e25a5038b54df630480e",
+      "generatedAt": "2026-06-27T10:51:30.086Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

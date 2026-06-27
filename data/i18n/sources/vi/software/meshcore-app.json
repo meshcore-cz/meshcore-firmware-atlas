@@ -1,0 +1,24 @@
+{
+  "resource": "software/meshcore-app",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Ứng dụng đồng hành độc quyền do dự án MeshCore khuyến nghị, dùng để nhắn tin, quản lý danh bạ và kênh, cũng như cấu hình nút qua BLE/serial.",
+      "sourceHash": "sha256:c422b32f187163ac0561944bed18b440dedff9a017f5c684db7c978b5067f4ac",
+      "generatedAt": "2026-06-27T16:05:02.532Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7375,
+      "promptTokens": 156,
+      "completionTokens": 753
+    },
+    "tags": {
+      "value": "[\"Được dự án đề xuất\",\"Độc quyền\",\"Ứng dụng đồng hành\"]",
+      "sourceHash": "sha256:582a0966ebc7322469cb2966392d18aba5b647d95bbb89f1ba5533ac7524584c",
+      "generatedAt": "2026-06-27T16:05:17.758Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15226,
+      "promptTokens": 140,
+      "completionTokens": 689
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/zephcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompletní port MeshCore z Arduina do Zephyr RTOS. Nahrazuje smyčku Arduina událostmi řízenými primitivy Zephyru, díky čemuž CPU mezi událostmi usíná. Cílem je přitom zachovat plnou kompatibilitu protokolu se standardním firmwarem MeshCore a mobilními aplikacemi MeshCore.",
+      "sourceHash": "sha256:b89eb0b866233c243cb7624a75365b6a3cd86c2025524aabdc727edcd93b7751",
+      "generatedAt": "2026-06-27T11:22:42.363Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12149,
+      "promptTokens": 184,
+      "completionTokens": 912
+    },
+    "deviceNotes.xiao-nrf54l15": {
+      "value": "Počáteční zprovoznění; nejsou zapojeny všechny periferie.",
+      "sourceHash": "sha256:0e81acccc7ba2c2fe3a154e23ef5b0f9e8367652e3c6e216a29f0a3595c111f1",
+      "generatedAt": "2026-06-27T11:22:50.979Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8615,
+      "promptTokens": 138,
+      "completionTokens": 815
+    },
+    "features": {
+      "value": "[\"Architektura řízená událostmi v Zephyr RTOS\",\"Úspora energie při příjmu založená na CAD\",\"Adaptivní okno kolize\",\"Adaptivní řízení výkonu\",\"Podpora aktualizací DFU / OTA\",\"Pasivní pozorovatel (WiFi + MQTT)\",\"Protokolově kompatibilní s aplikacemi MeshCore\"]",
+      "sourceHash": "sha256:c5938d681bdf2509ed7544b22e71ce1805f87a09e4d39e4b439ac74239ddaec7",
+      "generatedAt": "2026-06-27T12:34:15.855Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15462,
+      "promptTokens": 177,
+      "completionTokens": 1093
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/esphome-meshcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thành phần mở rộng ESPHome chuyển đổi phần cứng XIAO nRF52840 và SX1262 thành các nút cảm biến MeshCore được quản lý từ xa, cung cấp các công tắc, cảm biến, quạt và đèn ESPHome thông qua lệnh Companion.",
+      "sourceHash": "sha256:ac8a47c596cc50ca5880a0532248a0b3a00c4f94d25ce95483ece8f561ac60d1",
+      "generatedAt": "2026-06-27T16:01:33.141Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9970,
+      "promptTokens": 170,
+      "completionTokens": 955
+    },
+    "tags": {
+      "value": "[\"esphome\",\"nút cảm biến\",\"xiao\",\"nrf52840\",\"sx1262\"]",
+      "sourceHash": "sha256:3782293dd5996cb3bf104ab000f1d628dca15df4f6965092c384513f5baa7d90",
+      "generatedAt": "2026-06-27T16:01:55.765Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 22622,
+      "promptTokens": 150,
+      "completionTokens": 284
+    },
+    "verificationNotes.developed-and-tested-specifically-for-the-seeed-": {
+      "value": "Được phát triển và kiểm thử dành riêng cho Seeed XIAO nRF52840 với module radio SX1262; không hỗ trợ ESP32 và ESP8266.",
+      "sourceHash": "sha256:03a8c9b54be993a95e06d4b45f8a8f3ccbd012c17b3c86df88dd6b73d2d632f9",
+      "generatedAt": "2026-06-27T16:02:01.666Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5901,
+      "promptTokens": 164,
+      "completionTokens": 763
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Kho lưu trữ hiện không khai báo giấy phép SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:02:04.636Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2969,
+      "promptTokens": 139,
+      "completionTokens": 406
+    }
+  }
+}

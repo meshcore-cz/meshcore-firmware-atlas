@@ -1,0 +1,12 @@
+{
+  "resource": "device/uart-solar-node-station",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Plně sestavený venkovní solární uzel Meshtastic/MeshCore založený na základní desce μArt Solar Mesh (RAK4630, firmware kompatibilní s RAK4631). Dodává se s 10 W panelem a přiloženou baterií; solární vstup MPPT 7–30 V.",
+      "sourceHash": "sha256:9309653a356e2aa3d6d2453b6d4e397881e866b592acd3397e3bab199bc9511a",
+      "generatedAt": "2026-06-27T11:02:01.707Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

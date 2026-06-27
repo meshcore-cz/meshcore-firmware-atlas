@@ -88,6 +88,12 @@ export function deprecatedIn(entry, version) {
   return entry.deprecatedAt != null && cmpVersion(entry.deprecatedAt, version) <= 0;
 }
 
+/** Stable overlay / i18n key for a command entry (`start ota` → `start.ota`). */
+export function commandKey(c) {
+  if (c.cmd) return c.cmd.replace(/\s+/g, '.');
+  return c.name ?? '';
+}
+
 /** Lazily load the (heavier) historical metadata + changelogs. */
 export function loadHistory() {
   return import('./repeaterCommandsHistory.js');

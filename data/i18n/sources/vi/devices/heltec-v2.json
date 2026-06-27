@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v2",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển LoRa ESP32 + SX1276/SX1278 phiên bản cổ điển, tích hợp màn hình OLED 0.96-inch, Wi-Fi và BLE. Trang bị cổng Micro USB và giao tiếp serial CP2102, đầu nối pin SH1.25 có quản lý sạc, cùng ăng-ten LoRa IPEX. Sản phẩm đã ngừng sản xuất — Heltec khuyến nghị dùng phiên bản V3 trở lên cho các dự án mới.",
+      "sourceHash": "sha256:ed8f570f2594d2a0d218ac363bbde03a7d3e46c3ec3f248ac50d5040f37d740e",
+      "generatedAt": "2026-06-27T15:34:18.268Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5543,
+      "promptTokens": 200,
+      "completionTokens": 1191
+    }
+  }
+}

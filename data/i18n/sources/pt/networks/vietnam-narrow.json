@@ -1,0 +1,15 @@
+{
+  "resource": "network/vietnam-narrow",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Predefinição de rádio oficial da aplicação MeshCore — 920.250MHz / SF8 / BW62.5 / CR5.",
+      "sourceHash": "sha256:c38607af2c894ef682c09886cd7a374a43f20c283d5cadb1b33835b96877c7f0",
+      "generatedAt": "2026-06-27T14:49:58.694Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2065,
+      "promptTokens": 154,
+      "completionTokens": 456
+    }
+  }
+}

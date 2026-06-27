@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-wm1110",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mô-đun định vị kết hợp LR1110 với nRF52840 dành cho IoT tầm xa, BLE và quét Wi-Fi/GNSS thụ động. Mô-đun cơ bản nhỏ gọn 20×20 mm, dùng làm lõi vô tuyến cho các thiết kế theo dõi và định vị địa lý, không bao gồm màn hình hay vỏ bọc.",
+      "sourceHash": "sha256:fa96a4f4fc45055a154333ef7a37256fa2e493ba8e74a626f4e455242a09e2f9",
+      "generatedAt": "2026-06-27T15:43:58.046Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7001,
+      "promptTokens": 185,
+      "completionTokens": 1041
+    }
+  }
+}

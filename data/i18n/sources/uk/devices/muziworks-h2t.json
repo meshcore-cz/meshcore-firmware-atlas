@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-h2t",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Готовий до використання пристрій Meshtastic на базі Heltec T114 V2, укомплектований GPS-модулем, кабелем-перехідником SMA, штирьовою антеною, LiPo-акумулятором на 2000 mAh та 3D-друкованим корпусом з ASA.",
+      "sourceHash": "sha256:993f787bf96a166b0645e8c78e71b5eb2ede446761a3ffeb1b8621352c8837c0",
+      "generatedAt": "2026-06-27T15:00:26.585Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3621,
+      "promptTokens": 177,
+      "completionTokens": 967
+    }
+  }
+}

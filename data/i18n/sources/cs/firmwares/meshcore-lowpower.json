@@ -1,0 +1,78 @@
+{
+  "resource": "firmware/meshcore-lowpower",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore optimalizovaný pro nízkou spotřebu s režimem hlubokého spánku, kompletní uživatelské rozhraní doprovodného displeje s podporou více typů připojení (BLE + USB + WiFi v jednom sestavení), pokročilé ovládání rádia a sítě, webový konfigurační portál a profilování výdrže baterie – navržené pro vícedenní autonomní provoz.",
+      "sourceHash": "sha256:2405964fabf6c7278fd46ddb5b5cb8eeca274fc863535ad3947fd7d0fd283877",
+      "generatedAt": "2026-06-27T11:17:19.075Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12750,
+      "promptTokens": 187,
+      "completionTokens": 1390
+    },
+    "deviceNotes.rak-4631": {
+      "value": "Využívá základní desku RAK19003 k profilování spotřeby energie.",
+      "sourceHash": "sha256:e64febbc7fef69675d911f2109b7cacba3555a99117c91f99b3242bc81091824",
+      "generatedAt": "2026-06-27T11:17:23.553Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4477,
+      "promptTokens": 140,
+      "completionTokens": 477
+    },
+    "deviceNotes.atlavox-m1": {
+      "value": "Používá cíl RAK4631; je totožný s rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T11:17:29.981Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6428,
+      "promptTokens": 145,
+      "completionTokens": 788
+    },
+    "deviceNotes.atlavox-beacon": {
+      "value": "Používá cíl RAK4631; totožný s rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T11:17:34.944Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4957,
+      "promptTokens": 145,
+      "completionTokens": 729
+    },
+    "deviceNotes.rak-wismesh-repeater-mini": {
+      "value": "Používá cílovou platformu RAK4631, tedy stejnou jako rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T11:17:43.383Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8439,
+      "promptTokens": 145,
+      "completionTokens": 932
+    },
+    "deviceNotes.yetiwurks-basestation": {
+      "value": "Používá cíl RAK4631; shodný s rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T11:17:52.566Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9182,
+      "promptTokens": 145,
+      "completionTokens": 613
+    },
+    "deviceNotes.uart-solar-node-station": {
+      "value": "Používá cíl RAK4631; je totožný s rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T11:17:58.755Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6189,
+      "promptTokens": 145,
+      "completionTokens": 776
+    },
+    "features": {
+      "value": "[\"Hluboká optimalizace spotřeby s profilováním klidového proudu\",\"Sjednocené sestavení doprovodné aplikace pro BLE + USB + WiFi (jediný binární soubor)\",\"Webový konfigurační portál (záloha, obnova, nahrání firmwaru, restart)\",\"Záloha/obnova doprovodné aplikace (předvolby, přihlašovací údaje k WiFi, přednastavení)\",\"Adaptivní zvýšení zisku příjmu (Rx) na Heltec V4.2\",\"Výběr GPS konstelace a nastavení intervalu aktualizace GPS za běhu\",\"Ochrana proti vybití baterie a měření napětí\",\"Nativní vícejazyčné zobrazení na barevném displeji Heltec T096 TFT\",\"Automatická detekce FEM KCT8103L na Heltec V4.3\"]",
+      "sourceHash": "sha256:35ccc4a3b2140c6384c6b6f8f2522903d0010c1e24af1cd55e69698335b16a49",
+      "generatedAt": "2026-06-27T12:29:49.843Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 27912,
+      "promptTokens": 239,
+      "completionTokens": 1929
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resource": "software/tui-meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Terminálový klient pro Linux vytvořený pomocí knihoven Textual a pyMC_core, který nabízí průvodce úvodním nastavením, regionální a hardwarové předvolby, šifrované přímé zprávy a zprávy v kanálech, vyhledávání kontaktů a trvalou historii v SQLite.",
+      "sourceHash": "sha256:3b44e4df48b88175e99391317cf184fb4ed2beb43984aaed55e7c41ebb8cf1b3",
+      "generatedAt": "2026-06-27T11:56:46.947Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7588,
+      "promptTokens": 163,
+      "completionTokens": 1097
+    },
+    "tags": {
+      "value": "[\"terminál\",\"textový\",\"linux\",\"přímé-rádio\"]",
+      "sourceHash": "sha256:9f73b9e969d4af90e79714be30275f8343dbd58b5fcbdb3baee630960d7f29c1",
+      "generatedAt": "2026-06-27T13:51:10.244Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20588,
+      "promptTokens": 140,
+      "completionTokens": 229
+    }
+  }
+}

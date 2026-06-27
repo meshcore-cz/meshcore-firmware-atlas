@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-pirkanmaa",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота Meshtastic та MeshCore регіону Тампере, що охоплює Пірканмаа, зокрема Тампере, Нокіа, Пірккала та Юлеєрві. Її мережа MeshCore працює за профілем EU/UK Narrow на частоті 869.618 МГц та публікує місцеві ресурси для картографування та спілкування.",
+      "sourceHash": "sha256:df23d50539e05beca873eea0458c35681c31bac274cf402a0cd57cddd122fe14",
+      "generatedAt": "2026-06-27T16:52:50.954Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7293,
+      "promptTokens": 189,
+      "completionTokens": 1294
+    }
+  }
+}

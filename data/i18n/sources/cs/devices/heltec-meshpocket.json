@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-meshpocket",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Heltec MeshPocket je kompaktní uzel LoRa (nRF52840 + SX1262) integrovaný v powerbance. Nabízí magnetické bezdrátové nabíjení Qi2, dva porty USB-C (5V vstup/výstup) a malý LCD displej. Je určen pro mobilní mesh sítě Meshtastic a MeshCore, obsahuje baterii s kapacitou 4000+ mAh a energeticky úsporný doprovodný režim BLE.",
+      "sourceHash": "sha256:793167c1ea40adc9a499f253389f9774fa8162f76c3f9a80adac8f57af36ae25",
+      "generatedAt": "2026-06-27T10:45:59.727Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

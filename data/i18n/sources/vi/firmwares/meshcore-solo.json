@@ -1,0 +1,60 @@
+{
+  "resource": "firmware/meshcore-solo",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản phân nhánh từ phần sụng vô tuyến điện đồng hành MeshCore chuẩn với các tính năng mở rộng và cải tiến giao diện. Bổ sung điều hướng GPS (điểm tham chiếu, la bàn, ghi hành trình và xuất GPX), tiết kiệm pin (chu kỳ RX phần cứng + điều khiển công suất thích ứng), quay số liên hệ ưa thích, hỗ trợ ngôn ngữ mở rộng kèm hiển thị Unicode gốc, trạng thái gửi tin nhắn, khóa màn hình, bot tự động trả lời, chế độ bộ lặp có chẩn đoán, và nhiều hơn nữa — tất cả đều được tối ưu hóa cho điều hướng chỉ bằng cần điều khiển trên màn hình nhỏ.",
+      "sourceHash": "sha256:f05ef686d5e6d65d9df251bc342daff86fc49b3ff764618735d32f9cc1975193",
+      "generatedAt": "2026-06-27T15:50:55.267Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7700,
+      "promptTokens": 217,
+      "completionTokens": 1496
+    },
+    "deviceNotes.wio-tracker-l1": {
+      "value": "Phiên bản OLED (SSD1306/SH1106 128x64)",
+      "sourceHash": "sha256:94011346ca4585f46052bcb5db3409b354c81e3cbfe27b97ff86c7404561cb5b",
+      "generatedAt": "2026-06-27T15:50:56.581Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1312,
+      "promptTokens": 146,
+      "completionTokens": 156
+    },
+    "deviceNotes.wio-tracker-l1-pro": {
+      "value": "Phiên bản OLED — cùng mục tiêu firmware với wio-tracker-l1",
+      "sourceHash": "sha256:9168079ede442f9ebae3f9ed382a45939291c4dc4eb4ad542557bf255b6b7a2e",
+      "generatedAt": "2026-06-27T15:50:59.138Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2556,
+      "promptTokens": 143,
+      "completionTokens": 400
+    },
+    "deviceNotes.wio-tracker-l1-eink": {
+      "value": "Phiên bản E-ink (GxEPD2 250x122)",
+      "sourceHash": "sha256:f91d9dccff6b1fd7ea761083860f6f1e5622685f6b5cd86b8a37f00f3bad5a89",
+      "generatedAt": "2026-06-27T15:51:19.829Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20691,
+      "promptTokens": 144,
+      "completionTokens": 701
+    },
+    "deviceNotes.gatiot-gat562-30s": {
+      "value": "Bộ Mesh GAT562 30S",
+      "sourceHash": "sha256:4d53a29b5836fdedefd0af1e87bddc89be52e67222a185847ac87f7b6b1bd254",
+      "generatedAt": "2026-06-27T15:51:23.990Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4160,
+      "promptTokens": 138,
+      "completionTokens": 770
+    },
+    "features": {
+      "value": "[\"Hỗ trợ Unicode mở rộng với phông chữ Lemon và nhập liệu gốc\",\"Bộ công cụ điều hướng GPS (điểm tham chiếu, la bàn, quay lại, ghi lại lộ trình)\",\"Xuất GPX qua USB serial\",\"Chụp màn hình qua USB\",\"Bảng quay nhanh cho các liên hệ được ghim\",\"Chỉ báo trạng thái gửi tin nhắn\",\"Tự động gửi lại DM và loại bỏ tin trùng lặp\",\"Khóa màn hình hiển thị thời gian và cảm biến\",\"Bot tự động trả lời theo lệnh\",\"Tự động quảng bá chia sẻ vị trí\",\"Tiết kiệm pin (chu kỳ hoạt động RX + APC)\",\"Chế độ trạm phát lại đồng hành kèm chẩn đoán\",\"Chức năng Ping trong các nút lân cận\",\"Phát sóng SOS với mục tiêu tùy chỉnh\",\"Giờ yên tĩnh để tắt âm thanh\",\"Đánh dấu đã đọc tất cả theo từng loại\",\"Số tin nhắn chưa đọc trên màn hình khóa\",\"Trang chủ quét kênh\",\"Sắp xếp liên hệ theo khoảng cách\",\"Màn hình thống kê tín hiệu\",\"Hiển thị mẫu kiểm tra\",\"Hồ sơ nguồn điện đặt sẵn\",\"Ứng dụng web Solo Tools để chụp màn hình và xuất GPX (https://marekzegare4.github.io/Solo-tools/)\"]",
+      "sourceHash": "sha256:3384bdea7df512c64d2e356001593cf8a5fa7de1ff62e61df6bb73487160953f",
+      "generatedAt": "2026-06-27T15:51:34.843Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10852,
+      "promptTokens": 306,
+      "completionTokens": 2075
+    }
+  }
+}

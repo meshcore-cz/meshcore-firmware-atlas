@@ -1,0 +1,51 @@
+{
+  "resource": "software/meshcore-hub",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Платформа для збору даних мережі MeshCore для самостійного розміщення, яка отримує декодовані події пакетів через MQTT, зберігає повідомлення та телеметрію, а також забезпечує веб-панель, REST API, автентифікацію, метрики та підтримку віддалених спостерігачів.",
+      "sourceHash": "sha256:7eb1062b7e025acc76ed0b0fee12851f254760722dcdc7228f00c44ce6a3d76a",
+      "generatedAt": "2026-06-27T15:51:07.339Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6101,
+      "promptTokens": 168,
+      "completionTokens": 908
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Панель керування мережею MeshCore Hub",
+      "sourceHash": "sha256:59fc6c58003249c55003c9238aff44bd410289d069d4e8d436aa9fae441fc20d",
+      "generatedAt": "2026-06-27T15:51:10.309Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2970,
+      "promptTokens": 134,
+      "completionTokens": 374
+    },
+    "tags": {
+      "value": "[\"колектор\",\"mqtt\",\"власний хостинг\",\"спостережуваність\",\"мультиспостерігач\"]",
+      "sourceHash": "sha256:31117120c11128f0411d1d25be7950d5268504ff509f514a86a49ce979c425a5",
+      "generatedAt": "2026-06-27T15:51:16.794Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6484,
+      "promptTokens": 145,
+      "completionTokens": 956
+    },
+    "verificationNotes.uses-meshcore-packet-capture-observers-to-decode": {
+      "value": "Використовує спостерігачі meshcore-packet-capture для декодування радіотрафіку та публікування нормалізованих подій у MQTT.",
+      "sourceHash": "sha256:53f3ba05809ee2b0e3dcae2a7babfff26b91c1bc65716b03ba92c99deeaf6e20",
+      "generatedAt": "2026-06-27T15:51:25.281Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8487,
+      "promptTokens": 148,
+      "completionTokens": 746
+    },
+    "verificationNotes.postgresql-is-becoming-the-required-database-bac": {
+      "value": "PostgreSQL стає обов'язковою базою даних; на період міграції зберігається тимчасова підтримка SQLite.",
+      "sourceHash": "sha256:06c3aa26048c4748b3db746dfa7c518c6d43d46e6b6ceeb75c155b10ff283034",
+      "generatedAt": "2026-06-27T15:51:32.254Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6972,
+      "promptTokens": 145,
+      "completionTokens": 1057
+    }
+  }
+}

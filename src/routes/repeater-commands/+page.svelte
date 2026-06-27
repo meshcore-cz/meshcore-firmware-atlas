@@ -1,6 +1,7 @@
 <script>
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
+  import { m } from '$lib/paraglide/messages.js';
   import {
     COMMAND_GROUPS,
     COMMAND_FLAGS,
@@ -14,6 +15,8 @@
     cmpVersion,
     loadHistory
   } from '$lib/repeaterCommands.js';
+  import { localizeRepeaterCommandsCatalog } from '$lib/catalog-overlay.js';
+  import { getLocale } from '$lib/paraglide/runtime.js';
 
   let selectedVersion = $state(CURRENT_VERSION);
   let query = $state('');
@@ -35,7 +38,7 @@
   // Fall back to a "no changes" note for releases that didn't touch the CLI.
   let changes = $derived(
     changelog[selectedVersion] ?? {
-      note: 'No changes to the repeater CLI command surface in this release.'
+      note: m.rc_no_cli_changes()
     }
   );
 
@@ -47,10 +50,16 @@
     return parts.join(' ');
   }
 
+  let commandCatalog = $derived(
+    localizeRepeaterCommandsCatalog(COMMAND_GROUPS, COMMAND_FLAGS, getLocale())
+  );
+  let commandGroups = $derived(commandCatalog.groups);
+  let commandFlags = $derived(commandCatalog.flags);
+
   // Filter by version first, then by the search query; drop empty groups.
   let filteredGroups = $derived.by(() => {
     const q = query.trim().toLowerCase();
-    return COMMAND_GROUPS.map((g) => ({
+    return commandGroups.map((g) => ({
       ...g,
       commands: g.commands.filter(
         (c) =>
@@ -64,7 +73,7 @@
   });
 
   let totalCount = $derived(
-    COMMAND_GROUPS.reduce(
+    commandGroups.reduce(
       (n, g) => n + g.commands.filter((c) => availableIn(c, selectedVersion)).length,
       0
     )
@@ -93,30 +102,34 @@
       // clipboard unavailable (insecure context, denied) — ignore
     }
   }
+
+  // Inline markup for the footer prose rendered with {@html}; only our own
+  // trusted markup is injected.
+  let generatedVars = $derived({
+    ref: `<code class="rounded bg-elev2 px-1.5 py-0.5 font-mono">${sourceRef(selectedVersion)}</code>`
+  });
+  let seeAlsoVars = $derived({
+    cliRef: `<a class="text-accent2 hover:underline" href="https://docs.meshcore.io/cli_commands/" target="_blank" rel="noreferrer">${m.rc_cli_reference()}</a>`
+  });
 </script>
 
-<Seo
-  title="Repeater commands"
-  description="A UX-friendly cheat sheet of MeshCore repeater serial / admin CLI commands, grouped by purpose, with a per-version changelog covering every firmware release from v1.0.0 to today."
-/>
+<Seo title={m.tool_repeater_commands_label()} description={m.rc_seo_desc()} />
 
-<PageHeader title="Repeater commands" tool="about" subtitleClass="max-w-2xl">
-  A cheat sheet for the MeshCore <strong>repeater</strong> command-line — every command the
-  node accepts over the serial console or remote admin, grouped by what it does. Pick a
-  firmware version to see exactly what it supported. Click any command to copy it.
+<PageHeader title={m.tool_repeater_commands_label()} tool="about" subtitleClass="max-w-2xl">
+  {@html m.rc_intro()}
 </PageHeader>
 
 <!-- Controls: version + search -->
 <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center">
   <label class="flex items-center gap-2 text-[0.85rem] text-dim">
-    <span class="shrink-0">Firmware</span>
+    <span class="shrink-0">{m.rc_firmware_label()}</span>
     <select
       bind:value={selectedVersion}
       class="rounded-md border border-edge bg-bg px-2.5 py-1.5 text-[0.9rem] text-ink hover:border-accent focus:border-accent focus:outline-none"
     >
       {#each versions as v}
         <option value={v.version}>
-          {v.label}{v.current ? ' · current' : ''}{v.date ? `  (${v.date})` : ''}
+          {v.label}{v.current ? ` · ${m.rc_current()}` : ''}{v.date ? `  (${v.date})` : ''}
         </option>
       {/each}
     </select>
@@ -136,13 +149,13 @@
     <input
       type="search"
       bind:value={query}
-      placeholder="Filter commands…  (e.g. radio, flood, region)"
+      placeholder={m.rc_filter_placeholder()}
       class="w-full rounded-md border border-edge bg-bg py-1.5 pl-9 pr-3 text-[0.9rem] text-ink placeholder:text-muted hover:border-accent focus:border-accent focus:outline-none"
     />
   </div>
 
   <span class="shrink-0 text-[0.8rem] tabular-nums text-dim">
-    {shownCount === totalCount ? `${totalCount} commands` : `${shownCount} / ${totalCount}`}
+    {shownCount === totalCount ? m.rc_count({ count: totalCount }) : `${shownCount} / ${totalCount}`}
   </span>
 </div>
 
@@ -150,13 +163,13 @@
 {#if changes.added || changes.deprecated || changes.note}
   <div class="mb-5 rounded-xl border border-edge bg-elev p-4">
     <h2 class="mb-2 text-[0.9rem] font-semibold">
-      {isCurrent ? 'New in' : 'Changes in'} {active.label}
+      {isCurrent ? m.rc_new_in_version({ version: active.label }) : m.rc_changes_in_version({ version: active.label })}
     </h2>
     <div class="space-y-2">
       {#if changes.added}
         <div class="flex flex-wrap items-start gap-2">
           <span class="mt-0.5 rounded border px-1.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide {toneClass.green}">
-            Added
+            {m.rc_added()}
           </span>
           <ul class="flex flex-1 flex-wrap gap-x-3 gap-y-1 text-[0.85rem] text-dim">
             {#each changes.added as item}
@@ -168,7 +181,7 @@
       {#if changes.deprecated}
         <div class="flex flex-wrap items-start gap-2">
           <span class="mt-0.5 rounded border px-1.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide {toneClass.zinc}">
-            Deprecated
+            {m.rc_deprecated()}
           </span>
           <ul class="flex flex-1 flex-wrap gap-x-3 gap-y-1 text-[0.85rem] text-dim">
             {#each changes.deprecated as item}
@@ -186,7 +199,7 @@
 
 <!-- Legend -->
 <div class="mb-6 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[0.78rem] text-dim">
-  {#each Object.entries(COMMAND_FLAGS) as [key, f]}
+  {#each Object.entries(commandFlags) as [key, f]}
     <span class="flex items-center gap-1.5">
       <span class="rounded border px-1.5 py-0.5 text-[0.68rem] font-semibold uppercase tracking-wide {toneClass[f.tone]}">
         {f.label}
@@ -198,7 +211,7 @@
 
 {#if filteredGroups.length === 0}
   <p class="rounded-xl border border-edge bg-elev p-6 text-center text-dim">
-    No commands match “{query}” in {active.label}.
+    {m.rc_no_match({ query, version: active.label })}
   </p>
 {:else}
   <div class="grid gap-4 sm:grid-cols-2">
@@ -226,12 +239,12 @@
                   <button
                     type="button"
                     onclick={() => copy(form)}
-                    title="Click to copy"
+                    title={m.rc_click_to_copy()}
                     class="group inline-flex items-center gap-1.5 rounded-md border border-edge bg-bg px-2 py-1 font-mono text-[0.82rem] text-ink transition hover:border-accent hover:text-accent {isDeprecated ? 'line-through decoration-zinc-500/60' : ''}"
                   >
                     <span>{form}</span>
                     {#if copied === form}
-                      <span class="text-[0.7rem] text-accent2">copied</span>
+                      <span class="text-[0.7rem] text-accent2">{m.rc_copied()}</span>
                     {:else}
                       <svg
                         class="h-3.5 w-3.5 text-dim opacity-0 transition group-hover:opacity-100"
@@ -248,13 +261,13 @@
                   </button>
                 {/each}
                 {#if isNew}
-                  <span class="rounded border px-1.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide {toneClass.green}">New</span>
+                  <span class="rounded border px-1.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide {toneClass.green}">{m.rc_new()}</span>
                 {/if}
                 {#if isDeprecated}
-                  <span class="rounded border px-1.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide {toneClass.zinc}">Deprecated</span>
+                  <span class="rounded border px-1.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide {toneClass.zinc}">{m.rc_deprecated()}</span>
                 {/if}
                 {#each c.flags ?? [] as flag}
-                  {@const f = COMMAND_FLAGS[flag]}
+                  {@const f = commandFlags[flag]}
                   {#if f}
                     <span
                       title={f.desc}
@@ -278,12 +291,9 @@
 {/if}
 
 <div class="mt-8 space-y-2 text-[0.8rem] text-dim">
-  <p>
-    Generated from the MeshCore firmware source at
-    <code class="rounded bg-elev2 px-1.5 py-0.5 font-mono">{sourceRef(selectedVersion)}</code> — not just the docs.
-  </p>
+  <p>{@html m.rc_generated(generatedVars)}</p>
   <p class="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-    <span class="text-muted">Source files:</span>
+    <span class="text-muted">{m.rc_source_files()}</span>
     {#each SOURCE_FILES as src}
       <a
         class="inline-flex items-center gap-1 text-accent2 hover:underline"
@@ -298,10 +308,5 @@
       </a>
     {/each}
   </p>
-  <p>
-    See also the
-    <a class="text-accent2 hover:underline" href="https://docs.meshcore.io/cli_commands/" target="_blank" rel="noreferrer">
-      MeshCore CLI reference ↗
-    </a>.
-  </p>
+  <p>{@html m.rc_see_also(seeAlsoVars)}</p>
 </div>

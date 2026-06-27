@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/sigurdos-tdeck",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Samostatný komunikační firmware MeshCore pro LilyGo T-Deck určený k provozu mimo síť, s dotykovým rozhraním ve stylu spouštěče aplikací, trvalými konverzacemi, mapami, diagnostikou a podporou aktualizací přes Wi-Fi nebo z GitHubu.",
+      "sourceHash": "sha256:380fd3ec395e47743c577a81b03b712c90c12ac353abee45a138813706916d5e",
+      "generatedAt": "2026-06-27T11:22:08.718Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24495,
+      "promptTokens": 167,
+      "completionTokens": 1099
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "Projekt hlásí, že několik uživatelů úspěšně nahrálo beta verzi.",
+      "sourceHash": "sha256:ae0e0a495a6344e6206fd9c34e3670947201e9273130ad241a4329c0146be10c",
+      "generatedAt": "2026-06-27T11:22:18.007Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9288,
+      "promptTokens": 139,
+      "completionTokens": 669
+    },
+    "features": {
+      "value": "[\"Samostatné přímé zprávy a kanály\",\"Ovládání dotykem, trackballem a klávesnicí\",\"Mapy, GPS a diagnostika signálu\",\"Aktualizace OTA přes Wi-Fi a GitHub\"]",
+      "sourceHash": "sha256:33cb201e2a086ffd7852f2de5e22fe7fecad1dc4e686f2e51627989050764577",
+      "generatedAt": "2026-06-27T12:33:43.365Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13723,
+      "promptTokens": 159,
+      "completionTokens": 883
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-wt2",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Tracker na bázi ESP32-S3 s LoRa modulem SX1262, GNSS UC6580, Wi-Fi, BLE a 0,96palcovým 160×80 TFT displejem. Je určen pro sledování objektů a mesh sítě, nabízí USB-C, správu baterie a podporu solárních panelů.",
+      "sourceHash": "sha256:1b3b6c809471e2e0dc68f5b616a41166f409dc7294c5a301441431cfb2cd3b87",
+      "generatedAt": "2026-06-27T10:48:34.788Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

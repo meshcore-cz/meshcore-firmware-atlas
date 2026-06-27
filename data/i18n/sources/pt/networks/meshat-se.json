@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshat-se",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Ponto de encontro sueco para pessoas que constroem, usam e desenvolvem redes mesh, oferecendo suporte tanto a MeshCore quanto a Meshtastic, com mapas compartilhados, MQTT e infraestrutura de status.",
+      "sourceHash": "sha256:c55d5cf462db355e32ded1672d881e1059a9d63edbd1b16eba1d25c8f964d82e",
+      "generatedAt": "2026-06-27T14:49:29.824Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4122,
+      "promptTokens": 161,
+      "completionTokens": 1192
+    }
+  }
+}

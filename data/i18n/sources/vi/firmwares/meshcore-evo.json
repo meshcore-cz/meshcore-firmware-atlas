@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-evo",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Một bản phân nhánh cải tiến của MeshCore tập trung vào bộ tiếp sóng, gói gọn các PR thượng nguồn đang chờ xử lý cùng các cải tiến cho mạng lưới dày đặc — nổi bật là khả năng giảm thiểu lưu lượng flood-advert và cải thiện việc xử lý `denyf *`. Bản này phần lớn đã bị thay thế khi phiên bản tham chiếu 1.16.0 bổ sung tính năng quản lý lưu lượng flood tích hợp sẵn.",
+      "sourceHash": "sha256:74b0b8f373bbaad7d1e360f3ec673cc32bd5505d6ffda873ab6f4c3b2a248665",
+      "generatedAt": "2026-06-27T15:57:46.220Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 48338,
+      "promptTokens": 184,
+      "completionTokens": 1363
+    },
+    "deviceNotes.station-g2": {
+      "value": "Có sẵn bản build; được kiểm thử ít thường xuyên hơn so với bo mạch lặp lõi.",
+      "sourceHash": "sha256:96af65e2ea41473160fae9bad296c3916c4b52a35a7a587c63ee650e8242e691",
+      "generatedAt": "2026-06-27T15:57:51.704Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5482,
+      "promptTokens": 142,
+      "completionTokens": 807
+    },
+    "features": {
+      "value": "[\"Giảm thiểu lưu lượng quảng bá lan truyền\",\"Cải thiện xử lý denyf \\\"*\\\"\",\"Tối ưu hóa cho mạng lưới repeater dày đặc\",\"Theo dõi các bản phát hành MeshCore thượng nguồn\"]",
+      "sourceHash": "sha256:b0035f77f12169a8f00ef0456f32b4d81757e8680adc28dfe45dae58e715aadd",
+      "generatedAt": "2026-06-27T15:57:58.229Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6525,
+      "promptTokens": 160,
+      "completionTokens": 1247
+    }
+  }
+}

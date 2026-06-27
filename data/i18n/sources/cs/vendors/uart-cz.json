@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/uart-cz",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nezávislý výrobce solárních základních desek pro mesh sítě Meshtastic, desek plošných spojů pro správu baterií a kompletně sestavených venkovních stanic s LoRa uzly.",
+      "sourceHash": "sha256:d7d33a5880e2d3a4948fb1b8f3acd2b461c89527c70fdcb29267ae479a5c0743",
+      "generatedAt": "2026-06-27T12:00:28.541Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10345,
+      "promptTokens": 154,
+      "completionTokens": 1160
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { error } from '@sveltejs/kit';
 import { base } from '$app/paths';
 import { firmwares, getFirmware, getDevice } from '$lib/data.js';
+import { localizeRecord } from '$lib/catalog-overlay.js';
 
 // Tell the static adapter which firmware pages to prerender.
 export function entries() {
@@ -14,7 +15,8 @@ export async function load({ params, fetch }) {
   // The global dataset omits release notes (~1MB of changelog HTML used only
   // here); fetch the full per-record JSON for the rendered release previews.
   const res = await fetch(`${base}/firmware/${params.id}.json`);
-  const firmware = res.ok ? await res.json() : meta;
+  const raw = res.ok ? await res.json() : meta;
+  const firmware = localizeRecord('firmware', raw);
 
   const devices = (firmware.devices ?? []).map((d) => ({
     ...d,

@@ -1,0 +1,15 @@
+{
+  "resource": "network/mcml",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní síť MeshCore pro region Münsterland v německé spolkové zemi Severní Porýní-Vestfálsko, která umožňuje dálkovou textovou komunikaci zcela bez internetu a mobilních sítí.",
+      "sourceHash": "sha256:438f6f3725762ce9131223674d56083bfd5fea34b4ca17f9e93835d9cd7221c9",
+      "generatedAt": "2026-06-27T12:08:40.639Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9032,
+      "promptTokens": 162,
+      "completionTokens": 1008
+    }
+  }
+}

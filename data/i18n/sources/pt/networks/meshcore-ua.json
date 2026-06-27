@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ua",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore pública ucraniana gerida por voluntários para comunicação LoRa descentralizada e resiliente em toda a Ucrânia, coordenada através de meshcore-ua.net, com repetidores, bots, canais, downloads de firmware e suporte da comunidade no Telegram.",
+      "sourceHash": "sha256:c9c47d0b5af794e7fd33a3183ecf5b28b97ee17e874c7176c961d23cc8876d7f",
+      "generatedAt": "2026-06-27T14:49:43.863Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2772,
+      "promptTokens": 170,
+      "completionTokens": 784
+    }
+  }
+}

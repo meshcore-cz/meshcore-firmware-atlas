@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-web-keygen",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Генератор ключів Ed25519, що працює лише в браузері, призначений для створення ідентичностей MeshCore з довільними шістнадцятковими префіксами публічних ключів. Це допомагає операторам уникати колізій коротких префіксів без надсилання приватних ключів на сервер.",
+      "sourceHash": "sha256:251586a2196c8e8c07fd2c647ce211498664ad13ccac3d567434c1ebc3f5ba13",
+      "generatedAt": "2026-06-27T16:20:22.354Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 27638,
+      "promptTokens": 162,
+      "completionTokens": 1246
+    },
+    "tags": {
+      "value": "[\"генератор ключів\",\"приватність\",\"ed25519\",\"лише в браузері\"]",
+      "sourceHash": "sha256:a89ed712b284d62fb6d8cc6767b1bb881ee61eb2c5da402135fcb222cbe405e7",
+      "generatedAt": "2026-06-27T16:20:32.774Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10419,
+      "promptTokens": 142,
+      "completionTokens": 612
+    },
+    "verificationNotes.key-generation-runs-locally-in-browser-workers-a": {
+      "value": "Генерація ключів виконується локально у веб-воркерах браузера, без передачі згенерованих ключів.",
+      "sourceHash": "sha256:55790caf9cdf6d517b29590785c6478cf0e6e183cbae12f21dee406621cad755",
+      "generatedAt": "2026-06-27T16:20:52.249Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19475,
+      "promptTokens": 143,
+      "completionTokens": 1006
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Наразі для репозиторію не вказано ліцензію SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:21:05.255Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13006,
+      "promptTokens": 139,
+      "completionTokens": 640
+    }
+  }
+}

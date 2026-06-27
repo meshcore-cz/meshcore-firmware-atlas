@@ -1,11 +1,14 @@
 <script>
   import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import RecordFooter from '$lib/RecordFooter.svelte';
   import BackLink from '$lib/BackLink.svelte';
   import { pluralize } from '$lib/format.js';
   import {
     STATUS_META,
-    TYPE_META,
+    matrixStatusLabel,
+    firmwareTypeLabel,
     deviceMcuLabel,
     deviceRadioLabel,
     resolveMcuInfo,
@@ -19,9 +22,12 @@
     devicePriceLabel,
     stripVendorLabel,
     deviceShortName,
-    descriptionToPlain
+    descriptionToPlain,
+    nodeRoleLabel,
+    deviceLifecycleLabel
   } from '$lib/data.js';
   import { metricById } from '$lib/metrics.js';
+  import { metricUnit } from '$lib/metric-labels.js';
   import { compareIds } from '$lib/compare.js';
   import { clampDescription, abs, absUrl, ogImageFor } from '$lib/seo.js';
   import Seo from '$lib/Seo.svelte';
@@ -75,7 +81,7 @@
       const host = new URL(url).hostname.replace(/^www\./, '');
       return PRINT_HOSTS[host] ?? host;
     } catch {
-      return 'Link';
+      return m.dd_print_link();
     }
   }
 
@@ -83,9 +89,12 @@
   let metaDescription = $derived(
     clampDescription(
       descriptionToPlain(d.description) ||
-        [d.vendorName, deviceMcuLabel(d), deviceRadioLabel(d)]
-          .filter((s) => s && s !== 'Unknown')
-          .join(' · ') + ` — runs ${pluralize(data.firmwares.length, 'MeshCore firmware')}.`
+        m.dd_meta_desc({
+          specs: [d.vendorName, deviceMcuLabel(d), deviceRadioLabel(d)]
+            .filter((s) => s && s !== m.spec_unknown())
+            .join(' · '),
+          firmwares: pluralize(data.firmwares.length, 'MeshCore firmware')
+        })
     )
   );
 
@@ -119,21 +128,21 @@
 
   function gnssLabel(gnss) {
     if (gnss?.status === 'present') {
-      return resolveGnss(gnss.chip)?.name ?? gnss.chip ?? 'Yes';
+      return resolveGnss(gnss.chip)?.name ?? gnss.chip ?? m.common_yes();
     }
-    if (gnss?.status === 'none') return 'None';
-    return 'Unknown';
+    if (gnss?.status === 'none') return m.spec_none();
+    return m.spec_unknown();
   }
 
   function batteryLabel(device) {
     const power = device.hardware?.power;
     if (power?.batteryCapacityMah) return `${power.batteryCapacityMah} mAh`;
     if (power?.batterySupported === true) {
-      if (power.batteryBuiltIn === false) return 'External';
-      return power.pmic ?? 'Supported';
+      if (power.batteryBuiltIn === false) return m.spec_external();
+      return power.pmic ?? m.matrix_status_supported();
     }
-    if (power?.batterySupported === false) return 'None';
-    return 'Unknown';
+    if (power?.batterySupported === false) return m.spec_none();
+    return m.spec_unknown();
   }
 
   function interfaceLabel(device) {
@@ -154,7 +163,7 @@
     if (!metric) return undefined;
     const value = metric.get({ ...device, firmwareSupportCount: data.firmwares.length });
     if (value == null) return undefined;
-    return `${metric.fmt(value)}${metric.unit ? ` ${metric.unit}` : ''}`;
+    return `${metric.fmt(value)}${metricUnit(metricId) ? ` ${metricUnit(metricId)}` : ''}`;
   }
 
   function formatOperatingTemp(env) {
@@ -214,7 +223,7 @@
   }
 
   function variantDisplayName(variant, activeRevision) {
-    const name = variant.name ?? 'Variant';
+    const name = variant.name ?? m.dd_variant_default();
     const revision = variantRevisionLabel(variant.revision);
     if (!revision || !activeRevision) return name;
     return String(name)
@@ -245,12 +254,12 @@
 
   let heroSpecs = $derived(
     [
-      { label: 'MCU', value: heroMcuLabel },
-      { label: 'Radio', value: heroRadioLabel },
-      { label: 'Display', value: deviceDisplayLabel(d.hardware?.display) },
-      { label: 'GPS', value: gnssLabel(d.hardware?.gnss) },
-      { label: 'Battery', value: batteryLabel(d) },
-      { label: 'Connectivity', value: interfaceLabel(d) }
+      { label: m.spec_mcu(), value: heroMcuLabel },
+      { label: m.dev_facet_radio(), value: heroRadioLabel },
+      { label: m.dev_tog_display(), value: deviceDisplayLabel(d.hardware?.display) },
+      { label: m.spec_gps(), value: gnssLabel(d.hardware?.gnss) },
+      { label: m.dev_tog_battery(), value: batteryLabel(d) },
+      { label: m.spec_connectivity(), value: interfaceLabel(d) }
     ].filter((s) => known(s.value))
   );
 
@@ -327,18 +336,18 @@
   // to the datasheet using the part's canonical name instead of the raw value.
   let mcuRows = $derived(
     rows([
-      { label: 'Family', value: mcuInfo?.family?.name, part: mcuInfo?.family },
+      { label: m.spec_family(), value: mcuInfo?.family?.name, part: mcuInfo?.family },
       // Specific model only — when just the family is known the row is omitted.
       // Falls back to the raw string when the model isn't in the catalog.
       {
-        label: 'Model',
+        label: m.spec_model(),
         value: mcuInfo?.model?.name ?? (mcuInfo ? undefined : d.hardware?.mcu?.model),
         part: mcuInfo?.model
       },
-      { label: 'Architecture', value: mcuInfo?.architecture?.name, part: mcuInfo?.architecture },
-      { label: 'Flash', value: d.hardware?.mcu?.flashMb && `${d.hardware.mcu.flashMb} MB`, metric: 'flash' },
-      { label: 'RAM', value: d.hardware?.mcu?.ramKb && `${d.hardware.mcu.ramKb} KB`, metric: 'ram' },
-      { label: 'PSRAM', value: d.hardware?.mcu?.psramMb && `${d.hardware.mcu.psramMb} MB`, metric: 'psram' }
+      { label: m.spec_architecture(), value: mcuInfo?.architecture?.name, part: mcuInfo?.architecture },
+      { label: m.spec_flash(), value: d.hardware?.mcu?.flashMb && `${d.hardware.mcu.flashMb} MB`, metric: 'flash' },
+      { label: m.spec_ram(), value: d.hardware?.mcu?.ramKb && `${d.hardware.mcu.ramKb} KB`, metric: 'ram' },
+      { label: m.spec_psram(), value: d.hardware?.mcu?.psramMb && `${d.hardware.mcu.psramMb} MB`, metric: 'psram' }
     ])
   );
 
@@ -346,30 +355,30 @@
     d.hardware?.display?.status === 'present'
       ? rows([
           {
-            label: 'Type',
+            label: m.fw_facet_type(),
             value:
               displayPart?.name ??
               (d.hardware.display.technology && titleCase(d.hardware.display.technology)),
             part: displayPart
           },
-          { label: 'Controller', value: d.hardware.display.controller },
+          { label: m.spec_controller(), value: d.hardware.display.controller },
           {
-            label: 'Size',
+            label: m.spec_size(),
             value: d.hardware.display.size && `${d.hardware.display.size}″`,
             metric: 'display-size'
           },
           {
-            label: 'Resolution',
+            label: m.spec_resolution(),
             value:
               d.hardware.display.resolution?.width &&
               `${d.hardware.display.resolution.width} × ${d.hardware.display.resolution.height}`,
             metric: 'display-pixels'
           },
-          { label: 'Colors', value: d.hardware.display.colors && titleCase(d.hardware.display.colors) },
+          { label: m.spec_colors(), value: d.hardware.display.colors && titleCase(d.hardware.display.colors) },
           {
-            label: 'Touch',
+            label: m.dev_tog_touch(),
             value:
-              d.hardware.display.touch === true ? 'Yes' : d.hardware.display.touch === false ? 'No' : undefined
+              d.hardware.display.touch === true ? m.common_yes() : d.hardware.display.touch === false ? m.common_no() : undefined
           }
         ])
       : []
@@ -377,51 +386,51 @@
 
   let gnssRows = $derived(
     d.hardware?.gnss?.status === 'present'
-      ? rows([{ label: 'Chip', value: d.hardware.gnss.chip, part: gnssPart }])
+      ? rows([{ label: m.spec_chip(), value: d.hardware.gnss.chip, part: gnssPart }])
       : []
   );
 
   let batteryRows = $derived(
     rows([
       {
-        label: 'Battery',
+        label: m.dev_tog_battery(),
         value:
           d.hardware?.power?.batterySupported === true
             ? d.hardware?.power?.batteryBuiltIn === false
-              ? 'External connector'
-              : 'Supported'
+              ? m.spec_external_connector()
+              : m.matrix_status_supported()
             : d.hardware?.power?.batterySupported === false
-              ? 'None'
+              ? m.spec_none()
               : undefined
       },
       {
-        label: 'Built-in capacity',
+        label: m.spec_builtin_capacity(),
         value: d.hardware?.power?.batteryCapacityMah && `${d.hardware.power.batteryCapacityMah} mAh`,
         metric: 'battery'
       },
-      { label: 'Chemistry', value: BATTERY_CHEMISTRY[d.hardware?.power?.batteryChemistry] },
+      { label: m.spec_chemistry(), value: BATTERY_CHEMISTRY[d.hardware?.power?.batteryChemistry] },
       {
-        label: 'Built-in',
+        label: m.spec_builtin(),
         value:
           d.hardware?.power?.batteryBuiltIn === true
-            ? 'Yes'
+            ? m.common_yes()
             : d.hardware?.power?.batteryBuiltIn === false
-              ? 'No'
+              ? m.common_no()
               : undefined
       },
       {
-        label: 'Charging',
+        label: m.dev_tog_charging(),
         value:
-          d.hardware?.power?.charging === true ? 'Yes' : d.hardware?.power?.charging === false ? 'No' : undefined
+          d.hardware?.power?.charging === true ? m.common_yes() : d.hardware?.power?.charging === false ? m.common_no() : undefined
       },
-      { label: 'Connector', value: d.hardware?.power?.batteryConnector }
+      { label: m.spec_connector(), value: d.hardware?.power?.batteryConnector }
     ])
   );
 
   let powerRows = $derived(
     rows([
       {
-        label: 'Power draw (idle)',
+        label: m.spec_power_idle(),
         value:
           d.hardware?.power?.consumptionIdleMa != null
             ? `${d.hardware.power.consumptionIdleMa} mA`
@@ -429,19 +438,19 @@
         metric: 'idle-draw'
       },
       {
-        label: 'Idle runtime',
+        label: m.spec_idle_runtime(),
         value: metricDisplay('idle-runtime'),
         metric: 'idle-runtime'
       },
       {
-        label: 'Power draw (TX)',
+        label: m.spec_power_tx(),
         value:
           d.hardware?.power?.consumptionTxMa != null
             ? `${d.hardware.power.consumptionTxMa} mA`
             : undefined,
         metric: 'tx-draw'
       },
-      { label: 'PMIC', value: d.hardware?.power?.pmic }
+      { label: m.spec_pmic(), value: d.hardware?.power?.pmic }
     ])
   );
 
@@ -451,24 +460,24 @@
   let solarRows = $derived(
     rows([
       {
-        label: 'Solar panel',
-        value: d.hardware?.power?.solarPanelBuiltIn === true ? 'Built-in' : undefined
+        label: m.dev_tog_solar_panel(),
+        value: d.hardware?.power?.solarPanelBuiltIn === true ? m.spec_builtin() : undefined
       },
       {
-        label: 'Panel power',
+        label: m.spec_panel_power(),
         value: d.hardware?.power?.solarPanelWatts && `${d.hardware.power.solarPanelWatts} W`,
         metric: 'solar'
       },
       {
-        label: 'Solar charging',
-        value: d.hardware?.power?.solarInput === true ? 'Supported' : undefined
+        label: m.spec_solar_charging(),
+        value: d.hardware?.power?.solarInput === true ? m.matrix_status_supported() : undefined
       }
     ])
   );
 
   let expansionRows = $derived(
     rows((d.hardware?.expansion ?? []).map((port, i) => ({
-      label: (d.hardware?.expansion?.length ?? 0) > 1 ? `Port ${i + 1}` : 'Connector',
+      label: (d.hardware?.expansion?.length ?? 0) > 1 ? m.spec_port({ n: i + 1 }) : m.spec_connector(),
       value: formatExpansion(port)
     })))
   );
@@ -477,7 +486,7 @@
     rows(
       (d.hardware?.input ?? []).map((item) => ({
         label: titleCase(item.type),
-        value: item.description ?? 'Yes'
+        value: item.description ?? m.common_yes()
       }))
     )
   );
@@ -485,31 +494,31 @@
   let physicalRows = $derived(
     rows([
       {
-        label: 'LEDs',
+        label: m.spec_leds(),
         value:
           d.hardware?.leds?.status === 'present'
-            ? d.hardware.leds.description ?? 'Yes'
+            ? d.hardware.leds.description ?? m.common_yes()
             : d.hardware?.leds?.status === 'none'
-              ? 'None'
+              ? m.spec_none()
               : undefined
       },
-      { label: 'Dimensions', value: formatDimensions(d.hardware?.physical?.dimensionsMm) },
-      { label: 'Board area', value: metricDisplay('area'), metric: 'area' },
-      { label: 'Board volume', value: metricDisplay('volume'), metric: 'volume' },
-      { label: 'Weight', value: d.hardware?.physical?.weightG && `${d.hardware.physical.weightG} g`, metric: 'weight' },
+      { label: m.spec_dimensions(), value: formatDimensions(d.hardware?.physical?.dimensionsMm) },
+      { label: m.spec_board_area(), value: metricDisplay('area'), metric: 'area' },
+      { label: m.spec_board_volume(), value: metricDisplay('volume'), metric: 'volume' },
+      { label: m.spec_weight(), value: d.hardware?.physical?.weightG && `${d.hardware.physical.weightG} g`, metric: 'weight' },
       {
-        label: 'Shell',
+        label: m.spec_shell(),
         value:
           d.hardware?.enclosure?.builtIn === true
-            ? 'Included'
+            ? m.spec_included()
             : d.hardware?.enclosure?.builtIn === false
-              ? 'None'
+              ? m.spec_none()
               : undefined
       },
-      { label: 'IP rating', value: d.hardware?.enclosure?.ipRating },
-      { label: 'Operating temp', value: formatOperatingTemp(d.hardware?.environmental) },
+      { label: m.spec_ip_rating(), value: d.hardware?.enclosure?.ipRating },
+      { label: m.spec_operating_temp(), value: formatOperatingTemp(d.hardware?.environmental) },
       {
-        label: 'Certifications',
+        label: m.spec_certifications(),
         value: d.hardware?.certifications?.length ? d.hardware.certifications.join(', ') : undefined
       }
     ])
@@ -517,28 +526,28 @@
 
   let interfaceRows = $derived(
     rows([
-      { label: 'USB', value: d.interfaces?.usb?.connector },
-      { label: 'USB bridge', value: d.interfaces?.usb?.bridge },
+      { label: m.spec_usb(), value: d.interfaces?.usb?.connector },
+      { label: m.spec_usb_bridge(), value: d.interfaces?.usb?.bridge },
       {
-        label: 'USB modes',
+        label: m.spec_usb_modes(),
         value: d.interfaces?.usb?.capabilities?.length
           ? d.interfaces.usb.capabilities.map(titleCase).join(', ')
           : undefined
       },
       {
-        label: 'Bluetooth',
+        label: m.spec_bluetooth(),
         value:
           d.interfaces?.bluetooth?.ble || d.interfaces?.bluetooth?.version
-            ? `${d.interfaces.bluetooth.ble ? 'BLE' : 'Yes'}${known(d.interfaces.bluetooth.version) ? ` ${d.interfaces.bluetooth.version}` : ''}`
+            ? `${d.interfaces.bluetooth.ble ? 'BLE' : m.common_yes()}${known(d.interfaces.bluetooth.version) ? ` ${d.interfaces.bluetooth.version}` : ''}`
             : undefined
       },
       {
-        label: 'Wi-Fi',
+        label: m.spec_wifi(),
         value:
           d.interfaces?.wifi?.status === 'present'
-            ? d.interfaces.wifi.standard ?? 'Yes'
+            ? d.interfaces.wifi.standard ?? m.common_yes()
             : d.interfaces?.wifi?.status === 'none'
-              ? 'None'
+              ? m.spec_none()
               : undefined
       }
     ])
@@ -546,13 +555,13 @@
 
   let metaRows = $derived(
     rows([
-      { label: 'Kind', value: d.kind && titleCase(d.kind) },
-      { label: 'Lifecycle', value: d.lifecycle && titleCase(d.lifecycle) },
-      { label: 'Revision', value: d.revision },
-      { label: 'Family', value: d.familyId },
-      { label: 'Firmware support', value: `${data.firmwares.length}`, metric: 'firmware-support' },
-      { label: 'Catalog completeness', value: metricDisplay('completeness'), metric: 'completeness' },
-      { label: 'Also known as', value: d.aliases?.length ? d.aliases.join(', ') : undefined }
+      { label: m.spec_kind(), value: d.kind && titleCase(d.kind) },
+      { label: m.spec_lifecycle(), value: d.lifecycle && deviceLifecycleLabel(d.lifecycle) },
+      { label: m.spec_revision(), value: d.revision },
+      { label: m.spec_family(), value: d.familyId },
+      { label: m.spec_firmware_support(), value: `${data.firmwares.length}`, metric: 'firmware-support' },
+      { label: m.spec_catalog_completeness(), value: metricDisplay('completeness'), metric: 'completeness' },
+      { label: m.spec_also_known_as(), value: d.aliases?.length ? d.aliases.join(', ') : undefined }
     ])
   );
 
@@ -563,17 +572,17 @@
   // Whole-card visibility — a card renders only when it has content.
   let specCards = $derived(
     [
-      { title: 'Processor', icon: Cpu, rows: mcuRows },
-      { title: 'Display', icon: Monitor, rows: displayRows },
-      { title: 'Input', icon: Keyboard, rows: inputRows },
-      { title: 'GNSS', icon: SatelliteDish, rows: gnssRows },
-      { title: 'Battery', icon: BatteryFull, rows: batteryRows },
-      { title: 'Power', icon: Zap, rows: powerRows },
-      { title: 'Solar', icon: Sun, rows: solarRows },
-      { title: 'Expansion', icon: Puzzle, rows: expansionRows },
-      { title: 'Physical', icon: Ruler, rows: physicalRows },
-      { title: 'Connectivity', icon: Cable, rows: interfaceRows },
-      { title: 'Details', icon: Info, rows: metaRows }
+      { title: m.spec_card_processor(), icon: Cpu, rows: mcuRows },
+      { title: m.dev_tog_display(), icon: Monitor, rows: displayRows },
+      { title: m.spec_card_input(), icon: Keyboard, rows: inputRows },
+      { title: m.spec_card_gnss(), icon: SatelliteDish, rows: gnssRows },
+      { title: m.dev_tog_battery(), icon: BatteryFull, rows: batteryRows },
+      { title: m.spec_card_power(), icon: Zap, rows: powerRows },
+      { title: m.spec_card_solar(), icon: Sun, rows: solarRows },
+      { title: m.spec_card_expansion(), icon: Puzzle, rows: expansionRows },
+      { title: m.spec_card_physical(), icon: Ruler, rows: physicalRows },
+      { title: m.spec_connectivity(), icon: Cable, rows: interfaceRows },
+      { title: m.spec_card_details(), icon: Info, rows: metaRows }
     ].filter((c) => c.rows.length)
   );
 
@@ -599,7 +608,7 @@
      canonical name (catalog part without a url), or the raw fallback string. -->
 {#snippet specValue(part, fallback)}
   {#if part?.url}
-    <a class="text-accent2 hover:underline" href={part.url} target="_blank" rel="noreferrer" title="{part.vendor ? `${part.vendor} · ` : ''}datasheet">{part.name} ↗</a>
+    <a class="text-accent2 hover:underline" href={part.url} target="_blank" rel="noreferrer" title="{part.vendor ? `${part.vendor} · ` : ''}{m.dd_datasheet_title()}">{part.name} ↗</a>
   {:else if part}
     {part.name}
   {:else}
@@ -616,9 +625,9 @@
     <span class="inline-flex items-center justify-end gap-1.5">
       <a
         class="shrink-0 text-edge transition hover:text-accent"
-        href="{base}/device-rank/{row.metric}/?from={d.id}"
-        title="Compare this spec across all devices"
-        aria-label="Rank all devices by this spec"
+        href={href(`/device-rank/${row.metric}/?from=${d.id}`)}
+        title={m.dd_rank_title()}
+        aria-label={m.dd_rank_aria()}
       >
         <ChartNoAxesColumn class="h-[0.95em] w-[0.95em]" aria-hidden="true" />
       </a>
@@ -640,9 +649,9 @@
       <table class="w-full min-w-[520px] border-collapse text-[0.88rem]">
         <thead class="bg-elev2/35 text-left text-[0.7rem] tracking-wide text-dim uppercase">
           <tr>
-            <th class="px-4 py-2.5 font-semibold">Revision</th>
-            <th class="px-4 py-2.5 font-semibold">Variant</th>
-            <th class="px-4 py-2.5 font-semibold">Band</th>
+            <th class="px-4 py-2.5 font-semibold">{m.spec_revision()}</th>
+            <th class="px-4 py-2.5 font-semibold">{m.spec_variant()}</th>
+            <th class="px-4 py-2.5 font-semibold">{m.dev_facet_band()}</th>
             <th class="px-4 py-2.5 font-semibold">SKU</th>
           </tr>
         </thead>
@@ -657,8 +666,8 @@
                     {#each variant.bands as band}
                       {@const fp = resolveFrequency(band)}
                       <a
-                        href="{base}/bands/?device={d.id}"
-                        title={[fp ? [fp.name, fp.range].filter(Boolean).join(' · ') : null, 'See all bands for this device'].filter(Boolean).join(' · ')}
+                        href={href(`/bands/?device=${d.id}`)}
+                        title={[fp ? [fp.name, fp.range].filter(Boolean).join(' · ') : null, m.dd_see_all_bands()].filter(Boolean).join(' · ')}
                         class="rounded-full bg-accent2/10 px-2.5 py-1 text-[0.76rem] font-semibold leading-tight text-accent2 transition hover:bg-accent2/15 hover:underline"
                       >
                         {fp?.region ?? fp?.name ?? band}
@@ -680,7 +689,7 @@
 
 <Seo title={d.name} description={metaDescription} type="article" image={ogImageFor('device', d.id)} jsonLd={productJsonLd} />
 
-<BackLink href="{base}/devices/">All devices</BackLink>
+<BackLink href={href('/devices/')}>{m.dd_back()}</BackLink>
 
 <header class="mb-7 flex flex-wrap items-start gap-6">
   <div class="flex h-44 w-44 shrink-0 items-center justify-center rounded-xl border border-edge bg-elev2 p-3 text-muted">
@@ -696,11 +705,11 @@
   <div class="min-w-[240px] flex-1">
     <div class="flex flex-wrap items-center gap-2">
       <h1 class="text-[clamp(1.5rem,5vw,2rem)] font-bold">{d.name}</h1>
-      {#if d.flasherListed}<span class="rounded-md bg-accent/15 px-2 py-0.5 text-[0.72rem] font-bold tracking-wide text-accent uppercase" title="Listed in the MeshCore web flasher">In flasher</span>{/if}
-      {#if known(d.lifecycle)}<span class="rounded-md px-2 py-0.5 text-[0.72rem] font-bold tracking-wide uppercase {LIFECYCLE_TW[d.lifecycle] ?? LIFECYCLE_TW.unknown}">{titleCase(d.lifecycle)}</span>{/if}
+      {#if d.flasherListed}<span class="rounded-md bg-accent/15 px-2 py-0.5 text-[0.72rem] font-bold tracking-wide text-accent uppercase" title={m.dd_flasher_title()}>{m.dev_facet_source_in_flasher()}</span>{/if}
+      {#if known(d.lifecycle)}<span class="rounded-md px-2 py-0.5 text-[0.72rem] font-bold tracking-wide uppercase {LIFECYCLE_TW[d.lifecycle] ?? LIFECYCLE_TW.unknown}">{deviceLifecycleLabel(d.lifecycle)}</span>{/if}
     </div>
     {#if d.vendor}
-      <a class="mt-2 inline-flex items-center gap-1.5 text-[0.9rem] text-dim hover:text-accent" href="{base}/vendor/{d.vendor.id}/">
+      <a class="mt-2 inline-flex items-center gap-1.5 text-[0.9rem] text-dim hover:text-accent" href={href(`/vendor/${d.vendor.id}/`)}>
         {#if d.vendor.logoUrl}<img src={d.vendor.logoUrl} alt="" class="h-7 w-7 rounded bg-white p-0.5 object-contain" />{/if}
         {d.vendor.name}
       </a>
@@ -711,13 +720,13 @@
     {#if devicePriceLabel(d)}
       <p class="mt-3 flex items-baseline gap-2">
         <span class="text-[1.25rem] font-bold">{devicePriceLabel(d)}</span>
-        <span class="text-[0.78rem] text-dim">approx {#if d.price?.asOf} ({d.price.asOf}){/if}</span>
+        <span class="text-[0.78rem] text-dim">{m.dd_price_approx()} {#if d.price?.asOf} ({d.price.asOf}){/if}</span>
       </p>
     {/if}
     {#if d.product_url || d.datasheetUrl}
       <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[0.9rem]">
-        {#if d.product_url}<a class="text-accent2 hover:underline" href={d.product_url} target="_blank" rel="noreferrer">Product page ↗</a>{/if}
-        {#if d.datasheetUrl}<a class="text-accent2 hover:underline" href={d.datasheetUrl} target="_blank" rel="noreferrer">Datasheet ↗</a>{/if}
+        {#if d.product_url}<a class="text-accent2 hover:underline" href={d.product_url} target="_blank" rel="noreferrer">{m.dd_product_page()}</a>{/if}
+        {#if d.datasheetUrl}<a class="text-accent2 hover:underline" href={d.datasheetUrl} target="_blank" rel="noreferrer">{m.dd_datasheet()}</a>{/if}
       </div>
     {/if}
     <div class="mt-3 flex flex-wrap gap-2">
@@ -728,21 +737,21 @@
           ? 'border-accent bg-accent text-bg'
           : 'border-edge bg-elev text-dim hover:border-accent/60 hover:text-ink'}"
       >
-        {$favoriteIds.includes(d.id) ? '★ Favourite' : '☆ Add to favourites'}
+        {$favoriteIds.includes(d.id) ? `★ ${m.dd_fav_on()}` : `☆ ${m.favourite_add()}`}
       </Toggle.Root>
       {#if favoriteCompareIds.length > 1}
         <a
           class="rounded-full border border-edge bg-elev px-3 py-1.5 text-[0.85rem] font-medium text-dim transition hover:border-accent/60 hover:text-ink"
-          href="{base}/compare/?ids={favoriteCompareIds.join(',')}"
+          href={href(`/compare/?ids=${favoriteCompareIds.join(',')}`)}
           onclick={() => compareIds.set(favoriteCompareIds)}
         >
-          Compare with favourites
+          {m.dd_compare_favourites()}
         </a>
       {/if}
     </div>
     {#if refs.length}
       <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.85rem] text-dim">
-        <span>References:</span>
+        <span>{m.dd_references()}</span>
         {#each refs as ref}
           <a class="text-accent2 hover:underline" href={ref.url} target="_blank" rel="noreferrer">{ref.name} ↗</a>
         {/each}
@@ -766,15 +775,15 @@
   <div class="mb-7 flex flex-wrap gap-x-8 gap-y-3">
     {#if d.roles?.length}
       <div>
-        <span class="mb-1.5 block text-[0.7rem] tracking-wide text-dim uppercase">Roles</span>
+        <span class="mb-1.5 block text-[0.7rem] tracking-wide text-dim uppercase">{m.dev_facet_roles()}</span>
         <div class="flex flex-wrap gap-1.5">
-          {#each d.roles as r}<span class="rounded-full border border-edge bg-elev px-2.5 py-1 text-[0.8rem]">{titleCase(r)}</span>{/each}
+          {#each d.roles as r}<span class="rounded-full border border-edge bg-elev px-2.5 py-1 text-[0.8rem]">{nodeRoleLabel(r)}</span>{/each}
         </div>
       </div>
     {/if}
     {#if d.transports?.length}
       <div>
-        <span class="mb-1.5 block text-[0.7rem] tracking-wide text-dim uppercase">Transports</span>
+        <span class="mb-1.5 block text-[0.7rem] tracking-wide text-dim uppercase">{m.spec_transports()}</span>
         <div class="flex flex-wrap gap-1.5">
           {#each d.transports as t}<span class="rounded-full border border-edge bg-elev px-2.5 py-1 text-[0.8rem] uppercase">{t}</span>{/each}
         </div>
@@ -787,20 +796,20 @@
 {#if data.family?.length}
   <section class="mb-8">
     <div class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-edge pb-1.5">
-      <h2 class="text-[1.1rem] font-semibold">Other models</h2>
+      <h2 class="text-[1.1rem] font-semibold">{m.dd_other_models()}</h2>
       <a
         class="text-[0.8rem] text-dim transition hover:text-accent hover:underline"
-        href="{base}/compare/?ids={[d.id, ...data.family.map((v) => v.id)].join(',')}"
+        href={href(`/compare/?ids=${[d.id, ...data.family.map((v) => v.id)].join(',')}`)}
         onclick={() => compareIds.set([d.id, ...data.family.map((v) => v.id)])}
       >
-        Compare all {data.family.length + 1} →
+        {m.dd_compare_all({ count: data.family.length + 1 })}
       </a>
     </div>
     <div class="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       {#each data.family as v (v.id)}
         <a
           class="group flex items-center gap-3 rounded-xl border border-edge bg-elev p-3 transition hover:-translate-y-0.5 hover:border-accent"
-          href="{base}/device/{v.id}/"
+          href={href(`/device/${v.id}/`)}
         >
           <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-elev2 p-1 text-muted">
             {#if v.imageUrl}
@@ -811,7 +820,7 @@
           </span>
           <span class="min-w-0">
             <span class="block text-[0.9rem] leading-tight font-medium group-hover:text-accent" title={v.name}>{deviceShortName(v)}</span>
-            <span class="mt-0.5 block truncate font-mono text-[0.75rem] text-dim">{deviceMcuLabel(v)}{#if deviceRadioLabel(v) && deviceRadioLabel(v) !== 'Unknown'} · {deviceRadioLabel(v)}{/if}</span>
+            <span class="mt-0.5 block truncate font-mono text-[0.75rem] text-dim">{deviceMcuLabel(v)}{#if deviceRadioLabel(v) && deviceRadioLabel(v) !== m.spec_unknown()} · {deviceRadioLabel(v)}{/if}</span>
           </span>
         </a>
       {/each}
@@ -824,18 +833,18 @@
   <section class="mb-8">
     <div class="mb-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-edge pb-1.5">
       <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-        <h2 class="text-[1.1rem] font-semibold">Variants</h2>
-        <span class="text-[0.8rem] text-dim">Purchasable options for this device</span>
+        <h2 class="text-[1.1rem] font-semibold">{m.dd_variants()}</h2>
+        <span class="text-[0.8rem] text-dim">{m.dd_variants_sub()}</span>
       </div>
       {#if showVariantRevisionFilter}
-        <div class="flex flex-wrap justify-end gap-1.5" aria-label="Filter variants by revision">
+        <div class="flex flex-wrap justify-end gap-1.5" aria-label={m.dd_filter_variants_aria()}>
           <Chip
             tone="accent2"
             pressed={selectedVariantRevision === 'all'}
             onPressedChange={() => (selectedVariantRevision = 'all')}
             class="text-[0.75rem] font-semibold"
           >
-            All revisions
+            {m.bands_all_revisions()}
           </Chip>
           {#each variantRevisions as revision}
             <Chip
@@ -860,7 +869,7 @@
 
 <!-- Detailed hardware spec cards -->
 <section class="mb-8">
-  <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Hardware</h2>
+  <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.dd_hardware()}</h2>
   <!-- Masonry flow: cards pack vertically per column, so a tall card (e.g. Power)
        no longer leaves its row-mates with empty space. -->
   <div class="gap-4 [columns:280px]">
@@ -868,19 +877,19 @@
     {#each radios as radio, ri}
       <div class="mb-4 break-inside-avoid rounded-xl border border-edge bg-elev p-5">
         <h3 class="mb-3 flex items-center gap-2 text-[0.95rem] font-semibold">
-          <Radio class="h-[1.05em] w-[1.05em] text-accent2" aria-hidden="true" /> Radio{radios.length > 1 ? ` · ${(radio.technology ?? '').toUpperCase()}` : ''}
+          <Radio class="h-[1.05em] w-[1.05em] text-accent2" aria-hidden="true" /> {m.dev_facet_radio()}{radios.length > 1 ? ` · ${(radio.technology ?? '').toUpperCase()}` : ''}
         </h3>
         <dl class="grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-2 text-[0.9rem]">
-          {#if known(radio.technology)}<dt class="text-dim">Technology</dt><dd class="min-w-0 break-words text-right font-medium">{radio.technology.toUpperCase()}</dd>{/if}
-          {#if known(radio.chip)}<dt class="text-dim">Chip</dt><dd class="min-w-0 break-words text-right font-medium">{@render specValue(resolveRadio(radio.chip), radio.chip)}</dd>{/if}
+          {#if known(radio.technology)}<dt class="text-dim">{m.spec_technology()}</dt><dd class="min-w-0 break-words text-right font-medium">{radio.technology.toUpperCase()}</dd>{/if}
+          {#if known(radio.chip)}<dt class="text-dim">{m.spec_chip()}</dt><dd class="min-w-0 break-words text-right font-medium">{@render specValue(resolveRadio(radio.chip), radio.chip)}</dd>{/if}
           {#if radio.bands?.length}
-            <dt class="text-dim"><a class="transition hover:text-accent hover:underline" href="{base}/bands/" title="About frequency bands">Bands</a></dt>
+            <dt class="text-dim"><a class="transition hover:text-accent hover:underline" href={href('/bands/')} title={m.dd_about_bands()}>{m.dev_facet_band()}</a></dt>
             <dd class="min-w-0 text-right font-medium">
               <span class="inline-flex flex-wrap justify-end gap-1.5">
                 {#each radio.bands as band}{@const fp = resolveFrequency(band)}
                   <a
-                    href="{base}/bands/?device={d.id}"
-                    title={[fp ? [fp.name, fp.range].filter(Boolean).join(' · ') : null, 'See all bands for this device'].filter(Boolean).join(' · ')}
+                    href={href(`/bands/?device=${d.id}`)}
+                    title={[fp ? [fp.name, fp.range].filter(Boolean).join(' · ') : null, m.dd_see_all_bands()].filter(Boolean).join(' · ')}
                     class="rounded-full border border-edge bg-elev2 px-2 py-0.5 text-[0.78rem] leading-tight transition hover:border-accent/60 hover:text-accent"
                   >
                     {fp?.region ?? fp?.name ?? band}
@@ -889,12 +898,12 @@
               </span>
             </dd>
           {/if}
-          {#if known(radio.txPowerDbm)}<dt class="text-dim">TX power</dt><dd class="min-w-0 break-words text-right font-medium">{@render rankableValue({ value: `${radio.txPowerDbm} dBm`, metric: 'tx-power' })}</dd>{/if}
+          {#if known(radio.txPowerDbm)}<dt class="text-dim">{m.dd_tx_power()}</dt><dd class="min-w-0 break-words text-right font-medium">{@render rankableValue({ value: `${radio.txPowerDbm} dBm`, metric: 'tx-power' })}</dd>{/if}
           {#if known(radio.txPowerDbm) && known(d.hardware?.power?.consumptionTxMa)}
-            <dt class="text-dim">TX efficiency</dt>
+            <dt class="text-dim">{m.spec_tx_efficiency()}</dt>
             <dd class="min-w-0 break-words text-right font-medium">{@render rankableValue({ value: metricDisplay('tx-efficiency'), metric: 'tx-efficiency' })}</dd>
           {/if}
-          {#if known(radio.antenna)}<dt class="text-dim">Antenna</dt><dd class="min-w-0 break-words text-right font-medium">{radio.antenna}</dd>{/if}
+          {#if known(radio.antenna)}<dt class="text-dim">{m.spec_antenna()}</dt><dd class="min-w-0 break-words text-right font-medium">{radio.antenna}</dd>{/if}
         </dl>
       </div>
     {/each}
@@ -916,27 +925,27 @@
 </section>
 
 <section class="mb-7">
-  <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Firmware support</h2>
+  <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.spec_firmware_support()}</h2>
   {#if data.firmwares.length}
     <table class="w-full border-collapse text-[0.9rem]">
       <thead>
         <tr class="text-left text-[0.78rem] tracking-wide text-dim uppercase">
-          <th class="border-b border-edge px-2.5 py-2">Firmware</th>
-          <th class="border-b border-edge px-2.5 py-2">Type</th>
-          <th class="border-b border-edge px-2.5 py-2">Target</th>
-          <th class="border-b border-edge px-2.5 py-2">Status</th>
-          <th class="border-b border-edge px-2.5 py-2">Notes</th>
+          <th class="border-b border-edge px-2.5 py-2">{m.col_firmware()}</th>
+          <th class="border-b border-edge px-2.5 py-2">{m.col_type()}</th>
+          <th class="border-b border-edge px-2.5 py-2">{m.spec_target()}</th>
+          <th class="border-b border-edge px-2.5 py-2">{m.col_status()}</th>
+          <th class="border-b border-edge px-2.5 py-2">{m.col_notes()}</th>
         </tr>
       </thead>
       <tbody>
         {#each data.firmwares as f}
           {@const meta = STATUS_META[f.status] ?? { label: f.status, tw: '' }}
           <tr>
-            <td class="border-b border-edge px-2.5 py-2"><a class="text-accent2 hover:underline" href="{base}/firmware/{f.firmware.id}/">{f.firmware.name}</a></td>
-            <td class="border-b border-edge px-2.5 py-2 text-dim">{TYPE_META[f.firmware.type]?.label ?? f.firmware.type}</td>
+            <td class="border-b border-edge px-2.5 py-2"><a class="text-accent2 hover:underline" href={href(`/firmware/${f.firmware.id}/`)}>{f.firmware.name}</a></td>
+            <td class="border-b border-edge px-2.5 py-2 text-dim">{firmwareTypeLabel(f.firmware.type)}</td>
             <td class="border-b border-edge px-2.5 py-2 font-mono text-[0.8rem] text-dim">{f.target ?? '—'}</td>
             <td class="border-b border-edge px-2.5 py-2">
-              <span class="inline-block rounded-full px-2 py-0.5 text-[0.78rem] whitespace-nowrap {meta.tw}">{meta.symbol ?? ''} {meta.label}</span>
+              <span class="inline-block rounded-full px-2 py-0.5 text-[0.78rem] whitespace-nowrap {meta.tw}">{meta.symbol ?? ''} {matrixStatusLabel(f.status)}</span>
             </td>
             <td class="border-b border-edge px-2.5 py-2 text-dim">{f.notes ?? ''}</td>
           </tr>
@@ -944,7 +953,7 @@
       </tbody>
     </table>
   {:else}
-    <p class="text-dim">No firmware in the atlas lists this device yet.</p>
+    <p class="text-dim">{m.dd_no_firmware()}</p>
   {/if}
 </section>
 
@@ -967,7 +976,7 @@
             <Box class="h-12 w-12" aria-hidden="true" />
           {/if}
           {#if p.likes != null}
-            <span class="absolute top-1.5 right-1.5 inline-flex items-center gap-1 rounded-full bg-black/65 px-1.5 py-0.5 text-[0.7rem] font-medium text-white backdrop-blur-sm" title="{p.likes.toLocaleString()} likes on {printHost(p.url)}">
+            <span class="absolute top-1.5 right-1.5 inline-flex items-center gap-1 rounded-full bg-black/65 px-1.5 py-0.5 text-[0.7rem] font-medium text-white backdrop-blur-sm" title={m.dd_likes_title({ count: p.likes.toLocaleString(), host: printHost(p.url) })}>
               <Heart class="h-3 w-3 shrink-0" strokeWidth={2} aria-hidden="true" />
               <span class="tabular-nums">{p.likes.toLocaleString()}</span>
             </span>
@@ -975,7 +984,7 @@
         </div>
         <div class="flex flex-1 flex-col gap-0.5 p-3">
           <span class="text-[0.9rem] leading-tight font-medium group-hover:text-accent" title={p.name}>{p.name}</span>
-          {#if p.author}<span class="text-[0.78rem] text-dim">by {p.author}</span>{/if}
+          {#if p.author}<span class="text-[0.78rem] text-dim">{m.print_by({ author: p.author })}</span>{/if}
           <span class="mt-1.5 text-[0.72rem] text-accent2">{printHost(p.url)} ↗</span>
         </div>
       </a>
@@ -986,8 +995,8 @@
 {#if printEnclosures.length}
   <section class="mb-7">
     <div class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-edge pb-1.5">
-      <h2 class="text-[1.1rem] font-semibold">3D-printed enclosures</h2>
-      <span class="text-[0.8rem] text-dim">Full housings you can print yourself</span>
+      <h2 class="text-[1.1rem] font-semibold">{m.dd_prints_enclosures()}</h2>
+      <span class="text-[0.8rem] text-dim">{m.dd_prints_enclosures_sub()}</span>
     </div>
     {@render printGrid(printEnclosures)}
   </section>
@@ -996,8 +1005,8 @@
 {#if printAccessories.length}
   <section class="mb-7">
     <div class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-edge pb-1.5">
-      <h2 class="text-[1.1rem] font-semibold">3D-printed accessories</h2>
-      <span class="text-[0.8rem] text-dim">Cases, mounts, brackets and add-ons you can print yourself</span>
+      <h2 class="text-[1.1rem] font-semibold">{m.dd_prints_accessories()}</h2>
+      <span class="text-[0.8rem] text-dim">{m.dd_prints_accessories_sub()}</span>
       <!-- Sub-filter — only shown when more than one accessory-grade category exists. -->
       {#if accessorySubTypes.length > 1}
         <div class="ml-auto flex flex-wrap gap-1.5">
@@ -1009,7 +1018,7 @@
                 ? 'border-accent bg-accent/15 text-accent'
                 : 'border-edge bg-elev text-dim hover:border-accent/60 hover:text-ink'}"
             >
-              {t === 'all' ? 'All' : t === 'case' ? 'Cases' : 'Accessories'}
+              {t === 'all' ? m.filter_all() : t === 'case' ? m.print_type_case() : m.print_type_accessory()}
             </button>
           {/each}
         </div>

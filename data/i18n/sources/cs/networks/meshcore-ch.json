@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ch",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Celostátní komunitní síť MeshCore pokrývající Švýcarsko v pásmu 869,618 MHz (62,5 kHz / SF8 / CR4/8), koordinovaná prostřednictvím komunity meshcore.ch se sdílenou mapou světa a přednastaveným 10% cyklem práce.",
+      "sourceHash": "sha256:3d2ce4b0b6f915b74cc1b04a24726c148282a2a5effa69ab41eb0c86c12ff745",
+      "generatedAt": "2026-06-27T12:13:13.827Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 40543,
+      "promptTokens": 181,
+      "completionTokens": 1375
+    }
+  }
+}

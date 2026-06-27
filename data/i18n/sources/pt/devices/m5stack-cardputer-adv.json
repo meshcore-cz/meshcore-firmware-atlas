@@ -1,0 +1,15 @@
+{
+  "resource": "device/m5stack-cardputer-adv",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dispositivo portátil ESP32-S3 com ecrã LCD de 1,14 polegadas, teclado de 56 teclas, microSD, bateria de 1750 mAh e o módulo de expansão Cap LoRa-1262 para SX1262 LoRa, além de GNSS integrado. A combinação pretendida pelos forks do MeshCore da comunidade usa a base Cardputer-ADV com a tampa U214 acoplada.",
+      "sourceHash": "sha256:b5661510800f4de96b0b23f2c0830e2148230d76d62a6015e3c99743f1bd159e",
+      "generatedAt": "2026-06-27T14:15:55.907Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15765,
+      "promptTokens": 202,
+      "completionTokens": 1212
+    }
+  }
+}

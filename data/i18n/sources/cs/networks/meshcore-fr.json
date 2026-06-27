@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-fr",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Francouzská komunita MeshCore buduje dálkovou offline síť LoRa mesh pokrývající celou Francii. Využívá profil 869.618 MHz kompatibilní s EU/UK Narrow, nabízí veřejný návod k nastavení, koordinaci přes Discord a sdružuje lokální aktivity v Lyonu a Lorientu/Západě.",
+      "sourceHash": "sha256:c703a92cca19b640bdbb85ab959bc0c7b244034cef5a47ef088d99e034e3f337",
+      "generatedAt": "2026-06-27T12:04:49.050Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8864,
+      "promptTokens": 175,
+      "completionTokens": 1318
+    }
+  }
+}

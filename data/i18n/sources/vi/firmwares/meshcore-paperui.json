@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-paperui",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Phần sụn cầm tay MeshCore tối ưu cho màn hình e-paper dành cho thiết bị LilyGo T5 ePaper S3 Pro, tích hợp tính năng nhắn tin độc lập, danh bạ, khám phá thiết bị, GPS, bản đồ và cài đặt thiết bị tối ưu cho thao tác chạm.",
+      "sourceHash": "sha256:2c18c1e23eb96c2ae622588c276ede00f5d447feda3aea55090cf98c0f381f28",
+      "generatedAt": "2026-06-27T15:50:37.083Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13462,
+      "promptTokens": 166,
+      "completionTokens": 948
+    },
+    "deviceNotes.lilygo-t5-pro": {
+      "value": "Yêu cầu LilyGo T5 ePaper S3 Pro và thẻ SD để hoạt động bình thường.",
+      "sourceHash": "sha256:89d7b3b5c4c8457715a6fa7b8c0ca4c2e3cef78536e370f478a7564a24eb3a05",
+      "generatedAt": "2026-06-27T15:50:40.420Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3336,
+      "promptTokens": 148,
+      "completionTokens": 576
+    },
+    "features": {
+      "value": "[\"Giao diện nhắn tin e-paper\", \"Danh bạ và phát hiện nút\", \"GPS, bản đồ và điểm mốc\", \"Công cụ nạp firmware trên trình duyệt\"]",
+      "sourceHash": "sha256:79e44108b22128680d020598974a7c6590788b10015223fc21e6be26d69ac85e",
+      "generatedAt": "2026-06-27T15:50:47.567Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7146,
+      "promptTokens": 151,
+      "completionTokens": 893
+    }
+  }
+}

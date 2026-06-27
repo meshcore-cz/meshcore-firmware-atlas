@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-pager",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Máy nhắn tin Meshtastic/MeshCore cầm tay ESP32-S3 với SX1262 LoRa, màn hình IPS 2.33 inch, bàn phím QWERTY và núm xoay. Tích hợp sẵn u-blox MIA-M10Q GNSS, pin 1500 mAh, micro/loa, NFC và BHI260AP AI IMU. Hỗ trợ Wi-Fi và BLE. Có tùy chọn LR1121 hoặc các biến thể vô tuyến khác khi mua hàng.",
+      "sourceHash": "sha256:b7af97f37b5b02c4e798f28826c53bd973d48223fabef014df2cf9874eac1398",
+      "generatedAt": "2026-06-27T15:38:05.603Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8543,
+      "promptTokens": 218,
+      "completionTokens": 1404
+    }
+  }
+}

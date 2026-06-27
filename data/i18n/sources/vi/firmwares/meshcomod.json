@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meshcomod",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Phần sụn đồng hành đa kênh kết nối được xây dựng trên MeshCore, hỗ trợ kết nối USB, Bluetooth và TCP đồng thời, cho phép điện thoại, ứng dụng web và Home Assistant cùng giao tiếp với một thiết bị vô tuyến cùng lúc. Bổ sung tính năng cấu hình Wi-Fi động và giao diện người dùng trực tiếp trên thiết bị.",
+      "sourceHash": "sha256:9d1956cf009425dd2567cd7c7c3ba234ff085b8f9c07af8cdc56382c4e2efc2e",
+      "generatedAt": "2026-06-27T15:45:13.932Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6044,
+      "promptTokens": 177,
+      "completionTokens": 975
+    },
+    "features": {
+      "value": "[\"Kết nối đồng thời USB + BLE + TCP\",\"Đẩy dữ liệu theo thời gian thực đến mọi máy khách đang kết nối\",\"Tích hợp vào thanh bên Home Assistant\",\"Cấu hình Wi-Fi khi đang chạy (không cần khôi phục qua CLI)\",\"Các thẻ giao diện trên thiết bị (ghép nối BLE, trạng thái TCP)\"]",
+      "sourceHash": "sha256:89f99d048cd36fc259794129449a799830ab405e6dba2f98c4fdf20a0499f873",
+      "generatedAt": "2026-06-27T15:45:30.722Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16789,
+      "promptTokens": 174,
+      "completionTokens": 1282
+    }
+  }
+}

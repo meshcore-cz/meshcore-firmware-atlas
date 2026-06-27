@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshpkt",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Кодек на чистому Go для формату передачі радіопакетів MeshCore. Забезпечує перевірку пакетів, кодування та декодування корисного навантаження, криптографію ідентифікації, сумісну з мікропрограмою, розширювану диспетчеризацію, а також прив'язки TypeScript на базі WASM.",
+      "sourceHash": "sha256:30214fb25bdad66a213335ed8e92ffff62eca605efe4f89c07c1fba3dff75a46",
+      "generatedAt": "2026-06-27T16:26:08.139Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8412,
+      "promptTokens": 166,
+      "completionTokens": 1329
+    },
+    "tags": {
+      "value": "[\"SDK\", \"протокол\", \"кодек\", \"криптографія\", \"wasm\"]",
+      "sourceHash": "sha256:f4f63821e080c7ea1818e13a5e395d421f9aa979a111da54d05ed7c6ee8ba080",
+      "generatedAt": "2026-06-27T16:26:12.999Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4860,
+      "promptTokens": 142,
+      "completionTokens": 493
+    },
+    "verificationNotes.the-project-is-pre-1-0-and-recommends-pinning-a-": {
+      "value": "Оскільки проєкт перебуває на стадії до 1.0, для використання в робочому середовищі рекомендується фіксувати конкретну версію.",
+      "sourceHash": "sha256:2721583c225a7231bee1b4b24b5b637eb071d387599538788c11c53efb037850",
+      "generatedAt": "2026-06-27T16:26:19.424Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6425,
+      "promptTokens": 148,
+      "completionTokens": 1097
+    },
+    "verificationNotes.the-npm-package-declares-mit-the-repository-root": {
+      "value": "Пакунок npm вказує ліцензію MIT; на момент перевірки в кореневому каталозі репозиторію не було окремого файлу ліцензії.",
+      "sourceHash": "sha256:1d5c7154876c140c361e23f49d0e144ae591145ea203a1bbddd0ac4d5922040a",
+      "generatedAt": "2026-06-27T16:26:23.468Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4044,
+      "promptTokens": 146,
+      "completionTokens": 651
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-gui",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Desktopová a headless platforma MeshCore pro vlastní hostování nabízí zasílání zpráv, mapy, archivy, BBS, automatizaci botů, REST API, dekódování paketů a volitelný most pro překlenutí frekvencí mezi dvěma párovými radiostanicemi.",
+      "sourceHash": "sha256:197032e42cb25d8186a457beca3910d9d404fc7900578332bb587512e8dfc53a",
+      "generatedAt": "2026-06-27T11:32:13.176Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10409,
+      "promptTokens": 169,
+      "completionTokens": 1380
+    },
+    "verificationNotes.usb-serial-is-the-most-broadly-supported-transpo": {
+      "value": "Sériová linka USB je nejšířeji podporovaným komunikačním kanálem; BLE je testováno pouze na Linuxu s BlueZ a D-Bus.",
+      "sourceHash": "sha256:e630725f2706a0832b5f9f209fa841c3d70baf9735c11407a82da098c2029f2d",
+      "generatedAt": "2026-06-27T11:32:20.243Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7067,
+      "promptTokens": 152,
+      "completionTokens": 914
+    },
+    "verificationNotes.designed-for-local-operation-and-exposes-a-read-": {
+      "value": "Určeno pro místní běh a poskytuje REST API pouze pro čtení bez autentizace.",
+      "sourceHash": "sha256:e838386a36c68249c647fd9166f7816a0fd650b2e555685d448b297640b56521",
+      "generatedAt": "2026-06-27T11:32:24.306Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4062,
+      "promptTokens": 143,
+      "completionTokens": 526
+    },
+    "tags": {
+      "value": "[\"nicegui\",\"bbs\",\"bot\",\"křížová frekvence\",\"vlastní hostování\"]",
+      "sourceHash": "sha256:4318c4773abbbc267803c010f79724722ae2f60f3fd49f2dfbc4c3d54903e856",
+      "generatedAt": "2026-06-27T13:41:15.669Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12434,
+      "promptTokens": 145,
+      "completionTokens": 801
+    }
+  }
+}

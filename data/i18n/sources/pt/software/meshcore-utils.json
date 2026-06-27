@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-utils",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Gerador de alto desempenho em Rust para chaves Ed25519 personalizadas no MeshCore, com suporte a busca por múltiplos prefixos, saída em JSON, multithreading de CPU e aceleração opcional por GPU via CUDA ou Metal.",
+      "sourceHash": "sha256:c321be6a3e0254f3049599a6bb181f6d8b6e873f4d42b1e0b3e8bf702fbfac10",
+      "generatedAt": "2026-06-27T14:36:36.120Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4270,
+      "promptTokens": 160,
+      "completionTokens": 1191
+    },
+    "tags": {
+      "value": "[\"gerador de chaves\",\"ed25519\",\"gpu\",\"cuda\",\"metal\"]",
+      "sourceHash": "sha256:55134811851e289691b8091d33676c7aa52624ddf7d962ac20c0ac3bff942e48",
+      "generatedAt": "2026-06-27T14:36:38.901Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2780,
+      "promptTokens": 143,
+      "completionTokens": 694
+    },
+    "verificationNotes.cuda-requires-the-nvidia-toolkit-metal-accelerat": {
+      "value": "O CUDA exige o kit de ferramentas da NVIDIA; a aceleração Metal requer o macOS com Apple Silicon ou uma GPU AMD compatível.",
+      "sourceHash": "sha256:91b2a1ada1f9e8e82de7d5110c98a7ce8b90b1292f0cd4d2a0b24d5079753617",
+      "generatedAt": "2026-06-27T14:36:41.929Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3028,
+      "promptTokens": 148,
+      "completionTokens": 783
+    }
+  }
+}

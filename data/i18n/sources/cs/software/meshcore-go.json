@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-go",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Go SDK nezávislé na přenosovém médiu pro přidružená rádia MeshCore. Poskytuje vysokoúrovňové zasílání zpráv, správu kontaktů a kanálů, vyhledávání zařízení, správu opakovačů a přímý přístup k protokolu přes sériový port, BLE a TCP. Součástí je také terminálový klient mc a volitelný backend s podporou více relací.",
+      "sourceHash": "sha256:8d5807ef6d2a0b2bbfedd9216e74bd3bcdf9b54df9f54dbbde28951b3102db96",
+      "generatedAt": "2026-06-27T11:43:03.270Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9410,
+      "promptTokens": 178,
+      "completionTokens": 1329
+    },
+    "verificationNotes.public-apis-may-change-before-the-first-stable-r": {
+      "value": "Veřejná API se mohou změnit před prvním stabilním vydáním.",
+      "sourceHash": "sha256:b800e10978723ff211ec3c12f8dc345a1c23ca6f90d143fa46d3b3acf30c29f9",
+      "generatedAt": "2026-06-27T11:43:07.719Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4449,
+      "promptTokens": 139,
+      "completionTokens": 411
+    },
+    "verificationNotes.no-repository-license-file-or-spdx-license-decla": {
+      "value": "Při kontrole nebyl nalezen žádný licenční soubor repozitáře ani prohlášení o licenci SPDX.",
+      "sourceHash": "sha256:71ac0ef045cf4eb43eeb1710b74d5161b7ff6597c1c08e437abd890590b7e2ae",
+      "generatedAt": "2026-06-27T11:43:11.723Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4003,
+      "promptTokens": 142,
+      "completionTokens": 599
+    },
+    "tags": {
+      "value": "[\"sdk\",\"protokol\",\"terminál\",\"démon\"]",
+      "sourceHash": "sha256:ff01eaeb0d66ea430221178a6fd345664e90ad175d32425eb93675b9766e50b9",
+      "generatedAt": "2026-06-27T13:45:56.597Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 54598,
+      "promptTokens": 138,
+      "completionTokens": 608
+    }
+  }
+}

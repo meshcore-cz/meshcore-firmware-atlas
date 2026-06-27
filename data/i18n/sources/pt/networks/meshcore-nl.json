@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-nl",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede de rádio de emergência LocalMesh holandesa para utilizadores de MeshCore na Holanda. Utiliza a predefinição da Holanda na banda da UE de 868 MHz, com acesso a canais públicos, abrangência de repetidores regionais e uma comunidade ativa liderada por cidadãos.",
+      "sourceHash": "sha256:ae729b1bbf65c740dfe7d81106fbb7bc66ce02c8f5d38a02c72d228b69e67ae0",
+      "generatedAt": "2026-06-27T14:48:04.466Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4665,
+      "promptTokens": 172,
+      "completionTokens": 1354
+    }
+  }
+}

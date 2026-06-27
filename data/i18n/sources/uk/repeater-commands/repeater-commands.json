@@ -1,0 +1,150 @@
+{
+  "resource": "repeater-commands",
+  "locale": "uk",
+  "fields": {
+    "rc.flags": {
+      "value": "{\n  \"serial\": {\n    \"label\": \"Лише USB\",\n    \"desc\": \"Лише послідовна консоль — не приймається через ефір.\"\n  },\n  \"reboot\": {\n    \"label\": \"Перезавантаження\",\n    \"desc\": \"Набуває чинності лише після перезавантаження.\"\n  },\n  \"destructive\": {\n    \"label\": \"Обережно\",\n    \"desc\": \"Незворотна дія — перевірте ще раз перед запуском.\"\n  },\n  \"build\": {\n    \"label\": \"Залежить від збірки\",\n    \"desc\": \"Лише на прошивці, скомпільованій із цією функцією.\"\n  }\n}",
+      "sourceHash": "sha256:ee17f77f365fc1e75425e01eeb7a3ad688b20460cb43694b9f5037a894499aae",
+      "generatedAt": "2026-06-27T17:02:44.410Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3928,
+      "promptTokens": 219,
+      "completionTokens": 719
+    },
+    "rc.groups.power": {
+      "value": "{\n  \"label\": \"Живлення та перезавантаження\",\n  \"commands\": {\n    \"reboot\": {\n      \"desc\": \"Перезапустити вузол.\"\n    },\n    \"poweroff\": {\n      \"desc\": \"Вимкнути пристрій (псевдонім: shutdown).\"\n    },\n    \"shutdown\": {\n      \"desc\": \"Те саме, що poweroff.\"\n    },\n    \"clkreboot\": {\n      \"desc\": \"Скинути годинник до фіксованої епохи, потім перезавантажити.\"\n    },\n    \"start.ota\": {\n      \"desc\": \"Почати бездротове оновлення мікропрограми.\"\n    },\n    \"erase\": {\n      \"desc\": \"Форматувати файлову систему — видаляє всі налаштування (заводське скидання).\"\n    },\n    \"powersaving\": {\n      \"desc\": \"Режим низького енергоспоживання (nRF52: миттєво, ESP32: через 2 хв).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:d5788157c006f5a07cb8414c3131be266bea4876c298dbeb3fd095eff4728245",
+      "generatedAt": "2026-06-27T17:02:55.942Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11531,
+      "promptTokens": 279,
+      "completionTokens": 1177
+    },
+    "rc.groups.info": {
+      "value": "{\n  \"label\": \"Ідентифікація та інформація\",\n  \"commands\": {\n    \"ver\": {\n      \"desc\": \"Версія прошивки та дата збірки.\"\n    },\n    \"board\": {\n      \"desc\": \"Назва апаратного забезпечення / виробника.\"\n    },\n    \"role\": {\n      \"desc\": \"Налаштована роль вузла.\"\n    },\n    \"public.key\": {\n      \"desc\": \"Публічний ключ цього вузла (hex).\"\n    },\n    \"prv.key\": {\n      \"desc\": \"Приватний ключ — змінює ключ вузла.\"\n    },\n    \"name\": {\n      \"desc\": \"Ім'я вузла, що відображається в оголошеннях.\"\n    },\n    \"owner.info\": {\n      \"desc\": \"Примітка про власника / контакт (використовуйте | для нових рядків).\"\n    },\n    \"bootloader.ver\": {\n      \"desc\": \"Версія завантажувача (лише nRF52).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:135809f6aa8335c35dc35f5babb28da81b68e13befc1b174ec3947feb6ec3a6d",
+      "generatedAt": "2026-06-27T17:03:02.747Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6804,
+      "promptTokens": 283,
+      "completionTokens": 1338
+    },
+    "rc.groups.access": {
+      "value": "{\n  \"label\": \"Паролі та контроль доступу\",\n  \"commands\": {\n    \"password\": {\n      \"desc\": \"Встановити пароль адміністратора.\"\n    },\n    \"guest.password\": {\n      \"desc\": \"Встановити пароль гостя (лише читання).\"\n    },\n    \"allow.read.only\": {\n      \"desc\": \"Дозволити гостям читати конфігурацію без пароля адміністратора.\"\n    },\n    \"setperm\": {\n      \"desc\": \"Встановити права клієнта: 0 гість · 1 лише читання · 2 читання-запис · 3 адміністратор.\"\n    },\n    \"get.acl\": {\n      \"desc\": \"Вивести список контролю доступу.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:75140e652df344753cfad827323faad4c062a87aa18e726f46716c970e76621e",
+      "generatedAt": "2026-06-27T17:03:06.404Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3657,
+      "promptTokens": 240,
+      "completionTokens": 711
+    },
+    "rc.groups.radio": {
+      "value": "{\n  \"label\": \"Радіо\",\n  \"commands\": {\n    \"radio\": {\n      \"desc\": \"Частота LoRa (МГц), ширина смуги (кГц), коефіцієнт розширення та швидкість кодування.\",\n      \"range\": \"freq 150–2500 · bw 7.8–500 · sf 5–12 · cr 5–8\"\n    },\n    \"freq\": {\n      \"desc\": \"Лише частота (МГц).\"\n    },\n    \"tx\": {\n      \"desc\": \"Потужність передавача.\",\n      \"range\": \"-9 до 30 dBm\"\n    },\n    \"tempradio\": {\n      \"desc\": \"Тимчасово змінити параметри радіо, потім автоматичне повернення.\",\n      \"range\": \"mins > 0\"\n    },\n    \"radio.rxgain\": {\n      \"desc\": \"Підсилення RX (SX1262/1268/LR1110).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:2f44981a1f672bd41b25a1760d190ca34c45ebeef604449716cf0be67f614d8d",
+      "generatedAt": "2026-06-27T17:03:31.541Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25136,
+      "promptTokens": 287,
+      "completionTokens": 1175
+    },
+    "rc.groups.forwarding": {
+      "value": "{\n  \"label\": \"Пересилання та маршрутизація\",\n  \"commands\": {\n    \"repeat\": {\n      \"desc\": \"Чи повторює (пересилає) цей вузол пакети.\"\n    },\n    \"loop.detect\": {\n      \"desc\": \"Суворість виявлення циклів маршрутизації.\"\n    },\n    \"path.hash.mode\": {\n      \"desc\": \"Розмір хешу Path-ID.\",\n      \"range\": \"0, 1 або 2\"\n    },\n    \"flood.max\": {\n      \"desc\": \"Макс. кількість переходів для обмеженого флудингу.\",\n      \"range\": \"0–64\"\n    },\n    \"flood.max.unscoped\": {\n      \"desc\": \"Макс. кількість переходів для необмеженого флудингу.\",\n      \"range\": \"0–64\"\n    },\n    \"flood.max.advert\": {\n      \"desc\": \"Макс. кількість переходів для флудингу оголошень.\",\n      \"range\": \"0–64\"\n    },\n    \"multi.acks\": {\n      \"desc\": \"Дозволити кілька ACK на пакет.\",\n      \"range\": \"0 або 1\"\n    }\n  }\n}",
+      "sourceHash": "sha256:34a3a6a7c6adb8155a38426a1d2f42bc81266e18c3a1eb4abd5a627ea923653d",
+      "generatedAt": "2026-06-27T17:03:41.450Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9908,
+      "promptTokens": 318,
+      "completionTokens": 1560
+    },
+    "rc.groups.timing": {
+      "value": "{\n  \"label\": \"Таймінг та час ефіру\",\n  \"commands\": {\n    \"dutycycle\": {\n      \"desc\": \"Цільовий відсоток робочого циклу TX.\",\n      \"range\": \"1–100\"\n    },\n    \"af\": {\n      \"desc\": \"Коефіцієнт часу ефіру.\"\n    },\n    \"rxdelay\": {\n      \"desc\": \"Базова затримка прийому.\",\n      \"range\": \"0–20\"\n    },\n    \"txdelay\": {\n      \"desc\": \"Коефіцієнт затримки флуд-ретрансляції.\",\n      \"range\": \"0–2\"\n    },\n    \"direct.txdelay\": {\n      \"desc\": \"Коефіцієнт затримки прямого трафіку.\",\n      \"range\": \"0–2\"\n    },\n    \"int.thresh\": {\n      \"desc\": \"Поріг перешкод (шуму).\"\n    },\n    \"agc.reset.interval\": {\n      \"desc\": \"Інтервал скидання AGC (округлюється до кратних 4 с).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:758448b2188b6ad32be29f5021a83cae993754e3c467d77e6f3a80a334d0f429",
+      "generatedAt": "2026-06-27T17:03:48.599Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7149,
+      "promptTokens": 303,
+      "completionTokens": 1446
+    },
+    "rc.groups.advert": {
+      "value": "{\n  \"label\": \"Оголошення\",\n  \"commands\": {\n    \"advert\": {\n      \"desc\": \"Надіслати широкомовне оголошення зараз.\"\n    },\n    \"advert.zerohop\": {\n      \"desc\": \"Надіслати оголошення з нульовою кількістю стрибків (лише для сусідів) зараз.\"\n    },\n    \"advert.interval\": {\n      \"desc\": \"Інтервал оголошень з нульовою кількістю стрибків.\",\n      \"range\": \"60–240 хв (0 = вимкнено)\"\n    },\n    \"flood.advert.interval\": {\n      \"desc\": \"Інтервал широкомовних оголошень.\",\n      \"range\": \"3–168 год (0 = вимкнено)\"\n    }\n  }\n}",
+      "sourceHash": "sha256:3646d01f716bf9fa6de899d020efb8a93b05dc26df1d5bc1d97ba315ee8fcdca",
+      "generatedAt": "2026-06-27T17:03:54.288Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5688,
+      "promptTokens": 230,
+      "completionTokens": 1176
+    },
+    "rc.groups.location": {
+      "value": "{\n  \"label\": \"Розташування\",\n  \"commands\": {\n    \"lat\": {\n      \"desc\": \"Широта вузла.\"\n    },\n    \"lon\": {\n      \"desc\": \"Довгота вузла.\"\n    },\n    \"adc.multiplier\": {\n      \"desc\": \"Калібрування АЦП акумулятора (0 = типове для плати).\",\n      \"range\": \"0–10\"\n    }\n  }\n}",
+      "sourceHash": "sha256:0873fede7da84c28875bd01a8991f543cda080934172c45c336a164d8a13bd36",
+      "generatedAt": "2026-06-27T17:03:57.231Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2943,
+      "promptTokens": 180,
+      "completionTokens": 572
+    },
+    "rc.groups.neighbors": {
+      "value": "{\n  \"label\": \"Сусіди\",\n  \"commands\": {\n    \"neighbors\": {\n      \"desc\": \"Показати нещодавно почутих сусідів.\"\n    },\n    \"neighbor.remove\": {\n      \"desc\": \"Забути сусіда за відкритим ключем.\"\n    },\n    \"discover.neighbors\": {\n      \"desc\": \"Надіслати запит на виявлення сусідів з нульовою кількістю переходів.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:41c43163720a0688fb434f5a5a61230ad57c8afae44cbebe82f5e4224c9d4824",
+      "generatedAt": "2026-06-27T17:04:00.940Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3708,
+      "promptTokens": 177,
+      "completionTokens": 634
+    },
+    "rc.groups.clock": {
+      "value": "{\n  \"label\": \"Годинник\",\n  \"commands\": {\n    \"clock\": {\n      \"desc\": \"Показати поточний час UTC.\"\n    },\n    \"clock.sync\": {\n      \"desc\": \"Синхронізувати годинник із часовою міткою відправника.\"\n    },\n    \"time\": {\n      \"desc\": \"Встановити годинник на час Unix-епохи (не можна зсувати назад).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:641c8b99ace38f890c1f5673418b3d84903c1b8fe811806c42edfafcefce85f7",
+      "generatedAt": "2026-06-27T17:04:10.077Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9137,
+      "promptTokens": 179,
+      "completionTokens": 722
+    },
+    "rc.groups.stats": {
+      "value": "{\n  \"label\": \"Статистика та журналювання\",\n  \"commands\": {\n    \"clear.stats\": {\n      \"desc\": \"Скинути всі лічильники статистики.\"\n    },\n    \"stats-core\": {\n      \"desc\": \"Батарея, час роботи, довжина черги, прапорці налагодження.\"\n    },\n    \"stats-radio\": {\n      \"desc\": \"Рівень шуму, RSSI/SNR, час ефіру, помилки.\"\n    },\n    \"stats-packets\": {\n      \"desc\": \"Лічильники надісланих / отриманих пакетів.\"\n    },\n    \"log.start\": {\n      \"desc\": \"Почати запис журналу прийому до сховища.\"\n    },\n    \"log.stop\": {\n      \"desc\": \"Зупинити запис журналу прийому.\"\n    },\n    \"log.erase\": {\n      \"desc\": \"Видалити збережений журнал.\"\n    },\n    \"log\": {\n      \"desc\": \"Вивести збережений журнал у послідовну консоль.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:5476582e3894dab7089ff326ba288c835930a2744f5339e75ecc1386b65752e3",
+      "generatedAt": "2026-06-27T17:04:21.164Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11087,
+      "promptTokens": 285,
+      "completionTokens": 1089
+    },
+    "rc.groups.regions": {
+      "value": "{\n  \"label\": \"Регіони\",\n  \"commands\": {\n    \"region\": {\n      \"desc\": \"Показати всі визначені регіони.\"\n    },\n    \"region.get\": {\n      \"desc\": \"Показати один регіон та його батьківський елемент / ознаку флуду.\"\n    },\n    \"region.put\": {\n      \"desc\": \"Створити регіон (флуд дозволено за замовчуванням).\"\n    },\n    \"region.def\": {\n      \"desc\": \"Визначити ієрархію в одному рядку (гілки | або ,).\"\n    },\n    \"region.remove\": {\n      \"desc\": \"Видалити регіон (має бути порожнім).\"\n    },\n    \"region.load\": {\n      \"desc\": \"Почати масове завантаження регіонів з відступами (порожній рядок завершує його).\"\n    },\n    \"region.save\": {\n      \"desc\": \"Зберегти зміни регіонів у сховище.\"\n    },\n    \"region.home\": {\n      \"desc\": \"Переглянути або встановити домашній регіон.\"\n    },\n    \"region.default\": {\n      \"desc\": \"Переглянути або встановити область дії за замовчуванням (<null> для очищення).\"\n    },\n    \"region.allowf\": {\n      \"desc\": \"Дозволити флуд у регіоні (* = символ підстановки).\"\n    },\n    \"region.denyf\": {\n      \"desc\": \"Заборонити флуд у регіоні.\"\n    },\n    \"region.list\": {\n      \"desc\": \"Список регіонів за дозволом на флуд.\"\n    }\n  },\n  \"blurb\": \"Область дії регіону контролює, куди поширюється флуд. Команда `region` без аргументів виводить список усіх визначених регіонів.\"\n}",
+      "sourceHash": "sha256:820afdfc5fedbb3c41df015059da7392c18bf1e7d2571e98d9f543a254010258",
+      "generatedAt": "2026-06-27T17:04:34.416Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13252,
+      "promptTokens": 410,
+      "completionTokens": 2226
+    },
+    "rc.groups.gps": {
+      "value": "{\n  \"label\": \"GPS\",\n  \"commands\": {\n    \"gps\": {\n      \"desc\": \"Показати статус GPS (фіксація, супутники).\"\n    },\n    \"gps.on\": {\n      \"desc\": \"Увімкнути апаратне забезпечення GPS.\"\n    },\n    \"gps.off\": {\n      \"desc\": \"Вимкнути апаратне забезпечення GPS.\"\n    },\n    \"gps.sync\": {\n      \"desc\": \"Синхронізувати годинник за часом GPS.\"\n    },\n    \"gps.setloc\": {\n      \"desc\": \"Скопіювати поточну фіксацію GPS у широту/довготу вузла.\"\n    },\n    \"gps.advert\": {\n      \"desc\": \"Переглянути / встановити політику поширення місцезнаходження для оголошень.\"\n    }\n  },\n  \"blurb\": \"Доступно лише у збірках із підтримкою GPS.\"\n}",
+      "sourceHash": "sha256:c638f806e84b7f7b271a23285fb9c8c6de4d3c28cc6243ce8c0b8a2f0cf85b9e",
+      "generatedAt": "2026-06-27T17:04:50.659Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16241,
+      "promptTokens": 257,
+      "completionTokens": 1030
+    },
+    "rc.groups.sensors": {
+      "value": "{\n  \"label\": \"Сенсори\",\n  \"commands\": {\n    \"sensor.list\": {\n      \"desc\": \"Список користувацьких змінних сенсорів.\"\n    },\n    \"sensor.get\": {\n      \"desc\": \"Прочитати одну змінну сенсора.\"\n    },\n    \"sensor.set\": {\n      \"desc\": \"Записати одну змінну сенсора.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:d62c05fac6368dec62d760971de438161d1a4c9d654930bde7d7563fe2f63428",
+      "generatedAt": "2026-06-27T17:04:53.093Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2433,
+      "promptTokens": 173,
+      "completionTokens": 423
+    },
+    "rc.groups.bridge": {
+      "value": "{\n  \"label\": \"Міст та керування живленням\",\n  \"commands\": {\n    \"bridge.type\": {\n      \"desc\": \"Налаштований тип моста (rs232 / espnow / none).\"\n    },\n    \"bridge.enabled\": {\n      \"desc\": \"Увімкнути / вимкнути міст.\"\n    },\n    \"bridge.delay\": {\n      \"desc\": \"Затримка маршрутизації моста.\",\n      \"range\": \"0–10000 ms\"\n    },\n    \"bridge.source\": {\n      \"desc\": \"Який потік пакетів переспрямовувати через міст.\"\n    },\n    \"bridge.baud\": {\n      \"desc\": \"Швидкість передачі RS-232.\",\n      \"range\": \"9600–115200\"\n    },\n    \"bridge.channel\": {\n      \"desc\": \"Канал ESP-NOW.\",\n      \"range\": \"1–14\"\n    },\n    \"bridge.secret\": {\n      \"desc\": \"Спільний секрет ESP-NOW (≤15 символів).\"\n    },\n    \"pwrmgt.support\": {\n      \"desc\": \"Чи підтримується керування живленням.\"\n    },\n    \"pwrmgt.source\": {\n      \"desc\": \"Поточне джерело живлення (external / battery).\"\n    },\n    \"pwrmgt.bootreason\": {\n      \"desc\": \"Причина останнього перезапуску / вимкнення.\"\n    },\n    \"pwrmgt.bootmv\": {\n      \"desc\": \"Напруга під час завантаження в мВ.\"\n    }\n  },\n  \"blurb\": \"Ключі моста з'являються лише у збірках з мостом; pwrmgt — у збірках nRF52 з керуванням живленням.\"\n}",
+      "sourceHash": "sha256:ffd6ee8519f1d36279bb792688e37367f19b6e53bb79398bad84f122aa3e0b37",
+      "generatedAt": "2026-06-27T17:05:05.030Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11937,
+      "promptTokens": 412,
+      "completionTokens": 2038
+    }
+  }
+}

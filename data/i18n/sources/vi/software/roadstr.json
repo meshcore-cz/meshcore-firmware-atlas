@@ -1,0 +1,60 @@
+{
+  "resource": "software/roadstr",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Ứng dụng báo cáo sự kiện giao thông phi tập trung cho Android và nền tảng web, sử dụng các sự kiện Nostr có chữ ký, truy vấn geohash và tích hợp OsmAnd. Định dạng truyền tải MeshCore nhỏ gọn của ứng dụng đã được đặc tả nhưng chưa được triển khai.",
+      "sourceHash": "sha256:eb34d07ca64bc0887975c09b547d38c93a5fb173c67adcfb8195ff00f70acc61",
+      "generatedAt": "2026-06-27T16:36:19.018Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5621,
+      "promptTokens": 170,
+      "completionTokens": 772
+    },
+    "screenshots.web.png.caption": {
+      "value": "Bản đồ sự kiện giao thông trên trình duyệt",
+      "sourceHash": "sha256:f4b19527b7de259876e1b483e9a13ebb0b3ea1ff4e9f74105586e6267e504967",
+      "generatedAt": "2026-06-27T16:36:23.588Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4569,
+      "promptTokens": 133,
+      "completionTokens": 452
+    },
+    "screenshots.android.png.caption": {
+      "value": "Tích hợp sự kiện giao thông trên Android và OsmAnd",
+      "sourceHash": "sha256:d3be235f51f325cf7192bc9653ae13fd2f4b53a00df4adb6276d737866012ef1",
+      "generatedAt": "2026-06-27T16:36:29.250Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5661,
+      "promptTokens": 137,
+      "completionTokens": 950
+    },
+    "tags": {
+      "value": "[\"nostr\", \"sự kiện giao thông\", \"osmand\", \"phi tập trung\", \"meshcore dự kiến\"]",
+      "sourceHash": "sha256:22c076958f730e0d394c502b2e69f1e4285561309918e5bee31221fd695f2122",
+      "generatedAt": "2026-06-27T16:36:38.914Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9663,
+      "promptTokens": 149,
+      "completionTokens": 1128
+    },
+    "verificationNotes.current-releases-exchange-events-through-nostr-r": {
+      "value": "Các phiên bản hiện tại trao đổi sự kiện thông qua các relay Nostr; lớp truyền tải MeshCore và cầu nối mạng mesh ra internet vẫn đang được lên kế hoạch.",
+      "sourceHash": "sha256:0dcfc7719035f8568f82e38a69c4c1e6bb2a0287c9b7d1b9017b21b818abe88f",
+      "generatedAt": "2026-06-27T16:36:45.202Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6287,
+      "promptTokens": 152,
+      "completionTokens": 947
+    },
+    "verificationNotes.the-android-application-integrates-with-osmand-f": {
+      "value": "Ứng dụng Android tích hợp với OsmAnd để hiển thị tuyến đường và cảnh báo khi đến gần.",
+      "sourceHash": "sha256:660051f150ead763d1ea83b6e10722b9ebf9f0b3f1a2854f11f50c5662db80fa",
+      "generatedAt": "2026-06-27T16:37:02.190Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16987,
+      "promptTokens": 144,
+      "completionTokens": 250
+    }
+  }
+}

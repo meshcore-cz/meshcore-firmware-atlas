@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-3112",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mô-đun ESP32-S3 WisDuo tích hợp BLE, Wi-Fi và SX1262 LoRa, phù hợp để tạo ra các thiết bị MeshCore và Meshtastic nhỏ gọn. Tài liệu kỹ thuật cung cấp thông tin về các băng tần LoRa theo khu vực, sơ đồ chân và chi tiết chứng nhận của mô-đun.",
+      "sourceHash": "sha256:3010b0b293c093b282692a273841f21841095796aa67a72fdb0ecb746d0810dc",
+      "generatedAt": "2026-06-27T15:40:17.651Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5602,
+      "promptTokens": 178,
+      "completionTokens": 1099
+    }
+  }
+}

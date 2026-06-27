@@ -1,0 +1,15 @@
+{
+  "resource": "network/montreal-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng những người đam mê, nhà chế tạo và người thử nghiệm vận hành MeshCore và Meshtastic trên khắp Đảo Montréal và các vùng ngoại ô lân cận. Hệ thống MeshCore được triển khai sử dụng các trạm lặp cố định để phủ sóng toàn thành phố, với mục tiêu mở rộng sang Laval, Longueuil và toàn bộ Vùng Đại Montréal.",
+      "sourceHash": "sha256:460bb38882b7f8608d104b7b2327de81e6748d1917f91c768e88bc1c5c1ba301",
+      "generatedAt": "2026-06-27T16:51:17.228Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13755,
+      "promptTokens": 185,
+      "completionTokens": 1154
+    }
+  }
+}

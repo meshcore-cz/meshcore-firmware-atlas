@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-deck-community",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Compilação de firmware da comunidade para o dispositivo portátil LilyGo T-Deck, herdando o mesmo ESP32-S3, SX1262, ecrã IPS de 2,8 polegadas e esquema de teclado/trackball do T-Deck comercial.",
+      "sourceHash": "sha256:d55e78ec72e9037f2daa0333105f2b7d4b237c8eb6d038e2d8bca7a21e52a233",
+      "generatedAt": "2026-06-27T14:12:03.618Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 32738,
+      "promptTokens": 175,
+      "completionTokens": 1355
+    }
+  }
+}

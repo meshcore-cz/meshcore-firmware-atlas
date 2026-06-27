@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshtower",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó repetidor solar externo baseado na placa-base Heltec MeshSolar — uma placa BMS combinada com uma placa de controle BLE + LoRa para cobertura em malha autónoma e de longa duração. A primeira geração do MeshTower, posteriormente sucedida pelo MeshTower V2.",
+      "sourceHash": "sha256:e7cacb5cda67a2a3ff7d648a47a62820141546d944915201407c071fdfcdfb50",
+      "generatedAt": "2026-06-27T14:03:23.825Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14747,
+      "promptTokens": 180,
+      "completionTokens": 874
+    }
+  }
+}

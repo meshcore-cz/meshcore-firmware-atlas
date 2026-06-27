@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshpocket",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Heltec MeshPocket là một thiết bị nút LoRa nRF52840 + SX1262 nhỏ gọn được tích hợp trong sạc dự phòng, có hỗ trợ sạc không dây từ tính Qi2, hai cổng USB-C (đầu vào/đầu ra 5V) và màn hình LCD nhỏ. Thiết bị được thiết kế cho mạng lưới mesh di động Meshtastic và MeshCore, đi kèm pin dung lượng trên 4000 mAh và chế độ đồng hành BLE công suất thấp.",
+      "sourceHash": "sha256:793167c1ea40adc9a499f253389f9774fa8162f76c3f9a80adac8f57af36ae25",
+      "generatedAt": "2026-06-27T15:33:27.360Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13062,
+      "promptTokens": 201,
+      "completionTokens": 722
+    }
+  }
+}

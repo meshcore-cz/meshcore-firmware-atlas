@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-khv",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita MeshCore v okolí Chabarovsku na ruském Dálném východě, která využívá veřejný lokálně hostovaný analyzátor CoreScope.",
+      "sourceHash": "sha256:92cadf89a4e5df359ab08a2667183d7ddcbf264e03eb874199c43d2037361402",
+      "generatedAt": "2026-06-27T12:07:53.459Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7918,
+      "promptTokens": 153,
+      "completionTokens": 1010
+    }
+  }
+}

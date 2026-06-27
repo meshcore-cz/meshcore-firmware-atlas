@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-wt3",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Heltec Wireless Tracker v3 je lokalizátor ESP32-S3 + SX1262 LoRa s integrovaným modulem GNSS (GPS), baterií o kapacitě 4000+ mAh, vstupem pro solární nabíjení a volitelným displejem. Je určen pro mesh sítě Meshtastic, sledování objektů v IoT a aplikace LoRaWAN. Díky solárnímu nabíjení a efektivnímu řízení spotřeby umožňuje dlouhodobý provoz v terénu.",
+      "sourceHash": "sha256:7f931e459ba59a06161ff004f0a701f32898d050b0fe6f5534e25403117c9a20",
+      "generatedAt": "2026-06-27T10:48:48.418Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

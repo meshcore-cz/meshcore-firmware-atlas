@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-4631",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Модуль WisBlock Core поєднує мікроконтролер nRF52840 із трансивером SX1262 LoRa (модуль RAK4630) і призначений для підключення до базової плати WisBlock (RAK5005-O / RAK19007). Підтримує BLE 5.0, вихідну потужність LoRa 22 dBm та струм у режимі сну 2.0 µA. Слугує основою для RAK WisMesh Base, WisMesh Tap та Meshtastic Starter Kit.",
+      "sourceHash": "sha256:1f5163ea78383211cebb2ff86cfab5aa83a88c322e93c46fe7e79668b87ea6aa",
+      "generatedAt": "2026-06-27T15:00:58.470Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6635,
+      "promptTokens": 224,
+      "completionTokens": 2214
+    }
+  }
+}

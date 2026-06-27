@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/heltec",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fabricante de placas de desenvolvimento LoRa ESP32 e nRF52 acessíveis, amplamente utilizadas no ecossistema MeshCore.",
+      "sourceHash": "sha256:4bb0b581b811c99357fc4eaa84bcb89467bf43be698e112b0e608f8d0797a20a",
+      "generatedAt": "2026-06-27T14:44:27.538Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1410,
+      "promptTokens": 150,
+      "completionTokens": 260
+    }
+  }
+}

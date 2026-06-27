@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-si",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore toàn quốc tại Slovenia, vận hành theo cấu hình sẵn băng hẹp tiêu chuẩn EU/UK, kèm bản đồ CoreScope trực tuyến và vùng phủ sóng của các trạm lặp khu vực.",
+      "sourceHash": "sha256:322235cd3b5d559cb88597bc39b53f823daef5fc285511e31a1da1c5ec7ea4d3",
+      "generatedAt": "2026-06-27T16:54:04.678Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7018,
+      "promptTokens": 157,
+      "completionTokens": 767
+    }
+  }
+}

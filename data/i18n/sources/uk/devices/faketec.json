@@ -1,0 +1,15 @@
+{
+  "resource": "device/faketec",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Саморобна платформа ProMicro nRF52840 MeshCore із зовнішнім модулем SX1262 LoRa. Профіль офіційної прошивки надає хуки для OLED, GNSS та датчиків для збірок спільноти, проте вибір конкретного модуля та корпусу залежить від складальника.",
+      "sourceHash": "sha256:d4b98d7dbf9682c053d8cb9e5d35ee19d7c508f8911fb4e60394b1b533b827b0",
+      "generatedAt": "2026-06-27T15:00:44.782Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4845,
+      "promptTokens": 178,
+      "completionTokens": 1321
+    }
+  }
+}

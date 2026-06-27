@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-ha-ui",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Інформаційна панель у бічній панелі Home Assistant, яка працює поверх meshcore-ha та додає постійні канали й прямі повідомлення, контакти, карти, статистику вузлів у реальному часі, датчики, а також консоль для виконання команд MeshCore напряму.",
+      "sourceHash": "sha256:b4f0c8ddd5ee034d3cd859e4081e70871d2e2317d5edc604ce75695ffaba60ce",
+      "generatedAt": "2026-06-27T16:17:35.399Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11839,
+      "promptTokens": 164,
+      "completionTokens": 1179
+    },
+    "tags": {
+      "value": "[\"home-assistant\",\"hacs\",\"панель керування\",\"постійні повідомлення\"]",
+      "sourceHash": "sha256:4ebd26305d749cb75282b2c923b692e25b951bce289e941971fc1039d86a5c30",
+      "generatedAt": "2026-06-27T16:17:44.393Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8994,
+      "promptTokens": 143,
+      "completionTokens": 1204
+    },
+    "verificationNotes.requires-a-working-meshcore-ha-integration-and-d": {
+      "value": "Потребує працездатної інтеграції meshcore-ha та не підключається до радіостанцій безпосередньо.",
+      "sourceHash": "sha256:60671eecfb398e1daf81603027099e4739d55d07ca11298cce336f841f67ee95",
+      "generatedAt": "2026-06-27T16:17:48.357Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3964,
+      "promptTokens": 145,
+      "completionTokens": 697
+    },
+    "verificationNotes.the-repository-url-currently-redirects-from-an-e": {
+      "value": "Наразі URL-адреса репозиторію перенаправляє з попереднього місця розміщення проєкту Daring-Designs.",
+      "sourceHash": "sha256:b82f814a1127fa4904b9ccde2507b772f29b66fd72ed875f5305e0958ca9362c",
+      "generatedAt": "2026-06-27T16:17:56.706Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8348,
+      "promptTokens": 145,
+      "completionTokens": 859
+    }
+  }
+}

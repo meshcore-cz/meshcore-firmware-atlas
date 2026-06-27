@@ -1,0 +1,15 @@
+{
+  "resource": "network/pioneer-valley-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore у Pioneer Valley на заході штату Массачусетс, що налічує 50 вузлів у долині річки Коннектикут. Працює з використанням пресету США/Канада на частоті 910.525 MHz (62.5 kHz / SF7 / CR4/5) та аналізатора CoreScope.",
+      "sourceHash": "sha256:741274ac01a798d04d891d21234f32b08eb409f744486c6417a02d74a036cad7",
+      "generatedAt": "2026-06-27T16:56:18.404Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10014,
+      "promptTokens": 184,
+      "completionTokens": 1651
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/gulf-coast-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới MeshCore do tình nguyện viên xây dựng, có cơ sở tại Louisiana và đang mở rộng khắp Vùng Vịnh Hoa Kỳ, bao gồm tính năng giám sát trực tiếp CoreScope, công cụ thiết lập, tài liệu cục bộ, các cuộc họp định kỳ và điều phối qua Discord.",
+      "sourceHash": "sha256:8ec4552bf2be826547bc7659dec0b9da6acaf1dd2199b6a20aeea1c9b6099a96",
+      "generatedAt": "2026-06-27T16:48:12.298Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6269,
+      "promptTokens": 164,
+      "completionTokens": 1032
+    }
+  }
+}

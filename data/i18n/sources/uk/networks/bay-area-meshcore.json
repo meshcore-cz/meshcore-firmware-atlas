@@ -1,0 +1,15 @@
+{
+  "resource": "network/bay-area-meshcore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Активна спільнота MeshCore у регіоні затоки Сан-Франциско та на Центральному узбережжі Каліфорнії, що охоплює понад 700 вузлів від Котаті до Сан-Хосе. Працює в американському діапазоні 915 МГц разом з аналізатором CoreScope та спільнотою в Discord.",
+      "sourceHash": "sha256:4db4e25d7eb1c7cf45501de77e7c1f964dfef01f23bf73845525d72ccde76e59",
+      "generatedAt": "2026-06-27T16:47:05.233Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10025,
+      "promptTokens": 176,
+      "completionTokens": 1510
+    }
+  }
+}

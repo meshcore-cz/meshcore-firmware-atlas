@@ -1,0 +1,51 @@
+{
+  "resource": "software/nrf-dfu-py",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Кросплатформна утиліта на Python з графічним та командним інтерфейсами для оновлення пристроїв Nordic nRF51/nRF52 через Bluetooth за допомогою безкнопкового та Legacy DFU, з можливістю налаштування сканування, повторних спроб, підтвердження пакетів та MTU.",
+      "sourceHash": "sha256:acab1233e668eee8f5ccae88b333d54c9bb59b7b812a8f0309b2cd859967f521",
+      "generatedAt": "2026-06-27T16:34:23.553Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5949,
+      "promptTokens": 173,
+      "completionTokens": 994
+    },
+    "tags": {
+      "value": "[\"bluetooth-dfu\",\"nrf52\",\"кросплатформний\",\"настільний\"]",
+      "sourceHash": "sha256:65da5596fa2c999030e6e51fa382102081304ba3f37fe85a03e1e294d6d10814",
+      "generatedAt": "2026-06-27T16:34:40.306Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16753,
+      "promptTokens": 144,
+      "completionTokens": 894
+    },
+    "verificationNotes.supports-nordic-legacy-dfu-only-secure-dfu-is-no": {
+      "value": "Підтримує лише Nordic Legacy DFU; Secure DFU не підтримується.",
+      "sourceHash": "sha256:aac1ba3229f2e4a3af39d7a55d02f4345a76240376dbb151e0877b62c3655118",
+      "generatedAt": "2026-06-27T16:34:48.266Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7959,
+      "promptTokens": 144,
+      "completionTokens": 572
+    },
+    "verificationNotes.ci-publishes-standalone-gui-builds-for-windows-l": {
+      "value": "CI публікує автономні збірки з графічним інтерфейсом для Windows, Linux x64/ARM64 та macOS Intel/Apple Silicon.",
+      "sourceHash": "sha256:3d6f4e785248cae3ee7f7515b2d260d244d778c26a15f238faedea1c64b84464",
+      "generatedAt": "2026-06-27T16:35:07.002Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18736,
+      "promptTokens": 151,
+      "completionTokens": 674
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "У репозиторії наразі не вказано ліцензію SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:35:10.281Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3279,
+      "promptTokens": 139,
+      "completionTokens": 459
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/georgia-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore no norte da Geórgia, nos EUA, com mais de 840 nós distribuídos por Lawrenceville, Marietta e pela região montanhosa do norte do estado. Opera na banda de 915 MHz dos EUA, utilizando um analisador CoreScope e uma instância separada no meshstat.com.",
+      "sourceHash": "sha256:132a5a4a725394a844e322e2c1ec2873f2d8cb26c8035b50651c46152cbffa49",
+      "generatedAt": "2026-06-27T14:46:24.239Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2954,
+      "promptTokens": 181,
+      "completionTokens": 824
+    }
+  }
+}

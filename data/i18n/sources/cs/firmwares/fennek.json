@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/fennek",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Alternativní open-source firmware pro LilyGO T-Deck Pro – hudba, audioknihy, e-knihy a chat přes síť LoRa mesh pomocí MeshCore. Nabízí spouštěč aplikací na hlavní obrazovce, podporu dotykového ovládání i fyzické klávesnice, čtečku EPUB, přehrávač audioknih a zvukový výstup přes DAC PCM5102A.",
+      "sourceHash": "sha256:1ce02557a6325b69d29293cfc034d7ce057ccd418cf1828b929e4b84fce9434b",
+      "generatedAt": "2026-06-27T11:16:11.877Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5826,
+      "promptTokens": 189,
+      "completionTokens": 824
+    },
+    "features": {
+      "value": "[\"Launcher domovské obrazovky\",\"Přehrávání hudby (DAC PCM5102A)\",\"Přehrávač audioknih\",\"Čtečka formátů EPUB a TXT s mezipamětí indexu stránek\",\"Chat v síti LoRa mesh prostřednictvím MeshCore\",\"Podpora dotykového ovládání a fyzické klávesnice\",\"Pozice čtení pro jednotlivé knihy\"]",
+      "sourceHash": "sha256:24ebed7c6260373947c8d6ac5551da43ae7648781f94872f8eb1814618ef9731",
+      "generatedAt": "2026-06-27T12:28:37.402Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14718,
+      "promptTokens": 179,
+      "completionTokens": 873
+    }
+  }
+}

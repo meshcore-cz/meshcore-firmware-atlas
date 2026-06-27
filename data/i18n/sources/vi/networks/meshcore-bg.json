@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-bg",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tại Bulgaria dành cho nhắn tin qua mạng lưới LoRa off-grid, được điều phối qua meshcore.bg với các mạng lưới đang hoạt động tại Sofia và Plovdiv, cũng như kết nối đường dài đến Craiova, Romania (~200 km). Sử dụng cài đặt sẵn EU/UK (Narrow) trên băng tần 869.618 MHz với mã băm đường dẫn 2 byte và tính năng phát hiện vòng lặp được bật trên các trạm lặp.",
+      "sourceHash": "sha256:b7fe5731fe0df758026f69f70f48057b7e2cbc293e2fb54400dca1c7a96ece72",
+      "generatedAt": "2026-06-27T16:45:37.042Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11766,
+      "promptTokens": 205,
+      "completionTokens": 1330
+    }
+  }
+}

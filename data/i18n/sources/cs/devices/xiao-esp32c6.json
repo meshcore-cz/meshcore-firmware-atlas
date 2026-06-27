@@ -1,0 +1,12 @@
+{
+  "resource": "device/xiao-esp32c6",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Miniaturní deska ESP32-C6 XIAO s podporou Wi-Fi 6, BLE 5 a rádiové komunikace Thread/Zigbee. Společně s připojeným modulem Wio-SX1262 LoRa ji MeshCore využívá jako kompaktní doprovodné zařízení nebo základ pro opakovač.",
+      "sourceHash": "sha256:c0446f50916798e71fb5a6560fab218cab55b4ec7e8174c2c819495a25cbcc63",
+      "generatedAt": "2026-06-27T10:58:21.563Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,4 +1,5 @@
 // Catalog collections — labels, routes, icons and where each appears in the UI.
+import { m } from '$lib/paraglide/messages.js';
 import RadioTower from '@lucide/svelte/icons/radio-tower';
 import CodeXml from '@lucide/svelte/icons/code-xml';
 import CircuitBoard from '@lucide/svelte/icons/circuit-board';
@@ -69,4 +70,21 @@ export const NAV_COLLECTIONS = ['networks', 'software', 'devices', 'firmwares'].
 /** @param {CollectionId | string | null | undefined} id */
 export function collectionById(id) {
   return id ? (COLLECTIONS[id] ?? null) : null;
+}
+
+/**
+ * Localized label for a collection. Falls back to the English label baked into
+ * COLLECTIONS if no message exists for the id.
+ * @param {CollectionId | string} id
+ */
+export function collectionLabel(id) {
+  return m[`collection_${id}_label`]?.() ?? COLLECTIONS[id]?.label ?? String(id);
+}
+
+/**
+ * Localized blurb for a collection.
+ * @param {CollectionId | string} id
+ */
+export function collectionBlurb(id) {
+  return m[`collection_${id}_blurb`]?.() ?? COLLECTIONS[id]?.blurb ?? '';
 }

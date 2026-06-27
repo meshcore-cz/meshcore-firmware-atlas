@@ -1,0 +1,15 @@
+{
+  "resource": "network/wny-meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Dobrovolnická komunita MeshCore buduje komunikační páteř v západním New Yorku od hranic s Pensylvánií k jezeru Ontario a na východ až po Rochester. V koridoru Buffalo-Rochester jsou rozmístěny opakovače a k dispozici jsou veřejné návody k nastavení.",
+      "sourceHash": "sha256:abf226e2f3b0e9c27fc940e004e4cb84502fe4caad32a7424e8b2d053b8e5ee2",
+      "generatedAt": "2026-06-27T12:14:30.299Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11502,
+      "promptTokens": 169,
+      "completionTokens": 1212
+    }
+  }
+}

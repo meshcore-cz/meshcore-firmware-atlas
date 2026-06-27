@@ -1,0 +1,15 @@
+{
+  "resource": "network/scotmesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Мережа MeshCore, якою керує спільнота, забезпечує стійкий далекобійний зв'язок по всій Шотландії. ScotMesh використовує чіткі регіональні обмеження для зменшення широкомовного трафіку, а також пропонує відкриті інструменти спільноти, карту в реальному часі, аналіз CoreScope та інфраструктуру моніторингу MQTT.",
+      "sourceHash": "sha256:e9cec183f1bbc08b036394f5d8ab8d1c7b372aa25fdd0433c943ff32c1d77cd0",
+      "generatedAt": "2026-06-27T16:58:34.977Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9298,
+      "promptTokens": 170,
+      "completionTokens": 1511
+    }
+  }
+}

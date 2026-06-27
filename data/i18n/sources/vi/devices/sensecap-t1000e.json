@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-t1000e",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị theo dõi Meshtastic/MeshCore có kích thước bằng thẻ tín dụng, được trang bị nRF52840, Semtech LR1110 LoRa (863–928 MHz) và MediaTek AG3335 GNSS. Tích hợp pin 700 mAh, cảm biến nhiệt độ và ánh sáng, còi báo cùng lớp vỏ IP65. Sạc bằng cáp USB từ tính đi kèm; chỉ cấu hình qua BLE — không có màn hình hay Wi-Fi.",
+      "sourceHash": "sha256:b49e74e8d3e4a580821d76935e3b4c145622ae37154225e28754743a5e413ce2",
+      "generatedAt": "2026-06-27T15:41:05.007Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5135,
+      "promptTokens": 207,
+      "completionTokens": 1045
+    }
+  }
+}

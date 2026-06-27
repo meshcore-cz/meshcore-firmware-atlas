@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/heltec-v4-multiboot",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware de seletor de inicialização para Heltec WiFi LoRa 32 V4.2 que instala e alterna entre MeshCore, Meshtastic, RNode ou outras imagens de firmware, preservando configurações e dados do sistema de arquivos separados para cada slot.",
+      "sourceHash": "sha256:9368c310d82e7df54cf101aabb14535aa5a1ba4fdd18f18ed3c26dd143dcecb7",
+      "generatedAt": "2026-06-27T14:28:24.512Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3080,
+      "promptTokens": 173,
+      "completionTokens": 887
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Destina-se à revisão de hardware Heltec WiFi LoRa 32 V4.2 de 16 MB.",
+      "sourceHash": "sha256:c9e00676692c11c3df4e25af06533fa51a76cd32ad2989b8b28e7d457c77cc2c",
+      "generatedAt": "2026-06-27T14:28:27.034Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2521,
+      "promptTokens": 148,
+      "completionTokens": 674
+    },
+    "features": {
+      "value": "[\"Quatro slots de firmware configuráveis\", \"Isolamento de NVS e sistema de arquivos por firmware\", \"Menu de inicialização OLED com seleção memorizada\"]",
+      "sourceHash": "sha256:fd0ecb5dba29620f3c2989b178463ace56a926e20881f8132ec81931ce7405e1",
+      "generatedAt": "2026-06-27T14:28:30.446Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3412,
+      "promptTokens": 152,
+      "completionTokens": 834
+    }
+  }
+}

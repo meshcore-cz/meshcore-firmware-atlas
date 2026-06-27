@@ -1,0 +1,15 @@
+{
+  "resource": "network/victoria-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita MeshCore ve státě Victoria v Austrálii provozuje síť 50+ uzlů pokrývajících region Mallee a oblast Melbourne. Běží v australském pásmu 915 MHz a využívá analyzátor CoreScope.",
+      "sourceHash": "sha256:124281b26ad6be17b53248f30261399002f26014b871cf26bc3b220d1b391601",
+      "generatedAt": "2026-06-27T12:13:53.192Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6860,
+      "promptTokens": 166,
+      "completionTokens": 770
+    }
+  }
+}

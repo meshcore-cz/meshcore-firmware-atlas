@@ -1,0 +1,12 @@
+{
+  "resource": "device/xiao-esp32s3-plain",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Miniaturní deska ESP32-S3 XIAO o velikosti palce s podporou Wi-Fi, BLE, programováním přes USB a integrovanými LED diodami pro uživatele a nabíjení. Kompaktní základní deska pro bezdrátové a senzorové projekty s podporou nabíjení baterie a standardním rozšiřujícím rozhraním XIAO.",
+      "sourceHash": "sha256:c51ef4b71396e46e790e1ca79c81a84d2f4ebc068aa102b20338f8171a23446b",
+      "generatedAt": "2026-06-27T10:58:31.536Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

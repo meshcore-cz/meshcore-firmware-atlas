@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-techo",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dispositivo portátil Meshtastic/MeshCore de ultrabaixo consumo com nRF52840 + SX1262, ecrã e-paper de 1,54 polegadas e GNSS L76K integrado. Suporta apenas Bluetooth 5, com uma variante opcional de sensor ambiental BME280 e caixa em ABS.",
+      "sourceHash": "sha256:28f4dd1b6309ea945c5ff350db721e370e0356816e50e25a5038b54df630480e",
+      "generatedAt": "2026-06-27T14:12:56.072Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10745,
+      "promptTokens": 185,
+      "completionTokens": 634
+    }
+  }
+}

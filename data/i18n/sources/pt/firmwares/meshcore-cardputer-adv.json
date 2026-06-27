@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fork do MeshCore focado no Cardputer-ADV, projetado para o M5Stack Cardputer-Adv associado ao módulo de expansão Cap LoRa-1262. Adiciona o alvo `cardputer_adv` com uma interface de usuário personalizada para dispositivo portátil, transporte complementar BLE, armazenamento em cartão SD, entrada via teclado e suporte a GNSS.",
+      "sourceHash": "sha256:ab037b4731c0918480bf6c11b6141e03a5ea4e096823c63e5ab7a8b95d3e013a",
+      "generatedAt": "2026-06-27T14:27:33.092Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3475,
+      "promptTokens": 189,
+      "completionTokens": 1022
+    },
+    "features": {
+      "value": "[\"Interface específica para Cardputer\",\"Transporte complementar via BLE\",\"Armazenamento de mensagens e configurações em cartão SD\",\"Entrada de teclado\",\"Suporte a GNSS\"]",
+      "sourceHash": "sha256:9a7dcd2229b87b6795ac962705826bc6a8bfa5d12209b3bfc688d20b01d916ce",
+      "generatedAt": "2026-06-27T14:27:35.394Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2302,
+      "promptTokens": 153,
+      "completionTokens": 533
+    }
+  }
+}

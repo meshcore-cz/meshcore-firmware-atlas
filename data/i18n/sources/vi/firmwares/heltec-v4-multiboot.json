@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/heltec-v4-multiboot",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware chọn khởi động dành cho Heltec WiFi LoRa 32 V4.2, cho phép cài đặt và chuyển đổi giữa MeshCore, Meshtastic, RNode hoặc các bản firmware khác, đồng thời bảo toàn cài đặt và dữ liệu hệ thống tệp riêng biệt cho từng vị trí.",
+      "sourceHash": "sha256:9368c310d82e7df54cf101aabb14535aa5a1ba4fdd18f18ed3c26dd143dcecb7",
+      "generatedAt": "2026-06-27T15:59:15.850Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4304,
+      "promptTokens": 173,
+      "completionTokens": 853
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Dành cho phiên bản phần cứng 16 MB Heltec WiFi LoRa 32 V4.2.",
+      "sourceHash": "sha256:c9e00676692c11c3df4e25af06533fa51a76cd32ad2989b8b28e7d457c77cc2c",
+      "generatedAt": "2026-06-27T15:59:21.291Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5441,
+      "promptTokens": 148,
+      "completionTokens": 780
+    },
+    "features": {
+      "value": "[\"Bốn khe firmware có thể cấu hình\",\"Cô lập NVS và hệ thống tệp theo từng firmware\",\"Menu khởi động OLED và ghi nhớ lựa chọn\"]",
+      "sourceHash": "sha256:fd0ecb5dba29620f3c2989b178463ace56a926e20881f8132ec81931ce7405e1",
+      "generatedAt": "2026-06-27T15:59:25.307Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4015,
+      "promptTokens": 152,
+      "completionTokens": 863
+    }
+  }
+}

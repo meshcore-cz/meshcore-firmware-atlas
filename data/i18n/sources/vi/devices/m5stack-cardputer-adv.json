@@ -1,0 +1,15 @@
+{
+  "resource": "device/m5stack-cardputer-adv",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị cầm tay ESP32-S3 với màn hình LCD 1,14 inch, bàn phím 56 phím, microSD, pin 1750 mAh và mô-đun mở rộng Cap LoRa-1262 hỗ trợ LoRa SX1262 cùng GNSS tích hợp. Kết hợp được các bản phân nhánh MeshCore của cộng đồng nhắm tới sử dụng đế Cardputer-ADV có gắn nắp U214.",
+      "sourceHash": "sha256:b5661510800f4de96b0b23f2c0830e2148230d76d62a6015e3c99743f1bd159e",
+      "generatedAt": "2026-06-27T15:38:39.335Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6462,
+      "promptTokens": 202,
+      "completionTokens": 1364
+    }
+  }
+}

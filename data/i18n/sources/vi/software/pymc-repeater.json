@@ -1,0 +1,60 @@
+{
+  "resource": "software/pymc-repeater",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Trình nền bộ lặp MeshCore nhẹ bằng Python dành cho phần cứng Linux nhúng và thiết bị kiểu Pi, hỗ trợ giao tiếp vô tuyến trực tiếp với modem SX1262 hoặc KISS, định tuyến gói tin, phát hiện nút lân cận và bảng điều khiển giám sát cục bộ. Máy chủ cho [[software:pymc-console|pyMC Console]].",
+      "sourceHash": "sha256:50a070542b8df7001e27f3367cfb3ed8409aab5e5c1f4e94bc25945ee568bd26",
+      "generatedAt": "2026-06-27T16:33:55.132Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8790,
+      "promptTokens": 182,
+      "completionTokens": 1046
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Bảng điều khiển trạng thái bộ tiếp sóng và theo dõi gói tin",
+      "sourceHash": "sha256:01ad412e72dffcb9f7d354c4ed3fc44407ef2dc32e0a7b22e87d70b2464d20cc",
+      "generatedAt": "2026-06-27T16:33:58.915Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3782,
+      "promptTokens": 136,
+      "completionTokens": 574
+    },
+    "screenshots.statistics.png.caption": {
+      "value": "Thống kê lưu lượng và hiệu suất của bộ lặp",
+      "sourceHash": "sha256:810d31e0df6a35c3218e677e61dfbf5bd64aa91c85a3a38c54e141d7ac86c5e5",
+      "generatedAt": "2026-06-27T16:34:05.258Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6342,
+      "promptTokens": 135,
+      "completionTokens": 584
+    },
+    "tags": {
+      "value": "[\"bộ lặp\", \"raspberry-pi\", \"sx1262\", \"kiss\", \"tự lưu trữ\"]",
+      "sourceHash": "sha256:0505e6865d3f5075b970abb6e4a163276b091b0407223fdf7035b1fa40fbce84",
+      "generatedAt": "2026-06-27T16:34:11.221Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5963,
+      "promptTokens": 150,
+      "completionTokens": 664
+    },
+    "verificationNotes.supports-native-spi-sx1262-radios-ch341-usb-to-s": {
+      "value": "Hỗ trợ bộ thu phát SX1262 qua SPI gốc, bộ chuyển đổi USB sang SPI CH341 và modem nối tiếp KISS; không hỗ trợ bộ tập trung SX1302/SX1303.",
+      "sourceHash": "sha256:5a95dfd5135cb40f9f4dd60c4ac2252ebf1feb3932d13dc9a41810b4fc0bc184",
+      "generatedAt": "2026-06-27T16:34:15.908Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4686,
+      "promptTokens": 166,
+      "completionTokens": 729
+    },
+    "verificationNotes.the-project-asks-operators-to-test-carefully-bef": {
+      "value": "Dự án yêu cầu người vận hành kiểm tra kỹ lưỡng trước khi triển khai chính thức vì độ phủ mạng thực tế vẫn còn hạn chế.",
+      "sourceHash": "sha256:d32400ec6566f94fd8bb793ad16bc086bc85781315e6737c93ddeaa847f61b75",
+      "generatedAt": "2026-06-27T16:34:22.915Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7006,
+      "promptTokens": 148,
+      "completionTokens": 810
+    }
+  }
+}

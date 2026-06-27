@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-ninja",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Danh mục web mở về hệ sinh thái MeshCore, bao gồm phần cứng, firmware, phần mềm, nhà cung cấp và mạng lưới khu vực, kèm theo thông số kỹ thuật có cấu trúc, dữ liệu tương thích, cùng các công cụ lọc và so sánh.",
+      "sourceHash": "sha256:d2e70e3ae8d46f317618d8d4e6ec916d1838dca4f079aaa21d663e5eb201be56",
+      "generatedAt": "2026-06-27T16:13:10.035Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5525,
+      "promptTokens": 161,
+      "completionTokens": 953
+    },
+    "tags": {
+      "value": "[\"Danh mục\", \"Tính tương thích\", \"Phần cứng\", \"Firmware\", \"Mạng\"]",
+      "sourceHash": "sha256:1fe62ae95912ceae809923a9c2f7e36c6ece6e51df6e8efe1c5666a8025ab958",
+      "generatedAt": "2026-06-27T16:13:13.888Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3853,
+      "promptTokens": 143,
+      "completionTokens": 520
+    },
+    "verificationNotes.catalog-data-and-schemas-are-dedicated-to-cc0-ap": {
+      "value": "Dữ liệu và lược đồ danh mục được công bố theo CC0; mã nguồn ứng dụng được cấp phép MIT.",
+      "sourceHash": "sha256:668d986541aa1861084a69dffd02c5f976492df26c23eaaa57d1af04e90f7671",
+      "generatedAt": "2026-06-27T16:13:20.744Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6855,
+      "promptTokens": 145,
+      "completionTokens": 939
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meshcomod",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um firmware complementar com suporte a múltiplos transportes, baseado no MeshCore, que oferece conectividade simultânea via USB, Bluetooth e TCP, permitindo que telefones, clientes web e o Home Assistant se comuniquem com o mesmo rádio ao mesmo tempo. Adiciona configuração de Wi-Fi em tempo de execução e uma interface de usuário no próprio dispositivo.",
+      "sourceHash": "sha256:9d1956cf009425dd2567cd7c7c3ba234ff085b8f9c07af8cdc56382c4e2efc2e",
+      "generatedAt": "2026-06-27T14:21:59.845Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3883,
+      "promptTokens": 177,
+      "completionTokens": 1140
+    },
+    "features": {
+      "value": "[\"Conexões simultâneas USB + BLE + TCP\",\"Envio em tempo real para todos os clientes conectados\",\"Integração com a barra lateral do Home Assistant\",\"Configuração de Wi-Fi em tempo de execução (sem recuperação por CLI)\",\"Abas da interface no dispositivo (pareamento BLE, status do TCP)\"]",
+      "sourceHash": "sha256:89f99d048cd36fc259794129449a799830ab405e6dba2f98c4fdf20a0499f873",
+      "generatedAt": "2026-06-27T14:22:05.068Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5222,
+      "promptTokens": 174,
+      "completionTokens": 1486
+    }
+  }
+}

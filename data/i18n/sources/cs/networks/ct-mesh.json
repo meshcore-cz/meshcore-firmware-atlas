@@ -1,0 +1,15 @@
+{
+  "resource": "network/ct-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Dobrovolnická uživatelská skupina zaměřená na mesh technologie v Connecticutu sdružuje operátory sítí MeshCore a Meshtastic. Poskytuje živou mapu MeshCore, komunitu na Discordu, nástroje pro mapování pokrytí MeshMapper a lokální zdroje MQTT/observer pro oblast BDL.",
+      "sourceHash": "sha256:da2736de478db3582619535868e22f7301b9ece6eaa346c66325a80d71818d43",
+      "generatedAt": "2026-06-27T12:02:36.393Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8799,
+      "promptTokens": 172,
+      "completionTokens": 1013
+    }
+  }
+}

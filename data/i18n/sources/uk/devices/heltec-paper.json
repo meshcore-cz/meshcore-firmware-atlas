@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-paper",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата розробника ESP32-S3FN8 + SX1262 з 2,13-дюймовим чорно-білим E-Ink дисплеєм. Живлення та програмування через USB-C, роз'єм SH1.25 для акумулятора; сумісна з Meshtastic/MeshCore.",
+      "sourceHash": "sha256:cf327931bb20a7a91c8a656b8d4024c9debf799e76d797ab56b45f339ecac4df",
+      "generatedAt": "2026-06-27T14:58:02.787Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3812,
+      "promptTokens": 178,
+      "completionTokens": 1067
+    }
+  }
+}

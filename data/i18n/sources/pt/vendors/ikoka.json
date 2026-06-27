@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/ikoka",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fabricante de nós de malha compactos Ikoka Nano / Stick.",
+      "sourceHash": "sha256:40369f478d0fa80beb62c693d2ec5cea6aa1222e6777b973771a1ec22216e8ba",
+      "generatedAt": "2026-06-27T14:44:30.343Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2804,
+      "promptTokens": 140,
+      "completionTokens": 653
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-kmp",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Knihovna Kotlin Multiplatform pro vyhledávání a připojování k doprovodným uzlům MeshCore přes Bluetooth. Poskytuje vysokoúrovňové API pro práci s kontakty, kanály, zprávami, potvrzeními a konfigurací zařízení.",
+      "sourceHash": "sha256:61c440fc1c515460b64f3a309e7cb613fba8e2ed53be3fb654ed0d61e17d10d6",
+      "generatedAt": "2026-06-27T11:44:10.427Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9317,
+      "promptTokens": 163,
+      "completionTokens": 1175
+    },
+    "verificationNotes.published-to-maven-central-for-android-and-ios-k": {
+      "value": "Publikováno v repozitáři Maven Central pro cíle Kotlin Multiplatform na platformách Android a iOS.",
+      "sourceHash": "sha256:a588d4324054d2e2ca603468f998cceb577ed025f3e5a608bef15b7ec165d49a",
+      "generatedAt": "2026-06-27T11:44:18.684Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8256,
+      "promptTokens": 142,
+      "completionTokens": 1055
+    },
+    "tags": {
+      "value": "[\"SDK\",\"protokol\",\"kotlin-multiplatform\"]",
+      "sourceHash": "sha256:a4bbbc0468fb7a466656ac1354511c1687958f51739cc6010eec76f9da084b1f",
+      "generatedAt": "2026-06-27T13:46:27.345Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4100,
+      "promptTokens": 139,
+      "completionTokens": 185
+    }
+  }
+}

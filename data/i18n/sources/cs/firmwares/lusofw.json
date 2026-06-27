@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/lusofw",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní distribuce firmwaru MeshCore pro portugalskou komunitu. Obsahuje výchozí rádiové nastavení optimalizované pro Portugalsko, vynucování střídy vysílání, synchronizaci síťového času, řízení flood-advert a vybrané buildy pro opakovače a mosty.",
+      "sourceHash": "sha256:b873964349f2581796e0c7ff241ec4ad5c5fc9ddd3a9047b2835834169cea04d",
+      "generatedAt": "2026-06-27T11:16:29.743Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5892,
+      "promptTokens": 168,
+      "completionTokens": 726
+    },
+    "deviceNotes.heltec-v4-exp": {
+      "value": "Používá cíl vydání Heltec V4 TFT.",
+      "sourceHash": "sha256:c077efae98137d562d06266b165e29a58561ae42b20991de84f816dd2883588c",
+      "generatedAt": "2026-06-27T11:16:35.584Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5840,
+      "promptTokens": 139,
+      "completionTokens": 683
+    },
+    "verificationNotes.release-assets-include-sha-1-checksum-files": {
+      "value": "Soubory vydání obsahují i soubory s kontrolními součty SHA-1.",
+      "sourceHash": "sha256:09bd82bc037f2d20056e605e66c08374dae00ce4739355bdccfc06689f00f48b",
+      "generatedAt": "2026-06-27T11:16:43.598Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8014,
+      "promptTokens": 138,
+      "completionTokens": 1153
+    },
+    "verificationNotes.published-releases-are-curated-repeater-and-repe": {
+      "value": "Publikovaná vydání jsou pečlivě vybraná sestavení pro opakovače a opakovačové mosty.",
+      "sourceHash": "sha256:f7b5fdc052a23c7cab873f463ef7759847ee9a032757aa4d2ff041d7b700aff3",
+      "generatedAt": "2026-06-27T11:16:53.006Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9408,
+      "promptTokens": 142,
+      "completionTokens": 1283
+    },
+    "features": {
+      "value": "[\"Výchozí nastavení rádia a regionu pro Portugalsko\",\"Vynucení cyklu střídy\",\"Synchronizace síťového času\",\"Plánování a omezování zahlcujících oznámení\",\"Sestavení opakovačového mostu ESP-NOW a RS-232\",\"Ovládání zvýšeného zisku příjmu SX126x\",\"Vybrané verze flashovatelné z prohlížeče\"]",
+      "sourceHash": "sha256:411bbf90ea0a69cdedbabf8cfccd2125d34dbd6e257dd40a434973ee95468b1f",
+      "generatedAt": "2026-06-27T12:29:13.452Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24193,
+      "promptTokens": 183,
+      "completionTokens": 1721
+    }
+  }
+}

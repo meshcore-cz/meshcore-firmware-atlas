@@ -1,0 +1,15 @@
+{
+  "resource": "network/new-england-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore, що охоплює всю Нову Англію (Коннектикут, Массачусетс, Нью-Гемпшир та Мен), координується через nhmesh.com. Вона має власну карту в реальному часі на nhmesh.live та аналізатор CoreScope. 50+ вузлів розподілено по всьому регіону від Стемфорда (CT) до Топшема (ME).",
+      "sourceHash": "sha256:4a2367a16b44ec39b1f4efc5e548d594312575d5dc28069f347b71c0e8760955",
+      "generatedAt": "2026-06-27T16:54:22.193Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8089,
+      "promptTokens": 183,
+      "completionTokens": 1432
+    }
+  }
+}

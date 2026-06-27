@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-sar",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Aplicação de coordenação de Busca e Salvamento offline-first para iOS e Android, com mensagens MeshCore, voz e imagens de baixa largura de banda, mapas táticos, rastreamento de equipa em tempo real, marcadores de incidentes e desenhos partilhados.",
+      "sourceHash": "sha256:99ef36043f8266e9bd7818607eae78f94151404994a9051c32352c5e83952506",
+      "generatedAt": "2026-06-27T14:35:22.580Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3552,
+      "promptTokens": 166,
+      "completionTokens": 942
+    },
+    "screenshots.map.png.caption": {
+      "value": "Mapa tático com contexto da equipa em tempo real",
+      "sourceHash": "sha256:f9efc97de9a63429ac12b99f4aa06f97ff47abd67b3f6f8445122185442cf0e4",
+      "generatedAt": "2026-06-27T14:35:25.121Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2540,
+      "promptTokens": 136,
+      "completionTokens": 600
+    },
+    "screenshots.navigation.png.caption": {
+      "value": "Bússola e navegação de campo",
+      "sourceHash": "sha256:cde72a0d39658c27741b4fa13eac6c118158dbb3e743a0f72439ff2bd5d99bcf",
+      "generatedAt": "2026-06-27T14:35:27.286Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2165,
+      "promptTokens": 134,
+      "completionTokens": 490
+    },
+    "screenshots.messages.png.caption": {
+      "value": "Mensagens em malha com cartões de voz e imagem",
+      "sourceHash": "sha256:ea80617463131a03d2fe5d87e2cac56f8bee55a1229f49ab06f3ff4becf97d3e",
+      "generatedAt": "2026-06-27T14:35:29.206Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1919,
+      "promptTokens": 136,
+      "completionTokens": 405
+    },
+    "screenshots.actions.png.caption": {
+      "value": "SAR, ações rápidas de voz e imagem",
+      "sourceHash": "sha256:23b174d7dd4514c27d1b517efe0c784f9e150a7e4246b5485dc2ec30da47abb1",
+      "generatedAt": "2026-06-27T14:35:31.221Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2014,
+      "promptTokens": 137,
+      "completionTokens": 455
+    },
+    "tags": {
+      "value": "[\"busca-e-resgate\",\"offline\",\"mapeamento-tático\",\"voz\",\"ferramenta-de-campo\"]",
+      "sourceHash": "sha256:afeece5a99bbb423eb92127c5bfaa8a1b16bee442a69723cecaa409690dfac97",
+      "generatedAt": "2026-06-27T14:35:34.424Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3203,
+      "promptTokens": 147,
+      "completionTokens": 762
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "O repositório não declara uma licença SPDX no momento.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:35:36.281Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1856,
+      "promptTokens": 139,
+      "completionTokens": 423
+    },
+    "verificationNotes.voice-uses-codec2-and-images-use-avif-to-reduce-": {
+      "value": "A voz usa o Codec2 e as imagens usam o AVIF para reduzir o tráfego em conexões de mesh limitadas.",
+      "sourceHash": "sha256:01064ef18c866ff6c51d8147f8ddbb2ff8bac3e4bcb676484749b16737c24577",
+      "generatedAt": "2026-06-27T14:35:38.902Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2621,
+      "promptTokens": 146,
+      "completionTokens": 623
+    }
+  }
+}

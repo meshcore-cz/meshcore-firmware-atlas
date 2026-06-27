@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/zindello",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Australský výrobce hardwaru kompatibilního s MeshCore pro sítě LoRa mesh, včetně HATů pro repetry UltraPeater a UltraPeaterZero o výkonu 1 W.",
+      "sourceHash": "sha256:6240fbfa7b72e0cdeb6aa47f41e0e84b0b6558e7e2830462c4e9faa3ea840f7d",
+      "generatedAt": "2026-06-27T12:00:18.196Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8697,
+      "promptTokens": 157,
+      "completionTokens": 1035
+    }
+  }
+}

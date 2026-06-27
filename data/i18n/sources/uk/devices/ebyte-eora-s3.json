@@ -1,0 +1,15 @@
+{
+  "resource": "device/ebyte-eora-s3",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактна плата розробки ESP32-S3 + SX1262 з 0,96-дюймовим OLED-дисплеєм, слотом для SD-карт, USB-C та схемою заряджання LiPo-акумуляторів. Ідеально підходить для невеликих збірок MeshCore/Meshtastic, де цілком достатньо недорогої плати з дисплеєм та підтримкою перезаряджаних акумуляторів.",
+      "sourceHash": "sha256:838bc591103369491458fcccd3f367959c167674555828b4431ebbc606d71047",
+      "generatedAt": "2026-06-27T14:56:02.913Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4135,
+      "promptTokens": 188,
+      "completionTokens": 1183
+    }
+  }
+}

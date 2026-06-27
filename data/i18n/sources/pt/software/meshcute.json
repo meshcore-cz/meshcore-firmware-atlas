@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcute",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Scanner portátil de BLE, Wi-Fi e LoRa (somente recepção) para o [[device:m5stack-cardputer-adv|M5Stack Cardputer Adv]], projetado para diagnosticar rapidamente a visibilidade de rádio e a intensidade do sinal em encontros do MeshCore ou Meshtastic.",
+      "sourceHash": "sha256:b9ebc168dd58830713747fe6699cbd740c55057930e41a07f69611cce82e4106",
+      "generatedAt": "2026-06-27T14:38:24.263Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3225,
+      "promptTokens": 178,
+      "completionTokens": 950
+    },
+    "tags": {
+      "value": "[\"scanner\", \"cardputer\", \"somente recepção\", \"diagnósticos\", \"meshtastic\"]",
+      "sourceHash": "sha256:2d0f1e02de3ea3084199dc9c80adf070febfcc274292ff54f342bbce65f7e5f0",
+      "generatedAt": "2026-06-27T14:38:27.420Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3157,
+      "promptTokens": 145,
+      "completionTokens": 723
+    },
+    "verificationNotes.lora-scanning-is-receive-only-and-currently-hard": {
+      "value": "A varredura LoRa é apenas de receção e está atualmente fixa no código para a predefinição de rádio da comunidade Swiss MeshCore.",
+      "sourceHash": "sha256:169c9bc406e3d5af02293e0ca85cb7d50c8b1a712c5388d36ae2f56e1e403f3c",
+      "generatedAt": "2026-06-27T14:38:31.387Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3967,
+      "promptTokens": 148,
+      "completionTokens": 1017
+    },
+    "verificationNotes.requires-the-m5stack-cap-lora-1262-accessory-for": {
+      "value": "Requer o acessório M5Stack Cap LoRa-1262 para a varredura LoRa.",
+      "sourceHash": "sha256:ca9d459f0b903c5d952ab92a3c2421216a422d6091a15f25235f62aff51f570d",
+      "generatedAt": "2026-06-27T14:38:33.451Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2063,
+      "promptTokens": 146,
+      "completionTokens": 488
+    }
+  }
+}

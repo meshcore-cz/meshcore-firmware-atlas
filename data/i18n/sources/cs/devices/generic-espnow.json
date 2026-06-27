@@ -1,0 +1,12 @@
+{
+  "resource": "device/generic-espnow",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Obecný cíl ESP32-C3 MeshCore, který jako paketové rádio využívá ESP-NOW. Používá se v případech, kdy je hardware zaměřen na Wi-Fi a není k dispozici žádný specifický záznam desky od výrobce.",
+      "sourceHash": "sha256:b49098186890d66e965b9ece320e1fc2f608cbd55604ef0f1475cc7b70faa97b",
+      "generatedAt": "2026-06-27T10:44:56.532Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

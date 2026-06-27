@@ -1,0 +1,51 @@
+{
+  "resource": "software/meshcore-hub",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nền tảng thu thập dữ liệu mạng MeshCore tự lưu trữ, tiếp nhận các sự kiện gói tin đã giải mã qua MQTT, lưu trữ tin nhắn và dữ liệu đo đạc, đồng thời cung cấp bảng điều khiển web, REST API, xác thực, chỉ số đo lường và hỗ trợ quan sát từ xa.",
+      "sourceHash": "sha256:7eb1062b7e025acc76ed0b0fee12851f254760722dcdc7228f00c44ce6a3d76a",
+      "generatedAt": "2026-06-27T16:09:23.860Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6180,
+      "promptTokens": 168,
+      "completionTokens": 845
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Bảng điều khiển mạng MeshCore Hub",
+      "sourceHash": "sha256:59fc6c58003249c55003c9238aff44bd410289d069d4e8d436aa9fae441fc20d",
+      "generatedAt": "2026-06-27T16:09:27.632Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3768,
+      "promptTokens": 134,
+      "completionTokens": 287
+    },
+    "tags": {
+      "value": "[\"trình thu thập\",\"mqtt\",\"tự lưu trữ\",\"khả năng quan sát\",\"đa quan sát\"]",
+      "sourceHash": "sha256:31117120c11128f0411d1d25be7950d5268504ff509f514a86a49ce979c425a5",
+      "generatedAt": "2026-06-27T16:09:32.147Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4512,
+      "promptTokens": 145,
+      "completionTokens": 641
+    },
+    "verificationNotes.uses-meshcore-packet-capture-observers-to-decode": {
+      "value": "Sử dụng các trình quan sát meshcore-packet-capture để giải mã lưu lượng RF và xuất bản các sự kiện đã chuẩn hóa lên MQTT.",
+      "sourceHash": "sha256:53f3ba05809ee2b0e3dcae2a7babfff26b91c1bc65716b03ba92c99deeaf6e20",
+      "generatedAt": "2026-06-27T16:09:36.820Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4671,
+      "promptTokens": 148,
+      "completionTokens": 575
+    },
+    "verificationNotes.postgresql-is-becoming-the-required-database-bac": {
+      "value": "PostgreSQL đang trở thành backend cơ sở dữ liệu bắt buộc; SQLite vẫn được hỗ trợ tạm thời trong quá trình di chuyển.",
+      "sourceHash": "sha256:06c3aa26048c4748b3db746dfa7c518c6d43d46e6b6ceeb75c155b10ff283034",
+      "generatedAt": "2026-06-27T16:09:45.750Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8927,
+      "promptTokens": 145,
+      "completionTokens": 703
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-cz",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới MeshCore cộng đồng toàn quốc phủ sóng Cộng hòa Séc trên băng tần 869.432 MHz — băng tần duy nhất tại EU có chu kỳ hoạt động 10% và công suất EIRP lên đến 27 dBm. Mạng lưới được cộng đồng meshcore_cz điều phối, với tính năng định tuyến theo từng vùng kraj, bản đồ trực tuyến dùng chung và công cụ phân tích vùng phủ sóng.",
+      "sourceHash": "sha256:d1b3a3dfe33d3be92667efd2d85c6b9078325dd385d9b689cd93f4d4d2091dc1",
+      "generatedAt": "2026-06-27T16:46:41.901Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6898,
+      "promptTokens": 196,
+      "completionTokens": 1034
+    }
+  }
+}

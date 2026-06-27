@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-wt3",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Heltec Wireless Tracker v3 là thiết bị theo dõi LoRa ESP32-S3 + SX1262 tích hợp sẵn GNSS (GPS), pin 4000+ mAh, cổng sạc năng lượng mặt trời và màn hình tùy chọn. Thiết bị được thiết kế cho mạng lưới Meshtastic, theo dõi IoT và các ứng dụng LoRaWAN, duy trì hoạt động ngoài trời lâu hơn nhờ sạc năng lượng mặt trời và quản lý điện năng hiệu quả.",
+      "sourceHash": "sha256:7f931e459ba59a06161ff004f0a701f32898d050b0fe6f5534e25403117c9a20",
+      "generatedAt": "2026-06-27T15:35:05.342Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10905,
+      "promptTokens": 200,
+      "completionTokens": 929
+    }
+  }
+}

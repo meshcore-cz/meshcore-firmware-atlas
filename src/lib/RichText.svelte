@@ -2,7 +2,7 @@
   // Renders maintainer-authored description text: inline markdown plus
   // Obsidian-style wikilinks ([[type:id]] / [[type:id|Label]]) that resolve to
   // internal SvelteKit routes against the live dataset.
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
   import { resolveWikilink } from '$lib/data.js';
   import { parseRichText } from '$lib/richtext.js';
 
@@ -10,7 +10,7 @@
 
   function resolve(target, label) {
     const w = resolveWikilink(target, label);
-    return w.missing ? w : { ...w, href: `${base}/${w.type}/${w.id}/` };
+    return w.missing ? w : { ...w, href: href(`/${w.type}/${w.id}/`) };
   }
 
   let blocks = $derived(parseRichText(text));

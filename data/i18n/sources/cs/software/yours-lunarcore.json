@@ -1,0 +1,33 @@
+{
+  "resource": "software/yours-lunarcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Šifrovaný klient pro Android pro mesh komunikaci po síti LoRa s firmwarem LunarCore, zkoumající relace Double Ratchet, onion routing, krycí provoz, anonymní pověření a lokální úložiště s ochranou soukromí.",
+      "sourceHash": "sha256:47303677030e1b8a383c6814bf199acfbf68e019866bb8e552d3267db5b0b4bd",
+      "generatedAt": "2026-06-27T11:58:04.859Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14888,
+      "promptTokens": 164,
+      "completionTokens": 1940
+    },
+    "verificationNotes.requires-lunarcore-firmware-on-heltec-v3-hardwar": {
+      "value": "Vyžaduje firmware LunarCore na hardwaru Heltec V3 místo standardního firmwaru MeshCore.",
+      "sourceHash": "sha256:c52459c904b39baa694a2ab47eaa6850b8947b46abb5abe27bdea8be4e50f99c",
+      "generatedAt": "2026-06-27T11:58:09.743Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4884,
+      "promptTokens": 146,
+      "completionTokens": 605
+    },
+    "tags": {
+      "value": "[\"lunarcore\",\"soukromí\",\"cibulové-směrování\",\"double-ratchet\",\"experimentální\"]",
+      "sourceHash": "sha256:03ba8bd4f1540615e14738606a1e3217f3c7eca9d51de09dbc54e8f0be12a84d",
+      "generatedAt": "2026-06-27T13:52:04.570Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 31637,
+      "promptTokens": 146,
+      "completionTokens": 938
+    }
+  }
+}

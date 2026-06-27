@@ -1,0 +1,15 @@
+{
+  "resource": "device/atlavox-beacon",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó Meshtastic/MeshCore solar para exteriores baseado em RAK19007 + RAK4631, com painel de 5 W, bateria LiPo de 5000 mAh e caixa IP67. Concebido para a implementação de repetidores autónomos, com emparelhamento Bluetooth e acesso de manutenção USB-C à prova de água.",
+      "sourceHash": "sha256:fff8a8024c132e309739ea063a5e03692a4aeab3a8558f65638442b230cf14e6",
+      "generatedAt": "2026-06-27T13:56:56.969Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18000,
+      "promptTokens": 190,
+      "completionTokens": 859
+    }
+  }
+}

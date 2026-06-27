@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/aurora",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware độc lập MeshCore cho phép giao tiếp văn bản trên LilyGo T-Deck, tích hợp tính năng nhắn tin công khai, riêng tư và trực tiếp, quản lý liên hệ, cấu hình radio cùng hỗ trợ ứng dụng đồng hành qua BLE.",
+      "sourceHash": "sha256:1b06c154384ff7052da6435584b0db2d142b14f74538c7daec1f8818b025046d",
+      "generatedAt": "2026-06-27T15:58:51.856Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3126,
+      "promptTokens": 164,
+      "completionTokens": 671
+    },
+    "features": {
+      "value": "[\"Tin nhắn công khai, riêng tư và trực tiếp\",\"Danh bạ trên thiết bị và cấu hình vô tuyến\",\"Nhập và xuất cấu hình\",\"Hỗ trợ ứng dụng đồng hành BLE\"]",
+      "sourceHash": "sha256:6e3d2e9dad40ceca1f1ce0c96814bdebf4d3475a964569292707527a6771f4dc",
+      "generatedAt": "2026-06-27T15:58:55.312Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3455,
+      "promptTokens": 154,
+      "completionTokens": 676
+    }
+  }
+}

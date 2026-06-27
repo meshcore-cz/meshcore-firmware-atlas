@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/yetiwurks",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Американський виробник захищених аксесуарів для зв'язку та обладнання Meshtastic, зокрема зовнішніх репітерів і базових станцій на базі наборів RAK WisBlock.",
+      "sourceHash": "sha256:c17a0428755826df3d5d5db832bda75854aa9cea09ca510e6a31587c5d8f01f6",
+      "generatedAt": "2026-06-27T16:45:51.338Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12399,
+      "promptTokens": 159,
+      "completionTokens": 925
+    }
+  }
+}

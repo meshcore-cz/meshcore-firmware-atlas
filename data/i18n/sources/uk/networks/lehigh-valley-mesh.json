@@ -1,0 +1,15 @@
+{
+  "resource": "network/lehigh-valley-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore у долині Лігай та ширшому регіоні східної Пенсільванії, яку обслуговує публічний аналізатор CoreScope за адресою map.lvmesh.com.",
+      "sourceHash": "sha256:56e1b99a43fe6cc25d01abe8ad2257fc708418d260007b41836a6f795d9b45bd",
+      "generatedAt": "2026-06-27T16:51:59.976Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3382,
+      "promptTokens": 157,
+      "completionTokens": 674
+    }
+  }
+}

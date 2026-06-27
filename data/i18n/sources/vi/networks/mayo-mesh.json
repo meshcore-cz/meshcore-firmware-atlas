@@ -1,0 +1,15 @@
+{
+  "resource": "network/mayo-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nhóm người dùng radio lưới do tình nguyện viên điều hành tại hạt Mayo, Ireland, đang thử nghiệm MeshCore và Meshtastic. Mạng MeshCore của nhóm sử dụng preset EU/UK Narrow, vận hành các trạm tiếp sóng trên khắp Mayo/Connacht và kết nối vào mạng lưới mesh rộng lớn hơn của Ireland.",
+      "sourceHash": "sha256:603f3cbf9fb5df1d52d6ee70b4c8876680866538fc07c453b3d3a6010aa87be4",
+      "generatedAt": "2026-06-27T16:50:07.220Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5113,
+      "promptTokens": 179,
+      "completionTokens": 826
+    }
+  }
+}

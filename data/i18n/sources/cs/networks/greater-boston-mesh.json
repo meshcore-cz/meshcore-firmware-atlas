@@ -1,0 +1,15 @@
+{
+  "resource": "network/greater-boston-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Dobrovolnická komunita MeshCore a Meshtastic buduje odolnou komunikaci nezávislou na infrastruktuře napříč Massachusetts a okolním regionem Nové Anglie. Nejaktivnější provoz v rámci státu probíhá na MeshCore s využitím předvolby USA/Canada.",
+      "sourceHash": "sha256:40d9619a35ced343277154f716adc03eff3b8ba7e085f4120beb0a0cb25f5433",
+      "generatedAt": "2026-06-27T12:05:11.807Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9168,
+      "promptTokens": 168,
+      "completionTokens": 1141
+    }
+  }
+}

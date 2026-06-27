@@ -1,0 +1,87 @@
+{
+  "resource": "software/meshmonitor",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Víceprotokolový dashboard hostovaný na vlastním serveru slouží k monitorování a správě sítí MeshCore, Meshtastic a MQTT. Nabízí sjednocené mapy, zasílání zpráv, telemetrii, automatizaci, upozornění a řízení přístupu na úrovni jednotlivých zdrojů.",
+      "sourceHash": "sha256:a6c85feaaf3174519af608baf8a791fe9286f3ecf778894e7651473723dad7ca",
+      "generatedAt": "2026-06-27T11:45:27.853Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12822,
+      "promptTokens": 167,
+      "completionTokens": 726
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Síťový dashboard z více zdrojů",
+      "sourceHash": "sha256:c1bb72c6e0ce0b9677118a813002628d624aeea0d3f6711eeae1f3b3c6486e59",
+      "generatedAt": "2026-06-27T11:45:33.622Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5767,
+      "promptTokens": 133,
+      "completionTokens": 519
+    },
+    "screenshots.messages.png.caption": {
+      "value": "Sjednocená komunikace napříč kanály",
+      "sourceHash": "sha256:a145f79917cf848753c0a42a20216130c9f44d8e34f5bc3cdf26924a3d3379fc",
+      "generatedAt": "2026-06-27T11:45:41.236Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7614,
+      "promptTokens": 132,
+      "completionTokens": 846
+    },
+    "screenshots.telemetry.png.caption": {
+      "value": "Panely a grafy telemetrie",
+      "sourceHash": "sha256:317308994b2481109949c9d55a25d2ab277f00c5420e91560caad43996687b11",
+      "generatedAt": "2026-06-27T11:45:47.800Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6563,
+      "promptTokens": 135,
+      "completionTokens": 540
+    },
+    "screenshots.map.png.caption": {
+      "value": "Interaktivní mapa sítě",
+      "sourceHash": "sha256:cb079009598d1295b2ba547fb4a6ca95973c2d2b65af661f40fafea125cda621",
+      "generatedAt": "2026-06-27T11:45:53.374Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5574,
+      "promptTokens": 132,
+      "completionTokens": 382
+    },
+    "verificationNotes.meshcore-devices-connect-over-usb-or-tcp-ble-sup": {
+      "value": "Zařízení MeshCore se připojují přes USB nebo TCP. Podporu BLE zajišťuje most typu sidecar.",
+      "sourceHash": "sha256:18ce0554d124e91d491285551078aaed2ed4220c331221d721266ec26059e5b4",
+      "generatedAt": "2026-06-27T11:46:01.578Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8203,
+      "promptTokens": 146,
+      "completionTokens": 817
+    },
+    "verificationNotes.native-windows-and-macos-desktop-installers-are-": {
+      "value": "Nativní instalační programy pro Windows a macOS jsou publikovány v rámci vydání na GitHubu.",
+      "sourceHash": "sha256:fc7d60a3e1e548a8858c930b7239604d8e0621bea0fc240e7b0c2cb20d1a727e",
+      "generatedAt": "2026-06-27T11:46:10.781Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9202,
+      "promptTokens": 142,
+      "completionTokens": 977
+    },
+    "verificationNotes.docker-images-are-published-for-amd64-arm64-and-": {
+      "value": "Obrazy Dockeru jsou publikovány pro amd64, arm64 a armv7.",
+      "sourceHash": "sha256:a7e6345d94e9e2d8f8c497919e8e6566d881b02f2ea0ef5a6205114fbffa6efc",
+      "generatedAt": "2026-06-27T11:46:14.613Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3832,
+      "promptTokens": 145,
+      "completionTokens": 507
+    },
+    "tags": {
+      "value": "[\"multiprotokolový\",\"vlastní hosting\",\"řídicí panel\",\"zabezpečení\",\"mqtt\"]",
+      "sourceHash": "sha256:c1f4079e4d7cb537dfd7d978ba6d5ea4008909cb450ccf89e24b652bc16433f1",
+      "generatedAt": "2026-06-27T13:46:57.076Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6922,
+      "promptTokens": 144,
+      "completionTokens": 432
+    }
+  }
+}

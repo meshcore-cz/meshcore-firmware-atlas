@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-base-uno",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển BASE System nhỏ gọn dành cho các node Meshtastic dải đơn, kết hợp vi điều khiển nRF52840 với LoRa SX1262, GPIO linh hoạt, khả năng mở rộng QWIIC/STEMMA QT, cùng bộ sạc hỗ trợ nguồn vào từ pin và năng lượng mặt trời.",
+      "sourceHash": "sha256:38a65e2c04702e199c97aa65a141478274fd71ee6e70accb9ecbcdeb0cb3dbeb",
+      "generatedAt": "2026-06-27T15:39:05.505Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4885,
+      "promptTokens": 179,
+      "completionTokens": 673
+    }
+  }
+}

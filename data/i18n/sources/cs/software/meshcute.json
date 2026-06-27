@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcute",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Přenosný skener BLE, Wi-Fi a LoRa (pouze pro příjem) pro [[device:m5stack-cardputer-adv|M5Stack Cardputer Adv]], určený k rychlému zjištění rádiové viditelnosti a síly signálu na setkáních MeshCore a Meshtastic.",
+      "sourceHash": "sha256:b9ebc168dd58830713747fe6699cbd740c55057930e41a07f69611cce82e4106",
+      "generatedAt": "2026-06-27T11:44:25.402Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6717,
+      "promptTokens": 178,
+      "completionTokens": 904
+    },
+    "verificationNotes.lora-scanning-is-receive-only-and-currently-hard": {
+      "value": "Skenování LoRa funguje pouze pro příjem a je v současné době pevně zakódováno pro předvolbu komunitního rádia Swiss MeshCore.",
+      "sourceHash": "sha256:169c9bc406e3d5af02293e0ca85cb7d50c8b1a712c5388d36ae2f56e1e403f3c",
+      "generatedAt": "2026-06-27T11:44:38.399Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12997,
+      "promptTokens": 148,
+      "completionTokens": 765
+    },
+    "verificationNotes.requires-the-m5stack-cap-lora-1262-accessory-for": {
+      "value": "Vyžaduje příslušenství M5Stack Cap LoRa-1262 pro skenování LoRa.",
+      "sourceHash": "sha256:ca9d459f0b903c5d952ab92a3c2421216a422d6091a15f25235f62aff51f570d",
+      "generatedAt": "2026-06-27T11:44:47.959Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9559,
+      "promptTokens": 146,
+      "completionTokens": 862
+    },
+    "tags": {
+      "value": "[\"skener\",\"cardputer\",\"pouze příjem\",\"diagnostika\",\"meshtastic\"]",
+      "sourceHash": "sha256:2d0f1e02de3ea3084199dc9c80adf070febfcc274292ff54f342bbce65f7e5f0",
+      "generatedAt": "2026-06-27T13:46:40.474Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13118,
+      "promptTokens": 145,
+      "completionTokens": 540
+    }
+  }
+}

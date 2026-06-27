@@ -1,0 +1,15 @@
+{
+  "resource": "network/mayo-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Grupo de utilizadores de rádio em malha gerido por voluntários no Condado de Mayo, na Irlanda, que explora o MeshCore e o Meshtastic. A sua rede MeshCore utiliza a predefinição EU/UK Narrow, opera repetidores por todo o Mayo/Connacht e liga-se à rede em malha irlandesa mais ampla.",
+      "sourceHash": "sha256:603f3cbf9fb5df1d52d6ee70b4c8876680866538fc07c453b3d3a6010aa87be4",
+      "generatedAt": "2026-06-27T14:47:16.472Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4562,
+      "promptTokens": 179,
+      "completionTokens": 1289
+    }
+  }
+}

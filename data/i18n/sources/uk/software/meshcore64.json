@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore64",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Клієнт чату MeshCore для Commodore 64, що з'єднується з допоміжним TCP-мостом через послідовний картридж, сумісний із SwiftLink. Підтримує канали та приватні повідомлення, підтвердження доставки та збереження налаштувань.",
+      "sourceHash": "sha256:c8e7822bbd03308c831ea936dee6ef1a673b6536dfea3243bdf0c2b1449deebd",
+      "generatedAt": "2026-06-27T16:22:02.069Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6057,
+      "promptTokens": 166,
+      "completionTokens": 851
+    },
+    "screenshots.demo.png.caption": {
+      "value": "Обмін повідомленнями через канали MeshCore на Commodore 64",
+      "sourceHash": "sha256:e3b2daed63bd7a948ab97465c8cf7fec2154864e5e7eb975ed9386d335f69c94",
+      "generatedAt": "2026-06-27T16:22:06.665Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4595,
+      "promptTokens": 139,
+      "completionTokens": 520
+    },
+    "tags": {
+      "value": "[\"commodore-64\",\"ретрокомп'ютинг\",\"swiftlink\",\"petscii\"]",
+      "sourceHash": "sha256:5dbfa693f69d4499beb7db9e0833a8219a804c8ee383f42ea1765ab4b6f97737",
+      "generatedAt": "2026-06-27T16:22:22.629Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15963,
+      "promptTokens": 148,
+      "completionTokens": 684
+    },
+    "verificationNotes.requires-swiftlink-or-compatible-acia-emulation-": {
+      "value": "Потребує SwiftLink або сумісної емуляції ACIA та TCP-моста для послідовного порту до супутнього пристрою MeshCore.",
+      "sourceHash": "sha256:2d89a555be3b6454b731e1b6028dc1ae03f9e6627f440c56f85fa422ecab3a1e",
+      "generatedAt": "2026-06-27T16:22:27.761Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5132,
+      "promptTokens": 149,
+      "completionTokens": 821
+    }
+  }
+}

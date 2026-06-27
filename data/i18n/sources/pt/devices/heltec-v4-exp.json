@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v4-exp",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Kit Heltec V4 com caixa em alumínio/PC e painel frontal tátil de 320×240 para uso portátil com Meshtastic/MeshCore. Inclui placa V4, placa de expansão e antena LoRa; o módulo GNSS e a 18650 são opcionais no momento da compra. A interface tátil do MeshCore está disponível; o suporte total a toque ainda está em desenvolvimento.",
+      "sourceHash": "sha256:c8f3d5d487a58693d251d71c8aebd15a0c4e8c3235ae441c957e4c9b4952338b",
+      "generatedAt": "2026-06-27T14:05:49.988Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20587,
+      "promptTokens": 194,
+      "completionTokens": 1238
+    }
+  }
+}

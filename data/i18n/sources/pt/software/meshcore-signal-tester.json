@@ -1,0 +1,69 @@
+{
+  "resource": "software/meshcore-signal-tester",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Ferramenta de análise de sinais para Web e Android, voltada para companheiros e repetidores MeshCore. Inclui receção de pacotes agrupados, histórico de RSSI/SNR, estatísticas de repetidores, mapeamento 3D com marcação GPS e captura em CSV.",
+      "sourceHash": "sha256:b76346c1faf3603909ceef9a39b9235ce32ab38eee8432f253e6e504fd527636",
+      "generatedAt": "2026-06-27T14:35:44.717Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5814,
+      "promptTokens": 169,
+      "completionTokens": 1686
+    },
+    "screenshots.charts.webp.caption": {
+      "value": "Estatísticas do repetidor e histórico de RSSI/SNR",
+      "sourceHash": "sha256:b921ad54a85ec37470672ffc97e99e683d0fcf9b560e62c1707d4d9d203c6aaa",
+      "generatedAt": "2026-06-27T14:35:46.010Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1293,
+      "promptTokens": 138,
+      "completionTokens": 204
+    },
+    "screenshots.3dmap.webp.caption": {
+      "value": "Mapa de sinal 3D georreferenciado",
+      "sourceHash": "sha256:d9d7f372bd6c6c009e9ccf2ec31aab806b7fe74bb3a9a3cc30cca13a2b41b447",
+      "generatedAt": "2026-06-27T14:35:48.338Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2327,
+      "promptTokens": 137,
+      "completionTokens": 494
+    },
+    "screenshots.packets.webp.caption": {
+      "value": "Pacotes agrupados com detalhes decodificados",
+      "sourceHash": "sha256:a399a8d012ff9b2c29d40a44f2c97551f8e7a5b7c5fbccaec0b1f16754d2a332",
+      "generatedAt": "2026-06-27T14:35:50.274Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1936,
+      "promptTokens": 135,
+      "completionTokens": 384
+    },
+    "tags": {
+      "value": "[\"teste-de-sinal\",\"ferramenta-de-campo\",\"threejs\",\"captura-de-pacotes\"]",
+      "sourceHash": "sha256:6594c6c357bb5ffa81ccf6bd490d1e14cf15964426a9da19810e644a13fd4dca",
+      "generatedAt": "2026-06-27T14:35:51.418Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1143,
+      "promptTokens": 143,
+      "completionTokens": 166
+    },
+    "verificationNotes.the-android-app-adds-background-capture-and-raw-": {
+      "value": "O aplicativo Android adiciona captura em segundo plano e conexões TCP brutas ao firmware complementar de WiFi.",
+      "sourceHash": "sha256:63c6cc13b24e7f1fce97f036a40723716805058b855dfd04f2ea614b2a65fb59",
+      "generatedAt": "2026-06-27T14:35:53.995Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2577,
+      "promptTokens": 144,
+      "completionTokens": 579
+    },
+    "verificationNotes.browser-bluetooth-and-serial-support-depends-on-": {
+      "value": "O suporte do navegador a Bluetooth e portas seriais depende do navegador e da plataforma.",
+      "sourceHash": "sha256:cac261d316db620be6aa71b5db5c4ade6f749ced361bc642af7f3529e3358786",
+      "generatedAt": "2026-06-27T14:35:56.978Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2982,
+      "promptTokens": 141,
+      "completionTokens": 755
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/rak",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Виробник модульного обладнання WisBlock / WisMesh для LoRa та IoT.",
+      "sourceHash": "sha256:a42860ceb0d19a24a3d1d4613d09d594b652e9a11bf488b81e64fc520a4cfcba",
+      "generatedAt": "2026-06-27T16:45:24.496Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5583,
+      "promptTokens": 142,
+      "completionTokens": 885
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-rp2040",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch Tiny RP2040 XIAO hỗ trợ nạp chương trình qua USB, có kích thước 14 chân cùng đèn báo người dùng và đèn báo sạc tiêu chuẩn của Seeed. Phù hợp với các dự án bộ điều khiển phụ cỡ nhỏ và mạch logic kết nối ngoại vi nhẹ.",
+      "sourceHash": "sha256:7739fe7a96e1757555e7b3844f8bc662880f26b1e66953f556ab966ada5a58e2",
+      "generatedAt": "2026-06-27T15:42:48.798Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4863,
+      "promptTokens": 171,
+      "completionTokens": 827
+    }
+  }
+}

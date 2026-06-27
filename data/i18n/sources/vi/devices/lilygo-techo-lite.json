@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-techo-lite",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút Meshtastic/MeshCore gọn nhẹ tích hợp nRF52840 + SX1262 và màn hình e-paper 1.22 inch, giúp tối ưu hóa tiêu thụ điện năng. Thiết kế tách biệt lõi và đế, đi kèm tùy chọn vỏ bảo vệ, sạc năng lượng mặt trời và mô-đun GPS L76K rời. Chỉ hỗ trợ Bluetooth 5 — không có Wi-Fi. Đế KeyShield tùy chọn sẽ bổ sung thêm bàn phím, loa và micrô.",
+      "sourceHash": "sha256:0acaf98be88ec6c3f5af3754cd4f5f5f02e7d67e030b97f98727f9bb18e14d29",
+      "generatedAt": "2026-06-27T15:37:37.797Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5671,
+      "promptTokens": 203,
+      "completionTokens": 1153
+    }
+  }
+}

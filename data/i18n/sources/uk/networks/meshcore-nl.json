@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-nl",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Аварійна радіомережа Dutch LocalMesh для користувачів MeshCore у Нідерландах. Вона використовує нідерландський пресет у діапазоні 868 МГц (ЄС), забезпечує доступ до публічних каналів, регіональне покриття репітерами та підтримується активною громадською спільнотою.",
+      "sourceHash": "sha256:ae729b1bbf65c740dfe7d81106fbb7bc66ce02c8f5d38a02c72d228b69e67ae0",
+      "generatedAt": "2026-06-27T16:54:14.104Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4332,
+      "promptTokens": 172,
+      "completionTokens": 952
+    }
+  }
+}

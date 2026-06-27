@@ -1,0 +1,51 @@
+{
+  "resource": "software/meschatui",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Textový terminálový klient pro Linux s jednotným chronologickým zobrazením zpráv, sériovým nebo BLE rádiovým připojením, kanály, kontakty, přímými zprávami, potvrzením o doručení a navigací pomocí palety příkazů.",
+      "sourceHash": "sha256:709cbe6e87190cbbeb12aaba5783a4c37608dc613f6a165237c66aeb8e06c0f8",
+      "generatedAt": "2026-06-27T11:29:40.896Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7118,
+      "promptTokens": 163,
+      "completionTokens": 1143
+    },
+    "screenshots.screenshot.svg.caption": {
+      "value": "Sjednocené rozhraní terminálu pro kanály a přímé zprávy",
+      "sourceHash": "sha256:dec90039eccd63416d8fc3cc579d6117f9666929c33404aa8f8a0a81e6fcd7a3",
+      "generatedAt": "2026-06-27T11:29:42.039Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1143,
+      "promptTokens": 136,
+      "completionTokens": 25
+    },
+    "verificationNotes.the-author-describes-this-as-a-personal-learning": {
+      "value": "Autor popisuje projekt jako osobní výukový projekt a v současnosti neplánuje jeho balení.",
+      "sourceHash": "sha256:94d3c47460bd5b2319de04e7984f70ee4fdce078ebfa2d4db4c144078c7e079d",
+      "generatedAt": "2026-06-27T11:29:51.756Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9717,
+      "promptTokens": 144,
+      "completionTokens": 1124
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Repozitář v současné době neuvádí licenci SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T11:29:55.874Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4118,
+      "promptTokens": 139,
+      "completionTokens": 475
+    },
+    "tags": {
+      "value": "[\"terminál\", \"textový\", \"sjednocená-schránka\", \"linux\"]",
+      "sourceHash": "sha256:a2674f7a2af2fdd09dd7363108d3c4776dcc817592c6f7ff3af126d3b30fcea9",
+      "generatedAt": "2026-06-27T13:40:02.051Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7099,
+      "promptTokens": 142,
+      "completionTokens": 451
+    }
+  }
+}

@@ -1,5 +1,6 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import {
     deviceMcuLabel,
     deviceSearchText,
@@ -7,7 +8,9 @@
     devicePriceLabel,
     resolveMcuInfo,
     resolveRadio,
-    bandLabel
+    bandLabel,
+    nodeRoleLabel,
+    deviceLifecycleLabel
   } from '$lib/data.js';
   import { compareIds, toggleCompare, clearCompare } from '$lib/compare.js';
   import { favoriteIds, toggleFavorite } from '$lib/favorites.js';
@@ -16,6 +19,8 @@
   import Chip from '$lib/Chip.svelte';
   import Button from '$lib/Button.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
+  import ToolLink from '$lib/ToolLink.svelte';
+  import CollectionLink from '$lib/CollectionLink.svelte';
   import Card from '$lib/Card.svelte';
   import CompareBar from '$lib/CompareBar.svelte';
   import { Collapsible } from 'bits-ui';
@@ -28,12 +33,12 @@
   // Use-class category — the routed primary filter. Order = tab order.
   const CATEGORY_ORDER = ['development-board', 'companion-radio', 'standalone', 'repeater', 'tracker', 'other'];
   const CATEGORY_LABELS = {
-    'development-board': 'Development boards',
-    'companion-radio': 'Companion radios',
-    standalone: 'Standalone handhelds',
-    repeater: 'Repeaters & base stations',
-    tracker: 'Trackers',
-    other: 'Other'
+    'development-board': m.dev_cat_development_board(),
+    'companion-radio': m.dev_cat_companion_radio(),
+    standalone: m.dev_cat_standalone(),
+    repeater: m.dev_cat_repeater(),
+    tracker: m.dev_cat_tracker(),
+    other: m.dev_cat_other()
   };
 
   // --- Per-device accessors used by both facets and card rendering -----------
@@ -84,41 +89,41 @@
   };
   const FACETS = [
     { id: 'mcu', label: 'MCU', primary: true, get: (d) => { const f = deviceFamily(d); return f && f !== 'Unknown' ? [f] : []; } },
-    { id: 'radio', label: 'Radio', primary: true, get: deviceChips, fmt: (v) => v.toUpperCase() },
-    { id: 'roles', label: 'Roles', get: (d) => d.roles ?? [], fmt: humanize },
-    { id: 'vendor', label: 'Vendor', get: (d) => (d.vendorName ? [d.vendorName] : []) },
+    { id: 'radio', label: m.dev_facet_radio(), primary: true, get: deviceChips, fmt: (v) => v.toUpperCase() },
+    { id: 'roles', label: m.dev_facet_roles(), get: (d) => d.roles ?? [], fmt: nodeRoleLabel },
+    { id: 'vendor', label: m.dev_facet_vendor(), get: (d) => (d.vendorName ? [d.vendorName] : []) },
     { id: 'arch', label: 'Arch', get: (d) => { const a = resolveMcuInfo(d)?.architecture?.name; return a ? [a] : []; } },
-    { id: 'band', label: 'Band', get: (d) => [...new Set((d.hardware?.radios ?? []).flatMap((r) => r.bands ?? []))], fmt: (v) => bandLabel(v) ?? `${v}` },
-    { id: 'transports', label: 'Link', get: (d) => d.transports ?? [], fmt: (v) => TRANSPORT_LABELS[v] ?? humanize(v) },
-    { id: 'kind', label: 'Kind', get: (d) => (d.kind ? [d.kind] : []), fmt: humanize },
-    { id: 'lifecycle', label: 'Status', get: (d) => (d.lifecycle ? [d.lifecycle] : []), fmt: humanize },
-    { id: 'display', label: 'Screen', get: displayTech, fmt: (v) => DISPLAY_LABELS[v] ?? humanize(v) },
+    { id: 'band', label: m.dev_facet_band(), get: (d) => [...new Set((d.hardware?.radios ?? []).flatMap((r) => r.bands ?? []))], fmt: (v) => bandLabel(v) ?? `${v}` },
+    { id: 'transports', label: m.dev_facet_link(), get: (d) => d.transports ?? [], fmt: (v) => TRANSPORT_LABELS[v] ?? humanize(v) },
+    { id: 'kind', label: m.dev_facet_kind(), get: (d) => (d.kind ? [d.kind] : []), fmt: humanize },
+    { id: 'lifecycle', label: m.dev_facet_status(), get: (d) => (d.lifecycle ? [d.lifecycle] : []), fmt: deviceLifecycleLabel },
+    { id: 'display', label: m.dev_facet_screen(), get: displayTech, fmt: (v) => DISPLAY_LABELS[v] ?? humanize(v) },
     { id: 'connector', label: 'USB', get: (d) => { const c = d.interfaces?.usb?.connector; return c ? [c] : []; } },
-    { id: 'source', label: 'Source', get: (d) => (d.flasherListed ? ['In flasher'] : []) }
+    { id: 'source', label: m.dev_facet_source(), get: (d) => (d.flasherListed ? [m.dev_facet_source_in_flasher()] : []) }
   ];
 
   // --- Boolean capability toggles --------------------------------------------
   const TOGGLES = [
     { id: 'gps', label: 'GPS', test: (d) => d.hardware?.gnss?.status === 'present' },
-    { id: 'screen', label: 'Display', test: (d) => d.hardware?.display?.status === 'present' },
-    { id: 'battery', label: 'Battery', test: (d) => d.hardware?.power?.batterySupported === true },
-    { id: 'solarPanel', label: 'Solar Panel', test: (d) => d.hardware?.power?.solarPanelBuiltIn === true },
-    { id: 'solarInput', label: 'Solar Input', test: (d) => d.hardware?.power?.solarInput === true },
-    { id: 'charging', label: 'Charging', test: (d) => d.hardware?.power?.charging === true },
-    { id: 'touch', label: 'Touch', test: (d) => d.hardware?.display?.touch === true },
+    { id: 'screen', label: m.dev_tog_display(), test: (d) => d.hardware?.display?.status === 'present' },
+    { id: 'battery', label: m.dev_tog_battery(), test: (d) => d.hardware?.power?.batterySupported === true },
+    { id: 'solarPanel', label: m.dev_tog_solar_panel(), test: (d) => d.hardware?.power?.solarPanelBuiltIn === true },
+    { id: 'solarInput', label: m.dev_tog_solar_input(), test: (d) => d.hardware?.power?.solarInput === true },
+    { id: 'charging', label: m.dev_tog_charging(), test: (d) => d.hardware?.power?.charging === true },
+    { id: 'touch', label: m.dev_tog_touch(), test: (d) => d.hardware?.display?.touch === true },
     { id: 'wifi', label: 'Wi-Fi', test: (d) => d.interfaces?.wifi?.status === 'present' },
     { id: 'bluetooth', label: 'Bluetooth', test: (d) => d.interfaces?.bluetooth?.ble === true },
-    { id: 'waterproof', label: 'IP-rated', test: (d) => !!d.hardware?.enclosure?.ipRating },
-    { id: 'enclosure', label: 'Enclosure', test: (d) => d.hardware?.enclosure?.builtIn === true }
+    { id: 'waterproof', label: m.dev_tog_ip(), test: (d) => !!d.hardware?.enclosure?.ipRating },
+    { id: 'enclosure', label: m.dev_tog_enclosure(), test: (d) => d.hardware?.enclosure?.builtIn === true }
   ];
 
   // --- Numeric range filters -------------------------------------------------
   const RANGES = [
-    { id: 'price', label: 'Price', unit: '$', get: (d) => d.price?.amount },
+    { id: 'price', label: m.dev_range_price(), unit: '$', get: (d) => d.price?.amount },
     { id: 'flash', label: 'Flash', unit: 'MB', get: (d) => d.hardware?.mcu?.flashMb },
     { id: 'psram', label: 'PSRAM', unit: 'MB', get: (d) => d.hardware?.mcu?.psramMb },
-    { id: 'battery', label: 'Battery', unit: 'mAh', get: (d) => d.hardware?.power?.batteryCapacityMah },
-    { id: 'tx', label: 'TX power', unit: 'dBm', get: (d) => Math.max(...(d.hardware?.radios ?? []).map((r) => r.txPowerDbm).filter((v) => v != null), -Infinity) }
+    { id: 'battery', label: m.dev_range_battery(), unit: 'mAh', get: (d) => d.hardware?.power?.batteryCapacityMah },
+    { id: 'tx', label: m.dev_range_tx(), unit: 'dBm', get: (d) => Math.max(...(d.hardware?.radios ?? []).map((r) => r.txPowerDbm).filter((v) => v != null), -Infinity) }
   ];
   const rangeVal = (d, r) => {
     const v = r.get(d);
@@ -175,22 +180,22 @@
     cmp: (dir === 'asc' ? numAsc : numDesc)(metric.get)
   });
   const SORTS = [
-    { id: 'name', label: 'Name (A–Z)', cmp: (a, b) => a.name.localeCompare(b.name) },
-    { id: 'price-asc', label: 'Price (low → high)', cmp: numAsc((d) => d.price?.amount) },
-    { id: 'price-desc', label: 'Price (high → low)', cmp: numDesc((d) => d.price?.amount) },
-    { id: 'firmwares', label: 'Most firmwares', cmp: numDesc((d) => d.firmwareCount) },
+    { id: 'name', label: m.dev_sort_name(), cmp: (a, b) => a.name.localeCompare(b.name) },
+    { id: 'price-asc', label: m.dev_sort_price_asc(), cmp: numAsc((d) => d.price?.amount) },
+    { id: 'price-desc', label: m.dev_sort_price_desc(), cmp: numDesc((d) => d.price?.amount) },
+    { id: 'firmwares', label: m.dev_sort_firmwares(), cmp: numDesc((d) => d.firmwareCount) },
     { id: 'mcu', label: 'MCU', cmp: (a, b) => deviceMcuLabel(a).localeCompare(deviceMcuLabel(b)) || a.name.localeCompare(b.name) },
-    numSort('battery', 'Battery (large → small)', 'desc', {
-      label: 'Battery', get: (d) => d.hardware?.power?.batteryCapacityMah, fmt: (v) => `${v} mAh`
+    numSort('battery', m.dev_sort_battery(), 'desc', {
+      label: m.dev_metric_battery(), get: (d) => d.hardware?.power?.batteryCapacityMah, fmt: (v) => `${v} mAh`
     }),
-    numSort('solar', 'Solar wattage (high → low)', 'desc', {
-      label: 'Solar', get: (d) => d.hardware?.power?.solarPanelWatts, fmt: (v) => `${v} W`
+    numSort('solar', m.dev_sort_solar(), 'desc', {
+      label: m.dev_metric_solar(), get: (d) => d.hardware?.power?.solarPanelWatts, fmt: (v) => `${v} W`
     }),
-    numSort('idle', 'Power draw, idle (low → high)', 'asc', {
-      label: 'Idle', get: (d) => d.hardware?.power?.consumptionIdleMa, fmt: (v) => `${v} mA`
+    numSort('idle', m.dev_sort_idle(), 'asc', {
+      label: m.dev_metric_idle(), get: (d) => d.hardware?.power?.consumptionIdleMa, fmt: (v) => `${v} mA`
     }),
-    numSort('tx', 'Power draw, TX (low → high)', 'asc', {
-      label: 'TX draw', get: (d) => d.hardware?.power?.consumptionTxMa, fmt: (v) => `${v} mA`
+    numSort('tx', m.dev_sort_tx(), 'asc', {
+      label: m.dev_metric_tx(), get: (d) => d.hardware?.power?.consumptionTxMa, fmt: (v) => `${v} mA`
     })
   ];
   let sel = $state(Object.fromEntries(FACETS.map((f) => [f.id, []])));
@@ -321,25 +326,32 @@
   });
 </script>
 
-<PageHeader collection="devices">LoRa hardware known to run one or more MeshCore firmwares.</PageHeader>
+<PageHeader collection="devices">
+  {#snippet actions()}
+    <ToolLink id="device-rank" short />
+    <ToolLink id="gallery" short />
+    <CollectionLink id="vendors" />
+  {/snippet}
+  {m.dev_list_subtitle()}
+</PageHeader>
 
 {#if favoriteDevices.length}
   <section class="mb-4 rounded-xl border border-accent/35 bg-accent/10 p-4">
     <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
-      <h2 class="text-[0.95rem] font-semibold">Favourite Devices</h2>
+      <h2 class="text-[0.95rem] font-semibold">{m.dev_list_favourites()}</h2>
       <a
         class="text-[0.8rem] text-accent2 hover:underline"
-        href="{base}/compare/?ids={favoriteDevices.map((d) => d.id).join(',')}"
+        href={href(`/compare/?ids=${favoriteDevices.map((d) => d.id).join(',')}`)}
         onclick={() => compareIds.set(favoriteDevices.map((d) => d.id))}
       >
-        Compare favourites →
+        {m.dev_list_compare_favourites()}
       </a>
     </div>
     <div class="flex gap-2 overflow-x-auto pb-1">
       {#each favoriteDevices as fav (fav.id)}
         <a
           class="group flex min-w-[210px] items-center gap-2 rounded-lg border border-edge bg-elev p-2 transition hover:border-accent"
-          href="{base}/device/{fav.id}/"
+          href={href(`/device/${fav.id}/`)}
         >
           <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-elev2 p-1 text-muted">
             {#if fav.imageUrl}
@@ -361,14 +373,14 @@
 <!-- Category — links so each view is its own prerendered, indexable route. -->
 <div class="mb-3 flex flex-wrap gap-1.5">
   <a
-    href="{base}/devices/"
+    href={href('/devices/')}
     class="rounded-md border px-2.5 py-1 text-[0.78rem] font-medium transition {activeCategory === 'all'
       ? 'border-accent bg-accent/15 text-accent'
       : 'border-edge text-dim hover:text-ink'}"
-  >All <span class="text-dim">({devices.length})</span></a>
+  >{m.filter_all()} <span class="text-dim">({devices.length})</span></a>
   {#each CATEGORY_ORDER as c (c)}
     <a
-      href="{base}/devices/{c}/"
+      href={href(`/devices/${c}/`)}
       class="rounded-md border px-2.5 py-1 text-[0.78rem] font-medium transition {activeCategory === c
         ? 'border-accent bg-accent/15 text-accent'
         : 'border-edge text-dim hover:text-ink'}"
@@ -378,7 +390,7 @@
 
 <input
   type="search"
-  placeholder="Search devices, vendor, MCU, radio…"
+  placeholder={m.dev_list_search()}
   bind:value={query}
   class="w-full rounded-lg border border-edge bg-bg px-3 py-2.5 text-[0.95rem] outline-none focus:border-transparent focus:ring-2 focus:ring-accent"
 />
@@ -402,7 +414,7 @@
 
   {#if primaryToggles.length}
     <div class="flex flex-wrap items-start gap-x-3 gap-y-2">
-      <span class={rowLabel}>Has</span>
+      <span class={rowLabel}>{m.filter_has()}</span>
       <div class="flex flex-1 flex-wrap gap-1.5">
         {#each primaryToggles as t (t.id)}
           <Chip pressed={toggles[t.id]} onPressedChange={() => (toggles[t.id] = !toggles[t.id])}>{t.label}</Chip>
@@ -417,9 +429,9 @@
       class="flex items-center gap-1.5 text-[0.8rem] font-medium text-dim outline-none hover:text-ink"
     >
       <span class="inline-block transition-transform {advanced ? 'rotate-90' : ''}">▸</span>
-      Advanced filters
+      {m.filter_advanced()}
       {#if advancedActive && !advanced}
-        <span class="rounded-full bg-accent/15 px-1.5 text-[0.7rem] text-accent">active</span>
+        <span class="rounded-full bg-accent/15 px-1.5 text-[0.7rem] text-accent">{m.filter_active()}</span>
       {/if}
     </Collapsible.Trigger>
 
@@ -442,7 +454,7 @@
 
         {#if advancedToggles.length}
           <div class="flex flex-wrap items-start gap-x-3 gap-y-2">
-            <span class={rowLabel}>Has</span>
+            <span class={rowLabel}>{m.filter_has()}</span>
             <div class="flex flex-1 flex-wrap gap-1.5">
               {#each advancedToggles as t (t.id)}
                 <Chip pressed={toggles[t.id]} onPressedChange={() => (toggles[t.id] = !toggles[t.id])}>{t.label}</Chip>
@@ -452,7 +464,7 @@
         {/if}
 
         <div class="flex flex-wrap items-start gap-x-3 gap-y-2">
-          <span class={rowLabel}>Range</span>
+          <span class={rowLabel}>{m.filter_range()}</span>
           <div class="flex flex-1 flex-wrap gap-2">
             {#each RANGES as r (r.id)}
               <div class="flex items-center gap-1 rounded-lg border px-2 py-1 text-[0.8rem] {rangeActive(r) ? 'border-accent/60' : 'border-edge'}">
@@ -460,7 +472,7 @@
                 <input
                   type="number"
                   inputmode="numeric"
-                  placeholder="min"
+                  placeholder={m.filter_min()}
                   bind:value={ranges[r.id].min}
                   class="w-12 bg-transparent text-right outline-none placeholder:text-dim/50"
                 />
@@ -468,7 +480,7 @@
                 <input
                   type="number"
                   inputmode="numeric"
-                  placeholder="max"
+                  placeholder={m.filter_max()}
                   bind:value={ranges[r.id].max}
                   class="w-12 bg-transparent text-right outline-none placeholder:text-dim/50"
                 />
@@ -485,18 +497,18 @@
 <div class="my-3 flex items-center gap-3 text-[0.85rem] text-dim">
   <span>{pluralize(filtered.length, 'device')}</span>
   {#if activeCount}
-    <Button variant="link" size="sm" class="px-0" onclick={clearAll}>Clear filters ({activeCount})</Button>
+    <Button variant="link" size="sm" class="px-0" onclick={clearAll}>{m.filter_clear({ count: activeCount })}</Button>
   {/if}
   {#if collapsed}
     <div class="ml-auto flex items-center gap-1.5">
-      <span class="text-dim">Sort</span>
+      <span class="text-dim">{m.filter_sort()}</span>
       <Select items={sortItems} bind:value={sort} placeholder="Sort" class="min-w-44" />
     </div>
   {/if}
 </div>
 
 {#snippet deviceCard(d)}
-      <Card href="{base}/device/{d.id}/" class="flex flex-col p-3">
+      <Card href={href(`/device/${d.id}/`)} class="flex flex-col p-3">
         <div class="relative mb-3 flex h-[120px] items-center justify-center overflow-hidden rounded-lg bg-elev2">
           {#if d.imageUrl}
             <img src={d.imageUrl} alt={d.name} loading="lazy" class="max-h-full max-w-full object-contain p-3 transition group-hover:scale-105" />
@@ -506,7 +518,7 @@
           <Button
             variant=""
             size="none"
-            aria-label="Compare {d.name}"
+            aria-label={m.aria_compare({ name: d.name })}
             aria-pressed={$compareIds.includes(d.id)}
             onclick={(e) => {
               e.preventDefault();
@@ -519,13 +531,13 @@
               ? 'border-accent bg-accent text-bg'
               : 'border-edge bg-elev/80 text-dim opacity-0 group-hover:opacity-100 hover:text-ink'}"
           >
-            {$compareIds.includes(d.id) ? '✓ Compare' : '+ Compare'}
+            {$compareIds.includes(d.id) ? m.compare_on() : m.compare_off()}
           </Button>
           <Button
             variant=""
             size="none"
-            aria-label="Toggle favourite for {d.name}"
-            title={$favoriteIds.includes(d.id) ? 'Remove from favourites' : 'Add to favourites'}
+            aria-label={m.aria_favourite_toggle({ name: d.name })}
+            title={$favoriteIds.includes(d.id) ? m.favourite_remove() : m.favourite_add()}
             aria-pressed={$favoriteIds.includes(d.id)}
             onclick={(e) => {
               e.preventDefault();
@@ -571,7 +583,7 @@
           {#if devicePriceLabel(d)}
             <span class="font-semibold text-ink">{devicePriceLabel(d)}</span>
           {:else}
-            <span class="text-accent opacity-0 transition group-hover:opacity-100">View →</span>
+            <span class="text-accent opacity-0 transition group-hover:opacity-100">{m.card_view()}</span>
           {/if}
           </div>
         </div>
@@ -587,7 +599,7 @@
 {/snippet}
 
 {#if !filtered.length}
-  <p class="rounded-xl border border-edge bg-elev p-8 text-center text-dim">No devices match these filters.</p>
+  <p class="rounded-xl border border-edge bg-elev p-8 text-center text-dim">{m.dev_list_empty()}</p>
 {:else if collapsed}
   {@render cardGrid(sorted)}
 {:else}
@@ -606,6 +618,6 @@
 
 <CompareBar
   count={$compareIds.length}
-  href="{base}/compare/?ids={$compareIds.join(',')}"
+  href={href(`/compare/?ids=${$compareIds.join(',')}`)}
   onclear={clearCompare}
 />

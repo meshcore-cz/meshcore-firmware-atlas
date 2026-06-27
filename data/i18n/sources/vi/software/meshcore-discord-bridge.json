@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-discord-bridge",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cầu nối Node.js hai chiều giữa các kênh MeshCore và Discord, hỗ trợ định tuyến đa kênh và đa máy chủ, phân đoạn tin nhắn, bảo vệ chống flood, hàng đợi gửi có kiểm soát tốc độ và tùy chọn tạm dừng cho quản trị viên.",
+      "sourceHash": "sha256:b4f9f2980f5fadfbc70686b9077bdd71fcf969307967bd8e747e9195502a50bc",
+      "generatedAt": "2026-06-27T16:06:29.970Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8020,
+      "promptTokens": 164,
+      "completionTokens": 1063
+    },
+    "tags": {
+      "value": "[\"discord\",\"cầu nối\",\"giới hạn tốc độ\",\"phân đoạn tin nhắn\"]",
+      "sourceHash": "sha256:2b2c61b491b66f0f2285545a863ed0c229bd3d06d19df44e55227e10c9736443",
+      "generatedAt": "2026-06-27T16:06:35.378Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5407,
+      "promptTokens": 143,
+      "completionTokens": 617
+    },
+    "verificationNotes.requires-a-discord-bot-token-and-privileged-mess": {
+      "value": "Yêu cầu token bot Discord và intent đặc quyền về nội dung tin nhắn.",
+      "sourceHash": "sha256:9c44d99aaa32815941054a74c61fb74212ca54c5576e626ad14ce656e75991cf",
+      "generatedAt": "2026-06-27T16:06:39.397Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4017,
+      "promptTokens": 140,
+      "completionTokens": 519
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Kho lưu trữ hiện không khai báo giấy phép SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:06:44.084Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4686,
+      "promptTokens": 139,
+      "completionTokens": 535
+    }
+  }
+}

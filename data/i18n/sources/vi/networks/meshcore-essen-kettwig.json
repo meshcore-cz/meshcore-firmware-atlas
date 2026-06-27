@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-essen-kettwig",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore độc lập công khai tập trung tại khu vực Essen-Kettwig và mở rộng về phía Ruhrlandklinik và sân bay Mülheim. Cộng đồng này vận hành mạng liên lạc nội bộ có khả năng chịu lỗi và phân phối cảnh báo bảo vệ dân sự khu vực qua MeshCore.",
+      "sourceHash": "sha256:4628b8b3bd391566b60054556334eec58bde886ecaca30c3d3b36df578caf7fe",
+      "generatedAt": "2026-06-27T16:50:44.289Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1361,
+      "promptTokens": 173,
+      "completionTokens": 78
+    }
+  }
+}

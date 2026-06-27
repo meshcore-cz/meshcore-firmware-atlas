@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-ha",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Integração personalizada do Home Assistant para monitorar e controlar nós MeshCore via USB, BLE ou TCP, com sensores, serviços, diagnósticos e suporte opcional a carregamento de mapas.",
+      "sourceHash": "sha256:3b8c26928eae3bd2d6e93644f8a33b5a034c681e1bff56369cc8ae1289bd15bf",
+      "generatedAt": "2026-06-27T14:31:26.839Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3419,
+      "promptTokens": 159,
+      "completionTokens": 865
+    },
+    "tags": {
+      "value": "[\"casa-inteligente\",\"hacs\",\"home-assistant\"]",
+      "sourceHash": "sha256:d42e3c990c4de5863d1245291a4c2fc9507bd82d17df4ef5dfa7e9c385324b8e",
+      "generatedAt": "2026-06-27T14:31:29.123Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2281,
+      "promptTokens": 140,
+      "completionTokens": 530
+    },
+    "verificationNotes.readme-labels-the-integration-as-work-in-progres": {
+      "value": "O README indica que a integração é um trabalho em andamento e observa que o BLE não foi testado de forma exaustiva.",
+      "sourceHash": "sha256:7762165f79adc264ff5919fd50cf3e60f72559e6eb4f603a3c96c4f51a6d6a28",
+      "generatedAt": "2026-06-27T14:31:32.133Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3010,
+      "promptTokens": 146,
+      "completionTokens": 756
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-techo-card",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nízkopříkonový uzel velikosti karty s čipy nRF52840 a SX1262, 0,42palcovým OLED displejem, modulem L76K GNSS, senzorem ICM20948 IMU, reproduktorem, mikrofonem a LED diodou WS2812. Solární panel zajišťuje nepřetržité napájení. Podporuje pouze Bluetooth 5 – bez Wi-Fi.",
+      "sourceHash": "sha256:59f0497dee00118a2512aa839c63f99a6573a17f0ee06446c2896f8883d0ad5c",
+      "generatedAt": "2026-06-27T10:51:42.306Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

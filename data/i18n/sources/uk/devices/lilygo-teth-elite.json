@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-teth-elite",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата ESP32-S3R8 з Wi-Fi, BLE та вбудованим Ethernet через W5500, розроблена для дротових IoT-шлюзів цілодобового режиму та проєктів автоматизації. Живлення від USB-C, підтримка PoE та припаяні штифтові роз'єми роблять її компактним мережевим контролером.",
+      "sourceHash": "sha256:14382b5d36a007e62c9e5a7c1208895c47dde04a55be68f278a975072a4cf42d",
+      "generatedAt": "2026-06-27T14:59:37.158Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4629,
+      "promptTokens": 183,
+      "completionTokens": 1355
+    }
+  }
+}

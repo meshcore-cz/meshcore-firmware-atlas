@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-discord-bridge",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Двонапрямлений міст Node.js між каналами MeshCore та Discord з маршрутизацією між кількома каналами та серверами, фрагментацією повідомлень, захистом від флуду, регульованими чергами надсилання та засобами адміністратора для призупинення роботи.",
+      "sourceHash": "sha256:b4f9f2980f5fadfbc70686b9077bdd71fcf969307967bd8e747e9195502a50bc",
+      "generatedAt": "2026-06-27T15:48:56.927Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10506,
+      "promptTokens": 164,
+      "completionTokens": 1165
+    },
+    "tags": {
+      "value": "[\"discord\",\"міст\",\"обмеження частоти запитів\",\"фрагментація повідомлень\"]",
+      "sourceHash": "sha256:2b2c61b491b66f0f2285545a863ed0c229bd3d06d19df44e55227e10c9736443",
+      "generatedAt": "2026-06-27T15:49:00.315Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3388,
+      "promptTokens": 143,
+      "completionTokens": 533
+    },
+    "verificationNotes.requires-a-discord-bot-token-and-privileged-mess": {
+      "value": "Потребує токена бота Discord та привілейованого наміру доступу до вмісту повідомлень.",
+      "sourceHash": "sha256:9c44d99aaa32815941054a74c61fb74212ca54c5576e626ad14ce656e75991cf",
+      "generatedAt": "2026-06-27T15:49:05.253Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4937,
+      "promptTokens": 140,
+      "completionTokens": 755
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "У репозиторії наразі не вказано ліцензію SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T15:49:08.776Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3522,
+      "promptTokens": 139,
+      "completionTokens": 435
+    }
+  }
+}

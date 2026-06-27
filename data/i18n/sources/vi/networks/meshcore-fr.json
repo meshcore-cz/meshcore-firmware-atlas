@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-fr",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore của Pháp dành cho mạng lưới LoRa mesh ngoại tuyến tầm xa trên khắp nước Pháp. Nhóm sử dụng cấu hình 869.618 MHz tương thích với EU/UK Narrow, cung cấp hướng dẫn thiết lập công khai, điều phối qua Discord và duy trì các hoạt động tại khu vực Lyon và Lorient/Ouest.",
+      "sourceHash": "sha256:c703a92cca19b640bdbb85ab959bc0c7b244034cef5a47ef088d99e034e3f337",
+      "generatedAt": "2026-06-27T16:47:40.057Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18074,
+      "promptTokens": 175,
+      "completionTokens": 1201
+    }
+  }
+}

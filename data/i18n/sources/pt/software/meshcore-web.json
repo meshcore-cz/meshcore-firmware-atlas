@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-web",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Versão web empacotada em Docker do app complementar MeshCore, de Liam Cottle, que oferece mensagens no navegador, contatos, canais e gerenciamento de topologia e repetidores via Web Bluetooth ou Web Serial.",
+      "sourceHash": "sha256:89170e4e7b963fbbd887c129a826eb3f23262abe694eac9e1776378804035085",
+      "generatedAt": "2026-06-27T14:37:07.479Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2792,
+      "promptTokens": 167,
+      "completionTokens": 764
+    },
+    "tags": {
+      "value": "[\"build do cliente complementar\",\"docker\",\"web-bluetooth\",\"web-serial\"]",
+      "sourceHash": "sha256:6499c66452a6696ff452599c9a057ceb48aea289a7d95ca53f7b0fbd5d7d7533",
+      "generatedAt": "2026-06-27T14:37:11.460Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3981,
+      "promptTokens": 145,
+      "completionTokens": 969
+    },
+    "verificationNotes.the-repository-publishes-compiled-closed-source-": {
+      "value": "O repositório publica ativos web do Flutter compilados e de código fechado, e uma imagem de contêiner, mas não o código-fonte do aplicativo.",
+      "sourceHash": "sha256:4c550055308e2ef33e6a4e80b287c6cf6ae21eaf8a4b583e6d2675955bcc2bd4",
+      "generatedAt": "2026-06-27T14:37:15.104Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3643,
+      "promptTokens": 148,
+      "completionTokens": 1065
+    },
+    "verificationNotes.browser-radio-access-requires-chrome-or-edge-ove": {
+      "value": "O acesso ao rádio pelo navegador requer o Chrome ou o Edge via HTTPS ou localhost.",
+      "sourceHash": "sha256:24850e70480fd230c4469ba63efbb77a622942bd5d436b9c480ccf922dec8998",
+      "generatedAt": "2026-06-27T14:37:18.277Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3173,
+      "promptTokens": 141,
+      "completionTokens": 719
+    }
+  }
+}

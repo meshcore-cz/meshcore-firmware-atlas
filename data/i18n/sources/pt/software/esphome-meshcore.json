@@ -1,0 +1,42 @@
+{
+  "resource": "software/esphome-meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Componente externo do ESPHome que transforma o hardware XIAO nRF52840 e SX1262 em nós de sensor MeshCore geridos remotamente, expondo interruptores, sensores, ventoinhas e luzes do ESPHome através de comandos Companion.",
+      "sourceHash": "sha256:ac8a47c596cc50ca5880a0532248a0b3a00c4f94d25ce95483ece8f561ac60d1",
+      "generatedAt": "2026-06-27T14:29:17.139Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3575,
+      "promptTokens": 170,
+      "completionTokens": 973
+    },
+    "tags": {
+      "value": "[\"esphome\",\"nó sensor\",\"xiao\",\"nrf52840\",\"sx1262\"]",
+      "sourceHash": "sha256:3782293dd5996cb3bf104ab000f1d628dca15df4f6965092c384513f5baa7d90",
+      "generatedAt": "2026-06-27T14:29:19.517Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2377,
+      "promptTokens": 150,
+      "completionTokens": 507
+    },
+    "verificationNotes.developed-and-tested-specifically-for-the-seeed-": {
+      "value": "Desenvolvido e testado especificamente para o Seeed XIAO nRF52840 com rádio SX1262; não há suporte para ESP32 e ESP8266.",
+      "sourceHash": "sha256:03a8c9b54be993a95e06d4b45f8a8f3ccbd012c17b3c86df88dd6b73d2d632f9",
+      "generatedAt": "2026-06-27T14:29:22.363Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2845,
+      "promptTokens": 164,
+      "completionTokens": 784
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "O repositório não declara uma licença SPDX no momento.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:29:24.410Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2047,
+      "promptTokens": 139,
+      "completionTokens": 450
+    }
+  }
+}

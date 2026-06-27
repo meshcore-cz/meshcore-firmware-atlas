@@ -1,0 +1,87 @@
+{
+  "resource": "software/meshcore-open",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Máy khách Flutter đa nền tảng dành cho MeshCore, hỗ trợ nhắn tin mã hóa, danh bạ, kênh, bản đồ ngoại tuyến, cấu hình nút và quản lý bộ lặp từ xa qua Bluetooth, USB hoặc TCP.",
+      "sourceHash": "sha256:86553be538e69d495d6887a945d4b645ba893e7361cde0c5196a4b95446c72df",
+      "generatedAt": "2026-06-27T16:14:18.114Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3640,
+      "promptTokens": 161,
+      "completionTokens": 628
+    },
+    "screenshots.contacts.jpg.caption": {
+      "value": "Liên hệ và các nút mesh lân cận",
+      "sourceHash": "sha256:0188a73862f377b4e98b401d58ddbf3da168ed9b09b83ce6b32a96a76c8a5497",
+      "generatedAt": "2026-06-27T16:14:28.550Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10435,
+      "promptTokens": 134,
+      "completionTokens": 962
+    },
+    "screenshots.chat.jpg.caption": {
+      "value": "Nhắn tin trực tiếp được mã hóa",
+      "sourceHash": "sha256:f7a506a0dd7aa910aaa85ba60676f98ae484042ff3b925d1c03ab6a7e2fcbefd",
+      "generatedAt": "2026-06-27T16:14:31.857Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3306,
+      "promptTokens": 133,
+      "completionTokens": 448
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Bản đồ lưới và trực quan hóa lộ trình theo thời gian thực",
+      "sourceHash": "sha256:880cfca081c279a8a310f906c2daedd5f092cc0a8ce008f3df7f240073742e3b",
+      "generatedAt": "2026-06-27T16:14:58.071Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 26212,
+      "promptTokens": 135,
+      "completionTokens": 954
+    },
+    "screenshots.channels.jpg.caption": {
+      "value": "Nhắn tin trên kênh công khai",
+      "sourceHash": "sha256:0524de9da954dc8d69c0c05ff16f38137fb1a475337d2a7f7d5ae112b9db916e",
+      "generatedAt": "2026-06-27T16:15:04.816Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6743,
+      "promptTokens": 132,
+      "completionTokens": 610
+    },
+    "tags": {
+      "value": "[\"flutter\",\"ngoại tuyến\",\"đa nền tảng\"]",
+      "sourceHash": "sha256:cb14b62322a4ac0907593c4bb1200390fbfac8cc7b8319d82845362ed71a77cd",
+      "generatedAt": "2026-06-27T16:15:16.833Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12016,
+      "promptTokens": 137,
+      "completionTokens": 408
+    },
+    "verificationNotes.ios-currently-supports-ble-usb-and-tcp-companion": {
+      "value": "iOS hiện đã hỗ trợ BLE; kết nối đồng hành qua USB và TCP vẫn đang được phát triển.",
+      "sourceHash": "sha256:e4f6c9dcb7b1bfc20094e10b61cdc427a5478d0eca160bdbbe6ffbda7443f5a7",
+      "generatedAt": "2026-06-27T16:15:28.033Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11199,
+      "promptTokens": 144,
+      "completionTokens": 523
+    },
+    "verificationNotes.browser-node-connections-require-chromium-with-w": {
+      "value": "Kết nối nút trình duyệt yêu cầu Chromium hỗ trợ Web Bluetooth hoặc Web Serial.",
+      "sourceHash": "sha256:c512e82f57307b956d06e4b78cdf0a9a9016f89cb7803bd370a28326c5fe2870",
+      "generatedAt": "2026-06-27T16:15:35.707Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7673,
+      "promptTokens": 142,
+      "completionTokens": 683
+    },
+    "verificationNotes.over-the-air-firmware-updates-are-listed-on-the-": {
+      "value": "Các bản cập nhật phần sụn qua mạng không dây đã có trong lộ trình dự án nhưng hiện chưa khả dụng.",
+      "sourceHash": "sha256:95e6587bf98fee1d3664d79bd093dacdf5e33f92c9400cb3586bc737e22f8ae3",
+      "generatedAt": "2026-06-27T16:15:44.458Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8750,
+      "promptTokens": 146,
+      "completionTokens": 958
+    }
+  }
+}

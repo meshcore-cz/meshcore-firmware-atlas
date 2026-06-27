@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-ng",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Fork „nové generace“ platformy MeshCore vyvinutý v Nizozemsku, zaměřený na chytřejší opakovače, díky nimž větší a vytíženější sítě zůstávají stabilní. Přináší základ pro husté sítě – řízení předávání flood-advert, statistiky přetížení/hustoty, hardwarovou detekci obsazenosti kanálu (CAD), rozprostření opakovaných přenosů na úrovni uzlů a potlačení duplicitních příjmů – plus volitelný internetový most pro propojení izolovaných RF ostrovů. To vše při zachování protokolové kompatibility se stávajícími klienty MeshCore.",
+      "sourceHash": "sha256:40b16644194d31d14c2d94726a0be3de1239dd56f785ab7ba9c333d8f2271792",
+      "generatedAt": "2026-06-27T11:19:34.237Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13617,
+      "promptTokens": 219,
+      "completionTokens": 1484
+    },
+    "deviceNotes.heltec-meshtower": {
+      "value": "Stejná základní deska MeshSolar; používá sestavení heltec_mesh_solar.",
+      "sourceHash": "sha256:0fe9d96a80f245a3d2335a68e6bf70eccfe70b820e2035f0dcb00ec660ee9697",
+      "generatedAt": "2026-06-27T11:19:40.964Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6726,
+      "promptTokens": 144,
+      "completionTokens": 632
+    },
+    "features": {
+      "value": "[\"Základ pro opakovače s hustou sítí (mesh)\",\"Řízení přeposílání flood advert (flood.advert.base)\",\"Statistiky hustých sítí / měření přetížení a hustoty\",\"Ruční nastavení pravděpodobnosti relé + příprava dynamického režimu\",\"Hardwarová detekce obsazenosti kanálu (CAD)\",\"Šíření retransmise na úrovni uzlů\",\"Potlačení retransmise při detekci duplikátu\",\"Volitelný internetový most (TCP / BLE / RS232 / ESPNow)\",\"Ochrana spouštění a běhu při nízkém stavu baterie\",\"Webový flasher\",\"Protokolově kompatibilní se stávajícími klienty MeshCore\"]",
+      "sourceHash": "sha256:178e3623fdda17a3ee5df2fe5f77bbc11d82ea731bb100c5de4381d136a9d47f",
+      "generatedAt": "2026-06-27T12:31:29.453Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 33060,
+      "promptTokens": 226,
+      "completionTokens": 2429
+    }
+  }
+}

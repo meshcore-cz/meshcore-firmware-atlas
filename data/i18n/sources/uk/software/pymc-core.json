@@ -1,0 +1,51 @@
+{
+  "resource": "software/pymc-core",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Реалізація протоколу MeshCore та стека маршрутизації на Python для створення mesh-вузлів і додатків із підтримкою обміну шифрованими повідомленнями, керування ідентичністю, обробки подій та опціонального прямого підключення радіомодуля SX1262 через SPI.",
+      "sourceHash": "sha256:d0e37835a3fd7f30338364958a0af39b3f8d8b9802bfa217c9fa2fd6e04f13e1",
+      "generatedAt": "2026-06-27T16:32:08.215Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10530,
+      "promptTokens": 166,
+      "completionTokens": 1231
+    },
+    "tags": {
+      "value": "[\"sdk\",\"протокол\",\"маршрутизація\",\"sx1262\",\"raspberry-pi\"]",
+      "sourceHash": "sha256:de45c3f26464af78212b5f8f94f7a5f06f28c34fa1596cc93e1810183314244c",
+      "generatedAt": "2026-06-27T16:32:20.560Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12345,
+      "promptTokens": 146,
+      "completionTokens": 667
+    },
+    "verificationNotes.releases-are-published-to-pypi-rather-than-githu": {
+      "value": "Релізи публікуються на PyPI, а не в GitHub Releases.",
+      "sourceHash": "sha256:e7f84a5fd0805dc87f0d928f366c890a1aadbfde27e584be0cd01de9dd3eff81",
+      "generatedAt": "2026-06-27T16:32:23.891Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3331,
+      "promptTokens": 141,
+      "completionTokens": 529
+    },
+    "verificationNotes.direct-hardware-support-targets-raspberry-pi-cla": {
+      "value": "Пряма апаратна підтримка призначена для систем класу Raspberry Pi, оснащених радіомодулями SX1262 з інтерфейсом SPI. Компоненти протоколу можна використовувати без додаткового радіообладнання.",
+      "sourceHash": "sha256:d49d1f2fab2f04ffd287d9a897165ace87fb0722e447195ab7b4c6c15df3f398",
+      "generatedAt": "2026-06-27T16:32:30.037Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6145,
+      "promptTokens": 153,
+      "completionTokens": 808
+    },
+    "verificationNotes.the-project-describes-itself-as-protocol-compati": {
+      "value": "Проєкт описує себе як сумісний із протоколом, але ще не такий оптимізований, як оригінальна реалізація MeshCore на C++.",
+      "sourceHash": "sha256:5454fc203a4f22ae61018bac06b281d6792bc4f35547e62c761175b76f28ec0e",
+      "generatedAt": "2026-06-27T16:32:37.600Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7563,
+      "promptTokens": 150,
+      "completionTokens": 1111
+    }
+  }
+}

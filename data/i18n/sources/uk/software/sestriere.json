@@ -1,0 +1,78 @@
+{
+  "resource": "software/sestriere",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Нативний клієнт MeshCore для Haiku OS з підтримкою шифрованих повідомлень, голосу, зображень, топологічних та географічних карт, аналізу пакетів, телеметрії, адміністрування репітерів і опціонального MQTT-мосту.",
+      "sourceHash": "sha256:f5bbf3eaf6dde5e45969509798ffb8265e98a58ee4cb0a5f51d96261372a34dd",
+      "generatedAt": "2026-06-27T16:38:31.113Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 58104,
+      "promptTokens": 163,
+      "completionTokens": 1114
+    },
+    "screenshots.messaging.png.caption": {
+      "value": "Нативний інтерфейс Haiku для обміну повідомленнями",
+      "sourceHash": "sha256:833f2736cef52ea6da32d4c7d92dd2eb9b48594a2d0ecebb5c0593b34643533f",
+      "generatedAt": "2026-06-27T16:38:41.469Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10356,
+      "promptTokens": 134,
+      "completionTokens": 811
+    },
+    "screenshots.topology.png.caption": {
+      "value": "Mesh-топологія та візуалізація потоку пакетів",
+      "sourceHash": "sha256:b838135e9edf74077038062829649bd947cbd7f66f480e40643b4d47496f16bb",
+      "generatedAt": "2026-06-27T16:38:46.392Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4923,
+      "promptTokens": 135,
+      "completionTokens": 601
+    },
+    "screenshots.map.png.caption": {
+      "value": "Інструменти для географічних карт та прямої видимості",
+      "sourceHash": "sha256:d1f0b909ab91a63850483deb019ac676505904a58a83459c2b4754044f118846",
+      "generatedAt": "2026-06-27T16:38:58.583Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12191,
+      "promptTokens": 138,
+      "completionTokens": 1124
+    },
+    "screenshots.telemetry.png.caption": {
+      "value": "Телеметрія вузла та стан мережі",
+      "sourceHash": "sha256:76741b3fe28420f1fe3566e7c5e3a45c12af198cb9f91e0b07f2fd6772c5728f",
+      "generatedAt": "2026-06-27T16:39:05.728Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7144,
+      "promptTokens": 134,
+      "completionTokens": 881
+    },
+    "tags": {
+      "value": "[\"haiku\",\"нативний\",\"голос\",\"обмін зображеннями\",\"mqtt\"]",
+      "sourceHash": "sha256:188804b07bc8f304e4a26899858078395b3b0c0214527038312ecf68b3e238a3",
+      "generatedAt": "2026-06-27T16:39:10.192Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4464,
+      "promptTokens": 143,
+      "completionTokens": 607
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "У репозиторії наразі не вказано ліцензію SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:39:14.396Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4204,
+      "promptTokens": 139,
+      "completionTokens": 548
+    },
+    "verificationNotes.requires-haiku-system-libraries-plus-mosquitto-l": {
+      "value": "Потребує системних бібліотек Haiku, а також Mosquitto, libcurl, giflib та Codec2.",
+      "sourceHash": "sha256:c00ecaf3ac69e75476d3a2ee7f89a33a8550eb1a26582a8f744f684e4f82221d",
+      "generatedAt": "2026-06-27T16:39:26.008Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11612,
+      "promptTokens": 148,
+      "completionTokens": 515
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/greater-boston-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore và Meshtastic do tình nguyện viên điều hành đang xây dựng hệ thống truyền thông ngoài lưới bền vững trên khắp Massachusetts và khu vực New England lân cận. Lưu lượng toàn bang hoạt động mạnh nhất chạy trên MeshCore với cấu hình sẵn USA/Canada.",
+      "sourceHash": "sha256:40d9619a35ced343277154f716adc03eff3b8ba7e085f4120beb0a0cb25f5433",
+      "generatedAt": "2026-06-27T16:48:06.028Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17456,
+      "promptTokens": 168,
+      "completionTokens": 831
+    }
+  }
+}

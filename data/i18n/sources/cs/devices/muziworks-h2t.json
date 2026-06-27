@@ -1,0 +1,12 @@
+{
+  "resource": "device/muziworks-h2t",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Hotové zařízení Meshtastic založené na Heltec T114 V2, vybavené GPS modulem, SMA pigtail kabelem, tyčovou anténou, LiPo baterií 2000 mAh a 3D tištěným krytem z ASA.",
+      "sourceHash": "sha256:993f787bf96a166b0645e8c78e71b5eb2ede446761a3ffeb1b8621352c8837c0",
+      "generatedAt": "2026-06-27T10:53:56.099Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

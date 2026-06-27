@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/offband-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um fork do MeshCore voltado para aprimoramentos e otimização de firmware em múltiplas funções. As funções ativas incluem companion/observer com publicação de observações via WiFi+MQTT, migração para NimBLE, interface web e repetidor com ponte MQTT para Mosquitto, telemetria via WiFi em rajadas e ajuste de heap e energia.",
+      "sourceHash": "sha256:ba1c741372827b5f3ba1d0e6e24982cc9cae4e4d5f49282b66413916d17d2a9b",
+      "generatedAt": "2026-06-27T14:26:08.333Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4837,
+      "promptTokens": 186,
+      "completionTokens": 1335
+    },
+    "features": {
+      "value": "[\"Companion/observador com publicação de observações via Wi-Fi+MQTT\",\"Migração para NimBLE (sem Bluedroid)\",\"Diagnósticos de CrashLog e persistência após boot\",\"Ponte MQTT para Mosquitto (repetidor)\",\"Telemetria Wi-Fi em rajada\",\"Otimização de heap e energia para ESP32-S3\",\"Interface Web\"]",
+      "sourceHash": "sha256:55f2b45a824d3d98659d1ebe4d1baf1be089ee3ab2bd730ed2b136f6fd94c75b",
+      "generatedAt": "2026-06-27T14:26:13.440Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5107,
+      "promptTokens": 195,
+      "completionTokens": 1480
+    }
+  }
+}

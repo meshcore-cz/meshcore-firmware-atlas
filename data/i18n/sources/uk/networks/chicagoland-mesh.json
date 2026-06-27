@@ -1,0 +1,15 @@
+{
+  "resource": "network/chicagoland-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота ентузіастів MeshCore, Meshtastic, Reticulum та LoRa, які створюють стійку децентралізовану автономну mesh-мережу в регіоні Чикаго, з аналізатором на базі CoreScope, картою в реальному часі, посібниками для початківців та координацією в Discord.",
+      "sourceHash": "sha256:bf31415233782e90a14065e4001e8ede6b0fe3eae94a0fe9b96729d83150fa4d",
+      "generatedAt": "2026-06-27T16:48:36.367Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12156,
+      "promptTokens": 179,
+      "completionTokens": 2043
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/rak-wismesh-tag",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Uzel Meshtastic typu vše v jednom založený na RAK10701 Field Tester, s dotykovým TFT displejem 320×240 a klávesnicí na obrazovce pro posílání zpráv bez telefonu. Obsahuje čipy nRF52840 + SX1262, vestavěný GNSS, baterii 3200 mAh a LoRa anténu RP-SMA. Dodává se s předinstalovaným firmwarem Meshtastic.",
+      "sourceHash": "sha256:5c6499e9a55a3c08791791faf9de0f351be576f19b30825cdf365cc3a1d4b0b0",
+      "generatedAt": "2026-06-27T10:56:06.741Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v3",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento clássica ESP32-S3 + SX1262 LoRa com OLED de 0,96 polegadas, Wi-Fi e BLE integrados. Alimentação por USB-C e porta serial CP2102, conector de bateria SH1.25 com gestão de carga e antena LoRa IPEX. Amplamente utilizada em nós companheiros, repetidores e servidores de sala para Meshtastic e MeshCore.",
+      "sourceHash": "sha256:f2026790eb1a9dc8d3c073c07374388c842e787999570eb9c5f699704e1cd2e9",
+      "generatedAt": "2026-06-27T14:05:07.313Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15740,
+      "promptTokens": 204,
+      "completionTokens": 1002
+    }
+  }
+}

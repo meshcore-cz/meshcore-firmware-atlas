@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-kmp",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thư viện Kotlin Multiplatform hỗ trợ khám phá và kết nối với các nút đồng hành MeshCore qua Bluetooth, cung cấp các API cấp cao cho danh bạ, kênh, nhắn tin, xác nhận và cấu hình thiết bị.",
+      "sourceHash": "sha256:61c440fc1c515460b64f3a309e7cb613fba8e2ed53be3fb654ed0d61e17d10d6",
+      "generatedAt": "2026-06-27T16:25:50.292Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6190,
+      "promptTokens": 163,
+      "completionTokens": 805
+    },
+    "tags": {
+      "value": "[\"sdk\", \"giao thức\", \"kotlin-multiplatform\"]",
+      "sourceHash": "sha256:a4bbbc0468fb7a466656ac1354511c1687958f51739cc6010eec76f9da084b1f",
+      "generatedAt": "2026-06-27T16:25:54.912Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4618,
+      "promptTokens": 139,
+      "completionTokens": 500
+    },
+    "verificationNotes.published-to-maven-central-for-android-and-ios-k": {
+      "value": "Đã xuất bản lên Maven Central cho các mục tiêu Kotlin Multiplatform trên Android và iOS.",
+      "sourceHash": "sha256:a588d4324054d2e2ca603468f998cceb577ed025f3e5a608bef15b7ec165d49a",
+      "generatedAt": "2026-06-27T16:25:58.895Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3982,
+      "promptTokens": 142,
+      "completionTokens": 719
+    }
+  }
+}

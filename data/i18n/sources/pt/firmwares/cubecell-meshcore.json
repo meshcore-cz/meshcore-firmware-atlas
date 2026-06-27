@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/cubecell-meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um firmware de repetidor minimalista compatível com MeshCore para placas Heltec CubeCell (HTCC-AB01, AB02, AC01). Amplia a cobertura da rede mesh por meio de roteamento por inundação, oferece suporte a gerenciamento remoto autenticado por um aplicativo complementar e inclui relatórios automáticos diários de integridade. Otimizado para implantações alimentadas por energia solar.",
+      "sourceHash": "sha256:962a2a8c9c5bbe9737776edc967eebc5098cec7a880e788e547b9a1a8b859da1",
+      "generatedAt": "2026-06-27T14:23:14.182Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3794,
+      "promptTokens": 186,
+      "completionTokens": 1090
+    },
+    "features": {
+      "value": "[\"Repetidor de roteamento por inundação\",\"Gestão remota autenticada através da aplicação complementar\",\"Relatórios diários automáticos de estado\",\"Otimização a energia solar\",\"Suporte para placas CubeCell (HTCC-AB01, AB02, AC01)\"]",
+      "sourceHash": "sha256:35e1958b155662be5ffaa7429baa0d3d15b7df4342dd39610fa62df788229b78",
+      "generatedAt": "2026-06-27T14:23:18.824Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4641,
+      "promptTokens": 170,
+      "completionTokens": 1316
+    }
+  }
+}

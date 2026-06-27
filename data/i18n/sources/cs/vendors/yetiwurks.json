@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/yetiwurks",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Americký výrobce odolného komunikačního příslušenství a hardwaru Meshtastic, včetně sestav venkovních opakovačů a základnových stanic založených na sadách RAK WisBlock.",
+      "sourceHash": "sha256:c17a0428755826df3d5d5db832bda75854aa9cea09ca510e6a31587c5d8f01f6",
+      "generatedAt": "2026-06-27T12:00:09.498Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6135,
+      "promptTokens": 159,
+      "completionTokens": 788
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshy",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Cliente MeshCore em GTK 4/libadwaita para Linux e macOS, com mensagens encriptadas, contactos, mapas, monitorização de dispositivos, configuração, suporte para códigos QR e ligações série via Bluetooth ou USB.",
+      "sourceHash": "sha256:c460876277520fde366eca6cb22a26d0c8c29226c330511a700c978edce586c3",
+      "generatedAt": "2026-06-27T14:39:26.416Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3537,
+      "promptTokens": 166,
+      "completionTokens": 926
+    },
+    "screenshots.screenshot1.png.caption": {
+      "value": "Mensagens de canal",
+      "sourceHash": "sha256:84f950f864adf2f9f4b23cc83849a9df21f105ae261c51e0929296490dc3f6d1",
+      "generatedAt": "2026-06-27T14:39:28.697Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2279,
+      "promptTokens": 131,
+      "completionTokens": 483
+    },
+    "screenshots.screenshot2.png.caption": {
+      "value": "Contactos e estatísticas do dispositivo",
+      "sourceHash": "sha256:e55af28dd1ae67001c5a9d7c4b1521a8bc27844ffad593b18d65b5be750c9a90",
+      "generatedAt": "2026-06-27T14:39:30.955Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2257,
+      "promptTokens": 133,
+      "completionTokens": 498
+    },
+    "screenshots.screenshot3.png.caption": {
+      "value": "Configurações e ajustes de rádio",
+      "sourceHash": "sha256:95063b72ae78c978c40770078e1869dfa1e4c3ceea0706600c69f45e3ff4a732",
+      "generatedAt": "2026-06-27T14:39:34.427Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3471,
+      "promptTokens": 133,
+      "completionTokens": 852
+    },
+    "screenshots.screenshot4.png.caption": {
+      "value": "Vista de mapa com nós da malha",
+      "sourceHash": "sha256:8f71f09e10d2f092bcd18b13c8d43b7c210538c44f26395d784a566d870cf399",
+      "generatedAt": "2026-06-27T14:39:36.534Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2107,
+      "promptTokens": 134,
+      "completionTokens": 446
+    },
+    "tags": {
+      "value": "[\"gtk\",\"libadwaita\",\"flatpak\",\"desktop\"]",
+      "sourceHash": "sha256:b729815a58879f0b863d417836fb3729d6241af4add5c3307cacb1af937fc981",
+      "generatedAt": "2026-06-27T14:39:40.777Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4243,
+      "promptTokens": 142,
+      "completionTokens": 1046
+    },
+    "verificationNotes.popularity-fields-are-codeberg-repository-signal": {
+      "value": "Os campos de popularidade são sinais do repositório no Codeberg; latestReleaseDownloads contabiliza as transferências de arquivos de código-fonte do Codeberg para a tag 26.06.",
+      "sourceHash": "sha256:e159deb7297f36c4a95505e16445c14b8334a2fe1ba2442e8c4bf39e2cf27740",
+      "generatedAt": "2026-06-27T14:39:44.314Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3538,
+      "promptTokens": 154,
+      "completionTokens": 975
+    },
+    "verificationNotes.readme-describes-the-app-as-fairly-feature-compl": {
+      "value": "O README descreve a aplicação como bastante completa e estável, mas ainda em desenvolvimento ativo.",
+      "sourceHash": "sha256:acd9ab88e89514420de58a84ccbb2aea342747cbf3c6646351fb5872c8dc5c85",
+      "generatedAt": "2026-06-27T14:39:48.365Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4050,
+      "promptTokens": 145,
+      "completionTokens": 1124
+    }
+  }
+}

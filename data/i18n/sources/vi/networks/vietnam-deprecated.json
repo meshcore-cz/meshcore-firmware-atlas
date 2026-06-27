@@ -1,0 +1,15 @@
+{
+  "resource": "network/vietnam-deprecated",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cấu hình radio mặc định của ứng dụng MeshCore chính thức — 920.250MHz / SF11 / BW250 / CR5.",
+      "sourceHash": "sha256:afd5972206430871315721a46f075889e7798524553280eb2f4ffef95a52ac42",
+      "generatedAt": "2026-06-27T16:55:16.793Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14712,
+      "promptTokens": 152,
+      "completionTokens": 589
+    }
+  }
+}

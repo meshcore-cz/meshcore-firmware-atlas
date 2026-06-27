@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-esp32s3",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch chủ ESP32-S3 XIAO nhỏ gọn như ngón tay cái, kết hợp cùng mô-đun LoRa Wio-SX1262. Thiết bị cung cấp Wi-Fi, BLE, khả năng nạp code qua USB, và giữ nguyên kích thước nhỏ gọn đặc trưng của dòng Seeed XIAO, lý tưởng cho các thiết bị đồng hành và bộ lặp MeshCore siêu nhỏ.",
+      "sourceHash": "sha256:63f6efb1fe18003eae0b6c5967a412e87a5887aca35cdb38d731c6a7a63ae578",
+      "generatedAt": "2026-06-27T15:42:55.192Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6393,
+      "promptTokens": 182,
+      "completionTokens": 1215
+    }
+  }
+}

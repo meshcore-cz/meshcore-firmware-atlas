@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-rheinland",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Německá komunita sítě LoRa mesh pro Porýní a okolní západní Německo. Zahrnuje Meshtastic a MeshCore včetně lokální dokumentace MeshCore, nastavení EU/UK Narrow, regionálních rozsahů Porýní, živé mapy CoreScope s analyzátorem provozu a koordinace přes WhatsApp.",
+      "sourceHash": "sha256:d728a6384b7f594fbc0385b8d76d2a668551a659f93111cc49357a2685c4f498",
+      "generatedAt": "2026-06-27T12:07:27.094Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6319,
+      "promptTokens": 179,
+      "completionTokens": 865
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-companion-c",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативна клієнтська бібліотека C99 для послідовного протоколу MeshCore Companion Radio. Вона включає тонку обгортку Arduino C++ для вбудованих систем і забезпечує пряму підтримку C для настільних застосунків, а також застосунків для Linux, ESP-IDF та STM32.",
+      "sourceHash": "sha256:8c4078495fd327bc9ca40041b6d19f9adfd58c9bae8b75e4f782bfbf0250cc26",
+      "generatedAt": "2026-06-27T16:22:36.529Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8768,
+      "promptTokens": 170,
+      "completionTokens": 1369
+    },
+    "tags": {
+      "value": "[\"SDK\", \"протокол\", \"вбудовані системи\", \"Arduino\"]",
+      "sourceHash": "sha256:ef484d50ce94b3be1b175b3a99952c8dba240f8091892878206564afe544e06b",
+      "generatedAt": "2026-06-27T16:22:40.736Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4206,
+      "promptTokens": 138,
+      "completionTokens": 650
+    },
+    "verificationNotes.the-github-repository-is-a-mirror-the-canonical-": {
+      "value": "Репозиторій на GitHub є дзеркалом; основний вихідний код розміщено на SH3D Gitea.",
+      "sourceHash": "sha256:2a34310f336548064beac19391d90ac95917b4ee3bb6270aafc7e26932ca54a2",
+      "generatedAt": "2026-06-27T16:22:47.469Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6733,
+      "promptTokens": 149,
+      "completionTokens": 1086
+    },
+    "verificationNotes.version-0-2-2-is-declared-in-library-properties-": {
+      "value": "Версія 0.2.2 вказана в library.properties; реліз на GitHub не опубліковано.",
+      "sourceHash": "sha256:5a47fb0605ffce21acfaf3c0e864c410e3b79d536c68bec79673e55c0fa46057",
+      "generatedAt": "2026-06-27T16:22:56.676Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9207,
+      "promptTokens": 148,
+      "completionTokens": 711
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/eastmesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore cộng đồng dành cho Đông Nam Úc, lấy Victoria làm trung tâm và kết nối qua các khu vực NSW/ACT/Tasmania, hỗ trợ nhắn tin ngoài lưới, ứng phó khẩn cấp, hoạt động ngoài trời và hạ tầng mesh, đi kèm bản đồ công khai, wiki, Discord, thực thể CoreScope và các bản dựng firmware EastMesh.",
+      "sourceHash": "sha256:461392dfa711fb9568eaace5efa7c7a3457b9265e0fcf78fe432f38026d6977d",
+      "generatedAt": "2026-06-27T16:46:56.734Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7848,
+      "promptTokens": 181,
+      "completionTokens": 1395
+    }
+  }
+}

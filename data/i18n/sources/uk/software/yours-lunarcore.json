@@ -1,0 +1,33 @@
+{
+  "resource": "software/yours-lunarcore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Зашифрований месенджер для mesh-мереж на Android, призначений для прошивки LunarCore. Він працює через LoRa та досліджує сеанси Double Ratchet, onion-маршрутизацію, маскувальний трафік, анонімні облікові дані та локальне сховище із захистом конфіденційності.",
+      "sourceHash": "sha256:47303677030e1b8a383c6814bf199acfbf68e019866bb8e552d3267db5b0b4bd",
+      "generatedAt": "2026-06-27T16:44:02.867Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11441,
+      "promptTokens": 164,
+      "completionTokens": 2342
+    },
+    "tags": {
+      "value": "[\"lunarcore\",\"приватність\",\"цибулева-маршрутизація\",\"double-ratchet\",\"експериментальний\"]",
+      "sourceHash": "sha256:03ba8bd4f1540615e14738606a1e3217f3c7eca9d51de09dbc54e8f0be12a84d",
+      "generatedAt": "2026-06-27T16:44:09.904Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7037,
+      "promptTokens": 146,
+      "completionTokens": 1068
+    },
+    "verificationNotes.requires-lunarcore-firmware-on-heltec-v3-hardwar": {
+      "value": "Потребує прошивки LunarCore на пристрої Heltec V3 замість стандартної прошивки MeshCore.",
+      "sourceHash": "sha256:c52459c904b39baa694a2ab47eaa6850b8947b46abb5abe27bdea8be4e50f99c",
+      "generatedAt": "2026-06-27T16:44:20.897Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10993,
+      "promptTokens": 146,
+      "completionTokens": 1253
+    }
+  }
+}

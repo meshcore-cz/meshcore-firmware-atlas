@@ -1,0 +1,15 @@
+{
+  "resource": "device/yetiwurks-basestation",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Вулична базова станція та репітер на базі RAK WisBlock у корпусі з класом захисту IP65, створені на основі стартового набору RAK19003 + RAK4631 із зовнішньою антеною, транзитним роз'ємом USB-C та входом для сонячної панелі. Використовують знімні акумулятори 18650 замість вбудованого блоку батарей.",
+      "sourceHash": "sha256:3adb3696e48f340eee246f16029b2a800bfc47df058f007ef97b75c470d3ef7c",
+      "generatedAt": "2026-06-27T15:19:15.415Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 48588,
+      "promptTokens": 187,
+      "completionTokens": 1160
+    }
+  }
+}

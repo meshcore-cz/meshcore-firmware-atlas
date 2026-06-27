@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-twatch-ultra",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Đồng hồ thông minh ESP32-S3 với SX1262 LoRa, màn hình cảm ứng AMOLED 2.06 inch, GNSS tích hợp, NFC, động cơ rung, âm thanh và hỗ trợ thẻ SD. Thiết bị mục tiêu MeshCore dạng đeo được dành cho liên lạc gọn nhẹ trên cổ tay.",
+      "sourceHash": "sha256:46a554e4f73e06914c5c90967f1b9b1a9528ad9dc2f9dc94853ba1809ecf12cf",
+      "generatedAt": "2026-06-27T15:38:20.609Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6035,
+      "promptTokens": 181,
+      "completionTokens": 992
+    }
+  }
+}

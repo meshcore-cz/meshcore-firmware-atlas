@@ -1,0 +1,15 @@
+{
+  "resource": "network/eastmesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní síť MeshCore pro jihovýchodní Austrálii se základnou ve Victorii, propojená přes NSW/ACT/Tasmánii, podporuje komunikaci mimo síť, řešení nouzových situací, venkovní využití a mesh infrastrukturu. K dispozici je veřejná mapa, wiki, Discord, instance CoreScope a buildy firmwaru EastMesh.",
+      "sourceHash": "sha256:461392dfa711fb9568eaace5efa7c7a3457b9265e0fcf78fe432f38026d6977d",
+      "generatedAt": "2026-06-27T12:03:57.087Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 32528,
+      "promptTokens": 181,
+      "completionTokens": 1264
+    }
+  }
+}

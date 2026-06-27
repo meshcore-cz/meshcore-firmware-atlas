@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-indicator-espnow",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nền tảng màn hình cảm ứng SenseCAP Indicator 4 inch dành cho thử nghiệm firmware và bảng điều khiển mạng mesh. Phiên bản tương thích Meshtastic kết hợp vi điều khiển ESP32-S3 và RP2040 với Wi-Fi, BLE, LoRa và màn hình cảm ứng RGB điện dung.",
+      "sourceHash": "sha256:bff8ab70a8fcf00d9862f61c018d030b65b29182a7999b900f8ddb89a4e6a0e6",
+      "generatedAt": "2026-06-27T15:40:46.248Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3306,
+      "promptTokens": 180,
+      "completionTokens": 673
+    }
+  }
+}

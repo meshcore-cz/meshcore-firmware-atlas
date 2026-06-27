@@ -1,0 +1,15 @@
+{
+  "resource": "compatibility/meshcore/1.16.0/uart-solar-node-station",
+  "locale": "vi",
+  "fields": {
+    "notes": {
+      "value": "Nhà cung cấp cho biết bo mạch chủ Meshtastic Motherboard tương thích về điện với RAK4631 — hãy sử dụng bản build tham khảo RAK4631 MeshCore. Sản phẩm đã ngừng bán trên Lectronz; tài liệu bo mạch nền vẫn có sẵn tại pcb.uart.cz.",
+      "sourceHash": "sha256:b3f5a96bd5b88522ab28a3d959e940d033f92d18a09237c66640d165129c3566",
+      "generatedAt": "2026-06-27T16:56:15.715Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20550,
+      "promptTokens": 177,
+      "completionTokens": 944
+    }
+  }
+}

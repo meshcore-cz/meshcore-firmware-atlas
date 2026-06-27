@@ -1,0 +1,15 @@
+{
+  "resource": "device/waveshare-rp2040-lora",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển RP2040 + SX1262 LoRa nhỏ gọn, được bán với hai phiên bản LF và HF, tích hợp chân GPIO viền bán lỗ, đầu nối anten IPEX và bộ chuyển đổi USB-C FPC tùy chọn dùng để nạp chương trình và kết nối serial.",
+      "sourceHash": "sha256:8c4610966e2492749a3ffadd556532226b0b751428664c1e20a105ea3a6886a7",
+      "generatedAt": "2026-06-27T15:43:51.043Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4849,
+      "promptTokens": 175,
+      "completionTokens": 853
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-v4-exp",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Sada Heltec V4 s hliníkovým/PC krytem a dotykovým předním panelem s rozlišením 320×240 určená pro přenosné použití s Meshtastic/MeshCore. Součástí balení je deska V4, rozšiřující modul a LoRa anténa; GNSS modul a článek 18650 lze přikoupit. K dispozici je dotykové uživatelské rozhraní MeshCore, plná podpora dotykového ovládání je však stále ve vývoji.",
+      "sourceHash": "sha256:c8f3d5d487a58693d251d71c8aebd15a0c4e8c3235ae441c957e4c9b4952338b",
+      "generatedAt": "2026-06-27T10:47:51.763Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

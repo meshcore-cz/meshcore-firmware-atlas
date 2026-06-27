@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-deck",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị cầm tay Pocket Meshtastic/MeshCore sử dụng ESP32-S3, tùy chọn SX1262 LoRa, màn hình IPS 2.8-inch, bàn phím QWERTY mini và trackball. Tích hợp sẵn micro và loa để nhắn tin và tương tác giao diện độc lập. Hỗ trợ Wi-Fi và BLE; không tích hợp GPS (có thể dùng module ngoài tùy chọn).",
+      "sourceHash": "sha256:b85d5af62aaa694c494dff22522e4aa7f260a76fb0853882f0f384cc39205898",
+      "generatedAt": "2026-06-27T15:36:52.502Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9008,
+      "promptTokens": 194,
+      "completionTokens": 904
+    }
+  }
+}

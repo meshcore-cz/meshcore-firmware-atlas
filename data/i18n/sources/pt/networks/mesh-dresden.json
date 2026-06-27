@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-dresden",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore e Meshtastic gerida por voluntários para Dresden e toda a região da Saxônia. Opera repetidores autônomos alimentados por energia solar na banda de 868 MHz da UE, com regiões específicas de Dresden e canais públicos de hashtags para conversas locais, suporte e encontros.",
+      "sourceHash": "sha256:fc4aee749316e2929a958e0c07b7dbbed64df6fc737e6cced41b21a6a2999b18",
+      "generatedAt": "2026-06-27T14:47:21.248Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4776,
+      "promptTokens": 181,
+      "completionTokens": 1306
+    }
+  }
+}

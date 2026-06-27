@@ -1,0 +1,15 @@
+{
+  "resource": "network/tennmesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Створена спільнотою мережа MeshCore у Теннессі для автономного текстового спілкування по всьому штату, яка пропонує рекомендовані параметри, керівництво з налаштування, публічні канали, звіти та карту CoreScope у реальному часі.",
+      "sourceHash": "sha256:6f7e8c83fdbfff2ec5fdc6fc18c0bccf017943b0a54c1c40e5d69db3e4480771",
+      "generatedAt": "2026-06-27T16:59:36.066Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8907,
+      "promptTokens": 162,
+      "completionTokens": 1370
+    }
+  }
+}

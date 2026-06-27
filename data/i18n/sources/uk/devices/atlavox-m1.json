@@ -1,0 +1,15 @@
+{
+  "resource": "device/atlavox-m1",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативна радіостанція Meshtastic/MeshCore на базі RAK WisBlock з акумулятором LiPo на 2000 мА·год, USB-C, Bluetooth та закритим корпусом, надрукованим на 3D-принтері. Постачається у варіантах на 868 МГц та 915 МГц, з опціональними модулями GNSS та датчиками, які підключаються через внутрішні слоти WisBlock.",
+      "sourceHash": "sha256:3836add6734b90cc55329fc43392f94914a2e308f801836cb5fd2e9088733bdc",
+      "generatedAt": "2026-06-27T14:55:58.777Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4047,
+      "promptTokens": 195,
+      "completionTokens": 1173
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshpunk",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware cầm tay LVGL + Lua dành cho thiết bị LilyGo T-Deck, hỗ trợ đầy đủ MeshCore. Các tính năng bao gồm ô bản đồ OpenStreetMap ngoại tuyến kèm lớp phủ liên hệ mesh và định vị tam giác người gửi meshprint, chủ đề giao diện, trò chơi (Doom, PICO-8, Flappy Bird, Snake, Scorched Earth), lưu trữ trên thẻ SD, WiFi, BLE và đồng bộ thời gian GPS.",
+      "sourceHash": "sha256:0b0a2e4fa0f5c8e06bb8d284f6a7cd00c9843c4e82eb15e4e08d23c0c3fec166",
+      "generatedAt": "2026-06-27T15:53:00.285Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6779,
+      "promptTokens": 200,
+      "completionTokens": 1316
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "Thiết bị mục tiêu chính. Sử dụng tệp -merged.bin cho lần cài đặt đầu tiên, tệp -firmware.bin để cập nhật, hoặc tệp -launcher.bin cùng với Launcher của bmorcelli.",
+      "sourceHash": "sha256:e168843111e5c8fb5eeb19026212839d66f4d260824e59f458f2df972081a801",
+      "generatedAt": "2026-06-27T15:53:04.123Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3837,
+      "promptTokens": 160,
+      "completionTokens": 709
+    },
+    "features": {
+      "value": "[\"Khung ứng dụng LVGL + Lua\",\"Bản đồ ngoại tuyến với tính năng lưu đệm ô bản đồ và tam giác hóa meshprint\",\"Chủ đề và tùy chỉnh kiểu dáng UI\",\"Trò chơi (Doom, PICO-8, Flappy Bird, Snake, Scorched Earth)\",\"Lưu cài đặt mesh và firmware vào thẻ SD\",\"Kết nối thiết bị đồng hành qua BLE và WiFi\",\"Đồng bộ thời gian GPS\",\"Bản dựng tương thích với Launcher\",\"Tương thích giao thức MeshCore\"]",
+      "sourceHash": "sha256:48b065046073fe6ab02f4507c39ae601cc24123f244332dcf6d1771fab57af92",
+      "generatedAt": "2026-06-27T15:53:10.576Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6453,
+      "promptTokens": 202,
+      "completionTokens": 1362
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/raspberry",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Máy tính bo mạch đơn và vi điều khiển Raspberry Pi.",
+      "sourceHash": "sha256:053e5795d8f5d75dfdb5919e9ad7baefa86cfd7383fcb135eb7de4a1206a9098",
+      "generatedAt": "2026-06-27T16:43:55.424Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2799,
+      "promptTokens": 139,
+      "completionTokens": 425
+    }
+  }
+}

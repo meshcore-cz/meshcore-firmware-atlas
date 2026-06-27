@@ -1,0 +1,15 @@
+{
+  "resource": "network/australia-mid",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cài đặt sẵn radio chính thức của ứng dụng MeshCore — 915.075MHz / SF9 / BW125 / CR5.",
+      "sourceHash": "sha256:b3747c9d0bc0f638d2063871dacb54ed76d43fcdbbd8da7d89f3c1b02b81bfcd",
+      "generatedAt": "2026-06-27T16:44:57.755Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5028,
+      "promptTokens": 153,
+      "completionTokens": 705
+    }
+  }
+}

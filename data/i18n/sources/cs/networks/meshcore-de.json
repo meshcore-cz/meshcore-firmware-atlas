@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-de",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Německy mluvící komunita MeshCore a wiki centrum pro Německo, které shromažďuje návody k nastavení, regionální skupiny, doporučenou konfiguraci, poznámky k hardwaru a online prostory pro koordinaci uživatelů MeshCore.",
+      "sourceHash": "sha256:a592817c4e1c5c2d6ceb72daf9570ec13105a9081514421a117346a42a2eab88",
+      "generatedAt": "2026-06-27T12:05:02.638Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4096,
+      "promptTokens": 161,
+      "completionTokens": 657
+    }
+  }
+}

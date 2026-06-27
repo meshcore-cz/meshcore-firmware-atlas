@@ -1,0 +1,24 @@
+{
+  "resource": "software/meshcore-app",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "O aplicativo complementar proprietário recomendado pelo projeto MeshCore para troca de mensagens, gerenciamento de contatos e canais, e configuração de nós via BLE/serial.",
+      "sourceHash": "sha256:c422b32f187163ac0561944bed18b440dedff9a017f5c684db7c978b5067f4ac",
+      "generatedAt": "2026-06-27T14:30:29.044Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2677,
+      "promptTokens": 156,
+      "completionTokens": 766
+    },
+    "tags": {
+      "value": "[\"recomendado pelo projeto\",\"proprietário\",\"complemento\"]",
+      "sourceHash": "sha256:582a0966ebc7322469cb2966392d18aba5b647d95bbb89f1ba5533ac7524584c",
+      "generatedAt": "2026-06-27T14:30:32.000Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2956,
+      "promptTokens": 140,
+      "completionTokens": 678
+    }
+  }
+}

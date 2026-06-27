@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-de",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade de língua alemã e central wiki do MeshCore para a Alemanha, reunindo guias de configuração, grupos regionais, configurações recomendadas, notas de hardware e espaços de coordenação online para os usuários do MeshCore.",
+      "sourceHash": "sha256:a592817c4e1c5c2d6ceb72daf9570ec13105a9081514421a117346a42a2eab88",
+      "generatedAt": "2026-06-27T14:46:27.989Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3750,
+      "promptTokens": 161,
+      "completionTokens": 1122
+    }
+  }
+}

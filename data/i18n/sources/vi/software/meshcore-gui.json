@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-gui",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nền tảng MeshCore tự lưu trữ cho máy tính để bàn và headless, tích hợp nhắn tin, bản đồ, kho lưu trữ, BBS, tự động hóa bot, API REST, giải mã gói tin cùng cầu nối tần số chéo tùy chọn giữa hai bộ đàm đồng hành.",
+      "sourceHash": "sha256:197032e42cb25d8186a457beca3910d9d404fc7900578332bb587512e8dfc53a",
+      "generatedAt": "2026-06-27T16:08:55.578Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5978,
+      "promptTokens": 169,
+      "completionTokens": 942
+    },
+    "tags": {
+      "value": "[\"nicegui\",\"bbs\",\"bot\",\"chéo tần số\",\"tự lưu trữ\"]",
+      "sourceHash": "sha256:4318c4773abbbc267803c010f79724722ae2f60f3fd49f2dfbc4c3d54903e856",
+      "generatedAt": "2026-06-27T16:09:09.301Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13723,
+      "promptTokens": 145,
+      "completionTokens": 1032
+    },
+    "verificationNotes.usb-serial-is-the-most-broadly-supported-transpo": {
+      "value": "USB serial là phương thức truyền tải được hỗ trợ rộng rãi nhất. BLE chỉ được kiểm thử trên Linux với BlueZ và D-Bus.",
+      "sourceHash": "sha256:e630725f2706a0832b5f9f209fa841c3d70baf9735c11407a82da098c2029f2d",
+      "generatedAt": "2026-06-27T16:09:14.418Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5110,
+      "promptTokens": 152,
+      "completionTokens": 582
+    },
+    "verificationNotes.designed-for-local-operation-and-exposes-a-read-": {
+      "value": "Được thiết kế để chạy cục bộ và cung cấp REST API chỉ đọc không yêu cầu xác thực.",
+      "sourceHash": "sha256:e838386a36c68249c647fd9166f7816a0fd650b2e555685d448b297640b56521",
+      "generatedAt": "2026-06-27T16:09:17.674Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3250,
+      "promptTokens": 143,
+      "completionTokens": 527
+    }
+  }
+}

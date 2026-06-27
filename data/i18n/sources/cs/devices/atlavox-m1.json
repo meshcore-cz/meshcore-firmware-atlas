@@ -1,0 +1,12 @@
+{
+  "resource": "device/atlavox-m1",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Ruční rádio na bázi RAK WisBlock pro Meshtastic/MeshCore s baterií LiPo 2000 mAh, USB-C, Bluetooth a 3D tištěným krytem. Dodává se ve variantách 868 MHz a 915 MHz, s možností rozšíření o GNSS a senzory prostřednictvím interních slotů WisBlock.",
+      "sourceHash": "sha256:3836add6734b90cc55329fc43392f94914a2e308f801836cb5fd2e9088733bdc",
+      "generatedAt": "2026-06-27T10:43:28.143Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

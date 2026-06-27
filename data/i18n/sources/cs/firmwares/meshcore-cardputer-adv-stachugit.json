@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv-stachugit",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Fork projektu MeshCore se samostatným rozhraním pro TFT displej a klávesnici, určený pro M5Stack Cardputer ADV vybavený rádiovým modulem Cap LoRa-1262.",
+      "sourceHash": "sha256:da9e8e3787b935e723a7bce5501a0a7e7325f061afe8c03cdab62401b27f4437",
+      "generatedAt": "2026-06-27T11:23:00.147Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9168,
+      "promptTokens": 159,
+      "completionTokens": 811
+    },
+    "deviceNotes.m5stack-cardputer-adv": {
+      "value": "Vyžaduje modul M5Stack Cap LoRa-1262.",
+      "sourceHash": "sha256:413efa7055a21624668b982014fcc0b1bcb7c76dcf9f7e83c07d0843170856f5",
+      "generatedAt": "2026-06-27T11:23:04.235Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4088,
+      "promptTokens": 142,
+      "completionTokens": 397
+    },
+    "features": {
+      "value": "[\"Kontakty v zařízení a zasílání zpráv v kanálech\",\"Hardwarová klávesnice a TFT rozhraní\",\"Sdílení klíčů pomocí GPS a QR kódů\",\"Flasher v prohlížeči\"]",
+      "sourceHash": "sha256:0e0d4ad9c117fa95f5a96cc65ec7b49b8916982534127d01be86f5c0e8753430",
+      "generatedAt": "2026-06-27T12:34:29.730Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13873,
+      "promptTokens": 154,
+      "completionTokens": 749
+    }
+  }
+}

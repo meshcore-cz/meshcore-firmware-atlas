@@ -1,0 +1,12 @@
+{
+  "resource": "device/ikoka-stick",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní mesh stick založený na modulech XIAO a EBYTE E22, vybavený 0,96palcovým OLED displejem a podporou nabíjení lithiových baterií. Konstrukce podporuje varianty s čipy nRF52840 i ESP32-S3, přičemž výkon a frekvence LoRa se volí podle konkrétní sestavy.",
+      "sourceHash": "sha256:c1b6c548e498575b8a1d532d53e1b81a0bad08d8a70733b08997f249c011a463",
+      "generatedAt": "2026-06-27T10:49:27.815Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

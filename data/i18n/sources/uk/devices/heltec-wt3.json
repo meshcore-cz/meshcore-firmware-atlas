@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-wt3",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Heltec Wireless Tracker v3 — це LoRa-трекер на базі ESP32-S3 + SX1262 із вбудованим GNSS (GPS), акумулятором на 4000+ мА·год, роз'ємом для сонячної панелі та опціональним дисплеєм. Пристрій розроблено для mesh-мереж Meshtastic, IoT-моніторингу та додатків LoRaWAN, забезпечуючи тривалу роботу на відкритому повітрі завдяки сонячній зарядці та ефективному керуванню живленням.",
+      "sourceHash": "sha256:7f931e459ba59a06161ff004f0a701f32898d050b0fe6f5534e25403117c9a20",
+      "generatedAt": "2026-06-27T14:58:12.234Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4213,
+      "promptTokens": 200,
+      "completionTokens": 1020
+    }
+  }
+}

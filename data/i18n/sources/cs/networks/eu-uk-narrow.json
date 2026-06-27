@@ -1,0 +1,15 @@
+{
+  "resource": "network/eu-uk-narrow",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Standardní úzkopásmová předvolba MeshCore pro Evropu a Spojené království v pásmu 869,618 MHz (62,5 kHz / SF8 / CR4/8). Jedná se o obecné výchozí nastavení – nikoli o jedinou komunitu – které sdílí uzly napříč EU a Spojeným královstvím, aby se mohly navzájem slyšet.",
+      "sourceHash": "sha256:2b077c89e222709b50aa6549bd6586df0d63fa634fea46036399e7434a03c191",
+      "generatedAt": "2026-06-27T12:04:34.785Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 29536,
+      "promptTokens": 189,
+      "completionTokens": 1286
+    }
+  }
+}

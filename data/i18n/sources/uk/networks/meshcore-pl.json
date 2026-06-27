@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-pl",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Польська спільнота LoRa MeshCore будує загальнонаціональну mesh-мережу для надзвичайних ситуацій та автономної роботи на основі пресету EU/UK Narrow. Координація здійснюється через lorameshcore.pl, де доступні посібники з налаштування, рекомендації щодо ретрансляторів, документація до аналізатора та посилання на спільноту.",
+      "sourceHash": "sha256:05e360532fbfed50f9223ee69be6ada19cec17a0cd7e6088f818ebe961811d85",
+      "generatedAt": "2026-06-27T16:57:07.560Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 49156,
+      "promptTokens": 173,
+      "completionTokens": 1218
+    }
+  }
+}

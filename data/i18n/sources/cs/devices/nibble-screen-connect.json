@@ -1,0 +1,12 @@
+{
+  "resource": "device/nibble-screen-connect",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Uzel Nibble je kompatibilní s nepájivým polem a nabízí integrovaný displej, tlačítka a osazení průchodovými součástkami pro snadné rozšiřování. Je zaměřený na hackování MeshCore a Meshtastic. Návrh spojuje Waveshare ESP32-S3 Zero s rádiovým modulem Seeed Wio SX1262.",
+      "sourceHash": "sha256:1c59ff73a9a80ba21005aa8200e30306ced099554f67224952fc8f76d59deb76",
+      "generatedAt": "2026-06-27T10:54:25.210Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

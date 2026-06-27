@@ -1,0 +1,51 @@
+{
+  "resource": "software/spectra",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cầu nối Rust kết nối thiết bị radio MeshCore hoặc Meshtastic với DHT bảo vệ quyền riêng tư Veilid, hỗ trợ nhắn tin pub/sub dựa trên nguồn cấp dữ liệu, giao diện TUI phong cách cyberpunk, chế độ daemon headless và kết nối từ xa qua socket Unix.",
+      "sourceHash": "sha256:3f4aa44d8fdac5493bed60c604c17525d033a4e8a42193ccdde8fc02e8e43e9e",
+      "generatedAt": "2026-06-27T16:39:28.179Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9950,
+      "promptTokens": 176,
+      "completionTokens": 905
+    },
+    "tags": {
+      "value": "[\"veilid\",\"dht\",\"cầu nối\",\"meshtastic\",\"thiết bị đầu cuối\"]",
+      "sourceHash": "sha256:3b6a0ea4c1d8eb97bee45442d104b30838a525c07e53c024fb0f326823b646a0",
+      "generatedAt": "2026-06-27T16:39:58.362Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 30183,
+      "promptTokens": 145,
+      "completionTokens": 1367
+    },
+    "verificationNotes.popularity-fields-are-forgejo-repository-signals": {
+      "value": "Các trường mức độ phổ biến là tín hiệu của kho lưu trữ Forgejo.",
+      "sourceHash": "sha256:049de99c4505842217ab62ba8244233151dd77bdeb73a8af07c5cb5cafb4a041",
+      "generatedAt": "2026-06-27T16:40:01.064Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2700,
+      "promptTokens": 138,
+      "completionTokens": 479
+    },
+    "verificationNotes.supports-stock-meshcore-companion-firmware-meshc": {
+      "value": "Hỗ trợ firmware đồng hành MeshCore gốc, bộ đàm MeshCore KISS và bộ đàm Meshtastic kết nối nối tiếp.",
+      "sourceHash": "sha256:37b68c8054aa014bdefa404cc80e38a5b39b6f3282299edf5593d0de2cf4a2d5",
+      "generatedAt": "2026-06-27T16:40:05.623Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4558,
+      "promptTokens": 149,
+      "completionTokens": 798
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Kho lưu trữ hiện không khai báo giấy phép SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:40:11.087Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5463,
+      "promptTokens": 139,
+      "completionTokens": 541
+    }
+  }
+}

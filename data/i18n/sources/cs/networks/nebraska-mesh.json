@@ -1,0 +1,15 @@
+{
+  "resource": "network/nebraska-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Celostátní síť MeshCore provozovaná dobrovolníky propojuje komunity v Nebrasce prostřednictvím uzlů LoRa provozovaných komunitou a solárních opakovačů. Vznikla v okolí Omahy a rozšířila se do Lincolnu, Grand Islandu a venkovských okresů, přičemž využívá sdílené standardy pro konfiguraci, mapy, analyzátory a koordinaci přes Discord.",
+      "sourceHash": "sha256:0d8860f2d52a8a802804b64319c1b647b2f0c23490b374367b5aa147d02f7808",
+      "generatedAt": "2026-06-27T12:08:51.766Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11127,
+      "promptTokens": 180,
+      "completionTokens": 1455
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/uart-solar-mppt-baseboard",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Базова плата без корпусу розміром 70 × 43 мм на основі RAK4630 (сумісна з прошивкою RAK4631) зі вбудованим MPPT-контролером заряду від сонячної панелі. Сонячний вхід 7–30 В, підтримує акумулятори 1S Li-Ion/Li-Pol/LiFePO4 та 1S/2S LTO з понижувально-підвищувальним перетворювачем на 3,3 В. У комплекті немає корпусу, панелі чи акумулятора; плата призначена для вбудовування у власний автономний вузол Meshtastic/MeshCore/Reticulum.",
+      "sourceHash": "sha256:3bc70be1008fadcdcc10a4548485bfa7954f6ae550712dca2142e622db8144d8",
+      "generatedAt": "2026-06-27T15:20:43.109Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 50466,
+      "promptTokens": 240,
+      "completionTokens": 1625
+    }
+  }
+}

@@ -4,12 +4,14 @@
   // With no filter active the grid is grouped into scope sections; the moment any
   // facet, toggle or the search box narrows the list the groups collapse into one
   // flat grid. All filter state is mirrored to the URL so views are shareable.
-  import { base } from '$app/paths';
-  import { TYPE_META, LICENSE_TYPE_META, licenseType, descriptionToPlain } from '$lib/data.js';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
+  import { TYPE_META, LICENSE_TYPE_META, licenseType, descriptionToPlain, firmwareTypeLabel, licenseTypeLabel, nodeRoleLabel, firmwareStatusLabel, firmwareMaturityLabel, firmwareDistributionLabel } from '$lib/data.js';
   import { pluralize, displayVersion, relativeTime, fullDateTime, releaseFreshnessTone } from '$lib/format.js';
   import Button from '$lib/Button.svelte';
   import Chip from '$lib/Chip.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
+  import ToolLink from '$lib/ToolLink.svelte';
   import Card from '$lib/Card.svelte';
   import CompareBar from '$lib/CompareBar.svelte';
   import { fwCompareIds, toggleFwCompare, clearFwCompare } from '$lib/fwCompare.js';
@@ -21,36 +23,37 @@
   // each scope view is its own prerendered, indexable page.
   let { firmwares, activeScope = 'all' } = $props();
 
+  // Subtitle embeds a link to /devices/, injected into the message placeholder.
+  let devicesLink = $derived(
+    `<a class="text-accent2 hover:underline" href="${href('/devices/')}">${m.fw_list_subtitle_devices()}</a>`
+  );
+
   // The scope axis is the primary grouping, rendered top to bottom in this order.
   const SCOPE_ORDER = ['universal', 'platform-specific', 'function-specific', 'device-specific'];
   const SCOPE_META = {
-    universal: {
-      label: 'Universal firmwares',
-      blurb: 'Built to run across many boards and device families.'
-    },
-    'platform-specific': {
-      label: 'Platform-specific firmwares',
-      blurb: 'Built for a particular chip or platform family.'
-    },
-    'function-specific': {
-      label: 'Function-specific firmwares',
-      blurb: 'Built around a particular use case or interface.'
-    },
-    'device-specific': {
-      label: 'Device-specific firmwares',
-      blurb: 'Purpose-built for a single device or board family.'
-    }
+    universal: { label: m.fw_scope_universal_title(), blurb: m.fw_scope_universal_blurb() },
+    'platform-specific': { label: m.fw_scope_platform_title(), blurb: m.fw_scope_platform_blurb() },
+    'function-specific': { label: m.fw_scope_function_title(), blurb: m.fw_scope_function_blurb() },
+    'device-specific': { label: m.fw_scope_device_title(), blurb: m.fw_scope_device_blurb() }
   };
 
   // --- Label helpers ---------------------------------------------------------
   const humanize = (v) => String(v).replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   const SCOPE_LABELS = {
-    universal: 'Universal',
-    'platform-specific': 'Platform-specific',
-    'function-specific': 'Function-specific',
-    'device-specific': 'Device-specific'
+    universal: m.fw_scope_universal(),
+    'platform-specific': m.fw_scope_platform(),
+    'function-specific': m.fw_scope_function(),
+    'device-specific': m.fw_scope_device()
   };
-  const ROLE_LABELS = { 'room-server': 'Room server', 'kiss-modem': 'KISS modem', 'standalone-ui': 'Standalone UI' };
+  const ROLE_LABELS = {
+    companion: nodeRoleLabel('companion'),
+    repeater: nodeRoleLabel('repeater'),
+    observer: nodeRoleLabel('observer'),
+    sensor: nodeRoleLabel('sensor'),
+    'room-server': nodeRoleLabel('room-server'),
+    'kiss-modem': nodeRoleLabel('kiss-modem'),
+    'standalone-ui': nodeRoleLabel('standalone-ui')
+  };
   const TRANSPORT_LABELS = { ble: 'BLE', usbSerial: 'USB', nativeTcp: 'TCP', wifiAp: 'Wi-Fi', ethernet: 'Ethernet' };
   const capsOn = (obj) => Object.entries(obj ?? {}).filter(([, v]) => v).map(([k]) => k);
 
@@ -60,28 +63,28 @@
   // facets). `primary` facets show by default; the rest live under "Advanced".
   // Empty facets hide automatically.
   const FACETS = [
-    { id: 'type', label: 'Type', primary: true, get: (f) => (f.type ? [f.type] : []), fmt: (v) => TYPE_META[v]?.label ?? humanize(v) },
-    { id: 'roles', label: 'Roles', primary: true, get: (f) => f.roles ?? [], fmt: (v) => ROLE_LABELS[v] ?? humanize(v) },
-    { id: 'transports', label: 'Link', get: (f) => capsOn(f.capabilities?.transports), fmt: (v) => TRANSPORT_LABELS[v] ?? humanize(v) },
-    { id: 'group', label: 'Group', get: (f) => (f.scopeGroup ? [f.scopeGroup] : []) },
-    { id: 'license', label: 'License', get: (f) => { const l = licenseType(f); return l ? [l] : []; }, fmt: (v) => LICENSE_TYPE_META[v]?.label ?? humanize(v) },
-    { id: 'framework', label: 'Runtime', get: (f) => (f.runtime?.framework ? [f.runtime.framework] : []), fmt: humanize },
-    { id: 'status', label: 'Status', get: (f) => (f.status ? [f.status] : []), fmt: humanize },
-    { id: 'maturity', label: 'Maturity', get: (f) => (f.maturity ? [f.maturity] : []), fmt: humanize },
-    { id: 'distribution', label: 'Dist', get: (f) => (f.distribution ? [f.distribution] : []), fmt: humanize }
+    { id: 'type', label: m.fw_facet_type(), primary: true, get: (f) => (f.type ? [f.type] : []), fmt: (v) => firmwareTypeLabel(v) },
+    { id: 'roles', label: m.fw_facet_roles(), primary: true, get: (f) => f.roles ?? [], fmt: (v) => ROLE_LABELS[v] ?? humanize(v) },
+    { id: 'transports', label: m.fw_facet_link(), get: (f) => capsOn(f.capabilities?.transports), fmt: (v) => TRANSPORT_LABELS[v] ?? humanize(v) },
+    { id: 'group', label: m.fw_facet_group(), get: (f) => (f.scopeGroup ? [f.scopeGroup] : []) },
+    { id: 'license', label: m.fw_facet_license(), get: (f) => { const l = licenseType(f); return l ? [l] : []; }, fmt: (v) => licenseTypeLabel(v) },
+    { id: 'framework', label: m.fw_facet_runtime(), get: (f) => (f.runtime?.framework ? [f.runtime.framework] : []), fmt: humanize },
+    { id: 'status', label: m.fw_facet_status(), get: (f) => (f.status ? [f.status] : []), fmt: firmwareStatusLabel },
+    { id: 'maturity', label: m.fw_facet_maturity(), get: (f) => (f.maturity ? [f.maturity] : []), fmt: firmwareMaturityLabel },
+    { id: 'distribution', label: m.fw_facet_dist(), get: (f) => (f.distribution ? [f.distribution] : []), fmt: firmwareDistributionLabel }
   ];
 
   // --- Boolean capability toggles --------------------------------------------
   const TOGGLES = [
     { id: 'gps', label: 'GPS', test: (f) => f.capabilities?.hardware?.gps === true },
-    { id: 'display', label: 'Display', test: (f) => f.capabilities?.hardware?.display === true },
+    { id: 'display', label: m.fw_tog_display(), test: (f) => f.capabilities?.hardware?.display === true },
     { id: 'ota', label: 'OTA', test: (f) => f.capabilities?.operations?.ota === true },
-    { id: 'webFlasher', label: 'Web flasher', test: (f) => f.capabilities?.operations?.webFlasher === true },
+    { id: 'webFlasher', label: m.fw_tog_web_flasher(), test: (f) => f.capabilities?.operations?.webFlasher === true },
     { id: 'mqtt', label: 'MQTT', test: (f) => f.capabilities?.networking?.mqtt === true },
-    { id: 'sensors', label: 'Sensors', test: (f) => f.capabilities?.hardware?.sensors === true },
-    { id: 'lowPowerRx', label: 'Low-power RX', test: (f) => f.capabilities?.hardware?.lowPowerRx === true },
+    { id: 'sensors', label: m.fw_tog_sensors(), test: (f) => f.capabilities?.hardware?.sensors === true },
+    { id: 'lowPowerRx', label: m.fw_tog_low_power_rx(), test: (f) => f.capabilities?.hardware?.lowPowerRx === true },
     { id: 'bleDfu', label: 'BLE DFU', test: (f) => f.capabilities?.operations?.bleDfu === true },
-    { id: 'configBackup', label: 'Config backup', test: (f) => f.capabilities?.operations?.configurationBackup === true }
+    { id: 'configBackup', label: m.fw_tog_config_backup(), test: (f) => f.capabilities?.operations?.configurationBackup === true }
   ];
 
   // Tally distinct values → [value, count], most common first.
@@ -216,21 +219,24 @@
 </script>
 
 <PageHeader collection="firmwares" subtitleClass="max-w-[60ch]">
-  The reference MeshCore build plus community forks and custom variants — with node roles and the
-  <a class="text-accent2 hover:underline" href="{base}/devices/">devices</a> they run on.
+  {#snippet actions()}
+    <ToolLink id="releases" to="/releases/?kind=firmware" />
+    <ToolLink id="matrix" />
+  {/snippet}
+  {@html m.fw_list_subtitle({ devices: devicesLink })}
 </PageHeader>
 
 <!-- Scope category — links so each view is its own prerendered, indexable route. -->
 <div class="mb-3 flex flex-wrap gap-1.5">
   <a
-    href="{base}/firmwares/"
+    href={href('/firmwares/')}
     class="rounded-md border px-2.5 py-1 text-[0.78rem] font-medium transition {activeScope === 'all'
       ? 'border-accent bg-accent/15 text-accent'
       : 'border-edge text-dim hover:text-ink'}"
-  >All <span class="text-dim">({firmwares.length})</span></a>
+  >{m.filter_all()} <span class="text-dim">({firmwares.length})</span></a>
   {#each SCOPE_ORDER as s (s)}
     <a
-      href="{base}/firmwares/{s}/"
+      href={href(`/firmwares/${s}/`)}
       class="rounded-md border px-2.5 py-1 text-[0.78rem] font-medium transition {activeScope === s
         ? 'border-accent bg-accent/15 text-accent'
         : 'border-edge text-dim hover:text-ink'}"
@@ -240,7 +246,7 @@
 
 <input
   type="search"
-  placeholder="Search firmwares, features, maintainers…"
+  placeholder={m.fw_list_search()}
   bind:value={query}
   class="w-full rounded-lg border border-edge bg-bg px-3 py-2.5 text-[0.95rem] outline-none focus:border-transparent focus:ring-2 focus:ring-accent"
 />
@@ -264,7 +270,7 @@
 
   {#if primaryToggles.length}
     <div class="flex flex-wrap items-start gap-x-3 gap-y-2">
-      <span class={rowLabel}>Has</span>
+      <span class={rowLabel}>{m.filter_has()}</span>
       <div class="flex flex-1 flex-wrap gap-1.5">
         {#each primaryToggles as t (t.id)}
           <Chip pressed={toggles[t.id]} onPressedChange={() => (toggles[t.id] = !toggles[t.id])}>{t.label}</Chip>
@@ -278,9 +284,9 @@
       class="flex items-center gap-1.5 text-[0.8rem] font-medium text-dim outline-none hover:text-ink"
     >
       <span class="inline-block transition-transform {advanced ? 'rotate-90' : ''}">▸</span>
-      Advanced filters
+      {m.filter_advanced()}
       {#if advancedActive && !advanced}
-        <span class="rounded-full bg-accent/15 px-1.5 text-[0.7rem] text-accent">active</span>
+        <span class="rounded-full bg-accent/15 px-1.5 text-[0.7rem] text-accent">{m.filter_active()}</span>
       {/if}
     </Collapsible.Trigger>
 
@@ -303,7 +309,7 @@
 
         {#if advancedToggles.length}
           <div class="flex flex-wrap items-start gap-x-3 gap-y-2">
-            <span class={rowLabel}>Has</span>
+            <span class={rowLabel}>{m.filter_has()}</span>
             <div class="flex flex-1 flex-wrap gap-1.5">
               {#each advancedToggles as t (t.id)}
                 <Chip pressed={toggles[t.id]} onPressedChange={() => (toggles[t.id] = !toggles[t.id])}>{t.label}</Chip>
@@ -319,22 +325,22 @@
 <div class="my-3 flex items-center gap-3 text-[0.85rem] text-dim">
   <span>{pluralize(filtered.length, 'firmware')}</span>
   {#if activeCount}
-    <Button variant="link" size="sm" class="px-0" onclick={clearAll}>Clear filters ({activeCount})</Button>
+    <Button variant="link" size="sm" class="px-0" onclick={clearAll}>{m.filter_clear({ count: activeCount })}</Button>
   {/if}
 </div>
 
 {#snippet fwCard(fw)}
   {@const licensing = licenseType(fw)}
-  <Card href="{base}/firmware/{fw.id}/" class="flex flex-col gap-2.5 p-[1.1rem]">
+  <Card href={href(`/firmware/${fw.id}/`)} class="flex flex-col gap-2.5 p-[1.1rem]">
     <div class="flex items-center justify-between gap-2">
       <div class="flex items-center gap-2">
         <span class="rounded-md px-2 py-0.5 text-[0.72rem] font-bold tracking-wide uppercase {TYPE_META[fw.type]?.tw}">
-          {TYPE_META[fw.type]?.label ?? fw.type}
+          {firmwareTypeLabel(fw.type)}
         </span>
         <Button
           variant=""
           size="none"
-          aria-label="Compare {fw.name}"
+          aria-label={m.aria_compare({ name: fw.name })}
           aria-pressed={$fwCompareIds.includes(fw.id)}
           onclick={(e) => {
             e.preventDefault();
@@ -347,12 +353,12 @@
             ? 'border-accent bg-accent text-bg'
             : 'border-edge text-dim opacity-0 group-hover:opacity-100 hover:text-ink'}"
         >
-          {$fwCompareIds.includes(fw.id) ? '✓ Compare' : '+ Compare'}
+          {$fwCompareIds.includes(fw.id) ? m.compare_on() : m.compare_off()}
         </Button>
       </div>
       {#if licensing}
         <span class="shrink-0 rounded-md px-1.5 py-0.5 text-[0.66rem] font-medium {LICENSE_TYPE_META[licensing]?.tw ?? ''}">
-          {LICENSE_TYPE_META[licensing]?.label ?? licensing}
+          {licenseTypeLabel(licensing)}
         </span>
       {/if}
     </div>
@@ -360,7 +366,7 @@
     <p class="line-clamp-3 text-[0.9rem] text-dim">{descriptionToPlain(fw.description)}</p>
     <div class="mt-auto flex flex-wrap gap-1.5">
       {#each fw.roles ?? [] as role}
-        <span class="rounded bg-elev2 px-2 py-0.5 text-[0.72rem] text-dim">{role}</span>
+        <span class="rounded bg-elev2 px-2 py-0.5 text-[0.72rem] text-dim">{nodeRoleLabel(role)}</span>
       {/each}
     </div>
     <!-- Popularity / freshness footer — mirrors the Software list layout:
@@ -404,7 +410,7 @@
   {#if filtered.length}
     {@render cardGrid(filtered)}
   {:else}
-    <p class="text-[0.9rem] text-dim">No firmwares match.</p>
+    <p class="text-[0.9rem] text-dim">{m.fw_list_empty()}</p>
   {/if}
 {:else}
   <div class="flex flex-col gap-9">
@@ -422,7 +428,7 @@
             {#each section.groups as group (group.label)}
               <div>
                 <h3 class="mb-2.5 text-[0.95rem] font-semibold text-ink/90">
-                  {group.label}
+                  {group.label === 'Other' ? m.misc_other() : group.label}
                   <span class="ml-1 text-[0.8rem] font-normal text-dim">{group.items.length}</span>
                 </h3>
                 {@render cardGrid(group.items)}
@@ -439,6 +445,6 @@
 
 <CompareBar
   count={$fwCompareIds.length}
-  href="{base}/compare-firmwares/?ids={$fwCompareIds.join(',')}"
+  href={href(`/compare-firmwares/?ids=${$fwCompareIds.join(',')}`)}
   onclear={clearFwCompare}
 />

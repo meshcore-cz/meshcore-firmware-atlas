@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-mg24",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Основна плата XIAO MG24 у парі із зовнішнім модулем SX1262 LoRa через SPI для збірок ZephCore MeshCore. MG24 забезпечує підтримку низькоспоживчого BLE та компактний форм-фактор XIAO для невеликих конфігурацій компаньйонів і репітерів.",
+      "sourceHash": "sha256:7a41a1abbde8492cce5274fe3c16087abc16a0a046798d87350b7ca64372baa2",
+      "generatedAt": "2026-06-27T15:16:28.995Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12696,
+      "promptTokens": 177,
+      "completionTokens": 823
+    }
+  }
+}

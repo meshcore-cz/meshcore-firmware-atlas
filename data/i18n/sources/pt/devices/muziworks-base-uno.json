@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-base-uno",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento compacta BASE System para nós Meshtastic de banda única, combinando um microcontrolador nRF52840 com SX1262 LoRa, pinos GPIO flexíveis, expansão QWIIC/STEMMA QT e um carregador compatível com entradas de bateria e energia solar.",
+      "sourceHash": "sha256:38a65e2c04702e199c97aa65a141478274fd71ee6e70accb9ecbcdeb0cb3dbeb",
+      "generatedAt": "2026-06-27T14:16:51.021Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16628,
+      "promptTokens": 179,
+      "completionTokens": 775
+    }
+  }
+}

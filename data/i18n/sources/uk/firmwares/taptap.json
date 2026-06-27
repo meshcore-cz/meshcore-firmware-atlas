@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/taptap",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Форк MeshCore для невеликих пристроїв у форм-факторі трекера, який додає шаблонні повідомлення, що викликаються кнопками, введення азбуки Морзе, звукові сповіщення та віддалені текстові команди для роботи без екрана.",
+      "sourceHash": "sha256:efbeea6d735bcb40f81a5012dd4fd999f7a3089da3f649e0e6b55bd741b4e500",
+      "generatedAt": "2026-06-27T15:42:26.358Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6657,
+      "promptTokens": 159,
+      "completionTokens": 1110
+    },
+    "features": {
+      "value": "[\"Шаблонні повідомлення, що викликаються кнопками\",\"Введення повідомлень азбукою Морзе\",\"Сигнали зумера RTTTL та CW\",\"Віддалені команди каналу\"]",
+      "sourceHash": "sha256:b586165700f3c36f983411588c1550ccbe24a85ea6cc9ace14c41c6a86e88cd3",
+      "generatedAt": "2026-06-27T15:42:34.132Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7773,
+      "promptTokens": 154,
+      "completionTokens": 1350
+    }
+  }
+}

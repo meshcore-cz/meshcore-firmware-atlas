@@ -1,0 +1,51 @@
+{
+  "resource": "software/nrf-dfu-py",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Tiện ích Python đa nền tảng với giao diện đồ họa và dòng lệnh để cập nhật thiết bị Nordic nRF51/nRF52 qua Bluetooth bằng DFU không nút bấm và Legacy DFU, cho phép cấu hình tính năng quét, thử lại, xác nhận gói tin và MTU.",
+      "sourceHash": "sha256:acab1233e668eee8f5ccae88b333d54c9bb59b7b812a8f0309b2cd859967f521",
+      "generatedAt": "2026-06-27T16:34:57.333Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13503,
+      "promptTokens": 173,
+      "completionTokens": 749
+    },
+    "tags": {
+      "value": "[\"bluetooth-dfu\",\"nrf52\",\"đa nền tảng\",\"máy tính để bàn\"]",
+      "sourceHash": "sha256:65da5596fa2c999030e6e51fa382102081304ba3f37fe85a03e1e294d6d10814",
+      "generatedAt": "2026-06-27T16:35:04.400Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7066,
+      "promptTokens": 144,
+      "completionTokens": 1164
+    },
+    "verificationNotes.supports-nordic-legacy-dfu-only-secure-dfu-is-no": {
+      "value": "Chỉ hỗ trợ Nordic Legacy DFU; không hỗ trợ Secure DFU.",
+      "sourceHash": "sha256:aac1ba3229f2e4a3af39d7a55d02f4345a76240376dbb151e0877b62c3655118",
+      "generatedAt": "2026-06-27T16:35:07.103Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2701,
+      "promptTokens": 144,
+      "completionTokens": 361
+    },
+    "verificationNotes.ci-publishes-standalone-gui-builds-for-windows-l": {
+      "value": "Hệ thống CI phát hành các bản dựng GUI độc lập cho Windows, Linux x64/ARM64 và macOS Intel/Apple Silicon.",
+      "sourceHash": "sha256:3d6f4e785248cae3ee7f7515b2d260d244d778c26a15f238faedea1c64b84464",
+      "generatedAt": "2026-06-27T16:35:15.095Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7992,
+      "promptTokens": 151,
+      "completionTokens": 731
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Kho lưu trữ hiện chưa khai báo giấy phép SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:35:21.920Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6824,
+      "promptTokens": 139,
+      "completionTokens": 412
+    }
+  }
+}

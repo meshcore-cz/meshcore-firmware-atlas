@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/heltec",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nhà sản xuất bo mạch phát triển LoRa ESP32 và nRF52 với mức giá phải chăng, được sử dụng rộng rãi trong hệ sinh thái MeshCore.",
+      "sourceHash": "sha256:4bb0b581b811c99357fc4eaa84bcb89467bf43be698e112b0e608f8d0797a20a",
+      "generatedAt": "2026-06-27T16:43:05.462Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4338,
+      "promptTokens": 150,
+      "completionTokens": 550
+    }
+  }
+}

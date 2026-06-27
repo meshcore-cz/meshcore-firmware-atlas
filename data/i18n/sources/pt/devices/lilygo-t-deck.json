@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-deck",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dispositivo portátil Pocket Meshtastic/MeshCore equipado com ESP32-S3, SX1262 LoRa opcional, ecrã IPS de 2,8 polegadas, teclado QWERTY mini e trackball. Microfone e altifalante integrados para mensagens e interface de utilizador autónomas. Conectividade Wi-Fi e BLE; sem GPS integrado (módulo externo opcional).",
+      "sourceHash": "sha256:b85d5af62aaa694c494dff22522e4aa7f260a76fb0853882f0f384cc39205898",
+      "generatedAt": "2026-06-27T14:11:30.875Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 32083,
+      "promptTokens": 194,
+      "completionTokens": 1316
+    }
+  }
+}

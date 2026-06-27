@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-email-gateway",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Obousměrná brána mezi běžným e-mailem přes SMTP/IMAP a přímými zprávami MeshCore s rádiovým připojením přes BLE, sériovou linku nebo TCP, API pro správu, aktuálními informacemi o stavu a volitelným webovým rozhraním.",
+      "sourceHash": "sha256:9e9b7bf0a9ca5eb45deacaf3723436304c86cd18292d0f1ae920e8dc4a5318e6",
+      "generatedAt": "2026-06-27T11:31:37.199Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11404,
+      "promptTokens": 167,
+      "completionTokens": 1805
+    },
+    "verificationNotes.email-delivery-requires-operator-supplied-smtp-a": {
+      "value": "Doručování e-mailů vyžaduje přihlašovací údaje k SMTP a IMAP, které poskytuje operátor.",
+      "sourceHash": "sha256:2c23ce5df56a87da5f7fe0e9b118012bdb991ae7937bdd7d435e956f2f2b7844",
+      "generatedAt": "2026-06-27T11:31:44.305Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7106,
+      "promptTokens": 141,
+      "completionTokens": 664
+    },
+    "verificationNotes.runs-in-simulation-mode-when-the-meshcore-python": {
+      "value": "Běží v simulačním režimu, pokud není k dispozici balíček MeshCore pro Python.",
+      "sourceHash": "sha256:1996a5b76d8f8de2890ac0719a35c7ae1c10d8ac76918bf3526aa376bfbfbd78",
+      "generatedAt": "2026-06-27T11:31:49.705Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5399,
+      "promptTokens": 142,
+      "completionTokens": 659
+    },
+    "tags": {
+      "value": "[\"e-mail\",\"SMTP\",\"IMAP\",\"vlastní hosting\"]",
+      "sourceHash": "sha256:47053f0dfc3e8225bc02b3e0db8da2bd81e2301b1a11d52ecf021b2ad908aa7f",
+      "generatedAt": "2026-06-27T13:40:56.909Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6371,
+      "promptTokens": 140,
+      "completionTokens": 162
+    }
+  }
+}

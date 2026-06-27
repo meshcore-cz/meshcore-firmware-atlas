@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-deck-community",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản dựng firmware cộng đồng cho thiết bị cầm tay LilyGo T-Deck, kế thừa ESP32-S3, SX1262, màn hình IPS 2.8-inch và bố cục bàn phím/trackball giống hệt phiên bản T-Deck bán lẻ.",
+      "sourceHash": "sha256:d55e78ec72e9037f2daa0333105f2b7d4b237c8eb6d038e2d8bca7a21e52a233",
+      "generatedAt": "2026-06-27T15:37:01.577Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9075,
+      "promptTokens": 175,
+      "completionTokens": 1521
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/atl-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tại khu vực đô thị Atlanta, Georgia, chuyên xây dựng hệ thống liên lạc mạng lưới off-grid trên khắp thành phố và các quận, huyện lân cận.",
+      "sourceHash": "sha256:b627042bcd44a8c21ea12b55e466fe874c704ba02dbefbfb635bb7150c05fdf5",
+      "generatedAt": "2026-06-27T16:44:28.614Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6079,
+      "promptTokens": 150,
+      "completionTokens": 1040
+    }
+  }
+}

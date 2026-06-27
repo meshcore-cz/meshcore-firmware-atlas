@@ -1,0 +1,15 @@
+{
+  "resource": "network/saarland-luxembourg-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Трансгранична мережа MeshCore, що охоплює німецький Саарланд та сусідній Люксембург, з понад 690 вузлами в районі Мерцига, Саарбрюкена та Мамера. Використовує пресет EU/UK Narrow у діапазоні 868 МГц із виділеним аналізатором CoreScope.",
+      "sourceHash": "sha256:1e90ca1a0b6ef8b73142ded381f0c3489f03e264ea7e0818f306544ae2387b9e",
+      "generatedAt": "2026-06-27T16:58:10.165Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4832,
+      "promptTokens": 184,
+      "completionTokens": 983
+    }
+  }
+}

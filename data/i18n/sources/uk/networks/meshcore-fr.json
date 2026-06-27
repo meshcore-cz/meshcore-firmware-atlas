@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-fr",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Французька спільнота MeshCore створена для розбудови автономної LoRa-мережі дальнього радіусу дії по всій Франції. Вона використовує профіль 869.618 МГц, сумісний з EU/UK Narrow, і пропонує публічні інструкції з налаштування, координацію через Discord, а також локальну активність у Ліоні та Лор'яні/Захід.",
+      "sourceHash": "sha256:c703a92cca19b640bdbb85ab959bc0c7b244034cef5a47ef088d99e034e3f337",
+      "generatedAt": "2026-06-27T16:50:26.291Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6835,
+      "promptTokens": 175,
+      "completionTokens": 1183
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/lilygo",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Виробник інтегрованих портативних LoRa-пристроїв та плат для розробки (T-Beam, T-Deck, T-Echo, …).",
+      "sourceHash": "sha256:716350345c2e626648e7bd92b3edce755a6b5214af0a309ad6d8bc6f77a371b2",
+      "generatedAt": "2026-06-27T16:45:02.712Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11688,
+      "promptTokens": 154,
+      "completionTokens": 947
+    }
+  }
+}

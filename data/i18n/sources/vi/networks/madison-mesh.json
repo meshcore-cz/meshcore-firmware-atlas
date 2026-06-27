@@ -1,0 +1,15 @@
+{
+  "resource": "network/madison-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới vô tuyến do cộng đồng quản lý tại Madison, Wisconsin, tập trung chủ yếu vào MeshCore và đồng thời hỗ trợ Meshtastic. Những người đam mê tại địa phương xây dựng và vận hành các nút mạng ngoài lưới trên khắp khu vực Madison, chia sẻ hướng dẫn thiết lập, bản đồ trực tuyến và điều phối qua Discord.",
+      "sourceHash": "sha256:0144a3ecaf6314c02e2700d1a5272a2ecb07e4647f39d9b0c8c09d8eb4533a6c",
+      "generatedAt": "2026-06-27T16:50:02.106Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6434,
+      "promptTokens": 176,
+      "completionTokens": 1156
+    }
+  }
+}

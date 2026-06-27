@@ -1,0 +1,15 @@
+{
+  "resource": "device/uart-solar-node-station",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó solar exterior Meshtastic/MeshCore totalmente montado, baseado na placa-base μArt Solar Mesh (RAK4630, firmware compatível com RAK4631). Acompanha um painel de 10 W e bateria incluída; entrada solar MPPT de 7–30 V.",
+      "sourceHash": "sha256:9309653a356e2aa3d6d2453b6d4e397881e866b592acd3397e3bab199bc9511a",
+      "generatedAt": "2026-06-27T14:21:34.695Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3378,
+      "promptTokens": 185,
+      "completionTokens": 1014
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "resource": "software/wireshark-meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Wireshark dissektor protokolu v jazyce Lua a konvertor v Pythonu bez závislostí pro převod rádiových logů MeshCore z formátu JSON do záznamů pcapng se stromy paketů, rádiovými metadaty, zobrazovacími filtry a podporou tshark.",
+      "sourceHash": "sha256:55c12badd1da47c442583ed9cfa2eb0d173b1f74159681a6d1f7c3fff68edd3a",
+      "generatedAt": "2026-06-27T11:56:58.092Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11143,
+      "promptTokens": 167,
+      "completionTokens": 1451
+    },
+    "screenshots.packet-tree.png.caption": {
+      "value": "Strom paketů MeshCore a dešifrovaná skupinová zpráva",
+      "sourceHash": "sha256:af82484a2bb055ee85b6cb1d99691641d5e4bb1c40061de0815e04b7648425b5",
+      "generatedAt": "2026-06-27T11:57:01.361Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3264,
+      "promptTokens": 137,
+      "completionTokens": 210
+    },
+    "screenshots.io-graph.png.caption": {
+      "value": "Provoz MeshCore vizualizovaný pomocí I/O grafů Wiresharku",
+      "sourceHash": "sha256:ddcc333c21f64dc0bfafbbe097ca9bfa54267bf7ffbf19bcf960943beb7753d8",
+      "generatedAt": "2026-06-27T11:57:07.627Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6266,
+      "promptTokens": 141,
+      "completionTokens": 699
+    },
+    "verificationNotes.the-converter-currently-uses-temporary-dlt-user0": {
+      "value": "Převodník v současné době používá dočasný typ linkové vrstvy DLT_USER0 s hodnotou 147. Pokud bude přiřazen registrovaný LINKTYPE, bude nutné zachycené záznamy znovu vygenerovat.",
+      "sourceHash": "sha256:c51b061d456021064ef4c064c38f470b610621a986036a693a957369b6771780",
+      "generatedAt": "2026-06-27T11:57:17.893Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10266,
+      "promptTokens": 156,
+      "completionTokens": 1365
+    },
+    "verificationNotes.the-converter-requires-python-3-6-and-has-no-ext": {
+      "value": "Konvertor vyžaduje Python 3.6+ a nemá žádné externí běhové závislosti.",
+      "sourceHash": "sha256:f17aa953ada7f04ecb1f20d7427adc98f52c2d64c44460912426f390573e91a6",
+      "generatedAt": "2026-06-27T11:57:23.606Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5712,
+      "promptTokens": 145,
+      "completionTokens": 728
+    },
+    "tags": {
+      "value": "[\"wireshark\",\"pcapng\",\"dissektor\",\"analýza protokolů\"]",
+      "sourceHash": "sha256:95381dfe497f9aac54c557c10e81bcf53133e6b43abb02a9aba43642ae7e87e1",
+      "generatedAt": "2026-06-27T13:51:15.085Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4839,
+      "promptTokens": 144,
+      "completionTokens": 263
+    }
+  }
+}

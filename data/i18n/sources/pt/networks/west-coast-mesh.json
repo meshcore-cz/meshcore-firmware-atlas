@@ -1,0 +1,15 @@
+{
+  "resource": "network/west-coast-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Hub comunitário que constrói a maior rede mesh descentralizada da Costa Oeste usando o MeshCore. Rede fornecida pelos usuários que abrange a Califórnia, o Oregon e Washington, voltada para comunicações off-grid, resposta a emergências, atividades ao ar livre e redes de sensores IoT na banda de 915 MHz dos EUA.",
+      "sourceHash": "sha256:b21c6c54c8425fcad4e74c50e51d75687486273ee05bb2f2766be0eb2baf8524",
+      "generatedAt": "2026-06-27T14:50:02.829Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4135,
+      "promptTokens": 177,
+      "completionTokens": 1200
+    }
+  }
+}

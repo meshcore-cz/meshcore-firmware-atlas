@@ -6,6 +6,8 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { load } from 'js-yaml';
 import Ajv from 'ajv/dist/2020.js';
+import { validateRouteSlugs } from './route-slugs.js';
+import { validateAllTranslationSources } from './catalog-i18n/build-overlays.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ajv = new Ajv({ allErrors: true });
@@ -330,6 +332,9 @@ for (const c of compatibility) {
     err(c.where, `device "${c.deviceId}" is not listed in firmware "${c.firmwareId}" devices`);
   }
 }
+
+validateRouteSlugs(err);
+validateAllTranslationSources(root, err);
 
 if (errors.length) {
   console.error(`✗ ${errors.length} validation error(s):\n`);

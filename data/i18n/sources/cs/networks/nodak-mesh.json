@@ -1,0 +1,15 @@
+{
+  "resource": "network/nodak-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní mesh síť budující v celé Severní Dakotě odolnou infrastrukturu pro komunikaci nezávislou na běžné síti pomocí MeshCore a Meshtastic. Aktivní členové působí ve městech Fargo, Bismarck, Grand Forks, Minot a v venkovských oblastech. Provoz běží na předvolbě USA/Kanada 915 MHz s veřejným kanálem #nodakmesh.",
+      "sourceHash": "sha256:8944e902331fe40b1429a6868c9f55d84e41bbfcea3d4affe1d990146a889d3a",
+      "generatedAt": "2026-06-27T12:09:44.912Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16913,
+      "promptTokens": 190,
+      "completionTokens": 1829
+    }
+  }
+}

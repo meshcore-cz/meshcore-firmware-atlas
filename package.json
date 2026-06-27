@@ -13,6 +13,7 @@
     "import:presets": "node scripts/check-app-presets.js --import",
     "enrich:firmwares": "node scripts/enrich-firmwares.js",
     "enrich:contributors": "node scripts/enrich-contributors.js",
+    "enrich:avatars": "node scripts/download-avatars.js",
     "predev": "node scripts/build-data.js",
     "dev": "vite dev",
     "prebuild": "node scripts/build-data.js && node scripts/build-og.js",
@@ -20,13 +21,17 @@
     "postbuild": "node scripts/build-schemas.js",
     "preview": "vite preview",
     "validate": "node scripts/validate.js",
-    "test": "node scripts/validate.js"
+    "test": "node scripts/check-locales.js && node scripts/validate.js && node scripts/catalog-i18n/test.js",
+    "i18n:translate": "node scripts/catalog-i18n/translate.js",
+    "i18n:translate:test": "node scripts/catalog-i18n/translate-test.js",
+    "i18n:status": "node scripts/catalog-i18n/status.js"
   },
   "devDependencies": {
     "@fontsource/inter": "^5.2.8",
     "@iconify-json/lucide": "^1.2.114",
     "@iconify-json/simple-icons": "^1.2.87",
     "@iconify/utils": "^3.1.3",
+    "@inlang/paraglide-js": "^2.20.2",
     "@resvg/resvg-js": "^2.6.2",
     "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/kit": "^2.66.0",

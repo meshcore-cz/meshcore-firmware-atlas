@@ -1,0 +1,15 @@
+{
+  "resource": "network/lehigh-valley-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore no Vale Lehigh e na região mais ampla do leste da Pensilvânia, atendida por um analisador CoreScope público em map.lvmesh.com.",
+      "sourceHash": "sha256:56e1b99a43fe6cc25d01abe8ad2257fc708418d260007b41836a6f795d9b45bd",
+      "generatedAt": "2026-06-27T14:47:01.183Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2525,
+      "promptTokens": 157,
+      "completionTokens": 647
+    }
+  }
+}

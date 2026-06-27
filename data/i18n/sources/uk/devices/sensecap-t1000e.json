@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-t1000e",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактний трекер розміром з кредитну картку для Meshtastic/MeshCore на базі nRF52840, Semtech LR1110 LoRa (863–928 МГц) та MediaTek AG3335 GNSS. Вбудований акумулятор на 700 мА·год, датчики температури та освітленості, зумер і корпус із захистом IP65. Заряджається через комплектний магнітний USB-кабель; налаштування лише через BLE — без дисплея та Wi-Fi.",
+      "sourceHash": "sha256:b49e74e8d3e4a580821d76935e3b4c145622ae37154225e28754743a5e413ce2",
+      "generatedAt": "2026-06-27T15:13:40.606Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4889,
+      "promptTokens": 207,
+      "completionTokens": 258
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tdeck-max",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативний пристрій ESP32-S3 на базі платформи T-Deck Pro оснащено SX1262 LoRa, 3.1-дюймовим дисплеєм e-paper, QWERTY-клавіатурою, GNSS, аудіо, підтримкою 4G-модулів та акумулятором підвищеної ємності. Призначений для мобільного зв'язку MeshCore та IoT.",
+      "sourceHash": "sha256:416caa8b93de794d92fe9e9d053fe83f34c6046ab316b6b0a56570bfa727374f",
+      "generatedAt": "2026-06-27T14:59:13.069Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4172,
+      "promptTokens": 190,
+      "completionTokens": 1197
+    }
+  }
+}

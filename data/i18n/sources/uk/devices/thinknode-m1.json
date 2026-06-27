@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m1",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативний трансивер Meshtastic/MeshCore на базі nRF52840 + SX1262 з 1,54-дюймовим E-Paper-дисплеєм, фронтальним підсвічуванням, GPS, RTC, зумером і акумулятором на 1200 мА·год. Постачається в корпусі з ABS+PC із LoRa-антеною з роз'ємом RP-SMA та портом USB-C для заряджання та програмування.",
+      "sourceHash": "sha256:39e99825c1389fc4f9833b0df874d4215c09f9531a71d1ed89e325f3e6da76d7",
+      "generatedAt": "2026-06-27T14:56:07.154Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4241,
+      "promptTokens": 199,
+      "completionTokens": 1252
+    }
+  }
+}

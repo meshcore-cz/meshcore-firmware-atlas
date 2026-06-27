@@ -1,0 +1,33 @@
+{
+  "resource": "software/pymeshcore-gui",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Експериментальний кросплатформний десктопний Qt-клієнт, створений за допомогою PySide6 та meshcore-py, орієнтований на чат MeshCore, прототипування та розширюваний процес розробки з відкритим кодом.",
+      "sourceHash": "sha256:b511a4bd27d32abda5c61a7de848591d5af8d6f282ef0ecdd229dcae8cdccecf",
+      "generatedAt": "2026-06-27T16:33:49.789Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5941,
+      "promptTokens": 163,
+      "completionTokens": 1157
+    },
+    "tags": {
+      "value": "[\"qt\",\"pyside6\",\"настільний\",\"експериментальний\"]",
+      "sourceHash": "sha256:4b7aac97761cbf530c1106bf29e716bb4e52d5b94c4e74c61b9919ebf2723d6d",
+      "generatedAt": "2026-06-27T16:33:56.611Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6822,
+      "promptTokens": 141,
+      "completionTokens": 779
+    },
+    "verificationNotes.the-project-explicitly-describes-itself-as-an-ea": {
+      "value": "Проєкт чітко зазначає, що це рання експериментальна версія, API та внутрішня структура якої є нестабільними.",
+      "sourceHash": "sha256:3a6150ae79fc20e196a4d1c01d94d1b9ec0f7ef55c75323f8256526fd1bb75ea",
+      "generatedAt": "2026-06-27T16:34:17.604Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20992,
+      "promptTokens": 146,
+      "completionTokens": 1110
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshpkt",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kodek v čistém Go pro přenosový formát rádiových paketů MeshCore, který poskytuje validaci paketů, kódování a dekódování datové zátěže, kryptografii identit kompatibilní s firmwarem, rozšiřitelné rozesílání a TypeScriptové vazby využívající WASM.",
+      "sourceHash": "sha256:30214fb25bdad66a213335ed8e92ffff62eca605efe4f89c07c1fba3dff75a46",
+      "generatedAt": "2026-06-27T11:46:24.895Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10281,
+      "promptTokens": 166,
+      "completionTokens": 1163
+    },
+    "verificationNotes.the-project-is-pre-1-0-and-recommends-pinning-a-": {
+      "value": "Projekt ještě nedosáhl verze 1.0 a pro produkční nasazení doporučuje uzamknout konkrétní verzi.",
+      "sourceHash": "sha256:2721583c225a7231bee1b4b24b5b637eb071d387599538788c11c53efb037850",
+      "generatedAt": "2026-06-27T11:46:34.050Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9154,
+      "promptTokens": 148,
+      "completionTokens": 956
+    },
+    "verificationNotes.the-npm-package-declares-mit-the-repository-root": {
+      "value": "Balíček npm uvádí licenci MIT; kořen repozitáře při kontrole neobsahoval žádný samostatný soubor s licencí.",
+      "sourceHash": "sha256:1d5c7154876c140c361e23f49d0e144ae591145ea203a1bbddd0ac4d5922040a",
+      "generatedAt": "2026-06-27T11:46:41.974Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7924,
+      "promptTokens": 146,
+      "completionTokens": 913
+    },
+    "tags": {
+      "value": "[\"SDK\", \"protokol\", \"kodek\", \"kryptografie\", \"WASM\"]",
+      "sourceHash": "sha256:f4f63821e080c7ea1818e13a5e395d421f9aa979a111da54d05ed7c6ee8ba080",
+      "generatedAt": "2026-06-27T13:47:16.785Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19708,
+      "promptTokens": 142,
+      "completionTokens": 597
+    }
+  }
+}

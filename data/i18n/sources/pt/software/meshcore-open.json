@@ -1,0 +1,87 @@
+{
+  "resource": "software/meshcore-open",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Cliente Flutter multiplataforma para Meshcore com mensagens criptografadas, contatos, canais, mapas offline, configuração de nós e administração remota de repetidores via Bluetooth, USB ou TCP.",
+      "sourceHash": "sha256:86553be538e69d495d6887a945d4b645ba893e7361cde0c5196a4b95446c72df",
+      "generatedAt": "2026-06-27T14:34:46.103Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4383,
+      "promptTokens": 161,
+      "completionTokens": 476
+    },
+    "screenshots.contacts.jpg.caption": {
+      "value": "Contatos e nós de malha próximos",
+      "sourceHash": "sha256:0188a73862f377b4e98b401d58ddbf3da168ed9b09b83ce6b32a96a76c8a5497",
+      "generatedAt": "2026-06-27T14:34:48.762Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2659,
+      "promptTokens": 134,
+      "completionTokens": 631
+    },
+    "screenshots.chat.jpg.caption": {
+      "value": "Mensagens diretas criptografadas",
+      "sourceHash": "sha256:f7a506a0dd7aa910aaa85ba60676f98ae484042ff3b925d1c03ab6a7e2fcbefd",
+      "generatedAt": "2026-06-27T14:34:50.449Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1687,
+      "promptTokens": 133,
+      "completionTokens": 363
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Mapa de malha em tempo real e visualização de rotas",
+      "sourceHash": "sha256:880cfca081c279a8a310f906c2daedd5f092cc0a8ce008f3df7f240073742e3b",
+      "generatedAt": "2026-06-27T14:34:52.501Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2051,
+      "promptTokens": 135,
+      "completionTokens": 482
+    },
+    "screenshots.channels.jpg.caption": {
+      "value": "Mensagens em canais públicos",
+      "sourceHash": "sha256:0524de9da954dc8d69c0c05ff16f38137fb1a475337d2a7f7d5ae112b9db916e",
+      "generatedAt": "2026-06-27T14:34:54.170Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1668,
+      "promptTokens": 132,
+      "completionTokens": 344
+    },
+    "tags": {
+      "value": "[\"flutter\",\"offline\",\"multiplataforma\"]",
+      "sourceHash": "sha256:cb14b62322a4ac0907593c4bb1200390fbfac8cc7b8319d82845362ed71a77cd",
+      "generatedAt": "2026-06-27T14:34:56.294Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2124,
+      "promptTokens": 137,
+      "completionTokens": 486
+    },
+    "verificationNotes.ios-currently-supports-ble-usb-and-tcp-companion": {
+      "value": "Atualmente, o iOS oferece suporte a BLE; as conexões complementares via USB e TCP ainda estão em desenvolvimento.",
+      "sourceHash": "sha256:e4f6c9dcb7b1bfc20094e10b61cdc427a5478d0eca160bdbbe6ffbda7443f5a7",
+      "generatedAt": "2026-06-27T14:34:58.581Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2287,
+      "promptTokens": 144,
+      "completionTokens": 480
+    },
+    "verificationNotes.browser-node-connections-require-chromium-with-w": {
+      "value": "As conexões de nó do navegador exigem o Chromium com suporte a Web Bluetooth ou Web Serial.",
+      "sourceHash": "sha256:c512e82f57307b956d06e4b78cdf0a9a9016f89cb7803bd370a28326c5fe2870",
+      "generatedAt": "2026-06-27T14:35:01.028Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2447,
+      "promptTokens": 142,
+      "completionTokens": 609
+    },
+    "verificationNotes.over-the-air-firmware-updates-are-listed-on-the-": {
+      "value": "As atualizações de firmware over-the-air estão previstas no roadmap do projeto e ainda não estão disponíveis.",
+      "sourceHash": "sha256:95e6587bf98fee1d3664d79bd093dacdf5e33f92c9400cb3586bc737e22f8ae3",
+      "generatedAt": "2026-06-27T14:35:04.229Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3201,
+      "promptTokens": 146,
+      "completionTokens": 774
+    }
+  }
+}

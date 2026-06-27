@@ -1,0 +1,15 @@
+{
+  "resource": "network/eastmesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore comunitária para o sudeste da Austrália, com base em Victoria e interligada por NSW/ACT/Tasmânia. Oferece suporte a mensagens off-grid, resposta a emergências, uso externo e infraestrutura mesh, além de contar com um mapa público, wiki, Discord, instância do CoreScope e compilações de firmware EastMesh.",
+      "sourceHash": "sha256:461392dfa711fb9568eaace5efa7c7a3457b9265e0fcf78fe432f38026d6977d",
+      "generatedAt": "2026-06-27T14:46:05.152Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3945,
+      "promptTokens": 181,
+      "completionTokens": 1103
+    }
+  }
+}

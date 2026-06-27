@@ -1,0 +1,15 @@
+{
+  "resource": "network/vietnam-narrow",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cài đặt trước radio chính thức của ứng dụng MeshCore — 920.250MHz / SF8 / BW62.5 / CR5.",
+      "sourceHash": "sha256:c38607af2c894ef682c09886cd7a374a43f20c283d5cadb1b33835b96877c7f0",
+      "generatedAt": "2026-06-27T16:55:22.080Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5285,
+      "promptTokens": 154,
+      "completionTokens": 615
+    }
+  }
+}

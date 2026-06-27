@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-drone-updater",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Автоматизований сервіс Raspberry Pi для оновлення фізично недоступних вузлів MeshCore на базі nRF52 через Bluetooth DFU, призначений для обслуговування обладнання на дахах та вежах під час проїзду або за допомогою дронів.",
+      "sourceHash": "sha256:3534430a60ab7a1b54c81e021a5c2030c3213c16c30703289f2babc86744eb90",
+      "generatedAt": "2026-06-27T15:49:18.141Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9364,
+      "promptTokens": 163,
+      "completionTokens": 1259
+    },
+    "tags": {
+      "value": "[\"безпілотник\",\"bluetooth-dfu\",\"nrf52\",\"автономний\",\"польове-обслуговування\"]",
+      "sourceHash": "sha256:f9396fb8acc0bd2fa06c40de235a282f70115fdbba92487fc042415af0bc4b6e",
+      "generatedAt": "2026-06-27T15:49:23.281Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5140,
+      "promptTokens": 149,
+      "completionTokens": 923
+    },
+    "verificationNotes.supports-nrf52-devices-that-expose-bluetooth-dfu": {
+      "value": "Підтримує пристрої nRF52, які надають доступ до режиму Bluetooth DFU, і покладається на файли прив'язки пристроїв до мікропрограм, що підтримуються оператором.",
+      "sourceHash": "sha256:02a7ea970ddb0d0b99d848c8318e0b8c2a603c1e1fd9d1a401fdd1cd16852273",
+      "generatedAt": "2026-06-27T15:49:31.108Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7825,
+      "promptTokens": 155,
+      "completionTokens": 1032
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "У репозиторії наразі не вказано ліцензію SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T15:49:37.328Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6220,
+      "promptTokens": 139,
+      "completionTokens": 576
+    }
+  }
+}

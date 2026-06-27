@@ -1,0 +1,12 @@
+{
+  "resource": "device/thinknode-m2",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní LoRa transceiver Meshtastic/MeshCore s ESP32-S3, SX1262 a 1,3palcovým OLED stavovým displejem. Vestavěná baterie 1000 mAh, nabíjení přes USB-C, Wi-Fi a BLE. Dodává se v ABS krytu a s externí LoRa anténou připojenou přes interní IPEX konektor. Předinstalováno pro Meshtastic; bez GPS.",
+      "sourceHash": "sha256:bf2c9723db9873636ebe8cd8bd62c291e5a07287a2e6dc7063797b4aeb9333be",
+      "generatedAt": "2026-06-27T10:43:55.291Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

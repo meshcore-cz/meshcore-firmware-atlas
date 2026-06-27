@@ -1,0 +1,114 @@
+{
+  "resource": "software/meshcore-insights",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Desktopový panel MeshCore s připojením přes USB a BLE, mapami v reálném čase, zasíláním zpráv, analýzou uzlů a telemetrie, offline mapovými dlaždicemi, vzdálenou správou a konzolí nezpracovaných událostí.",
+      "sourceHash": "sha256:8c2dc40eb15ae92a4c41e57accfac42d8bc1fd50121d6081143dca76f9cff7a3",
+      "generatedAt": "2026-06-27T11:32:52.625Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6086,
+      "promptTokens": 161,
+      "completionTokens": 811
+    },
+    "screenshots.screenshot-1.png.caption": {
+      "value": "Mapa uzlů v reálném čase a prohledávatelný seznam mesh uzlů",
+      "sourceHash": "sha256:9cd8250a89cc4279dd0839b28732986ee42a53fc862e23e1ed865b6d1dd241c3",
+      "generatedAt": "2026-06-27T11:32:58.167Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5541,
+      "promptTokens": 137,
+      "completionTokens": 781
+    },
+    "screenshots.screenshot-2.png.caption": {
+      "value": "Kontextová nabídka uzlu s akcemi pro zasílání zpráv a analýzu.",
+      "sourceHash": "sha256:3ce068b83cb77ec1e5de6018da0de4475caf6f278de2db25ec36b579fe29270b",
+      "generatedAt": "2026-06-27T11:33:02.158Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3991,
+      "promptTokens": 137,
+      "completionTokens": 521
+    },
+    "screenshots.screenshot-3.png.caption": {
+      "value": "Komunikace napříč kanály s vizualizací tras směrování",
+      "sourceHash": "sha256:a8496be5ef2a5d76fa196af94a5046c010ad4542e24691ef27c895ee20d2f057",
+      "generatedAt": "2026-06-27T11:33:08.203Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6044,
+      "promptTokens": 135,
+      "completionTokens": 774
+    },
+    "screenshots.screenshot-4.png.caption": {
+      "value": "Vyskakovací okno mapy kontaktů a linie tras sítě",
+      "sourceHash": "sha256:55a0565f6a40888edaf63885ecc2c4b50fcd0ed7938b3d7a5f52882eccf77940",
+      "generatedAt": "2026-06-27T11:33:12.895Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4692,
+      "promptTokens": 136,
+      "completionTokens": 565
+    },
+    "screenshots.screenshot-5.png.caption": {
+      "value": "Stahovač offline mapových dlaždic",
+      "sourceHash": "sha256:9f8b7dc8d47608b23a955d5877a6a0f66bd75cb815e93651f1be0f26a2cbdac8",
+      "generatedAt": "2026-06-27T11:33:15.666Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2771,
+      "promptTokens": 133,
+      "completionTokens": 261
+    },
+    "screenshots.screenshot-6.png.caption": {
+      "value": "Nástroje pro stav uzlů, telemetrii a analýzu",
+      "sourceHash": "sha256:2b4ff8525cc4e434c8ba0cd64f914e9f43bf0d6828fd4c19be3b3f842345e874",
+      "generatedAt": "2026-06-27T11:33:22.838Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7171,
+      "promptTokens": 136,
+      "completionTokens": 981
+    },
+    "screenshots.screenshot-7.png.caption": {
+      "value": "Správa vzdálených uzlů a odpovědi na příkazy",
+      "sourceHash": "sha256:68ab47d4ae7727b0a4212b44c1b1e0214a7328efa86f0eea53da68f40d471c80",
+      "generatedAt": "2026-06-27T11:33:27.242Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4404,
+      "promptTokens": 135,
+      "completionTokens": 461
+    },
+    "screenshots.screenshot-8.png.caption": {
+      "value": "Konzole nezpracovaných událostí MeshCore",
+      "sourceHash": "sha256:7802c399265233b2adcbd089ba501c6d11db4107343404508a900e8e48adbedb",
+      "generatedAt": "2026-06-27T11:33:30.191Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2948,
+      "promptTokens": 134,
+      "completionTokens": 258
+    },
+    "verificationNotes.the-compiled-demo-runs-for-ten-minutes-the-proje": {
+      "value": "Zkompilované demo běží deset minut; projekt uvádí, že je k dispozici bezplatný odemykací kód.",
+      "sourceHash": "sha256:d1d6191a14c00d54d83c0aa99952905ad4701117b46143c5d253316853d789f6",
+      "generatedAt": "2026-06-27T11:33:37.330Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7139,
+      "promptTokens": 148,
+      "completionTokens": 1039
+    },
+    "verificationNotes.a-dedicated-user-manual-is-bundled-inside-the-co": {
+      "value": "Uživatelská příručka je součástí kompilovaného vydání, namísto samostatného zveřejnění online.",
+      "sourceHash": "sha256:54602b83c34e38f75c7547ccb764c7e18151019d37e0cee005a920c52f04cd0d",
+      "generatedAt": "2026-06-27T11:33:46.877Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9547,
+      "promptTokens": 145,
+      "completionTokens": 1325
+    },
+    "tags": {
+      "value": "[\"desktop\",\"offline-mapy\",\"vzdálená-správa\",\"analytika\"]",
+      "sourceHash": "sha256:a2c092945d4cbc72e1f4c1850135a84d87a2303ad1790b75f1b5aad911c1cd35",
+      "generatedAt": "2026-06-27T13:41:35.653Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11689,
+      "promptTokens": 141,
+      "completionTokens": 563
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/faketec",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa-alvo DIY ProMicro nRF52840 MeshCore com módulo LoRa SX1262 externo. O perfil de firmware upstream expõe interfaces para OLED, GNSS e sensores em compilações da comunidade, mas o módulo e a caixa exatos dependem do montador.",
+      "sourceHash": "sha256:d4b98d7dbf9682c053d8cb9e5d35ee19d7c508f8911fb4e60394b1b533b827b0",
+      "generatedAt": "2026-06-27T14:18:09.914Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17594,
+      "promptTokens": 178,
+      "completionTokens": 993
+    }
+  }
+}

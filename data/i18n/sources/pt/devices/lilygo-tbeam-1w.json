@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tbeam-1w",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Variante do ESP32-S3 T-Beam com front-end LoRa de maior potência, GNSS, OLED e compartimento para bateria 18650. Projetada para nós de rede mesh de longo alcance onde se deseja um rádio da classe 1 W e o layout padrão do T-Beam.",
+      "sourceHash": "sha256:43bee67e5a7d2b51ab466de4f6ddb6765c18ef4a1f44b67e7ad8c64fe4b799ec",
+      "generatedAt": "2026-06-27T14:10:15.032Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15987,
+      "promptTokens": 181,
+      "completionTokens": 955
+    }
+  }
+}

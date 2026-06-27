@@ -1,0 +1,60 @@
+{
+  "resource": "software/pymc-repeater",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Daemon repetidor MeshCore em Python, leve, para hardware da classe Pi e Linux embarcado, com backends de rádio diretos para SX1262 ou modems KISS, roteamento de pacotes, descoberta de vizinhos e um painel de monitoramento local. Servidor para [[software:pymc-console|pyMC Console]].",
+      "sourceHash": "sha256:50a070542b8df7001e27f3367cfb3ed8409aab5e5c1f4e94bc25945ee568bd26",
+      "generatedAt": "2026-06-27T14:41:21.571Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4183,
+      "promptTokens": 182,
+      "completionTokens": 1243
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Painel de status do repetidor e monitoramento de pacotes",
+      "sourceHash": "sha256:01ad412e72dffcb9f7d354c4ed3fc44407ef2dc32e0a7b22e87d70b2464d20cc",
+      "generatedAt": "2026-06-27T14:41:23.693Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2121,
+      "promptTokens": 136,
+      "completionTokens": 468
+    },
+    "screenshots.statistics.png.caption": {
+      "value": "Estatísticas de tráfego e desempenho do repetidor",
+      "sourceHash": "sha256:810d31e0df6a35c3218e677e61dfbf5bd64aa91c85a3a38c54e141d7ac86c5e5",
+      "generatedAt": "2026-06-27T14:41:26.043Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2350,
+      "promptTokens": 135,
+      "completionTokens": 563
+    },
+    "tags": {
+      "value": "[\"repetidor\",\"raspberry-pi\",\"sx1262\",\"kiss\",\"auto-hospedado\"]",
+      "sourceHash": "sha256:0505e6865d3f5075b970abb6e4a163276b091b0407223fdf7035b1fa40fbce84",
+      "generatedAt": "2026-06-27T14:41:28.163Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2119,
+      "promptTokens": 150,
+      "completionTokens": 484
+    },
+    "verificationNotes.supports-native-spi-sx1262-radios-ch341-usb-to-s": {
+      "value": "Suporta rádios SX1262 com SPI nativo, adaptadores USB para SPI CH341 e modems seriais KISS; os concentradores SX1302/SX1303 não são suportados.",
+      "sourceHash": "sha256:5a95dfd5135cb40f9f4dd60c4ac2252ebf1feb3932d13dc9a41810b4fc0bc184",
+      "generatedAt": "2026-06-27T14:41:30.887Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2723,
+      "promptTokens": 166,
+      "completionTokens": 707
+    },
+    "verificationNotes.the-project-asks-operators-to-test-carefully-bef": {
+      "value": "O projeto pede que os operadores testem minuciosamente antes da implantação em produção, pois a cobertura de rede em ambiente real ainda é limitada.",
+      "sourceHash": "sha256:d32400ec6566f94fd8bb793ad16bc086bc85781315e6737c93ddeaa847f61b75",
+      "generatedAt": "2026-06-27T14:41:35.515Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4628,
+      "promptTokens": 148,
+      "completionTokens": 1242
+    }
+  }
+}

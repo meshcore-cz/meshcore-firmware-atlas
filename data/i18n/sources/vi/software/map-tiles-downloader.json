@@ -1,0 +1,33 @@
+{
+  "resource": "software/map-tiles-downloader",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Tiện ích dòng lệnh đa nền tảng giúp tải xuống các khu vực OpenStreetMap hoặc Thunderforest đã chọn để sử dụng ngoại tuyến trong các ứng dụng MeshCore và Meshtastic, đi kèm tính năng chọn khu vực tương tác, ước tính dung lượng và các lệnh con tự động hóa.",
+      "sourceHash": "sha256:6f1bebfe940dc879d7546827fc94adbb6d24ef28978d203d1aef2883c0727374",
+      "generatedAt": "2026-06-27T16:03:17.993Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6566,
+      "promptTokens": 167,
+      "completionTokens": 730
+    },
+    "screenshots.screenshot.png.caption": {
+      "value": "Trình tải xuống khu vực bản đồ ngoại tuyến tương tác",
+      "sourceHash": "sha256:95ad67226934851bcbd625f4587128f7b9f1ccafc170e1f4a07e3b624bf0ac83",
+      "generatedAt": "2026-06-27T16:03:23.020Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5027,
+      "promptTokens": 134,
+      "completionTokens": 651
+    },
+    "tags": {
+      "value": "[\"bản-đồ-ngoại-tuyến\",\"ô-bản-đồ\",\"openstreetmap\",\"meshtastic\"]",
+      "sourceHash": "sha256:95b80b8840fc45754a25d20974964936e847323f3216865cfc263b42742c0f9a",
+      "generatedAt": "2026-06-27T16:03:35.979Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12958,
+      "promptTokens": 146,
+      "completionTokens": 811
+    }
+  }
+}

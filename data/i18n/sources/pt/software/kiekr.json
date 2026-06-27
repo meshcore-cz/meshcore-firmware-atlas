@@ -1,0 +1,42 @@
+{
+  "resource": "software/kiekr",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Conjunto de ferramentas independente da comunidade MeshCore para iOS e Android, com mensagens criptografadas, contexto de rotas regionais, diagnóstico de repetidores, ponte MQTT e contribuições opcionais e assinadas criptograficamente para o mapa de cobertura.",
+      "sourceHash": "sha256:ae5d2e9b9de9156a92fa9c06a20f2f4097827afa83398cb427de86d9991a55ca",
+      "generatedAt": "2026-06-27T14:29:28.492Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4081,
+      "promptTokens": 162,
+      "completionTokens": 1160
+    },
+    "tags": {
+      "value": "[\"caixa-de-ferramentas-da-comunidade\",\"regiões\",\"mapa-de-cobertura\",\"mqtt\",\"código-fechado\"]",
+      "sourceHash": "sha256:21e1ce603974a39eb8c3319d3860860c35e86de5eb2a3752bf0370dfa8882ea7",
+      "generatedAt": "2026-06-27T14:29:32.514Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4022,
+      "promptTokens": 144,
+      "completionTokens": 1041
+    },
+    "verificationNotes.kiekr-is-an-independent-client-compatible-with-s": {
+      "value": "KiekR é um cliente independente compatível com rádios complementares padrão MeshCore e formatos de backup.",
+      "sourceHash": "sha256:945a07e80503c9870986aa6e860fb49f1708e723b439ed4fa6650c1befa6aefd",
+      "generatedAt": "2026-06-27T14:29:34.536Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2022,
+      "promptTokens": 147,
+      "completionTokens": 453
+    },
+    "verificationNotes.coverage-contribution-is-opt-in-and-offers-multi": {
+      "value": "A contribuição de cobertura é opcional e oferece vários níveis de privacidade.",
+      "sourceHash": "sha256:d52c341951f6986225fb8e0e43915c6cfe0dddf5141ab0150cb2758ebb840ddb",
+      "generatedAt": "2026-06-27T14:29:37.094Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2558,
+      "promptTokens": 140,
+      "completionTokens": 587
+    }
+  }
+}

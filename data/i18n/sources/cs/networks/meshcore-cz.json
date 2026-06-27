@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-cz",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Celorepubliková komunitní síť MeshCore pokrývající Českou republiku v pásmu 869.432 MHz — jediné frekvenci v EU s 10% provozním cyklem a EIRP až 27 dBm. Koordinuje ji komunita meshcore_cz, která zajišťuje směrování po jednotlivých krajích, sdílenou živou mapu a analyzátor pokrytí.",
+      "sourceHash": "sha256:d1b3a3dfe33d3be92667efd2d85c6b9078325dd385d9b689cd93f4d4d2091dc1",
+      "generatedAt": "2026-06-27T12:02:58.629Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 22235,
+      "promptTokens": 196,
+      "completionTokens": 2000
+    }
+  }
+}

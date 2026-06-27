@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-italia",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní síť MeshCore pokrývající celou Itálii využívá standardní úzkopásmové přednastavení pro EU/Velkou Británii (869.618 MHz / 62.5 kHz / SF8 / CR4/8), díky čemuž zůstává interoperabilní se sousedními evropskými sítěmi. Jde o distribuovanou, decentralizovanou infrastrukturu koordinovanou komunitou meshcoreitalia.",
+      "sourceHash": "sha256:0e1b3ab42ae6a6f9ac46f7509656999219341c56b006f345c5252f311a25348f",
+      "generatedAt": "2026-06-27T12:06:31.085Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25802,
+      "promptTokens": 194,
+      "completionTokens": 1061
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resource": "software/pymc-core",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Implementace protokolu MeshCore a směrovacího zásobníku v Pythonu pro tvorbu mesh uzlů a aplikací. Poskytuje šifrovanou komunikaci, správu identit, zpracování událostí a volitelnou přímou podporu rádia SX1262 přes rozhraní SPI.",
+      "sourceHash": "sha256:d0e37835a3fd7f30338364958a0af39b3f8d8b9802bfa217c9fa2fd6e04f13e1",
+      "generatedAt": "2026-06-27T11:50:41.632Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8397,
+      "promptTokens": 166,
+      "completionTokens": 1093
+    },
+    "verificationNotes.releases-are-published-to-pypi-rather-than-githu": {
+      "value": "Vydání se publikují na PyPI místo na GitHub Releases.",
+      "sourceHash": "sha256:e7f84a5fd0805dc87f0d928f366c890a1aadbfde27e584be0cd01de9dd3eff81",
+      "generatedAt": "2026-06-27T11:50:49.351Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7719,
+      "promptTokens": 141,
+      "completionTokens": 726
+    },
+    "verificationNotes.direct-hardware-support-targets-raspberry-pi-cla": {
+      "value": "Přímá hardwarová podpora je určena pro systémy třídy Raspberry Pi s rádiovými moduly SX1262 s rozhraním SPI; komponenty protokolu lze použít i bez dodatečného rádiového hardwaru.",
+      "sourceHash": "sha256:d49d1f2fab2f04ffd287d9a897165ace87fb0722e447195ab7b4c6c15df3f398",
+      "generatedAt": "2026-06-27T11:50:59.416Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10065,
+      "promptTokens": 153,
+      "completionTokens": 1301
+    },
+    "verificationNotes.the-project-describes-itself-as-protocol-compati": {
+      "value": "Projekt se sám popisuje jako kompatibilní s protokolem, ale zatím není tak optimalizovaný jako původní implementace MeshCore v C++.",
+      "sourceHash": "sha256:5454fc203a4f22ae61018bac06b281d6792bc4f35547e62c761175b76f28ec0e",
+      "generatedAt": "2026-06-27T11:51:06.815Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7398,
+      "promptTokens": 150,
+      "completionTokens": 596
+    },
+    "tags": {
+      "value": "[\"sdk\",\"protokol\",\"směrování\",\"sx1262\",\"raspberry-pi\"]",
+      "sourceHash": "sha256:de45c3f26464af78212b5f8f94f7a5f06f28c34fa1596cc93e1810183314244c",
+      "generatedAt": "2026-06-27T13:48:24.517Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7212,
+      "promptTokens": 146,
+      "completionTokens": 216
+    }
+  }
+}

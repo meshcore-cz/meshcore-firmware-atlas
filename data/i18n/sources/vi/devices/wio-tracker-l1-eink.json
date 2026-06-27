@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-tracker-l1-eink",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút Meshtastic/MeshCore tiết kiệm điện năng tích hợp LoRa, L76K GNSS và màn hình E-ink 2.13 inch có thể tháo rời để cập nhật trạng thái với mức tiêu thụ điện siêu thấp. Hỗ trợ cấp nguồn qua USB-C, năng lượng mặt trời và pin Li-ion.",
+      "sourceHash": "sha256:a718c17fbcc8440fe5a15e0ff19a980501a7856cd30f57332fc93cf0873e2f98",
+      "generatedAt": "2026-06-27T15:42:07.730Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7411,
+      "promptTokens": 180,
+      "completionTokens": 868
+    }
+  }
+}

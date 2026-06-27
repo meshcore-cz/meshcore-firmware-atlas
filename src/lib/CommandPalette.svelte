@@ -1,5 +1,5 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
   import { tick } from 'svelte';
   import { goto } from '$app/navigation';
   import { Command, Dialog } from 'bits-ui';
@@ -7,6 +7,7 @@
   import Avatar from '$lib/Avatar.svelte';
   import SoftwareIcon from '$lib/SoftwareIcon.svelte';
   import { searchAtlas } from '$lib/data.js';
+  import { m } from '$lib/paraglide/messages.js';
 
   let { open = $bindable(false) } = $props();
 
@@ -29,13 +30,25 @@
     Page: 'text-muted'
   };
 
+  // Localized label for a result's type. `item.type` stays the English key used
+  // for styling/icons above; only the displayed text is translated.
+  const TYPE_LABEL = {
+    Device: m.cmd_type_device,
+    Firmware: m.cmd_type_firmware,
+    Vendor: m.cmd_type_vendor,
+    Software: m.cmd_type_software,
+    Network: m.cmd_type_network,
+    Page: m.cmd_type_page
+  };
+  const typeLabel = (t) => TYPE_LABEL[t]?.() ?? t;
+
   async function go(item) {
     if (!item) return;
     // Close (and let the dialog tear down its scroll-lock) before navigating,
     // otherwise the teardown races with goto and leaves the body inert.
     open = false;
     await tick();
-    goto(`${base}${item.href}`);
+    goto(href(item.href));
   }
 </script>
 
@@ -49,14 +62,14 @@
         e.preventDefault();
       }}
     >
-      <Dialog.Title class="sr-only">Search the atlas</Dialog.Title>
+      <Dialog.Title class="sr-only">{m.cmd_dialog_title()}</Dialog.Title>
 
-      <Command.Root shouldFilter={false} loop label="Search the atlas">
+      <Command.Root shouldFilter={false} loop label={m.cmd_dialog_title()}>
         <div class="flex items-center gap-3 border-b border-edge px-4">
           <Search class="size-4 shrink-0 text-dim" />
           <Command.Input
             bind:value={query}
-            placeholder="Search devices, software, networks, firmwares…"
+            placeholder={m.cmd_placeholder()}
             autofocus
             class="w-full bg-transparent py-3.5 text-[1rem] outline-none placeholder:text-dim"
           />
@@ -71,11 +84,11 @@
           <Command.Viewport>
             {#if !query.trim()}
               <p class="px-4 py-8 text-center text-[0.9rem] text-dim">
-                Search devices, software, networks, firmwares…
+                {m.cmd_placeholder()}
               </p>
             {:else}
               <Command.Empty class="px-4 py-8 text-center text-[0.9rem] text-dim">
-                No matches for “{query}”.
+                {m.cmd_no_matches({ query })}
               </Command.Empty>
             {/if}
 
@@ -125,7 +138,7 @@
                     <span class="block truncate text-[0.95rem] text-ink">{item.title}</span>
                     {#if item.subtitle}<span class="block truncate text-[0.8rem] text-dim opacity-60">{item.subtitle}</span>{/if}
                   </span>
-                  <span class="shrink-0 text-[0.68rem] font-semibold tracking-wide uppercase {TYPE_TW[item.type] ?? 'text-dim'}">{item.type}</span>
+                  <span class="shrink-0 text-[0.68rem] font-semibold tracking-wide uppercase {TYPE_TW[item.type] ?? 'text-dim'}">{typeLabel(item.type)}</span>
                 </Command.Item>
               {/each}
             </div>

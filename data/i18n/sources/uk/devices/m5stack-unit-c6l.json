@@ -1,0 +1,15 @@
+{
+  "resource": "device/m5stack-unit-c6l",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Пристрій ESP32-C6 LoRa зі вбудованим радіомодулем SX1262, OLED-дисплеєм стану, RGB-індикатором, зумером та кнопкою користувача. У документації виробника наголошується на підтримці Wi-Fi 6 та Meshtastic, а також на наявності двох антенних роз’ємів RP-SMA.",
+      "sourceHash": "sha256:d8741705041a787f7bae0b0238c3655b8e8af4748e64e53be386c8848a21fe3d",
+      "generatedAt": "2026-06-27T15:00:10.522Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2645,
+      "promptTokens": 183,
+      "completionTokens": 652
+    }
+  }
+}

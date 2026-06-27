@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/atlavox",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Виробник і продавець обладнання Meshtastic та MeshCore з Род-Айленду, зокрема портативних вузлів та вузлів на сонячних батареях на базі RAK WisBlock, зібраних на замовлення.",
+      "sourceHash": "sha256:0082a3034111ddc0e87a3941aebd5b73f271087be72df0bb5b687a0b47b5e2d1",
+      "generatedAt": "2026-06-27T16:44:28.247Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7349,
+      "promptTokens": 157,
+      "completionTokens": 1233
+    }
+  }
+}

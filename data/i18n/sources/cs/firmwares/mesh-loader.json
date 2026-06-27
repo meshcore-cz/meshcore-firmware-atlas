@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/mesh-loader",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Zavaděč pro duální boot, který nainstaluje upravené obrazy MeshCore a Meshtastic do samostatných oddílů ESP32 a umožňuje uživateli přepínat firmware při spuštění bez nutnosti opětovného flashování.",
+      "sourceHash": "sha256:28921c48b789c353eb7a00aaed9efcaa0229c1514aa96513834844fe88776510",
+      "generatedAt": "2026-06-27T11:21:44.222Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6300,
+      "promptTokens": 159,
+      "completionTokens": 609
+    },
+    "features": {
+      "value": "[\"Duální bootování MeshCore a Meshtastic\", \"Oddělené souborové systémy firmwaru\", \"Zapamatovaná volba bootování\"]",
+      "sourceHash": "sha256:d25f84390a1ab4eb5d7d3267733c5595b5044b1e1297f7b98aab3697f110bc87",
+      "generatedAt": "2026-06-27T12:33:29.628Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10532,
+      "promptTokens": 150,
+      "completionTokens": 594
+    }
+  }
+}

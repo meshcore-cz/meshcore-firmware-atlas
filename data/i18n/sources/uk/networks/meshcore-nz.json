@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-nz",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Національна мережа спільноти MeshCore у Новій Зеландії для надійного автономного обміну повідомленнями, координації репітерів, ресурсів адміністрування вузлів, NZ MeshMapper, моніторингу CoreScope, планування префіксів та підтримки спільноти.",
+      "sourceHash": "sha256:33c4f9f0402bddcb17c72d7a00f0ce55bc3cce3429124a7f432f36d317a92ff3",
+      "generatedAt": "2026-06-27T16:54:35.435Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13242,
+      "promptTokens": 165,
+      "completionTokens": 1860
+    }
+  }
+}

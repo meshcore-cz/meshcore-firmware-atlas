@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-beam-1-2-sx1276",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị theo dõi ESP32 + SX1276 LoRa tích hợp sẵn u-blox GNSS, màn hình SSD1306 OLED và chip quản lý nguồn AXP2101. Cổng USB-C với cầu chuyển đổi CH9102; có ăng-ten IPEX ngoài cho LoRa và Wi-Fi. Phiên bản SX1276 của dòng T-Beam, thường được dùng làm nút đồng hành và trạm chuyển tiếp cho Meshtastic/MeshCore.",
+      "sourceHash": "sha256:bae1982bcdeebbe0ac97dc20441339dc594146faf1f0443c091ae7d5a8e87f66",
+      "generatedAt": "2026-06-27T15:36:21.744Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4809,
+      "promptTokens": 207,
+      "completionTokens": 1010
+    }
+  }
+}

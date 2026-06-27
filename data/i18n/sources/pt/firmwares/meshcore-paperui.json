@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-paperui",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore para o dispositivo portátil LilyGo T5 ePaper S3 Pro, focado em e-paper, com mensagens autónomas, contactos, descoberta, GPS, mapas e definições do dispositivo otimizadas para toque.",
+      "sourceHash": "sha256:2c18c1e23eb96c2ae622588c276ede00f5d447feda3aea55090cf98c0f381f28",
+      "generatedAt": "2026-06-27T14:24:40.507Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4699,
+      "promptTokens": 166,
+      "completionTokens": 1339
+    },
+    "deviceNotes.lilygo-t5-pro": {
+      "value": "Requer o LilyGo T5 ePaper S3 Pro e um cartão SD para uso normal.",
+      "sourceHash": "sha256:89d7b3b5c4c8457715a6fa7b8c0ca4c2e3cef78536e370f478a7564a24eb3a05",
+      "generatedAt": "2026-06-27T14:24:43.421Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2913,
+      "promptTokens": 148,
+      "completionTokens": 748
+    },
+    "features": {
+      "value": "[\"Interface de mensagens em e-paper\",\"Contactos e descoberta de nós\",\"GPS, mapas e pontos de passagem\",\"Ferramenta de flash no navegador\"]",
+      "sourceHash": "sha256:79e44108b22128680d020598974a7c6590788b10015223fc21e6be26d69ac85e",
+      "generatedAt": "2026-06-27T14:24:46.937Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3516,
+      "promptTokens": 151,
+      "completionTokens": 965
+    }
+  }
+}

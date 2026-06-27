@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-decoder",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thư viện TypeScript và công cụ giải mã dòng lệnh cho gói tin vô tuyến MeshCore, bao gồm phân tích cấu trúc gói tin, giải mã kênh, chữ ký, mã thông báo xác thực và mã truyền tải vùng.",
+      "sourceHash": "sha256:05123319cd64ce74d091324dd20f16f9fd267ef1101bb6c4c9d4f764af1655f2",
+      "generatedAt": "2026-06-27T16:06:14.324Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24970,
+      "promptTokens": 159,
+      "completionTokens": 694
+    },
+    "tags": {
+      "value": "[\"SDK\", \"giao thức\", \"bộ giải mã\", \"mật mã học\"]",
+      "sourceHash": "sha256:1ad65163d3f16587608efd60e8f01fd51faa7a3372e0487bd568661a4252ad8c",
+      "generatedAt": "2026-06-27T16:06:17.221Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2895,
+      "promptTokens": 139,
+      "completionTokens": 446
+    },
+    "verificationNotes.package-version-0-3-0-is-declared-in-package-jso": {
+      "value": "Phiên bản 0.3.0 của gói được khai báo trong package.json; chưa có bản phát hành nào trên GitHub.",
+      "sourceHash": "sha256:6b8f543682ec72a82b0cfe04e6098cc46e068886a3cda06792a333bd67a25a96",
+      "generatedAt": "2026-06-27T16:06:21.949Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4728,
+      "promptTokens": 149,
+      "completionTokens": 520
+    }
+  }
+}

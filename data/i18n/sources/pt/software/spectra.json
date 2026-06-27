@@ -1,0 +1,51 @@
+{
+  "resource": "software/spectra",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Ponte em Rust que conecta rádios MeshCore ou Meshtastic ao DHT do Veilid, que preserva a privacidade, com mensageria pub/sub baseada em feeds, uma TUI cyberpunk, modo daemon headless e anexação remota via socket Unix.",
+      "sourceHash": "sha256:3f4aa44d8fdac5493bed60c604c17525d033a4e8a42193ccdde8fc02e8e43e9e",
+      "generatedAt": "2026-06-27T14:43:21.242Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5095,
+      "promptTokens": 176,
+      "completionTokens": 1495
+    },
+    "tags": {
+      "value": "[\"veilid\",\"dht\",\"ponte\",\"meshtastic\",\"terminal\"]",
+      "sourceHash": "sha256:3b6a0ea4c1d8eb97bee45442d104b30838a525c07e53c024fb0f326823b646a0",
+      "generatedAt": "2026-06-27T14:43:23.745Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2502,
+      "promptTokens": 145,
+      "completionTokens": 611
+    },
+    "verificationNotes.popularity-fields-are-forgejo-repository-signals": {
+      "value": "Os campos de popularidade são sinais dos repositórios do Forgejo.",
+      "sourceHash": "sha256:049de99c4505842217ab62ba8244233151dd77bdeb73a8af07c5cb5cafb4a041",
+      "generatedAt": "2026-06-27T14:43:26.212Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2468,
+      "promptTokens": 138,
+      "completionTokens": 586
+    },
+    "verificationNotes.supports-stock-meshcore-companion-firmware-meshc": {
+      "value": "Suporta o firmware complementar MeshCore padrão, rádios MeshCore KISS e rádios seriais Meshtastic.",
+      "sourceHash": "sha256:37b68c8054aa014bdefa404cc80e38a5b39b6f3282299edf5593d0de2cf4a2d5",
+      "generatedAt": "2026-06-27T14:43:29.056Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2843,
+      "promptTokens": 149,
+      "completionTokens": 723
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "O repositório atualmente não declara uma licença SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:43:31.044Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1987,
+      "promptTokens": 139,
+      "completionTokens": 489
+    }
+  }
+}

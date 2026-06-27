@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-ha-ui",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Painel lateral do Home Assistant baseado no meshcore-ha, que adiciona canais persistentes e mensagens diretas, contatos, mapas, estatísticas de nós em tempo real, sensores e um console de comandos brutos do MeshCore.",
+      "sourceHash": "sha256:b4f0c8ddd5ee034d3cd859e4081e70871d2e2317d5edc604ce75695ffaba60ce",
+      "generatedAt": "2026-06-27T14:36:23.197Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3631,
+      "promptTokens": 164,
+      "completionTokens": 1031
+    },
+    "tags": {
+      "value": "[\"home-assistant\",\"hacs\",\"painel\",\"mensagens-persistentes\"]",
+      "sourceHash": "sha256:4ebd26305d749cb75282b2c923b692e25b951bce289e941971fc1039d86a5c30",
+      "generatedAt": "2026-06-27T14:36:26.578Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3381,
+      "promptTokens": 143,
+      "completionTokens": 824
+    },
+    "verificationNotes.requires-a-working-meshcore-ha-integration-and-d": {
+      "value": "Requer uma integração meshcore-ha funcional e não se conecta diretamente aos rádios.",
+      "sourceHash": "sha256:60671eecfb398e1daf81603027099e4739d55d07ca11298cce336f841f67ee95",
+      "generatedAt": "2026-06-27T14:36:29.252Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2673,
+      "promptTokens": 145,
+      "completionTokens": 555
+    },
+    "verificationNotes.the-repository-url-currently-redirects-from-an-e": {
+      "value": "Atualmente, a URL do repositório redireciona a partir de um local anterior do projeto Daring-Designs.",
+      "sourceHash": "sha256:b82f814a1127fa4904b9ccde2507b772f29b66fd72ed875f5305e0958ca9362c",
+      "generatedAt": "2026-06-27T14:36:31.850Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2597,
+      "promptTokens": 145,
+      "completionTokens": 684
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v4",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Наступник Heltec V3 на базі ESP32-S3R2 + SX1262 з 16 МБ флеш-пам'яті, 2 МБ PSRAM та потужністю передачі LoRa до 28 дБм. Має такий самий 0.96-дюймовий OLED-дисплей та розпиновку, що значною мірою сумісна з V3, а також вхід для сонячної панелі, опціональний роз'єм GNSS та вбудовану FPC-антену 2.4 ГГц. Нативний порт USB-C (без CP2102). Широко застосовується у Meshtastic та MeshCore.",
+      "sourceHash": "sha256:077f6b0df2c7d8f60fcb09d763150df7954cad9b593f449335e2247afdc2f9d2",
+      "generatedAt": "2026-06-27T14:57:44.868Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6194,
+      "promptTokens": 225,
+      "completionTokens": 2026
+    }
+  }
+}

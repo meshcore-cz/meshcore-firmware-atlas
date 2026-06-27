@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-lu",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore у Люксембурзі та прилеглому Великому регіоні, моніторинг якої здійснюється за допомогою загальнодоступного аналізатора CoreScope.",
+      "sourceHash": "sha256:0e75a80c1315d7aec59d27b69589dc53f6b5d37a9db96da658097aa0639a68de",
+      "generatedAt": "2026-06-27T16:52:18.131Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7537,
+      "promptTokens": 148,
+      "completionTokens": 827
+    }
+  }
+}

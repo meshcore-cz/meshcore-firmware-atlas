@@ -1,0 +1,33 @@
+{
+  "resource": "software/corescope",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Analisador de pacotes MeshCore auto-hospedado com ingestão via MQTT, transmissão de pacotes em tempo real, mapas interativos, chat de canal, rastreamento de pacotes e análises por nó.",
+      "sourceHash": "sha256:5e72415f60cf446471b6073c1ae099f32bfa40ef5d1b1cea3398961b7d7ba2d2",
+      "generatedAt": "2026-06-27T14:28:41.174Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3597,
+      "promptTokens": 157,
+      "completionTokens": 1005
+    },
+    "tags": {
+      "value": "[\"monitorização\",\"analisador\",\"mapa\"]",
+      "sourceHash": "sha256:22aab9946b44105c309686b9c6ce95da29bf7574864a5e67151452396cf0414e",
+      "generatedAt": "2026-06-27T14:28:43.866Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2692,
+      "promptTokens": 138,
+      "completionTokens": 635
+    },
+    "verificationNotes.latest-github-release-has-no-binary-assets-deplo": {
+      "value": "A versão mais recente no GitHub não possui arquivos binários; a implantação está documentada por meio da imagem Docker do GHCR ou da obtenção do código-fonte.",
+      "sourceHash": "sha256:ae76f51f3c752de17fd4f4a661df40aa5e9e280cab8ccaeb1e14d4fdeea8a79b",
+      "generatedAt": "2026-06-27T14:28:47.432Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3564,
+      "promptTokens": 150,
+      "completionTokens": 990
+    }
+  }
+}

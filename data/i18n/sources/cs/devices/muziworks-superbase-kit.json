@@ -1,0 +1,12 @@
+{
+  "resource": "device/muziworks-superbase-kit",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Připravená k použití samostatná sada Meshtastic sestavená z modulů Base Uno a Super IO, vybavená OLED displejem, navigačním padem, digitálním kompasem, GPS/BDS, bzučákem, 3D tištěným krytem, pouzdrem a baterií.",
+      "sourceHash": "sha256:7a55725c33e01bdac51b7782cdb5426c514477fbc564c6c89fd247d76af86a21",
+      "generatedAt": "2026-06-27T10:54:15.746Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

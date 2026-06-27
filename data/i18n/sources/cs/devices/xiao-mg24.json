@@ -1,0 +1,12 @@
+{
+  "resource": "device/xiao-mg24",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Základní deska XIAO MG24 propojená přes rozhraní SPI s externím modulem SX1262 LoRa pro sestavení ZephCore MeshCore. MG24 přináší BLE s nízkou spotřebou a kompaktní rozměry XIAO do malých sestav pro doplňková zařízení a opakovače.",
+      "sourceHash": "sha256:7a41a1abbde8492cce5274fe3c16087abc16a0a046798d87350b7ca64372baa2",
+      "generatedAt": "2026-06-27T10:59:13.581Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-evo",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Покращений форк MeshCore, орієнтований на ретранслятори, який об'єднав відкриті PR з апстріму та вдосконалення для щільних мереж — зокрема зменшення трафіку flood-advert і покращену обробку `denyf *`. Здебільшого втратив актуальність після того, як у референсній версії 1.16.0 з'явилося вбудоване керування трафіком flood.",
+      "sourceHash": "sha256:74b0b8f373bbaad7d1e360f3ec673cc32bd5505d6ffda873ab6f4c3b2a248665",
+      "generatedAt": "2026-06-27T15:41:44.265Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4367,
+      "promptTokens": 184,
+      "completionTokens": 1074
+    },
+    "deviceNotes.station-g2": {
+      "value": "Доступні збірки; тестуються рідше, ніж основні плати репітера.",
+      "sourceHash": "sha256:96af65e2ea41473160fae9bad296c3916c4b52a35a7a587c63ee650e8242e691",
+      "generatedAt": "2026-06-27T15:41:55.911Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11646,
+      "promptTokens": 142,
+      "completionTokens": 746
+    },
+    "features": {
+      "value": "[\"Зменшення трафіку від широкомовних оголошень\", \"Покращена обробка denyf \\\"*\\\"\", \"Оптимізовано для щільних mesh-мереж репітерів\", \"Відстежує upstream-випуски MeshCore\"]",
+      "sourceHash": "sha256:b0035f77f12169a8f00ef0456f32b4d81757e8680adc28dfe45dae58e715aadd",
+      "generatedAt": "2026-06-27T15:42:04.683Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8772,
+      "promptTokens": 160,
+      "completionTokens": 1210
+    }
+  }
+}

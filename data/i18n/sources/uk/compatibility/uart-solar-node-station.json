@@ -1,0 +1,15 @@
+{
+  "resource": "compatibility/meshcore/1.16.0/uart-solar-node-station",
+  "locale": "uk",
+  "fields": {
+    "notes": {
+      "value": "Виробник зазначає, що Meshtastic Motherboard електрично сумісна з RAK4631 — використовуйте еталонну збірку RAK4631 MeshCore. Товар знято з продажу на Lectronz; документація базової плати залишається доступною на pcb.uart.cz.",
+      "sourceHash": "sha256:b3f5a96bd5b88522ab28a3d959e940d033f92d18a09237c66640d165129c3566",
+      "generatedAt": "2026-06-27T17:00:54.827Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8524,
+      "promptTokens": 177,
+      "completionTokens": 1197
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-e290",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển ESP32-S3R8 E-Ink với mô-đun SX1262 LoRa tùy chọn, header cái 2×20 chân tương thích Raspberry Pi và cổng cảm biến QuickLink. Tương thích với Meshtastic/MeshCore; LoRa là tùy chọn tại thời điểm build, không có trên tất cả các SKU.",
+      "sourceHash": "sha256:aab556b44be6a2e20e8b84f24b14998437b32bcaf85b03c19364da17bca2b7c1",
+      "generatedAt": "2026-06-27T15:34:45.155Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5416,
+      "promptTokens": 191,
+      "completionTokens": 799
+    }
+  }
+}

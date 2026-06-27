@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/promicro",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Obecné desky nRF52 ve formátu Pro Micro.",
+      "sourceHash": "sha256:d8089b75dc2ead4d42b6ebbff434c40b74e528970dbcf5e961102c2f8a9226c7",
+      "generatedAt": "2026-06-27T11:59:17.857Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4409,
+      "promptTokens": 139,
+      "completionTokens": 521
+    }
+  }
+}

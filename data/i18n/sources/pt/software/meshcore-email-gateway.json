@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-email-gateway",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Gateway bidirecional entre e-mails convencionais via SMTP/IMAP e mensagens diretas do MeshCore, com conexões de rádio via BLE, serial ou TCP, API de gerenciamento, atualizações de status em tempo real e uma interface opcional no navegador.",
+      "sourceHash": "sha256:9e9b7bf0a9ca5eb45deacaf3723436304c86cd18292d0f1ae920e8dc4a5318e6",
+      "generatedAt": "2026-06-27T14:31:16.688Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3340,
+      "promptTokens": 167,
+      "completionTokens": 957
+    },
+    "tags": {
+      "value": "[\"e-mail\", \"smtp\", \"imap\", \"auto-hospedado\"]",
+      "sourceHash": "sha256:47053f0dfc3e8225bc02b3e0db8da2bd81e2301b1a11d52ecf021b2ad908aa7f",
+      "generatedAt": "2026-06-27T14:31:19.206Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2518,
+      "promptTokens": 140,
+      "completionTokens": 547
+    },
+    "verificationNotes.email-delivery-requires-operator-supplied-smtp-a": {
+      "value": "A entrega de e-mails exige credenciais SMTP e IMAP fornecidas pelo operador.",
+      "sourceHash": "sha256:2c23ce5df56a87da5f7fe0e9b118012bdb991ae7937bdd7d435e956f2f2b7844",
+      "generatedAt": "2026-06-27T14:31:21.488Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2281,
+      "promptTokens": 141,
+      "completionTokens": 535
+    },
+    "verificationNotes.runs-in-simulation-mode-when-the-meshcore-python": {
+      "value": "Executa em modo de simulação quando o pacote Python MeshCore não está disponível.",
+      "sourceHash": "sha256:1996a5b76d8f8de2890ac0719a35c7ae1c10d8ac76918bf3526aa376bfbfbd78",
+      "generatedAt": "2026-06-27T14:31:23.420Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1931,
+      "promptTokens": 142,
+      "completionTokens": 478
+    }
+  }
+}

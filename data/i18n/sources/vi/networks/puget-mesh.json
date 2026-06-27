@@ -1,0 +1,15 @@
+{
+  "resource": "network/puget-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng tình nguyện triển khai mạng lưới liên lạc ngoài lưới trên khắp khu vực Puget Sound, bao gồm MeshCore, Meshtastic và AREDN. Tập trung vào công tác chuẩn bị phòng chống thiên tai và ứng phó khẩn cấp, hiện đang tích cực mở rộng MeshCore trên cấu hình sẵn 915 MHz USA/Canada để phục vụ Seattle, Tacoma và các khu vực lân cận.",
+      "sourceHash": "sha256:b2fd6bbe14d828f4ee0242e48be1405ad835bcd06c1f696f5d8dd4e66dbf097a",
+      "generatedAt": "2026-06-27T16:53:17.126Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12326,
+      "promptTokens": 191,
+      "completionTokens": 1226
+    }
+  }
+}

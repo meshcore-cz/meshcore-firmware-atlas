@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/easyskymesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore zaměřený na úsporu energie, který nabízí experimentální a pokročilé funkce a opravy chyb pro nasazení opakovačů a senzorů s extrémně nízkou spotřebou. Cílem je prodloužení výdrže baterie (např. ~16 µA ve vypnutém stavu) se záměrem začlenit tato vylepšení do upstreamu MeshCore.",
+      "sourceHash": "sha256:8954ebc43a4d9696ea9afed4ce07f448923acf5f7c2a5e17082a19ddd02e30b8",
+      "generatedAt": "2026-06-27T11:13:18.663Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.xiao-esp32s3": {
+      "value": "Hodnoty úspory energie se liší podle revize desky.",
+      "sourceHash": "sha256:e106b2db9e31af9877e5d75db8ed875a5bad29caeb620dfd91ecd72b24fc9768",
+      "generatedAt": "2026-06-27T11:13:22.971Z",
+      "model": "glm-5.2:cloud"
+    },
+    "features": {
+      "value": "[\"Provoz s ultra nízkou spotřebou (~16 µA ve vypnutém stavu)\",\"Integrace senzorů\",\"Automatický restart / watchdog\",\"Dálková mesh komunikace\"]",
+      "sourceHash": "sha256:ada9a7e303d7fc83eecf0a85cd756872cf8ca4fc0740ac6402968e45f7f7a0cd",
+      "generatedAt": "2026-06-27T12:25:05.983Z",
+      "model": "manual"
+    }
+  }
+}

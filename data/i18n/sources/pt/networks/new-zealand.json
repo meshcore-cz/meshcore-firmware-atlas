@@ -1,0 +1,15 @@
+{
+  "resource": "network/new-zealand",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Preset oficial de rádio da aplicação MeshCore — 917.375MHz / SF11 / BW250 / CR5.</think>Preset oficial de rádio da aplicação MeshCore — 917.375MHz / SF11 / BW250 / CR5.",
+      "sourceHash": "sha256:114dd31abdc3fc0c72bbee4e6079f248b5acaaef80c40627240ebce91246ccb4",
+      "generatedAt": "2026-06-27T14:48:13.751Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 689,
+      "promptTokens": 153,
+      "completionTokens": 61
+    }
+  }
+}

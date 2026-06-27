@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-3x72",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mô-đun WisDuo LPWAN dựa trên STM32WL, tích hợp sẵn bộ thu phát LoRa, dành cho các hệ thống mesh nhỏ gọn và thiết bị nhúng. Cấu hình MeshCore hướng tới việc tích hợp mô-đun riêng lẻ thay vì một thiết bị cầm tay hoặc thiết bị hiển thị hoàn chỉnh.",
+      "sourceHash": "sha256:61451a72423f144967dd5baa1b69c314223acc6bc7c2b87a69438dd0de18e52c",
+      "generatedAt": "2026-06-27T15:40:04.214Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5189,
+      "promptTokens": 173,
+      "completionTokens": 1020
+    }
+  }
+}

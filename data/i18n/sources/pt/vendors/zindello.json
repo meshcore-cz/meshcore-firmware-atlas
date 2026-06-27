@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/zindello",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fabricante australiano de hardware compatível com MeshCore para redes em malha LoRa, incluindo os hats de repetidor UltraPeater e UltraPeaterZero de 1 W.",
+      "sourceHash": "sha256:6240fbfa7b72e0cdeb6aa47f41e0e84b0b6558e7e2830462c4e9faa3ea840f7d",
+      "generatedAt": "2026-06-27T14:44:57.003Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3821,
+      "promptTokens": 157,
+      "completionTokens": 1058
+    }
+  }
+}

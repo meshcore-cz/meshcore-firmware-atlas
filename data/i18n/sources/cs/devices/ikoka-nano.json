@@ -1,0 +1,12 @@
+{
+  "resource": "device/ikoka-nano",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní uzel Meshtastic založený na desce Seeed XIAO nRF52840 a modulu EBYTE E22 LoRa. Malá bateriově napájená deska s konektory USB-C a Qwiic; bez integrovaného displeje – určená jako miniaturní doprovodný uzel/opakovač nebo vzdálený uzel.",
+      "sourceHash": "sha256:27a883e7f49594c637a53ceda91a38807eb8e8f543fb75f1502ed93fdf01f545",
+      "generatedAt": "2026-06-27T10:49:20.286Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

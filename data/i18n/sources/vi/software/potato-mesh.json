@@ -1,0 +1,69 @@
+{
+  "resource": "software/potato-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bảng điều khiển tự lưu trữ phân tán dành cho cộng đồng MeshCore và Meshtastic địa phương, tích hợp bản đồ nút, trò chuyện, dữ liệu đo lường từ xa, nút lân cận và dò tuyến cùng các bộ thu thập sóng radio từ xa và API công khai.",
+      "sourceHash": "sha256:d6987237dca3d371651dcd6589e3c75c80fe0e24c6d832b22e01d3f70f21c579",
+      "generatedAt": "2026-06-27T16:30:28.536Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6268,
+      "promptTokens": 168,
+      "completionTokens": 886
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Bản đồ nút cộng đồng, trò chuyện và bảng điều khiển dữ liệu đo lường từ xa",
+      "sourceHash": "sha256:6eba836ddc0e30a7cc51a14ead7029ad02d1f3ca9e19a5f22a1bf89f4814cc22",
+      "generatedAt": "2026-06-27T16:30:36.992Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8454,
+      "promptTokens": 137,
+      "completionTokens": 1131
+    },
+    "screenshots.matrix-bridge.png.caption": {
+      "value": "Cầu nối Matrix chuyển tiếp tin nhắn mesh",
+      "sourceHash": "sha256:24fea72a24445b01e0ae4ceb8158da9b637499260868620c7e099dd8cd2c24b6",
+      "generatedAt": "2026-06-27T16:30:44.813Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7820,
+      "promptTokens": 134,
+      "completionTokens": 562
+    },
+    "tags": {
+      "value": "[\"liên hợp\",\"bảng điều khiển cộng đồng\",\"đa giao thức\",\"tự lưu trữ\",\"matrix\"]",
+      "sourceHash": "sha256:4ea88e8f1acfb0c31bf7ad5658960cb00b5488df59928ec01ffaf30d49a8a66d",
+      "generatedAt": "2026-06-27T16:30:50.336Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5522,
+      "promptTokens": 147,
+      "completionTokens": 784
+    },
+    "verificationNotes.meshcore-ingestors-connect-to-companion-radios-o": {
+      "value": "Các bộ thu thập dữ liệu MeshCore kết nối với thiết bị radio đồng hành qua BLE, serial hoặc TCP và gửi dữ liệu đã chuẩn hóa đến dịch vụ web.",
+      "sourceHash": "sha256:43cf8c7a1c07bb5508cc2f0fcad421711971a7f814c7cf45503528a2e12d5bf4",
+      "generatedAt": "2026-06-27T16:30:54.377Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4041,
+      "promptTokens": 152,
+      "completionTokens": 664
+    },
+    "verificationNotes.federation-is-enabled-by-default-but-can-be-disa": {
+      "value": "Federation được bật theo mặc định, nhưng có thể vô hiệu hóa đối với các bản triển khai cô lập hoặc riêng tư.",
+      "sourceHash": "sha256:434e7e0c36650ba3acfebb88942b2adad77526fd2bf74ea65f9eba4002e9a72f",
+      "generatedAt": "2026-06-27T16:31:21.008Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 26629,
+      "promptTokens": 145,
+      "completionTokens": 757
+    },
+    "verificationNotes.the-mobile-reader-and-matrix-bridge-are-still-de": {
+      "value": "Trình đọc di động và cầu nối Matrix vẫn được mô tả là đang trong quá trình phát triển.",
+      "sourceHash": "sha256:e84efa0b42d2db779a80dc7fbfbb2600736252b2b639d0928fce509a5afcef1e",
+      "generatedAt": "2026-06-27T16:31:33.210Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12201,
+      "promptTokens": 143,
+      "completionTokens": 541
+    }
+  }
+}

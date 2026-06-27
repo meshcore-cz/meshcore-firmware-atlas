@@ -1,0 +1,69 @@
+{
+  "resource": "firmware/fieldmesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um fork do firmware MeshCore otimizado para uso ao ar livre — festivais, caminhadas e eventos off-grid. Adiciona transmissão automática de GPS, página dedicada de rastreamento com cálculo de distância, modo Off-Grid com frequências padrão legais e alternância com um toque, sistema de SOS com alarmes de buzzer, histórico de mensagens com buffer circular na RAM, além de entrada e envio de texto em dispositivos equipados com joystick. Projetado para uso em campo: coloque na sua mochila e confie que ele está cumprindo seu papel.",
+      "sourceHash": "sha256:5a238086afbc4edb37bec544493b8a1154b08a4501acace27ee878515dc98e5d",
+      "generatedAt": "2026-06-27T14:22:14.481Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9411,
+      "promptTokens": 215,
+      "completionTokens": 1675
+    },
+    "deviceNotes.thinknode-m1": {
+      "value": "Ecrã E-Ink, botão único; principal objetivo de desenvolvimento",
+      "sourceHash": "sha256:3031fe508fa8b50f78ff1ef2a55c9bacf17a0a0282da5f13b151a1164cb14dc6",
+      "generatedAt": "2026-06-27T14:22:16.896Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2413,
+      "promptTokens": 140,
+      "completionTokens": 595
+    },
+    "deviceNotes.wio-tracker-l1": {
+      "value": "Ecrã OLED (SSD1306/SH1106 128x64), joystick; com suporte para introdução e envio de texto",
+      "sourceHash": "sha256:eaa64f3bcd4605640287d5f804ed4c9c4204d54b6d25e371c308cef2ad8d87a9",
+      "generatedAt": "2026-06-27T14:22:19.782Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2886,
+      "promptTokens": 153,
+      "completionTokens": 729
+    },
+    "deviceNotes.wio-tracker-l1-eink": {
+      "value": "Variante E-ink (GxEPD2 250x122)",
+      "sourceHash": "sha256:f91d9dccff6b1fd7ea761083860f6f1e5622685f6b5cd86b8a37f00f3bad5a89",
+      "generatedAt": "2026-06-27T14:22:21.699Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1916,
+      "promptTokens": 144,
+      "completionTokens": 423
+    },
+    "deviceNotes.sensecap-t1000e": {
+      "value": "Dispositivo headless (sem ecrã, com um botão); referência headless principal",
+      "sourceHash": "sha256:980dbf6be00da314282ad26bd857c1a1919ce888280a6511ffd318f21c07ceb8",
+      "generatedAt": "2026-06-27T14:22:22.343Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 644,
+      "promptTokens": 143,
+      "completionTokens": 23
+    },
+    "deviceNotes.rak-wismesh-tag": {
+      "value": "Dispositivo sem interface gráfica; contribuições bem-vindas",
+      "sourceHash": "sha256:31113fa5f094d2a10f94dc8db5b8c2a96549e4c428fbe4e1fdf2859150b1b467",
+      "generatedAt": "2026-06-27T14:22:24.943Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2598,
+      "promptTokens": 135,
+      "completionTokens": 602
+    },
+    "features": {
+      "value": "[\n  \"Anúncio automático de GPS (zero-hop, a cada 5 minutos)\",\n  \"Página de rastreamento dedicada com cálculo de distância de Haversine\",\n  \"Modo Off-Grid com repetição de cliente em frequências legais separadas\",\n  \"Ativação do modo Off-Grid com um toque (menu ou 5 pressionamentos de botão em dispositivos headless)\",\n  \"Sistema SOS com confirmação em duas etapas e alarme sonoro\",\n  \"Histórico de mensagens (buffer circular em RAM, até 32 entradas)\",\n  \"Inserção e envio de texto via joystick (Wio Tracker L1)\",\n  \"Contador de nós online no ecrã inicial\",\n  \"Indicadores de modo (GPS-SHARE, OFF-GRID)\",\n  \"Suporte para dispositivos headless (T1000-E, RAK WiseMesh TAG)\",\n  \"Feedback sonoro forçado para todas as ações em dispositivos headless\",\n  \"Ecrã de abertura com informações de versão e identidade FieldMesh\",\n  \"Correções de retroiluminação para vários ecrãs\"\n]",
+      "sourceHash": "sha256:09a7bba2fe4c10f8b97f916dc4697c6893d26d347aeab276c72ac7a073a1b21f",
+      "generatedAt": "2026-06-27T14:22:31.779Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6835,
+      "promptTokens": 289,
+      "completionTokens": 2248
+    }
+  }
+}

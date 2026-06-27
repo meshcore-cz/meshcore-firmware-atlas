@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv-sosprz",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Бінарний дистрибутив форку MeshCore UI для M5Stack Cardputer ADV, упакований у форматі образів для прошивки ESP32-S3 і призначений для його інтерфейсу з клавіатурою та екраном.",
+      "sourceHash": "sha256:35605e5737a6b4e481f685f2fcd88f585708f6d3e694ef7efe08ade51f27e299",
+      "generatedAt": "2026-06-27T15:33:35.334Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8568,
+      "promptTokens": 161,
+      "completionTokens": 1505
+    },
+    "features": {
+      "value": "[\"Інтерфейс клавіатури та дисплея Cardputer ADV\",\"Готові образи прошивки ESP32-S3\"]",
+      "sourceHash": "sha256:dc03637703f47a5ab83a7419fcb6c6f567b214bb35f31171b3c5eb4cccd53d4e",
+      "generatedAt": "2026-06-27T15:33:40.396Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5062,
+      "promptTokens": 147,
+      "completionTokens": 982
+    },
+    "verificationNotes.the-repository-contains-release-binaries-and-fla": {
+      "value": "Репозиторій містить бінарні файли випусків і примітки щодо прошивання, але не містить вихідного коду прошивки чи ліцензії.",
+      "sourceHash": "sha256:11184b73346e0b9944f92bb8bcb234803f12cba1f7d171dcdf67e104a2dedf92",
+      "generatedAt": "2026-06-27T15:33:47.458Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7060,
+      "promptTokens": 144,
+      "completionTokens": 1190
+    }
+  }
+}

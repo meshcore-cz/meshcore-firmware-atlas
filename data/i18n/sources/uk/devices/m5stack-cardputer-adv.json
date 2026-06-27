@@ -1,0 +1,15 @@
+{
+  "resource": "device/m5stack-cardputer-adv",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативний пристрій на базі ESP32-S3 із 1.14-дюймовим LCD-дисплеєм, 56-кнопковою клавіатурою, microSD, акумулятором на 1750 мА·год, модулем розширення Cap LoRa-1262 для SX1262 LoRa та вбудованим GNSS. Комбінація, на яку орієнтовані форки MeshCore від спільноти, використовує базу Cardputer-ADV із приєднаною надбудовою U214.",
+      "sourceHash": "sha256:b5661510800f4de96b0b23f2c0830e2148230d76d62a6015e3c99743f1bd159e",
+      "generatedAt": "2026-06-27T15:00:07.877Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5726,
+      "promptTokens": 202,
+      "completionTokens": 1745
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-tracker-l1",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển Meshtastic/MeshCore tiết kiệm điện năng, tích hợp LoRa, L76K GNSS, màn hình trạng thái OLED 1,3 inch và cần điều khiển 4 hướng. Hỗ trợ cấp nguồn qua USB-C, năng lượng mặt trời và pin Li-ion ngoài thông qua đầu nối JST. Chỉ bao gồm bo mạch — không kèm pin tích hợp hay vỏ bảo vệ.",
+      "sourceHash": "sha256:798cf5312ddfe83e96242a8889c961e42c66753156c75fd1c34e004dc20127ee",
+      "generatedAt": "2026-06-27T15:42:00.316Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 55310,
+      "promptTokens": 190,
+      "completionTokens": 993
+    }
+  }
+}

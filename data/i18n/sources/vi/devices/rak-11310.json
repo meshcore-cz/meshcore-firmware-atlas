@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-11310",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mô-đun lõi WisBlock tích hợp RP2040 và SX1262 LoRa để xây dựng mạng mesh nhỏ gọn trên bo mạch nền WisBlock. Không tích hợp Wi-Fi hay BLE; được thiết kế để kết hợp với các mô-đun giao tiếp WisBlock và anten ngoài.",
+      "sourceHash": "sha256:bd06a20362408e809fc1bdb07dd3c3c6020c1d79a616ca5f792c188866101591",
+      "generatedAt": "2026-06-27T15:39:59.024Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3782,
+      "promptTokens": 174,
+      "completionTokens": 757
+    }
+  }
+}

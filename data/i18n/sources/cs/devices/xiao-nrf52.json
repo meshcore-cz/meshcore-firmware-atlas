@@ -1,0 +1,12 @@
+{
+  "resource": "device/xiao-nrf52",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Miniaturní deska s nRF52840, která slouží jako hostitelská deska v sadě Seeed XIAO nRF52840 + Wio-SX1262. Základní deska nabízí BLE, programování přes USB a kompaktní rozměry vhodné pro nositelnou elektroniku; LoRa je zajištěna samostatným modulem Wio-SX1262.",
+      "sourceHash": "sha256:fe6a77fdb726ca93c513d09d614a7dfa051d5f448c85ccefad5e6a690f84d09b",
+      "generatedAt": "2026-06-27T10:58:41.889Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

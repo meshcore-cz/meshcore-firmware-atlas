@@ -1,0 +1,60 @@
+{
+  "resource": "software/domoticz-meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Integrace pro Domoticz zpřístupňuje telemetrii uzlů MeshCore, kontakty, zprávy, mapy a historické analýzy rádiového provozu ve formě nativních zařízení, panelů a vstupů pro automatizaci.",
+      "sourceHash": "sha256:dbf3307ce13c4167dbedf3f36dc8b722bfd775f8562a8c7e29330f8b1fcd2d99",
+      "generatedAt": "2026-06-27T11:27:16.948Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6921,
+      "promptTokens": 158,
+      "completionTokens": 891
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Řídicí panel Domoticz MeshCore",
+      "sourceHash": "sha256:10198a1398373ef89ebd3e9883fd9d96b1bcfccf18cc428ce3118b8810caf9a8",
+      "generatedAt": "2026-06-27T11:27:21.035Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4087,
+      "promptTokens": 135,
+      "completionTokens": 517
+    },
+    "screenshots.topology.png.caption": {
+      "value": "Topologie mesh a trasy směrování",
+      "sourceHash": "sha256:e2062bcd716afaf55aff6ae4cff11e84e7a1e7709e0e5c93d86feae372cb1054",
+      "generatedAt": "2026-06-27T11:27:26.130Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5095,
+      "promptTokens": 134,
+      "completionTokens": 602
+    },
+    "screenshots.history.png.caption": {
+      "value": "Analýza historie RSSI, SNR a paketů",
+      "sourceHash": "sha256:198294fc545ad718ef930b26342d6b067e93df93407bb7d7e38df22bc1b392fb",
+      "generatedAt": "2026-06-27T11:27:33.497Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7367,
+      "promptTokens": 139,
+      "completionTokens": 830
+    },
+    "screenshots.firehose.png.caption": {
+      "value": "Živý proud přijatých paketů",
+      "sourceHash": "sha256:8a84b87d917dc8bf2d55af3735ff89d354a5ae5b65c1068c0bd46378406597f5",
+      "generatedAt": "2026-06-27T11:27:43.529Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10031,
+      "promptTokens": 134,
+      "completionTokens": 385
+    },
+    "tags": {
+      "value": "[\"domoticz\", \"domácí automatizace\", \"řídicí panel\", \"dzvents\"]",
+      "sourceHash": "sha256:0b19a769b1625d44012513c27e774a43092b4ff18265d080ea517a6494823d4d",
+      "generatedAt": "2026-06-27T13:39:10.212Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8719,
+      "promptTokens": 143,
+      "completionTokens": 532
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resource": "software/meshcore-packet-tool",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Webové pracovní prostředí pro kontrolu, dekódování a sestavování rádiových paketů MeshCore. Nabízí typové editory paketů, správu identit a klíčů, sdílení pracovního prostředí přes URL a benchmarky dekódování ve WebAssembly.",
+      "sourceHash": "sha256:3113d4408d0082632129e48dbd707119215f7aaac4db6e484d3f92f5bc18ae43",
+      "generatedAt": "2026-06-27T11:36:39.287Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10882,
+      "promptTokens": 166,
+      "completionTokens": 909
+    },
+    "verificationNotes.the-application-uses-the-meshpkt-codec-compiled-": {
+      "value": "Aplikace využívá kodek meshpkt zkompilovaný do WebAssembly.",
+      "sourceHash": "sha256:ed6597e937345c7c3ab6c0d0ec5515a8698aa540e3b30b6ba7c76ec7662777d1",
+      "generatedAt": "2026-06-27T11:36:45.337Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6050,
+      "promptTokens": 141,
+      "completionTokens": 471
+    },
+    "verificationNotes.version-1-0-0-is-declared-in-package-json-no-pro": {
+      "value": "Verze 1.0.0 je uvedena v package.json, nebylo však publikováno žádné vydání projektu.",
+      "sourceHash": "sha256:f52a10657de68a949d201838576b79c2dbb5af244e253fe7a416c5b44c587102",
+      "generatedAt": "2026-06-27T11:36:56.594Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11257,
+      "promptTokens": 148,
+      "completionTokens": 989
+    },
+    "verificationNotes.no-repository-license-file-or-spdx-license-decla": {
+      "value": "Při kontrole nebyl k dispozici žádný licenční soubor repozitáře ani prohlášení o licenci SPDX.",
+      "sourceHash": "sha256:71ac0ef045cf4eb43eeb1710b74d5161b7ff6597c1c08e437abd890590b7e2ae",
+      "generatedAt": "2026-06-27T11:37:04.661Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8066,
+      "promptTokens": 142,
+      "completionTokens": 717
+    },
+    "tags": {
+      "value": "[\"protokol\",\"editor paketů\",\"dekodér\",\"kryptografie\",\"wasm\"]",
+      "sourceHash": "sha256:c0d3c6bf51542fe01b4f010d41317d8e26445314a478ec6e361b19ac9e50e35f",
+      "generatedAt": "2026-06-27T13:42:55.256Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17226,
+      "promptTokens": 143,
+      "completionTokens": 801
+    }
+  }
+}

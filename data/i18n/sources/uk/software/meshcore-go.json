@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-go",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Транспортно-незалежний Go SDK для радіостанцій-компаньйонів MeshCore, що забезпечує високорівневий обмін повідомленнями, керування контактами та каналами, виявлення пристроїв, адміністрування репітерів і прямий доступ до протоколу через Serial, BLE та TCP. До його складу також входить термінальний клієнт mc та необов'язковий бекенд із підтримкою кількох сеансів.",
+      "sourceHash": "sha256:8d5807ef6d2a0b2bbfedd9216e74bd3bcdf9b54df9f54dbbde28951b3102db96",
+      "generatedAt": "2026-06-27T16:21:44.673Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12168,
+      "promptTokens": 178,
+      "completionTokens": 1372
+    },
+    "tags": {
+      "value": "[\"SDK\",\"протокол\",\"термінал\",\"демон\"]",
+      "sourceHash": "sha256:ff01eaeb0d66ea430221178a6fd345664e90ad175d32425eb93675b9766e50b9",
+      "generatedAt": "2026-06-27T16:21:47.177Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2500,
+      "promptTokens": 138,
+      "completionTokens": 457
+    },
+    "verificationNotes.public-apis-may-change-before-the-first-stable-r": {
+      "value": "Публічні API можуть змінитися до виходу першої стабільної версії.",
+      "sourceHash": "sha256:b800e10978723ff211ec3c12f8dc345a1c23ca6f90d143fa46d3b3acf30c29f9",
+      "generatedAt": "2026-06-27T16:21:50.563Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3386,
+      "promptTokens": 139,
+      "completionTokens": 585
+    },
+    "verificationNotes.no-repository-license-file-or-spdx-license-decla": {
+      "value": "Під час перевірки не виявлено ні файлу ліцензії репозиторію, ні декларації ліцензії SPDX.",
+      "sourceHash": "sha256:71ac0ef045cf4eb43eeb1710b74d5161b7ff6597c1c08e437abd890590b7e2ae",
+      "generatedAt": "2026-06-27T16:21:56.010Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5446,
+      "promptTokens": 142,
+      "completionTokens": 743
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/fieldmesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Fork firmwaru MeshCore optimalizovaný pro použití v terénu – festivaly, turistiku a akce mimo síť. Přidává automatické vysílání GPS, vyhrazenou stránku pro sledování s výpočtem vzdálenosti, režim Off-Grid s výchozími legálními frekvencemi a přepínáním jedním stiskem, systém SOS s alarmem přes bzučák, historii zpráv s kruhovou vyrovnávací pamětí v RAM a možnost zadávání a odesílání textu na zařízeních s joystickem. Je navržen tak, aby byl okamžitě připravený do terénu: hoďte ho do batohu a spoléhejte na to, že odvede svou práci.",
+      "sourceHash": "sha256:5a238086afbc4edb37bec544493b8a1154b08a4501acace27ee878515dc98e5d",
+      "generatedAt": "2026-06-27T11:13:39.376Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.thinknode-m1": {
+      "value": "E-inkový displej, jediné tlačítko; hlavní cíl vývoje",
+      "sourceHash": "sha256:3031fe508fa8b50f78ff1ef2a55c9bacf17a0a0282da5f13b151a1164cb14dc6",
+      "generatedAt": "2026-06-27T11:13:40.943Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.wio-tracker-l1": {
+      "value": "OLED displej (SSD1306/SH1106 128x64), joystick; podporuje zadávání a odesílání textu",
+      "sourceHash": "sha256:eaa64f3bcd4605640287d5f804ed4c9c4204d54b6d25e371c308cef2ad8d87a9",
+      "generatedAt": "2026-06-27T11:13:46.940Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.wio-tracker-l1-eink": {
+      "value": "Varianta pro E-ink (GxEPD2 250x122)",
+      "sourceHash": "sha256:f91d9dccff6b1fd7ea761083860f6f1e5622685f6b5cd86b8a37f00f3bad5a89",
+      "generatedAt": "2026-06-27T11:13:51.557Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.sensecap-t1000e": {
+      "value": "Zařízení bez ovládacího panelu (bez displeje, s jedním tlačítkem); primární referenční zařízení bez ovládacího panelu",
+      "sourceHash": "sha256:980dbf6be00da314282ad26bd857c1a1919ce888280a6511ffd318f21c07ceb8",
+      "generatedAt": "2026-06-27T11:13:55.738Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.rak-wismesh-tag": {
+      "value": "Zařízení bez grafického rozhraní; příspěvky vítány.",
+      "sourceHash": "sha256:31113fa5f094d2a10f94dc8db5b8c2a96549e4c428fbe4e1fdf2859150b1b467",
+      "generatedAt": "2026-06-27T11:14:02.880Z",
+      "model": "glm-5.2:cloud"
+    },
+    "features": {
+      "value": "[\"Automatické vysílání GPS (zero-hop, každých 5 minut)\",\"Vyhrazená stránka pro sledování s výpočtem vzdálenosti pomocí Haversinovy formule\",\"Režim Off-Grid s opakováním klienta na samostatných povolených frekvencích\",\"Přepnutí do režimu Off-Grid jedním stiskem (přes menu nebo 5násobným stiskem tlačítka na zařízeních bez displeje)\",\"Systém SOS s dvoustupňovým potvrzením a zvukovým alarmem\",\"Historie zpráv (kruhová vyrovnávací paměť v RAM, maximálně 32 záznamů)\",\"Zadávání a odesílání textu pomocí joysticku (Wio Tracker L1)\",\"Počítadlo online uzlů na domovské obrazovce\",\"Indikátory režimu (GPS-SHARE, OFF-GRID)\",\"Podpora zařízení bez displeje (T1000-E, RAK WiseMesh TAG)\",\"Vynucená zvuková odezva pro všechny akce na zařízeních bez displeje\",\"Úvodní obrazovka s informacemi o verzi a značkou FieldMesh\",\"Opravy podsvícení pro různé displeje\"]",
+      "sourceHash": "sha256:09a7bba2fe4c10f8b97f916dc4697c6893d26d347aeab276c72ac7a073a1b21f",
+      "generatedAt": "2026-06-27T12:26:56.522Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 23607,
+      "promptTokens": 289,
+      "completionTokens": 1425
+    }
+  }
+}

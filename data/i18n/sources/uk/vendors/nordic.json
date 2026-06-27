@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/nordic",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Виробник напівпровідників; системи на кристалі (SoC) nRF52/nRF54 забезпечують роботу багатьох вузлів mesh-мереж з низьким енергоспоживанням.",
+      "sourceHash": "sha256:a23f677f933b770e81d124ffbfaa0e6d7da44221a2b6db1c752c28da3249788d",
+      "generatedAt": "2026-06-27T16:45:09.506Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6793,
+      "promptTokens": 149,
+      "completionTokens": 1243
+    }
+  }
+}

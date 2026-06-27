@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshat-se",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nơi hội tụ tại Thụy Điển dành cho những người xây dựng, sử dụng và phát triển mạng lưới mesh, hỗ trợ cả MeshCore và Meshtastic thông qua bản đồ dùng chung, MQTT và hệ thống trạng thái.",
+      "sourceHash": "sha256:c55d5cf462db355e32ded1672d881e1059a9d63edbd1b16eba1d25c8f964d82e",
+      "generatedAt": "2026-06-27T16:54:20.991Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10981,
+      "promptTokens": 161,
+      "completionTokens": 984
+    }
+  }
+}

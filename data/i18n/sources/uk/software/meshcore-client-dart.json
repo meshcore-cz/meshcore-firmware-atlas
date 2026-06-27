@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-client-dart",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Реалізація на Flutter та Dart супутнього протоколу MeshCore BLE, яка забезпечує керування з'єднанням, роботу з чергою команд, розбір бінарних кадрів, криптографію та моделі даних прикладного рівня.",
+      "sourceHash": "sha256:05a52871704a3af419efea64258c25e5f5d12fa2db3ca281005349ea2e9402d4",
+      "generatedAt": "2026-06-27T16:21:17.018Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11763,
+      "promptTokens": 159,
+      "completionTokens": 1072
+    },
+    "tags": {
+      "value": "[\"sdk\",\"протокол\",\"flutter\"]",
+      "sourceHash": "sha256:4cef831297b1b718ad603140a7aafa77a5b16fe612806335a4f2fae7f852cf22",
+      "generatedAt": "2026-06-27T16:21:20.987Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3968,
+      "promptTokens": 136,
+      "completionTokens": 630
+    },
+    "verificationNotes.the-package-declares-publish-to-none-and-is-inst": {
+      "value": "Пакет оголошує publish_to none і встановлюється з вихідного коду.",
+      "sourceHash": "sha256:91a7ac823d8a1832b3398b560ab41ecb2a822642f34e872843043c07b4c3d3ef",
+      "generatedAt": "2026-06-27T16:21:27.494Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6507,
+      "promptTokens": 141,
+      "completionTokens": 924
+    },
+    "verificationNotes.no-license-file-or-spdx-license-declaration-was-": {
+      "value": "Під час перевірки не виявлено файлу ліцензії або декларації ліцензії SPDX.",
+      "sourceHash": "sha256:e93ad868f410f62d61d990606a67bd4f19e27a9f2914a2d14d44128840979635",
+      "generatedAt": "2026-06-27T16:21:32.505Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5010,
+      "promptTokens": 141,
+      "completionTokens": 824
+    }
+  }
+}

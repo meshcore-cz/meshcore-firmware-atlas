@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-de",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tiếng Đức và trung tâm wiki tại Đức, tổng hợp các hướng dẫn cài đặt, nhóm khu vực, cấu hình đề xuất, ghi chú phần cứng và không gian điều phối trực tuyến dành cho người dùng MeshCore.",
+      "sourceHash": "sha256:a592817c4e1c5c2d6ceb72daf9570ec13105a9081514421a117346a42a2eab88",
+      "generatedAt": "2026-06-27T16:47:48.570Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4400,
+      "promptTokens": 161,
+      "completionTokens": 851
+    }
+  }
+}

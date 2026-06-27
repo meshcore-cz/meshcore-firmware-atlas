@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/chiyocore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Reimplementação experimental do MeshCore em Rust para dispositivos ESP32, estruturada como um núcleo de protocolo reutilizável, com compilações geradas para placas e camadas de manipulador configuráveis.",
+      "sourceHash": "sha256:d2ab00817f174cd570a2cf0138f1bea33abdcfcaf0f543b2f0ae0bb766db61c7",
+      "generatedAt": "2026-06-27T14:28:14.993Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3538,
+      "promptTokens": 156,
+      "completionTokens": 954
+    },
+    "deviceNotes.xiao-esp32s3": {
+      "value": "O mantenedor relata o funcionamento experimental bem-sucedido em um kit de rádio XIAO ESP32-S3.",
+      "sourceHash": "sha256:a82d1a4cf3a0f2cbc491613c140db9294b909b117af6858ae15ca651d731f6f4",
+      "generatedAt": "2026-06-27T14:28:18.075Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3082,
+      "promptTokens": 148,
+      "completionTokens": 825
+    },
+    "features": {
+      "value": "[\"Implementação do protocolo MeshCore em Rust\",\"Compilações geradas para a placa e a camada de tratamento\",\"Interface complementar TCP\"]",
+      "sourceHash": "sha256:9bb5c229d153c26a2bca27a7b6a3ee65d37b8714bc50fa22db7d77f827df2310",
+      "generatedAt": "2026-06-27T14:28:21.432Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3356,
+      "promptTokens": 148,
+      "completionTokens": 902
+    }
+  }
+}

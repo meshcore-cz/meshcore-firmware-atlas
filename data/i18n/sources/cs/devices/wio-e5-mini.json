@@ -1,0 +1,12 @@
+{
+  "resource": "device/wio-e5-mini",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní vývojová deska Wio-E5 LoRaWAN s podporou továrního AT firmwaru a malými rozměry 50 × 23 mm. Je určena k rychlému zprovoznění LoRa a prototypování na úrovni GPIO, nikoli pro finální zapouzdření.",
+      "sourceHash": "sha256:f5b089a1b8f3bd8466a5704b2d1b6151b126ef6bba9d46bf52cba42c934716aa",
+      "generatedAt": "2026-06-27T10:57:57.406Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

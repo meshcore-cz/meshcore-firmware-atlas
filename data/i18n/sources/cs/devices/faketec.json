@@ -1,0 +1,12 @@
+{
+  "resource": "device/faketec",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "DIY cílové zařízení ProMicro nRF52840 MeshCore s externím modulem SX1262 LoRa. Profil upstream firmwaru nabízí pro komunitní sestavení rozhraní pro napojení OLED, GNSS a senzorů, přičemž konkrétní modul a kryt závisí na staviteli.",
+      "sourceHash": "sha256:d4b98d7dbf9682c053d8cb9e5d35ee19d7c508f8911fb4e60394b1b533b827b0",
+      "generatedAt": "2026-06-27T10:54:40.223Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

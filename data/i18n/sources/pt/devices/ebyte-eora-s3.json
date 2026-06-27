@@ -1,0 +1,15 @@
+{
+  "resource": "device/ebyte-eora-s3",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento compacta ESP32-S3 + SX1262 com ecrã OLED de 0,96 polegadas, ranhura para cartão SD, porta USB-C e circuito de carregamento de baterias LiPo. Ideal para pequenas montagens de MeshCore/Meshtastic em que uma placa de baixo custo com ecrã e suporte para bateria recarregável seja suficiente.",
+      "sourceHash": "sha256:838bc591103369491458fcccd3f367959c167674555828b4431ebbc606d71047",
+      "generatedAt": "2026-06-27T13:57:51.504Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20747,
+      "promptTokens": 188,
+      "completionTokens": 1314
+    }
+  }
+}

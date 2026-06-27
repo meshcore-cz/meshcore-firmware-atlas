@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-techo",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативний пристрій Meshtastic/MeshCore на базі nRF52840 + SX1262 з наднизьким енергоспоживанням, 1.54-дюймовим дисплеєм на електронному папері та вбудованим GNSS-модулем L76K. Підтримується лише Bluetooth 5. Доступна опціональна версія з датчиком навколишнього середовища BME280 та корпусом з ABS-пластику.",
+      "sourceHash": "sha256:28f4dd1b6309ea945c5ff350db721e370e0356816e50e25a5038b54df630480e",
+      "generatedAt": "2026-06-27T14:59:21.919Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3948,
+      "promptTokens": 185,
+      "completionTokens": 1024
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/raspberry",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Одноплатні комп'ютери та мікроконтролери Raspberry Pi.",
+      "sourceHash": "sha256:053e5795d8f5d75dfdb5919e9ad7baefa86cfd7383fcb135eb7de4a1206a9098",
+      "generatedAt": "2026-06-27T16:45:27.291Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2794,
+      "promptTokens": 139,
+      "completionTokens": 379
+    }
+  }
+}

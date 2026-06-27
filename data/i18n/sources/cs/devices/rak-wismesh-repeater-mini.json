@@ -1,0 +1,12 @@
+{
+  "resource": "device/rak-wismesh-repeater-mini",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní venkovní opakovač s podporou solárního napájení, postavený na modulu RAK4631 a základní desce RAK19003 Mini. Je umístěn v IP67 krytu Unify s interní baterií, rozhraním BLE, USB portem a externí LoRa anténou. K dispozici v široké nabídce regionálních variant 8xx a 9xx pro rychlé nasazení v autonomním režimu.",
+      "sourceHash": "sha256:bde7a35d33edd36a5c691d29e51939d71b997101c625aaee101620350d1d29db",
+      "generatedAt": "2026-06-27T10:55:49.039Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

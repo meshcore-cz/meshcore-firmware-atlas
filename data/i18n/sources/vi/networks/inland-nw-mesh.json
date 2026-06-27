@@ -1,0 +1,15 @@
+{
+  "resource": "network/inland-nw-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore do các tình nguyện viên vận hành, phục vụ Spokane, Coeur d'Alene, Palouse và Lewiston/Clarkston, đồng thời đang mở rộng khắp Đông Washington và Idaho. Cộng đồng này tập trung vào truyền thông ngoài lưới bền bỉ thông qua các nút LoRa được cấp nguồn độc lập.",
+      "sourceHash": "sha256:a5f7afb43e9561e670eaaca715a32e8e334e50a7eabd48f80418d361ace86ec0",
+      "generatedAt": "2026-06-27T16:48:51.645Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6894,
+      "promptTokens": 179,
+      "completionTokens": 1015
+    }
+  }
+}

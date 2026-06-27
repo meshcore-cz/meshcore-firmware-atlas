@@ -1,0 +1,60 @@
+{
+  "resource": "software/meshcore-mqtt-live-map",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản đồ lưu lượng MeshCore thời gian thực tự lưu trú, giải mã luồng gói tin MQTT và trực quan hóa các nút, tuyến, peer, bản đồ nhiệt hoạt động, vùng phủ, đường ngắm cùng dữ liệu truyền sóng trong một ứng dụng web có thể cài đặt.",
+      "sourceHash": "sha256:130787bda4571d64a527bd9e3c2c9055c1691b0b193791db319ad7ce3f4634ed",
+      "generatedAt": "2026-06-27T16:11:44.123Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8431,
+      "promptTokens": 172,
+      "completionTokens": 967
+    },
+    "screenshots.live-map.png.caption": {
+      "value": "Nút mạng đang hoạt động, tuyến đường và hoạt động mạng lưới",
+      "sourceHash": "sha256:6a687b95bbb136e901dd134c79e07747a4c68c4c8478277a7f772ccc71009fa8",
+      "generatedAt": "2026-06-27T16:11:51.004Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6879,
+      "promptTokens": 136,
+      "completionTokens": 870
+    },
+    "screenshots.route-history.png.caption": {
+      "value": "Công cụ lịch sử định tuyến và phân tích mạng",
+      "sourceHash": "sha256:72bcaab386076d69166844e7ac8c89597b6a46b4e1e7f5fa4c0b3f6f348857d3",
+      "generatedAt": "2026-06-27T16:11:54.834Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3830,
+      "promptTokens": 135,
+      "completionTokens": 590
+    },
+    "tags": {
+      "value": "[\"bản đồ thời gian thực\", \"mqtt\", \"tự lưu trữ\", \"pwa\", \"lan truyền\"]",
+      "sourceHash": "sha256:1b7f1ed8a768f00fb41e6c884dbfd4e9b800880c890f94740f26c1d8275c6e2b",
+      "generatedAt": "2026-06-27T16:11:59.817Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4982,
+      "promptTokens": 145,
+      "completionTokens": 725
+    },
+    "verificationNotes.supports-mqtt-over-tcp-or-websockets-with-option": {
+      "value": "Hỗ trợ MQTT qua TCP hoặc WebSockets, có tùy chọn TLS và bảo vệ token production.",
+      "sourceHash": "sha256:d6ba6c9dff165e59a92cd93aecdf9076e6183d4067881ef33db009152390a5ef",
+      "generatedAt": "2026-06-27T16:12:56.872Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 57054,
+      "promptTokens": 146,
+      "completionTokens": 729
+    },
+    "verificationNotes.the-greater-boston-deployment-is-the-reference-i": {
+      "value": "Bản triển khai tại Greater Boston là phiên bản tham chiếu; một số mạng lưới cộng đồng vận hành các bản triển khai độc lập.",
+      "sourceHash": "sha256:27bc584c41223eae59b8aec84d591abb2d49b6018b2da121335ee2bb680fccd6",
+      "generatedAt": "2026-06-27T16:13:04.508Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7634,
+      "promptTokens": 145,
+      "completionTokens": 812
+    }
+  }
+}

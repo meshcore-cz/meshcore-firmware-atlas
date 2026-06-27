@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-wt2",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị định vị sử dụng ESP32-S3, tích hợp SX1262 LoRa, UC6580 GNSS, Wi-Fi, BLE và màn hình TFT 0.96 inch 160×80. Được thiết kế cho việc theo dõi đồ vật và mạng mesh, có hỗ trợ USB-C, quản lý pin và tấm pin năng lượng mặt trời.",
+      "sourceHash": "sha256:1b3b6c809471e2e0dc68f5b616a41166f409dc7294c5a301441431cfb2cd3b87",
+      "generatedAt": "2026-06-27T15:34:54.436Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6695,
+      "promptTokens": 188,
+      "completionTokens": 1195
+    }
+  }
+}

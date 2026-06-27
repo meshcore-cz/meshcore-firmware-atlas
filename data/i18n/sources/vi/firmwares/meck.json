@@ -1,0 +1,87 @@
+{
+  "resource": "firmware/meck",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản phân nhánh firmware đồng hành của MeshCore tập trung hỗ trợ kết nối BLE và WiFi cho LilyGo T-Deck Pro, T-Deck Max và T5 E-Paper S3 Pro. Tích hợp sẵn giao diện cảm ứng hoàn chỉnh kèm bàn phím trên thiết bị, trò chơi, tin nhắn thoại qua LoRa, trình duyệt web, SMS và trình khởi chạy cấu hình có hỗ trợ cập nhật OTA.",
+      "sourceHash": "sha256:15dc6e89c7e0a29404155146f970f72df79f9c955441edab5bdf5980028fc282",
+      "generatedAt": "2026-06-27T15:46:12.618Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5938,
+      "promptTokens": 197,
+      "completionTokens": 1154
+    },
+    "deviceNotes.lilygo-tdeck-pro": {
+      "value": "Phiên bản T-Deck Pro với ESP32-S3 và màn hình e-paper.",
+      "sourceHash": "sha256:d3e302e1074ed1b1d941bbca080e2d7eb0df11420b622ce77c92cc8bd934acf8",
+      "generatedAt": "2026-06-27T15:46:15.588Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2970,
+      "promptTokens": 144,
+      "completionTokens": 451
+    },
+    "deviceNotes.lilygo-tdeck-max": {
+      "value": "Phiên bản T-Deck Max với 4G, GPS và màn hình e-paper.",
+      "sourceHash": "sha256:5b8a8cc15b62119e7b55580023bba69260e42db50e2e501ef0201b124ca189ed",
+      "generatedAt": "2026-06-27T15:46:20.631Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5042,
+      "promptTokens": 146,
+      "completionTokens": 621
+    },
+    "deviceNotes.lilygo-t5-pro": {
+      "value": "Phiên bản T5 E-Paper S3 Pro (H752-XX).",
+      "sourceHash": "sha256:2169e8fc229f0a36eb2f61124c5ecd0fdd4129c71425dacd48f6645095bd56c5",
+      "generatedAt": "2026-06-27T15:46:28.176Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7544,
+      "promptTokens": 146,
+      "completionTokens": 459
+    },
+    "deviceNotes.heltec-v3": {
+      "value": "Chỉ dành cho bộ lặp từ xa.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T15:46:31.021Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2844,
+      "promptTokens": 134,
+      "completionTokens": 451
+    },
+    "deviceNotes.heltec-wsl3": {
+      "value": "Chỉ dành cho bộ lặp từ xa.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T15:46:33.591Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2570,
+      "promptTokens": 134,
+      "completionTokens": 376
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Chỉ bộ lặp từ xa.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T15:46:36.609Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3017,
+      "promptTokens": 134,
+      "completionTokens": 541
+    },
+    "deviceNotes.heltec-v4-exp": {
+      "value": "Chỉ dành cho bộ lặp từ xa.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T15:46:39.956Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3346,
+      "promptTokens": 134,
+      "completionTokens": 587
+    },
+    "features": {
+      "value": "[\"Kết nối đồng hành qua BLE và WiFi\",\"Giao diện cảm ứng với bàn phím trên thiết bị\",\"Trò chơi (Sokoban, Pong, Snake)\",\"Ghi chú giọng nói qua LoRa\",\"Trình duyệt web và ứng dụng IRC\",\"Ứng dụng SMS và gọi điện (chỉ dành cho phiên bản 4G)\",\"Tùy chỉnh thông báo theo từng kênh và âm báo tùy chỉnh\",\"Xuất/nhập cấu hình\",\"Khóa màn hình và tắt máy\"]",
+      "sourceHash": "sha256:bafffdc9f50056a03b4fbf712f3dd7b6da281181ee86af8ac8797bf246382ee3",
+      "generatedAt": "2026-06-27T15:47:11.573Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 31617,
+      "promptTokens": 198,
+      "completionTokens": 1234
+    }
+  }
+}

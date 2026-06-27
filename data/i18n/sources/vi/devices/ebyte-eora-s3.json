@@ -1,0 +1,15 @@
+{
+  "resource": "device/ebyte-eora-s3",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển nhỏ gọn ESP32-S3 + SX1262 có màn hình OLED 0.96 inch, khe cắm thẻ SD, USB-C và mạch sạc LiPo. Phù hợp với các thiết lập MeshCore/Meshtastic quy mô nhỏ, nơi một bo mạch giá rẻ có màn hình và hỗ trợ sạc pin là đủ dùng.",
+      "sourceHash": "sha256:838bc591103369491458fcccd3f367959c167674555828b4431ebbc606d71047",
+      "generatedAt": "2026-06-27T15:29:48.640Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15793,
+      "promptTokens": 188,
+      "completionTokens": 1089
+    }
+  }
+}

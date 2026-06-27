@@ -1,0 +1,15 @@
+{
+  "resource": "network/nsw-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní mesh síť a znalostní báze pro Sydney a Nový Jižní Wales. Většině účastníků se nyní doporučuje používat MeshCore. K dispozici jsou zveřejněné rádiové profily pro Austrálii, mapy, pozorovatelé, opakovače a koordinace přes Discord.",
+      "sourceHash": "sha256:1bead559f415745063ee06738ca0abda0d6e4e1b2e01a1a48d180112852b6c82",
+      "generatedAt": "2026-06-27T12:10:14.412Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11805,
+      "promptTokens": 169,
+      "completionTokens": 1458
+    }
+  }
+}

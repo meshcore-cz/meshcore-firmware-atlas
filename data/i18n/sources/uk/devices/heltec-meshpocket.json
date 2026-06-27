@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshpocket",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Heltec MeshPocket — це компактний LoRa-вузол на базі nRF52840 + SX1262, вбудований у зовнішній акумулятор із магнітною бездротовою зарядкою Qi2, двома портами USB-C (вхід/вихід 5 В) та невеликим LCD-дисплеєм. Пристрій створено для портативних mesh-мереж Meshtastic та MeshCore, має акумулятор ємністю понад 4000 мА·год і підтримує енергоефективний супутній режим BLE.",
+      "sourceHash": "sha256:793167c1ea40adc9a499f253389f9774fa8162f76c3f9a80adac8f57af36ae25",
+      "generatedAt": "2026-06-27T14:56:59.396Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5091,
+      "promptTokens": 201,
+      "completionTokens": 1384
+    }
+  }
+}

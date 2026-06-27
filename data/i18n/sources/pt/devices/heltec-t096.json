@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t096",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento LoRa nRF52840 + SX1262 de baixo consumo, com GNSS integrado, Bluetooth LE, alimentação/serial USB-C e entrada solar opcional. Projetada para aplicações Meshtastic, MeshCore e LoRaWAN, conta com antenas LoRa e GNSS IPEX externas.",
+      "sourceHash": "sha256:6681fe13ff52517fb888e93a3cbf1fb1e81f3d5999c32829a359b4e1fc33e4f4",
+      "generatedAt": "2026-06-27T14:04:00.652Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16008,
+      "promptTokens": 191,
+      "completionTokens": 1027
+    }
+  }
+}

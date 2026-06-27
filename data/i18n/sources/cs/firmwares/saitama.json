@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/saitama",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Samostatný open-source firmware pro LoRa mesh zařízení postavený na MeshCore, určený pro LilyGo T-Deck a T-Deck Plus. Nabízí zprávy na úrovni chytrých telefonů, GPS mapy, šifrovanou komunikaci a další funkce – vše běží přímo na zařízení, bez nutnosti telefonu, internetu ani licence.",
+      "sourceHash": "sha256:3d224624362fd60e16ed166143ad555021fe2c142b3a3482fd8e3ad864e664bc",
+      "generatedAt": "2026-06-27T11:20:57.091Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8196,
+      "promptTokens": 189,
+      "completionTokens": 678
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "T-Deck Plus — primární cíl, zkompilováno a otestováno na hardwaru.",
+      "sourceHash": "sha256:afbaade2850405a1cf9914b2add3534650c78bc9cfaa6d4f7ad23218a3fc080f",
+      "generatedAt": "2026-06-27T11:21:04.870Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7779,
+      "promptTokens": 142,
+      "completionTokens": 531
+    },
+    "features": {
+      "value": "[\"Samostatné zasílání zpráv (bez nutnosti telefonu)\",\"GPS mapy\",\"Šifrovaná komunikace\",\"Kanály a přímé zprávy\",\"Bez nutnosti účtu a licence\"]",
+      "sourceHash": "sha256:95751333e85508ee8c0aed13e4d748e16790eb7964a15f995e3e625123ff8c92",
+      "generatedAt": "2026-06-27T12:32:55.721Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17773,
+      "promptTokens": 155,
+      "completionTokens": 1113
+    }
+  }
+}

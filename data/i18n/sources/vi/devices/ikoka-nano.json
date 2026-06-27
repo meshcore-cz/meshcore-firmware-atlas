@@ -1,0 +1,15 @@
+{
+  "resource": "device/ikoka-nano",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút Meshtastic nhỏ gọn sử dụng Seeed XIAO nRF52840 và mô-đun EBYTE E22 LoRa. Bo mạch kích thước nhỏ chạy bằng pin, trang bị cổng kết nối USB-C và Qwiic; không có màn hình tích hợp — được thiết kế làm nút đồng hành/khuếch đại hoặc nút từ xa cực nhỏ.",
+      "sourceHash": "sha256:27a883e7f49594c637a53ceda91a38807eb8e8f543fb75f1502ed93fdf01f545",
+      "generatedAt": "2026-06-27T15:36:01.326Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 41850,
+      "promptTokens": 185,
+      "completionTokens": 1171
+    }
+  }
+}

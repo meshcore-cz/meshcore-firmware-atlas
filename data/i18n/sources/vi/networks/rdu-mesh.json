@@ -1,0 +1,15 @@
+{
+  "resource": "network/rdu-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore thuộc sở hữu cộng đồng và hoạt động độc lập với lưới điện, phục vụ Raleigh, Durham, Chapel Hill cùng khu vực Piedmont thuộc North Carolina lân cận. Mạng này xây dựng hạ tầng trạm chuyển tiếp sử dụng năng lượng mặt trời trên toàn khu vực phục vụ Research Triangle gồm 16 quận đã được ghi nhận.",
+      "sourceHash": "sha256:e4a771b40a147a032b382c71a6d6214cceca29b6e3c274e06c59baa260a478b1",
+      "generatedAt": "2026-06-27T16:53:22.577Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5450,
+      "promptTokens": 171,
+      "completionTokens": 1050
+    }
+  }
+}

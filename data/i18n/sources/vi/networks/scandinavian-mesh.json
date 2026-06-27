@@ -1,0 +1,15 @@
+{
+  "resource": "network/scandinavian-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới MeshCore xuyên biên giới Scandinavia trải dài từ miền nam Thụy Điển đến Đan Mạch, với 890+ nút quanh khu vực Öresund/Kattegat. Hệ thống chạy cấu hình sẵn EU/UK Narrow trên băng tần 868 MHz kèm máy phân tích CoreScope chuyên dụng.",
+      "sourceHash": "sha256:57eceb335e85436c3155a3283fc80a044d5cae096a843a3acce6e63c6d46e36b",
+      "generatedAt": "2026-06-27T16:53:42.807Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4733,
+      "promptTokens": 178,
+      "completionTokens": 795
+    }
+  }
+}

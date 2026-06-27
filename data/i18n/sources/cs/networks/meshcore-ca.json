@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ca",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Národní komunitní centrum kanadské sítě MeshCore a její sdílený základ využívající doporučenou předvolbu pro USA/Kanadu na 910.525 MHz. Koordinace probíhá prostřednictvím meshcore.ca a zahrnuje Discord, fórum, MQTT brokery, analyzátor CoreScope a mapové služby v reálném čase.",
+      "sourceHash": "sha256:81a4faea020fa6b33459cd0d02ec467edbc7eb7d1b8fb3de6745cb161f8fd851",
+      "generatedAt": "2026-06-27T12:01:41.919Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12889,
+      "promptTokens": 176,
+      "completionTokens": 1587
+    }
+  }
+}

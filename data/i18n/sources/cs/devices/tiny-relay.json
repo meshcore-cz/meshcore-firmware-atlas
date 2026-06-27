@@ -1,0 +1,12 @@
+{
+  "resource": "device/tiny-relay",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Minimální cíl STM32WLE5CC s funkcí relé pro sestavení MeshCore, určený pro drobné trvale zapnuté uzly a experimentování s levným mikrokontrolérem s podporou LoRa.",
+      "sourceHash": "sha256:86634f08e892c0f289f23c00666a769ae1440a46721a3d9f680d9bcd3e77e160",
+      "generatedAt": "2026-06-27T10:59:59.545Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

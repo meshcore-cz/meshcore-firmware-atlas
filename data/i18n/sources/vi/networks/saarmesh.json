@@ -1,0 +1,15 @@
+{
+  "resource": "network/saarmesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore khu vực xây dựng cơ sở hạ tầng LoRa bền bỉ trên khắp Saarland và phối hợp với khu vực SaarLorLux rộng lớn hơn. Dự án cung cấp tài liệu kỹ thuật, phạm vi khu vực, bản đồ mạng trực tuyến và hỗ trợ cộng đồng.",
+      "sourceHash": "sha256:e4c00ff2881228d4a4ec6fb7a8dc6cfa8c7dd61523d4a6c965d2303808bcc3c8",
+      "generatedAt": "2026-06-27T16:53:38.074Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4940,
+      "promptTokens": 171,
+      "completionTokens": 966
+    }
+  }
+}

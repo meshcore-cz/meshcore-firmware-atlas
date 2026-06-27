@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-wardrive",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Aplikace pro mapování pokrytí v systému Android, která propojuje trasy GPS s automatickými pingy opakovačů MeshCore, vizualizuje míru odezvy a kvalitu signálu, exportuje data z průzkumu a umožňuje přispívat výsledky do komunitní webové mapy.",
+      "sourceHash": "sha256:0bf32e50f4649df00f6574ed068e3f65c59f38975d0798a66357cc2b8c8f1dd1",
+      "generatedAt": "2026-06-27T11:40:48.695Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9984,
+      "promptTokens": 168,
+      "completionTokens": 934
+    },
+    "screenshots.coverage-map.jpeg.caption": {
+      "value": "Barevně odlišený průzkum pokrytí MeshCore",
+      "sourceHash": "sha256:54fe1479aae2a757567d1aa9f24c888b32cf8c211286d5b8b89079a957cf36e6",
+      "generatedAt": "2026-06-27T11:40:52.731Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4036,
+      "promptTokens": 135,
+      "completionTokens": 450
+    },
+    "screenshots.tracking.jpeg.caption": {
+      "value": "Sledování GPS v reálném čase a ovládání automatického pingu",
+      "sourceHash": "sha256:854a4a941e435b6e20e9df1ff95cb3ec61f6a2f5f4dea7bdd015f4821237fc18",
+      "generatedAt": "2026-06-27T11:41:04.703Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11971,
+      "promptTokens": 136,
+      "completionTokens": 794
+    },
+    "screenshots.repeaters.jpeg.caption": {
+      "value": "Vyhledávání opakovačů a výsledky signálu",
+      "sourceHash": "sha256:226a1cda42287e62fbee347e23e23a3466122603e068b93f4969a2488e9fe80d",
+      "generatedAt": "2026-06-27T11:41:18.146Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13442,
+      "promptTokens": 135,
+      "completionTokens": 1006
+    },
+    "screenshots.statistics.jpeg.caption": {
+      "value": "Ukázka wardrive a statistiky úspěšnosti",
+      "sourceHash": "sha256:6ac1a2fc0101dc61f80d1bb68e6ca76dc0cd427973a0bd63b09e046a0cec2a0a",
+      "generatedAt": "2026-06-27T11:41:23.921Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5775,
+      "promptTokens": 137,
+      "completionTokens": 439
+    },
+    "verificationNotes.application-releases-and-gpl-3-0-source-code-are": {
+      "value": "Vydané verze aplikace a zdrojový kód pod licencí GPL-3.0 jsou spravovány v samostatných repozitářích na GitHubu.",
+      "sourceHash": "sha256:04f6aa7e0339cd2f5ebbd269912eef7303de3dff89a158dc69f68fa10d6be561",
+      "generatedAt": "2026-06-27T11:41:37.510Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13589,
+      "promptTokens": 146,
+      "completionTokens": 933
+    },
+    "verificationNotes.gps-survey-data-remains-local-unless-the-operato": {
+      "value": "Data z GPS měření zůstávají uložena lokálně, pokud je operátor explicitně nenahraje do komunitní mapy.",
+      "sourceHash": "sha256:bcf90556001e1aaedcad79974f40ebf6ca7ae030ac966cdb2b4cb52f2cb0d7c1",
+      "generatedAt": "2026-06-27T11:41:47.916Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10405,
+      "promptTokens": 145,
+      "completionTokens": 957
+    },
+    "tags": {
+      "value": "[\"wardriving\",\"pokrytí\",\"gps\",\"terénní-nástroj\",\"komunitní-mapa\"]",
+      "sourceHash": "sha256:476d65cd5477dd9cdb10c502d6d5f0a9d945e168289194f4e9ee1e48d1f71890",
+      "generatedAt": "2026-06-27T13:44:26.971Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13788,
+      "promptTokens": 144,
+      "completionTokens": 664
+    }
+  }
+}

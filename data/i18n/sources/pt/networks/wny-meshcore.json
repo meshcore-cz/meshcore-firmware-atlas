@@ -1,0 +1,15 @@
+{
+  "resource": "network/wny-meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore gerida por voluntários que está a construir uma infraestrutura de comunicação no oeste de Nova Iorque, desde a fronteira com a Pensilvânia até ao Lago Ontário, estendendo-se a leste até Rochester, com repetidores ao longo do corredor Buffalo-Rochester e guias de configuração públicos.",
+      "sourceHash": "sha256:abf226e2f3b0e9c27fc940e004e4cb84502fe4caad32a7424e8b2d053b8e5ee2",
+      "generatedAt": "2026-06-27T14:50:07.420Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4591,
+      "promptTokens": 169,
+      "completionTokens": 1351
+    }
+  }
+}

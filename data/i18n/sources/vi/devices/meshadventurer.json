@@ -1,0 +1,15 @@
+{
+  "resource": "device/meshadventurer",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch DIY off-road ESP32 + E22 LoRa với màn hình OLED SSD1306 0.96 inch, giao diện điều khiển rotary encoder, GPS và hỗ trợ cảm biến BME280 tùy chọn. Thiết kế dành cho các cấu hình 1 W 433 hoặc 868/915 MHz với ăng-ten SMA ngoài và đầu vào nguồn dải rộng 9-28V.",
+      "sourceHash": "sha256:a8802370c9394182d4e28718a25f2ba11ce913382fa9954b4124dc89ea090eae",
+      "generatedAt": "2026-06-27T15:38:52.993Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6724,
+      "promptTokens": 199,
+      "completionTokens": 1160
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshfirmware",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Tập lệnh tương tác dành cho Windows và Linux để phát hiện thiết bị radio USB được hỗ trợ, chọn bản phát hành firmware MeshCore hoặc Meshtastic, và cài đặt, cập nhật hoặc biên dịch firmware cục bộ.",
+      "sourceHash": "sha256:2c1402214c5f6cee94ce268fbb62816f28da3ee63e87482f620398558a2de963",
+      "generatedAt": "2026-06-27T16:26:29.707Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4125,
+      "promptTokens": 159,
+      "completionTokens": 701
+    },
+    "tags": {
+      "value": "[\"phần sụn\",\"USB\",\"đa nền tảng\",\"meshtastic\"]",
+      "sourceHash": "sha256:2f5c680007b74b4806a10c47135e644b325e7f588d23eb56fcf067cdb9a88532",
+      "generatedAt": "2026-06-27T16:26:34.712Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5004,
+      "promptTokens": 142,
+      "completionTokens": 857
+    },
+    "verificationNotes.downloads-release-metadata-from-the-upstream-mes": {
+      "value": "Tải xuống siêu dữ liệu bản phát hành từ các kho lưu trữ nguồn MeshCore và Meshtastic, đồng thời lưu bộ nhớ đệm cục bộ để dự phòng khi ngoại tuyến.",
+      "sourceHash": "sha256:c68444855662cd1c551ec01d4ac3aa0fa3eefc601cfc5b0537ce16752d85b363",
+      "generatedAt": "2026-06-27T16:26:45.817Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11105,
+      "promptTokens": 151,
+      "completionTokens": 557
+    },
+    "verificationNotes.automatically-detects-matching-usb-devices-and-f": {
+      "value": "Tự động phát hiện thiết bị USB và tệp firmware phù hợp trước khi nạp.",
+      "sourceHash": "sha256:5f540f0d0cfdfaeb9f15f191010a1a35f0c954e18dd04486dd85265b1a8ae90c",
+      "generatedAt": "2026-06-27T16:26:49.893Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4074,
+      "promptTokens": 141,
+      "completionTokens": 593
+    }
+  }
+}

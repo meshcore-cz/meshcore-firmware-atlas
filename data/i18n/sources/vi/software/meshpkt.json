@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshpkt",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Codec thuần Go cho định dạng truyền phát gói tin vô tuyến MeshCore, bao gồm xác thực gói tin, mã hóa và giải mã payload, mật mã định danh tương thích với firmware, cơ chế điều phối có thể mở rộng và liên kết TypeScript dựa trên WASM.",
+      "sourceHash": "sha256:30214fb25bdad66a213335ed8e92ffff62eca605efe4f89c07c1fba3dff75a46",
+      "generatedAt": "2026-06-27T16:28:10.636Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14961,
+      "promptTokens": 166,
+      "completionTokens": 845
+    },
+    "tags": {
+      "value": "[\"sdk\",\"giao thức\",\"codec\",\"mật mã học\",\"wasm\"]",
+      "sourceHash": "sha256:f4f63821e080c7ea1818e13a5e395d421f9aa979a111da54d05ed7c6ee8ba080",
+      "generatedAt": "2026-06-27T16:28:24.899Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14262,
+      "promptTokens": 142,
+      "completionTokens": 751
+    },
+    "verificationNotes.the-project-is-pre-1-0-and-recommends-pinning-a-": {
+      "value": "Dự án đang ở giai đoạn trước phiên bản 1.0 và khuyến nghị ghim một phiên bản cụ thể khi sử dụng trong môi trường production.",
+      "sourceHash": "sha256:2721583c225a7231bee1b4b24b5b637eb071d387599538788c11c53efb037850",
+      "generatedAt": "2026-06-27T16:28:29.526Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4626,
+      "promptTokens": 148,
+      "completionTokens": 733
+    },
+    "verificationNotes.the-npm-package-declares-mit-the-repository-root": {
+      "value": "Gói npm khai báo giấy phép MIT; tại thời điểm xem xét, thư mục gốc của repository không có tệp giấy phép riêng.",
+      "sourceHash": "sha256:1d5c7154876c140c361e23f49d0e144ae591145ea203a1bbddd0ac4d5922040a",
+      "generatedAt": "2026-06-27T16:28:32.912Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3385,
+      "promptTokens": 146,
+      "completionTokens": 569
+    }
+  }
+}

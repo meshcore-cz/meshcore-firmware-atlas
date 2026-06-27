@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshat-se",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Švédské místo setkávání pro tvůrce, uživatele a vývojáře mesh sítí, které podporuje MeshCore i Meshtastic a nabízí sdílené mapy, MQTT a infrastrukturu pro sledování stavu.",
+      "sourceHash": "sha256:c55d5cf462db355e32ded1672d881e1059a9d63edbd1b16eba1d25c8f964d82e",
+      "generatedAt": "2026-06-27T12:12:33.285Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8053,
+      "promptTokens": 161,
+      "completionTokens": 1046
+    }
+  }
+}

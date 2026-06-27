@@ -1,0 +1,12 @@
+{
+  "resource": "device/m5stack-cardputer-adv",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kapesní zařízení ESP32-S3 s 1,14palcovým LCD displejem, 56klávesovou klávesnicí, microSD, baterií 1750 mAh a rozšiřujícím modulem Cap LoRa-1262 pro SX1262 LoRa s integrovaným GNSS. Kombinace, na kterou se zaměřují komunitní forky MeshCore, využívá základnu Cardputer-ADV s nasazeným krytem U214.",
+      "sourceHash": "sha256:b5661510800f4de96b0b23f2c0830e2148230d76d62a6015e3c99743f1bd159e",
+      "generatedAt": "2026-06-27T10:53:11.955Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

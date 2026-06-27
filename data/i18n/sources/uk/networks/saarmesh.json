@@ -1,0 +1,15 @@
+{
+  "resource": "network/saarmesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Регіональна спільнота MeshCore будує стійку інфраструктуру LoRa у Саарланді та координує свою діяльність у ширшому регіоні СаарЛорЛюкс. Проєкт надає технічну документацію, інформацію про регіональне охоплення, інтерактивну карту мережі та підтримку спільноти.",
+      "sourceHash": "sha256:e4c00ff2881228d4a4ec6fb7a8dc6cfa8c7dd61523d4a6c965d2303808bcc3c8",
+      "generatedAt": "2026-06-27T16:58:18.682Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8516,
+      "promptTokens": 171,
+      "completionTokens": 1011
+    }
+  }
+}

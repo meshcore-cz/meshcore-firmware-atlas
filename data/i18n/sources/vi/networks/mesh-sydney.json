@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-sydney",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore cộng đồng dành cho Sydney và New South Wales, Úc, sử dụng cấu hình sẵn Australia Mid làm thiết lập chính cho khu vực Greater Sydney và Australia Narrow cho các liên kết EastMesh đi về phía nam tới Canberra và xa hơn nữa.",
+      "sourceHash": "sha256:fb11fe09802b4f3aa04d3fb6d1f7b09da8f317a28e826cb29f4a59bd8523a4d7",
+      "generatedAt": "2026-06-27T16:51:03.472Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15141,
+      "promptTokens": 166,
+      "completionTokens": 772
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-drone-updater",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Automatizovaná služba pro Raspberry Pi určená k aktualizaci fyzicky nedostupných uzlů MeshCore vybavených čipem nRF52 prostřednictvím Bluetooth DFU. Je navržena pro údržbu na střechách a věžích, a to prováděnou při projíždění nebo pomocí dronu.",
+      "sourceHash": "sha256:3534430a60ab7a1b54c81e021a5c2030c3213c16c30703289f2babc86744eb90",
+      "generatedAt": "2026-06-27T11:31:14.930Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8685,
+      "promptTokens": 163,
+      "completionTokens": 1024
+    },
+    "verificationNotes.supports-nrf52-devices-that-expose-bluetooth-dfu": {
+      "value": "Podporuje zařízení nRF52 umožňující režim Bluetooth DFU a využívá soubory mapování zařízení na firmware, které spravuje operátor.",
+      "sourceHash": "sha256:02a7ea970ddb0d0b99d848c8318e0b8c2a603c1e1fd9d1a401fdd1cd16852273",
+      "generatedAt": "2026-06-27T11:31:22.107Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7177,
+      "promptTokens": 155,
+      "completionTokens": 892
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Repozitář aktuálně neuvádí licenci SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T11:31:25.791Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3684,
+      "promptTokens": 139,
+      "completionTokens": 460
+    },
+    "tags": {
+      "value": "[\"dron\",\"bluetooth-dfu\",\"nrf52\",\"bezobslužný\",\"terénní-údržba\"]",
+      "sourceHash": "sha256:f9396fb8acc0bd2fa06c40de235a282f70115fdbba92487fc042415af0bc4b6e",
+      "generatedAt": "2026-06-27T13:40:50.534Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15662,
+      "promptTokens": 149,
+      "completionTokens": 825
+    }
+  }
+}

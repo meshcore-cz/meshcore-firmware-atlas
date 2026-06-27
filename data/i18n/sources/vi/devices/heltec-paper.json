@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-paper",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển E-Ink ESP32-S3FN8 + SX1262 tích hợp màn hình đen trắng 2,13 inch. Cấp nguồn và lập trình qua USB-C, đầu nối pin SH1.25; tương thích với Meshtastic/MeshCore.",
+      "sourceHash": "sha256:cf327931bb20a7a91c8a656b8d4024c9debf799e76d797ab56b45f339ecac4df",
+      "generatedAt": "2026-06-27T15:34:47.740Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2584,
+      "promptTokens": 178,
+      "completionTokens": 444
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-pager",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Ruční pager ESP32-S3 pro Meshtastic/MeshCore s modulem SX1262 LoRa, 2,33\" IPS displejem, klávesnicí QWERTY a rotačním enkodérem. Obsahuje integrovaný GNSS u-blox MIA-M10Q, baterii 1500 mAh, mikrofon/reproduktor, NFC a inerciální jednotku BHI260AP AI IMU. Podporuje Wi-Fi a BLE. Při nákupu je volitelně k dispozici varianta s modulem LR1121 či jiným rádiovým modulem.",
+      "sourceHash": "sha256:b7af97f37b5b02c4e798f28826c53bd973d48223fabef014df2cf9874eac1398",
+      "generatedAt": "2026-06-27T10:52:23.754Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

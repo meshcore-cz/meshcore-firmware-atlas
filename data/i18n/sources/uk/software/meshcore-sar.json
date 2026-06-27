@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-sar",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Додаток для координації пошуково-рятувальних робіт для iOS та Android із пріоритетом офлайн-режиму, що підтримує обмін повідомленнями MeshCore, передачу голосу та зображень при низькій пропускній здатності, тактичні карти, відстеження команди в реальному часі, маркери інцидентів та спільні малюнки.",
+      "sourceHash": "sha256:99ef36043f8266e9bd7818607eae78f94151404994a9051c32352c5e83952506",
+      "generatedAt": "2026-06-27T16:15:05.908Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11938,
+      "promptTokens": 166,
+      "completionTokens": 1496
+    },
+    "screenshots.map.png.caption": {
+      "value": "Тактична карта з контекстом команди в реальному часі",
+      "sourceHash": "sha256:f9efc97de9a63429ac12b99f4aa06f97ff47abd67b3f6f8445122185442cf0e4",
+      "generatedAt": "2026-06-27T16:15:09.715Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3807,
+      "promptTokens": 136,
+      "completionTokens": 541
+    },
+    "screenshots.navigation.png.caption": {
+      "value": "Компас та навігація на місцевості",
+      "sourceHash": "sha256:cde72a0d39658c27741b4fa13eac6c118158dbb3e743a0f72439ff2bd5d99bcf",
+      "generatedAt": "2026-06-27T16:15:15.528Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5813,
+      "promptTokens": 134,
+      "completionTokens": 271
+    },
+    "screenshots.messages.png.caption": {
+      "value": "Обмін повідомленнями через mesh-мережу з голосовими картками та картками із зображеннями",
+      "sourceHash": "sha256:ea80617463131a03d2fe5d87e2cac56f8bee55a1229f49ab06f3ff4becf97d3e",
+      "generatedAt": "2026-06-27T16:15:28.102Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12574,
+      "promptTokens": 136,
+      "completionTokens": 1010
+    },
+    "screenshots.actions.png.caption": {
+      "value": "SAR, швидкі дії з голосом та зображеннями",
+      "sourceHash": "sha256:23b174d7dd4514c27d1b517efe0c784f9e150a7e4246b5485dc2ec30da47abb1",
+      "generatedAt": "2026-06-27T16:15:34.169Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6066,
+      "promptTokens": 137,
+      "completionTokens": 929
+    },
+    "tags": {
+      "value": "[\"пошук-та-порятунок\",\"офлайн\",\"тактичне-картування\",\"голос\",\"польовий-інструмент\"]",
+      "sourceHash": "sha256:afeece5a99bbb423eb92127c5bfaa8a1b16bee442a69723cecaa409690dfac97",
+      "generatedAt": "2026-06-27T16:15:41.651Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7482,
+      "promptTokens": 147,
+      "completionTokens": 1031
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "У репозиторії наразі не вказано ліцензію SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:15:45.644Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3991,
+      "promptTokens": 139,
+      "completionTokens": 610
+    },
+    "verificationNotes.voice-uses-codec2-and-images-use-avif-to-reduce-": {
+      "value": "Голос використовує Codec2, а зображення — AVIF, щоб зменшити трафік через обмежені mesh-з'єднання.",
+      "sourceHash": "sha256:01064ef18c866ff6c51d8147f8ddbb2ff8bac3e4bcb676484749b16737c24577",
+      "generatedAt": "2026-06-27T16:15:49.522Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3878,
+      "promptTokens": 146,
+      "completionTokens": 683
+    }
+  }
+}

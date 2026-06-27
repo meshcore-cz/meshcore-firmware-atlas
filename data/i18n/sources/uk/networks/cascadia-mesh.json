@@ -1,0 +1,15 @@
+{
+  "resource": "network/cascadia-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Мережа MeshCore Тихоокеанського Північного Заходу охоплює Британську Колумбію, Вашингтон, Орегон та Північну Каліфорнію. Вона зосереджена на репітерах на сонячних батареях, публічних каналах та коридорі Interstate 5 між регіональними кластерами.",
+      "sourceHash": "sha256:59d1063bcf4432beef2056063b95af8a347c68944c18553fe09ba25444f55637",
+      "generatedAt": "2026-06-27T16:48:17.648Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18920,
+      "promptTokens": 164,
+      "completionTokens": 1656
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/station-g3",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Модульна плата станції з дочірньою платою мікроконтролера ESP32-S3, радіочастотною дочірньою платою та 1.3-дюймовим OLED-дисплеєм. Розрахована на зовнішнє живлення 9–19 В та сумісність прошивки з профілями Station G2.",
+      "sourceHash": "sha256:ac46a2814408df5d6baf23b50acd3b6177442b6240dd731a1f8a15931a5d047c",
+      "generatedAt": "2026-06-27T15:17:59.292Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14643,
+      "promptTokens": 177,
+      "completionTokens": 895
+    }
+  }
+}

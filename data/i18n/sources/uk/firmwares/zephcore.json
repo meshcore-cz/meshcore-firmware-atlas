@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/zephcore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Повне перенесення MeshCore з Arduino на Zephyr RTOS, виконане з нуля. Замість основного циклу Arduino використовуються подієві примітиви Zephyr, що дозволяє CPU переходити в режим сну між подіями. При цьому забезпечується повна сумісність протоколу зі стандартною прошивкою MeshCore та мобільними додатками MeshCore.",
+      "sourceHash": "sha256:b89eb0b866233c243cb7624a75365b6a3cd86c2025524aabdc727edcd93b7751",
+      "generatedAt": "2026-06-27T15:40:56.228Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9916,
+      "promptTokens": 184,
+      "completionTokens": 1636
+    },
+    "deviceNotes.xiao-nrf54l15": {
+      "value": "Ранній етап запуску; підключено не всі периферійні пристрої.",
+      "sourceHash": "sha256:0e81acccc7ba2c2fe3a154e23ef5b0f9e8367652e3c6e216a29f0a3595c111f1",
+      "generatedAt": "2026-06-27T15:41:00.489Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4261,
+      "promptTokens": 138,
+      "completionTokens": 700
+    },
+    "features": {
+      "value": "[\"Подієво-орієнтована архітектура Zephyr RTOS\", \"Енергозбереження RX на основі CAD\", \"Адаптивне вікно конкуренції\", \"Адаптивне керування потужністю\", \"Підтримка оновлень DFU / OTA\", \"Спостерігач у режимі лише прослуховування (WiFi + MQTT)\", \"Сумісність протоколу із застосунками MeshCore\"]",
+      "sourceHash": "sha256:c5938d681bdf2509ed7544b22e71ce1805f87a09e4d39e4b439ac74239ddaec7",
+      "generatedAt": "2026-06-27T15:41:06.897Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6407,
+      "promptTokens": 177,
+      "completionTokens": 1339
+    }
+  }
+}

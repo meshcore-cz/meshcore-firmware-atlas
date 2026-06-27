@@ -1,0 +1,15 @@
+{
+  "resource": "network/new-zealand",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Oficiální rádiová předvolba aplikace MeshCore — 917.375MHz / SF11 / BW250 / CR5.",
+      "sourceHash": "sha256:114dd31abdc3fc0c72bbee4e6079f248b5acaaef80c40627240ebce91246ccb4",
+      "generatedAt": "2026-06-27T12:09:27.998Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3259,
+      "promptTokens": 153,
+      "completionTokens": 261
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-13302",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ khuếch đại LoRa 1 W WisBlock kết hợp bo mạch nền RAK3401 với mô-đun LPWAN RAK13302 và bộ khuếch đại RF SKY66122. Bộ kit này hướng tới hoạt động LoRa tầm xa hơn trong dải tần 902-928 MHz.",
+      "sourceHash": "sha256:b3d868b70335eb5f2313d8a0cb907ef67843e85e333fa2bd1315161f630de15e",
+      "generatedAt": "2026-06-27T15:40:22.475Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4823,
+      "promptTokens": 185,
+      "completionTokens": 948
+    }
+  }
+}

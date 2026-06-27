@@ -1,0 +1,15 @@
+{
+  "resource": "network/nebraska-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới MeshCore toàn tiểu bang do tình nguyện viên vận hành, kết nối các cộng đồng tại Nebraska thông qua các nút LoRa và trạm chuyển tiếp năng lượng mặt trời do cộng đồng quản lý. Khởi nguồn tại khu vực Omaha, mạng lưới này đã mở rộng sang Lincoln, Grand Island và các quận nông thôn, với các tiêu chuẩn cấu hình dùng chung, bản đồ, công cụ phân tích và sự điều phối qua Discord.",
+      "sourceHash": "sha256:0d8860f2d52a8a802804b64319c1b647b2f0c23490b374367b5aa147d02f7808",
+      "generatedAt": "2026-06-27T16:51:39.299Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7475,
+      "promptTokens": 180,
+      "completionTokens": 1272
+    }
+  }
+}

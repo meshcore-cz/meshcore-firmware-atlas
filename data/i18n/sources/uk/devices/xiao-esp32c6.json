@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-esp32c6",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата ESP32-C6 XIAO розміром з великий палець із підтримкою Wi-Fi 6, BLE 5 та радіозв'язку, сумісного з Thread/Zigbee. MeshCore використовує її як компактний супутній пристрій або хост-ретранслятор із підключеним модулем Wio-SX1262 LoRa.",
+      "sourceHash": "sha256:c0446f50916798e71fb5a6560fab218cab55b4ec7e8174c2c819495a25cbcc63",
+      "generatedAt": "2026-06-27T15:15:27.209Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18074,
+      "promptTokens": 184,
+      "completionTokens": 1311
+    }
+  }
+}

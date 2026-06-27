@@ -1,0 +1,15 @@
+{
+  "resource": "device/tiny-relay",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mục tiêu relay STM32WLE5CC tối giản cho các bản build MeshCore, dành cho các node luôn bật nhỏ gọn và thử nghiệm với MCU tích hợp LoRa chi phí thấp.",
+      "sourceHash": "sha256:86634f08e892c0f289f23c00666a769ae1440a46721a3d9f680d9bcd3e77e160",
+      "generatedAt": "2026-06-27T15:43:21.026Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1132,
+      "promptTokens": 160,
+      "completionTokens": 43
+    }
+  }
+}

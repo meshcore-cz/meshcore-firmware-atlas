@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-bg",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade búlgara do MeshCore para mensagens em malha LoRa sem infraestrutura externa, coordenada através de meshcore.bg. Conta com malhas ativas em Sófia e Plovdiv, além de uma ligação de longo alcance para Craiova, na Roménia (~200 km). Utiliza a predefinição EU/UK (Narrow) na banda de 869.618 MHz, com hashes de caminho de 2 bytes e detecção de loops ativada nos repetidores.",
+      "sourceHash": "sha256:b7fe5731fe0df758026f69f70f48057b7e2cbc293e2fb54400dca1c7a96ece72",
+      "generatedAt": "2026-06-27T14:45:32.001Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6596,
+      "promptTokens": 205,
+      "completionTokens": 1918
+    }
+  }
+}

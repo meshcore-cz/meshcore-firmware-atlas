@@ -1,0 +1,69 @@
+{
+  "resource": "software/pokemesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільна гра Pokémon FireRed, якою керують через команди каналу MeshCore. Введення даних в емулятор здійснюється шляхом голосування, а для підсумовування кожного стану гри в межах ліміту повідомлень mesh використовується локальна модель зору та мови.",
+      "sourceHash": "sha256:e67b9ce174d5adb11bc6bca28865add4e350ba0650fb0d9dad9311b3a303e23a",
+      "generatedAt": "2026-06-27T16:28:50.856Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7004,
+      "promptTokens": 164,
+      "completionTokens": 1162
+    },
+    "screenshots.game.png.caption": {
+      "value": "Стан емулятора Pokémon FireRed",
+      "sourceHash": "sha256:2cbe12d2fe37c330697463df4b0f56b738bbf157e815d32c0e771cc515c10293",
+      "generatedAt": "2026-06-27T16:28:53.308Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2451,
+      "promptTokens": 135,
+      "completionTokens": 351
+    },
+    "screenshots.processed.png.caption": {
+      "value": "Попередньо оброблений ігровий вигляд для локального аналізу бачення",
+      "sourceHash": "sha256:e0e5189cfff0cfead48e08e00ef462dea2983c22b27402b64a7e2f3947cc91b4",
+      "generatedAt": "2026-06-27T16:28:59.367Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6059,
+      "promptTokens": 137,
+      "completionTokens": 982
+    },
+    "screenshots.chat.jpg.caption": {
+      "value": "Команди PokeMesh та підсумки гри у чаті MeshCore",
+      "sourceHash": "sha256:8faa7fbde40c846f5fa6e9fc38a125b3b8fe5e00b4421843a2ea36f5116a9194",
+      "generatedAt": "2026-06-27T16:29:02.403Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3035,
+      "promptTokens": 140,
+      "completionTokens": 542
+    },
+    "tags": {
+      "value": "[\"ігровий бот\",\"покемон\",\"локальний ШІ\",\"співпраця\"]",
+      "sourceHash": "sha256:7f5beeabeb5aae3393ff60105a03fb2dd702bf9b61fcccf52e5acd57bbbc2e24",
+      "generatedAt": "2026-06-27T16:29:07.800Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5397,
+      "promptTokens": 143,
+      "completionTokens": 961
+    },
+    "verificationNotes.requires-a-local-pokémon-firered-rom-development": {
+      "value": "Для роботи потрібні локальний ROM Pokémon FireRed, збірка mGBA для розробників, mGBA-http та локальна візуально-мовна модель.",
+      "sourceHash": "sha256:d61afde3ebea74f3c63698aa887e72ba43fc177d77099fa932b7fae70e160072",
+      "generatedAt": "2026-06-27T16:29:14.281Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6480,
+      "promptTokens": 155,
+      "completionTokens": 1285
+    },
+    "verificationNotes.not-affiliated-with-nintendo-game-freak-or-the-p": {
+      "value": "Не має жодного відношення до Nintendo, Game Freak або The Pokémon Company.",
+      "sourceHash": "sha256:b55ca8f28857c62a52e7fdec6b80ea3ee7a5f3a9768820c2e93d577093e554d8",
+      "generatedAt": "2026-06-27T16:29:17.448Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3167,
+      "promptTokens": 141,
+      "completionTokens": 590
+    }
+  }
+}

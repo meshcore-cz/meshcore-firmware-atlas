@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-wismesh-tag",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút Meshtastic tất cả trong một dựa trên RAK10701 Field Tester, trang bị màn hình cảm ứng TFT 320×240 và bàn phím trên màn hình để nhắn tin không cần điện thoại. Bao gồm nRF52840 + SX1262, GNSS tích hợp, pin 3200 mAh và ăng-ten LoRa RP-SMA. Đã nạp sẵn firmware Meshtastic.",
+      "sourceHash": "sha256:5c6499e9a55a3c08791791faf9de0f351be576f19b30825cdf365cc3a1d4b0b0",
+      "generatedAt": "2026-06-27T15:40:33.912Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5129,
+      "promptTokens": 201,
+      "completionTokens": 1028
+    }
+  }
+}

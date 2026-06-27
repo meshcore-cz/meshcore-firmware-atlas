@@ -1,0 +1,15 @@
+{
+  "resource": "device/nano-g2",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rastreador de bolso nRF52840 com SX1262 LoRa, tela OLED de 1,3 polegadas, GPS, campainha e bateria integrada de 1200 mAh. Projetado para uso como dispositivo complementar ou repetidor MeshCore, com Bluetooth 5.4 e um formato compacto com interruptor liga/desliga.",
+      "sourceHash": "sha256:1f4743e6c70f5755c2e2005df20f33c73beb88ace7a71f322c5c1c5048490835",
+      "generatedAt": "2026-06-27T14:20:57.557Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5543,
+      "promptTokens": 190,
+      "completionTokens": 1612
+    }
+  }
+}

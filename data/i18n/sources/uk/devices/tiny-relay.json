@@ -1,0 +1,15 @@
+{
+  "resource": "device/tiny-relay",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Мінімальна цільова платформа ретранслятора STM32WLE5CC для збірок MeshCore, призначена для компактних вузлів, що працюють цілодобово, та експериментів із недорогим мікроконтролером із підтримкою LoRa.",
+      "sourceHash": "sha256:86634f08e892c0f289f23c00666a769ae1440a46721a3d9f680d9bcd3e77e160",
+      "generatedAt": "2026-06-27T15:17:02.054Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8279,
+      "promptTokens": 160,
+      "completionTokens": 573
+    }
+  }
+}

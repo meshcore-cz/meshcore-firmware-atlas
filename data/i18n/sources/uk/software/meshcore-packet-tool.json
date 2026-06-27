@@ -1,0 +1,51 @@
+{
+  "resource": "software/meshcore-packet-tool",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Робоче середовище у браузері для аналізу, декодування та створення радіопакетів MeshCore. Воно пропонує типізовані редактори пакетів, керування ідентичностями та ключами, URL-адреси робочого простору для спільного доступу та еталонні тести декодування WebAssembly.",
+      "sourceHash": "sha256:3113d4408d0082632129e48dbd707119215f7aaac4db6e484d3f92f5bc18ae43",
+      "generatedAt": "2026-06-27T16:14:12.142Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5246,
+      "promptTokens": 166,
+      "completionTokens": 962
+    },
+    "tags": {
+      "value": "[\"протокол\",\"редактор пакетів\",\"декодер\",\"криптографія\",\"wasm\"]",
+      "sourceHash": "sha256:c0d3c6bf51542fe01b4f010d41317d8e26445314a478ec6e361b19ac9e50e35f",
+      "generatedAt": "2026-06-27T16:14:35.771Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 23629,
+      "promptTokens": 143,
+      "completionTokens": 499
+    },
+    "verificationNotes.the-application-uses-the-meshpkt-codec-compiled-": {
+      "value": "Застосунок використовує кодек meshpkt, скомпільований у WebAssembly.",
+      "sourceHash": "sha256:ed6597e937345c7c3ab6c0d0ec5515a8698aa540e3b30b6ba7c76ec7662777d1",
+      "generatedAt": "2026-06-27T16:14:38.568Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2796,
+      "promptTokens": 141,
+      "completionTokens": 409
+    },
+    "verificationNotes.version-1-0-0-is-declared-in-package-json-no-pro": {
+      "value": "У package.json вказано версію 1.0.0, але реліз проєкту не опубліковано.",
+      "sourceHash": "sha256:f52a10657de68a949d201838576b79c2dbb5af244e253fe7a416c5b44c587102",
+      "generatedAt": "2026-06-27T16:14:42.193Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3625,
+      "promptTokens": 148,
+      "completionTokens": 553
+    },
+    "verificationNotes.no-repository-license-file-or-spdx-license-decla": {
+      "value": "Під час перевірки не виявлено ні файлу ліцензії репозиторію, ні декларації ліцензії SPDX.",
+      "sourceHash": "sha256:71ac0ef045cf4eb43eeb1710b74d5161b7ff6597c1c08e437abd890590b7e2ae",
+      "generatedAt": "2026-06-27T16:14:53.970Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11777,
+      "promptTokens": 142,
+      "completionTokens": 805
+    }
+  }
+}

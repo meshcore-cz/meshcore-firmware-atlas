@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-lt",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vznikající síť MeshCore v Litvě. Zatím nejsou k dispozici žádné veřejné informace o komunitě ani o koordinaci; byl zaznamenán analyzátor běžící na standardním rádiovém přednastavení EU/UK Narrow.",
+      "sourceHash": "sha256:53b70aa25d750b556553828471bc18bfba7d1910fc3eaa0cba3c6d6ebad73188",
+      "generatedAt": "2026-06-27T12:06:45.836Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7278,
+      "promptTokens": 163,
+      "completionTokens": 1137
+    }
+  }
+}

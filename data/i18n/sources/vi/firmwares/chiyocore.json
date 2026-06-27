@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/chiyocore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Phiên bản cài đặt lại bằng Rust thử nghiệm cho MeshCore trên thiết bị ESP32, được cấu trúc thành lõi giao thức có thể tái sử dụng với các bản dựng bo mạch được tạo tự động và các lớp xử lý có thể cấu hình.",
+      "sourceHash": "sha256:d2ab00817f174cd570a2cf0138f1bea33abdcfcaf0f543b2f0ae0bb766db61c7",
+      "generatedAt": "2026-06-27T15:59:03.105Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7792,
+      "promptTokens": 156,
+      "completionTokens": 1088
+    },
+    "deviceNotes.xiao-esp32s3": {
+      "value": "Người bảo trì thông báo hoạt động thử nghiệm thành công trên bộ kit radio XIAO ESP32-S3.",
+      "sourceHash": "sha256:a82d1a4cf3a0f2cbc491613c140db9294b909b117af6858ae15ca651d731f6f4",
+      "generatedAt": "2026-06-27T15:59:07.333Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4228,
+      "promptTokens": 148,
+      "completionTokens": 585
+    },
+    "features": {
+      "value": "[\"Triển khai giao thức Rust MeshCore\", \"Bản dựng bo mạch và lớp xử lý được tạo\", \"Giao diện đồng hành TCP\"]",
+      "sourceHash": "sha256:9bb5c229d153c26a2bca27a7b6a3ee65d37b8714bc50fa22db7d77f827df2310",
+      "generatedAt": "2026-06-27T15:59:11.544Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4210,
+      "promptTokens": 148,
+      "completionTokens": 903
+    }
+  }
+}

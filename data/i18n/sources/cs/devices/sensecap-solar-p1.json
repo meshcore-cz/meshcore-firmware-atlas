@@ -1,0 +1,12 @@
+{
+  "resource": "device/sensecap-solar-p1",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Ekonomický solární uzel nebo opakovač Meshtastic/MeshCore pro venkovní nasazení. Integruje moduly XIAO nRF52840 Plus a Wio-SX1262 s vestavěným 5W solárním panelem a krytem IPX6. K dispozici jsou čtyři sloty pro akumulátory 18650 (články nejsou součástí balení) a volitelný GPS modul XIAO L76K; zařízení neobsahuje vestavěnou GPS ani baterie.",
+      "sourceHash": "sha256:0862e4405f5d508f3aeb4392889f0b52f9a771cf249a6741826d152c4720c9ab",
+      "generatedAt": "2026-06-27T10:56:47.317Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

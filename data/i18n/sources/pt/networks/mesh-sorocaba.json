@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-sorocaba",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore sediada em Sorocaba, no Brasil, que abrange o estado de São Paulo e constrói comunicação em malha off-grid.",
+      "sourceHash": "sha256:7d34bf280de8fcd2d7b4bd88d991832c753c435cd780257f586bd8d861b3cd2f",
+      "generatedAt": "2026-06-27T14:47:33.437Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4370,
+      "promptTokens": 153,
+      "completionTokens": 1199
+    }
+  }
+}

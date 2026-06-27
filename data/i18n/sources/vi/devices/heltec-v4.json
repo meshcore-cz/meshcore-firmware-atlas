@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v4",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "ESP32-S3R2 + SX1262 là phiên bản kế nhiệm của Heltec V3, tích hợp 16 MB flash, 2 MB PSRAM và công suất phát LoRa lên đến 28 dBm. Thiết bị giữ nguyên màn hình OLED 0.96-inch và sơ đồ chân phần lớn tương thích với V3, đồng thời bổ sung đầu vào năng lượng mặt trời, header GNSS tùy chọn và ăng-ten FPC 2.4 GHz tích hợp sẵn. Hỗ trợ USB-C gốc (không dùng CP2102). Được sử dụng rộng rãi cho Meshtastic và MeshCore.",
+      "sourceHash": "sha256:077f6b0df2c7d8f60fcb09d763150df7954cad9b593f449335e2247afdc2f9d2",
+      "generatedAt": "2026-06-27T15:34:29.871Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6180,
+      "promptTokens": 225,
+      "completionTokens": 1409
+    }
+  }
+}

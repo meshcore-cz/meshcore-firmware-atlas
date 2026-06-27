@@ -1,12 +1,12 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
-  import { TYPE_META, LICENSE_TYPE_META, licenseType, getFirmware } from '$lib/data.js';
+  import { TYPE_META, LICENSE_TYPE_META, licenseType, getFirmware, firmwareTypeLabel, nodeRoleLabel, FIRMWARE_CAPABILITY_GROUPS, firmwareCapabilityGroupLabel, firmwareCapabilityItemLabel, firmwareStatusLabel, firmwareMaturityLabel, firmwareLifecycleLabel, firmwareDistributionLabel } from '$lib/data.js';
   import { fwCompareIds } from '$lib/fwCompare.js';
   import { pluralize } from '$lib/format.js';
-  import { CAPABILITY_GROUPS } from '$lib/CapabilityMatrix.svelte';
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
   import Button from '$lib/Button.svelte';
@@ -29,7 +29,7 @@
 
   function setIds(next) {
     const qs = next.length ? `?ids=${next.join(',')}` : '';
-    goto(`${base}/compare-firmwares/${qs}`, { replaceState: true, keepFocus: true, noScroll: true });
+    goto(href(`/compare-firmwares/${qs}`), { replaceState: true, keepFocus: true, noScroll: true });
   }
   const remove = (id) => setIds(ids.filter((x) => x !== id));
 
@@ -37,7 +37,7 @@
   const txt = (v) => (v == null || v === '' || v === 'unknown' ? DASH : String(v));
   const numberFmt = new Intl.NumberFormat('en');
   const num = (v) => (Number.isFinite(v) ? numberFmt.format(v) : DASH);
-  const yesNo = (v) => (typeof v === 'boolean' ? (v ? 'Yes' : 'No') : DASH);
+  const yesNo = (v) => (typeof v === 'boolean' ? (v ? m.common_yes() : m.common_no()) : DASH);
 
   const FRAMEWORK_LABELS = { arduino: 'Arduino', zephyr: 'Zephyr', 'esp-idf': 'ESP-IDF', other: 'Other' };
   const LANGUAGE_LABELS = { cpp: 'C++', c: 'C', rust: 'Rust' };
@@ -46,47 +46,51 @@
       .filter(Boolean)
       .join(' · ') || DASH;
 
-  const LINEAGE_VERB = { fork: 'Fork of', reimplementation: 'Reimplementation of', upstream: 'Upstream' };
+  const LINEAGE_VERB = {
+    fork: m.spec_lineage_fork_of(),
+    reimplementation: m.spec_lineage_reimpl_of(),
+    upstream: m.spec_lineage_upstream()
+  };
   function lineageText(f) {
     if (!f.lineage) return DASH;
     const verb = LINEAGE_VERB[f.lineage.kind] ?? '';
     const up = f.lineage.upstreamFirmwareId;
-    if (f.lineage.kind === 'upstream') return 'Upstream';
+    if (f.lineage.kind === 'upstream') return m.spec_lineage_upstream();
     const upName = up ? getFirmware(up)?.name ?? up : '';
     return [verb, upName].filter(Boolean).join(' ') || DASH;
   }
 
   const SCALAR_ROWS = [
-    { label: 'Type', get: (f) => TYPE_META[f.type]?.label ?? f.type },
-    { label: 'Distribution', get: (f) => txt(f.distribution) },
-    { label: 'Maintainer', get: (f) => txt(f.maintainer) },
-    { label: 'Based on', get: lineageText },
-    { label: 'Status', get: (f) => txt(f.status) },
-    { label: 'Maturity', get: (f) => txt(f.maturity) },
-    { label: 'Lifecycle', get: (f) => txt(f.lifecycle) },
-    { label: 'Runtime', get: runtimeText },
-    { label: 'License', get: (f) => txt(f.license) },
-    { label: 'Licensing', get: (f) => txt(LICENSE_TYPE_META[licenseType(f)]?.label) },
-    { label: 'Latest version', get: (f) => txt(f.latest_version) },
-    { label: 'Released', get: (f) => txt(f.released) },
-    { label: 'Node roles', get: (f) => (f.roles ?? []).join(', ') || DASH },
-    { label: 'Devices', get: (f) => String(f.deviceCount) },
-    { label: 'GitHub stars', get: (f) => num(f.popularity?.githubStars) },
-    { label: 'Forks', get: (f) => num(f.popularity?.githubForks) },
-    { label: 'Watchers', get: (f) => num(f.popularity?.githubWatchers) },
-    { label: 'Open issues', get: (f) => num(f.popularity?.githubOpenIssues) },
-    { label: 'Contributors', get: (f) => num(f.popularity?.githubContributors) },
-    { label: 'Release downloads', get: (f) => num(f.popularity?.releaseDownloads) },
-    { label: 'Latest downloads', get: (f) => num(f.popularity?.latestReleaseDownloads) },
-    { label: 'Popularity checked', get: (f) => txt(f.popularity?.lastChecked) },
-    { label: 'Source available', get: (f) => yesNo(f.verification?.sourceAvailable) },
-    { label: 'Releases available', get: (f) => yesNo(f.verification?.releasesAvailable) },
-    { label: 'Signed releases', get: (f) => yesNo(f.verification?.signedReleases) },
-    { label: 'Reproducible builds', get: (f) => yesNo(f.verification?.reproducibleBuilds) },
-    { label: 'CI builds', get: (f) => yesNo(f.verification?.ciBuilds) },
-    { label: 'Web flasher', get: (f) => yesNo(f.verification?.webFlasher) },
-    { label: 'Documentation', get: (f) => yesNo(f.verification?.hasDocumentation) },
-    { label: 'Verification checked', get: (f) => txt(f.verification?.lastChecked) }
+    { label: m.fw_facet_type(), get: (f) => firmwareTypeLabel(f.type) },
+    { label: m.spec_distribution(), get: (f) => firmwareDistributionLabel(f.distribution) || DASH },
+    { label: m.spec_maintainer(), get: (f) => txt(f.maintainer) },
+    { label: m.spec_based_on(), get: lineageText },
+    { label: m.fw_facet_status(), get: (f) => firmwareStatusLabel(f.status) || DASH },
+    { label: m.fw_facet_maturity(), get: (f) => firmwareMaturityLabel(f.maturity) || DASH },
+    { label: m.spec_lifecycle(), get: (f) => firmwareLifecycleLabel(f.lifecycle) || DASH },
+    { label: m.fw_facet_runtime(), get: runtimeText },
+    { label: m.fw_facet_license(), get: (f) => txt(f.license) },
+    { label: m.about_licensing_title(), get: (f) => txt(LICENSE_TYPE_META[licenseType(f)]?.label) },
+    { label: m.spec_latest_version(), get: (f) => txt(f.latest_version) },
+    { label: m.rel_col_released(), get: (f) => txt(f.released) },
+    { label: m.spec_node_roles(), get: (f) => (f.roles ?? []).map(nodeRoleLabel).join(', ') || DASH },
+    { label: m.collection_devices_label(), get: (f) => String(f.deviceCount) },
+    { label: m.spec_github_stars(), get: (f) => num(f.popularity?.githubStars) },
+    { label: m.spec_forks(), get: (f) => num(f.popularity?.githubForks) },
+    { label: m.spec_watchers(), get: (f) => num(f.popularity?.githubWatchers) },
+    { label: m.spec_open_issues(), get: (f) => num(f.popularity?.githubOpenIssues) },
+    { label: m.home_contributors(), get: (f) => num(f.popularity?.githubContributors) },
+    { label: m.spec_release_downloads(), get: (f) => num(f.popularity?.releaseDownloads) },
+    { label: m.spec_latest_downloads(), get: (f) => num(f.popularity?.latestReleaseDownloads) },
+    { label: m.spec_popularity_checked(), get: (f) => txt(f.popularity?.lastChecked) },
+    { label: m.license_source_available(), get: (f) => yesNo(f.verification?.sourceAvailable) },
+    { label: m.spec_releases_available(), get: (f) => yesNo(f.verification?.releasesAvailable) },
+    { label: m.spec_signed_releases(), get: (f) => yesNo(f.verification?.signedReleases) },
+    { label: m.spec_reproducible_builds(), get: (f) => yesNo(f.verification?.reproducibleBuilds) },
+    { label: m.spec_ci_builds(), get: (f) => yesNo(f.verification?.ciBuilds) },
+    { label: m.fw_tog_web_flasher(), get: (f) => yesNo(f.verification?.webFlasher) },
+    { label: m.spec_documentation(), get: (f) => yesNo(f.verification?.hasDocumentation) },
+    { label: m.spec_verification_checked(), get: (f) => txt(f.verification?.lastChecked) }
   ];
 
   let scalarRows = $derived(
@@ -100,45 +104,42 @@
   // value (true / false / undefined) for each firmware.
   const triKey = (v) => (v === true ? 'y' : v === false ? 'n' : 'u');
   let capSections = $derived(
-    CAPABILITY_GROUPS.map((g) => {
+    FIRMWARE_CAPABILITY_GROUPS.map((g) => {
       const items = g.items
-        .map(([k, label]) => {
+        .map((k) => {
           const values = selected.map((f) => f.capabilities?.[g.key]?.[k]);
-          return { label, values, differs: new Set(values.map(triKey)).size > 1 };
+          return { label: firmwareCapabilityItemLabel(k), values, differs: new Set(values.map(triKey)).size > 1 };
         })
         // drop items no selected firmware documents, and (when filtering) equal rows
         .filter((it) => it.values.some((v) => v !== undefined) && (!onlyDiff || it.differs));
-      return { label: g.label, items };
+      return { key: g.key, label: firmwareCapabilityGroupLabel(g.key), items };
     }).filter((g) => g.items.length)
   );
 
   let hasAny = $derived(scalarRows.length || capSections.length);
 </script>
 
-<Seo
-  title="Compare firmwares"
-  description="Compare MeshCore firmwares side by side — capabilities, transports, networking, runtime and more."
-  noindex
-/>
+<Seo title={m.tool_compare_firmwares_label()} description={m.compare_fw_seo_desc()} noindex />
 
 <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
   <div>
     <PageHeader tool="compare-firmwares" subtitleClass="mb-0">
-      {pluralize(selected.length, 'firmware')} selected.
+      {m.compare_selected({ items: pluralize(selected.length, 'firmware') })}
     </PageHeader>
   </div>
-  <a class="text-[0.9rem] text-accent2 hover:underline" href="{base}/firmwares/">+ Add firmwares</a>
+  <a class="text-[0.9rem] text-accent2 hover:underline" href={href('/firmwares/')}>{m.compare_add_firmwares()}</a>
 </div>
 
 {#if selected.length === 0}
   <p class="rounded-xl border border-edge bg-elev p-10 text-center text-dim">
-    No firmwares selected. Go to <a class="text-accent2 hover:underline" href="{base}/firmwares/">Firmwares</a> and tick the
-    compare boxes to line them up side by side.
+    {@html m.compare_empty_firmwares({
+      link: `<a class="text-accent2 hover:underline" href="${href('/firmwares/')}">${m.collection_firmwares_label()}</a>`
+    })}
   </p>
 {:else}
   <label class="mb-3 inline-flex cursor-pointer items-center gap-2 text-[0.85rem] text-dim select-none">
     <input type="checkbox" bind:checked={onlyDiff} class="accent-accent" />
-    Show only differences
+    {m.compare_only_diff()}
   </label>
 
   <div class="overflow-x-auto rounded-xl border border-edge">
@@ -149,9 +150,9 @@
           {#each selected as f (f.id)}
             <th class="border-b border-l border-edge bg-elev p-3 text-left align-top">
               <div class="flex items-start justify-between gap-2">
-                <a href="{base}/firmware/{f.id}/" class="group block">
+                <a href={href(`/firmware/${f.id}/`)} class="group block">
                   <span class="mb-1.5 inline-block rounded-md px-2 py-0.5 text-[0.62rem] font-bold tracking-wide uppercase {TYPE_META[f.type]?.tw}">
-                    {TYPE_META[f.type]?.label ?? f.type}
+                    {firmwareTypeLabel(f.type)}
                   </span>
                   <span class="block text-[0.95rem] font-semibold group-hover:text-accent">{f.name}</span>
                   {#if f.maintainer}<span class="block text-[0.78rem] font-normal text-dim">{f.maintainer}</span>{/if}
@@ -160,7 +161,7 @@
                   variant=""
                   size="none"
                   class="shrink-0 rounded p-1 text-dim hover:bg-elev2 hover:text-bad"
-                  aria-label="Remove {f.name}"
+                  aria-label={m.aria_remove({ name: f.name })}
                   onclick={() => remove(f.id)}>✕</Button>
               </div>
             </th>
@@ -212,6 +213,6 @@
   </div>
 
   {#if !hasAny}
-    <p class="mt-3 text-center text-[0.85rem] text-dim">No differences across the selected firmwares.</p>
+    <p class="mt-3 text-center text-[0.85rem] text-dim">{m.compare_fw_no_diff()}</p>
   {/if}
 {/if}

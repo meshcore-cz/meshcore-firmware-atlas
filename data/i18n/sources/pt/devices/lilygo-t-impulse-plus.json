@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-impulse-plus",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Pulseira de baixo consumo nRF52840 com SX1262 LoRa, OLED 64x32, GPS e fluxo de ativação por botão tátil. Projetada para dispositivos vestíveis complementares MeshCore, com corrente de sono profundo muito baixa.",
+      "sourceHash": "sha256:620a057838509946d0daa090e80d754bec401d7bbe473b524558a549d3c490ed",
+      "generatedAt": "2026-06-27T14:14:21.112Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19177,
+      "promptTokens": 175,
+      "completionTokens": 986
+    }
+  }
+}

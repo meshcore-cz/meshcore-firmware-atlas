@@ -1,5 +1,6 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
@@ -29,7 +30,7 @@
 
   function setIds(next) {
     const qs = next.length ? `?ids=${next.join(',')}` : '';
-    goto(`${base}/compare/${qs}`, { replaceState: true, keepFocus: true, noScroll: true });
+    goto(href(`/compare/${qs}`), { replaceState: true, keepFocus: true, noScroll: true });
   }
   const remove = (id) => setIds(ids.filter((x) => x !== id));
 
@@ -69,7 +70,7 @@
 
   function displayText(d) {
     const dp = d.hardware?.display;
-    if (dp?.status !== 'present') return dp?.status === 'none' ? 'None' : DASH;
+    if (dp?.status !== 'present') return dp?.status === 'none' ? m.spec_none() : DASH;
     const parts = [];
     if (dp.technology && dp.technology !== 'unknown') parts.push(dp.technology.toUpperCase());
     if (dp.size) parts.push(`${dp.size}″`);
@@ -80,74 +81,74 @@
   function batteryText(d) {
     const pw = d.hardware?.power;
     if (pw?.batteryCapacityMah) return `${pw.batteryCapacityMah} mAh`;
-    if (pw?.batterySupported === true) return 'Supported';
-    if (pw?.batterySupported === false) return 'None';
+    if (pw?.batterySupported === true) return m.matrix_status_supported();
+    if (pw?.batterySupported === false) return m.spec_none();
     return DASH;
   }
 
   function solarPanelText(d) {
     const pw = d.hardware?.power;
     if (pw?.solarPanelBuiltIn !== true) return DASH;
-    return pw.solarPanelWatts ? `Built-in · ${pw.solarPanelWatts} W` : 'Built-in';
+    return pw.solarPanelWatts ? `${m.spec_builtin()} · ${pw.solarPanelWatts} W` : m.spec_builtin();
   }
 
   const ROWS = [
-    { label: 'Price', get: (d) => devicePriceLabel(d) ?? DASH },
-    { label: 'Vendor', get: (d) => txt(d.vendorName) },
+    { label: m.dev_range_price(), get: (d) => devicePriceLabel(d) ?? DASH },
+    { label: m.dev_facet_vendor(), get: (d) => txt(d.vendorName) },
     {
-      label: 'MCU family',
+      label: m.spec_mcu_family(),
       get: (d) => txt(resolveMcuInfo(d)?.family?.name),
       href: (d) => resolveMcuInfo(d)?.family?.url ?? null
     },
     {
-      label: 'MCU model',
+      label: m.spec_mcu_model(),
       get: (d) => {
-        const m = resolveMcuInfo(d)?.model;
-        return txt(m ? stripVendorLabel(m, m.name) : d.hardware?.mcu?.model);
+        const mdl = resolveMcuInfo(d)?.model;
+        return txt(mdl ? stripVendorLabel(mdl, mdl.name) : d.hardware?.mcu?.model);
       },
       href: (d) => resolveMcuInfo(d)?.model?.url ?? null
     },
     {
-      label: 'Architecture',
+      label: m.spec_architecture(),
       get: (d) => txt(resolveMcuInfo(d)?.architecture?.name),
       href: (d) => resolveMcuInfo(d)?.architecture?.url ?? null
     },
     {
-      label: 'Flash',
+      label: m.spec_flash(),
       get: (d) => (d.hardware?.mcu?.flashMb ? `${d.hardware.mcu.flashMb} MB` : DASH),
       num: (d) => d.hardware?.mcu?.flashMb ?? null,
       unit: ' MB'
     },
     {
-      label: 'RAM',
+      label: m.spec_ram(),
       get: (d) => (d.hardware?.mcu?.ramKb ? `${d.hardware.mcu.ramKb} KB` : DASH),
       num: (d) => d.hardware?.mcu?.ramKb ?? null,
       unit: ' KB'
     },
     {
-      label: 'PSRAM',
+      label: m.spec_psram(),
       get: (d) => (d.hardware?.mcu?.psramMb ? `${d.hardware.mcu.psramMb} MB` : DASH),
       num: (d) => d.hardware?.mcu?.psramMb ?? null,
       unit: ' MB'
     },
     {
-      label: 'Radio',
+      label: m.dev_facet_radio(),
       get: (d) => txt(deviceRadioLabel(d)),
       href: (d) => resolveRadio(d.hardware?.radios?.[0]?.chip)?.url ?? null
     },
     {
-      label: 'Frequency',
+      label: m.spec_frequency(),
       get: (d) => [...new Set((d.hardware?.radios ?? []).flatMap((r) => r.bands ?? []))].map((b) => bandLabel(b) ?? b).join(', ') || DASH
     },
     {
-      label: 'Display',
+      label: m.dev_tog_display(),
       get: displayText,
       num: (d) => (d.hardware?.display?.status === 'present' ? d.hardware.display.size ?? null : null),
       unit: '″'
     },
-    { label: 'LEDs', get: ledsText },
+    { label: m.spec_leds(), get: ledsText },
     {
-      label: 'GPS',
+      label: m.spec_gps(),
       get: (d) =>
         d.hardware?.gnss?.status === 'present'
           ? resolveGnss(d.hardware.gnss.chip)?.name ?? d.hardware.gnss.chip ?? 'Yes'
@@ -158,44 +159,44 @@
         d.hardware?.gnss?.status === 'present' ? resolveGnss(d.hardware.gnss.chip)?.url ?? null : null
     },
     {
-      label: 'Battery',
+      label: m.dev_tog_battery(),
       get: batteryText,
       num: (d) => d.hardware?.power?.batteryCapacityMah ?? null,
       unit: ' mAh'
     },
-    { label: 'Chemistry', get: (d) => BATTERY_CHEMISTRY[d.hardware?.power?.batteryChemistry] ?? DASH },
-    { label: 'Built-in battery', get: (d) => yn(d.hardware?.power?.batteryBuiltIn) },
-    { label: 'Charging', get: (d) => yn(d.hardware?.power?.charging) },
-    { label: 'Solar panel', get: solarPanelText },
-    { label: 'Solar input', get: (d) => yn(d.hardware?.power?.solarInput) },
+    { label: m.spec_chemistry(), get: (d) => BATTERY_CHEMISTRY[d.hardware?.power?.batteryChemistry] ?? DASH },
+    { label: m.spec_battery_builtin(), get: (d) => yn(d.hardware?.power?.batteryBuiltIn) },
+    { label: m.dev_tog_charging(), get: (d) => yn(d.hardware?.power?.charging) },
+    { label: m.dev_tog_solar_panel(), get: solarPanelText },
+    { label: m.dev_tog_solar_input(), get: (d) => yn(d.hardware?.power?.solarInput) },
     {
-      label: 'Power draw (idle)',
+      label: m.spec_power_idle(),
       get: (d) => (d.hardware?.power?.consumptionIdleMa != null ? `${d.hardware.power.consumptionIdleMa} mA` : DASH),
       num: (d) => d.hardware?.power?.consumptionIdleMa ?? null,
       unit: ' mA'
     },
     {
-      label: 'Power draw (TX)',
+      label: m.spec_power_tx(),
       get: (d) => (d.hardware?.power?.consumptionTxMa != null ? `${d.hardware.power.consumptionTxMa} mA` : DASH),
       num: (d) => d.hardware?.power?.consumptionTxMa ?? null,
       unit: ' mA'
     },
-    { label: 'USB', get: (d) => txt(d.interfaces?.usb?.connector) },
+    { label: m.spec_usb(), get: (d) => txt(d.interfaces?.usb?.connector) },
     {
-      label: 'Bluetooth',
+      label: m.spec_bluetooth(),
       get: (d) =>
         d.interfaces?.bluetooth?.ble
           ? `BLE${d.interfaces.bluetooth.version && d.interfaces.bluetooth.version !== 'unknown' ? ` ${d.interfaces.bluetooth.version}` : ''}`
           : DASH
     },
     {
-      label: 'Wi-Fi',
+      label: m.spec_wifi(),
       get: (d) =>
         d.interfaces?.wifi?.status === 'present' ? 'Yes' : d.interfaces?.wifi?.status === 'none' ? 'No' : DASH
     },
-    { label: 'Roles', get: (d) => (d.roles ?? []).join(', ') || DASH },
-    { label: 'Transports', get: (d) => (d.transports ?? []).map((t) => t.toUpperCase()).join(', ') || DASH },
-    { label: 'Firmwares', get: (d) => String(d.firmwareCount) }
+    { label: m.dev_facet_roles(), get: (d) => (d.roles ?? []).join(', ') || DASH },
+    { label: m.spec_transports(), get: (d) => (d.transports ?? []).map((t) => t.toUpperCase()).join(', ') || DASH },
+    { label: m.collection_firmwares_label(), get: (d) => String(d.firmwareCount) }
   ];
 
   // Precompute each row's values + whether they differ across the selection.
@@ -227,30 +228,27 @@
   );
 </script>
 
-<Seo
-  title="Compare devices"
-  description="Compare MeshCore LoRa devices side by side — MCU, radio, display, power and more."
-  noindex
-/>
+<Seo title={m.tool_compare_label()} description={m.compare_seo_desc()} noindex />
 
 <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
   <div>
     <PageHeader tool="compare" subtitleClass="mb-0">
-      {pluralize(selected.length, 'device')} selected.
+      {m.compare_selected({ items: pluralize(selected.length, 'device') })}
     </PageHeader>
   </div>
-  <a class="text-[0.9rem] text-accent2 hover:underline" href="{base}/devices/">+ Add devices</a>
+  <a class="text-[0.9rem] text-accent2 hover:underline" href={href('/devices/')}>{m.compare_add_devices()}</a>
 </div>
 
 {#if selected.length === 0}
   <p class="rounded-xl border border-edge bg-elev p-10 text-center text-dim">
-    No devices selected. Go to <a class="text-accent2 hover:underline" href="{base}/devices/">Devices</a> and tick the
-    compare boxes to line boards up side by side.
+    {@html m.compare_empty_devices({
+      link: `<a class="text-accent2 hover:underline" href="${href('/devices/')}">${m.collection_devices_label()}</a>`
+    })}
   </p>
 {:else}
   <label class="mb-3 inline-flex cursor-pointer items-center gap-2 text-[0.85rem] text-dim select-none">
     <input type="checkbox" bind:checked={onlyDiff} class="accent-accent" />
-    Show only differences
+    {m.compare_only_diff()}
   </label>
 
   <div class="overflow-x-auto rounded-xl border border-edge">
@@ -268,8 +266,8 @@
               ondrop={(e) => { e.preventDefault(); reorder(dragIndex, i); dragIndex = null; }}
             >
               <div class="flex items-start justify-between gap-2">
-                <span class="mt-0.5 shrink-0 cursor-grab text-dim active:cursor-grabbing" title="Drag to reorder" aria-hidden="true">⠿</span>
-                <a href="{base}/device/{d.id}/" draggable="false" class="group block min-w-0 flex-1">
+                <span class="mt-0.5 shrink-0 cursor-grab text-dim active:cursor-grabbing" title={m.compare_drag_reorder()} aria-hidden="true">⠿</span>
+                <a href={href(`/device/${d.id}/`)} draggable="false" class="group block min-w-0 flex-1">
                   <span class="mb-2 flex h-16 w-16 items-center justify-center overflow-hidden rounded-lg bg-elev2 text-muted">
                     {#if d.imageUrl}
                       <img src={d.imageUrl} alt={d.name} draggable="false" class="max-h-full max-w-full object-contain p-1" />
@@ -282,13 +280,13 @@
                   </span>
                   <span class="block text-[0.95rem] font-semibold group-hover:text-accent">{d.name}</span>
                   {#if d.vendorName}<span class="block text-[0.78rem] font-normal text-dim">{d.vendorName}</span>{/if}
-                  {#if i === 0}<span class="mt-1 inline-block rounded bg-accent/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-accent uppercase">Reference</span>{/if}
+                  {#if i === 0}<span class="mt-1 inline-block rounded bg-accent/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-accent uppercase">{m.compare_reference()}</span>{/if}
                 </a>
                 <Button
                   variant=""
                   size="none"
                   class="shrink-0 rounded p-1 text-dim hover:bg-elev2 hover:text-bad"
-                  aria-label="Remove {d.name}"
+                  aria-label={m.aria_remove({ name: d.name })}
                   onclick={() => remove(d.id)}>✕</Button>
               </div>
             </th>
@@ -307,13 +305,13 @@
                   <span class="inline-flex items-center gap-1.5 text-ok">
                     <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                       <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>Yes
+                    </svg>{m.common_yes()}
                   </span>
                 {:else if v === 'No'}
                   <span class="inline-flex items-center gap-1.5 text-bad">
                     <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                       <path d="M6 6l12 12M18 6 6 18" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>No
+                    </svg>{m.common_no()}
                   </span>
                 {:else if row.hrefs?.[i] && v !== DASH}
                   <a href={row.hrefs[i]} target="_blank" rel="noreferrer" class="underline decoration-dotted decoration-edge underline-offset-2 hover:decoration-dim">{v}<span class="ml-0.5 no-underline opacity-50">↗</span></a>

@@ -1,0 +1,15 @@
+{
+  "resource": "network/colorado-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота Colorado MeshCore для регіону Front Range та всього Колорадо, що пропонує портал MeshCore для LoRa 915 МГц, карту в реальному часі на основі CoreScope, інструменти для операторів, посібники та координацію через Discord для забезпечення стійкого автономного зв'язку.",
+      "sourceHash": "sha256:0ae1356e249c20d88e0f95b4f07c0bf0c01c98210746dc1805a4e4c145c63438",
+      "generatedAt": "2026-06-27T16:48:47.676Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11309,
+      "promptTokens": 173,
+      "completionTokens": 1498
+    }
+  }
+}

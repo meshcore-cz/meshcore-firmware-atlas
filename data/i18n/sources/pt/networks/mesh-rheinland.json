@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-rheinland",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade alemã de rede em malha LoRa voltada para o Rheinland e regiões vizinhas no oeste da Alemanha. Abrange Meshtastic e MeshCore, oferecendo documentação local do MeshCore, configurações Narrow para UE/Reino Unido, escopos regionais do Rheinland, mapa em tempo real e analisador de tráfego do CoreScope, além de coordenação por WhatsApp.",
+      "sourceHash": "sha256:d728a6384b7f594fbc0385b8d76d2a668551a659f93111cc49357a2685c4f498",
+      "generatedAt": "2026-06-27T14:47:29.067Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3697,
+      "promptTokens": 179,
+      "completionTokens": 1031
+    }
+  }
+}

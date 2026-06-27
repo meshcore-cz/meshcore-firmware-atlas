@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-fr",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade francesa do MeshCore para uma rede mesh LoRa offline de longo alcance por toda a França, utilizando o perfil de 869.618 MHz compatível com EU/UK Narrow, com guias de configuração públicos, coordenação no Discord e atividades locais em Lyon e Lorient/Oeste.",
+      "sourceHash": "sha256:c703a92cca19b640bdbb85ab959bc0c7b244034cef5a47ef088d99e034e3f337",
+      "generatedAt": "2026-06-27T14:46:21.284Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3635,
+      "promptTokens": 175,
+      "completionTokens": 1005
+    }
+  }
+}

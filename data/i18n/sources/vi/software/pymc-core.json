@@ -1,0 +1,51 @@
+{
+  "resource": "software/pymc-core",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Triển khai Python cho giao thức MeshCore và ngăn xếp định tuyến nhằm xây dựng các nút mạng mesh và ứng dụng, bao gồm tính năng nhắn tin mã hóa, quản lý định danh, xử lý sự kiện và tùy chọn hỗ trợ trực tiếp radio SX1262 qua SPI.",
+      "sourceHash": "sha256:d0e37835a3fd7f30338364958a0af39b3f8d8b9802bfa217c9fa2fd6e04f13e1",
+      "generatedAt": "2026-06-27T16:32:45.233Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10082,
+      "promptTokens": 166,
+      "completionTokens": 918
+    },
+    "tags": {
+      "value": "[\"sdk\", \"giao thức\", \"định tuyến\", \"sx1262\", \"raspberry-pi\"]",
+      "sourceHash": "sha256:de45c3f26464af78212b5f8f94f7a5f06f28c34fa1596cc93e1810183314244c",
+      "generatedAt": "2026-06-27T16:32:49.682Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4447,
+      "promptTokens": 146,
+      "completionTokens": 569
+    },
+    "verificationNotes.releases-are-published-to-pypi-rather-than-githu": {
+      "value": "Các bản phát hành được đăng tải lên PyPI thay vì lên GitHub Releases.",
+      "sourceHash": "sha256:e7f84a5fd0805dc87f0d928f366c890a1aadbfde27e584be0cd01de9dd3eff81",
+      "generatedAt": "2026-06-27T16:33:35.319Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 45637,
+      "promptTokens": 141,
+      "completionTokens": 828
+    },
+    "verificationNotes.direct-hardware-support-targets-raspberry-pi-cla": {
+      "value": "Hỗ trợ phần cứng trực tiếp dành cho các hệ thống tương đương Raspberry Pi đi kèm bộ thu phát SPI SX1262; các thành phần giao thức có thể được sử dụng mà không cần thiết bị radio bổ sung.",
+      "sourceHash": "sha256:d49d1f2fab2f04ffd287d9a897165ace87fb0722e447195ab7b4c6c15df3f398",
+      "generatedAt": "2026-06-27T16:33:40.040Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4720,
+      "promptTokens": 153,
+      "completionTokens": 876
+    },
+    "verificationNotes.the-project-describes-itself-as-protocol-compati": {
+      "value": "Dự án tự mô tả là tương thích với giao thức, nhưng chưa được tối ưu hóa bằng bản triển khai C++ gốc của MeshCore.",
+      "sourceHash": "sha256:5454fc203a4f22ae61018bac06b281d6792bc4f35547e62c761175b76f28ec0e",
+      "generatedAt": "2026-06-27T16:33:46.340Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6298,
+      "promptTokens": 150,
+      "completionTokens": 637
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-teth-elite",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Deska ESP32-S3R8 s Wi-Fi, BLE a integrovaným Ethernetem přes W5500 je určena pro IoT brány s drátovým připojením v nepřetržitém provozu a projekty automatizace. Díky napájení přes USB-C, podpoře PoE a připájeným pinům představuje kompaktní kontrolér se síťovým zaměřením.",
+      "sourceHash": "sha256:14382b5d36a007e62c9e5a7c1208895c47dde04a55be68f278a975072a4cf42d",
+      "generatedAt": "2026-06-27T10:52:07.055Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

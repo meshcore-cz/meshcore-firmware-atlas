@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản phân nhánh MeshCore tập trung vào Cardputer-ADV dành cho M5Stack Cardputer-Adv kết hợp với mô-đun mở rộng Cap LoRa-1262. Bản này bổ sung target `cardputer_adv` với giao diện handheld tùy chỉnh, cơ chế truyền tải BLE đồng hành, lưu trữ qua thẻ SD, nhập liệu bằng bàn phím và hỗ trợ GNSS.",
+      "sourceHash": "sha256:ab037b4731c0918480bf6c11b6141e03a5ea4e096823c63e5ab7a8b95d3e013a",
+      "generatedAt": "2026-06-27T15:55:31.793Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2784,
+      "promptTokens": 189,
+      "completionTokens": 510
+    },
+    "features": {
+      "value": "[\"Giao diện người dùng dành riêng cho Cardputer\",\"Truyền tải dữ liệu BLE cho thiết bị đồng hành\",\"Lưu trữ tin nhắn và cài đặt trên thẻ SD\",\"Nhập liệu bằng bàn phím\",\"Hỗ trợ GNSS\"]",
+      "sourceHash": "sha256:9a7dcd2229b87b6795ac962705826bc6a8bfa5d12209b3bfc688d20b01d916ce",
+      "generatedAt": "2026-06-27T15:56:06.052Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 34259,
+      "promptTokens": 153,
+      "completionTokens": 667
+    }
+  }
+}

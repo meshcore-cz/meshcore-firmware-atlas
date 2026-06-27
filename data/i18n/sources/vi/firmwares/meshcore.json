@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware tham chiếu MeshCore — một thư viện C++ nhẹ và firmware dùng để định tuyến gói tin đa bước qua radio LoRa. Nó vận hành các mạng mesh phi tập trung, tự phục hồi cho liên lạc ngoài lưới, khẩn cấp và chiến thuật, đi kèm với các ảnh dựng sẵn và trình nạp web.",
+      "sourceHash": "sha256:123159709a38040b42972325ef252ce34949e5ba91df24b6d741fb7857ae6a76",
+      "generatedAt": "2026-06-27T15:44:41.111Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7517,
+      "promptTokens": 180,
+      "completionTokens": 1255
+    },
+    "deviceNotes.heltec-meshtower": {
+      "value": "Cùng bo mạch nền MeshSolar; sử dụng bản build heltec_mesh_solar.",
+      "sourceHash": "sha256:0fe9d96a80f245a3d2335a68e6bf70eccfe70b820e2035f0dcb00ec660ee9697",
+      "generatedAt": "2026-06-27T15:44:43.924Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2812,
+      "promptTokens": 144,
+      "completionTokens": 531
+    },
+    "features": {
+      "value": "[\"Định tuyến gói tin đa chặng\",\"Tin nhắn trực tiếp mã hóa đầu cuối\",\"Ứng dụng đồng hành BLE / USB / TCP\",\"Máy khách Web, iOS, Android, Python & NodeJS\",\"Quản lý lưu lượng quảng bá tràn ngập nguyên bản (1.16+)\",\"Trình nạp firmware qua web\"]",
+      "sourceHash": "sha256:b40ebfa18391613a9ebb86dc1d7bf8e6126434031883fff89218c89dfbaaf6b6",
+      "generatedAt": "2026-06-27T15:44:52.188Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8264,
+      "promptTokens": 179,
+      "completionTokens": 1280
+    }
+  }
+}

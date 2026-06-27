@@ -1,0 +1,15 @@
+{
+  "resource": "network/atl-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita MeshCore z metropolitní oblasti Atlanta ve státě Georgia buduje off-grid mesh komunikaci napříč městem a okolními okresy.",
+      "sourceHash": "sha256:b627042bcd44a8c21ea12b55e466fe874c704ba02dbefbfb635bb7150c05fdf5",
+      "generatedAt": "2026-06-27T12:00:36.541Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7999,
+      "promptTokens": 150,
+      "completionTokens": 793
+    }
+  }
+}

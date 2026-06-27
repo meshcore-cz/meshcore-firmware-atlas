@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-t1",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní mesh cíl Heltec nRF52 + SX1262 pro přenosná úsporná LoRa sestavení. Cílový firmware v upstreamu sice existuje, ale veřejná stránka produktu je stále strohá.",
+      "sourceHash": "sha256:38aa7a4618890b2960b8385c5e9e4a81933383b669f454a7a79d8f0ad9b0706c",
+      "generatedAt": "2026-06-27T10:45:49.583Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

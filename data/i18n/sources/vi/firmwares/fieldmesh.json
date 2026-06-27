@@ -1,0 +1,69 @@
+{
+  "resource": "firmware/fieldmesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Phiên bản phân nhánh firmware MeshCore được tối ưu hóa cho hoạt động ngoài trời — lễ hội, leo núi, sự kiện ngoài vùng phủ sóng. Bổ sung tính năng quảng bá GPS tự động, trang theo dõi riêng biệt có tính toán khoảng cách, chế độ Off-Grid với tần số mặc định hợp pháp và nút bật/tắt một chạm, hệ thống SOS với còi báo động, lịch sử tin nhắn dùng bộ đệm vòng RAM, cùng tính năng nhập/gửi văn bản trên các thiết bị tích hợp joystick. Được thiết kế sẵn sàng cho thực tế: chỉ cần bỏ vào balo và yên tâm để thiết bị tự làm việc.",
+      "sourceHash": "sha256:5a238086afbc4edb37bec544493b8a1154b08a4501acace27ee878515dc98e5d",
+      "generatedAt": "2026-06-27T15:45:39.961Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9238,
+      "promptTokens": 215,
+      "completionTokens": 1355
+    },
+    "deviceNotes.thinknode-m1": {
+      "value": "Màn hình e-ink, một nút bấm; mục tiêu phát triển chính",
+      "sourceHash": "sha256:3031fe508fa8b50f78ff1ef2a55c9bacf17a0a0282da5f13b151a1164cb14dc6",
+      "generatedAt": "2026-06-27T15:45:40.709Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 743,
+      "promptTokens": 140,
+      "completionTokens": 20
+    },
+    "deviceNotes.wio-tracker-l1": {
+      "value": "Màn hình OLED (SSD1306/SH1106 128x64), joystick; hỗ trợ nhập và gửi văn bản",
+      "sourceHash": "sha256:eaa64f3bcd4605640287d5f804ed4c9c4204d54b6d25e371c308cef2ad8d87a9",
+      "generatedAt": "2026-06-27T15:45:42.918Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2209,
+      "promptTokens": 153,
+      "completionTokens": 337
+    },
+    "deviceNotes.wio-tracker-l1-eink": {
+      "value": "Phiên bản E-ink (GxEPD2 250x122)",
+      "sourceHash": "sha256:f91d9dccff6b1fd7ea761083860f6f1e5622685f6b5cd86b8a37f00f3bad5a89",
+      "generatedAt": "2026-06-27T15:45:46.316Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3398,
+      "promptTokens": 144,
+      "completionTokens": 465
+    },
+    "deviceNotes.sensecap-t1000e": {
+      "value": "Thiết bị headless (không màn hình, một nút bấm); tham chiếu headless chính",
+      "sourceHash": "sha256:980dbf6be00da314282ad26bd857c1a1919ce888280a6511ffd318f21c07ceb8",
+      "generatedAt": "2026-06-27T15:45:50.925Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4608,
+      "promptTokens": 143,
+      "completionTokens": 881
+    },
+    "deviceNotes.rak-wismesh-tag": {
+      "value": "Thiết bị không màn hình; hoan nghênh đóng góp",
+      "sourceHash": "sha256:31113fa5f094d2a10f94dc8db5b8c2a96549e4c428fbe4e1fdf2859150b1b467",
+      "generatedAt": "2026-06-27T15:45:56.093Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5167,
+      "promptTokens": 135,
+      "completionTokens": 957
+    },
+    "features": {
+      "value": "[\"Quảng bá GPS tự động (zero-hop, 5 phút/lần)\",\"Trang theo dõi riêng với tính toán khoảng cách Haversine\",\"Chế độ Off-Grid với Client Repeat trên các tần số hợp lệ riêng biệt\",\"Chuyển đổi Off-Grid bằng một lần nhấn (qua menu hoặc nhấn nút 5 lần trên thiết bị headless)\",\"Hệ thống SOS với xác nhận hai bước và còi báo động\",\"Lịch sử tin nhắn (bộ đệm vòng RAM, tối đa 32 mục)\",\"Nhập và gửi văn bản qua joystick (Wio Tracker L1)\",\"Bộ đếm nút trực tuyến trên màn hình chính\",\"Chỉ báo chế độ (GPS-SHARE, OFF-GRID)\",\"Hỗ trợ thiết bị headless (T1000-E, RAK WiseMesh TAG)\",\"Phản hồi bằng còi bắt buộc cho mọi thao tác trên thiết bị headless\",\"Màn hình khởi động với thông tin phiên bản và thương hiệu FieldMesh\",\"Sửa lỗi đèn nền cho nhiều loại màn hình\"]",
+      "sourceHash": "sha256:09a7bba2fe4c10f8b97f916dc4697c6893d26d347aeab276c72ac7a073a1b21f",
+      "generatedAt": "2026-06-27T15:46:06.677Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10584,
+      "promptTokens": 289,
+      "completionTokens": 2248
+    }
+  }
+}

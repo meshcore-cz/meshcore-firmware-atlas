@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t190",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento com ESP32-S3R8 + SX1262 LoRa opcional, equipada com tela TFT integrada de 1,9 polegadas (170×320, ST7789) para Meshtastic/MeshCore. Inclui USB-C, conector de bateria SH1.25 com gerenciamento de carga, porta de sensor QuickLink SH1.0 e antenas IPEX para Wi-Fi/LoRa. Possui dois botões de usuário; sem GPS integrado.",
+      "sourceHash": "sha256:7889758862afbe52251c8fb89ac4cd6680fffa76e6622546bf2c661d6cd55431",
+      "generatedAt": "2026-06-27T14:04:42.258Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18532,
+      "promptTokens": 213,
+      "completionTokens": 1133
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/lunarcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware multi-protocolo para ESP32-S3 LoRa que combina o funcionamento de MeshCore, Meshtastic e RNode/KISS, com um modo de repetidor MeshCore integrado.",
+      "sourceHash": "sha256:ac0d05c7a09a52174863cf1be3cd3f5a8b4bb020dc5b8b1415640184a63487cf",
+      "generatedAt": "2026-06-27T14:28:33.461Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3014,
+      "promptTokens": 163,
+      "completionTokens": 863
+    },
+    "deviceNotes.heltec-v3": {
+      "value": "O README do projeto indica o Heltec WiFi LoRa 32 V3 como o hardware alvo.",
+      "sourceHash": "sha256:1e201732a0e1df3b91368bb5b6a564de2d2242f10218836d299a1f720dd20f0e",
+      "generatedAt": "2026-06-27T14:28:35.332Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1871,
+      "promptTokens": 148,
+      "completionTokens": 424
+    },
+    "features": {
+      "value": "[\"Protocolos MeshCore, Meshtastic e RNode/KISS\",\"Modo repetidor MeshCore integrado\",\"BLE, Wi-Fi e serial USB\"]",
+      "sourceHash": "sha256:5b4db5b9e4b88276452168bed2dabd3306720591313f6fc982bc706f39a4781c",
+      "generatedAt": "2026-06-27T14:28:37.574Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2242,
+      "promptTokens": 159,
+      "completionTokens": 552
+    }
+  }
+}

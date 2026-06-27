@@ -1,0 +1,33 @@
+{
+  "resource": "software/pymeshcore-gui",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Experimentální multiplatformní desktopový klient Qt vytvořený pomocí PySide6 a meshcore-py, zaměřený na chat MeshCore, prototypování a rozšiřitelný vývojový proces s otevřeným zdrojovým kódem.",
+      "sourceHash": "sha256:b511a4bd27d32abda5c61a7de848591d5af8d6f282ef0ecdd229dcae8cdccecf",
+      "generatedAt": "2026-06-27T11:52:03.805Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7703,
+      "promptTokens": 163,
+      "completionTokens": 824
+    },
+    "verificationNotes.the-project-explicitly-describes-itself-as-an-ea": {
+      "value": "Projekt se výslovně označuje za ranou experimentální verzi s nestabilním API a interní strukturou.",
+      "sourceHash": "sha256:3a6150ae79fc20e196a4d1c01d94d1b9ec0f7ef55c75323f8256526fd1bb75ea",
+      "generatedAt": "2026-06-27T11:52:12.791Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8987,
+      "promptTokens": 146,
+      "completionTokens": 726
+    },
+    "tags": {
+      "value": "[\"qt\",\"pyside6\",\"desktop\",\"experimentální\"]",
+      "sourceHash": "sha256:4b7aac97761cbf530c1106bf29e716bb4e52d5b94c4e74c61b9919ebf2723d6d",
+      "generatedAt": "2026-06-27T13:48:42.368Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6158,
+      "promptTokens": 141,
+      "completionTokens": 271
+    }
+  }
+}

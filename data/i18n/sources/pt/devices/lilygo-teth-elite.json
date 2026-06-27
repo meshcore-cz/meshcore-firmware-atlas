@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-teth-elite",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa ESP32-S3R8 com Wi-Fi, BLE e Ethernet integrada via W5500, projetada para gateways de IoT com fio sempre ativos e projetos de automação. A alimentação por USB-C, o suporte a PoE e os pinos soldados fazem dela um controlador compacto focado em redes.",
+      "sourceHash": "sha256:14382b5d36a007e62c9e5a7c1208895c47dde04a55be68f278a975072a4cf42d",
+      "generatedAt": "2026-06-27T14:14:01.935Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 30837,
+      "promptTokens": 183,
+      "completionTokens": 650
+    }
+  }
+}

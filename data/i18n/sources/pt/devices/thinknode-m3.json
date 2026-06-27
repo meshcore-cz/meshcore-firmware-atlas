@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m3",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rastreador nRF52840 + LR1110 do tamanho de um cartão de crédito para Meshtastic/MeshCore ou LoRaWAN (SKUs de firmware separados). Posicionamento via GNSS, pesquisa de Wi-Fi e beacons BLE através do LR1110; sensores de temperatura, humidade e acelerómetro. Bateria integrada de 770 mAh, carregamento magnético, botão SOS e invólucro IP66. Sem ecrã — configuração apenas por BLE.",
+      "sourceHash": "sha256:3425f830f10f4aca036786077d82d7a08dc1377b18eca5339714577401eab4c5",
+      "generatedAt": "2026-06-27T13:59:02.006Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18081,
+      "promptTokens": 211,
+      "completionTokens": 1182
+    }
+  }
+}

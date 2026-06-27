@@ -1,0 +1,15 @@
+{
+  "resource": "network/australia",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Офіційний радіопресет додатка MeshCore — 915.800MHz / SF10 / BW250 / CR5.",
+      "sourceHash": "sha256:61bda8840f03fdf534818e63bd9dcd47f92e0ae70c420e6da37e60ad1e1cebc6",
+      "generatedAt": "2026-06-27T16:46:29.561Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13264,
+      "promptTokens": 152,
+      "completionTokens": 769
+    }
+  }
+}

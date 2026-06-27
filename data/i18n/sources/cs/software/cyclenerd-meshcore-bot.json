@@ -1,0 +1,51 @@
+{
+  "resource": "software/cyclenerd-meshcore-bot",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Lehký příkazový bot pro Node.js určený pro soukromé kanály MeshCore. Odpovídá na příkazy ping a date, pravidelně sbírá stav opakovačů a volitelně zaznamenává telemetrii do CSV.",
+      "sourceHash": "sha256:4872321380e63a901ebc1bbf2f426e32c1ad5106d3bff25112eb85f97e7d9ff8",
+      "generatedAt": "2026-06-27T11:26:57.183Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8187,
+      "promptTokens": 158,
+      "completionTokens": 1196
+    },
+    "screenshots.bot-log.png.caption": {
+      "value": "Odpovědi bota MeshCore a protokolování stavu",
+      "sourceHash": "sha256:035c1b4057fe8ecdba8af0a24e386edd0aeea0efc372c9b590766337ec4ec604",
+      "generatedAt": "2026-06-27T11:27:01.818Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4635,
+      "promptTokens": 136,
+      "completionTokens": 485
+    },
+    "screenshots.client.jpg.caption": {
+      "value": "Příkazy odeslané z klienta MeshCore",
+      "sourceHash": "sha256:1e85ee33b7036a24e77f26e1704050ecedba9619e97868b2deb57a016f6a3380",
+      "generatedAt": "2026-06-27T11:27:03.461Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1642,
+      "promptTokens": 136,
+      "completionTokens": 84
+    },
+    "verificationNotes.responds-only-in-private-channels-to-reduce-publ": {
+      "value": "Odpovídá pouze v soukromých kanálech, aby se omezil spam ve veřejných kanálech.",
+      "sourceHash": "sha256:ae3a81af5d482f5cf1d06f12b06171a911cf4ceed7ab1b735f822ead014e142e",
+      "generatedAt": "2026-06-27T11:27:10.026Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6565,
+      "promptTokens": 141,
+      "completionTokens": 681
+    },
+    "tags": {
+      "value": "[\"příkazový bot\", \"monitorování opakovačů\", \"csv\", \"soukromé kanály\"]",
+      "sourceHash": "sha256:4c98e7dc48acd7e9f9b576082759421812203d41d54d5728d54c786025f726d2",
+      "generatedAt": "2026-06-27T13:39:01.492Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10885,
+      "promptTokens": 144,
+      "completionTokens": 621
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meshcore-tbeam-1w",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Speciální sestavení firmwaru MeshCore pro LilyGo T-Beam 1 Watt, která poskytují předkompilované binární soubory pro snadné nahrávání bez nutnosti kompilace ze zdrojových kódů.",
+      "sourceHash": "sha256:c9ab5b9b51d24e4cea0c96361f9f0c4345a8e4f323bdacd0baa14b1f098f27fe",
+      "generatedAt": "2026-06-27T11:23:19.223Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7096,
+      "promptTokens": 159,
+      "completionTokens": 692
+    },
+    "features": {
+      "value": "[\"Předkompilovaný firmware pro T-Beam 1W\",\"Snadné flashování bez kompilace\"]",
+      "sourceHash": "sha256:b553b6e4a1ad4a2138ee4306063847631c30fcced206be6d9acd575468399ed2",
+      "generatedAt": "2026-06-27T12:34:50.843Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6895,
+      "promptTokens": 146,
+      "completionTokens": 304
+    }
+  }
+}

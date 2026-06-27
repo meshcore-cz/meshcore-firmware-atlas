@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshpunk",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware portátil em LVGL + Lua para o LilyGo T-Deck com suporte completo a MeshCore. Inclui blocos de mapa offline do OpenStreetMap com sobreposição de contatos da rede mesh e triangulação de remetentes meshprint, temas, jogos (Doom, PICO-8, Flappy Bird, Snake, Scorched Earth), armazenamento em cartão SD, WiFi, BLE e sincronização de horário por GPS.",
+      "sourceHash": "sha256:0b0a2e4fa0f5c8e06bb8d284f6a7cd00c9843c4e82eb15e4e08d23c0c3fec166",
+      "generatedAt": "2026-06-27T14:25:55.506Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3751,
+      "promptTokens": 200,
+      "completionTokens": 1031
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "Dispositivo de destino principal. Use -merged.bin na primeira instalação, -firmware.bin para atualizações ou -launcher.bin com o Launcher do bmorcelli.",
+      "sourceHash": "sha256:e168843111e5c8fb5eeb19026212839d66f4d260824e59f458f2df972081a801",
+      "generatedAt": "2026-06-27T14:25:58.338Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2831,
+      "promptTokens": 160,
+      "completionTokens": 659
+    },
+    "features": {
+      "value": "[\"Framework de aplicativos LVGL + Lua\",\"Mapa offline com cache de blocos e triangulação meshprint\",\"Temas e estilos personalizados de interface\",\"Jogos (Doom, PICO-8, Flappy Bird, Snake, Scorched Earth)\",\"Persistência no cartão SD para configurações de mesh e firmware\",\"Conectividade BLE e Wi-Fi com aplicativo complementar\",\"Sincronização de horário por GPS\",\"Compilação compatível com o launcher\",\"Compatível com o protocolo MeshCore\"]",
+      "sourceHash": "sha256:48b065046073fe6ab02f4507c39ae601cc24123f244332dcf6d1771fab57af92",
+      "generatedAt": "2026-06-27T14:26:03.494Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5156,
+      "promptTokens": 202,
+      "completionTokens": 1525
+    }
+  }
+}

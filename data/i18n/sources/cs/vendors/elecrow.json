@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/elecrow",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Výrobce elektroniky, který vyrábí ruční zařízení ThinkNode MeshCore.",
+      "sourceHash": "sha256:3294a36f90e966d619f802b6235207fbfec9efc4c62edc4339d2cfc1ae687cd0",
+      "generatedAt": "2026-06-27T11:58:25.023Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6574,
+      "promptTokens": 141,
+      "completionTokens": 611
+    }
+  }
+}

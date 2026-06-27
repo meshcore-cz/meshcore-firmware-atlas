@@ -1,0 +1,15 @@
+{
+  "resource": "network/saarmesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Regionální komunita MeshCore buduje odolnou infrastrukturu LoRa v celém Sársku a koordinuje své aktivity v širším regionu SaarLorLux. Projekt nabízí technickou dokumentaci, informace o regionálním pokrytí, aktuální mapu sítě a podporu komunity.",
+      "sourceHash": "sha256:e4c00ff2881228d4a4ec6fb7a8dc6cfa8c7dd61523d4a6c965d2303808bcc3c8",
+      "generatedAt": "2026-06-27T12:11:48.862Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6480,
+      "promptTokens": 171,
+      "completionTokens": 860
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-nz",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Národní novozélandská komunitní síť MeshCore pro odolnou komunikaci mimo běžnou síť, koordinaci stanovišť opakovačů, zdroje pro správu uzlů, NZ MeshMapper, monitorování CoreScope, plánování prefixů a podporu komunity.",
+      "sourceHash": "sha256:33c4f9f0402bddcb17c72d7a00f0ce55bc3cce3429124a7f432f36d317a92ff3",
+      "generatedAt": "2026-06-27T12:09:24.738Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10875,
+      "promptTokens": 165,
+      "completionTokens": 871
+    }
+  }
+}

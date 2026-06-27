@@ -1,0 +1,15 @@
+{
+  "resource": "network/ipnet",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Instância do MeshCore Hub / CoreScope em Ipswich, Reino Unido, para mensagens encriptadas de código aberto off-grid, com painel, nós, canais, pacotes, mapa e vistas de membro e operador.",
+      "sourceHash": "sha256:a21c5b67b8772d2d3635efdc0f6bcf2c7598c67ef6bc791f9eee6d75e1f3c6db",
+      "generatedAt": "2026-06-27T14:46:54.436Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4350,
+      "promptTokens": 165,
+      "completionTokens": 1265
+    }
+  }
+}

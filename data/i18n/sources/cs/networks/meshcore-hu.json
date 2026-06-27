@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-hu",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Maďarská komunita MeshCore pro zasílání zpráv mimo síť na bázi LoRa, koordinovaná prostřednictvím mc868.hu s využitím skupin na Telegramu a Facebooku, lokálního analyzátoru CoreScope a rádiových nastavení EU/UK Narrow pro celonárodní mesh síť na 868 MHz.",
+      "sourceHash": "sha256:14ec03c5dffa66052854a7b6f715804e1a2289f350102469f6faf39fb478ab63",
+      "generatedAt": "2026-06-27T12:05:38.990Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9746,
+      "promptTokens": 175,
+      "completionTokens": 1515
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t-beam-sx1262",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rastreador LoRa ESP32 + SX1262 com GNSS u-blox integrado, display OLED SSD1306 e gestão de energia AXP2101. Conta com USB-C via ponte CH9102 e antenas externas IPEX para LoRa e Wi-Fi. É amplamente utilizado em nós complementares e repetidores para Meshtastic/MeshCore.",
+      "sourceHash": "sha256:e0dae925e5050e2715d59beb19a641589e092e28474d972062b2adf7b70ac8a3",
+      "generatedAt": "2026-06-27T14:09:45.955Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14582,
+      "promptTokens": 196,
+      "completionTokens": 1078
+    }
+  }
+}

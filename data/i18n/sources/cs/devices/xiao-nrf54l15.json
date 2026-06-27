@@ -1,0 +1,12 @@
+{
+  "resource": "device/xiao-nrf54l15",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Cílová platforma ZephCore XIAO nRF54L15 propojená přes SPI s externím modulem SX1262 LoRa. Slouží jako vývojářské sestavení pro testování doprovodného firmwaru nRF54L15 BLE/USB se směrováním paketů LoRa pomocí MeshCore.",
+      "sourceHash": "sha256:5e4f27a50621f5b6e8d6032459bf3ef47fb57067a3e9123bc480bff575a3ac40",
+      "generatedAt": "2026-06-27T10:59:27.476Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

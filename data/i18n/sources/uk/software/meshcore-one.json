@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-one",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Нативний клієнт та мережевий інструментарій MeshCore для iPhone, iPad та Mac на базі Apple Silicon, що поєднує обмін повідомленнями з офлайн-картами, трасуванням маршрутів, аналізом прямої радіовидимості, перехопленням пакетів та віддаленим адмініструванням вузлів.",
+      "sourceHash": "sha256:0ad0f9e672db68d0c110c07e2cceb64d4c693bf406cfd2885aead1a4e5f26b20",
+      "generatedAt": "2026-06-27T15:54:20.188Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6761,
+      "promptTokens": 169,
+      "completionTokens": 1229
+    },
+    "tags": {
+      "value": "[\"Apple\",\"нативний\",\"офлайн\",\"радіочастотний аналіз\",\"віддалений термінал\"]",
+      "sourceHash": "sha256:866ffd166b164a44156a48135561a0bc8c76b844a8050c6e24abc297310d1b88",
+      "generatedAt": "2026-06-27T16:11:36.236Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13707,
+      "promptTokens": 142,
+      "completionTokens": 704
+    },
+    "verificationNotes.requires-ios-or-ipados-18-or-an-apple-silicon-ma": {
+      "value": "Вимагає iOS або iPadOS 18, або Mac на базі Apple Silicon.",
+      "sourceHash": "sha256:6d4b3fd98f6902d22f93ea5ec5983286b0fee9dc24fa4f8bb3051d318fd80ce9",
+      "generatedAt": "2026-06-27T16:11:39.995Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3759,
+      "promptTokens": 142,
+      "completionTokens": 495
+    },
+    "verificationNotes.github-releases-provide-unsigned-ipa-files-testf": {
+      "value": "Релізи на GitHub містять непідписані IPA-файли; TestFlight — це простіший спосіб встановлення бета-версії.",
+      "sourceHash": "sha256:41c2973b8f2af1a02f0e6b5ef179a9c5dadde8e4619242b6acaf4e2a7c3e8369",
+      "generatedAt": "2026-06-27T16:11:50.129Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10133,
+      "promptTokens": 145,
+      "completionTokens": 852
+    }
+  }
+}

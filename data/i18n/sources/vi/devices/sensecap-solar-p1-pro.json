@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-solar-p1-pro",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Node hoặc repeater Meshtastic/MeshCore sử dụng năng lượng mặt trời, tích hợp sẵn XIAO L76K GNSS và đi kèm 4 pin 18650 3350 mAh được lắp sẵn. Sử dụng cùng lõi XIAO nRF52840 Plus và Wio-SX1262 như P1, kèm theo tấm năng lượng mặt trời 5W và vỏ bảo vệ ngoài trời chuẩn IPX6 có cổng mở rộng Grove.",
+      "sourceHash": "sha256:df0994863cd92b04c9f0817be704f226ba72295f3484beb3660364897805cb94",
+      "generatedAt": "2026-06-27T15:40:59.869Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6149,
+      "promptTokens": 209,
+      "completionTokens": 1175
+    }
+  }
+}

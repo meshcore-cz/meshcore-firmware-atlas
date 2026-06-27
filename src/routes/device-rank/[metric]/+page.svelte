@@ -1,11 +1,13 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import { onMount } from 'svelte';
   import BackLink from '$lib/BackLink.svelte';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
   import { METRICS } from '$lib/metrics.js';
+  import { metricHeading, metricLabel, metricUnit } from '$lib/metric-labels.js';
   import { favoriteIds } from '$lib/favorites.js';
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
@@ -55,7 +57,7 @@
     const p = new URLSearchParams(browser ? $page.url.searchParams : '');
     p.set('dir', dir === 'asc' ? 'desc' : 'asc');
     const qs = p.toString();
-    goto(`${base}/device-rank/${metric.id}/${qs ? '?' + qs : ''}`, {
+    goto(href(`/device-rank/${metric.id}/${qs ? '?' + qs : ''}`), {
       replaceState: true,
       keepFocus: true,
       noScroll: true
@@ -64,26 +66,29 @@
 </script>
 
 <Seo
-  title={`${metric.label} ranking`}
-  description={`Every MeshCore device ranked by ${metric.label.toLowerCase()}${metric.unit ? ` (${metric.unit})` : ''}.`}
+  title={m.dr_seo_title({ label: metricLabel(metric.id) })}
+  description={m.dr_seo_desc({
+    label: metricLabel(metric.id).toLowerCase(),
+    unitPart: metricUnit(metric.id) ? ` (${metricUnit(metric.id)})` : ''
+  })}
 />
 
-<BackLink href="{base}/devices/">All devices</BackLink>
+<BackLink href={href('/devices/')}>{m.dd_back()}</BackLink>
 
 <PageHeader tool="device-rank" subtitleClass="mb-4 max-w-[60ch]">
-  Every device ranked by a single spec. Pick a metric and the table re-sorts.
+  {m.dr_subtitle()}
 </PageHeader>
 
 <div class="mb-5 flex flex-wrap gap-1.5">
-  {#each METRICS as m (m.id)}
+  {#each METRICS as met (met.id)}
     <a
-      class="rounded-full border px-2.5 py-1 text-[0.8rem] transition {m.id === metric.id
+      class="rounded-full border px-2.5 py-1 text-[0.8rem] transition {met.id === metric.id
         ? 'border-accent bg-accent/15 text-accent'
         : 'border-edge bg-elev text-dim hover:border-accent/60 hover:text-ink'}"
-      href="{base}/device-rank/{m.id}/{fromId ? `?from=${fromId}` : ''}"
-      aria-current={m.id === metric.id ? 'page' : undefined}
+      href={href(`/device-rank/${met.id}/${fromId ? `?from=${fromId}` : ''}`)}
+      aria-current={met.id === metric.id ? 'page' : undefined}
     >
-      {m.label}{m.unit ? ` (${m.unit})` : ''}
+      {metricHeading(met.id)}
     </a>
   {/each}
 </div>
@@ -97,7 +102,7 @@
             {fromEntry.rank}<span class="text-muted">/{fromEntry.total}</span>
           </td>
           <td class="px-3.5 py-2">
-            <a class="flex min-w-0 items-center gap-2 hover:text-accent" href="{base}/device/{fromEntry.device.id}/">
+            <a class="flex min-w-0 items-center gap-2 hover:text-accent" href={href(`/device/${fromEntry.device.id}/`)}>
               <span class="flex h-[22px] w-[22px] shrink-0 items-center justify-center rounded bg-elev2 p-0.5 text-muted">
                 {#if fromEntry.device.imageUrl}
                   <img src={fromEntry.device.imageUrl} alt="" class="max-h-full max-w-full object-contain" />
@@ -109,11 +114,11 @@
                 {/if}
               </span>
               <span class="truncate font-medium">{fromEntry.device.name}</span>
-              {#if $favoriteIds.includes(fromEntry.device.id)}<span class="rounded bg-accent/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-accent uppercase">Favourite</span>{/if}
+              {#if $favoriteIds.includes(fromEntry.device.id)}<span class="rounded bg-accent/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-accent uppercase">{m.dd_fav_on()}</span>{/if}
             </a>
           </td>
           <td class="px-3.5 py-2 text-right font-semibold tabular-nums">
-            {metric.fmt(fromEntry.value)}{metric.unit ? ` ${metric.unit}` : ''}
+            {metric.fmt(fromEntry.value)}{metricUnit(metric.id) ? ` ${metricUnit(metric.id)}` : ''}
           </td>
         </tr>
       </tbody>
@@ -126,12 +131,12 @@
     <thead>
       <tr class="text-left text-[0.78rem] tracking-wide text-dim uppercase">
         <th class="w-12 border-b border-edge px-3.5 py-2.5 text-right">#</th>
-        <th class="border-b border-edge px-3.5 py-2.5">Device</th>
+        <th class="border-b border-edge px-3.5 py-2.5">{m.col_device()}</th>
         <th class="border-b border-edge px-3.5 py-2.5 text-right">
-          <Tooltip text="Toggle sort direction">
+          <Tooltip text={m.dr_toggle_sort()}>
             {#snippet trigger(props)}
               <Button {...props} variant="" size="none" class="gap-1 hover:text-ink" onclick={flipDir}>
-                {metric.label}{metric.unit ? ` (${metric.unit})` : ''}
+                {metricHeading(metric.id)}
                 <ArrowUpDown class="h-3.5 w-3.5" aria-hidden="true" />
               </Button>
             {/snippet}
@@ -146,7 +151,7 @@
             {rankAt(i, ranked.length)}
           </td>
           <td class="border-b border-edge px-3.5 py-2">
-            <a class="flex items-center gap-2.5 hover:text-accent" href="{base}/device/{device.id}/">
+            <a class="flex items-center gap-2.5 hover:text-accent" href={href(`/device/${device.id}/`)}>
               <span class="flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded bg-elev2 p-0.5 text-muted">
                 {#if device.imageUrl}
                   <img src={device.imageUrl} alt="" class="max-h-full max-w-full object-contain" />
@@ -158,11 +163,11 @@
                 {/if}
               </span>
               <span>{device.name}</span>
-              {#if $favoriteIds.includes(device.id)}<span class="rounded bg-accent/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-accent uppercase">Favourite</span>{/if}
+              {#if $favoriteIds.includes(device.id)}<span class="rounded bg-accent/15 px-1.5 py-0.5 text-[0.6rem] font-bold tracking-wide text-accent uppercase">{m.dd_fav_on()}</span>{/if}
             </a>
           </td>
           <td class="border-b border-edge px-3.5 py-2 text-right font-semibold tabular-nums">
-            {metric.fmt(value)}{metric.unit ? ` ${metric.unit}` : ''}
+            {metric.fmt(value)}{metricUnit(metric.id) ? ` ${metricUnit(metric.id)}` : ''}
           </td>
         </tr>
       {/each}
@@ -171,5 +176,5 @@
 </div>
 
 {#if !ranked.length}
-  <p class="mt-4 rounded-xl border border-edge bg-elev p-8 text-center text-dim">No devices record this spec yet.</p>
+  <p class="mt-4 rounded-xl border border-edge bg-elev p-8 text-center text-dim">{m.dr_empty()}</p>
 {/if}

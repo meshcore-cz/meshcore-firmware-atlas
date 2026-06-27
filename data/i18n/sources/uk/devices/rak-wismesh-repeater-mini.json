@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-wismesh-repeater-mini",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактний зовнішній повторювач з підтримкою сонячних панелей на базі RAK4631 та базової плати RAK19003 Mini, розміщений у корпусі IP67 Unify із вбудованим акумулятором, BLE, USB-інтерфейсом та зовнішньою антеною LoRa. Постачається у різних регіональних варіантах для частот 8xx та 9xx для швидкого автономного розгортання.",
+      "sourceHash": "sha256:bde7a35d33edd36a5c691d29e51939d71b997101c625aaee101620350d1d29db",
+      "generatedAt": "2026-06-27T15:01:11.751Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5898,
+      "promptTokens": 193,
+      "completionTokens": 1798
+    }
+  }
+}

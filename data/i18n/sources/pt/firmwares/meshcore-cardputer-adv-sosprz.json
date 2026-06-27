@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv-sosprz",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fork do MeshCore UI distribuído em formato binário para o M5Stack Cardputer ADV, empacotado como imagens flasheáveis para ESP32-S3, concebido para a sua interface de teclado e ecrã.",
+      "sourceHash": "sha256:35605e5737a6b4e481f685f2fcd88f585708f6d3e694ef7efe08ade51f27e299",
+      "generatedAt": "2026-06-27T14:24:04.653Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4460,
+      "promptTokens": 161,
+      "completionTokens": 1275
+    },
+    "features": {
+      "value": "[\"Interface de teclado e tela do Cardputer ADV\", \"Imagens de firmware pré-compiladas do ESP32-S3\"]",
+      "sourceHash": "sha256:dc03637703f47a5ab83a7419fcb6c6f567b214bb35f31171b3c5eb4cccd53d4e",
+      "generatedAt": "2026-06-27T14:24:07.413Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2759,
+      "promptTokens": 147,
+      "completionTokens": 665
+    },
+    "verificationNotes.the-repository-contains-release-binaries-and-fla": {
+      "value": "O repositório contém binários de lançamento e notas de gravação, mas não inclui o código-fonte do firmware nem a licença.",
+      "sourceHash": "sha256:11184b73346e0b9944f92bb8bcb234803f12cba1f7d171dcdf67e104a2dedf92",
+      "generatedAt": "2026-06-27T14:24:10.270Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2856,
+      "promptTokens": 144,
+      "completionTokens": 753
+    }
+  }
+}

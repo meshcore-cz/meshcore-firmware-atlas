@@ -1,0 +1,15 @@
+{
+  "resource": "network/wny-meshcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore do tình nguyện viên vận hành đang xây dựng mạng trục liên lạc tại Tây New York, trải dài từ biên giới Pennsylvania đến hồ Ontario và về phía đông tới Rochester. Hệ thống có các trạm lặp trải dọc hành lang Buffalo-Rochester cùng các hướng dẫn thiết lập công khai.",
+      "sourceHash": "sha256:abf226e2f3b0e9c27fc940e004e4cb84502fe4caad32a7424e8b2d053b8e5ee2",
+      "generatedAt": "2026-06-27T16:55:43.192Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13964,
+      "promptTokens": 169,
+      "completionTokens": 1107
+    }
+  }
+}

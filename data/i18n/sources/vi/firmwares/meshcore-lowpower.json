@@ -1,0 +1,78 @@
+{
+  "resource": "firmware/meshcore-lowpower",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore được tối ưu hóa năng lượng với chế độ ngủ sâu, giao diện hiển thị đồng hành đầy đủ tích hợp kết nối đa phương thức (BLE + USB + WiFi trong cùng một bản dựng), chức năng điều khiển vô tuyến và mạng nâng cao, cổng cấu hình trên trình duyệt, cùng tính năng phân tích thời lượng pin — được thiết kế cho hoạt động ngoài lưới kéo dài nhiều ngày.",
+      "sourceHash": "sha256:2405964fabf6c7278fd46ddb5b5cb8eeca274fc863535ad3947fd7d0fd283877",
+      "generatedAt": "2026-06-27T15:49:50.166Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6749,
+      "promptTokens": 187,
+      "completionTokens": 1082
+    },
+    "deviceNotes.rak-4631": {
+      "value": "Sử dụng bo mạch nền RAK19003 để phân tích tiêu thụ điện năng.",
+      "sourceHash": "sha256:e64febbc7fef69675d911f2109b7cacba3555a99117c91f99b3242bc81091824",
+      "generatedAt": "2026-06-27T15:49:53.809Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3642,
+      "promptTokens": 140,
+      "completionTokens": 462
+    },
+    "deviceNotes.atlavox-m1": {
+      "value": "Sử dụng mục tiêu RAK4631; giống như rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:49:56.069Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2260,
+      "promptTokens": 145,
+      "completionTokens": 327
+    },
+    "deviceNotes.atlavox-beacon": {
+      "value": "Sử dụng mục tiêu RAK4631; giống với rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:50:02.075Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6005,
+      "promptTokens": 145,
+      "completionTokens": 852
+    },
+    "deviceNotes.rak-wismesh-repeater-mini": {
+      "value": "Sử dụng mục tiêu RAK4631; giống với rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:50:06.944Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4869,
+      "promptTokens": 145,
+      "completionTokens": 638
+    },
+    "deviceNotes.yetiwurks-basestation": {
+      "value": "Sử dụng mục tiêu RAK4631; giống với rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:50:10.552Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3607,
+      "promptTokens": 145,
+      "completionTokens": 487
+    },
+    "deviceNotes.uart-solar-node-station": {
+      "value": "Sử dụng mục tiêu RAK4631; giống với rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:50:14.038Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3485,
+      "promptTokens": 145,
+      "completionTokens": 583
+    },
+    "features": {
+      "value": "[\"Tối ưu hóa nguồn điện sâu với phân tích dòng điện nhàn rỗi\",\"Bản dựng ứng dụng đồng hành hợp nhất BLE + USB + WiFi (tệp nhị phân đơn)\",\"Cổng cấu hình trên trình duyệt (sao lưu, khôi phục, nạp firmware, khởi động lại)\",\"Sao lưu/khôi phục ứng dụng đồng hành (tùy chọn, thông tin xác thực WiFi, thiết lập sẵn)\",\"Tăng độ khuếch đại Rx thích ứng trên Heltec V4.2\",\"Lựa chọn chòm sao GPS và khoảng thời gian cập nhật GPS khi chạy\",\"Bảo vệ pin yếu và đọc điện áp\",\"Hiển thị đa ngôn ngữ gốc trên màn hình màu TFT Heltec T096\",\"Tự động phát hiện FEM KCT8103L trên Heltec V4.3\"]",
+      "sourceHash": "sha256:35ccc4a3b2140c6384c6b6f8f2522903d0010c1e24af1cd55e69698335b16a49",
+      "generatedAt": "2026-06-27T15:50:23.620Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9581,
+      "promptTokens": 239,
+      "completionTokens": 2156
+    }
+  }
+}

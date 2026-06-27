@@ -1,0 +1,15 @@
+{
+  "resource": "device/station-g2",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Меш-пристрій класу Station на базі ESP32-S3 із потужним радіочастотним трактом LoRa, оптимізований для підвищеної чутливості прийому та потужності передачі 35 дБм. Призначений для стаціонарного монтажу або встановлення на транспортних засобах із зовнішньою антеною.",
+      "sourceHash": "sha256:be61d9f55d3d9d29b8a5c577cd206c31f91d581720ec1d9fc17abbd13236ea0b",
+      "generatedAt": "2026-06-27T15:17:44.648Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16001,
+      "promptTokens": 172,
+      "completionTokens": 1030
+    }
+  }
+}

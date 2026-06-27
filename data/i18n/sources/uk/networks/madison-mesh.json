@@ -1,0 +1,15 @@
+{
+  "resource": "network/madison-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнотна меш-радіомережа в Медісоні (штат Вісконсин), орієнтована переважно на MeshCore, але також підтримує Meshtastic. Місцеві ентузіасти розгортають та обслуговують автономні вузли по всій території Медісона, ділячись інструкціями з налаштування, інтерактивною картою та координуючи дії через Discord.",
+      "sourceHash": "sha256:0144a3ecaf6314c02e2700d1a5272a2ecb07e4647f39d9b0c8c09d8eb4533a6c",
+      "generatedAt": "2026-06-27T16:52:28.384Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10252,
+      "promptTokens": 176,
+      "completionTokens": 1169
+    }
+  }
+}

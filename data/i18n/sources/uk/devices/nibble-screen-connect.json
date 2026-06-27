@@ -1,0 +1,15 @@
+{
+  "resource": "device/nibble-screen-connect",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Сумісний із макетними платами вузол Nibble оснащений вбудованим екраном, кнопками та має монтажні отвори для розширення. Він призначений для експериментів з MeshCore та Meshtastic. Конструкція поєднує Waveshare ESP32-S3 Zero і радіомодуль Seeed Wio SX1262.",
+      "sourceHash": "sha256:1c59ff73a9a80ba21005aa8200e30306ced099554f67224952fc8f76d59deb76",
+      "generatedAt": "2026-06-27T15:00:39.937Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4489,
+      "promptTokens": 185,
+      "completionTokens": 1292
+    }
+  }
+}

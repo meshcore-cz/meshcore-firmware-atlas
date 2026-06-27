@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-decoder",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Biblioteca TypeScript e decodificador de linha de comandos para pacotes de rádio MeshCore, incluindo análise da estrutura dos pacotes, desencriptação de canais, assinaturas, tokens de autenticação e códigos de transporte regionais.",
+      "sourceHash": "sha256:05123319cd64ce74d091324dd20f16f9fd267ef1101bb6c4c9d4f764af1655f2",
+      "generatedAt": "2026-06-27T14:30:45.832Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3025,
+      "promptTokens": 159,
+      "completionTokens": 742
+    },
+    "tags": {
+      "value": "[\"sdk\",\"protocolo\",\"decodificador\",\"criptografia\"]",
+      "sourceHash": "sha256:1ad65163d3f16587608efd60e8f01fd51faa7a3372e0487bd568661a4252ad8c",
+      "generatedAt": "2026-06-27T14:30:48.358Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2526,
+      "promptTokens": 139,
+      "completionTokens": 596
+    },
+    "verificationNotes.package-version-0-3-0-is-declared-in-package-jso": {
+      "value": "A versão 0.3.0 do pacote é declarada no package.json; nenhum lançamento foi publicado no GitHub.",
+      "sourceHash": "sha256:6b8f543682ec72a82b0cfe04e6098cc46e068886a3cda06792a333bd67a25a96",
+      "generatedAt": "2026-06-27T14:30:51.744Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3385,
+      "promptTokens": 149,
+      "completionTokens": 880
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "resource": "firmware/meck",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Форк супровідної прошивки MeshCore, орієнтований на забезпечення підключення BLE та WiFi для LilyGo T-Deck Pro, T-Deck Max та T5 E-Paper S3 Pro. Пропонує повний сенсорний інтерфейс із вбудованою клавіатурою, іграми, голосовими нотатками через LoRa, веббраузером, SMS та лаунчером налаштувань із підтримкою OTA-оновлень.",
+      "sourceHash": "sha256:15dc6e89c7e0a29404155146f970f72df79f9c955441edab5bdf5980028fc282",
+      "generatedAt": "2026-06-27T15:26:18.551Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19935,
+      "promptTokens": 197,
+      "completionTokens": 1338
+    },
+    "deviceNotes.lilygo-tdeck-pro": {
+      "value": "Варіант T-Deck Pro з ESP32-S3 та дисплеєм на електронному папері.",
+      "sourceHash": "sha256:d3e302e1074ed1b1d941bbca080e2d7eb0df11420b622ce77c92cc8bd934acf8",
+      "generatedAt": "2026-06-27T15:26:23.862Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5310,
+      "promptTokens": 144,
+      "completionTokens": 276
+    },
+    "deviceNotes.lilygo-tdeck-max": {
+      "value": "Варіант T-Deck Max з 4G, GPS та дисплеєм на електронному папері.",
+      "sourceHash": "sha256:5b8a8cc15b62119e7b55580023bba69260e42db50e2e501ef0201b124ca189ed",
+      "generatedAt": "2026-06-27T15:27:11.611Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 47750,
+      "promptTokens": 146,
+      "completionTokens": 763
+    },
+    "deviceNotes.lilygo-t5-pro": {
+      "value": "Варіант T5 E-Paper S3 Pro (H752-XX).",
+      "sourceHash": "sha256:2169e8fc229f0a36eb2f61124c5ecd0fdd4129c71425dacd48f6645095bd56c5",
+      "generatedAt": "2026-06-27T15:27:18.591Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6979,
+      "promptTokens": 146,
+      "completionTokens": 399
+    },
+    "deviceNotes.heltec-v3": {
+      "value": "Лише віддалений ретранслятор.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T15:27:26.920Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8329,
+      "promptTokens": 134,
+      "completionTokens": 615
+    },
+    "deviceNotes.heltec-wsl3": {
+      "value": "Лише віддалений ретранслятор.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T15:27:43.801Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16881,
+      "promptTokens": 134,
+      "completionTokens": 483
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Лише віддалений ретранслятор.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T15:27:50.645Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6843,
+      "promptTokens": 134,
+      "completionTokens": 388
+    },
+    "deviceNotes.heltec-v4-exp": {
+      "value": "Лише віддалений репетер.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T15:28:24.194Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 33549,
+      "promptTokens": 134,
+      "completionTokens": 618
+    },
+    "features": {
+      "value": "[\"Супутнє підключення через BLE та Wi-Fi\",\"Сенсорний інтерфейс із вбудованою клавіатурою\",\"Ігри (Sokoban, Pong, Snake)\",\"Голосні нотатки через LoRa\",\"Веббраузер і IRC-клієнт\",\"Застосунок для SMS та дзвінків (лише для моделей 4G)\",\"Налаштування сповіщень для окремих каналів і власні мелодії\",\"Експорт/імпорт конфігурації\",\"Оновлення прошивки (OTA)\",\"Блокування екрана та вимкнення\"]",
+      "sourceHash": "sha256:bafffdc9f50056a03b4fbf712f3dd7b6da281181ee86af8ac8797bf246382ee3",
+      "generatedAt": "2026-06-27T15:28:40.188Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15993,
+      "promptTokens": 198,
+      "completionTokens": 1289
+    }
+  }
+}

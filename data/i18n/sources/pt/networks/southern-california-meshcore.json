@@ -1,0 +1,15 @@
+{
+  "resource": "network/southern-california-meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore no sul da Califórnia, centrada na região de Los Angeles, com um analisador CoreScope público na área metropolitana de LAX.",
+      "sourceHash": "sha256:4ffe79e25bd55a6ce42adfcd6f52573f0dac02d6ca02e5b1f707d99b77a6376e",
+      "generatedAt": "2026-06-27T14:49:25.701Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2823,
+      "promptTokens": 155,
+      "completionTokens": 786
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-paris",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita MeshCore pro Paříž a region Velké Paříže (Grand Paris), která v celé metropolitní oblasti buduje offline LoRa mesh s dlouhým dosahem.",
+      "sourceHash": "sha256:0ddef1706e124dd25c6883575fe732d881e30fbb9a14e3fb8a1cab13d5e31109",
+      "generatedAt": "2026-06-27T12:10:31.644Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4968,
+      "promptTokens": 157,
+      "completionTokens": 613
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/wio-tracker-l1-pro",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Hotové přenosné zařízení Meshtastic/MeshCore se stejnou deskou L1 v odolném krytu, 1,3palcovým OLED displejem, vestavěnou baterií 2000 mAh, 4směrovým joystickem a přijímačem L76K GNSS. Podporuje nabíjení přes USB-C a solární nabíjení.",
+      "sourceHash": "sha256:ce74e926f7761ab4676c475c46036cd8fa0f941b4038d230659807dfccc2d1e4",
+      "generatedAt": "2026-06-27T10:57:39.677Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

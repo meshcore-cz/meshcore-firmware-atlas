@@ -1,0 +1,78 @@
+{
+  "resource": "software/sigurdos-client",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Cliente MeshCore multiplataforma em Flutter derivado do MeshCore Open, que adiciona um tema de pixel art SigurdOS e mantém as mensagens, mapas, gestão de dispositivos e administração de repetidores via BLE, USB e TCP.",
+      "sourceHash": "sha256:af2abb6c542994d0b87942994db6693b14374ef6ad65d9b79a2f04638a8de785",
+      "generatedAt": "2026-06-27T14:42:57.757Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3817,
+      "promptTokens": 169,
+      "completionTokens": 1046
+    },
+    "screenshots.contacts.jpg.caption": {
+      "value": "Contatos da malha",
+      "sourceHash": "sha256:15790efbf31cf337d1af68c6f28db1cb6d9ecb983111af6bbdea9b0c81933c58",
+      "generatedAt": "2026-06-27T14:43:00.610Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2851,
+      "promptTokens": 131,
+      "completionTokens": 576
+    },
+    "screenshots.chat.jpg.caption": {
+      "value": "Mensagens diretas criptografadas",
+      "sourceHash": "sha256:f7a506a0dd7aa910aaa85ba60676f98ae484042ff3b925d1c03ab6a7e2fcbefd",
+      "generatedAt": "2026-06-27T14:43:02.594Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1984,
+      "promptTokens": 133,
+      "completionTokens": 428
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Mapa da malha e posições dos nós",
+      "sourceHash": "sha256:fbaec063e1478e8c719e9d765fa70f3d2fa5fcac6499f0e3c98c419152092c2b",
+      "generatedAt": "2026-06-27T14:43:05.013Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2418,
+      "promptTokens": 134,
+      "completionTokens": 478
+    },
+    "screenshots.channels.jpg.caption": {
+      "value": "Mensagens de canal",
+      "sourceHash": "sha256:84f950f864adf2f9f4b23cc83849a9df21f105ae261c51e0929296490dc3f6d1",
+      "generatedAt": "2026-06-27T14:43:06.918Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1906,
+      "promptTokens": 131,
+      "completionTokens": 371
+    },
+    "tags": {
+      "value": "[\"flutter\",\"sigurdos\",\"pixel-art\",\"meshcore-fork-aberto\"]",
+      "sourceHash": "sha256:05d9b430a5d0c834612f9d5eee94ab8b433a20c1b52d7cbc84d5009539854531",
+      "generatedAt": "2026-06-27T14:43:11.273Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4354,
+      "promptTokens": 145,
+      "completionTokens": 862
+    },
+    "verificationNotes.community-fork-of-meshcore-open-with-sigurdos-br": {
+      "value": "Fork comunitário do MeshCore Open, com a marca SigurdOS e integração específica para o ecossistema.",
+      "sourceHash": "sha256:f223103eae94c8892d2c8fc681f501bbd9335ef04148ddcf7cc6a5d0de5841f2",
+      "generatedAt": "2026-06-27T14:43:13.660Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2387,
+      "promptTokens": 145,
+      "completionTokens": 597
+    },
+    "verificationNotes.over-the-air-firmware-updates-are-still-listed-a": {
+      "value": "As atualizações de firmware over-the-air ainda estão listadas como uma funcionalidade futura.",
+      "sourceHash": "sha256:a2359935533fd3836c9d3eb3e808c84311403df2d7d6cd49c8f5b0f81d592f07",
+      "generatedAt": "2026-06-27T14:43:16.147Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2487,
+      "promptTokens": 142,
+      "completionTokens": 576
+    }
+  }
+}

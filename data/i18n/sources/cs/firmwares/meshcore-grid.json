@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-grid",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore pro přenosná zařízení, optimalizovaný pro dotykové ovládání, se samostatným rozhraním GRID pro chat, vyhledávání zařízení, kontakty, ovládání rádia, nastavení BLE a správu napájení.",
+      "sourceHash": "sha256:e4b493d7fb52ed361ba476761351dffe81adf6f10a99c61b8ce05a47cf0c62ee",
+      "generatedAt": "2026-06-27T11:23:52.020Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11622,
+      "promptTokens": 156,
+      "completionTokens": 1456
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Vyžaduje konfiguraci Heltec V4 s TFT a dotykovým řadičem FT6336.",
+      "sourceHash": "sha256:320cc6125167bc7e9a89256ff72456216f22b03c559f02698c1ae62b795004c7",
+      "generatedAt": "2026-06-27T11:24:01.487Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9466,
+      "promptTokens": 146,
+      "completionTokens": 607
+    },
+    "features": {
+      "value": "[\"Samostatné rozhraní s primárním dotykovým ovládáním\",\"Přímé zprávy a zprávy v kanálech\",\"Správa kontaktů a reklam\",\"Ovládání rádia v zařízení\"]",
+      "sourceHash": "sha256:18e802340d04a52812c57d456bc6e2fdc70c8bb579fd216319845f950a6e6a9d",
+      "generatedAt": "2026-06-27T12:35:21.453Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15366,
+      "promptTokens": 150,
+      "completionTokens": 1002
+    }
+  }
+}

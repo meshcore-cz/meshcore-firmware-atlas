@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv-stachugit",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản fork của MeshCore có giao diện màn hình TFT và bàn phím độc lập, dành cho M5Stack Cardputer ADV được trang bị module vô tuyến Cap LoRa-1262.",
+      "sourceHash": "sha256:da9e8e3787b935e723a7bce5501a0a7e7325f061afe8c03cdab62401b27f4437",
+      "generatedAt": "2026-06-27T15:55:21.136Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4791,
+      "promptTokens": 159,
+      "completionTokens": 722
+    },
+    "deviceNotes.m5stack-cardputer-adv": {
+      "value": "Yêu cầu mô-đun M5Stack Cap LoRa-1262.",
+      "sourceHash": "sha256:413efa7055a21624668b982014fcc0b1bcb7c76dcf9f7e83c07d0843170856f5",
+      "generatedAt": "2026-06-27T15:55:24.118Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2981,
+      "promptTokens": 142,
+      "completionTokens": 429
+    },
+    "features": {
+      "value": "[\"Danh bạ trên thiết bị và tin nhắn theo kênh\",\"Bàn phím vật lý và giao diện TFT\",\"GPS và chia sẻ khóa bằng mã QR\",\"Trình nạp firmware trên trình duyệt\"]",
+      "sourceHash": "sha256:0e0d4ad9c117fa95f5a96cc65ec7b49b8916982534127d01be86f5c0e8753430",
+      "generatedAt": "2026-06-27T15:55:29.008Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4889,
+      "promptTokens": 154,
+      "completionTokens": 927
+    }
+  }
+}

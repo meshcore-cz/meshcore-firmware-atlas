@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-web-keygen",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Gerador de chaves Ed25519 exclusivamente no navegador para criar identidades MeshCore com prefixos de chave pública hexadecimais personalizados, ajudando os operadores a evitar colisões de prefixos curtos sem enviar chaves privadas para um servidor.",
+      "sourceHash": "sha256:251586a2196c8e8c07fd2c647ce211498664ad13ccac3d567434c1ebc3f5ba13",
+      "generatedAt": "2026-06-27T14:37:22.250Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3972,
+      "promptTokens": 162,
+      "completionTokens": 1224
+    },
+    "tags": {
+      "value": "[\"gerador-de-chaves\",\"privacidade\",\"ed25519\",\"somente-navegador\"]",
+      "sourceHash": "sha256:a89ed712b284d62fb6d8cc6767b1bb881ee61eb2c5da402135fcb222cbe405e7",
+      "generatedAt": "2026-06-27T14:37:25.803Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3552,
+      "promptTokens": 142,
+      "completionTokens": 924
+    },
+    "verificationNotes.key-generation-runs-locally-in-browser-workers-a": {
+      "value": "A geração de chaves é executada localmente nos workers do navegador e não transmite as chaves geradas.",
+      "sourceHash": "sha256:55790caf9cdf6d517b29590785c6478cf0e6e183cbae12f21dee406621cad755",
+      "generatedAt": "2026-06-27T14:37:28.262Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2458,
+      "promptTokens": 143,
+      "completionTokens": 597
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "O repositório não declara uma licença SPDX no momento.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:37:31.034Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2772,
+      "promptTokens": 139,
+      "completionTokens": 703
+    }
+  }
+}

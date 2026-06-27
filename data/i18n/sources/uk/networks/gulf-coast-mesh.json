@@ -1,0 +1,15 @@
+{
+  "resource": "network/gulf-coast-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Створена волонтерами мережа MeshCore базується в Луїзіані та розширюється уздовж узбережжя Мексиканської затоки США, пропонуючи моніторинг у реальному часі через CoreScope, інструменти налаштування, локальну документацію, регулярні зустрічі та координацію в Discord.",
+      "sourceHash": "sha256:8ec4552bf2be826547bc7659dec0b9da6acaf1dd2199b6a20aeea1c9b6099a96",
+      "generatedAt": "2026-06-27T16:51:05.222Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11147,
+      "promptTokens": 164,
+      "completionTokens": 1356
+    }
+  }
+}

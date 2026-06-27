@@ -1,0 +1,15 @@
+{
+  "resource": "network/ipnet",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Phiên bản MeshCore Hub / CoreScope đặt tại Ipswich, Anh, cung cấp giải pháp nhắn tin mã hóa mã nguồn mở không phụ thuộc mạng lưới. Ứng dụng đi kèm bảng điều khiển, các nút mạng, kênh, gói tin, bản đồ, cùng các giao diện dành cho thành viên và điều hành viên.",
+      "sourceHash": "sha256:a21c5b67b8772d2d3635efdc0f6bcf2c7598c67ef6bc791f9eee6d75e1f3c6db",
+      "generatedAt": "2026-06-27T16:49:01.415Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9769,
+      "promptTokens": 165,
+      "completionTokens": 1496
+    }
+  }
+}

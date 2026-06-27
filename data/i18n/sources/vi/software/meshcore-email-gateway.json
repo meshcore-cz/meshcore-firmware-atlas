@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-email-gateway",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cổng kết nối hai chiều giữa email SMTP/IMAP thông thường và tin nhắn trực tiếp MeshCore, hỗ trợ kết nối radio qua BLE, serial hoặc TCP, API quản lý, cập nhật trạng thái theo thời gian thực và giao diện trình duyệt tùy chọn.",
+      "sourceHash": "sha256:9e9b7bf0a9ca5eb45deacaf3723436304c86cd18292d0f1ae920e8dc4a5318e6",
+      "generatedAt": "2026-06-27T16:08:17.645Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4234,
+      "promptTokens": 167,
+      "completionTokens": 789
+    },
+    "tags": {
+      "value": "[\"email\",\"smtp\",\"imap\",\"tự lưu trữ\"]",
+      "sourceHash": "sha256:47053f0dfc3e8225bc02b3e0db8da2bd81e2301b1a11d52ecf021b2ad908aa7f",
+      "generatedAt": "2026-06-27T16:08:21.253Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3607,
+      "promptTokens": 140,
+      "completionTokens": 616
+    },
+    "verificationNotes.email-delivery-requires-operator-supplied-smtp-a": {
+      "value": "Việc gửi email yêu cầu thông tin xác thực SMTP và IMAP do người vận hành cung cấp.",
+      "sourceHash": "sha256:2c23ce5df56a87da5f7fe0e9b118012bdb991ae7937bdd7d435e956f2f2b7844",
+      "generatedAt": "2026-06-27T16:08:26.289Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5035,
+      "promptTokens": 141,
+      "completionTokens": 543
+    },
+    "verificationNotes.runs-in-simulation-mode-when-the-meshcore-python": {
+      "value": "Chạy ở chế độ mô phỏng khi gói Python MeshCore không có sẵn.",
+      "sourceHash": "sha256:1996a5b76d8f8de2890ac0719a35c7ae1c10d8ac76918bf3526aa376bfbfbd78",
+      "generatedAt": "2026-06-27T16:08:29.976Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3687,
+      "promptTokens": 142,
+      "completionTokens": 490
+    }
+  }
+}

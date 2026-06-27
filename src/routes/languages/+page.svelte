@@ -1,5 +1,6 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
   import ProgrammingLanguageIcon from '$lib/ProgrammingLanguageIcon.svelte';
@@ -13,13 +14,12 @@
 </script>
 
 <Seo
-  title="Language Leaderboard"
-  description={`Programming languages used across ${data.totalSoftware} MeshCore software projects, ranked by adoption.`}
+  title={m.tool_languages_label()}
+  description={m.languages_seo_desc({ count: data.totalSoftware })}
 />
 
 <PageHeader tool="languages" subtitleClass="max-w-[70ch]">
-  Which programming languages power the MeshCore software ecosystem. Ranked by how many of the
-  {data.totalSoftware} catalogued projects use each language — projects can use more than one.
+  {m.languages_intro({ count: data.totalSoftware })}
 </PageHeader>
 
 {#if data.languages.length}
@@ -28,7 +28,7 @@
       {@const coverage = (lang.count / data.totalSoftware) * 100}
       <li>
         <a
-          href="{base}/software/?q={encodeURIComponent(lang.language)}"
+          href={href(`/software/?q=${encodeURIComponent(lang.language)}`)}
           class="group flex items-center gap-3 rounded-lg border border-edge bg-elev px-3 py-2.5 hover:border-accent"
         >
           <span class="w-7 shrink-0 text-center font-mono text-[0.95rem] font-bold tabular-nums {RANK_TONE[i] ?? 'text-dim'}">
@@ -48,8 +48,8 @@
   </ol>
 
   <p class="mt-4 text-[0.8rem] text-dim">
-    {data.languages.length} languages across {data.totalSoftware} projects · share is the percentage of all software using each language.
+    {m.languages_summary({ languages: data.languages.length, projects: data.totalSoftware })}
   </p>
 {:else}
-  <p class="text-dim">No language data available.</p>
+  <p class="text-dim">{m.languages_empty()}</p>
 {/if}

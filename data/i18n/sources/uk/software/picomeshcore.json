@@ -1,0 +1,42 @@
+{
+  "resource": "software/picomeshcore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Легкий супутній клієнт MMBasic MeshCore для Raspberry Pi Pico під керуванням PicoMite, з термінальним меню для роботи з повідомленнями, контактами, оголошеннями, налаштуваннями радіомодуля та діагностикою через UART.",
+      "sourceHash": "sha256:4f91c70f8c3a0d47e66111722904d7bac7c97a46bb8a63799296af3dcb59968d",
+      "generatedAt": "2026-06-27T16:28:28.555Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9721,
+      "promptTokens": 167,
+      "completionTokens": 1252
+    },
+    "tags": {
+      "value": "[\"raspberry-pi-pico\",\"mmbasic\",\"uart\",\"вбудований-клієнт\"]",
+      "sourceHash": "sha256:d0ffcd2aa02df4ded4372b1b389c0d3063c2e74189f8bc501a0374cfa574f804",
+      "generatedAt": "2026-06-27T16:28:34.386Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5830,
+      "promptTokens": 147,
+      "completionTokens": 817
+    },
+    "verificationNotes.requires-custom-uart-companion-firmware-on-the-a": {
+      "value": "Потребує спеціальної супутньої прошивки UART на підключеному радіомодулі MeshCore.",
+      "sourceHash": "sha256:dd2921b042040e8ffdc1ce36b83df41eb8b74832e7e3a8f6ba6276dcac9d14ad",
+      "generatedAt": "2026-06-27T16:28:40.883Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6496,
+      "promptTokens": 141,
+      "completionTokens": 983
+    },
+    "verificationNotes.contacts-and-messages-are-not-persisted-across-p": {
+      "value": "Контакти та повідомлення не зберігаються після перезапуску Pico.",
+      "sourceHash": "sha256:f193d331cc9d45a3934bfcd8e2b25ca7cd1cfe8dc0ea1693d7aa2f6843b9f3cc",
+      "generatedAt": "2026-06-27T16:28:43.849Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2966,
+      "promptTokens": 141,
+      "completionTokens": 552
+    }
+  }
+}

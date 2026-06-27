@@ -1,0 +1,51 @@
+{
+  "resource": "software/meschatui",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Cliente de terminal em modo texto para Linux com visualização unificada e cronológica de mensagens, conexões seriais ou via rádio BLE, canais, contatos, mensagens diretas, confirmação de entrega e navegação por paleta de comandos.",
+      "sourceHash": "sha256:709cbe6e87190cbbeb12aaba5783a4c37608dc613f6a165237c66aeb8e06c0f8",
+      "generatedAt": "2026-06-27T14:30:16.183Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2894,
+      "promptTokens": 163,
+      "completionTokens": 759
+    },
+    "screenshots.screenshot.svg.caption": {
+      "value": "Interface de terminal unificada para canais e mensagens diretas",
+      "sourceHash": "sha256:dec90039eccd63416d8fc3cc579d6117f9666929c33404aa8f8a0a81e6fcd7a3",
+      "generatedAt": "2026-06-27T14:30:18.411Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2228,
+      "promptTokens": 136,
+      "completionTokens": 527
+    },
+    "tags": {
+      "value": "[\"terminal\",\"textual\",\"caixa-de-entrada-unificada\",\"linux\"]",
+      "sourceHash": "sha256:a2674f7a2af2fdd09dd7363108d3c4776dcc817592c6f7ff3af126d3b30fcea9",
+      "generatedAt": "2026-06-27T14:30:20.951Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2540,
+      "promptTokens": 142,
+      "completionTokens": 558
+    },
+    "verificationNotes.the-author-describes-this-as-a-personal-learning": {
+      "value": "O autor refere que se trata de um projeto pessoal de aprendizagem, sem planos de empacotamento no momento.",
+      "sourceHash": "sha256:94d3c47460bd5b2319de04e7984f70ee4fdce078ebfa2d4db4c144078c7e079d",
+      "generatedAt": "2026-06-27T14:30:24.224Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3272,
+      "promptTokens": 144,
+      "completionTokens": 838
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "O repositório não declara uma licença SPDX no momento.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:30:26.366Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2142,
+      "promptTokens": 139,
+      "completionTokens": 536
+    }
+  }
+}

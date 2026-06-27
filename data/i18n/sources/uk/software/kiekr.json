@@ -1,0 +1,42 @@
+{
+  "resource": "software/kiekr",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Незалежний інструментарій спільноти MeshCore для iOS та Android із шифрованими повідомленнями, контекстом регіональних маршрутів, діагностикою ретрансляторів, мостом MQTT та можливістю добровільного надання криптографічно підписаних даних для карти покриття.",
+      "sourceHash": "sha256:ae5d2e9b9de9156a92fa9c06a20f2f4097827afa83398cb427de86d9991a55ca",
+      "generatedAt": "2026-06-27T15:45:20.939Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8336,
+      "promptTokens": 162,
+      "completionTokens": 807
+    },
+    "tags": {
+      "value": "[\"інструменти спільноти\", \"регіони\", \"карта покриття\", \"mqtt\", \"закритий код\"]",
+      "sourceHash": "sha256:21e1ce603974a39eb8c3319d3860860c35e86de5eb2a3752bf0370dfa8882ea7",
+      "generatedAt": "2026-06-27T15:45:23.849Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2909,
+      "promptTokens": 144,
+      "completionTokens": 563
+    },
+    "verificationNotes.kiekr-is-an-independent-client-compatible-with-s": {
+      "value": "KiekR — це незалежний клієнт, сумісний зі стандартними супровідними радіостанціями MeshCore та форматами резервного копіювання.",
+      "sourceHash": "sha256:945a07e80503c9870986aa6e860fb49f1708e723b439ed4fa6650c1befa6aefd",
+      "generatedAt": "2026-06-27T15:45:26.687Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2838,
+      "promptTokens": 147,
+      "completionTokens": 492
+    },
+    "verificationNotes.coverage-contribution-is-opt-in-and-offers-multi": {
+      "value": "Надання даних про покриття здійснюється за вибором користувача та передбачає кілька рівнів конфіденційності.",
+      "sourceHash": "sha256:d52c341951f6986225fb8e0e43915c6cfe0dddf5141ab0150cb2758ebb840ddb",
+      "generatedAt": "2026-06-27T15:45:34.161Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7474,
+      "promptTokens": 140,
+      "completionTokens": 974
+    }
+  }
+}

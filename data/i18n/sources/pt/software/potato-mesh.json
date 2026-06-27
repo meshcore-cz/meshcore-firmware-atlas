@@ -1,0 +1,69 @@
+{
+  "resource": "software/potato-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Painel federado e auto-hospedado para comunidades locais de MeshCore e Meshtastic, que combina mapas de nós, chat, telemetria, vizinhos e rotas de rastreamento com ingestores de rádio remotos e uma API pública.",
+      "sourceHash": "sha256:d6987237dca3d371651dcd6589e3c75c80fe0e24c6d832b22e01d3f70f21c579",
+      "generatedAt": "2026-06-27T14:40:23.034Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2794,
+      "promptTokens": 168,
+      "completionTokens": 734
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Mapa de nós da comunidade, chat e painel de telemetria",
+      "sourceHash": "sha256:6eba836ddc0e30a7cc51a14ead7029ad02d1f3ca9e19a5f22a1bf89f4814cc22",
+      "generatedAt": "2026-06-27T14:40:26.313Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3278,
+      "promptTokens": 137,
+      "completionTokens": 807
+    },
+    "screenshots.matrix-bridge.png.caption": {
+      "value": "Ponte do Matrix para encaminhamento de mensagens em malha",
+      "sourceHash": "sha256:24fea72a24445b01e0ae4ceb8158da9b637499260868620c7e099dd8cd2c24b6",
+      "generatedAt": "2026-06-27T14:40:27.927Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1613,
+      "promptTokens": 134,
+      "completionTokens": 296
+    },
+    "tags": {
+      "value": "[\"federado\",\"painel-da-comunidade\",\"multiprotocolo\",\"auto-hospedado\",\"matrix\"]",
+      "sourceHash": "sha256:4ea88e8f1acfb0c31bf7ad5658960cb00b5488df59928ec01ffaf30d49a8a66d",
+      "generatedAt": "2026-06-27T14:40:29.748Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1821,
+      "promptTokens": 147,
+      "completionTokens": 452
+    },
+    "verificationNotes.meshcore-ingestors-connect-to-companion-radios-o": {
+      "value": "Os ingestores MeshCore conectam-se a rádios associados via BLE, serial ou TCP e publicam dados normalizados no serviço web.",
+      "sourceHash": "sha256:43cf8c7a1c07bb5508cc2f0fcad421711971a7f814c7cf45503528a2e12d5bf4",
+      "generatedAt": "2026-06-27T14:40:33.129Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3381,
+      "promptTokens": 152,
+      "completionTokens": 883
+    },
+    "verificationNotes.federation-is-enabled-by-default-but-can-be-disa": {
+      "value": "A federação é ativada por padrão, mas pode ser desativada em implantações isoladas ou privadas.",
+      "sourceHash": "sha256:434e7e0c36650ba3acfebb88942b2adad77526fd2bf74ea65f9eba4002e9a72f",
+      "generatedAt": "2026-06-27T14:40:36.125Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2996,
+      "promptTokens": 145,
+      "completionTokens": 792
+    },
+    "verificationNotes.the-mobile-reader-and-matrix-bridge-are-still-de": {
+      "value": "O leitor móvel e a ponte Matrix ainda são descritos como em fase de desenvolvimento.",
+      "sourceHash": "sha256:e84efa0b42d2db779a80dc7fbfbb2600736252b2b639d0928fce509a5afcef1e",
+      "generatedAt": "2026-06-27T14:40:40.961Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4836,
+      "promptTokens": 143,
+      "completionTokens": 1290
+    }
+  }
+}

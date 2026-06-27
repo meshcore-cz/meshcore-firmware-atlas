@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-sar",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Ứng dụng điều phối Tìm kiếm và Cứu hộ ưu tiên ngoại tuyến cho iOS và Android, tích hợp nhắn tin MeshCore, âm thanh và hình ảnh băng thông thấp, bản đồ chiến thuật, theo dõi đội nhóm theo thời gian thực, điểm đánh dấu sự cố và hình vẽ chia sẻ.",
+      "sourceHash": "sha256:99ef36043f8266e9bd7818607eae78f94151404994a9051c32352c5e83952506",
+      "generatedAt": "2026-06-27T16:16:28.721Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12392,
+      "promptTokens": 166,
+      "completionTokens": 802
+    },
+    "screenshots.map.png.caption": {
+      "value": "Bản đồ chiến thuật kèm thông tin đội theo thời gian thực",
+      "sourceHash": "sha256:f9efc97de9a63429ac12b99f4aa06f97ff47abd67b3f6f8445122185442cf0e4",
+      "generatedAt": "2026-06-27T16:16:31.925Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3202,
+      "promptTokens": 136,
+      "completionTokens": 568
+    },
+    "screenshots.navigation.png.caption": {
+      "value": "La bàn và điều hướng thực địa",
+      "sourceHash": "sha256:cde72a0d39658c27741b4fa13eac6c118158dbb3e743a0f72439ff2bd5d99bcf",
+      "generatedAt": "2026-06-27T16:16:47.392Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15466,
+      "promptTokens": 134,
+      "completionTokens": 446
+    },
+    "screenshots.messages.png.caption": {
+      "value": "Nhắn tin qua mạng mesh với thẻ thoại và thẻ hình ảnh",
+      "sourceHash": "sha256:ea80617463131a03d2fe5d87e2cac56f8bee55a1229f49ab06f3ff4becf97d3e",
+      "generatedAt": "2026-06-27T16:16:50.419Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3025,
+      "promptTokens": 136,
+      "completionTokens": 563
+    },
+    "screenshots.actions.png.caption": {
+      "value": "SAR, thao tác nhanh bằng giọng nói và hình ảnh",
+      "sourceHash": "sha256:23b174d7dd4514c27d1b517efe0c784f9e150a7e4246b5485dc2ec30da47abb1",
+      "generatedAt": "2026-06-27T16:16:53.157Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2737,
+      "promptTokens": 137,
+      "completionTokens": 534
+    },
+    "tags": {
+      "value": "[\"tìm-kiếm-cứu-nạn\",\"ngoại-tuyến\",\"bản-đồ-chiến-thuật\",\"giọng-nói\",\"công-cụ-thực-địa\"]",
+      "sourceHash": "sha256:afeece5a99bbb423eb92127c5bfaa8a1b16bee442a69723cecaa409690dfac97",
+      "generatedAt": "2026-06-27T16:16:58.786Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5628,
+      "promptTokens": 147,
+      "completionTokens": 791
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Kho lưu trữ hiện không khai báo giấy phép SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:17:01.928Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3141,
+      "promptTokens": 139,
+      "completionTokens": 521
+    },
+    "verificationNotes.voice-uses-codec2-and-images-use-avif-to-reduce-": {
+      "value": "Âm thanh sử dụng Codec2 và hình ảnh sử dụng AVIF nhằm giảm lưu lượng trên các đường truyền mesh có băng thông hạn chế.",
+      "sourceHash": "sha256:01064ef18c866ff6c51d8147f8ddbb2ff8bac3e4bcb676484749b16737c24577",
+      "generatedAt": "2026-06-27T16:17:09.416Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7487,
+      "promptTokens": 146,
+      "completionTokens": 801
+    }
+  }
+}

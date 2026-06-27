@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-client-dart",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Implementace doprovodného protokolu MeshCore BLE ve Flutteru a Dartu, která zajišťuje správu připojení, fronty příkazů, analýzu binárních rámců, kryptografii a datové modely pro aplikace.",
+      "sourceHash": "sha256:05a52871704a3af419efea64258c25e5f5d12fa2db3ca281005349ea2e9402d4",
+      "generatedAt": "2026-06-27T11:42:40.931Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7406,
+      "promptTokens": 159,
+      "completionTokens": 1063
+    },
+    "verificationNotes.the-package-declares-publish-to-none-and-is-inst": {
+      "value": "Balíček deklaruje publish_to none a je instalován ze zdrojového kódu.",
+      "sourceHash": "sha256:91a7ac823d8a1832b3398b560ab41ecb2a822642f34e872843043c07b4c3d3ef",
+      "generatedAt": "2026-06-27T11:42:48.963Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8031,
+      "promptTokens": 141,
+      "completionTokens": 826
+    },
+    "verificationNotes.no-license-file-or-spdx-license-declaration-was-": {
+      "value": "Při kontrole nebyl k dispozici žádný licenční soubor ani prohlášení o licenci SPDX.",
+      "sourceHash": "sha256:e93ad868f410f62d61d990606a67bd4f19e27a9f2914a2d14d44128840979635",
+      "generatedAt": "2026-06-27T11:42:53.858Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4895,
+      "promptTokens": 141,
+      "completionTokens": 625
+    },
+    "tags": {
+      "value": "[\"SDK\",\"protokol\",\"Flutter\"]",
+      "sourceHash": "sha256:4cef831297b1b718ad603140a7aafa77a5b16fe612806335a4f2fae7f852cf22",
+      "generatedAt": "2026-06-27T13:45:01.997Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3880,
+      "promptTokens": 136,
+      "completionTokens": 158
+    }
+  }
+}

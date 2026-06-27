@@ -1,0 +1,12 @@
+{
+  "resource": "device/thinknode-m6",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Venkovní solární uzel Meshtastic/MeshCore s krytím IP65, vybavený nRF52840, SX1262 LoRa a L76K GPS. Integrovaný 6W panel a bateriová sada ~7000 mAh se dvěma články 18650; konfigurace pouze přes BLE — bez integrovaného displeje.",
+      "sourceHash": "sha256:7317c284edf0885095e93e1ff6270c4ea6b0cc60b803bf405c8b6808c5e5456a",
+      "generatedAt": "2026-06-27T10:44:35.275Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

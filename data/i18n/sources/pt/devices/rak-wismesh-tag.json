@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-wismesh-tag",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó Meshtastic tudo em um baseado no RAK10701 Field Tester, com ecrã tátil TFT de 320×240 e teclado no ecrã para mensagens sem telemóvel. nRF52840 + SX1262, GNSS integrado, bateria de 3200 mAh e antena LoRa RP-SMA. Pré-instalado com o firmware Meshtastic.",
+      "sourceHash": "sha256:5c6499e9a55a3c08791791faf9de0f351be576f19b30825cdf365cc3a1d4b0b0",
+      "generatedAt": "2026-06-27T14:19:26.586Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4365,
+      "promptTokens": 201,
+      "completionTokens": 1321
+    }
+  }
+}

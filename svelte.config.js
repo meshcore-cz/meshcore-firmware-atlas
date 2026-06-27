@@ -6,6 +6,10 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
+      // SPA fallback for unmatched paths. GitHub Pages serves `404.html` (with
+      // an HTTP 404) for any URL that isn't a prerendered file; this shell boots
+      // the client router, which renders the localized +error.svelte page.
+      fallback: '404.html',
       precompress: false,
       strict: true
     }),

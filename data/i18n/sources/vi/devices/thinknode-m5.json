@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m5",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ thu phát Meshtastic/MeshCore ESP32-S3 + SX1262 cầm tay tích hợp màn hình E-Paper 1.54-inch, đèn chiếu sáng mặt trước, GPS, RTC, còi và pin 1200 mAh. Sản phẩm được giao hàng trong vỏ ABS cùng ăng-ten LoRa RP-SMA và cổng sạc/lập trình USB-C.",
+      "sourceHash": "sha256:6cb246166c0e36c5f1eda735d9a7c71915b1986bc8e48f62a619e7172223c5f8",
+      "generatedAt": "2026-06-27T15:31:06.775Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14177,
+      "promptTokens": 196,
+      "completionTokens": 835
+    }
+  }
+}

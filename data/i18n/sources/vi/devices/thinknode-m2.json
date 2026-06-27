@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m2",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ thu phát LoRa Meshtastic/MeshCore nhỏ gọn tích hợp ESP32-S3, SX1262 và màn hình trạng thái OLED 1.3 inch. Tích hợp pin 1000 mAh, cổng sạc USB-C, Wi-Fi và BLE. Sản phẩm đi kèm vỏ ABS và ăng-ten LoRa ngoài thông qua đầu nối IPEX bên trong. Đã cài đặt sẵn Meshtastic; không có GPS.",
+      "sourceHash": "sha256:bf2c9723db9873636ebe8cd8bd62c291e5a07287a2e6dc7063797b4aeb9333be",
+      "generatedAt": "2026-06-27T15:30:28.190Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13253,
+      "promptTokens": 207,
+      "completionTokens": 753
+    }
+  }
+}

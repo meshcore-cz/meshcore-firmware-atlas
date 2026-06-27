@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-indicator-espnow",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Plataforma de ecrã tátil SenseCAP Indicator de 4 polegadas para testes de firmware e painéis de controlo de redes mesh. A versão compatível com Meshtastic combina os microcontroladores ESP32-S3 e RP2040 com Wi-Fi, BLE, LoRa e um ecrã tátil capacitivo RGB.",
+      "sourceHash": "sha256:bff8ab70a8fcf00d9862f61c018d030b65b29182a7999b900f8ddb89a4e6a0e6",
+      "generatedAt": "2026-06-27T14:19:37.235Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3403,
+      "promptTokens": 180,
+      "completionTokens": 986
+    }
+  }
+}

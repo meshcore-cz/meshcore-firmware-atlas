@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tbeam-1w",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Варіант ESP32-S3 T-Beam із потужнішим радіомодулем LoRa, GNSS, OLED та відсіком для акумулятора 18650. Призначено для вузлів mesh-мережі великого радіуса дії, де потрібен радіомодуль класу 1 Вт та стандартна компоновка T-Beam.",
+      "sourceHash": "sha256:43bee67e5a7d2b51ab466de4f6ddb6765c18ef4a1f44b67e7ad8c64fe4b799ec",
+      "generatedAt": "2026-06-27T14:58:52.901Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4125,
+      "promptTokens": 181,
+      "completionTokens": 1025
+    }
+  }
+}

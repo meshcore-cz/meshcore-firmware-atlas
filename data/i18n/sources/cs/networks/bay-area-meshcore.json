@@ -1,0 +1,15 @@
+{
+  "resource": "network/bay-area-meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Aktivní komunita MeshCore v oblasti Sanfranciského zálivu a na středním pobřeží Kalifornie s více než 700 uzly od Cotati až po San Jose. Provozuje se na americkém pásmu 915 MHz a využívá analyzátor CoreScope a komunitu na Discordu.",
+      "sourceHash": "sha256:4db4e25d7eb1c7cf45501de77e7c1f964dfef01f23bf73845525d72ccde76e59",
+      "generatedAt": "2026-06-27T12:01:02.289Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6268,
+      "promptTokens": 176,
+      "completionTokens": 925
+    }
+  }
+}

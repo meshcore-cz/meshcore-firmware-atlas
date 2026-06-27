@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-evo",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um fork aprimorado do MeshCore focado em repetidores, que incorporou PRs pendentes do upstream e melhorias para malhas densas — notadamente a mitigação de tráfego flood-advert e o tratamento aprimorado de `denyf *`. Foi amplamente substituído quando a referência 1.16.0 adicionou o gerenciamento nativo de tráfego por inundação.",
+      "sourceHash": "sha256:74b0b8f373bbaad7d1e360f3ec673cc32bd5505d6ffda873ab6f4c3b2a248665",
+      "generatedAt": "2026-06-27T14:27:46.364Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5202,
+      "promptTokens": 184,
+      "completionTokens": 1608
+    },
+    "deviceNotes.station-g2": {
+      "value": "Compilações disponíveis; testadas com menos frequência do que as placas repetidoras principais.",
+      "sourceHash": "sha256:96af65e2ea41473160fae9bad296c3916c4b52a35a7a587c63ee650e8242e691",
+      "generatedAt": "2026-06-27T14:27:48.344Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1979,
+      "promptTokens": 142,
+      "completionTokens": 449
+    },
+    "features": {
+      "value": "[\"Mitigação de tráfego de anúncios de flood\",\"Tratamento aprimorado de denyf \\\"*\\\"\",\"Otimizado para malhas densas de repetidores\",\"Acompanha as versões upstream do MeshCore\"]",
+      "sourceHash": "sha256:b0035f77f12169a8f00ef0456f32b4d81757e8680adc28dfe45dae58e715aadd",
+      "generatedAt": "2026-06-27T14:27:51.433Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3089,
+      "promptTokens": 160,
+      "completionTokens": 886
+    }
+  }
+}

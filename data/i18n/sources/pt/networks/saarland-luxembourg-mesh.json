@@ -1,0 +1,15 @@
+{
+  "resource": "network/saarland-luxembourg-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Malha MeshCore transfronteiriça que abrange o Sarre, na Alemanha, e o vizinho Luxemburgo, com 690+ nós em torno de Merzig, Saarbrücken e Mamer. Executa a predefinição EU/UK Narrow na banda de 868 MHz com um analisador CoreScope dedicado.",
+      "sourceHash": "sha256:1e90ca1a0b6ef8b73142ded381f0c3489f03e264ea7e0818f306544ae2387b9e",
+      "generatedAt": "2026-06-27T14:49:04.803Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3701,
+      "promptTokens": 184,
+      "completionTokens": 1083
+    }
+  }
+}

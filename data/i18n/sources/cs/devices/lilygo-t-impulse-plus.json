@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-t-impulse-plus",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nízkopříkonový náramek s čipem nRF52840, modulem SX1262 LoRa, displejem OLED 64x32, GPS a probuzením dotykovým tlačítkem. Navržen pro nositelná zařízení MeshCore s velmi nízkým odběrem ve stavu hlubokého spánku.",
+      "sourceHash": "sha256:620a057838509946d0daa090e80d754bec401d7bbe473b524558a549d3c490ed",
+      "generatedAt": "2026-06-27T10:52:16.233Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

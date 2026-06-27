@@ -1,0 +1,78 @@
+{
+  "resource": "software/sestriere",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Cliente nativo do Haiku OS para MeshCore com mensagens encriptadas, voz, imagens, mapas topológicos e geográficos, análise de pacotes, telemetria, administração de repetidores e uma ponte MQTT opcional.",
+      "sourceHash": "sha256:f5bbf3eaf6dde5e45969509798ffb8265e98a58ee4cb0a5f51d96261372a34dd",
+      "generatedAt": "2026-06-27T14:42:38.839Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2576,
+      "promptTokens": 163,
+      "completionTokens": 719
+    },
+    "screenshots.messaging.png.caption": {
+      "value": "Interface nativa de mensagens do Haiku",
+      "sourceHash": "sha256:833f2736cef52ea6da32d4c7d92dd2eb9b48594a2d0ecebb5c0593b34643533f",
+      "generatedAt": "2026-06-27T14:42:41.052Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2212,
+      "promptTokens": 134,
+      "completionTokens": 507
+    },
+    "screenshots.topology.png.caption": {
+      "value": "Visualização da topologia em malha e do fluxo de pacotes",
+      "sourceHash": "sha256:b838135e9edf74077038062829649bd947cbd7f66f480e40643b4d47496f16bb",
+      "generatedAt": "2026-06-27T14:42:43.148Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2096,
+      "promptTokens": 135,
+      "completionTokens": 482
+    },
+    "screenshots.map.png.caption": {
+      "value": "Ferramentas de mapa geográfico e linha de visada",
+      "sourceHash": "sha256:d1f0b909ab91a63850483deb019ac676505904a58a83459c2b4754044f118846",
+      "generatedAt": "2026-06-27T14:42:45.585Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2436,
+      "promptTokens": 138,
+      "completionTokens": 607
+    },
+    "screenshots.telemetry.png.caption": {
+      "value": "Telemetria de nós e saúde da rede",
+      "sourceHash": "sha256:76741b3fe28420f1fe3566e7c5e3a45c12af198cb9f91e0b07f2fd6772c5728f",
+      "generatedAt": "2026-06-27T14:42:47.690Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2105,
+      "promptTokens": 134,
+      "completionTokens": 417
+    },
+    "tags": {
+      "value": "[\"haiku\",\"nativo\",\"voz\",\"mensagens de imagem\",\"mqtt\"]",
+      "sourceHash": "sha256:188804b07bc8f304e4a26899858078395b3b0c0214527038312ecf68b3e238a3",
+      "generatedAt": "2026-06-27T14:42:49.924Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2233,
+      "promptTokens": 143,
+      "completionTokens": 489
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Atualmente, o repositório não declara uma licença SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:42:51.959Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2035,
+      "promptTokens": 139,
+      "completionTokens": 484
+    },
+    "verificationNotes.requires-haiku-system-libraries-plus-mosquitto-l": {
+      "value": "Requer as bibliotecas de sistema do Haiku, além de Mosquitto, libcurl, giflib e Codec2.",
+      "sourceHash": "sha256:c00ecaf3ac69e75476d3a2ee7f89a33a8550eb1a26582a8f744f684e4f82221d",
+      "generatedAt": "2026-06-27T14:42:53.940Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1980,
+      "promptTokens": 148,
+      "completionTokens": 520
+    }
+  }
+}

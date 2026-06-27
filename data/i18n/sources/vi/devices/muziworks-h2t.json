@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-h2t",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị Meshtastic sẵn sàng sử dụng dựa trên Heltec T114 V2, được lắp ráp với mô-đun GPS, cáp pigtail SMA, ăng-ten whip, pin LiPo 2000 mAh và vỏ ASA in 3D.",
+      "sourceHash": "sha256:993f787bf96a166b0645e8c78e71b5eb2ede446761a3ffeb1b8621352c8837c0",
+      "generatedAt": "2026-06-27T15:39:20.916Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15411,
+      "promptTokens": 177,
+      "completionTokens": 614
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-techo-lite",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Lehký uzel Meshtastic/MeshCore s čipy nRF52840 a SX1262 a 1,22palcovým e-paper displejem pro extrémně nízkou spotřebu energie. Konstrukce s odděleným jádrem a základnou umožňuje volitelný kryt, solární nabíjení a připojení externího GPS modulu L76K. Podporuje pouze Bluetooth 5 – bez Wi-Fi. S volitelnou základnou KeyShield získáte navíc klávesnici, reproduktor a mikrofon.",
+      "sourceHash": "sha256:0acaf98be88ec6c3f5af3754cd4f5f5f02e7d67e030b97f98727f9bb18e14d29",
+      "generatedAt": "2026-06-27T10:51:54.169Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

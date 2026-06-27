@@ -1,0 +1,15 @@
+{
+  "resource": "network/mayo-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Dobrovolnická uživatelská skupina zaměřená na radiové sítě mesh v irském hrabství Mayo, která experimentuje s MeshCore a Meshtastic. Její síť MeshCore používá předvolbu EU/UK Narrow, provozuje opakovače v oblasti Mayo/Connacht a propojuje se s širší irskou sítí mesh.",
+      "sourceHash": "sha256:603f3cbf9fb5df1d52d6ee70b4c8876680866538fc07c453b3d3a6010aa87be4",
+      "generatedAt": "2026-06-27T12:07:04.235Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6301,
+      "promptTokens": 179,
+      "completionTokens": 1013
+    }
+  }
+}

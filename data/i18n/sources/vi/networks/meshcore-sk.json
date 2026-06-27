@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-sk",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore quốc gia Slovakia, được điều phối thông qua mesh.om3kff.sk và cộng đồng Discord. Hệ thống chạy preset EU/UK (Narrow) trên băng tần 869.618 MHz (62.5 kHz / SF8) — với tốc độ mã hóa được đặt thành 4/5 — chia sẻ một kênh Public quốc tế kết nối với các mạng của Hungary và Áo, cùng với một kênh #slovakia trong nước.",
+      "sourceHash": "sha256:687d3b9df7424618168dc42fcefdef6fd9db9013f75f43a95c6823f32cdb20c8",
+      "generatedAt": "2026-06-27T16:53:57.659Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7247,
+      "promptTokens": 214,
+      "completionTokens": 1178
+    }
+  }
+}

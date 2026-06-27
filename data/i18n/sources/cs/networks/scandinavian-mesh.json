@@ -1,0 +1,15 @@
+{
+  "resource": "network/scandinavian-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Přeshraniční skandinávská síť MeshCore pokrývající jižní Švédsko a Dánsko s 890+ uzly v oblasti Öresund/Kattegat. Provozuje se v pásmu 868 MHz s předvolbou EU/UK Narrow a vyhrazeným analyzátorem CoreScope.",
+      "sourceHash": "sha256:57eceb335e85436c3155a3283fc80a044d5cae096a843a3acce6e63c6d46e36b",
+      "generatedAt": "2026-06-27T12:11:55.207Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6345,
+      "promptTokens": 178,
+      "completionTokens": 856
+    }
+  }
+}

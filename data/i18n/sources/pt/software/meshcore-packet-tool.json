@@ -1,0 +1,51 @@
+{
+  "resource": "software/meshcore-packet-tool",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Bancada de trabalho executada no navegador para inspecionar, decodificar e criar pacotes de rádio MeshCore. Oferece editores de pacotes tipados, gestão de identidades e chaves, URLs de espaço de trabalho compartilháveis e benchmarks de decodificação em WebAssembly.",
+      "sourceHash": "sha256:3113d4408d0082632129e48dbd707119215f7aaac4db6e484d3f92f5bc18ae43",
+      "generatedAt": "2026-06-27T14:35:07.472Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3243,
+      "promptTokens": 166,
+      "completionTokens": 855
+    },
+    "tags": {
+      "value": "[\"protocolo\",\"editor-de-pacotes\",\"decodificador\",\"criptografia\",\"wasm\"]",
+      "sourceHash": "sha256:c0d3c6bf51542fe01b4f010d41317d8e26445314a478ec6e361b19ac9e50e35f",
+      "generatedAt": "2026-06-27T14:35:10.669Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3197,
+      "promptTokens": 143,
+      "completionTokens": 780
+    },
+    "verificationNotes.the-application-uses-the-meshpkt-codec-compiled-": {
+      "value": "O aplicativo usa o codec meshpkt compilado para WebAssembly.",
+      "sourceHash": "sha256:ed6597e937345c7c3ab6c0d0ec5515a8698aa540e3b30b6ba7c76ec7662777d1",
+      "generatedAt": "2026-06-27T14:35:12.782Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2112,
+      "promptTokens": 141,
+      "completionTokens": 479
+    },
+    "verificationNotes.version-1-0-0-is-declared-in-package-json-no-pro": {
+      "value": "A versão 1.0.0 está declarada no package.json; nenhum lançamento do projeto foi publicado.",
+      "sourceHash": "sha256:f52a10657de68a949d201838576b79c2dbb5af244e253fe7a416c5b44c587102",
+      "generatedAt": "2026-06-27T14:35:15.143Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2361,
+      "promptTokens": 148,
+      "completionTokens": 612
+    },
+    "verificationNotes.no-repository-license-file-or-spdx-license-decla": {
+      "value": "No momento da revisão, não havia arquivo de licença no repositório nem declaração de licença SPDX.",
+      "sourceHash": "sha256:71ac0ef045cf4eb43eeb1710b74d5161b7ff6597c1c08e437abd890590b7e2ae",
+      "generatedAt": "2026-06-27T14:35:19.027Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3884,
+      "promptTokens": 142,
+      "completionTokens": 1052
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-t1000e",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rastreador Meshtastic/MeshCore do tamanho de um cartão de crédito com nRF52840, Semtech LR1110 LoRa (863–928 MHz) e MediaTek AG3335 GNSS. Possui bateria integrada de 700 mAh, sensores de temperatura e luminosidade, buzzer e invólucro IP65. Carrega através do cabo USB magnético incluído; configuração apenas por BLE — sem ecrã ou Wi-Fi.",
+      "sourceHash": "sha256:b49e74e8d3e4a580821d76935e3b4c145622ae37154225e28754743a5e413ce2",
+      "generatedAt": "2026-06-27T14:19:51.222Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5888,
+      "promptTokens": 207,
+      "completionTokens": 1738
+    }
+  }
+}

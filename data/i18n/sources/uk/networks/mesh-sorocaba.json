@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-sorocaba",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore, розташована в Сорокабі, яка охоплює штат Сан-Паулу (Бразилія) та створює автономну mesh-комунікацію.",
+      "sourceHash": "sha256:7d34bf280de8fcd2d7b4bd88d991832c753c435cd780257f586bd8d861b3cd2f",
+      "generatedAt": "2026-06-27T16:53:08.556Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10843,
+      "promptTokens": 153,
+      "completionTokens": 1303
+    }
+  }
+}

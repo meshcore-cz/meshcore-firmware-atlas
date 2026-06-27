@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/cubecell-meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Minimální firmware opakovače kompatibilní s MeshCore pro desky Heltec CubeCell (HTCC-AB01, AB02, AC01). Rozšiřuje pokrytí mesh sítě pomocí směrování flood, podporuje vzdálenou správu s ověřením přes doprovodnou aplikaci a odesílá automatické denní zprávy o stavu. Optimalizováno pro solární instalace.",
+      "sourceHash": "sha256:962a2a8c9c5bbe9737776edc967eebc5098cec7a880e788e547b9a1a8b859da1",
+      "generatedAt": "2026-06-27T11:15:53.224Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14908,
+      "promptTokens": 186,
+      "completionTokens": 969
+    },
+    "features": {
+      "value": "[\"Opakovač s flood směrováním\",\"Autentizovaná vzdálená správa přes doprovodnou aplikaci\",\"Automatické denní zprávy o stavu\",\"Optimalizace pro solární napájení\",\"Podpora desek CubeCell (HTCC-AB01, AB02, AC01)\"]",
+      "sourceHash": "sha256:35e1958b155662be5ffaa7429baa0d3d15b7df4342dd39610fa62df788229b78",
+      "generatedAt": "2026-06-27T12:28:06.632Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19232,
+      "promptTokens": 170,
+      "completionTokens": 1169
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "resource": "software/wireshark-meshcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ phân giải giao thức Lua cho Wireshark và công cụ chuyển đổi Python không cần thư viện phụ thuộc, giúp chuyển đổi nhật ký vô tuyến JSON của MeshCore thành tệp bắt pcapng, bao gồm cây gói tin, siêu dữ liệu vô tuyến, bộ lọc hiển thị và hỗ trợ tshark.",
+      "sourceHash": "sha256:55c12badd1da47c442583ed9cfa2eb0d173b1f74159681a6d1f7c3fff68edd3a",
+      "generatedAt": "2026-06-27T16:40:44.639Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5980,
+      "promptTokens": 167,
+      "completionTokens": 979
+    },
+    "screenshots.packet-tree.png.caption": {
+      "value": "Cây gói tin MeshCore và tin nhắn nhóm đã giải mã",
+      "sourceHash": "sha256:af82484a2bb055ee85b6cb1d99691641d5e4bb1c40061de0815e04b7648425b5",
+      "generatedAt": "2026-06-27T16:40:46.843Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2202,
+      "promptTokens": 137,
+      "completionTokens": 307
+    },
+    "screenshots.io-graph.png.caption": {
+      "value": "Lưu lượng MeshCore được trực quan hóa bằng biểu đồ I/O của Wireshark",
+      "sourceHash": "sha256:ddcc333c21f64dc0bfafbbe097ca9bfa54267bf7ffbf19bcf960943beb7753d8",
+      "generatedAt": "2026-06-27T16:40:59.324Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12480,
+      "promptTokens": 141,
+      "completionTokens": 536
+    },
+    "tags": {
+      "value": "[\"wireshark\", \"pcapng\", \"bộ phân tích\", \"phân tích giao thức\"]",
+      "sourceHash": "sha256:95381dfe497f9aac54c557c10e81bcf53133e6b43abb02a9aba43642ae7e87e1",
+      "generatedAt": "2026-06-27T16:41:09.224Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9899,
+      "promptTokens": 144,
+      "completionTokens": 1428
+    },
+    "verificationNotes.the-converter-currently-uses-temporary-dlt-user0": {
+      "value": "Bộ chuyển đổi hiện đang sử dụng kiểu lớp liên kết tạm thời DLT_USER0 147; các bản chụp sẽ cần được tạo lại nếu một LINKTYPE đã đăng ký được gán.",
+      "sourceHash": "sha256:c51b061d456021064ef4c064c38f470b610621a986036a693a957369b6771780",
+      "generatedAt": "2026-06-27T16:41:20.447Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11222,
+      "promptTokens": 156,
+      "completionTokens": 812
+    },
+    "verificationNotes.the-converter-requires-python-3-6-and-has-no-ext": {
+      "value": "Bộ chuyển đổi yêu cầu Python 3.6+ và không có phụ thuộc bên ngoài lúc chạy.",
+      "sourceHash": "sha256:f17aa953ada7f04ecb1f20d7427adc98f52c2d64c44460912426f390573e91a6",
+      "generatedAt": "2026-06-27T16:41:24.764Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4316,
+      "promptTokens": 145,
+      "completionTokens": 534
+    }
+  }
+}

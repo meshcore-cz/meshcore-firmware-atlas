@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/trail-mate",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Прошивка для портативних пристроїв з пріоритетом офлайн-режиму, призначена для навігації та LoRa-зв'язку. Вона включає нативну підтримку маршрутів пакетів MeshCore і Meshtastic, карти, інструменти координації команди та польові утиліти для пристроїв.",
+      "sourceHash": "sha256:8cb098405113beaac49b75d1f6f0c4b36bb66db5b01b843bc955732190a1b632",
+      "generatedAt": "2026-06-27T15:40:41.804Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7704,
+      "promptTokens": 160,
+      "completionTokens": 1842
+    },
+    "features": {
+      "value": "[\"Обмін повідомленнями через MeshCore та Meshtastic\",\"GPS-карти та запис треків\",\"Розташування команди та обмін точками шляху\",\"Потік даних через USB-з'єднання з хостом\"]",
+      "sourceHash": "sha256:4f5cfc1a9dd8e78e478ac5e05d7edb46b058c9998cfcf445be37ea278400e898",
+      "generatedAt": "2026-06-27T15:40:46.311Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4506,
+      "promptTokens": 155,
+      "completionTokens": 960
+    }
+  }
+}

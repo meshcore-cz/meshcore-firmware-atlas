@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-grid",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Прошивка портативного пристрою MeshCore, орієнтована на сенсорне керування, з автономним інтерфейсом GRID для чату, пошуку, контактів, керування радіозв'язком, налаштувань BLE та керування живленням.",
+      "sourceHash": "sha256:e4b493d7fb52ed361ba476761351dffe81adf6f10a99c61b8ce05a47cf0c62ee",
+      "generatedAt": "2026-06-27T15:42:11.420Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6736,
+      "promptTokens": 156,
+      "completionTokens": 1370
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Вимагає конфігурації Heltec V4 з TFT-дисплеєм та сенсорним контролером FT6336.",
+      "sourceHash": "sha256:320cc6125167bc7e9a89256ff72456216f22b03c559f02698c1ae62b795004c7",
+      "generatedAt": "2026-06-27T15:42:14.728Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3308,
+      "promptTokens": 146,
+      "completionTokens": 510
+    },
+    "features": {
+      "value": "[\"Автономний інтерфейс, оптимізований для сенсорного керування\",\"Особисті та канальні повідомлення\",\"Керування контактами та рекламою\",\"Керування радіомодулем на пристрої\"]",
+      "sourceHash": "sha256:18e802340d04a52812c57d456bc6e2fdc70c8bb579fd216319845f950a6e6a9d",
+      "generatedAt": "2026-06-27T15:42:19.701Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4972,
+      "promptTokens": 150,
+      "completionTokens": 928
+    }
+  }
+}

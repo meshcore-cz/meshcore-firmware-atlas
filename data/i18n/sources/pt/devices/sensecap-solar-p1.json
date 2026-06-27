@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-solar-p1",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó ou repetidor Meshtastic/MeshCore econômico e solar, projetado para uso externo. Integra o XIAO nRF52840 Plus e o Wio-SX1262, equipado com um painel solar integrado de 5W e invólucro IPX6. Conta com quatro compartimentos para baterias 18650 (células não inclusas) e suporte opcional para o módulo GPS XIAO L76K; não possui GPS nem baterias integrados.",
+      "sourceHash": "sha256:0862e4405f5d508f3aeb4392889f0b52f9a771cf249a6741826d152c4720c9ab",
+      "generatedAt": "2026-06-27T14:19:41.717Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4481,
+      "promptTokens": 210,
+      "completionTokens": 1283
+    }
+  }
+}

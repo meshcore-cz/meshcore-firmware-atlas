@@ -1,0 +1,27 @@
+{
+  "resource": "firmware/meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Referenční firmware MeshCore – odlehčená knihovna v C++ a firmware pro směrování paketů přes více uzlů pomocí rádií LoRa. Pohání decentralizované, samohojící se sítě mesh pro komunikaci mimo síť, nouzovou a taktickou komunikaci, a to včetně předpřipravených obrazů a webového flasheru.",
+      "sourceHash": "sha256:123159709a38040b42972325ef252ce34949e5ba91df24b6d741fb7857ae6a76",
+      "generatedAt": "2026-06-27T11:13:04.238Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.heltec-meshtower": {
+      "value": "Stejná základní deska MeshSolar; používá sestavení heltec_mesh_solar.",
+      "sourceHash": "sha256:0fe9d96a80f245a3d2335a68e6bf70eccfe70b820e2035f0dcb00ec660ee9697",
+      "generatedAt": "2026-06-27T11:13:12.118Z",
+      "model": "glm-5.2:cloud"
+    },
+    "features": {
+      "value": "[\"Směrování paketů přes více uzlů\",\"Přímé zprávy s koncovým šifrováním\",\"Doprovodní klienti pro BLE / USB / TCP\",\"Klienti pro web, iOS, Android, Python a NodeJS\",\"Nativní správa provozu typu flood-advert (1.16+)\",\"Webový nástroj pro flashování\"]",
+      "sourceHash": "sha256:b40ebfa18391613a9ebb86dc1d7bf8e6126434031883fff89218c89dfbaaf6b6",
+      "generatedAt": "2026-06-27T12:26:15.693Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25347,
+      "promptTokens": 179,
+      "completionTokens": 1402
+    }
+  }
+}

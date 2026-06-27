@@ -1,0 +1,114 @@
+{
+  "resource": "software/meshcore-insights",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bảng điều khiển MeshCore trên máy tính với kết nối USB và BLE, bản đồ thời gian thực, nhắn tin, phân tích nút mạng và dữ liệu đo lường, ô bản đồ ngoại tuyến, quản lý từ xa và bảng điều khiển sự kiện thô.",
+      "sourceHash": "sha256:8c2dc40eb15ae92a4c41e57accfac42d8bc1fd50121d6081143dca76f9cff7a3",
+      "generatedAt": "2026-06-27T16:09:56.234Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10481,
+      "promptTokens": 161,
+      "completionTokens": 1197
+    },
+    "screenshots.screenshot-1.png.caption": {
+      "value": "Bản đồ nút mạng thời gian thực và danh sách nút mạng mesh có thể tìm kiếm",
+      "sourceHash": "sha256:9cd8250a89cc4279dd0839b28732986ee42a53fc862e23e1ed865b6d1dd241c3",
+      "generatedAt": "2026-06-27T16:10:01.460Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5226,
+      "promptTokens": 137,
+      "completionTokens": 872
+    },
+    "screenshots.screenshot-2.png.caption": {
+      "value": "Menu ngữ cảnh của nút với các tác vụ nhắn tin và phân tích",
+      "sourceHash": "sha256:3ce068b83cb77ec1e5de6018da0de4475caf6f278de2db25ec36b579fe29270b",
+      "generatedAt": "2026-06-27T16:10:07.353Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5892,
+      "promptTokens": 137,
+      "completionTokens": 294
+    },
+    "screenshots.screenshot-3.png.caption": {
+      "value": "Truyền thông theo kênh kèm trực quan hóa đường dẫn định tuyến",
+      "sourceHash": "sha256:a8496be5ef2a5d76fa196af94a5046c010ad4542e24691ef27c895ee20d2f057",
+      "generatedAt": "2026-06-27T16:10:10.980Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3626,
+      "promptTokens": 135,
+      "completionTokens": 483
+    },
+    "screenshots.screenshot-4.png.caption": {
+      "value": "Cửa sổ bật lên sơ đồ tiếp xúc và các đường dẫn lưới",
+      "sourceHash": "sha256:55a0565f6a40888edaf63885ecc2c4b50fcd0ed7938b3d7a5f52882eccf77940",
+      "generatedAt": "2026-06-27T16:10:18.828Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7847,
+      "promptTokens": 136,
+      "completionTokens": 643
+    },
+    "screenshots.screenshot-5.png.caption": {
+      "value": "Trình tải ô bản đồ ngoại tuyến",
+      "sourceHash": "sha256:9f8b7dc8d47608b23a955d5877a6a0f66bd75cb815e93651f1be0f26a2cbdac8",
+      "generatedAt": "2026-06-27T16:10:30.110Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11281,
+      "promptTokens": 133,
+      "completionTokens": 442
+    },
+    "screenshots.screenshot-6.png.caption": {
+      "value": "Công cụ trạng thái node, telemetry và phân tích",
+      "sourceHash": "sha256:2b4ff8525cc4e434c8ba0cd64f914e9f43bf0d6828fd4c19be3b3f842345e874",
+      "generatedAt": "2026-06-27T16:10:39.422Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9311,
+      "promptTokens": 136,
+      "completionTokens": 890
+    },
+    "screenshots.screenshot-7.png.caption": {
+      "value": "Quản lý node từ xa và phản hồi lệnh",
+      "sourceHash": "sha256:68ab47d4ae7727b0a4212b44c1b1e0214a7328efa86f0eea53da68f40d471c80",
+      "generatedAt": "2026-06-27T16:10:42.288Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2865,
+      "promptTokens": 135,
+      "completionTokens": 426
+    },
+    "screenshots.screenshot-8.png.caption": {
+      "value": "Bảng điều khiển sự kiện MeshCore thô",
+      "sourceHash": "sha256:7802c399265233b2adcbd089ba501c6d11db4107343404508a900e8e48adbedb",
+      "generatedAt": "2026-06-27T16:10:47.249Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4961,
+      "promptTokens": 134,
+      "completionTokens": 695
+    },
+    "tags": {
+      "value": "[\"Máy tính để bàn\", \"Bản đồ ngoại tuyến\", \"Quản lý từ xa\", \"Phân tích dữ liệu\"]",
+      "sourceHash": "sha256:a2c092945d4cbc72e1f4c1850135a84d87a2303ad1790b75f1b5aad911c1cd35",
+      "generatedAt": "2026-06-27T16:10:52.025Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4775,
+      "promptTokens": 141,
+      "completionTokens": 676
+    },
+    "verificationNotes.the-compiled-demo-runs-for-ten-minutes-the-proje": {
+      "value": "Bản demo đã biên dịch chạy trong mười phút. Dự án cho biết có sẵn mã mở khóa miễn phí.",
+      "sourceHash": "sha256:d1d6191a14c00d54d83c0aa99952905ad4701117b46143c5d253316853d789f6",
+      "generatedAt": "2026-06-27T16:10:56.717Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4691,
+      "promptTokens": 148,
+      "completionTokens": 755
+    },
+    "verificationNotes.a-dedicated-user-manual-is-bundled-inside-the-co": {
+      "value": "Tài liệu hướng dẫn sử dụng được đính kèm sẵn trong bản phát hành đã biên dịch, thay vì đăng tải riêng trên mạng.",
+      "sourceHash": "sha256:54602b83c34e38f75c7547ccb764c7e18151019d37e0cee005a920c52f04cd0d",
+      "generatedAt": "2026-06-27T16:11:13.695Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16977,
+      "promptTokens": 145,
+      "completionTokens": 894
+    }
+  }
+}

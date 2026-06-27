@@ -1,0 +1,15 @@
+{
+  "resource": "network/eu-433mhz-long-range",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cấu hình radio chính thức của ứng dụng MeshCore — 433.650MHz / SF11 / BW250 / CR5.",
+      "sourceHash": "sha256:a543460659f0b795652a58db168a94e267209162b8f1d6a14c1d926857e5b537",
+      "generatedAt": "2026-06-27T16:47:03.849Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7113,
+      "promptTokens": 152,
+      "completionTokens": 642
+    }
+  }
+}

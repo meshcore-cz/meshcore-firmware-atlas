@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v2",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento clássica ESP32 + SX1276/SX1278 LoRa com OLED de 0,96 polegadas, Wi-Fi e BLE integrados. Possui Micro USB e serial CP2102, conector de bateria SH1.25 com gerenciamento de carga e antena LoRa IPEX. Descontinuada — a Heltec recomenda a V3 ou superior para novos projetos.",
+      "sourceHash": "sha256:ed8f570f2594d2a0d218ac363bbde03a7d3e46c3ec3f248ac50d5040f37d740e",
+      "generatedAt": "2026-06-27T14:04:51.572Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9314,
+      "promptTokens": 200,
+      "completionTokens": 599
+    }
+  }
+}

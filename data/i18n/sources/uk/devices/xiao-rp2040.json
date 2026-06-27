@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-rp2040",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата Tiny RP2040 XIAO з прошиванням через USB, 14-контактним форм-фактором та стандартними для Seeed індикаторами користувача та заряду. Підходить для невеликих проєктів допоміжних контролерів та легкої периферійної сполучної логіки.",
+      "sourceHash": "sha256:7739fe7a96e1757555e7b3844f8bc662880f26b1e66953f556ab966ada5a58e2",
+      "generatedAt": "2026-06-27T15:16:02.069Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10603,
+      "promptTokens": 171,
+      "completionTokens": 716
+    }
+  }
+}

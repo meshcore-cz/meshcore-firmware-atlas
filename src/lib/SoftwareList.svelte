@@ -3,10 +3,12 @@
   // card grid. `activeKind` comes from the route (/software/ or /software/<kind>/)
   // so each filtered view is its own prerendered page — no post-hydration flicker.
   // The free-text query stays client-side and is mirrored to `?q=`.
-  import { base } from '$app/paths';
-  import { SOFTWARE_KIND_META, softwareKindsInUse, LICENSE_TYPE_META, licenseType, descriptionToPlain } from '$lib/data.js';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
+  import { SOFTWARE_KIND_META, softwareKindsInUse, LICENSE_TYPE_META, licenseType, descriptionToPlain, softwareKindLabel, licenseTypeLabel } from '$lib/data.js';
   import { displayVersion, relativeTime, fullDateTime, releaseFreshnessTone } from '$lib/format.js';
   import PageHeader from '$lib/PageHeader.svelte';
+  import ToolLink from '$lib/ToolLink.svelte';
   import Card from '$lib/Card.svelte';
   import SoftwareIcon from '$lib/SoftwareIcon.svelte';
   import PlatformIcon from '$lib/PlatformIcon.svelte';
@@ -92,32 +94,35 @@
 </script>
 
 <PageHeader collection="software" subtitleClass="max-w-[75ch]">
-  MeshCore-related software — clients, integrations, gateways &amp; bridges, monitoring &amp;
-  management, utilities, bots and libraries. Filter by kind or search.
+  {#snippet actions()}
+    <ToolLink id="releases" to="/releases/?kind=software" />
+    <ToolLink id="languages" />
+  {/snippet}
+  {m.sw_list_subtitle()}
 </PageHeader>
 
 <!-- Kind filter — links so each view is its own prerendered route. -->
 <div class="mb-3 flex flex-wrap gap-1.5">
   <a
-    href="{base}/software/"
+    href={href('/software/')}
     class="rounded-md border px-2.5 py-1 text-[0.78rem] font-medium transition {activeKind === 'all'
       ? 'border-accent bg-accent/15 text-accent'
       : 'border-edge text-dim hover:text-ink'}"
-  >All <span class="text-dim">({software.length})</span></a>
+  >{m.filter_all()} <span class="text-dim">({software.length})</span></a>
   {#each kinds as k (k)}
     <a
-      href="{base}/software/{k}/"
+      href={href(`/software/${k}/`)}
       class="rounded-md border px-2.5 py-1 text-[0.78rem] font-medium transition {activeKind === k
         ? 'border-accent bg-accent/15 text-accent'
         : 'border-edge text-dim hover:text-ink'}"
-    >{SOFTWARE_KIND_META[k].label}</a>
+    >{softwareKindLabel(k)}</a>
   {/each}
 </div>
 
 <!-- Search -->
 <input
   type="search"
-  placeholder="Search software, tags, languages, maintainers…"
+  placeholder={m.sw_list_search()}
   bind:value={query}
   class="mb-7 w-full rounded-lg border border-edge bg-bg px-3 py-2.5 text-[0.95rem] outline-none focus:border-transparent focus:ring-2 focus:ring-accent"
 />
@@ -125,7 +130,7 @@
 {#snippet swCard(s)}
   {@const licensing = licenseType(s)}
   {@const isLibrary = s.kind === 'library'}
-          <Card href="{base}/software/{s.id}/" class="flex flex-col p-4">
+          <Card href={href(`/software/${s.id}/`)} class="flex flex-col p-4">
             <div class="flex items-start justify-between gap-2">
               <span class="flex min-w-0 gap-2">
                 <SoftwareIcon
@@ -146,12 +151,12 @@
                      license and the programming languages, where other kinds show
                      the licensing class and the platforms. -->
                 {#if isLibrary && s.license}
-                  <span class="rounded-md px-1.5 py-0.5 text-[0.6rem] font-medium whitespace-nowrap {LICENSE_TYPE_META[licensing]?.tw ?? 'bg-elev2 text-dim'}" title={LICENSE_TYPE_META[licensing]?.label ?? ''}>
+                  <span class="rounded-md px-1.5 py-0.5 text-[0.6rem] font-medium whitespace-nowrap {LICENSE_TYPE_META[licensing]?.tw ?? 'bg-elev2 text-dim'}" title={licenseTypeLabel(licensing)}>
                     {s.license}
                   </span>
                 {:else if licensing}
                   <span class="rounded-md px-1.5 py-0.5 text-[0.6rem] font-medium whitespace-nowrap {LICENSE_TYPE_META[licensing]?.tw ?? ''}">
-                    {LICENSE_TYPE_META[licensing]?.label ?? licensing}
+                    {licenseTypeLabel(licensing)}
                   </span>
                 {/if}
                 {#if isLibrary}
@@ -232,14 +237,14 @@
 {/snippet}
 
 {#if !filtered.length}
-  <p class="text-dim">No software matches these filters.</p>
+  <p class="text-dim">{m.sw_list_empty()}</p>
 {:else if collapsed}
   {@render cardGrid(flatSorted)}
 {:else}
   {#each groups as g (g.kind)}
     <section class="mb-9">
       <h2 class="mb-3 flex items-baseline gap-2 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">
-        {g.meta.label}
+        {softwareKindLabel(g.kind)}
         <span class="text-[0.85rem] font-normal text-dim">{g.items.length}</span>
       </h2>
       {@render cardGrid(g.items)}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/ikoka-nano",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактний вузол Meshtastic на базі Seeed XIAO nRF52840 та модуля EBYTE E22 LoRa. Невелика плата з живленням від акумулятора, оснащена роз'ємами USB-C та Qwiic. Вбудований дисплей відсутній — плата призначена для використання як мініатюрний супутній пристрій, репітер або віддалений вузол.",
+      "sourceHash": "sha256:27a883e7f49594c637a53ceda91a38807eb8e8f543fb75f1502ed93fdf01f545",
+      "generatedAt": "2026-06-27T14:58:24.141Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4326,
+      "promptTokens": 185,
+      "completionTokens": 1165
+    }
+  }
+}

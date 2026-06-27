@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-wio-tracker-l1-pro-sosprz",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fork do MeshCore distribuído em binário para o Seeed Studio Wio Tracker L1 Pro, que adiciona uma interface complementar abrangente no próprio dispositivo para mensagens, contactos, configuração de rádio e gestão de repetidores.",
+      "sourceHash": "sha256:150f77781c5fcb2bb8279091bb6319f85828ad2299d3282a8a2ba7f4bda69b96",
+      "generatedAt": "2026-06-27T14:25:11.801Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3533,
+      "promptTokens": 166,
+      "completionTokens": 940
+    },
+    "features": {
+      "value": "[\"Mensagens diretas e por canais no dispositivo\",\"Contactos, anúncios e histórico de mensagens\",\"Gestão de rádios e repetidores\",\"Gravação via UF2 e assistida pelo navegador\"]",
+      "sourceHash": "sha256:dade16b47333b3fe0ccdc26762eb6628bef64f086fda44badf3cd8f5f3d0b257",
+      "generatedAt": "2026-06-27T14:25:17.475Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5674,
+      "promptTokens": 158,
+      "completionTokens": 1475
+    },
+    "verificationNotes.the-repository-contains-release-binaries-and-usa": {
+      "value": "O repositório contém binários de lançamento e notas de uso, mas não o código-fonte do firmware nem a licença.",
+      "sourceHash": "sha256:a5803d718d32e6d7588b32374bf6515d69d627c75fc2c8b24b61b44c60683fe8",
+      "generatedAt": "2026-06-27T14:25:20.991Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3516,
+      "promptTokens": 144,
+      "completionTokens": 900
+    }
+  }
+}

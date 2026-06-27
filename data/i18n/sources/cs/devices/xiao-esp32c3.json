@@ -1,0 +1,12 @@
+{
+  "resource": "device/xiao-esp32c3",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Miniaturní deska ESP32-C3 sloužící jako hostitelská deska v sadě Seeed XIAO C3 + Wio-SX1262. Tato základní deska nabízí Wi-Fi, BLE, programování přes USB a kompaktní rozložení GPIO; LoRa je zajišťována samostatným modulem Wio-SX1262.",
+      "sourceHash": "sha256:a97c027d339f2c93cc73c1b1c7d39451ca30920c037e92a409825b51cb1e2bd4",
+      "generatedAt": "2026-06-27T10:58:08.827Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

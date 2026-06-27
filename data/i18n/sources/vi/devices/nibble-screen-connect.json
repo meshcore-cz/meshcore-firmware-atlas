@@ -1,0 +1,15 @@
+{
+  "resource": "device/nibble-screen-connect",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Node Nibble tương thích breadboard, có màn hình tích hợp, nút bấm và thiết kế mở rộng qua lỗ, hướng tới việc tùy biến MeshCore và Meshtastic. Thiết kế này kết hợp Waveshare ESP32-S3 Zero với mô-đun vô tuyến Seeed Wio SX1262.",
+      "sourceHash": "sha256:1c59ff73a9a80ba21005aa8200e30306ced099554f67224952fc8f76d59deb76",
+      "generatedAt": "2026-06-27T15:39:47.889Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15030,
+      "promptTokens": 185,
+      "completionTokens": 1228
+    }
+  }
+}

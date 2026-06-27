@@ -1,0 +1,15 @@
+{
+  "resource": "device/atlavox-m1",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Máy bộ đàm cầm tay Meshtastic/MeshCore sử dụng nền tảng RAK WisBlock, tích hợp pin LiPo 2000 mAh, cổng USB-C, Bluetooth và vỏ in 3D đóng kín. Sản phẩm được phát hành ở hai phiên bản tần số 868 MHz và 915 MHz, có thể tùy chọn thêm mô-đun GNSS và cảm biến thông qua các khe cắm WisBlock bên trong.",
+      "sourceHash": "sha256:3836add6734b90cc55329fc43392f94914a2e308f801836cb5fd2e9088733bdc",
+      "generatedAt": "2026-06-27T15:29:32.845Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12465,
+      "promptTokens": 195,
+      "completionTokens": 814
+    }
+  }
+}

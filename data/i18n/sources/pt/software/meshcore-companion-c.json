@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-companion-c",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Biblioteca cliente portátil em C99 para o protocolo serial MeshCore Companion Radio, com um wrapper leve em C++ para Arduino voltado a hosts embarcados e suporte direto em C para aplicações de desktop, Linux, ESP-IDF e STM32.",
+      "sourceHash": "sha256:8c4078495fd327bc9ca40041b6d19f9adfd58c9bae8b75e4f782bfbf0250cc26",
+      "generatedAt": "2026-06-27T14:38:04.936Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3573,
+      "promptTokens": 170,
+      "completionTokens": 997
+    },
+    "tags": {
+      "value": "[\"sdk\", \"protocolo\", \"embarcado\", \"arduino\"]",
+      "sourceHash": "sha256:ef484d50ce94b3be1b175b3a99952c8dba240f8091892878206564afe544e06b",
+      "generatedAt": "2026-06-27T14:38:07.381Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2444,
+      "promptTokens": 138,
+      "completionTokens": 439
+    },
+    "verificationNotes.the-github-repository-is-a-mirror-the-canonical-": {
+      "value": "O repositório do GitHub é um espelho; a fonte oficial está hospedada no SH3D Gitea.",
+      "sourceHash": "sha256:2a34310f336548064beac19391d90ac95917b4ee3bb6270aafc7e26932ca54a2",
+      "generatedAt": "2026-06-27T14:38:10.655Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3274,
+      "promptTokens": 149,
+      "completionTokens": 778
+    },
+    "verificationNotes.version-0-2-2-is-declared-in-library-properties-": {
+      "value": "A versão 0.2.2 está declarada em library.properties; nenhum lançamento foi publicado no GitHub.",
+      "sourceHash": "sha256:5a47fb0605ffce21acfaf3c0e864c410e3b79d536c68bec79673e55c0fa46057",
+      "generatedAt": "2026-06-27T14:38:13.208Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2553,
+      "promptTokens": 148,
+      "completionTokens": 655
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/ikoka",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nhà sản xuất các nút mesh nhỏ gọn Ikoka Nano / Stick.",
+      "sourceHash": "sha256:40369f478d0fa80beb62c693d2ec5cea6aa1222e6777b973771a1ec22216e8ba",
+      "generatedAt": "2026-06-27T16:43:12.171Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6709,
+      "promptTokens": 140,
+      "completionTokens": 622
+    }
+  }
+}

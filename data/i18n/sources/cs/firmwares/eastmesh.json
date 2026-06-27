@@ -1,0 +1,21 @@
+{
+  "resource": "firmware/eastmesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Sestavení firmwaru EastMesh pro MeshCore, včetně MQTT opakovačů, WiFi doprovodných zařízení a snadného stahování vydání pro podporované desky. Nabízí volitelný lokální konfigurační panel přes HTTPS na podporovaných zařízeních ESP32, autentizaci JWT pomocí identity zařízení a hlášení stavu baterie.",
+      "sourceHash": "sha256:bfdf1fefb41d756d5de3270fe6576408d01d22722637da3172d85fa16ee49daa",
+      "generatedAt": "2026-06-27T11:15:01.338Z",
+      "model": "glm-5.2:cloud"
+    },
+    "features": {
+      "value": "[\"Sestavení MQTT opakovače\", \"Sestavení WiFi doplňku\", \"Volitelný místní konfigurační panel HTTPS (ESP32)\", \"Ověřování JWT pomocí identity zařízení\", \"Hlášení stavu baterie u podporovaných zařízení\", \"Podpora role pozorovatele\"]",
+      "sourceHash": "sha256:b5628c7d860b7d95e88f04c4ca314273c8cb8f1278589a7052c8e338f6f79c2a",
+      "generatedAt": "2026-06-27T12:27:32.173Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15620,
+      "promptTokens": 165,
+      "completionTokens": 900
+    }
+  }
+}

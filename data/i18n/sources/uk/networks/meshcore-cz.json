@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-cz",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Загальнонаціональна спільнотна мережа MeshCore, що охоплює Чехію в діапазоні 869.432 МГц — єдиній частоті ЄС з 10% робочим циклом та EIRP до 27 дБм. Координується спільнотою meshcore_cz із маршрутизацією за краями, спільною картою в реальному часі та аналізатором покриття.",
+      "sourceHash": "sha256:d1b3a3dfe33d3be92667efd2d85c6b9078325dd385d9b689cd93f4d4d2091dc1",
+      "generatedAt": "2026-06-27T16:49:13.704Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9262,
+      "promptTokens": 196,
+      "completionTokens": 1510
+    }
+  }
+}

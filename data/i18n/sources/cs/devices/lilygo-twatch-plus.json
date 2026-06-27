@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-twatch-plus",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Chytré hodinky ESP32-S3 s SX1262 LoRa, 1,3palcovým IPS dotykovým displejem a integrovaným modulem GNSS (u-blox MIA-M10Q nebo Quectel LS550G). Součástí je také správa napájení AXP2101, akcelerometr BMA423, haptický ovladač, mikrofon, reproduktor a IR vysílač.",
+      "sourceHash": "sha256:d3ea6893229da682763fd4aee64d2bc072233917e24037ddfac845bf153cc12d",
+      "generatedAt": "2026-06-27T10:52:33.088Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/saitama",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Відкрита автономна прошивка для пристроїв LoRa mesh на базі MeshCore, розроблена для LilyGo T-Deck і T-Deck Plus. Забезпечує обмін повідомленнями на рівні смартфонів, GPS-карти, шифрований зв'язок та інше — все це працює безпосередньо на пристрої без потреби в телефоні, інтернеті чи ліцензії.",
+      "sourceHash": "sha256:3d224624362fd60e16ed166143ad555021fe2c142b3a3482fd8e3ad864e664bc",
+      "generatedAt": "2026-06-27T15:38:48.973Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4517,
+      "promptTokens": 189,
+      "completionTokens": 794
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "T-Deck Plus — основна ціль, скомпільовано та протестовано на апаратному забезпеченні.",
+      "sourceHash": "sha256:afbaade2850405a1cf9914b2add3534650c78bc9cfaa6d4f7ad23218a3fc080f",
+      "generatedAt": "2026-06-27T15:38:54.734Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5761,
+      "promptTokens": 142,
+      "completionTokens": 923
+    },
+    "features": {
+      "value": "[\"Автономний обмін повідомленнями (не потребує телефону)\",\"GPS-карти\",\"Шифрований зв'язок\",\"Канали та особисті повідомлення\",\"Без облікових записів та ліцензій\"]",
+      "sourceHash": "sha256:95751333e85508ee8c0aed13e4d748e16790eb7964a15f995e3e625123ff8c92",
+      "generatedAt": "2026-06-27T15:38:58.834Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4099,
+      "promptTokens": 155,
+      "completionTokens": 889
+    }
+  }
+}

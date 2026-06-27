@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv-stachugit",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Fork do MeshCore com interface de teclado e TFT autônoma para o M5Stack Cardputer ADV equipado com o módulo de rádio Cap LoRa-1262.",
+      "sourceHash": "sha256:da9e8e3787b935e723a7bce5501a0a7e7325f061afe8c03cdab62401b27f4437",
+      "generatedAt": "2026-06-27T14:27:22.396Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2754,
+      "promptTokens": 159,
+      "completionTokens": 700
+    },
+    "deviceNotes.m5stack-cardputer-adv": {
+      "value": "Requer o módulo M5Stack Cap LoRa-1262.",
+      "sourceHash": "sha256:413efa7055a21624668b982014fcc0b1bcb7c76dcf9f7e83c07d0843170856f5",
+      "generatedAt": "2026-06-27T14:27:24.263Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1867,
+      "promptTokens": 142,
+      "completionTokens": 436
+    },
+    "features": {
+      "value": "[\"Contatos no dispositivo e mensagens de canal\",\"Teclado físico e interface TFT\",\"GPS e compartilhamento de chaves QR\",\"Gravador no navegador\"]",
+      "sourceHash": "sha256:0e0d4ad9c117fa95f5a96cc65ec7b49b8916982534127d01be86f5c0e8753430",
+      "generatedAt": "2026-06-27T14:27:29.616Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5353,
+      "promptTokens": 154,
+      "completionTokens": 1434
+    }
+  }
+}

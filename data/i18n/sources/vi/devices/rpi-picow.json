@@ -1,0 +1,15 @@
+{
+  "resource": "device/rpi-picow",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Raspberry Pi Pico 2040 kết hợp với bo mạch WaveShare SX1262 LoRa để thử nghiệm MeshCore và Meshtastic gọn nhẹ. Bộ công cụ này ưu tiên khả năng flash qua USB và thiết kế nhỏ gọn của RP2040 thay vì tích hợp màn hình hoặc phần cứng GNSS.",
+      "sourceHash": "sha256:b24b629380034efce554927b8a136e1b7531a1f2cc42c68a495397309b9a9f98",
+      "generatedAt": "2026-06-27T15:40:42.942Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3354,
+      "promptTokens": 178,
+      "completionTokens": 814
+    }
+  }
+}

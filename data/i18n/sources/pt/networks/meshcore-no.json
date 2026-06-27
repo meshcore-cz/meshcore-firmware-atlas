@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-no",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Portal de documentação da comunidade norueguesa do MeshCore no MeshWiki.no, que disponibiliza a predefinição EU/UK Narrow para a Noruega em 869.618 MHz, além de orientações sobre a banda local de 869 MHz, notas de configuração de repetidores, guias de montagem de componentes e ligações para mapas públicos.",
+      "sourceHash": "sha256:b41cd70344f2a00640471062273175665cd1a625e0bd4ed7b45324423e0370df",
+      "generatedAt": "2026-06-27T14:48:23.838Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2887,
+      "promptTokens": 180,
+      "completionTokens": 781
+    }
+  }
+}

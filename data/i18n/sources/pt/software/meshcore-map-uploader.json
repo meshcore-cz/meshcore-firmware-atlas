@@ -1,0 +1,24 @@
+{
+  "resource": "software/meshcore-map-uploader",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Serviço de automação headless que monitora anúncios de repetidores e servidores de sala MeshCore por meio de um dispositivo complementar USB ou Wi-Fi e os envia para o mapa público do MeshCore.",
+      "sourceHash": "sha256:2842efadcaea3a72631857cdecc7ef67b18d0806e42f62366f45b77178473d3b",
+      "generatedAt": "2026-06-27T14:34:00.453Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3290,
+      "promptTokens": 161,
+      "completionTokens": 874
+    },
+    "tags": {
+      "value": "[\"carregador de mapas\",\"anúncios\",\"automação\",\"headless\"]",
+      "sourceHash": "sha256:c78b8232205cf80add7a3b424600578be672fed8486639e5e06c81cc89206f18",
+      "generatedAt": "2026-06-27T14:34:02.941Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2488,
+      "promptTokens": 142,
+      "completionTokens": 578
+    }
+  }
+}

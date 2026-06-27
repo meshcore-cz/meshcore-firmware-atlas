@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/blackjack-os",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативний набір інструментів MeshCore з відкритим кодом та автономний інтерфейс для обладнання LilyGo T-Deck, оснащений інтерфейсом користувача, орієнтованим на додатки, та можливістю прямої роботи з радіомодулем.",
+      "sourceHash": "sha256:41fb22ce19fc353e4b49825092ab9cc014c43d42d6f612774a7d331d1a13a299",
+      "generatedAt": "2026-06-27T15:39:40.276Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5991,
+      "promptTokens": 156,
+      "completionTokens": 1481
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "У проєкті зазначено, що мікропрограмне забезпечення, зафіксоване в репозиторії, пройшло апаратне тестування.",
+      "sourceHash": "sha256:da5e4c2cf4ea5818b85345d736b8b6888d1366ec3cf5b0153c0a914b512be038",
+      "generatedAt": "2026-06-27T15:40:04.101Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 23824,
+      "promptTokens": 142,
+      "completionTokens": 1673
+    },
+    "features": {
+      "value": "[\"Автономний інтерфейс T-Deck\", \"Архітектура засобу запуску програм\", \"Обмін повідомленнями MeshCore на пристрої\"]",
+      "sourceHash": "sha256:1114d31400af4ba805a927dc05e6d96f01dd29bb82226c994c9c04549ae2f35e",
+      "generatedAt": "2026-06-27T15:40:07.189Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3088,
+      "promptTokens": 147,
+      "completionTokens": 345
+    }
+  }
+}

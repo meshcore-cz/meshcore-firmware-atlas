@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-uk",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore nacional em todo o Reino Unido, operando no canal público de 868 MHz, com cobertura regional por repetidores e um mapa de nós partilhado em tempo real.",
+      "sourceHash": "sha256:802137e8eb7a1538be2b3e4b11c5130f8409a36131884a58108f9565c8c36a74",
+      "generatedAt": "2026-06-27T14:49:50.468Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6604,
+      "promptTokens": 159,
+      "completionTokens": 976
+    }
+  }
+}

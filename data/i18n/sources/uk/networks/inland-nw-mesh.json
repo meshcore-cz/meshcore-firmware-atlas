@@ -1,0 +1,15 @@
+{
+  "resource": "network/inland-nw-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Мережа MeshCore, якою керують волонтери, охоплює Спокен, Кер-д'Ален, Палус та Льюїстон/Кларкстон, а також розширюється на Східний Вашингтон і Айдахо. Спільнота зосереджена на стійкому автономному зв'язку завдяки вузлам LoRa з незалежним живленням.",
+      "sourceHash": "sha256:a5f7afb43e9561e670eaaca715a32e8e334e50a7eabd48f80418d361ace86ec0",
+      "generatedAt": "2026-06-27T16:51:41.384Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8458,
+      "promptTokens": 179,
+      "completionTokens": 1330
+    }
+  }
+}

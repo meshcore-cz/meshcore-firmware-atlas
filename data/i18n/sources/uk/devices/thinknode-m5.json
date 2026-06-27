@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m5",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Портативний трансивер ESP32-S3 + SX1262 Meshtastic/MeshCore із 1.54-дюймовим E-Paper дисплеєм, фронтальним підсвічуванням, GPS, RTC, зумером і акумулятором на 1200 мА·год. Постачається в ABS-корпусі з LoRa-антеною RP-SMA та можливістю заряджання й програмування через USB-C.",
+      "sourceHash": "sha256:6cb246166c0e36c5f1eda735d9a7c71915b1986bc8e48f62a619e7172223c5f8",
+      "generatedAt": "2026-06-27T14:56:21.192Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3938,
+      "promptTokens": 196,
+      "completionTokens": 1132
+    }
+  }
+}

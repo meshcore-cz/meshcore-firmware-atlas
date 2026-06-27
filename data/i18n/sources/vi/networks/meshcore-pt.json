@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-pt",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore Bồ Đào Nha điều phối hoạt động nhắn tin qua mạng lưới LoRa mesh off-grid toàn quốc thông qua meshcore.pt, cung cấp các cài đặt radio 433.375 MHz và 869.618 MHz đã công bố, hướng dẫn phần cứng nội địa, công cụ bản đồ và tài nguyên LusoApp.",
+      "sourceHash": "sha256:da43baa9a36219e96bf8ded451d1fcfa7bc962250a276947b69ddd38ed10d2b3",
+      "generatedAt": "2026-06-27T16:53:04.800Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5820,
+      "promptTokens": 179,
+      "completionTokens": 1215
+    }
+  }
+}

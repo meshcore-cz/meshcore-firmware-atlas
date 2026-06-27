@@ -1,0 +1,15 @@
+{
+  "resource": "device/atlavox-beacon",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Node Meshtastic/MeshCore ngoài trời dùng năng lượng mặt trời, được xây dựng dựa trên RAK19007 + RAK4631, tích hợp tấm pin 5 W, pin LiPo 5000 mAh và vỏ bảo vệ IP67. Thiết kế dành cho việc triển khai làm trạm chuyển tiếp độc lập, có hỗ trợ ghép nối Bluetooth và cổng truy cập dịch vụ USB-C chống nước.",
+      "sourceHash": "sha256:fff8a8024c132e309739ea063a5e03692a4aeab3a8558f65638442b230cf14e6",
+      "generatedAt": "2026-06-27T15:29:20.377Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10897,
+      "promptTokens": 190,
+      "completionTokens": 695
+    }
+  }
+}

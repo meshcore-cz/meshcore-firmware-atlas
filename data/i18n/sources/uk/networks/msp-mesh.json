@@ -1,0 +1,15 @@
+{
+  "resource": "network/msp-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Група з побудови mesh-мереж у Міннеаполісі-Сент-Полі та Великій Міннесоті, яка завдяки близькості охоплює й західний Вісконсин, зі зустрічами спільноти, сайтами партнерів, картами mesh-мереж та активністю CoreScope у реальному часі.",
+      "sourceHash": "sha256:c62f38a0dda07dee1c8e8ca318c74c2d9c915bad52aa495e82c6934188db8cb1",
+      "generatedAt": "2026-06-27T16:53:53.189Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11120,
+      "promptTokens": 164,
+      "completionTokens": 1834
+    }
+  }
+}

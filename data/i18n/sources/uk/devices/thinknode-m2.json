@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m2",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактний LoRa-трансивер Meshtastic/MeshCore на базі ESP32-S3 та SX1262 із 1,3-дюймовим OLED-дисплеєм стану. Вбудований акумулятор на 1000 мА·год, заряджання через USB-C, Wi-Fi та BLE. Постачається в ABS-корпусі з зовнішньою LoRa-антеною, яка підключається через внутрішній роз'єм IPEX. Попередньо прошитий під Meshtastic; без GPS.",
+      "sourceHash": "sha256:bf2c9723db9873636ebe8cd8bd62c291e5a07287a2e6dc7063797b4aeb9333be",
+      "generatedAt": "2026-06-27T14:56:11.760Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4605,
+      "promptTokens": 207,
+      "completionTokens": 1427
+    }
+  }
+}

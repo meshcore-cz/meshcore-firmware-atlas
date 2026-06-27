@@ -1,0 +1,15 @@
+{
+  "resource": "network/new-england-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore abrangendo toda a Nova Inglaterra (Connecticut, Massachusetts, New Hampshire e Maine), coordenada por meio de nhmesh.com, com um mapa em tempo real personalizado em nhmesh.live e um analisador CoreScope. Mais de 50 nós distribuídos pela região, de Stamford (CT) a Topsham (ME).",
+      "sourceHash": "sha256:4a2367a16b44ec39b1f4efc5e548d594312575d5dc28069f347b71c0e8760955",
+      "generatedAt": "2026-06-27T14:48:10.035Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5568,
+      "promptTokens": 183,
+      "completionTokens": 1643
+    }
+  }
+}

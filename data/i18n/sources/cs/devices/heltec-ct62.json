@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-ct62",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní modul LoRa uzlu ESP32-C3 + SX1262 s integrovaným 2,4 GHz Wi-Fi, Bluetooth LE a IPEX konektory pro antény. Modul CT62 je určen pro scénáře IoT s nízkou spotřebou, jako jsou Meshtastic, MeshCore a LoRaWAN. Jde o modul ve formátu stamp-hole, který poskytuje připojení LoRa s dlouhým dosahem při minimálních rozměrech.",
+      "sourceHash": "sha256:adae37720c0d44cc4316f4ebaaa170d02eb650d3e937c5c5b49afe924aebc40e",
+      "generatedAt": "2026-06-27T10:45:10.793Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

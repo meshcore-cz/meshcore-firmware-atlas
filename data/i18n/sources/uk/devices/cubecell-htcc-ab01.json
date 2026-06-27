@@ -1,0 +1,15 @@
+{
+  "resource": "device/cubecell-htcc-ab01",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата розробника CubeCell LoRa з наднизьким енергоспоживанням на базі мікросхеми класу ASR6502 та вбудованим радіомодулем SX1262. Призначена для розгортання IoT-рішень із сонячним та акумуляторним живленням.",
+      "sourceHash": "sha256:b9c751f0ee31f39b3c442d4f9f68b16ab5db03faf4f62382ca31212bc99524b2",
+      "generatedAt": "2026-06-27T14:56:45.758Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3595,
+      "promptTokens": 165,
+      "completionTokens": 933
+    }
+  }
+}

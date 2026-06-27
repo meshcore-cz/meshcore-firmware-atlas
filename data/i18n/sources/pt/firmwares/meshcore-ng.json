@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-ng",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um fork de \"próxima geração\" do MeshCore desenvolvido nos Países Baixos, com foco em tornar os repetidores mais inteligentes para que redes mesh maiores e mais movimentadas se mantenham estáveis. Ele adiciona uma base para redes mesh densas — controle de encaminhamento de anúncios por inundação, estatísticas de congestionamento/densidade, detecção de canal ocupado via hardware CAD, distribuição de retransmissões baseada em nós e supressão de escuta duplicada — além de uma ponte de internet opcional para conectar ilhas de RF isoladas, mantendo a compatibilidade de protocolo com os clientes MeshCore existentes.",
+      "sourceHash": "sha256:40b16644194d31d14c2d94726a0be3de1239dd56f785ab7ba9c333d8f2271792",
+      "generatedAt": "2026-06-27T14:25:27.049Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6055,
+      "promptTokens": 219,
+      "completionTokens": 1925
+    },
+    "deviceNotes.heltec-meshtower": {
+      "value": "Mesma placa base MeshSolar; utiliza a compilação heltec_mesh_solar.",
+      "sourceHash": "sha256:0fe9d96a80f245a3d2335a68e6bf70eccfe70b820e2035f0dcb00ec660ee9697",
+      "generatedAt": "2026-06-27T14:25:29.981Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2931,
+      "promptTokens": 144,
+      "completionTokens": 687
+    },
+    "features": {
+      "value": "[\"Base para repetidores de malha densa\",\"Controle de encaminhamento de anúncios de inundação (flood.advert.base)\",\"Estatísticas de densidade / medição de congestionamento e densidade\",\"Probabilidade manual de retransmissão + preparação para modo dinâmico\",\"Detecção de canal ocupado via CAD de hardware\",\"Dispersão de retransmissão por nós\",\"Supressão de retransmissão por escuta duplicada\",\"Ponte de internet opcional (TCP / BLE / RS232 / ESPNow)\",\"Proteção de inicialização e execução para bateria fraca\",\"Gravador via web\",\"Compatível com o protocolo dos clientes MeshCore existentes\"]",
+      "sourceHash": "sha256:178e3623fdda17a3ee5df2fe5f77bbc11d82ea731bb100c5de4381d136a9d47f",
+      "generatedAt": "2026-06-27T14:25:37.177Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7195,
+      "promptTokens": 226,
+      "completionTokens": 2317
+    }
+  }
+}

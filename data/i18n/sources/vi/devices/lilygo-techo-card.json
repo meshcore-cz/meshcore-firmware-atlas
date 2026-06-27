@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-techo-card",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút mạng cỡ thẻ tiết kiệm điện năng với nRF52840 + SX1262, tích hợp OLED 0,42 inch, L76K GNSS, IMU ICM20948, loa, micro và đèn LED WS2812. Tấm pin mặt trời cấp nguồn liên tục. Chỉ có Bluetooth 5 - không Wi-Fi.",
+      "sourceHash": "sha256:59f0497dee00118a2512aa839c63f99a6573a17f0ee06446c2896f8883d0ad5c",
+      "generatedAt": "2026-06-27T15:37:32.125Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7499,
+      "promptTokens": 192,
+      "completionTokens": 966
+    }
+  }
+}

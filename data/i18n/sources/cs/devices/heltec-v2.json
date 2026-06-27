@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-v2",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Klasický vývojový panel ESP32 + SX1276/SX1278 LoRa s integrovaným 0.96palcovým OLED displejem, Wi-Fi a BLE. Obsahuje rozhraní Micro USB a sériový převodník CP2102, bateriový konektor SH1.25 se správou nabíjení a LoRa anténu s IPEX konektorem. Vyřazeno z výroby – pro nové projekty doporučuje Heltec verzi V3 nebo novější.",
+      "sourceHash": "sha256:ed8f570f2594d2a0d218ac363bbde03a7d3e46c3ec3f248ac50d5040f37d740e",
+      "generatedAt": "2026-06-27T10:47:03.828Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

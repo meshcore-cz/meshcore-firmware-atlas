@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-twatch-plus",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Смарт-годинник ESP32-S3 із SX1262 LoRa, 1,3-дюймовим сенсорним IPS-екраном та вбудованим GNSS (u-blox MIA-M10Q або Quectel LS550G). Контролер живлення AXP2101, акселерометр BMA423, драйвер тактильної віддачі, мікрофон, динамік та інфрачервоний передавач.",
+      "sourceHash": "sha256:d3ea6893229da682763fd4aee64d2bc072233917e24037ddfac845bf153cc12d",
+      "generatedAt": "2026-06-27T14:59:50.130Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4228,
+      "promptTokens": 197,
+      "completionTokens": 1288
+    }
+  }
+}

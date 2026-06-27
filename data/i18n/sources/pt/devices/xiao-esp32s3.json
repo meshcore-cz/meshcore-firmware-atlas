@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-esp32s3",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa hospedeira ESP32-S3 XIAO do tamanho de um polegar combinada com o módulo LoRa Wio-SX1262. Oferece Wi-Fi, BLE, gravação por USB e o mesmo formato compacto do Seeed XIAO para a criação de dispositivos companheiros e repetidores MeshCore minúsculos.",
+      "sourceHash": "sha256:63f6efb1fe18003eae0b6c5967a412e87a5887aca35cdb38d731c6a7a63ae578",
+      "generatedAt": "2026-06-27T14:20:34.758Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3774,
+      "promptTokens": 182,
+      "completionTokens": 1092
+    }
+  }
+}

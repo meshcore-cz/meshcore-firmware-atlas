@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-superbase-kit",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ kit Meshtastic độc lập sẵn sàng sử dụng, được lắp ráp từ Base Uno và Super IO, đi kèm màn hình OLED, cụm phím điều hướng, la bàn kỹ thuật số, GPS/BDS, còi báo, vỏ in 3D, bao đựng và pin.",
+      "sourceHash": "sha256:7a55725c33e01bdac51b7782cdb5426c514477fbc564c6c89fd247d76af86a21",
+      "generatedAt": "2026-06-27T15:39:32.858Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6305,
+      "promptTokens": 175,
+      "completionTokens": 1158
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-web-keygen",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Generátor klíčů Ed25519 běžící výhradně v prohlížeči, který slouží k vytváření identit MeshCore s vlastními šestnáctkovými předponami veřejných klíčů. Pomáhá operátorům vyhnout se kolizím krátkých předpon, aniž by odesílal soukromé klíče na server.",
+      "sourceHash": "sha256:251586a2196c8e8c07fd2c647ce211498664ad13ccac3d567434c1ebc3f5ba13",
+      "generatedAt": "2026-06-27T11:42:20.589Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7950,
+      "promptTokens": 162,
+      "completionTokens": 950
+    },
+    "verificationNotes.key-generation-runs-locally-in-browser-workers-a": {
+      "value": "Generování klíčů probíhá lokálně v pracovních vláknech prohlížeče a vygenerované klíče se nikam nepřenášejí.",
+      "sourceHash": "sha256:55790caf9cdf6d517b29590785c6478cf0e6e183cbae12f21dee406621cad755",
+      "generatedAt": "2026-06-27T11:42:29.399Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8810,
+      "promptTokens": 143,
+      "completionTokens": 1030
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Repozitář v současné době neuvádí licenci SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T11:42:33.524Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4125,
+      "promptTokens": 139,
+      "completionTokens": 482
+    },
+    "tags": {
+      "value": "[\"generátor klíčů\",\"soukromí\",\"ed25519\",\"pouze v prohlížeči\"]",
+      "sourceHash": "sha256:a89ed712b284d62fb6d8cc6767b1bb881ee61eb2c5da402135fcb222cbe405e7",
+      "generatedAt": "2026-06-27T13:44:58.116Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10334,
+      "promptTokens": 142,
+      "completionTokens": 622
+    }
+  }
+}

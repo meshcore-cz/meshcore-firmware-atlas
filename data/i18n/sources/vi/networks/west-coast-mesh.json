@@ -1,0 +1,15 @@
+{
+  "resource": "network/west-coast-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng xây dựng mạng mesh phi tập trung lớn nhất Bờ Tây nước Mỹ bằng MeshCore. Mạng lưới do người dùng đóng góp này trải dài khắp California, Oregon và Washington, phục vụ liên lạc ngoài lưới, ứng phó khẩn cấp, hoạt động ngoài trời và mạng cảm biến IoT trên băng tần 915 MHz của Mỹ.",
+      "sourceHash": "sha256:b21c6c54c8425fcad4e74c50e51d75687486273ee05bb2f2766be0eb2baf8524",
+      "generatedAt": "2026-06-27T16:55:29.228Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7146,
+      "promptTokens": 177,
+      "completionTokens": 928
+    }
+  }
+}

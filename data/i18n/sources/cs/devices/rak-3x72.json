@@ -1,0 +1,12 @@
+{
+  "resource": "device/rak-3x72",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "WisDuo LPWAN modul založený na STM32WL s integrovaným LoRa transceiverem pro kompaktní mesh sítě a vestavěná zařízení. Profil MeshCore je určen pro integraci samotného modulu, nikoliv pro hotová ruční zařízení nebo zařízení s displejem.",
+      "sourceHash": "sha256:61451a72423f144967dd5baa1b69c314223acc6bc7c2b87a69438dd0de18e52c",
+      "generatedAt": "2026-06-27T10:54:56.749Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

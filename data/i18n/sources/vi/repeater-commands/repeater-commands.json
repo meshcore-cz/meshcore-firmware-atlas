@@ -1,0 +1,150 @@
+{
+  "resource": "repeater-commands",
+  "locale": "vi",
+  "fields": {
+    "rc.flags": {
+      "value": "{\n  \"serial\": {\n    \"label\": \"Chỉ qua USB\",\n    \"desc\": \"Chỉ bảng điều khiển nối tiếp — không chấp nhận qua không trung.\"\n  },\n  \"reboot\": {\n    \"label\": \"Khởi động lại\",\n    \"desc\": \"Chỉ có hiệu lực sau khi khởi động lại.\"\n  },\n  \"destructive\": {\n    \"label\": \"Cẩn thận\",\n    \"desc\": \"Không thể đảo ngược — kiểm tra kỹ trước khi chạy.\"\n  },\n  \"build\": {\n    \"label\": \"Giới hạn bản dựng\",\n    \"desc\": \"Chỉ trên firmware được biên dịch với tính năng này.\"\n  }\n}",
+      "sourceHash": "sha256:ee17f77f365fc1e75425e01eeb7a3ad688b20460cb43694b9f5037a894499aae",
+      "generatedAt": "2026-06-27T16:57:39.788Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6421,
+      "promptTokens": 219,
+      "completionTokens": 762
+    },
+    "rc.groups.power": {
+      "value": "{\n  \"label\": \"Nguồn & khởi động lại\",\n  \"commands\": {\n    \"reboot\": {\n      \"desc\": \"Khởi động lại nút.\"\n    },\n    \"poweroff\": {\n      \"desc\": \"Tắt nguồn thiết bị (bí danh: shutdown).\"\n    },\n    \"shutdown\": {\n      \"desc\": \"Giống với poweroff.\"\n    },\n    \"clkreboot\": {\n      \"desc\": \"Đặt lại đồng hồ thành một epoch cố định, sau đó khởi động lại.\"\n    },\n    \"start.ota\": {\n      \"desc\": \"Bắt đầu cập nhật firmware qua không dây.\"\n    },\n    \"erase\": {\n      \"desc\": \"Định dạng hệ thống tệp — xóa toàn bộ cài đặt (khôi phục cài đặt gốc).\"\n    },\n    \"powersaving\": {\n      \"desc\": \"Chế độ tiết kiệm điện (nRF52: tức thời, ESP32: sau 2 phút).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:d5788157c006f5a07cb8414c3131be266bea4876c298dbeb3fd095eff4728245",
+      "generatedAt": "2026-06-27T18:07:21.069Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8280,
+      "promptTokens": 279,
+      "completionTokens": 1228
+    },
+    "rc.groups.info": {
+      "value": "{\n  \"label\": \"Danh tính & thông tin\",\n  \"commands\": {\n    \"ver\": {\n      \"desc\": \"Phiên bản firmware và ngày build.\"\n    },\n    \"board\": {\n      \"desc\": \"Tên phần cứng / nhà sản xuất.\"\n    },\n    \"role\": {\n      \"desc\": \"Vai trò nút đã cấu hình.\"\n    },\n    \"public.key\": {\n      \"desc\": \"Khóa công khai của nút này (hex).\"\n    },\n    \"prv.key\": {\n      \"desc\": \"Khóa riêng tư — tạo lại khóa cho nút.\"\n    },\n    \"name\": {\n      \"desc\": \"Tên nút hiển thị trong quảng bá.\"\n    },\n    \"owner.info\": {\n      \"desc\": \"Ghi chú chủ sở hữu / liên hệ (dùng | để xuống dòng).\"\n    },\n    \"bootloader.ver\": {\n      \"desc\": \"Phiên bản bootloader (chỉ dành cho nRF52).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:135809f6aa8335c35dc35f5babb28da81b68e13befc1b174ec3947feb6ec3a6d",
+      "generatedAt": "2026-06-27T18:07:25.245Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4173,
+      "promptTokens": 283,
+      "completionTokens": 687
+    },
+    "rc.groups.access": {
+      "value": "{\n  \"label\": \"Mật khẩu & kiểm soát truy cập\",\n  \"commands\": {\n    \"password\": {\n      \"desc\": \"Đặt mật khẩu quản trị.\"\n    },\n    \"guest.password\": {\n      \"desc\": \"Đặt mật khẩu khách (chỉ đọc).\"\n    },\n    \"allow.read.only\": {\n      \"desc\": \"Cho phép khách đọc cấu hình mà không cần mật khẩu quản trị.\"\n    },\n    \"setperm\": {\n      \"desc\": \"Đặt quyền cho máy khách: 0 khách · 1 chỉ đọc · 2 đọc-ghi · 3 quản trị.\"\n    },\n    \"get.acl\": {\n      \"desc\": \"In danh sách kiểm soát truy cập.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:75140e652df344753cfad827323faad4c062a87aa18e726f46716c970e76621e",
+      "generatedAt": "2026-06-27T18:07:29.525Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4280,
+      "promptTokens": 240,
+      "completionTokens": 776
+    },
+    "rc.groups.radio": {
+      "value": "{\n  \"label\": \"Radio\",\n  \"commands\": {\n    \"radio\": {\n      \"desc\": \"Tần số LoRa (MHz), băng thông (kHz), hệ số trải phổ và tỷ lệ mã hóa.\",\n      \"range\": \"freq 150–2500 · bw 7.8–500 · sf 5–12 · cr 5–8\"\n    },\n    \"freq\": {\n      \"desc\": \"Chỉ tần số (MHz).\"\n    },\n    \"tx\": {\n      \"desc\": \"Công suất phát.\",\n      \"range\": \"-9 đến 30 dBm\"\n    },\n    \"tempradio\": {\n      \"desc\": \"Chuyển đổi tham số radio tạm thời, sau đó tự động hoàn nguyên.\",\n      \"range\": \"phút > 0\"\n    },\n    \"radio.rxgain\": {\n      \"desc\": \"Khuếch đại tăng cường RX (SX1262/1268/LR1110).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:2f44981a1f672bd41b25a1760d190ca34c45ebeef604449716cf0be67f614d8d",
+      "generatedAt": "2026-06-27T18:07:37.908Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8382,
+      "promptTokens": 287,
+      "completionTokens": 1088
+    },
+    "rc.groups.forwarding": {
+      "value": "{\n  \"label\": \"Chuyển tiếp & định tuyến\",\n  \"commands\": {\n    \"repeat\": {\n      \"desc\": \"Liệu nút này có chuyển tiếp (forward) các gói tin hay không.\"\n    },\n    \"loop.detect\": {\n      \"desc\": \"Mức độ nghiêm ngặt của tính năng phát hiện vòng lặp định tuyến.\"\n    },\n    \"path.hash.mode\": {\n      \"desc\": \"Kích thước băm Path-ID.\",\n      \"range\": \"0, 1 hoặc 2\"\n    },\n    \"flood.max\": {\n      \"desc\": \"Số bước nhảy tối đa cho flood có giới hạn phạm vi.\",\n      \"range\": \"0–64\"\n    },\n    \"flood.max.unscoped\": {\n      \"desc\": \"Số bước nhảy tối đa cho flood không giới hạn phạm vi.\",\n      \"range\": \"0–64\"\n    },\n    \"flood.max.advert\": {\n      \"desc\": \"Số bước nhảy tối đa cho flood quảng bá.\",\n      \"range\": \"0–64\"\n    },\n    \"multi.acks\": {\n      \"desc\": \"Cho phép nhiều ACK trên mỗi gói tin.\",\n      \"range\": \"0 hoặc 1\"\n    }\n  }\n}",
+      "sourceHash": "sha256:34a3a6a7c6adb8155a38426a1d2f42bc81266e18c3a1eb4abd5a627ea923653d",
+      "generatedAt": "2026-06-27T18:07:44.555Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6646,
+      "promptTokens": 318,
+      "completionTokens": 1091
+    },
+    "rc.groups.timing": {
+      "value": "{\n  \"label\": \"Thời gian & thời gian phát\",\n  \"commands\": {\n    \"dutycycle\": {\n      \"desc\": \"Phần trăm chu kỳ hoạt động TX mục tiêu.\",\n      \"range\": \"1–100\"\n    },\n    \"af\": {\n      \"desc\": \"Hệ số thời gian phát.\"\n    },\n    \"rxdelay\": {\n      \"desc\": \"Độ trễ nhận cơ bản.\",\n      \"range\": \"0–20\"\n    },\n    \"txdelay\": {\n      \"desc\": \"Hệ số độ trễ truyền lại flood.\",\n      \"range\": \"0–2\"\n    },\n    \"direct.txdelay\": {\n      \"desc\": \"Hệ số độ trễ lưu lượng trực tiếp.\",\n      \"range\": \"0–2\"\n    },\n    \"int.thresh\": {\n      \"desc\": \"Ngưỡng nhiễu (nhiễu âm).\"\n    },\n    \"agc.reset.interval\": {\n      \"desc\": \"Khoảng thời gian đặt lại AGC (làm tròn thành bội số của 4s).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:758448b2188b6ad32be29f5021a83cae993754e3c467d77e6f3a80a334d0f429",
+      "generatedAt": "2026-06-27T18:07:59.844Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15288,
+      "promptTokens": 303,
+      "completionTokens": 1436
+    },
+    "rc.groups.advert": {
+      "value": "{\n  \"label\": \"Quảng bá\",\n  \"commands\": {\n    \"advert\": {\n      \"desc\": \"Gửi quảng bá lan truyền ngay bây giờ.\"\n    },\n    \"advert.zerohop\": {\n      \"desc\": \"Gửi quảng bá không nhảy (chỉ hàng xóm) ngay bây giờ.\"\n    },\n    \"advert.interval\": {\n      \"desc\": \"Khoảng thời gian quảng bá không nhảy.\",\n      \"range\": \"60–240 phút (0 = tắt)\"\n    },\n    \"flood.advert.interval\": {\n      \"desc\": \"Khoảng thời gian quảng bá lan truyền.\",\n      \"range\": \"3–168 giờ (0 = tắt)\"\n    }\n  }\n}",
+      "sourceHash": "sha256:3646d01f716bf9fa6de899d020efb8a93b05dc26df1d5bc1d97ba315ee8fcdca",
+      "generatedAt": "2026-06-27T18:08:24.905Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25060,
+      "promptTokens": 230,
+      "completionTokens": 996
+    },
+    "rc.groups.location": {
+      "value": "{\n  \"label\": \"Vị trí\",\n  \"commands\": {\n    \"lat\": {\n      \"desc\": \"Vĩ độ của nút.\"\n    },\n    \"lon\": {\n      \"desc\": \"Kinh độ của nút.\"\n    },\n    \"adc.multiplier\": {\n      \"desc\": \"Hiệu chuẩn ADC pin (0 = mặc định của bo mạch).\",\n      \"range\": \"0–10\"\n    }\n  }\n}",
+      "sourceHash": "sha256:0873fede7da84c28875bd01a8991f543cda080934172c45c336a164d8a13bd36",
+      "generatedAt": "2026-06-27T18:08:27.524Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2617,
+      "promptTokens": 180,
+      "completionTokens": 330
+    },
+    "rc.groups.neighbors": {
+      "value": "{\n  \"label\": \"Láng giềng\",\n  \"commands\": {\n    \"neighbors\": {\n      \"desc\": \"Liệt kê các láng giềng nghe được gần đây.\"\n    },\n    \"neighbor.remove\": {\n      \"desc\": \"Xóa một láng giềng theo khóa công khai.\"\n    },\n    \"discover.neighbors\": {\n      \"desc\": \"Gửi yêu cầu khám phá láng giềng zero-hop.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:41c43163720a0688fb434f5a5a61230ad57c8afae44cbebe82f5e4224c9d4824",
+      "generatedAt": "2026-06-27T18:08:36.031Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8506,
+      "promptTokens": 177,
+      "completionTokens": 536
+    },
+    "rc.groups.clock": {
+      "value": "{\n  \"label\": \"Đồng hồ\",\n  \"commands\": {\n    \"clock\": {\n      \"desc\": \"Hiển thị thời gian UTC hiện tại.\"\n    },\n    \"clock.sync\": {\n      \"desc\": \"Đồng bộ hóa đồng hồ với dấu thời gian của người gửi.\"\n    },\n    \"time\": {\n      \"desc\": \"Đặt đồng hồ thành thời điểm Unix (không thể quay ngược lại).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:641c8b99ace38f890c1f5673418b3d84903c1b8fe811806c42edfafcefce85f7",
+      "generatedAt": "2026-06-27T18:08:39.608Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3576,
+      "promptTokens": 179,
+      "completionTokens": 438
+    },
+    "rc.groups.stats": {
+      "value": "{\n  \"label\": \"Thống kê & nhật ký\",\n  \"commands\": {\n    \"clear.stats\": {\n      \"desc\": \"Đặt lại tất cả các bộ đếm thống kê.\"\n    },\n    \"stats-core\": {\n      \"desc\": \"Pin, thời gian hoạt động, độ dài hàng đợi, cờ gỡ lỗi.\"\n    },\n    \"stats-radio\": {\n      \"desc\": \"Sàn nhiễu, RSSI/SNR, thời gian truyền, lỗi.\"\n    },\n    \"stats-packets\": {\n      \"desc\": \"Bộ đếm gói tin đã gửi / đã nhận.\"\n    },\n    \"log.start\": {\n      \"desc\": \"Bắt đầu ghi nhật ký nhận vào bộ nhớ.\"\n    },\n    \"log.stop\": {\n      \"desc\": \"Dừng ghi nhật ký nhận.\"\n    },\n    \"log.erase\": {\n      \"desc\": \"Xóa nhật ký đã lưu.\"\n    },\n    \"log\": {\n      \"desc\": \"Xuất nhật ký đã lưu ra bảng điều khiển nối tiếp.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:5476582e3894dab7089ff326ba288c835930a2744f5339e75ecc1386b65752e3",
+      "generatedAt": "2026-06-27T18:08:51.386Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11777,
+      "promptTokens": 285,
+      "completionTokens": 1108
+    },
+    "rc.groups.regions": {
+      "value": "{\n  \"label\": \"Khu vực\",\n  \"commands\": {\n    \"region\": {\n      \"desc\": \"Liệt kê tất cả các khu vực đã xác định.\"\n    },\n    \"region.get\": {\n      \"desc\": \"Hiển thị một khu vực và khu vực cha / cờ flood của nó.\"\n    },\n    \"region.put\": {\n      \"desc\": \"Tạo một khu vực (cho phép flood theo mặc định).\"\n    },\n    \"region.def\": {\n      \"desc\": \"Xác định hệ thống phân cấp trong một dòng (nhánh | hoặc ,).\"\n    },\n    \"region.remove\": {\n      \"desc\": \"Xóa một khu vực (phải trống).\"\n    },\n    \"region.load\": {\n      \"desc\": \"Bắt đầu tải khu vực thụt lề hàng loạt (dòng trống để kết thúc).\"\n    },\n    \"region.save\": {\n      \"desc\": \"Lưu các thay đổi khu vực vào bộ nhớ.\"\n    },\n    \"region.home\": {\n      \"desc\": \"Xem hoặc đặt khu vực chính.\"\n    },\n    \"region.default\": {\n      \"desc\": \"Xem hoặc đặt phạm vi mặc định (<null> để xóa).\"\n    },\n    \"region.allowf\": {\n      \"desc\": \"Cho phép flood trong một khu vực (* = ký tự đại diện).\"\n    },\n    \"region.denyf\": {\n      \"desc\": \"Từ chối flood trong một khu vực.\"\n    },\n    \"region.list\": {\n      \"desc\": \"Liệt kê các khu vực theo quyền flood.\"\n    }\n  },\n  \"blurb\": \"Phạm vi khu vực kiểm soát nơi flood lan truyền. `region` không có đối số sẽ liệt kê mọi khu vực đã xác định.\"\n}",
+      "sourceHash": "sha256:820afdfc5fedbb3c41df015059da7392c18bf1e7d2571e98d9f543a254010258",
+      "generatedAt": "2026-06-27T18:09:02.987Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11600,
+      "promptTokens": 410,
+      "completionTokens": 1347
+    },
+    "rc.groups.gps": {
+      "value": "{\n  \"label\": \"GPS\",\n  \"commands\": {\n    \"gps\": {\n      \"desc\": \"Hiển thị trạng thái GPS (định vị, vệ tinh).\"\n    },\n    \"gps.on\": {\n      \"desc\": \"Bật phần cứng GPS.\"\n    },\n    \"gps.off\": {\n      \"desc\": \"Tắt phần cứng GPS.\"\n    },\n    \"gps.sync\": {\n      \"desc\": \"Đồng bộ đồng hồ từ thời gian GPS.\"\n    },\n    \"gps.setloc\": {\n      \"desc\": \"Sao chép vị trí GPS hiện tại vào vĩ độ/kinh độ của nút.\"\n    },\n    \"gps.advert\": {\n      \"desc\": \"Xem / đặt chính sách chia sẻ vị trí cho quảng bá.\"\n    }\n  },\n  \"blurb\": \"Chỉ khả dụng trên các bản dựng hỗ trợ GPS.\"\n}",
+      "sourceHash": "sha256:c638f806e84b7f7b271a23285fb9c8c6de4d3c28cc6243ce8c0b8a2f0cf85b9e",
+      "generatedAt": "2026-06-27T18:09:10.982Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7994,
+      "promptTokens": 257,
+      "completionTokens": 927
+    },
+    "rc.groups.sensors": {
+      "value": "{\n  \"label\": \"Cảm biến\",\n  \"commands\": {\n    \"sensor.list\": {\n      \"desc\": \"Liệt kê các biến cảm biến tùy chỉnh.\"\n    },\n    \"sensor.get\": {\n      \"desc\": \"Đọc một biến cảm biến.\"\n    },\n    \"sensor.set\": {\n      \"desc\": \"Ghi một biến cảm biến.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:d62c05fac6368dec62d760971de438161d1a4c9d654930bde7d7563fe2f63428",
+      "generatedAt": "2026-06-27T18:09:15.395Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4412,
+      "promptTokens": 173,
+      "completionTokens": 327
+    },
+    "rc.groups.bridge": {
+      "value": "{\n  \"label\": \"Cầu nối & quản lý nguồn\",\n  \"commands\": {\n    \"bridge.type\": {\n      \"desc\": \"Loại cầu nối đã cấu hình (rs232 / espnow / none).\"\n    },\n    \"bridge.enabled\": {\n      \"desc\": \"Bật / tắt cầu nối.\"\n    },\n    \"bridge.delay\": {\n      \"desc\": \"Độ trễ định tuyến cầu nối.\",\n      \"range\": \"0–10000 ms\"\n    },\n    \"bridge.source\": {\n      \"desc\": \"Luồng gói tin nào để cầu nối.\"\n    },\n    \"bridge.baud\": {\n      \"desc\": \"Tốc độ baud RS-232.\",\n      \"range\": \"9600–115200\"\n    },\n    \"bridge.channel\": {\n      \"desc\": \"Kênh ESP-NOW.\",\n      \"range\": \"1–14\"\n    },\n    \"bridge.secret\": {\n      \"desc\": \"Mã bí mật dùng chung ESP-NOW (≤15 ký tự).\"\n    },\n    \"pwrmgt.support\": {\n      \"desc\": \"Quản lý nguồn điện có được hỗ trợ hay không.\"\n    },\n    \"pwrmgt.source\": {\n      \"desc\": \"Nguồn điện hiện tại (external / battery).\"\n    },\n    \"pwrmgt.bootreason\": {\n      \"desc\": \"Lý do đặt lại / tắt máy lần cuối.\"\n    },\n    \"pwrmgt.bootmv\": {\n      \"desc\": \"Điện áp khởi động tính bằng mV.\"\n    }\n  },\n  \"blurb\": \"Các khóa bridge chỉ xuất hiện trên các bản build bridge; pwrmgt trên các bản build có quản lý nguồn nRF52.\"\n}",
+      "sourceHash": "sha256:ffd6ee8519f1d36279bb792688e37367f19b6e53bb79398bad84f122aa3e0b37",
+      "generatedAt": "2026-06-27T18:09:26.254Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10858,
+      "promptTokens": 412,
+      "completionTokens": 1983
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resource": "firmware/meshcore-lowpower",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Прошивка MeshCore, оптимізована за енергоспоживанням, із режимом глибокого сну, повним інтерфейсом додаткового дисплея та підтримкою кількох типів підключення (BLE + USB + WiFi в одній збірці). Вона пропонує розширені налаштування радіо та мережі, веб-портал налаштувань та профілювання часу автономної роботи. Створена для багатоденної автономної роботи.",
+      "sourceHash": "sha256:2405964fabf6c7278fd46ddb5b5cb8eeca274fc863535ad3947fd7d0fd283877",
+      "generatedAt": "2026-06-27T15:34:32.394Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 44937,
+      "promptTokens": 187,
+      "completionTokens": 1983
+    },
+    "deviceNotes.rak-4631": {
+      "value": "Використовує базову плату RAK19003 для профілювання енергоспоживання.",
+      "sourceHash": "sha256:e64febbc7fef69675d911f2109b7cacba3555a99117c91f99b3242bc81091824",
+      "generatedAt": "2026-06-27T15:34:35.912Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3517,
+      "promptTokens": 140,
+      "completionTokens": 446
+    },
+    "deviceNotes.atlavox-m1": {
+      "value": "Використовує цільову платформу RAK4631; те саме, що й rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:34:48.270Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12358,
+      "promptTokens": 145,
+      "completionTokens": 1328
+    },
+    "deviceNotes.atlavox-beacon": {
+      "value": "Використовує ціль RAK4631; те саме, що й rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:34:51.625Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3355,
+      "promptTokens": 145,
+      "completionTokens": 611
+    },
+    "deviceNotes.rak-wismesh-repeater-mini": {
+      "value": "Використовує ціль RAK4631; те саме, що й rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:34:54.856Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3231,
+      "promptTokens": 145,
+      "completionTokens": 473
+    },
+    "deviceNotes.yetiwurks-basestation": {
+      "value": "Використовує ціль RAK4631; те саме, що й rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:34:58.586Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3729,
+      "promptTokens": 145,
+      "completionTokens": 674
+    },
+    "deviceNotes.uart-solar-node-station": {
+      "value": "Використовує цільову платформу RAK4631; те саме, що й rak-4631.",
+      "sourceHash": "sha256:a78aec8cbbd81bc3b75ef61268a3ed68d7a73ba90e7c23ac8b945450bd49197c",
+      "generatedAt": "2026-06-27T15:35:02.656Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4070,
+      "promptTokens": 145,
+      "completionTokens": 749
+    },
+    "features": {
+      "value": "[\"Глибока оптимізація енергоспоживання з профілюванням струму в режимі очікування\",\"Уніфікована збірка компаньйона для BLE + USB + WiFi (єдиний бінарний файл)\",\"Веб-портал налаштувань (резервне копіювання, відновлення, прошивка, перезавантаження)\",\"Резервне копіювання та відновлення компаньйона (налаштування, облікові дані WiFi, пресети)\",\"Адаптивне посилення прийому (Rx) на Heltec V4.2\",\"Вибір сузір'їв GPS та налаштування інтервалу оновлення GPS під час роботи\",\"Захист від розряду батареї та вимірювання напруги\",\"Нативна багатомовна підтримка на кольоровому TFT-дисплеї Heltec T096\",\"Автоматичне виявлення KCT8103L FEM на Heltec V4.3\"]",
+      "sourceHash": "sha256:35ccc4a3b2140c6384c6b6f8f2522903d0010c1e24af1cd55e69698335b16a49",
+      "generatedAt": "2026-06-27T15:35:14.138Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11482,
+      "promptTokens": 239,
+      "completionTokens": 2641
+    }
+  }
+}

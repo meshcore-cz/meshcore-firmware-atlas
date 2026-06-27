@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore64",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Trình chat MeshCore cho Commodore 64 sử dụng cartridge nối tiếp tương thích SwiftLink để kết nối tới cầu nối đồng hành TCP, hỗ trợ nhắn tin theo kênh và trực tiếp, xác nhận đã nhận tin nhắn cùng cấu hình được lưu trữ.",
+      "sourceHash": "sha256:c8e7822bbd03308c831ea936dee6ef1a673b6536dfea3243bdf0c2b1449deebd",
+      "generatedAt": "2026-06-27T16:24:43.137Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8515,
+      "promptTokens": 166,
+      "completionTokens": 1041
+    },
+    "screenshots.demo.png.caption": {
+      "value": "Nhắn tin qua kênh MeshCore trên Commodore 64",
+      "sourceHash": "sha256:e3b2daed63bd7a948ab97465c8cf7fec2154864e5e7eb975ed9386d335f69c94",
+      "generatedAt": "2026-06-27T16:24:46.176Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3038,
+      "promptTokens": 139,
+      "completionTokens": 538
+    },
+    "tags": {
+      "value": "[\"commodore-64\",\"vi tính cổ điển\",\"swiftlink\",\"petscii\"]",
+      "sourceHash": "sha256:5dbfa693f69d4499beb7db9e0833a8219a804c8ee383f42ea1765ab4b6f97737",
+      "generatedAt": "2026-06-27T16:24:52.174Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5997,
+      "promptTokens": 148,
+      "completionTokens": 1087
+    },
+    "verificationNotes.requires-swiftlink-or-compatible-acia-emulation-": {
+      "value": "Yêu cầu SwiftLink hoặc giả lập ACIA tương thích, cùng cầu nối serial TCP tới thiết bị đồng hành MeshCore.",
+      "sourceHash": "sha256:2d89a555be3b6454b731e1b6028dc1ae03f9e6627f440c56f85fa422ecab3a1e",
+      "generatedAt": "2026-06-27T16:25:04.046Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11871,
+      "promptTokens": 149,
+      "completionTokens": 540
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "resource": "software/roadstr",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Decentralizovaná aplikace pro Android a web pro hlášení dopravních událostí, která využívá podepsané události Nostr, dotazy geohash a integraci s OsmAnd. Její kompaktní přenosový formát MeshCore je sice specifikován, ale zatím nebyl implementován.",
+      "sourceHash": "sha256:eb34d07ca64bc0887975c09b547d38c93a5fb173c67adcfb8195ff00f70acc61",
+      "generatedAt": "2026-06-27T11:53:46.284Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15199,
+      "promptTokens": 170,
+      "completionTokens": 1211
+    },
+    "screenshots.web.png.caption": {
+      "value": "Prohlížeč mapy dopravních událostí",
+      "sourceHash": "sha256:f4b19527b7de259876e1b483e9a13ebb0b3ea1ff4e9f74105586e6267e504967",
+      "generatedAt": "2026-06-27T11:53:56.054Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9716,
+      "promptTokens": 133,
+      "completionTokens": 1013
+    },
+    "screenshots.android.png.caption": {
+      "value": "Integrace dopravních událostí pro Android a OsmAnd",
+      "sourceHash": "sha256:d3be235f51f325cf7192bc9653ae13fd2f4b53a00df4adb6276d737866012ef1",
+      "generatedAt": "2026-06-27T11:54:02.171Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6117,
+      "promptTokens": 137,
+      "completionTokens": 674
+    },
+    "verificationNotes.current-releases-exchange-events-through-nostr-r": {
+      "value": "Aktuální verze si vyměňují události prostřednictvím Nostr relé; přenos MeshCore a přemostění sítě mesh do internetu zůstávají v plánu.",
+      "sourceHash": "sha256:0dcfc7719035f8568f82e38a69c4c1e6bb2a0287c9b7d1b9017b21b818abe88f",
+      "generatedAt": "2026-06-27T11:54:10.241Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8062,
+      "promptTokens": 152,
+      "completionTokens": 916
+    },
+    "verificationNotes.the-android-application-integrates-with-osmand-f": {
+      "value": "Aplikace pro Android se integruje s aplikací OsmAnd pro zobrazení tras a varování při přiblížení.",
+      "sourceHash": "sha256:660051f150ead763d1ea83b6e10722b9ebf9f0b3f1a2854f11f50c5662db80fa",
+      "generatedAt": "2026-06-27T11:54:19.739Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9497,
+      "promptTokens": 144,
+      "completionTokens": 911
+    },
+    "tags": {
+      "value": "[\"nostr\",\"dopravní události\",\"osmand\",\"decentralizované\",\"plánovaný meshcore\"]",
+      "sourceHash": "sha256:22c076958f730e0d394c502b2e69f1e4285561309918e5bee31221fd695f2122",
+      "generatedAt": "2026-06-27T13:49:32.962Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9836,
+      "promptTokens": 149,
+      "completionTokens": 596
+    }
+  }
+}

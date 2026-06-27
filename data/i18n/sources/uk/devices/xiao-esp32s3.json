@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-esp32s3",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Хост-плата ESP32-S3 XIAO розміром з великий палець у парі з модулем Wio-SX1262 LoRa. Підтримує Wi-Fi, BLE та прошивку через USB, зберігаючи компактні габарити Seeed XIAO для створення мініатюрних компаньйонів і репітерів MeshCore.",
+      "sourceHash": "sha256:63f6efb1fe18003eae0b6c5967a412e87a5887aca35cdb38d731c6a7a63ae578",
+      "generatedAt": "2026-06-27T15:16:16.298Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14229,
+      "promptTokens": 182,
+      "completionTokens": 1017
+    }
+  }
+}

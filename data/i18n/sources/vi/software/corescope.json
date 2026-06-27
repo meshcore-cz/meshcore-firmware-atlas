@@ -1,0 +1,33 @@
+{
+  "resource": "software/corescope",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ phân tích gói tin MeshCore tự lưu trú với tính năng nạp dữ liệu qua MQTT, luồng gói tin thời gian thực, bản đồ tương tác, trò chuyện trên kênh, truy vết gói tin và phân tích theo từng nút.",
+      "sourceHash": "sha256:5e72415f60cf446471b6073c1ae099f32bfa40ef5d1b1cea3398961b7d7ba2d2",
+      "generatedAt": "2026-06-27T15:59:40.953Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3928,
+      "promptTokens": 157,
+      "completionTokens": 799
+    },
+    "tags": {
+      "value": "[\"Giám sát\",\"Trình phân tích\",\"Bản đồ\"]",
+      "sourceHash": "sha256:22aab9946b44105c309686b9c6ce95da29bf7574864a5e67151452396cf0414e",
+      "generatedAt": "2026-06-27T15:59:43.645Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2690,
+      "promptTokens": 138,
+      "completionTokens": 571
+    },
+    "verificationNotes.latest-github-release-has-no-binary-assets-deplo": {
+      "value": "Bản phát hành GitHub mới nhất không có tệp nhị phân; hướng dẫn triển khai được cung cấp thông qua image Docker GHCR hoặc checkout mã nguồn.",
+      "sourceHash": "sha256:ae76f51f3c752de17fd4f4a661df40aa5e9e280cab8ccaeb1e14d4fdeea8a79b",
+      "generatedAt": "2026-06-27T15:59:48.277Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4631,
+      "promptTokens": 150,
+      "completionTokens": 819
+    }
+  }
+}

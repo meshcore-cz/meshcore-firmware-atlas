@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-uk",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Національна мережа MeshCore по всій Великій Британії, яка працює на публічному каналі 868 МГц із покриттям від регіональних ретрансляторів та спільною картою вузлів у реальному часі.",
+      "sourceHash": "sha256:802137e8eb7a1538be2b3e4b11c5130f8409a36131884a58108f9565c8c36a74",
+      "generatedAt": "2026-06-27T16:59:53.558Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9123,
+      "promptTokens": 159,
+      "completionTokens": 993
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/northmesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Інтерактивна карта мереж MeshCore та LoRa для Північної Англії та Великої Британії, що відстежує репітери, активність пакетів, радіопокриття та вузли, підключені через MQTT.",
+      "sourceHash": "sha256:a2e34142f3c0d262c757f50c6bb88097b671729dc0b1ced058ce4f1c368a85c6",
+      "generatedAt": "2026-06-27T16:55:30.779Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24299,
+      "promptTokens": 160,
+      "completionTokens": 923
+    }
+  }
+}

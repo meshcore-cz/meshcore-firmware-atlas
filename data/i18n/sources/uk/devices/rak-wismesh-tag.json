@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-wismesh-tag",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Універсальний вузол Meshtastic на базі польового тестера RAK10701, оснащений сенсорним TFT-екраном 320×240 та екранною клавіатурою для обміну повідомленнями без телефону. Включає nRF52840 + SX1262, інтегрований GNSS, акумулятор на 3200 мА·год та LoRa-антену з роз'ємом RP-SMA. Попередньо прошито мікропрограмою Meshtastic.",
+      "sourceHash": "sha256:5c6499e9a55a3c08791791faf9de0f351be576f19b30825cdf365cc3a1d4b0b0",
+      "generatedAt": "2026-06-27T15:01:15.027Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3275,
+      "promptTokens": 201,
+      "completionTokens": 960
+    }
+  }
+}

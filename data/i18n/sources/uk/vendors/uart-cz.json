@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/uart-cz",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Незалежний виробник сонячних базових плат для mesh-мереж Meshtastic, друкованих плат керування батареями та повністю зібраних зовнішніх станцій LoRa-вузлів.",
+      "sourceHash": "sha256:d7d33a5880e2d3a4948fb1b8f3acd2b461c89527c70fdcb29267ae479a5c0743",
+      "generatedAt": "2026-06-27T16:46:05.040Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7945,
+      "promptTokens": 154,
+      "completionTokens": 1247
+    }
+  }
+}

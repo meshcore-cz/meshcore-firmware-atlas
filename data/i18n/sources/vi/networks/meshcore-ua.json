@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ua",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore công cộng do tình nguyện viên người Ukraine điều hành, cung cấp khả năng liên lạc LoRa phi tập trung và bền bỉ trên khắp Ukraine. Hệ thống được điều phối qua meshcore-ua.net, bao gồm các trạm lặp, bot, kênh, tệp tải xuống firmware và hỗ trợ cộng đồng trên Telegram.",
+      "sourceHash": "sha256:c9c47d0b5af794e7fd33a3183ecf5b28b97ee17e874c7176c961d23cc8876d7f",
+      "generatedAt": "2026-06-27T16:54:48.623Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6608,
+      "promptTokens": 170,
+      "completionTokens": 933
+    }
+  }
+}

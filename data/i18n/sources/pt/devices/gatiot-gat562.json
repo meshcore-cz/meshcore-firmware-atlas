@@ -1,0 +1,15 @@
+{
+  "resource": "device/gatiot-gat562",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rastreador de bolso nRF52840 com SX1262 LoRa, L76K GNSS, ecrã OLED, Bluetooth, carregamento USB-C e bateria integrada de 2500 mAh para utilização com Meshtastic/MeshCore.",
+      "sourceHash": "sha256:bca321de5ddbecc331a40f290380e5e534a71424d6a57f8dbd48e147eb7b1a46",
+      "generatedAt": "2026-06-27T13:59:55.100Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15648,
+      "promptTokens": 177,
+      "completionTokens": 632
+    }
+  }
+}

@@ -343,8 +343,22 @@ properties:
       notes:
         type: array
         items:
-          type: string
-          minLength: 1
+          oneOf:
+            - type: string
+              minLength: 1
+            - type: object
+              additionalProperties: false
+              required:
+                - id
+                - text
+              properties:
+                id:
+                  type: string
+                  pattern: ^[a-z0-9][a-z0-9-]*$
+                  minLength: 1
+                text:
+                  type: string
+                  minLength: 1
 
   tags:
     description: >-

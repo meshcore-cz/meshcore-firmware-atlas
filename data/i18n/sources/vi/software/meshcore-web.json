@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-web",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản dựng web đóng gói bằng Docker của ứng dụng đồng hành MeshCore do Liam Cottle phát triển, cung cấp tính năng nhắn tin trên trình duyệt, danh bạ, kênh, cũng như quản lý cấu trúc mạng và bộ lặp thông qua Web Bluetooth hoặc Web Serial.",
+      "sourceHash": "sha256:89170e4e7b963fbbd887c129a826eb3f23262abe694eac9e1776378804035085",
+      "generatedAt": "2026-06-27T16:21:30.932Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7062,
+      "promptTokens": 167,
+      "completionTokens": 1115
+    },
+    "tags": {
+      "value": "[\"bản dựng client đồng hành\",\"docker\",\"web-bluetooth\",\"web-serial\"]",
+      "sourceHash": "sha256:6499c66452a6696ff452599c9a057ceb48aea289a7d95ca53f7b0fbd5d7d7533",
+      "generatedAt": "2026-06-27T16:21:35.038Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4106,
+      "promptTokens": 145,
+      "completionTokens": 772
+    },
+    "verificationNotes.the-repository-publishes-compiled-closed-source-": {
+      "value": "Kho lưu trữ phát hành các tài nguyên web Flutter đã biên dịch (mã nguồn đóng) và một container image, chứ không phải mã nguồn ứng dụng.",
+      "sourceHash": "sha256:4c550055308e2ef33e6a4e80b287c6cf6ae21eaf8a4b583e6d2675955bcc2bd4",
+      "generatedAt": "2026-06-27T16:21:42.261Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7222,
+      "promptTokens": 148,
+      "completionTokens": 1209
+    },
+    "verificationNotes.browser-radio-access-requires-chrome-or-edge-ove": {
+      "value": "Truy cập radio qua trình duyệt yêu cầu dùng Chrome hoặc Edge thông qua HTTPS hoặc localhost.",
+      "sourceHash": "sha256:24850e70480fd230c4469ba63efbb77a622942bd5d436b9c480ccf922dec8998",
+      "generatedAt": "2026-06-27T16:21:48.335Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6073,
+      "promptTokens": 141,
+      "completionTokens": 764
+    }
+  }
+}

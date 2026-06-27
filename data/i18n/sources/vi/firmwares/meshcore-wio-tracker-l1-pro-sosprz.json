@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-wio-tracker-l1-pro-sosprz",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản phân nhánh MeshCore dưới dạng tệp nhị phân dành cho Seeed Studio Wio Tracker L1 Pro, bổ sung giao diện đồng hành toàn diện ngay trên thiết bị để nhắn tin, quản lý danh bạ, cấu hình vô tuyến và quản lý bộ lặp.",
+      "sourceHash": "sha256:150f77781c5fcb2bb8279091bb6319f85828ad2299d3282a8a2ba7f4bda69b96",
+      "generatedAt": "2026-06-27T15:51:40.234Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5390,
+      "promptTokens": 166,
+      "completionTokens": 694
+    },
+    "features": {
+      "value": "[\"Nhắn tin trực tiếp và theo kênh trên thiết bị\",\"Danh bạ, quảng bá và lịch sử tin nhắn\",\"Quản lý radio và bộ lặp\",\"Nạp phần sụn UF2 và có hỗ trợ trình duyệt\"]",
+      "sourceHash": "sha256:dade16b47333b3fe0ccdc26762eb6628bef64f086fda44badf3cd8f5f3d0b257",
+      "generatedAt": "2026-06-27T15:51:45.992Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5757,
+      "promptTokens": 158,
+      "completionTokens": 912
+    },
+    "verificationNotes.the-repository-contains-release-binaries-and-usa": {
+      "value": "Kho lưu trữ chứa các tệp nhị phân phát hành và ghi chú sử dụng, nhưng không có mã nguồn firmware hay giấy phép.",
+      "sourceHash": "sha256:a5803d718d32e6d7588b32374bf6515d69d627c75fc2c8b24b61b44c60683fe8",
+      "generatedAt": "2026-06-27T15:51:50.860Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4867,
+      "promptTokens": 144,
+      "completionTokens": 734
+    }
+  }
+}

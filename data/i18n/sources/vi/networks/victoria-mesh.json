@@ -1,0 +1,15 @@
+{
+  "resource": "network/victoria-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tại bang Victoria, Úc với hơn 50 nút trải dài khắp khu vực Mallee và vùng Melbourne. Hoạt động trên băng tần 915 MHz của Úc cùng bộ phân tích CoreScope.",
+      "sourceHash": "sha256:124281b26ad6be17b53248f30261399002f26014b871cf26bc3b220d1b391601",
+      "generatedAt": "2026-06-27T16:55:02.079Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9047,
+      "promptTokens": 166,
+      "completionTokens": 730
+    }
+  }
+}

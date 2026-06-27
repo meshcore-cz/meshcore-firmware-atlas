@@ -1,0 +1,15 @@
+{
+  "resource": "network/msp-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nhóm mạng mesh khu vực Minneapolis-Saint Paul và Greater Minnesota, mở rộng sang phía tây Wisconsin nhờ vị trí địa lý gần nhau, bao gồm các buổi gặp mặt cộng đồng, trang đối tác, bản đồ mesh và hoạt động trực tiếp CoreScope.",
+      "sourceHash": "sha256:c62f38a0dda07dee1c8e8ca318c74c2d9c915bad52aa495e82c6934188db8cb1",
+      "generatedAt": "2026-06-27T16:51:27.840Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10611,
+      "promptTokens": 164,
+      "completionTokens": 910
+    }
+  }
+}

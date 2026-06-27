@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-lt",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng MeshCore đang hình thành tại Litva. Hiện chưa có thông tin công khai về cộng đồng hoặc điều phối; đã quan sát thấy một trình phân tích đang hoạt động trên cấu hình radio Narrow chuẩn của EU/Anh.",
+      "sourceHash": "sha256:53b70aa25d750b556553828471bc18bfba7d1910fc3eaa0cba3c6d6ebad73188",
+      "generatedAt": "2026-06-27T16:49:42.006Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4290,
+      "promptTokens": 163,
+      "completionTokens": 593
+    }
+  }
+}

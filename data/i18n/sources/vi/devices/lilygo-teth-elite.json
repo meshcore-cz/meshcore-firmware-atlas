@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-teth-elite",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch ESP32-S3R8 tích hợp Wi-Fi, BLE và Ethernet qua W5500, được thiết kế cho các gateway IoT có dây hoạt động liên tục và dự án tự động hóa. Khả năng cấp nguồn qua USB-C, hỗ trợ PoE và chân cắm hàn sẵn biến thiết bị này thành một bộ điều khiển mạng nhỏ gọn.",
+      "sourceHash": "sha256:14382b5d36a007e62c9e5a7c1208895c47dde04a55be68f278a975072a4cf42d",
+      "generatedAt": "2026-06-27T15:37:51.696Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13899,
+      "promptTokens": 183,
+      "completionTokens": 930
+    }
+  }
+}

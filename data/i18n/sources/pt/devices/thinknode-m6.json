@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m6",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó solar Meshtastic/MeshCore para exteriores com classificação IP65, equipado com nRF52840, SX1262 LoRa e GPS L76K. Inclui um painel integrado de 6W e um conjunto de duas baterias 18650 com ~7000 mAh; configuração apenas via BLE — sem ecrã no dispositivo.",
+      "sourceHash": "sha256:7317c284edf0885095e93e1ff6270c4ea6b0cc60b803bf405c8b6808c5e5456a",
+      "generatedAt": "2026-06-27T13:59:39.451Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 21855,
+      "promptTokens": 185,
+      "completionTokens": 1243
+    }
+  }
+}

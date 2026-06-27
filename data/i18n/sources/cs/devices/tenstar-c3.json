@@ -1,0 +1,12 @@
+{
+  "resource": "device/tenstar-c3",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Cílová platforma ESP32-C3 MeshCore, dodávaná ve variantách s LoRa SX1262 a SX1268. Nabízí Wi-Fi, Bluetooth LE a nahrávání firmware přes USB pro levné doprovodné uzly, opakovače nebo uzly místnostních serverů.",
+      "sourceHash": "sha256:75aac1a664504c8ff96854579addb74d602d8aec44b069be98109327f9672ba8",
+      "generatedAt": "2026-06-27T10:59:38.733Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

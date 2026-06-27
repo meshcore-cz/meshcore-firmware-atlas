@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/chiyocore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Експериментальна реалізація MeshCore на Rust для пристроїв ESP32, структурована як ядро протоколу, придатне для повторного використання, із згенерованими збірками для плат та налаштовуваними шарами обробників.",
+      "sourceHash": "sha256:d2ab00817f174cd570a2cf0138f1bea33abdcfcaf0f543b2f0ae0bb766db61c7",
+      "generatedAt": "2026-06-27T15:42:53.308Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6014,
+      "promptTokens": 156,
+      "completionTokens": 1229
+    },
+    "deviceNotes.xiao-esp32s3": {
+      "value": "Супровідник повідомляє про успішну експериментальну роботу з радіонабором XIAO ESP32-S3.",
+      "sourceHash": "sha256:a82d1a4cf3a0f2cbc491613c140db9294b909b117af6858ae15ca651d731f6f4",
+      "generatedAt": "2026-06-27T15:43:00.706Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7398,
+      "promptTokens": 148,
+      "completionTokens": 1325
+    },
+    "features": {
+      "value": "[\"Реалізація протоколу MeshCore на Rust\", \"Згенеровані збірки плат і рівня обробників\", \"Супровідний інтерфейс TCP\"]",
+      "sourceHash": "sha256:9bb5c229d153c26a2bca27a7b6a3ee65d37b8714bc50fa22db7d77f827df2310",
+      "generatedAt": "2026-06-27T15:43:05.707Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5001,
+      "promptTokens": 148,
+      "completionTokens": 942
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv-sosprz",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản fork giao diện MeshCore UI dành cho M5Stack Cardputer ADV, được phân phối dưới dạng tệp nhị phân và đóng gói thành các ảnh nạp ESP32-S3 cho giao diện bàn phím và màn hình của thiết bị.",
+      "sourceHash": "sha256:35605e5737a6b4e481f685f2fcd88f585708f6d3e694ef7efe08ade51f27e299",
+      "generatedAt": "2026-06-27T15:49:29.895Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5086,
+      "promptTokens": 161,
+      "completionTokens": 1036
+    },
+    "features": {
+      "value": "[\"Giao diện bàn phím và màn hình Cardputer ADV\",\"Tệp firmware ESP32-S3 đã biên dịch sẵn\"]",
+      "sourceHash": "sha256:dc03637703f47a5ab83a7419fcb6c6f567b214bb35f31171b3c5eb4cccd53d4e",
+      "generatedAt": "2026-06-27T15:49:33.661Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3766,
+      "promptTokens": 147,
+      "completionTokens": 684
+    },
+    "verificationNotes.the-repository-contains-release-binaries-and-fla": {
+      "value": "Kho lưu trữ này chứa tệp nhị phân bản phát hành và ghi chú nạp firmware, nhưng không bao gồm mã nguồn hoặc giấy phép firmware.",
+      "sourceHash": "sha256:11184b73346e0b9944f92bb8bcb234803f12cba1f7d171dcdf67e104a2dedf92",
+      "generatedAt": "2026-06-27T15:49:43.415Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9752,
+      "promptTokens": 144,
+      "completionTokens": 702
+    }
+  }
+}

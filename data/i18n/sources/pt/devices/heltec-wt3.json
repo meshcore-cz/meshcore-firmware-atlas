@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-wt3",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "O Heltec Wireless Tracker v3 é um rastreador LoRa ESP32-S3 + SX1262 com GNSS (GPS) integrado, bateria de 4000+ mAh, entrada solar e ecrã opcional. Projetado para redes em malha Meshtastic, rastreamento de IoT e aplicações LoRaWAN, oferece operação externa prolongada por meio de carregamento solar e gestão eficiente de energia.",
+      "sourceHash": "sha256:7f931e459ba59a06161ff004f0a701f32898d050b0fe6f5534e25403117c9a20",
+      "generatedAt": "2026-06-27T14:07:32.862Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25016,
+      "promptTokens": 200,
+      "completionTokens": 1279
+    }
+  }
+}

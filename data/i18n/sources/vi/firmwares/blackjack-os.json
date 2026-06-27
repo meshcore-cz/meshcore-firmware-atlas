@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/blackjack-os",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ công cụ MeshCore mã nguồn mở, di động và giao diện độc lập dành cho phần cứng LilyGo T-Deck, có giao diện người dùng hướng ứng dụng và khả năng hoạt động vô tuyến trực tiếp.",
+      "sourceHash": "sha256:41fb22ce19fc353e4b49825092ab9cc014c43d42d6f612774a7d331d1a13a299",
+      "generatedAt": "2026-06-27T15:54:15.733Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6631,
+      "promptTokens": 156,
+      "completionTokens": 1069
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "Dự án khẳng định rằng firmware được commit vào repository đã được kiểm thử trên phần cứng.",
+      "sourceHash": "sha256:da5e4c2cf4ea5818b85345d736b8b6888d1366ec3cf5b0153c0a914b512be038",
+      "generatedAt": "2026-06-27T15:54:19.517Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3784,
+      "promptTokens": 142,
+      "completionTokens": 570
+    },
+    "features": {
+      "value": "[\"Giao diện T-Deck độc lập\",\"Kiến trúc trình khởi chạy ứng dụng\",\"Nhắn tin MeshCore trên thiết bị\"]",
+      "sourceHash": "sha256:1114d31400af4ba805a927dc05e6d96f01dd29bb82226c994c9c04549ae2f35e",
+      "generatedAt": "2026-06-27T15:54:22.985Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3468,
+      "promptTokens": 147,
+      "completionTokens": 653
+    }
+  }
+}

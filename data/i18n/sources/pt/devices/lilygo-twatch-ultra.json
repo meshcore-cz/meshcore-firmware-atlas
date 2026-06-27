@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-twatch-ultra",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Smartwatch ESP32-S3 com SX1262 LoRa, ecrã tátil AMOLED de 2,06 polegadas, GNSS integrado, NFC, motor de vibração, áudio e suporte para cartão SD. Um dispositivo MeshCore vestível para comunicação compacta no pulso.",
+      "sourceHash": "sha256:46a554e4f73e06914c5c90967f1b9b1a9528ad9dc2f9dc94853ba1809ecf12cf",
+      "generatedAt": "2026-06-27T14:15:07.475Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13156,
+      "promptTokens": 181,
+      "completionTokens": 1130
+    }
+  }
+}

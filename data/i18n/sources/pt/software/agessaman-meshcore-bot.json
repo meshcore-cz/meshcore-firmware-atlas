@@ -1,0 +1,42 @@
+{
+  "resource": "software/agessaman-meshcore-bot",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Bot de serviço MeshCore extensível em Python, com comandos por palavras-chave e plugins, serviços de meteorologia e alertas, agendamento, limites de taxa, administração web e integrações opcionais com Discord, Telegram, MQTT, webhooks e mapas.",
+      "sourceHash": "sha256:8860aebf78934d5f281b72405b9015cb0b1e22c276f1031a6d89800dda370e1a",
+      "generatedAt": "2026-06-27T14:30:35.170Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3168,
+      "promptTokens": 168,
+      "completionTokens": 874
+    },
+    "tags": {
+      "value": "[\"Bot de comandos\",\"Meteorologia\",\"Plugins de serviço\",\"Auto-hospedado\",\"Painel web\"]",
+      "sourceHash": "sha256:f372d1e638f40699cd8a9fcb57745eaa233914608e2d62da3b81208426676847",
+      "generatedAt": "2026-06-27T14:30:37.618Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2448,
+      "promptTokens": 145,
+      "completionTokens": 593
+    },
+    "verificationNotes.the-project-warns-operators-to-avoid-duplicate-b": {
+      "value": "O projeto alerta os operadores para evitarem bots duplicados e restringirem o escopo das respostas, a fim de proteger o tempo de antena da rede mesh.",
+      "sourceHash": "sha256:bedc45680103f248f0028472622bab941f859a9084f1c0a7ae2472f4772dcb26",
+      "generatedAt": "2026-06-27T14:30:40.644Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3026,
+      "promptTokens": 147,
+      "completionTokens": 806
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Atualmente, o repositório não declara uma licença SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:30:42.806Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2161,
+      "promptTokens": 139,
+      "completionTokens": 476
+    }
+  }
+}

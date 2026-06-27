@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meshcomod",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Супровідна прошивка з підтримкою кількох транспортів на базі MeshCore, яка одночасно забезпечує підключення через USB, Bluetooth та TCP, тож телефони, вебклієнти та Home Assistant можуть спілкуватися з одним радіомодулем водночас. Додає можливість налаштування Wi-Fi під час роботи та інтерфейс користувача на пристрої.",
+      "sourceHash": "sha256:9d1956cf009425dd2567cd7c7c3ba234ff085b8f9c07af8cdc56382c4e2efc2e",
+      "generatedAt": "2026-06-27T15:22:59.271Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18017,
+      "promptTokens": 177,
+      "completionTokens": 1274
+    },
+    "features": {
+      "value": "[\"Одночасні з'єднання USB + BLE + TCP\",\"Надсилання даних у реальному часі всім підключеним клієнтам\",\"Інтеграція з бічною панеллю Home Assistant\",\"Налаштування Wi-Fi під час роботи (без відновлення через CLI)\",\"Вкладки інтерфейсу на пристрої (спаровування BLE, стан TCP)\"]",
+      "sourceHash": "sha256:89f99d048cd36fc259794129449a799830ab405e6dba2f98c4fdf20a0499f873",
+      "generatedAt": "2026-06-27T15:23:39.843Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 40572,
+      "promptTokens": 174,
+      "completionTokens": 1761
+    }
+  }
+}

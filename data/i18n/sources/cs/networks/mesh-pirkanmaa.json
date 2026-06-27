@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-pirkanmaa",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita Meshtastic a MeshCore v regionu Tampere pokrývající Pirkanmaa, včetně měst Tampere, Nokia, Pirkkala a Ylöjärvi. Její síť MeshCore využívá předvolbu EU/UK Narrow na frekvenci 869.618 MHz a nabízí lokální mapové a chatovací nástroje.",
+      "sourceHash": "sha256:df23d50539e05beca873eea0458c35681c31bac274cf402a0cd57cddd122fe14",
+      "generatedAt": "2026-06-27T12:07:20.775Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5794,
+      "promptTokens": 189,
+      "completionTokens": 974
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v3",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Класична плата розробника ESP32-S3 + SX1262 LoRa з інтегрованим 0.96-дюймовим OLED-дисплеєм, Wi-Fi та BLE. Живлення через USB-C та послідовний порт CP2102, роз'єм для акумулятора SH1.25 із керуванням зарядом і антена LoRa IPEX. Широко застосовується для вузлів-супутників, ретрансляторів та серверів кімнат Meshtastic і MeshCore.",
+      "sourceHash": "sha256:f2026790eb1a9dc8d3c073c07374388c842e787999570eb9c5f699704e1cd2e9",
+      "generatedAt": "2026-06-27T14:57:38.674Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5042,
+      "promptTokens": 204,
+      "completionTokens": 1584
+    }
+  }
+}

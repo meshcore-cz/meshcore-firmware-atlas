@@ -1,0 +1,51 @@
+{
+  "resource": "software/nrf-dfu-py",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Utilitário Python multiplataforma com interfaces gráfica e de linha de comandos para atualizar dispositivos Nordic nRF51/nRF52 via Bluetooth usando DFU sem botão e Legacy DFU, com varredura, novas tentativas, confirmações de pacotes e MTU configuráveis.",
+      "sourceHash": "sha256:acab1233e668eee8f5ccae88b333d54c9bb59b7b812a8f0309b2cd859967f521",
+      "generatedAt": "2026-06-27T14:41:46.921Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3674,
+      "promptTokens": 173,
+      "completionTokens": 1078
+    },
+    "tags": {
+      "value": "[\"bluetooth-dfu\",\"nrf52\",\"multiplataforma\",\"desktop\"]",
+      "sourceHash": "sha256:65da5596fa2c999030e6e51fa382102081304ba3f37fe85a03e1e294d6d10814",
+      "generatedAt": "2026-06-27T14:41:50.603Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3682,
+      "promptTokens": 144,
+      "completionTokens": 917
+    },
+    "verificationNotes.supports-nordic-legacy-dfu-only-secure-dfu-is-no": {
+      "value": "Suporta apenas o Nordic Legacy DFU; o Secure DFU não é suportado.",
+      "sourceHash": "sha256:aac1ba3229f2e4a3af39d7a55d02f4345a76240376dbb151e0877b62c3655118",
+      "generatedAt": "2026-06-27T14:41:53.182Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2579,
+      "promptTokens": 144,
+      "completionTokens": 587
+    },
+    "verificationNotes.ci-publishes-standalone-gui-builds-for-windows-l": {
+      "value": "A CI publica compilações independentes da interface gráfica para Windows, Linux x64/ARM64 e macOS Intel/Apple Silicon.",
+      "sourceHash": "sha256:3d6f4e785248cae3ee7f7515b2d260d244d778c26a15f238faedea1c64b84464",
+      "generatedAt": "2026-06-27T14:41:55.791Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2608,
+      "promptTokens": 151,
+      "completionTokens": 648
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "O repositório não declara uma licença SPDX no momento.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:41:57.747Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1956,
+      "promptTokens": 139,
+      "completionTokens": 462
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshpunk",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Прошивка на базі LVGL + Lua для портативного пристрою LilyGo T-Deck з повною підтримкою MeshCore. Серед можливостей: офлайн-тайли OpenStreetMap із шаром контактів mesh-мережі та тріангуляцією відправників meshprint, теми оформлення, ігри (Doom, PICO-8, Flappy Bird, Snake, Scorched Earth), сховище на SD-карті, WiFi, BLE та синхронізація часу за GPS.",
+      "sourceHash": "sha256:0b0a2e4fa0f5c8e06bb8d284f6a7cd00c9843c4e82eb15e4e08d23c0c3fec166",
+      "generatedAt": "2026-06-27T15:38:05.011Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8134,
+      "promptTokens": 200,
+      "completionTokens": 1230
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "Основний цільовий пристрій. Використовуйте -merged.bin для першого встановлення, -firmware.bin для оновлень або -launcher.bin разом із bmorcelli's Launcher.",
+      "sourceHash": "sha256:e168843111e5c8fb5eeb19026212839d66f4d260824e59f458f2df972081a801",
+      "generatedAt": "2026-06-27T15:38:12.610Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7601,
+      "promptTokens": 160,
+      "completionTokens": 1287
+    },
+    "features": {
+      "value": "[\n  \"Фреймворк для додатків LVGL + Lua\",\n  \"Офлайн-карта з кешуванням тайлів та тріангуляцією meshprint\",\n  \"Теми та налаштування стилю інтерфейсу\",\n  \"Ігри (Doom, PICO-8, Flappy Bird, Snake, Scorched Earth)\",\n  \"Збереження налаштувань mesh-мережі та прошивки на SD-карті\",\n  \"Підключення супровідних пристроїв через BLE та WiFi\",\n  \"Синхронізація часу за GPS\",\n  \"Збірка, сумісна з лаунчером\",\n  \"Сумісний із протоколом MeshCore\"\n]",
+      "sourceHash": "sha256:48b065046073fe6ab02f4507c39ae601cc24123f244332dcf6d1771fab57af92",
+      "generatedAt": "2026-06-27T15:38:23.711Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11104,
+      "promptTokens": 202,
+      "completionTokens": 2047
+    }
+  }
+}

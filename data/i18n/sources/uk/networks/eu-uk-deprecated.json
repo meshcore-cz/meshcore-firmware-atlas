@@ -1,0 +1,15 @@
+{
+  "resource": "network/eu-uk-deprecated",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Офіційний радіопресет додатка MeshCore — 869.525MHz / SF11 / BW250 / CR5.",
+      "sourceHash": "sha256:ef954b20939722491e56017b032e9fc19918fb7e5b38f878a342df0b41a81a8a",
+      "generatedAt": "2026-06-27T16:49:38.028Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3352,
+      "promptTokens": 153,
+      "completionTokens": 485
+    }
+  }
+}

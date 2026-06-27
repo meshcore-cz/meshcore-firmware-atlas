@@ -1,0 +1,60 @@
+{
+  "resource": "firmware/meshcore-solo",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um fork do firmware de referência para rádio complementar MeshCore, com recursos adicionais e melhorias na interface. Adiciona navegação GPS (pontos de passagem, bússola, gravação de trilhas com exportação GPX), economia de bateria (ciclo de trabalho de RX no hardware + controle de potência adaptativo), discagem de contatos favoritos, suporte estendido a idiomas com renderização nativa de Unicode, status de entrega de mensagens, bloqueio de tela, bot de resposta automática, modo repetidor com diagnósticos e muito mais — tudo otimizado para navegação exclusiva por joystick em telas pequenas.",
+      "sourceHash": "sha256:f05ef686d5e6d65d9df251bc342daff86fc49b3ff764618735d32f9cc1975193",
+      "generatedAt": "2026-06-27T14:24:51.674Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4735,
+      "promptTokens": 217,
+      "completionTokens": 1495
+    },
+    "deviceNotes.wio-tracker-l1": {
+      "value": "Variante OLED (SSD1306/SH1106 128x64)",
+      "sourceHash": "sha256:94011346ca4585f46052bcb5db3409b354c81e3cbfe27b97ff86c7404561cb5b",
+      "generatedAt": "2026-06-27T14:24:53.643Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1969,
+      "promptTokens": 146,
+      "completionTokens": 399
+    },
+    "deviceNotes.wio-tracker-l1-pro": {
+      "value": "Variante OLED — mesma plataforma de firmware do wio-tracker-l1",
+      "sourceHash": "sha256:9168079ede442f9ebae3f9ed382a45939291c4dc4eb4ad542557bf255b6b7a2e",
+      "generatedAt": "2026-06-27T14:24:54.278Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 633,
+      "promptTokens": 143,
+      "completionTokens": 17
+    },
+    "deviceNotes.wio-tracker-l1-eink": {
+      "value": "Variante E-ink (GxEPD2 250x122)",
+      "sourceHash": "sha256:f91d9dccff6b1fd7ea761083860f6f1e5622685f6b5cd86b8a37f00f3bad5a89",
+      "generatedAt": "2026-06-27T14:24:55.919Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1640,
+      "promptTokens": 144,
+      "completionTokens": 321
+    },
+    "deviceNotes.gatiot-gat562-30s": {
+      "value": "Kit Mesh GAT562 30S",
+      "sourceHash": "sha256:4d53a29b5836fdedefd0af1e87bddc89be52e67222a185847ac87f7b6b1bd254",
+      "generatedAt": "2026-06-27T14:24:58.385Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2465,
+      "promptTokens": 138,
+      "completionTokens": 546
+    },
+    "features": {
+      "value": "[\"Suporte ampliado a Unicode com a fonte Lemon e entrada nativa\",\"Pacote de navegação GPS (pontos de passagem, bússola, retorno, gravação de trilhos)\",\"Exportação de GPX via USB serial\",\"Captura de ecrã via USB\",\"Marcador de favoritos para contactos fixados\",\"Indicadores de estado de entrega de mensagens\",\"Reenvio automático de DM e eliminação de duplicados na receção\",\"Bloqueio de ecrã com apresentação de hora e sensores\",\"Bot de resposta automática com respostas a comandos\",\"Anúncio automático para partilha de localização\",\"Poupança de bateria (ciclo de trabalho RX + APC)\",\"Modo repetidor de acompanhamento com diagnósticos\",\"Funcionalidade de ping em Nós Próximos\",\"Difusão de SOS com destino configurável\",\"Horas de silêncio para supressão de som\",\"Marcar tudo como lido ao nível do tipo\",\"Contagem de não lidos no ecrã de bloqueio\",\"Página inicial do scanner de canais\",\"Ordenação de contactos por distância\",\"Ecrã de estatísticas de sinal\",\"Padrão de teste do ecrã\",\"Predefinições de perfil de energia\",\"Aplicação web Solo Tools para captura de ecrã e exportação de GPX (https://marekzegare4.github.io/Solo-tools/)\"]",
+      "sourceHash": "sha256:3384bdea7df512c64d2e356001593cf8a5fa7de1ff62e61df6bb73487160953f",
+      "generatedAt": "2026-06-27T14:25:08.265Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9880,
+      "promptTokens": 306,
+      "completionTokens": 3268
+    }
+  }
+}

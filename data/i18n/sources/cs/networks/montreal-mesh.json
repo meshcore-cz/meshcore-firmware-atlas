@@ -1,0 +1,15 @@
+{
+  "resource": "network/montreal-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita nadšenců, kutilů a experimentátorů, kteří provozují MeshCore a Meshtastic na ostrově Montréal a v přilehlých předměstích. Její nasazení MeshCore využívá pevné opakovače k dosažení městského pokrytí, přičemž cílem je rozšířit pokrytí na Laval, Longueuil a širší oblast Velkého Montréalu.",
+      "sourceHash": "sha256:460bb38882b7f8608d104b7b2327de81e6748d1917f91c768e88bc1c5c1ba301",
+      "generatedAt": "2026-06-27T12:08:15.602Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13113,
+      "promptTokens": 185,
+      "completionTokens": 1338
+    }
+  }
+}

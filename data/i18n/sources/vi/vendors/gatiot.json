@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/gatiot",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nhà sản xuất phần cứng theo dõi GAT562.",
+      "sourceHash": "sha256:81c5392bc5030e71a58819ba54ab7da0168e624e57427962499ff0aa5b0045e1",
+      "generatedAt": "2026-06-27T16:43:01.116Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 23437,
+      "promptTokens": 139,
+      "completionTokens": 662
+    }
+  }
+}

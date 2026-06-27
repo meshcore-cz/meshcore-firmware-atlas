@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t096",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Низькоспоживча плата розробника nRF52840 + SX1262 LoRa з вбудованою GNSS, Bluetooth LE, живленням та послідовним портом USB-C, а також опціональним входом для сонячної панелі. Призначена для застосунків Meshtastic, MeshCore та LoRaWAN із зовнішніми антенами LoRa та GNSS з роз'ємами IPEX.",
+      "sourceHash": "sha256:6681fe13ff52517fb888e93a3cbf1fb1e81f3d5999c32829a359b4e1fc33e4f4",
+      "generatedAt": "2026-06-27T14:57:20.547Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4901,
+      "promptTokens": 191,
+      "completionTokens": 1548
+    }
+  }
+}

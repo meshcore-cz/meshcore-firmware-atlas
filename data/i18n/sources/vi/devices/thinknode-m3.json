@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m3",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị theo dõi nRF52840 + LR1110 kích thước bằng thẻ tín dụng dành cho Meshtastic/MeshCore hoặc LoRaWAN (phân biệt SKU firmware). Định vị GNSS, quét Wi-Fi và BLE beacon thông qua LR1110; tích hợp cảm biến nhiệt độ, độ ẩm và gia tốc. Trang bị pin 770 mAh, sạc từ tính, nút SOS và vỏ chuẩn IP66. Không có màn hình — chỉ cấu hình qua BLE.",
+      "sourceHash": "sha256:3425f830f10f4aca036786077d82d7a08dc1377b18eca5339714577401eab4c5",
+      "generatedAt": "2026-06-27T15:30:52.596Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24406,
+      "promptTokens": 211,
+      "completionTokens": 1434
+    }
+  }
+}

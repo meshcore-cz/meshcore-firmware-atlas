@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/meshcoreterm",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Doprovodný firmware s retro designem založený na MeshCore nabízí bohatou virtuální klávesnici, hardwarovou navigaci (D-pad, joystick, trackball) a funkce pro správu názvu zařízení, WiFi, BLE PIN, rádiových parametrů a konfigurace GPS. Podporuje více zařízení pomocí předkompilovaných binárních souborů a nevyžaduje online aktualizace.",
+      "sourceHash": "sha256:04b6dcb5dc77fbed177c28f20ff0a6d5e5834ddaa834110b12608a6cd92dd861",
+      "generatedAt": "2026-06-27T11:19:51.854Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10889,
+      "promptTokens": 188,
+      "completionTokens": 1176
+    },
+    "deviceNotes.sensecap-indicator-espnow": {
+      "value": "Seeed SenseCAP Indicator (varianta s TFT displejem).",
+      "sourceHash": "sha256:358d3cb4801701a5ca30bd44c1a404d5e945d3fa4ac70726d44fe4000c4ff570",
+      "generatedAt": "2026-06-27T11:20:00.054Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8200,
+      "promptTokens": 139,
+      "completionTokens": 720
+    },
+    "deviceNotes.thinknode-m3": {
+      "value": "Elecrow 3.5\" ThinkNode M3.",
+      "sourceHash": "sha256:c8d11c41466844ccc497d2796bd0d38e418741a5867f216fa1dfc4a62dc23d7a",
+      "generatedAt": "2026-06-27T11:20:06.122Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6068,
+      "promptTokens": 142,
+      "completionTokens": 539
+    },
+    "deviceNotes.thinknode-m5": {
+      "value": "Elecrow 7\" ThinkNode M5.",
+      "sourceHash": "sha256:1a99e1898b2b259887261b363e8233540d247a7085dabe8d0d6a738b0f6a70ac",
+      "generatedAt": "2026-06-27T11:20:15.367Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9244,
+      "promptTokens": 140,
+      "completionTokens": 413
+    },
+    "features": {
+      "value": "[\"Uživatelské rozhraní v retro stylu\",\"Obrazovková klávesnice s režimy velkých/malých písmen a symbolů\",\"Hardwarová navigace (D-pad, joystick, trackball T-Deck)\",\"Správa zařízení (název, WiFi, PIN pro BLE, parametry rádia, GPS)\",\"Stavový řádek se značkami přenosu a indikátorem baterie\",\"Trvalé ukládání pomocí NVS/Preferences\"]",
+      "sourceHash": "sha256:eefcd621537126a13a20b73612f742938cbe00b36b233d33bd0493d871a36639",
+      "generatedAt": "2026-06-27T12:31:39.004Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9547,
+      "promptTokens": 191,
+      "completionTokens": 801
+    }
+  }
+}

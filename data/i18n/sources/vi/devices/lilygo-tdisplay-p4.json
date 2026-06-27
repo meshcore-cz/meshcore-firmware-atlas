@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tdisplay-p4",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển ESP32-P4 tích hợp màn hình cảm ứng MIPI TFT 4.05″ (540×1168), SX1262 LoRa, L76K GNSS, camera MIPI, loa, micro và cảm biến IMU ICM20948. Module phụ ESP32-C6-MINI-1U hỗ trợ WiFi 6 và BLE 5.0. Sản phẩm có hai phiên bản màn hình AMOLED và TFT; tùy chọn mở rộng bàn phím cho phép thêm bàn phím QWERTY vật lý tích hợp vô tuyến CC1101/NRF24L01/NFC.",
+      "sourceHash": "sha256:8467ea029365a4b591a48b4b0fc69c34df36296267eee1ba6382871e789e5aca",
+      "generatedAt": "2026-06-27T15:37:15.114Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6819,
+      "promptTokens": 236,
+      "completionTokens": 1577
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/yetiwurks-basestation",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Venkovní základnová stanice a opakovač na platformě RAK WisBlock v krytí IP65. Zařízení je postaveno na startovacím kitu RAK19003 + RAK4631 a je vybaveno externí anténou, průchodkou USB-C a solárním vstupem. Místo integrované bateriové sady využívá vyjímatelné články 18650.",
+      "sourceHash": "sha256:3adb3696e48f340eee246f16029b2a800bfc47df058f007ef97b75c470d3ef7c",
+      "generatedAt": "2026-06-27T11:01:15.801Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

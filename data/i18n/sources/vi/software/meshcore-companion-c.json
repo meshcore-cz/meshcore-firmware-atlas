@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-companion-c",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thư viện client C99 di động dành cho giao thức serial của MeshCore Companion Radio, đi kèm lớp bọc Arduino C++ nhẹ cho máy chủ nhúng và hỗ trợ C trực tiếp cho các ứng dụng desktop, Linux, ESP-IDF và STM32.",
+      "sourceHash": "sha256:8c4078495fd327bc9ca40041b6d19f9adfd58c9bae8b75e4f782bfbf0250cc26",
+      "generatedAt": "2026-06-27T16:25:08.918Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4871,
+      "promptTokens": 170,
+      "completionTokens": 910
+    },
+    "tags": {
+      "value": "[\"SDK\",\"Giao thức\",\"Nhúng\",\"Arduino\"]",
+      "sourceHash": "sha256:ef484d50ce94b3be1b175b3a99952c8dba240f8091892878206564afe544e06b",
+      "generatedAt": "2026-06-27T16:25:20.798Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11879,
+      "promptTokens": 138,
+      "completionTokens": 462
+    },
+    "verificationNotes.the-github-repository-is-a-mirror-the-canonical-": {
+      "value": "Kho mã GitHub là bản sao; mã nguồn chính thức được lưu trữ trên SH3D Gitea.",
+      "sourceHash": "sha256:2a34310f336548064beac19391d90ac95917b4ee3bb6270aafc7e26932ca54a2",
+      "generatedAt": "2026-06-27T16:25:37.359Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16560,
+      "promptTokens": 149,
+      "completionTokens": 586
+    },
+    "verificationNotes.version-0-2-2-is-declared-in-library-properties-": {
+      "value": "Phiên bản 0.2.2 được khai báo trong library.properties; không có bản phát hành nào được công bố trên GitHub.",
+      "sourceHash": "sha256:5a47fb0605ffce21acfaf3c0e864c410e3b79d536c68bec79673e55c0fa46057",
+      "generatedAt": "2026-06-27T16:25:44.100Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6741,
+      "promptTokens": 148,
+      "completionTokens": 704
+    }
+  }
+}

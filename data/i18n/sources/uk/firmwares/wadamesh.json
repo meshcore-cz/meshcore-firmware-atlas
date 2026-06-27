@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/wadamesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Прошивка MeshCore із сенсорним інтерфейсом для LilyGo T-Deck / T-Deck Plus та Heltec V4 TFT (ESP32-S3), створена на базі LVGL. Виділена з meshcomod. Забезпечує повноцінне сенсорне керування пристроєм-супутником, включаючи екранну клавіатуру та підключення до WiFi.",
+      "sourceHash": "sha256:1510fcb84011e150978ce9fd83e9020e0fcc5336b027e9e1e188debccba13b08",
+      "generatedAt": "2026-06-27T15:39:08.480Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9646,
+      "promptTokens": 187,
+      "completionTokens": 1596
+    },
+    "features": {
+      "value": "[\"Сенсорний інтерфейс LVGL\", \"Екранна клавіатура\", \"Wi-Fi з'єднання з додатком-супутником\", \"Канали передачі USB + TCP\", \"Відгалужено від meshcomod (той самий супровідник)\"]",
+      "sourceHash": "sha256:2a269869ac6f355b87e448e27b5c77275563ad5e446dd9b2a0bc49fc9fd57103",
+      "generatedAt": "2026-06-27T15:39:34.285Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25805,
+      "promptTokens": 159,
+      "completionTokens": 1211
+    }
+  }
+}

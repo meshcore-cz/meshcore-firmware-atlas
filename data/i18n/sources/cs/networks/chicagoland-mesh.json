@@ -1,0 +1,15 @@
+{
+  "resource": "network/chicagoland-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní síť nadšenců pro MeshCore, Meshtastic, Reticulum a LoRa buduje v oblasti Chicagoland udržitelnou a decentralizovanou off-grid meshovou síť. Součástí projektu je analyzátor na bázi CoreScope, živá mapa, průvodci rychlým startem a koordinace přes Discord.",
+      "sourceHash": "sha256:bf31415233782e90a14065e4001e8ede6b0fe3eae94a0fe9b96729d83150fa4d",
+      "generatedAt": "2026-06-27T12:02:14.948Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11550,
+      "promptTokens": 179,
+      "completionTokens": 1489
+    }
+  }
+}

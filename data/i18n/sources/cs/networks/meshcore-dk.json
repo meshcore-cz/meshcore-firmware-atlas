@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-dk",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Dánská komunita MeshCore buduje napříč Dánskem offline meshovou síť LoRa s dlouhým dosahem.",
+      "sourceHash": "sha256:d007049881a2c75c3b1df09ae5f76a88c14c157686ad8e3326763a2a680875e8",
+      "generatedAt": "2026-06-27T12:03:24.558Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25928,
+      "promptTokens": 145,
+      "completionTokens": 746
+    }
+  }
+}

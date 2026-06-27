@@ -1,0 +1,15 @@
+{
+  "resource": "network/west-coast-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní uzel budující největší decentralizovanou mesh síť na západním pobřeží pomocí MeshCore. Síť tvořená uživateli pokrývající Kalifornii, Oregon a Washington je určena pro komunikaci mimo běžné sítě, řešení mimořádných událostí, outdoorové aktivity a sítě senzorů IoT v americkém pásmu 915 MHz.",
+      "sourceHash": "sha256:b21c6c54c8425fcad4e74c50e51d75687486273ee05bb2f2766be0eb2baf8524",
+      "generatedAt": "2026-06-27T12:14:18.796Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15612,
+      "promptTokens": 177,
+      "completionTokens": 1570
+    }
+  }
+}

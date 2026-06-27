@@ -1,0 +1,15 @@
+{
+  "resource": "device/tiny-relay",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Alvo de relé mínimo STM32WLE5CC para compilações do MeshCore, projetado para pequenos nós sempre ativos e para experimentação com um MCU de baixo custo com suporte a LoRa.",
+      "sourceHash": "sha256:86634f08e892c0f289f23c00666a769ae1440a46721a3d9f680d9bcd3e77e160",
+      "generatedAt": "2026-06-27T14:20:52.013Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4042,
+      "promptTokens": 160,
+      "completionTokens": 1115
+    }
+  }
+}

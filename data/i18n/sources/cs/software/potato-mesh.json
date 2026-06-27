@@ -1,0 +1,69 @@
+{
+  "resource": "software/potato-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Federovaný dashboard pro vlastní hostování určený lokálním komunitám MeshCore a Meshtastic. Propojuje mapy uzlů, chat, telemetrii, sousední uzly a trasování cest se vzdálenými sběrači rádiových dat a veřejným API.",
+      "sourceHash": "sha256:d6987237dca3d371651dcd6589e3c75c80fe0e24c6d832b22e01d3f70f21c579",
+      "generatedAt": "2026-06-27T11:49:09.428Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15004,
+      "promptTokens": 168,
+      "completionTokens": 1525
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Mapa komunitních uzlů, chat a řídicí panel telemetrie",
+      "sourceHash": "sha256:6eba836ddc0e30a7cc51a14ead7029ad02d1f3ca9e19a5f22a1bf89f4814cc22",
+      "generatedAt": "2026-06-27T11:49:15.387Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5959,
+      "promptTokens": 137,
+      "completionTokens": 617
+    },
+    "screenshots.matrix-bridge.png.caption": {
+      "value": "Matrix bridge pro přeposílání zpráv v síti mesh",
+      "sourceHash": "sha256:24fea72a24445b01e0ae4ceb8158da9b637499260868620c7e099dd8cd2c24b6",
+      "generatedAt": "2026-06-27T11:49:22.424Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7036,
+      "promptTokens": 134,
+      "completionTokens": 753
+    },
+    "verificationNotes.meshcore-ingestors-connect-to-companion-radios-o": {
+      "value": "Ingestory MeshCore se připojují k přidruženým rádiím přes BLE, sériové rozhraní nebo TCP a odesílají normalizovaná data do webové služby.",
+      "sourceHash": "sha256:43cf8c7a1c07bb5508cc2f0fcad421711971a7f814c7cf45503528a2e12d5bf4",
+      "generatedAt": "2026-06-27T11:49:29.584Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7159,
+      "promptTokens": 152,
+      "completionTokens": 927
+    },
+    "verificationNotes.federation-is-enabled-by-default-but-can-be-disa": {
+      "value": "Federace je ve výchozím nastavení povolena, ale pro izolovaná nebo privátní nasazení ji lze zakázat.",
+      "sourceHash": "sha256:434e7e0c36650ba3acfebb88942b2adad77526fd2bf74ea65f9eba4002e9a72f",
+      "generatedAt": "2026-06-27T11:49:34.846Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5261,
+      "promptTokens": 145,
+      "completionTokens": 656
+    },
+    "verificationNotes.the-mobile-reader-and-matrix-bridge-are-still-de": {
+      "value": "Mobilní čtečka a Matrix bridge se stále uvádějí jako rozpracované.",
+      "sourceHash": "sha256:e84efa0b42d2db779a80dc7fbfbb2600736252b2b639d0928fce509a5afcef1e",
+      "generatedAt": "2026-06-27T11:49:42.390Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7545,
+      "promptTokens": 143,
+      "completionTokens": 749
+    },
+    "tags": {
+      "value": "[\"federovaný\", \"komunitní nástěnka\", \"víceprotokolový\", \"vlastní hostování\", \"Matrix\"]",
+      "sourceHash": "sha256:4ea88e8f1acfb0c31bf7ad5658960cb00b5488df59928ec01ffaf30d49a8a66d",
+      "generatedAt": "2026-06-27T13:48:07.539Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14533,
+      "promptTokens": 147,
+      "completionTokens": 955
+    }
+  }
+}

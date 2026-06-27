@@ -1,0 +1,12 @@
+{
+  "resource": "device/zindello-ultrapeater",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "LoRa opakovač HAT s výkonem 1 W, navržený pro nasazení na Luckfox Pico Ultra/W. Obsahuje rádiový modul EBYTE E22/E22P s integrovaným LNA a volitelným pásmovým filtrem. Zařízení lze napájet přes PoE nebo USB-C, je připravené pro montáž na stožár a dodává se s instalačními skripty pyMC_Repeater.",
+      "sourceHash": "sha256:4f7e7ec14c7379ec05bc08a2fc5bfe3a25e7d7cb24595fd312ab14cd48dc3a9d",
+      "generatedAt": "2026-06-27T11:01:25.363Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

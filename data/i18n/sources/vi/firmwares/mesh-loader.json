@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/mesh-loader",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Trình khởi động kép cài đặt bản image đã chỉnh sửa của MeshCore và Meshtastic vào các phân vùng ESP32 riêng biệt, cho phép người dùng chuyển đổi firmware khi khởi động mà không cần nạp lại.",
+      "sourceHash": "sha256:28921c48b789c353eb7a00aaed9efcaa0229c1514aa96513834844fe88776510",
+      "generatedAt": "2026-06-27T15:54:27.727Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4741,
+      "promptTokens": 159,
+      "completionTokens": 835
+    },
+    "features": {
+      "value": "[\"Khởi động kép MeshCore và Meshtastic\",\"Hệ thống tệp firmware riêng biệt\",\"Ghi nhớ lựa chọn khởi động\"]",
+      "sourceHash": "sha256:d25f84390a1ab4eb5d7d3267733c5595b5044b1e1297f7b98aab3697f110bc87",
+      "generatedAt": "2026-06-27T15:54:31.571Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3842,
+      "promptTokens": 150,
+      "completionTokens": 638
+    }
+  }
+}

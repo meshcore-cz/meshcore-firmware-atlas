@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-wsl3",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní modul ESP32-S3 + SX1262 LoRa s Wi-Fi a BLE ve formátu s pájecími otvory pro integraci do vlastních produktů. Revize V3 přináší rozhraní USB-C a menší úsporné provedení než klasické desky WiFi LoRa 32.",
+      "sourceHash": "sha256:ef34335d4d8d28cf4f7e018d3d1180e129fb4282852142e54a60ce6f32676f40",
+      "generatedAt": "2026-06-27T10:49:02.510Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

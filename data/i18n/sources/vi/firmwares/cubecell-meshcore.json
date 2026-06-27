@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/cubecell-meshcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware bộ tiếp sóng tối giản, tương thích MeshCore dành cho bo mạch Heltec CubeCell (HTCC-AB01, AB02, AC01). Mở rộng vùng phủ sóng mesh thông qua định tuyến flood, hỗ trợ quản lý từ xa có xác thực qua ứng dụng đồng hành và gửi báo cáo tình trạng tự động hàng ngày. Tối ưu hóa cho các điểm triển khai dùng năng lượng mặt trời.",
+      "sourceHash": "sha256:962a2a8c9c5bbe9737776edc967eebc5098cec7a880e788e547b9a1a8b859da1",
+      "generatedAt": "2026-06-27T15:47:48.312Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5549,
+      "promptTokens": 186,
+      "completionTokens": 866
+    },
+    "features": {
+      "value": "[\"Trạm lặp định tuyến phát tán\",\"Quản lý từ xa có xác thực qua ứng dụng đồng hành\",\"Báo cáo tình trạng tự động hàng ngày\",\"Tối ưu hóa năng lượng mặt trời\",\"Hỗ trợ bo mạch CubeCell (HTCC-AB01, AB02, AC01)\"]",
+      "sourceHash": "sha256:35e1958b155662be5ffaa7429baa0d3d15b7df4342dd39610fa62df788229b78",
+      "generatedAt": "2026-06-27T15:47:52.881Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4569,
+      "promptTokens": 170,
+      "completionTokens": 793
+    }
+  }
+}

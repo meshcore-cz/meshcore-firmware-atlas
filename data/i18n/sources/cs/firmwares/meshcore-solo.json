@@ -1,0 +1,60 @@
+{
+  "resource": "firmware/meshcore-solo",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Fork referenčního firmwaru pro rádiový modul MeshCore s rozšířenými funkcemi a vylepšeným uživatelským rozhraním. Nabízí GPS navigaci (trasové body, kompas, nahrávání stop s exportem do GPX), úsporu energie baterie (hardwarový RX duty-cycle a adaptivní řízení výkonu), rychlé vytáčení oblíbených kontaktů, rozšířenou podporu jazyků s nativním vykreslováním Unicode, stav doručení zpráv, zámek obrazovky, bota pro automatické odpovědi, režim opakovače s diagnostikou a další funkce – vše optimalizováno pro ovládání výhradně pomocí joysticku na malých displejích.",
+      "sourceHash": "sha256:f05ef686d5e6d65d9df251bc342daff86fc49b3ff764618735d32f9cc1975193",
+      "generatedAt": "2026-06-27T11:18:39.305Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10599,
+      "promptTokens": 217,
+      "completionTokens": 1263
+    },
+    "deviceNotes.wio-tracker-l1": {
+      "value": "OLED varianta (SSD1306/SH1106 128x64)",
+      "sourceHash": "sha256:94011346ca4585f46052bcb5db3409b354c81e3cbfe27b97ff86c7404561cb5b",
+      "generatedAt": "2026-06-27T11:18:44.278Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4973,
+      "promptTokens": 146,
+      "completionTokens": 439
+    },
+    "deviceNotes.wio-tracker-l1-pro": {
+      "value": "Varianta s OLED — stejný cíl firmwaru jako wio-tracker-l1",
+      "sourceHash": "sha256:9168079ede442f9ebae3f9ed382a45939291c4dc4eb4ad542557bf255b6b7a2e",
+      "generatedAt": "2026-06-27T11:18:46.879Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2601,
+      "promptTokens": 143,
+      "completionTokens": 240
+    },
+    "deviceNotes.wio-tracker-l1-eink": {
+      "value": "E-ink varianta (GxEPD2 250x122)",
+      "sourceHash": "sha256:f91d9dccff6b1fd7ea761083860f6f1e5622685f6b5cd86b8a37f00f3bad5a89",
+      "generatedAt": "2026-06-27T11:18:51.183Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4304,
+      "promptTokens": 144,
+      "completionTokens": 485
+    },
+    "deviceNotes.gatiot-gat562-30s": {
+      "value": "GAT562 30S Mesh sada",
+      "sourceHash": "sha256:4d53a29b5836fdedefd0af1e87bddc89be52e67222a185847ac87f7b6b1bd254",
+      "generatedAt": "2026-06-27T11:19:04.345Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13159,
+      "promptTokens": 138,
+      "completionTokens": 777
+    },
+    "features": {
+      "value": "[\"Rozšířená podpora Unicode s fontem Lemon a nativním zadáváním textu\",\"Sada pro GPS navigaci (navigační body, kompas, zpětná stopa, záznam tras)\",\"Export do GPX přes sériové USB\",\"Snímání obrazovky přes USB\",\"Rychlá volba pro připnuté kontakty\",\"Indikátory stavu doručení zpráv\",\"Automatické opětovné odesílání přímých zpráv a odstraňování duplicit příchozích zpráv\",\"Zamykání obrazovky se zobrazením času a senzorů\",\"Bot pro automatické odpovědi reagující na příkazy\",\"Automatické inzerování pro sdílení polohy\",\"Úspora baterie (střídač příjmu RX + APC)\",\"Režim doprovodného opakovače s diagnostikou\",\"Funkce Ping v okolních uzlech\",\"Vysílání SOS s nastavitelným cílem\",\"Režim nerušit pro potlačení zvuků\",\"Označit vše jako přečtené na úrovni typu\",\"Počet nepřečtených zpráv na uzamčené obrazovce\",\"Domovská stránka skeneru kanálů\",\"Řazení kontaktů podle vzdálenosti\",\"Obrazovka se statistikami signálu\",\"Zkušební vzor displeje\",\"Předvolby profilů napájení\",\"Webová aplikace Solo Tools pro snímání obrazovky a export do GPX (https://marekzegare4.github.io/Solo-tools/)\"]",
+      "sourceHash": "sha256:3384bdea7df512c64d2e356001593cf8a5fa7de1ff62e61df6bb73487160953f",
+      "generatedAt": "2026-06-27T12:30:45.068Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 40365,
+      "promptTokens": 306,
+      "completionTokens": 2453
+    }
+  }
+}

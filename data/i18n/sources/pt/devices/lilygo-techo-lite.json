@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-techo-lite",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó Meshtastic/MeshCore leve com nRF52840 + SX1262 e ecrã e-paper de 1,22 polegadas para um consumo de energia ultrabaixo. Design modular de núcleo e base, com capa opcional, carregamento solar e módulo GPS L76K externo. Apenas Bluetooth 5 — sem Wi-Fi. A base opcional KeyShield adiciona teclado, altifalante e microfone.",
+      "sourceHash": "sha256:0acaf98be88ec6c3f5af3754cd4f5f5f02e7d67e030b97f98727f9bb18e14d29",
+      "generatedAt": "2026-06-27T14:13:31.097Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18234,
+      "promptTokens": 203,
+      "completionTokens": 1185
+    }
+  }
+}

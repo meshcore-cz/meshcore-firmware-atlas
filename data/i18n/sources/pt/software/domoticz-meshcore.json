@@ -1,0 +1,60 @@
+{
+  "resource": "software/domoticz-meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Integração para o Domoticz que expõe telemetria de nós MeshCore, contatos, mensagens, mapas e análises históricas de rádio como dispositivos nativos, painéis e entradas de automação.",
+      "sourceHash": "sha256:dbf3307ce13c4167dbedf3f36dc8b722bfd775f8562a8c7e29330f8b1fcd2d99",
+      "generatedAt": "2026-06-27T14:29:01.552Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3263,
+      "promptTokens": 158,
+      "completionTokens": 899
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Painel do Domoticz MeshCore",
+      "sourceHash": "sha256:10198a1398373ef89ebd3e9883fd9d96b1bcfccf18cc428ce3118b8810caf9a8",
+      "generatedAt": "2026-06-27T14:29:03.950Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2398,
+      "promptTokens": 135,
+      "completionTokens": 570
+    },
+    "screenshots.topology.png.caption": {
+      "value": "Topologia em malha e caminhos roteados",
+      "sourceHash": "sha256:e2062bcd716afaf55aff6ae4cff11e84e7a1e7709e0e5c93d86feae372cb1054",
+      "generatedAt": "2026-06-27T14:29:05.866Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1915,
+      "promptTokens": 134,
+      "completionTokens": 419
+    },
+    "screenshots.history.png.caption": {
+      "value": "Análise histórica de RSSI, SNR e pacotes",
+      "sourceHash": "sha256:198294fc545ad718ef930b26342d6b067e93df93407bb7d7e38df22bc1b392fb",
+      "generatedAt": "2026-06-27T14:29:08.018Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2152,
+      "promptTokens": 139,
+      "completionTokens": 477
+    },
+    "screenshots.firehose.png.caption": {
+      "value": "Fluxo de pacotes recebidos em tempo real",
+      "sourceHash": "sha256:8a84b87d917dc8bf2d55af3735ff89d354a5ae5b65c1068c0bd46378406597f5",
+      "generatedAt": "2026-06-27T14:29:09.802Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1783,
+      "promptTokens": 134,
+      "completionTokens": 387
+    },
+    "tags": {
+      "value": "[\"domoticz\",\"automação-residencial\",\"painel\",\"dzvents\"]",
+      "sourceHash": "sha256:0b19a769b1625d44012513c27e774a43092b4ff18265d080ea517a6494823d4d",
+      "generatedAt": "2026-06-27T14:29:13.564Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3761,
+      "promptTokens": 143,
+      "completionTokens": 895
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/mclite",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Odlehčený firmware komunikátoru pro provoz mimo síť určený pro zařízení LilyGo T-Deck Plus a T-Watch Ultra. Je vytvořen speciálně pro nouzovou a outdoorovou komunikaci – nevyžaduje internet ani mobilní síť. Nabízí konfiguraci přes SD kartu, webový flasher a podporu room serverů. Je plně kompatibilní s aplikacemi MeshCore.",
+      "sourceHash": "sha256:bf9588a56b964d087906f1adc025928ed0580aee45ccead56573d78d497d9ead",
+      "generatedAt": "2026-06-27T11:15:16.767Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "T-Deck Plus — hlavní cílové zařízení s klávesnicí QWERTY, trackballem a GPS.",
+      "sourceHash": "sha256:26f79d48321170f5bb0f79014abec8cbfdb66a941238b8d816e2351eaa328409",
+      "generatedAt": "2026-06-27T11:15:21.323Z",
+      "model": "glm-5.2:cloud"
+    },
+    "deviceNotes.lilygo-twatch-ultra": {
+      "value": "T-Watch Ultra — náramkové hodinky s AMOLED dotykovým displejem.",
+      "sourceHash": "sha256:2cb2634232db27b68aeefc2a8ccc274033588e4e60260ca140f8616a68e55997",
+      "generatedAt": "2026-06-27T11:15:35.151Z",
+      "model": "glm-5.2:cloud"
+    },
+    "features": {
+      "value": "[\"Webový flasher (Chrome/Edge)\",\"Konfigurace SD karty (jeden nastaví, zkopíruje všem)\",\"Podpora serveru pro místnosti (až 8)\",\"Klávesnice na obrazovce\",\"Podpora GPS\",\"Žádné účty, žádné párování, žádné nastavování pro každé zařízení\"]",
+      "sourceHash": "sha256:f4940ce55c19fca46848d92f34f71e0db9ed2244b0dd7c39f84ff37ab3415449",
+      "generatedAt": "2026-06-27T12:27:47.398Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15224,
+      "promptTokens": 178,
+      "completionTokens": 915
+    }
+  }
+}

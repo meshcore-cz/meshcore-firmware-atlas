@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-superbase-kit",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Kit Meshtastic autónomo e pronto a usar, construído a partir da Base Uno e Super IO, com ecrã OLED, painel de navegação, bússola digital, GPS/BDS, buzzer, caixa impressa em 3D, coldre e bateria.",
+      "sourceHash": "sha256:7a55725c33e01bdac51b7782cdb5426c514477fbc564c6c89fd247d76af86a21",
+      "generatedAt": "2026-06-27T14:17:35.321Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16135,
+      "promptTokens": 175,
+      "completionTokens": 956
+    }
+  }
+}

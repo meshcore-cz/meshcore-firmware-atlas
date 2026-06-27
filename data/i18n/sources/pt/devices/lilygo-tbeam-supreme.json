@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tbeam-supreme",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rastreador LoRa ESP32-S3 + SX1262 com GNSS L76K, ecrã OLED SH1106 e um conjunto abrangente de sensores (IMU QMI8658, magnetómetro QMC6310, BME280, RTC PCF8563). Gestão de energia AXP2101, conector M.2 e expansão micro-SD. USB-C com ponte CH9102.",
+      "sourceHash": "sha256:fa59d9bc7baf64fbd5b4485a2017ae05107046332668046b097120689d8d11d4",
+      "generatedAt": "2026-06-27T14:10:58.791Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 43759,
+      "promptTokens": 212,
+      "completionTokens": 1857
+    }
+  }
+}

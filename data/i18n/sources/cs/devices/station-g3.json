@@ -1,0 +1,12 @@
+{
+  "resource": "device/station-g3",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Modulární deska Station s dceřinou deskou s MCU ESP32-S3, RF dceřinou deskou a 1,3palcovým OLED displejem. Je navržena pro napájení z externího zdroje 9-19 V a kompatibilitu firmwaru s profily Station G2.",
+      "sourceHash": "sha256:ac46a2814408df5d6baf23b50acd3b6177442b6240dd731a1f8a15931a5d047c",
+      "generatedAt": "2026-06-27T11:00:45.387Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

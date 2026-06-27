@@ -1,0 +1,15 @@
+{
+  "resource": "device/station-g2",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dispositivo de rede mesh ESP32-S3 de classe estação com front-end LoRa de alta potência, otimizado para maior sensibilidade de recepção e capacidade de transmissão de 35 dBm. Projetado para instalações fixas ou montagem em veículos com antena externa.",
+      "sourceHash": "sha256:be61d9f55d3d9d29b8a5c577cd206c31f91d581720ec1d9fc17abbd13236ea0b",
+      "generatedAt": "2026-06-27T14:21:00.898Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3341,
+      "promptTokens": 172,
+      "completionTokens": 946
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-e290",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата розробника ESP32-S3R8 з E-Ink-дисплеєм, опціональним модулем SX1262 LoRa, 2×20-контактним гніздовим роз'ємом, сумісним з Raspberry Pi, та портом датчиків QuickLink. Сумісна з Meshtastic/MeshCore; LoRa є опцією під час збирання, тому вона наявна не в усіх модифікаціях.",
+      "sourceHash": "sha256:aab556b44be6a2e20e8b84f24b14998437b32bcaf85b03c19364da17bca2b7c1",
+      "generatedAt": "2026-06-27T14:57:58.974Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5372,
+      "promptTokens": 191,
+      "completionTokens": 1270
+    }
+  }
+}

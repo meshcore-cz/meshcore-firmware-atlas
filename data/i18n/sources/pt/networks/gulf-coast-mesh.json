@@ -1,0 +1,15 @@
+{
+  "resource": "network/gulf-coast-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore construída por voluntários, baseada na Louisiana e em expansão pela Costa do Golfo dos EUA, com monitoramento em tempo real pelo CoreScope, ferramentas de configuração, documentação local, reuniões periódicas e coordenação no Discord.",
+      "sourceHash": "sha256:8ec4552bf2be826547bc7659dec0b9da6acaf1dd2199b6a20aeea1c9b6099a96",
+      "generatedAt": "2026-06-27T14:46:35.524Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3018,
+      "promptTokens": 164,
+      "completionTokens": 794
+    }
+  }
+}

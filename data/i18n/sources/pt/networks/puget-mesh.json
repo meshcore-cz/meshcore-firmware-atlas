@@ -1,0 +1,15 @@
+{
+  "resource": "network/puget-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade liderada por voluntários que implanta redes de comunicação off-grid na região de Puget Sound, incluindo MeshCore, Meshtastic e AREDN. Focada em preparação para desastres e resposta a emergências, com expansão ativa do MeshCore na predefinição de 915 MHz para EUA/Canadá, atendendo Seattle, Tacoma e áreas vizinhas.",
+      "sourceHash": "sha256:b2fd6bbe14d828f4ee0242e48be1405ad835bcd06c1f696f5d8dd4e66dbf097a",
+      "generatedAt": "2026-06-27T14:48:53.513Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3480,
+      "promptTokens": 191,
+      "completionTokens": 1071
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t114",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển nhỏ gọn nRF52840 + SX1262 dành cho Meshtastic/MeshCore và LoRaWAN. Tùy chọn màn hình TFT 1.14-inch và mô-đun GNSS L76K, đầu nối kép cho pin và tấm pin mặt trời, ăng-ten LoRa IPEX-1, cùng cổng USB-C. Không có pin tích hợp.",
+      "sourceHash": "sha256:d41173b5256216872fd4295334b059d4afa9f73ec7c69fa383afaed144d44767",
+      "generatedAt": "2026-06-27T15:34:06.855Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6711,
+      "promptTokens": 194,
+      "completionTokens": 1197
+    }
+  }
+}

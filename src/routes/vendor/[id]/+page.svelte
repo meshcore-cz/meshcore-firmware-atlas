@@ -1,5 +1,7 @@
 <script>
   import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import RecordFooter from '$lib/RecordFooter.svelte';
   import BackLink from '$lib/BackLink.svelte';
   import { pluralize } from '$lib/format.js';
@@ -27,7 +29,7 @@
 
 <Seo title={v.name} description={vendorDescription} image={ogImageFor('vendor', v.id)} jsonLd={vendorJsonLd} />
 
-<BackLink href="{base}/vendors/">All vendors</BackLink>
+<BackLink href={href('/vendors/')}>{m.back_vendors()}</BackLink>
 
 <header class="mb-7 flex flex-wrap items-center gap-6">
   <div class="flex h-[128px] w-[128px] shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white p-3.5">
@@ -55,11 +57,11 @@
 </header>
 
 <section class="mb-7">
-  <h2 class="border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Devices ({data.devices.length})</h2>
+  <h2 class="border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.vd_devices_title({ count: data.devices.length })}</h2>
   {#if data.devices.length}
     <div class="mt-3 grid gap-2 [grid-template-columns:repeat(auto-fill,minmax(240px,1fr))]">
       {#each data.devices as d (d.id)}
-        <a class="flex items-center gap-3 rounded-xl border border-edge bg-elev px-3.5 py-2.5 hover:border-accent" href="{base}/device/{d.id}/">
+        <a class="flex items-center gap-3 rounded-xl border border-edge bg-elev px-3.5 py-2.5 hover:border-accent" href={href(`/device/${d.id}/`)}>
           <div class="flex h-[46px] w-[46px] shrink-0 items-center justify-center overflow-hidden rounded-lg bg-elev2">
             {#if d.imageUrl}<img src={d.imageUrl} alt={d.name} loading="lazy" class="max-h-full max-w-full object-contain" />{/if}
           </div>
@@ -71,7 +73,7 @@
       {/each}
     </div>
   {:else}
-    <p class="mt-3 text-dim">No devices recorded for this vendor yet.</p>
+    <p class="mt-3 text-dim">{m.vd_no_devices()}</p>
   {/if}
 </section>
 

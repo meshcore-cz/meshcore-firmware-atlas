@@ -1,0 +1,15 @@
+{
+  "resource": "network/saarmesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade regional do MeshCore dedicada à construção de uma infraestrutura LoRa resiliente em todo o Saarland e à coordenação com a região mais ampla de SaarLorLux. O projeto disponibiliza documentação técnica, abrangência regional, um mapa da rede em tempo real e suporte da comunidade.",
+      "sourceHash": "sha256:e4c00ff2881228d4a4ec6fb7a8dc6cfa8c7dd61523d4a6c965d2303808bcc3c8",
+      "generatedAt": "2026-06-27T14:49:08.105Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3302,
+      "promptTokens": 171,
+      "completionTokens": 913
+    }
+  }
+}

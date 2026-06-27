@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshtower-v2",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó solar externo de alta resistência baseado na tecnologia Heltec MeshSolar, com painel de 10 W, bateria integrada, caixa de alumínio IP66 e antena SMA externa. Vendido nas bandas de 868 MHz e 915 MHz, com opções LoRa de 22 dBm ou 30 dBm e GNSS opcional.",
+      "sourceHash": "sha256:90b6c2ed85b790c31ac8644edae65c49da2bff25c8a2bca4ed4e8087a73d9d55",
+      "generatedAt": "2026-06-27T14:03:44.643Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20811,
+      "promptTokens": 193,
+      "completionTokens": 934
+    }
+  }
+}

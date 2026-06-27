@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-rheinland",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Німецька спільнота LoRa mesh для Рейнланду та прилеглих регіонів західної Німеччини, що охоплює Meshtastic та MeshCore. Включає локальну документацію MeshCore, налаштування EU/UK Narrow, регіональне охоплення Rheinland, інтерактивну карту та аналізатор трафіку CoreScope, а також координацію через WhatsApp.",
+      "sourceHash": "sha256:d728a6384b7f594fbc0385b8d76d2a668551a659f93111cc49357a2685c4f498",
+      "generatedAt": "2026-06-27T16:52:57.712Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6758,
+      "promptTokens": 179,
+      "completionTokens": 1310
+    }
+  }
+}

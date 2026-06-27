@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-11310",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Основний модуль WisBlock із RP2040 та SX1262 LoRa для створення компактних mesh-мереж на базових платах WisBlock. Вбудовані Wi-Fi та BLE відсутні; модуль розроблено для використання разом із комунікаційними модулями WisBlock та зовнішніми антенами.",
+      "sourceHash": "sha256:bd06a20362408e809fc1bdb07dd3c3c6020c1d79a616ca5f792c188866101591",
+      "generatedAt": "2026-06-27T15:00:47.896Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3114,
+      "promptTokens": 174,
+      "completionTokens": 849
+    }
+  }
+}

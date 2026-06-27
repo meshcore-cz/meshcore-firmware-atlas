@@ -1,0 +1,15 @@
+{
+  "resource": "network/australia-narrow",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Офіційне попереднє налаштування радіо для додатка MeshCore — 916.575MHz / SF7 / BW62.5 / CR8.",
+      "sourceHash": "sha256:7aacf32295ed785fe237263aafd04fb89874ac1d59dd8cccc454ec5e3e131335",
+      "generatedAt": "2026-06-27T16:46:44.535Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8921,
+      "promptTokens": 155,
+      "completionTokens": 950
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/greater-boston-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Волонтерська спільнота MeshCore та Meshtastic розбудовує стійкий автономний зв'язок у Массачусетсі та прилеглих регіонах Нової Англії. Найактивніший трафік у масштабах штату працює в MeshCore із використанням пресету USA/Canada.",
+      "sourceHash": "sha256:40d9619a35ced343277154f716adc03eff3b8ba7e085f4120beb0a0cb25f5433",
+      "generatedAt": "2026-06-27T16:50:54.074Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13948,
+      "promptTokens": 168,
+      "completionTokens": 974
+    }
+  }
+}

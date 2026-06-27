@@ -1,0 +1,69 @@
+{
+  "resource": "software/meshcore-signal-tester",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Nástroj pro analýzu signálu pro web a Android určený pro doprovodná zařízení MeshCore a opakovače. Nabízí seskupený příjem paketů, historii RSSI/SNR, statistiky opakovačů, 3D mapování s GPS souřadnicemi a zachytávání dat do CSV.",
+      "sourceHash": "sha256:b76346c1faf3603909ceef9a39b9235ce32ab38eee8432f253e6e504fd527636",
+      "generatedAt": "2026-06-27T11:38:21.895Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14938,
+      "promptTokens": 169,
+      "completionTokens": 1615
+    },
+    "screenshots.charts.webp.caption": {
+      "value": "Statistiky opakovače a historie RSSI/SNR",
+      "sourceHash": "sha256:b921ad54a85ec37470672ffc97e99e683d0fcf9b560e62c1707d4d9d203c6aaa",
+      "generatedAt": "2026-06-27T11:38:24.775Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2879,
+      "promptTokens": 138,
+      "completionTokens": 291
+    },
+    "screenshots.3dmap.webp.caption": {
+      "value": "3D mapa signálu s GPS souřadnicemi",
+      "sourceHash": "sha256:d9d7f372bd6c6c009e9ccf2ec31aab806b7fe74bb3a9a3cc30cca13a2b41b447",
+      "generatedAt": "2026-06-27T11:38:31.196Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6420,
+      "promptTokens": 137,
+      "completionTokens": 668
+    },
+    "screenshots.packets.webp.caption": {
+      "value": "Seskupené pakety s dekódovanými podrobnostmi",
+      "sourceHash": "sha256:a399a8d012ff9b2c29d40a44f2c97551f8e7a5b7c5fbccaec0b1f16754d2a332",
+      "generatedAt": "2026-06-27T11:38:36.798Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5602,
+      "promptTokens": 135,
+      "completionTokens": 451
+    },
+    "verificationNotes.the-android-app-adds-background-capture-and-raw-": {
+      "value": "Aplikace pro Android doplňuje firmware doprovodného modulu WiFi o zachytávání na pozadí a přímá TCP spojení.",
+      "sourceHash": "sha256:63c6cc13b24e7f1fce97f036a40723716805058b855dfd04f2ea614b2a65fb59",
+      "generatedAt": "2026-06-27T11:38:51.537Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14739,
+      "promptTokens": 144,
+      "completionTokens": 954
+    },
+    "verificationNotes.browser-bluetooth-and-serial-support-depends-on-": {
+      "value": "Podpora Bluetooth a sériových portů závisí na konkrétním prohlížeči a platformě.",
+      "sourceHash": "sha256:cac261d316db620be6aa71b5db5c4ade6f749ced361bc642af7f3529e3358786",
+      "generatedAt": "2026-06-27T11:39:05.676Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14138,
+      "promptTokens": 141,
+      "completionTokens": 1788
+    },
+    "tags": {
+      "value": "[\"testování signálu\",\"terénní nástroj\",\"threejs\",\"zachytávání paketů\"]",
+      "sourceHash": "sha256:6594c6c357bb5ffa81ccf6bd490d1e14cf15964426a9da19810e644a13fd4dca",
+      "generatedAt": "2026-06-27T13:43:17.176Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 21918,
+      "promptTokens": 143,
+      "completionTokens": 1024
+    }
+  }
+}

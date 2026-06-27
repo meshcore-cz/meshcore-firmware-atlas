@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-ha",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спеціальна інтеграція для Home Assistant, призначена для моніторингу та керування вузлами MeshCore через USB, BLE або TCP, із датчиками, службами, діагностикою та опціональною підтримкою завантаження карт.",
+      "sourceHash": "sha256:3b8c26928eae3bd2d6e93644f8a33b5a034c681e1bff56369cc8ae1289bd15bf",
+      "generatedAt": "2026-06-27T15:50:05.081Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6986,
+      "promptTokens": 159,
+      "completionTokens": 1110
+    },
+    "tags": {
+      "value": "[\"Розумний дім\",\"HACS\",\"Home Assistant\"]",
+      "sourceHash": "sha256:d42e3c990c4de5863d1245291a4c2fc9507bd82d17df4ef5dfa7e9c385324b8e",
+      "generatedAt": "2026-06-27T15:50:11.449Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6368,
+      "promptTokens": 140,
+      "completionTokens": 413
+    },
+    "verificationNotes.readme-labels-the-integration-as-work-in-progres": {
+      "value": "У README зазначено, що інтеграція перебуває в процесі розробки, а BLE ще не пройшов ретельного тестування.",
+      "sourceHash": "sha256:7762165f79adc264ff5919fd50cf3e60f72559e6eb4f603a3c96c4f51a6d6a28",
+      "generatedAt": "2026-06-27T15:50:15.875Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4426,
+      "promptTokens": 146,
+      "completionTokens": 771
+    }
+  }
+}

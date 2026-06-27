@@ -1,0 +1,15 @@
+{
+  "resource": "network/high-desert-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede comunitária de comunicação de emergência que atende a região do alto deserto do sul da Califórnia, incluindo Victorville, Lancaster, Apple Valley, Palmdale, Phelan e Wrightwood. A comunidade mais ampla oferece suporte a várias tecnologias de rede em malha LoRa, e o tráfego ativo do MeshCore é monitorado por uma instância regional do CoreScope.",
+      "sourceHash": "sha256:f3f1de6314e3d55e90a71b607eaf67ee8eb446890e5870eaef46628920b67626",
+      "generatedAt": "2026-06-27T14:46:38.743Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3218,
+      "promptTokens": 182,
+      "completionTokens": 931
+    }
+  }
+}

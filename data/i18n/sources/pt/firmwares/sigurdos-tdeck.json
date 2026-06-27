@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/sigurdos-tdeck",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware autónomo de mensagens MeshCore para redes isoladas no LilyGo T-Deck, com interface tátil estilo launcher, conversas persistentes, mapas, diagnósticos e suporte a atualizações via Wi-Fi ou GitHub.",
+      "sourceHash": "sha256:380fd3ec395e47743c577a81b03b712c90c12ac353abee45a138813706916d5e",
+      "generatedAt": "2026-06-27T14:26:53.239Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5464,
+      "promptTokens": 167,
+      "completionTokens": 1518
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "O projeto relata que vários usuários realizaram flashes beta com sucesso.",
+      "sourceHash": "sha256:ae0e0a495a6344e6206fd9c34e3670947201e9273130ad241a4329c0146be10c",
+      "generatedAt": "2026-06-27T14:26:57.966Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4727,
+      "promptTokens": 139,
+      "completionTokens": 1153
+    },
+    "features": {
+      "value": "[\"Mensagens diretas e em canais independentes\",\"Controles por toque, trackball e teclado\",\"Mapas, GPS e diagnóstico de sinal\",\"Atualizações OTA via Wi-Fi e GitHub\"]",
+      "sourceHash": "sha256:33cb201e2a086ffd7852f2de5e22fe7fecad1dc4e686f2e51627989050764577",
+      "generatedAt": "2026-06-27T14:27:00.908Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2942,
+      "promptTokens": 159,
+      "completionTokens": 760
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "resource": "repeater-commands",
+  "locale": "pt",
+  "fields": {
+    "rc.flags": {
+      "value": "{\n  \"serial\": {\n    \"label\": \"Apenas USB\",\n    \"desc\": \"Apenas consola serial — não aceite over-the-air.\"\n  },\n  \"reboot\": {\n    \"label\": \"Reiniciar\",\n    \"desc\": \"Surte efeito apenas após um reinício.\"\n  },\n  \"destructive\": {\n    \"label\": \"Cuidado\",\n    \"desc\": \"Irreversível — verifique novamente antes de executar.\"\n  },\n  \"build\": {\n    \"label\": \"Restrito à compilação\",\n    \"desc\": \"Apenas em firmware compilado com esta funcionalidade.\"\n  }\n}",
+      "sourceHash": "sha256:ee17f77f365fc1e75425e01eeb7a3ad688b20460cb43694b9f5037a894499aae",
+      "generatedAt": "2026-06-27T14:51:35.812Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3277,
+      "promptTokens": 219,
+      "completionTokens": 915
+    },
+    "rc.groups.power": {
+      "value": "{\n  \"label\": \"Energia e reinicialização\",\n  \"commands\": {\n    \"reboot\": {\n      \"desc\": \"Reiniciar o nó.\"\n    },\n    \"poweroff\": {\n      \"desc\": \"Desligar o dispositivo (alias: shutdown).\"\n    },\n    \"shutdown\": {\n      \"desc\": \"O mesmo que poweroff.\"\n    },\n    \"clkreboot\": {\n      \"desc\": \"Redefinir o relógio para uma época fixa e, em seguida, reiniciar.\"\n    },\n    \"start.ota\": {\n      \"desc\": \"Iniciar uma atualização de firmware over-the-air.\"\n    },\n    \"erase\": {\n      \"desc\": \"Formatar o sistema de arquivos — apaga todas as configurações (restauração de fábrica).\"\n    },\n    \"powersaving\": {\n      \"desc\": \"Modo de baixo consumo (nRF52: instantâneo, ESP32: após 2 min).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:d5788157c006f5a07cb8414c3131be266bea4876c298dbeb3fd095eff4728245",
+      "generatedAt": "2026-06-27T14:51:38.890Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3077,
+      "promptTokens": 279,
+      "completionTokens": 1000
+    },
+    "rc.groups.info": {
+      "value": "{\n  \"label\": \"Identidade e informações\",\n  \"commands\": {\n    \"ver\": {\n      \"desc\": \"Versão do firmware e data de compilação.\"\n    },\n    \"board\": {\n      \"desc\": \"Nome do hardware / fabricante.\"\n    },\n    \"role\": {\n      \"desc\": \"Função do nó configurada.\"\n    },\n    \"public.key\": {\n      \"desc\": \"Chave pública deste nó (hex).\"\n    },\n    \"prv.key\": {\n      \"desc\": \"Chave privada — recria a chave do nó.\"\n    },\n    \"name\": {\n      \"desc\": \"Nome do nó exibido nos anúncios.\"\n    },\n    \"owner.info\": {\n      \"desc\": \"Nota de proprietário / contato (use | para novas linhas).\"\n    },\n    \"bootloader.ver\": {\n      \"desc\": \"Versão do bootloader (apenas nRF52).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:135809f6aa8335c35dc35f5babb28da81b68e13befc1b174ec3947feb6ec3a6d",
+      "generatedAt": "2026-06-27T14:51:43.072Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4182,
+      "promptTokens": 283,
+      "completionTokens": 1383
+    },
+    "rc.groups.access": {
+      "value": "{\n  \"label\": \"Senhas e controle de acesso\",\n  \"commands\": {\n    \"password\": {\n      \"desc\": \"Definir a senha de administrador.\"\n    },\n    \"guest.password\": {\n      \"desc\": \"Definir a senha de convidado (somente leitura).\"\n    },\n    \"allow.read.only\": {\n      \"desc\": \"Permitir que convidados leiam a configuração sem a senha de administrador.\"\n    },\n    \"setperm\": {\n      \"desc\": \"Definir a permissão de um cliente: 0 convidado · 1 somente leitura · 2 leitura e gravação · 3 administrador.\"\n    },\n    \"get.acl\": {\n      \"desc\": \"Imprimir a lista de controle de acesso.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:75140e652df344753cfad827323faad4c062a87aa18e726f46716c970e76621e",
+      "generatedAt": "2026-06-27T14:51:45.136Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2064,
+      "promptTokens": 240,
+      "completionTokens": 525
+    },
+    "rc.groups.radio": {
+      "value": "{\n  \"label\": \"Rádio\",\n  \"commands\": {\n    \"radio\": {\n      \"desc\": \"Frequência LoRa (MHz), largura de banda (kHz), fator de espalhamento e taxa de codificação.\",\n      \"range\": \"freq 150–2500 · bw 7.8–500 · sf 5–12 · cr 5–8\"\n    },\n    \"freq\": {\n      \"desc\": \"Apenas frequência (MHz).\"\n    },\n    \"tx\": {\n      \"desc\": \"Potência de transmissão.\",\n      \"range\": \"-9 a 30 dBm\"\n    },\n    \"tempradio\": {\n      \"desc\": \"Alternar parâmetros do rádio temporariamente, com reversão automática.\",\n      \"range\": \"mins > 0\"\n    },\n    \"radio.rxgain\": {\n      \"desc\": \"Ganho de RX amplificado (SX1262/1268/LR1110).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:2f44981a1f672bd41b25a1760d190ca34c45ebeef604449716cf0be67f614d8d",
+      "generatedAt": "2026-06-27T14:51:48.721Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3583,
+      "promptTokens": 287,
+      "completionTokens": 1179
+    },
+    "rc.groups.forwarding": {
+      "value": "{\n  \"label\": \"Encaminhamento e roteamento\",\n  \"commands\": {\n    \"repeat\": {\n      \"desc\": \"Se este nó repete (encaminha) pacotes.\"\n    },\n    \"loop.detect\": {\n      \"desc\": \"Rigor da detecção de loop de roteamento.\"\n    },\n    \"path.hash.mode\": {\n      \"desc\": \"Tamanho do hash do Path-ID.\",\n      \"range\": \"0, 1 ou 2\"\n    },\n    \"flood.max\": {\n      \"desc\": \"Máximo de saltos para inundações com escopo.\",\n      \"range\": \"0–64\"\n    },\n    \"flood.max.unscoped\": {\n      \"desc\": \"Máximo de saltos para inundações sem escopo.\",\n      \"range\": \"0–64\"\n    },\n    \"flood.max.advert\": {\n      \"desc\": \"Máximo de saltos para inundações de anúncio.\",\n      \"range\": \"0–64\"\n    },\n    \"multi.acks\": {\n      \"desc\": \"Permitir múltiplos ACKs por pacote.\",\n      \"range\": \"0 ou 1\"\n    }\n  }\n}",
+      "sourceHash": "sha256:34a3a6a7c6adb8155a38426a1d2f42bc81266e18c3a1eb4abd5a627ea923653d",
+      "generatedAt": "2026-06-27T14:51:52.496Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3774,
+      "promptTokens": 318,
+      "completionTokens": 1274
+    },
+    "rc.groups.timing": {
+      "value": "{\n  \"label\": \"Temporização e tempo de transmissão\",\n  \"commands\": {\n    \"dutycycle\": {\n      \"desc\": \"Percentual alvo do ciclo de trabalho de TX.\",\n      \"range\": \"1–100\"\n    },\n    \"af\": {\n      \"desc\": \"Fator de tempo de transmissão.\"\n    },\n    \"rxdelay\": {\n      \"desc\": \"Atraso base de recepção.\",\n      \"range\": \"0–20\"\n    },\n    \"txdelay\": {\n      \"desc\": \"Fator de atraso de retransmissão de flood.\",\n      \"range\": \"0–2\"\n    },\n    \"direct.txdelay\": {\n      \"desc\": \"Fator de atraso de tráfego direto.\",\n      \"range\": \"0–2\"\n    },\n    \"int.thresh\": {\n      \"desc\": \"Limiar de interferência (ruído).\"\n    },\n    \"agc.reset.interval\": {\n      \"desc\": \"Intervalo de reinicialização do AGC (arredondado para múltiplos de 4s).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:758448b2188b6ad32be29f5021a83cae993754e3c467d77e6f3a80a334d0f429",
+      "generatedAt": "2026-06-27T14:51:55.816Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3320,
+      "promptTokens": 303,
+      "completionTokens": 1081
+    },
+    "rc.groups.advert": {
+      "value": "{\n  \"label\": \"Anúncios\",\n  \"commands\": {\n    \"advert\": {\n      \"desc\": \"Enviar um anúncio flood agora.\"\n    },\n    \"advert.zerohop\": {\n      \"desc\": \"Enviar um anúncio de salto zero (apenas vizinhos) agora.\"\n    },\n    \"advert.interval\": {\n      \"desc\": \"Intervalo do anúncio de salto zero.\",\n      \"range\": \"60–240 min (0 = desligado)\"\n    },\n    \"flood.advert.interval\": {\n      \"desc\": \"Intervalo do anúncio flood.\",\n      \"range\": \"3–168 h (0 = desligado)\"\n    }\n  }\n}",
+      "sourceHash": "sha256:3646d01f716bf9fa6de899d020efb8a93b05dc26df1d5bc1d97ba315ee8fcdca",
+      "generatedAt": "2026-06-27T14:51:58.786Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2970,
+      "promptTokens": 230,
+      "completionTokens": 930
+    },
+    "rc.groups.location": {
+      "value": "{\n  \"label\": \"Localização\",\n  \"commands\": {\n    \"lat\": {\n      \"desc\": \"Latitude do nó.\"\n    },\n    \"lon\": {\n      \"desc\": \"Longitude do nó.\"\n    },\n    \"adc.multiplier\": {\n      \"desc\": \"Calibração do ADC da bateria (0 = padrão da placa).\",\n      \"range\": \"0–10\"\n    }\n  }\n}",
+      "sourceHash": "sha256:0873fede7da84c28875bd01a8991f543cda080934172c45c336a164d8a13bd36",
+      "generatedAt": "2026-06-27T14:52:00.379Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1593,
+      "promptTokens": 180,
+      "completionTokens": 375
+    },
+    "rc.groups.neighbors": {
+      "value": "{\n  \"label\": \"Vizinhos\",\n  \"commands\": {\n    \"neighbors\": {\n      \"desc\": \"Listar vizinhos ouvidos recentemente.\"\n    },\n    \"neighbor.remove\": {\n      \"desc\": \"Esquecer um vizinho por chave pública.\"\n    },\n    \"discover.neighbors\": {\n      \"desc\": \"Enviar um pedido de descoberta de vizinhos com zero saltos.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:41c43163720a0688fb434f5a5a61230ad57c8afae44cbebe82f5e4224c9d4824",
+      "generatedAt": "2026-06-27T14:52:02.573Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2193,
+      "promptTokens": 177,
+      "completionTokens": 635
+    },
+    "rc.groups.clock": {
+      "value": "{\n  \"label\": \"Relógio\",\n  \"commands\": {\n    \"clock\": {\n      \"desc\": \"Mostrar a hora UTC atual.\"\n    },\n    \"clock.sync\": {\n      \"desc\": \"Sincronizar o relógio com o carimbo de data/hora do remetente.\"\n    },\n    \"time\": {\n      \"desc\": \"Definir o relógio para a época Unix (não pode retroceder).\"\n    }\n  }\n}",
+      "sourceHash": "sha256:641c8b99ace38f890c1f5673418b3d84903c1b8fe811806c42edfafcefce85f7",
+      "generatedAt": "2026-06-27T14:52:04.847Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2274,
+      "promptTokens": 179,
+      "completionTokens": 630
+    },
+    "rc.groups.stats": {
+      "value": "{\n  \"label\": \"Estatísticas e registos\",\n  \"commands\": {\n    \"clear.stats\": {\n      \"desc\": \"Reiniciar todos os contadores de estatísticas.\"\n    },\n    \"stats-core\": {\n      \"desc\": \"Bateria, tempo de atividade, tamanho da fila, flags de depuração.\"\n    },\n    \"stats-radio\": {\n      \"desc\": \"Ruído de fundo, RSSI/SNR, tempo no ar, erros.\"\n    },\n    \"stats-packets\": {\n      \"desc\": \"Contadores de pacotes enviados / recebidos.\"\n    },\n    \"log.start\": {\n      \"desc\": \"Iniciar a captura do registo de receção para o armazenamento.\"\n    },\n    \"log.stop\": {\n      \"desc\": \"Parar a captura do registo de receção.\"\n    },\n    \"log.erase\": {\n      \"desc\": \"Apagar o registo armazenado.\"\n    },\n    \"log\": {\n      \"desc\": \"Despejar o registo armazenado na consola série.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:5476582e3894dab7089ff326ba288c835930a2744f5339e75ecc1386b65752e3",
+      "generatedAt": "2026-06-27T14:52:10.405Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5558,
+      "promptTokens": 285,
+      "completionTokens": 1888
+    },
+    "rc.groups.regions": {
+      "value": "{\n  \"label\": \"Regiões\",\n  \"commands\": {\n    \"region\": {\n      \"desc\": \"Listar todas as regiões definidas.\"\n    },\n    \"region.get\": {\n      \"desc\": \"Mostrar uma região e seu pai / sinalizador de flood.\"\n    },\n    \"region.put\": {\n      \"desc\": \"Criar uma região (flood permitido por padrão).\"\n    },\n    \"region.def\": {\n      \"desc\": \"Definir uma hierarquia em uma linha (ramos | ou ,).\"\n    },\n    \"region.remove\": {\n      \"desc\": \"Excluir uma região (deve estar vazia).\"\n    },\n    \"region.load\": {\n      \"desc\": \"Iniciar carregamento em massa de regiões indentadas (linha em branco encerra).\"\n    },\n    \"region.save\": {\n      \"desc\": \"Persistir alterações de região no armazenamento.\"\n    },\n    \"region.home\": {\n      \"desc\": \"Visualizar ou definir a região inicial.\"\n    },\n    \"region.default\": {\n      \"desc\": \"Visualizar ou definir o escopo padrão (<null> para limpar).\"\n    },\n    \"region.allowf\": {\n      \"desc\": \"Permitir flood em uma região (* = curinga).\"\n    },\n    \"region.denyf\": {\n      \"desc\": \"Negar flood em uma região.\"\n    },\n    \"region.list\": {\n      \"desc\": \"Listar regiões por permissão de flood.\"\n    }\n  },\n  \"blurb\": \"O escopo de região controla para onde os floods se propagam. `region` sem argumentos lista todas as regiões definidas.\"\n}",
+      "sourceHash": "sha256:820afdfc5fedbb3c41df015059da7392c18bf1e7d2571e98d9f543a254010258",
+      "generatedAt": "2026-06-27T14:52:13.833Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3427,
+      "promptTokens": 410,
+      "completionTokens": 1119
+    },
+    "rc.groups.gps": {
+      "value": "{\n  \"label\": \"GPS\",\n  \"commands\": {\n    \"gps\": {\n      \"desc\": \"Mostrar o estado do GPS (fixação, satélites).\"\n    },\n    \"gps.on\": {\n      \"desc\": \"Ativar o hardware do GPS.\"\n    },\n    \"gps.off\": {\n      \"desc\": \"Desativar o hardware do GPS.\"\n    },\n    \"gps.sync\": {\n      \"desc\": \"Sincronizar o relógio com a hora do GPS.\"\n    },\n    \"gps.setloc\": {\n      \"desc\": \"Copiar a fixação atual do GPS para a lat/lon do nó.\"\n    },\n    \"gps.advert\": {\n      \"desc\": \"Ver / definir a política de partilha de localização para anúncios.\"\n    }\n  },\n  \"blurb\": \"Disponível apenas em compilações com GPS ativado.\"\n}",
+      "sourceHash": "sha256:c638f806e84b7f7b271a23285fb9c8c6de4d3c28cc6243ce8c0b8a2f0cf85b9e",
+      "generatedAt": "2026-06-27T14:52:17.380Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3547,
+      "promptTokens": 257,
+      "completionTokens": 1061
+    },
+    "rc.groups.sensors": {
+      "value": "{\n  \"label\": \"Sensores\",\n  \"commands\": {\n    \"sensor.list\": {\n      \"desc\": \"Listar variáveis de sensor personalizadas.\"\n    },\n    \"sensor.get\": {\n      \"desc\": \"Ler uma variável de sensor.\"\n    },\n    \"sensor.set\": {\n      \"desc\": \"Escrever uma variável de sensor.\"\n    }\n  }\n}",
+      "sourceHash": "sha256:d62c05fac6368dec62d760971de438161d1a4c9d654930bde7d7563fe2f63428",
+      "generatedAt": "2026-06-27T14:52:19.906Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2526,
+      "promptTokens": 173,
+      "completionTokens": 696
+    },
+    "rc.groups.bridge": {
+      "value": "{\n  \"label\": \"Ponte e gestão de energia\",\n  \"commands\": {\n    \"bridge.type\": {\n      \"desc\": \"Tipo de ponte configurado (rs232 / espnow / none).\"\n    },\n    \"bridge.enabled\": {\n      \"desc\": \"Ativar / desativar a ponte.\"\n    },\n    \"bridge.delay\": {\n      \"desc\": \"Atraso de roteamento da ponte.\",\n      \"range\": \"0–10000 ms\"\n    },\n    \"bridge.source\": {\n      \"desc\": \"Qual fluxo de pacotes para a ponte.\"\n    },\n    \"bridge.baud\": {\n      \"desc\": \"Taxa de baud RS-232.\",\n      \"range\": \"9600–115200\"\n    },\n    \"bridge.channel\": {\n      \"desc\": \"Canal ESP-NOW.\",\n      \"range\": \"1–14\"\n    },\n    \"bridge.secret\": {\n      \"desc\": \"Segredo partilhado ESP-NOW (≤15 caracteres).\"\n    },\n    \"pwrmgt.support\": {\n      \"desc\": \"Se a gestão de energia é suportada.\"\n    },\n    \"pwrmgt.source\": {\n      \"desc\": \"Fonte de alimentação atual (external / battery).\"\n    },\n    \"pwrmgt.bootreason\": {\n      \"desc\": \"Motivo do último reset / encerramento.\"\n    },\n    \"pwrmgt.bootmv\": {\n      \"desc\": \"Tensão de arranque em mV.\"\n    }\n  },\n  \"blurb\": \"As chaves de ponte aparecem apenas em builds de ponte; pwrmgt em builds nRF52 com gestão de energia.\"\n}",
+      "sourceHash": "sha256:ffd6ee8519f1d36279bb792688e37367f19b6e53bb79398bad84f122aa3e0b37",
+      "generatedAt": "2026-06-27T14:52:24.980Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5074,
+      "promptTokens": 412,
+      "completionTokens": 1722
+    }
+  }
+}

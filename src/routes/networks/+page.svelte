@@ -1,7 +1,9 @@
 <script>
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import {
     NETWORK_SCOPE_META,
+    networkScopeLabel,
     networkFlags,
     networkRadioSettings,
     networkBands,
@@ -12,6 +14,7 @@
   import AppPresetBadge from '$lib/AppPresetBadge.svelte';
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
+  import ToolLink from '$lib/ToolLink.svelte';
   import Button from '$lib/Button.svelte';
   import { Toggle } from 'bits-ui';
   import { onMount } from 'svelte';
@@ -169,13 +172,15 @@
 </script>
 
 <Seo
-  title="Networks"
-  description={`${data.networks.length} organized MeshCore meshes — their radio settings, coverage and how to join.`}
+  title={m.collection_networks_label()}
+  description={m.networks_seo_desc({ count: data.networks.length })}
 />
 
 <PageHeader collection="networks">
-  Organized regional and national MeshCore meshes — their radio settings, coverage and how to
-  join.
+  {#snippet actions()}
+    <ToolLink id="bands" />
+  {/snippet}
+  {m.networks_intro()}
 </PageHeader>
 
 {#if data.networks.length}
@@ -190,28 +195,28 @@
       <input
         type="search"
         bind:value={query}
-        placeholder="Filter networks…"
-        aria-label="Filter networks by name"
+        placeholder={m.networks_filter_placeholder()}
+        aria-label={m.networks_filter_aria()}
         class="w-full rounded-md border border-edge bg-bg py-1.5 pr-3 pl-8 text-[0.85rem] text-ink placeholder:text-dim focus:border-accent focus:outline-none"
       />
     </div>
 
     {#if scopeOptions.length}
       <div class="flex flex-wrap items-center gap-1.5">
-        <span class="mr-0.5 text-[0.72rem] tracking-wide text-dim uppercase">Scope</span>
+        <span class="mr-0.5 text-[0.72rem] tracking-wide text-dim uppercase">{m.networks_scope()}</span>
         {#each scopeOptions as scope (scope)}
           <Toggle.Root
             pressed={selectedScopes.has(scope)}
             onPressedChange={() => toggleScope(scope)}
             class="rounded-md border px-2 py-0.5 text-[0.72rem] font-medium outline-none transition {selectedScopes.has(scope) ? 'border-accent bg-accent/15 text-accent' : 'border-edge text-dim hover:text-ink'}"
-          >{NETWORK_SCOPE_META[scope]?.label ?? scope}</Toggle.Root>
+          >{networkScopeLabel(scope)}</Toggle.Root>
         {/each}
       </div>
     {/if}
 
     {#if bandOptions.length}
       <div class="flex flex-wrap items-center gap-1.5">
-        <span class="mr-0.5 text-[0.72rem] tracking-wide text-dim uppercase">Band</span>
+        <span class="mr-0.5 text-[0.72rem] tracking-wide text-dim uppercase">{m.dev_facet_band()}</span>
         {#each bandOptions as band (band)}
           <Toggle.Root
             pressed={selectedBands.has(band)}
@@ -224,7 +229,7 @@
 
     <div class="flex items-center gap-2 sm:ml-auto">
       <span class="text-[0.78rem] text-dim tabular-nums">
-        {filteredNetworks.length} of {activeNetworks.length}
+        {m.networks_count({ shown: filteredNetworks.length, total: activeNetworks.length })}
       </span>
       {#if hasFilters}
         <Button
@@ -232,7 +237,7 @@
           size="none"
           onclick={clearFilters}
           class="rounded-md border border-edge px-2 py-0.5 text-[0.72rem] text-dim hover:text-ink"
-        >Clear</Button>
+        >{m.compare_bar_clear()}</Button>
       {/if}
     </div>
   </div>
@@ -268,7 +273,7 @@
       <tr>
         {#if i === 0}
           <td rowspan={rows} class="border-b border-edge px-3.5 py-2.5 align-middle">
-            <a class="flex items-center gap-2.5 font-medium group-hover:text-accent" href="{base}/network/{n.id}/">
+            <a class="flex items-center gap-2.5 font-medium group-hover:text-accent" href={href(`/network/${n.id}/`)}>
               {#each networkFlags(n) as flag (flag.code)}
                 <span
                   class="inline-flex h-4 w-6 shrink-0 overflow-hidden rounded-[3px] ring-1 ring-edge/70 [&>svg]:h-full [&>svg]:w-full [&>svg]:object-cover"
@@ -290,7 +295,7 @@
           <td rowspan={rows} class="border-b border-edge px-3.5 py-2.5 align-middle">
             {#if n.scope}
               <span class="rounded-md px-2 py-0.5 text-[0.68rem] font-bold tracking-wide uppercase {NETWORK_SCOPE_META[n.scope]?.tw ?? 'bg-elev2 text-dim'}">
-                {NETWORK_SCOPE_META[n.scope]?.label ?? n.scope}
+                {networkScopeLabel(n.scope)}
               </span>
             {/if}
           </td>
@@ -304,7 +309,7 @@
             {#if live}
               <span
                 class={live.analyzersConnected ? 'text-accent' : 'text-dim'}
-                title="{live.analyzersConnected}/{live.analyzersTotal} analyzers connected · network total across all bands"
+                title={m.networks_analyzers_title({ connected: live.analyzersConnected, total: live.analyzersTotal })}
               >{fmtRate(live.pktPerMin)}</span>
             {:else}
               <span class="text-dim">—</span>
@@ -326,16 +331,16 @@
     <table class="w-full border-collapse text-[0.9rem]">
       <thead>
         <tr class="text-left text-[0.78rem] tracking-wide text-dim uppercase">
-          {@render sortTh('name', 'Network')}
-          {@render sortTh('scope', 'Scope')}
-          {@render sortTh('frequency', 'Frequency')}
+          {@render sortTh('name', m.cmd_type_network())}
+          {@render sortTh('scope', m.networks_scope())}
+          {@render sortTh('frequency', m.networks_col_frequency())}
           {@render sortTh('sf', 'SF')}
           {@render sortTh('bw', 'BW')}
           {@render sortTh('cr', 'CR')}
           {#if LIVE_ENABLED}
-            {@render sortTh('live', 'pkt/m', true, "Unique packets in the last minute, seen by this network's analyzers (live)")}
-            {@render sortTh('nodes', 'Nds', true, 'Distinct mesh nodes seen recently across this network (live)')}
-            {@render sortTh('observers', 'Obs', true, 'Distinct observer nodes reporting to this network (live)')}
+            {@render sortTh('live', 'pkt/m', true, m.networks_live_pktm_title())}
+            {@render sortTh('nodes', m.networks_col_nodes(), true, m.networks_live_nodes_title())}
+            {@render sortTh('observers', m.networks_col_observers(), true, m.networks_live_observers_title())}
           {/if}
         </tr>
       </thead>
@@ -343,31 +348,31 @@
     </table>
     {#if !sortedNetworks.length}
       <p class="px-3.5 py-6 text-center text-[0.85rem] text-dim">
-        No networks match these filters.
-        <Button variant="" size="none" onclick={clearFilters} class="text-accent hover:underline">Clear filters</Button>
+        {m.networks_no_match()}
+        <Button variant="" size="none" onclick={clearFilters} class="text-accent hover:underline">{m.networks_clear_filters()}</Button>
       </p>
     {/if}
   </div>
 
   {#if deprecatedNetworks.length}
-    <h2 class="mt-9 mb-1 text-[1.1rem] font-semibold">Deprecated networks</h2>
+    <h2 class="mt-9 mb-1 text-[1.1rem] font-semibold">{m.networks_deprecated_title()}</h2>
     <p class="mb-3 max-w-[70ch] text-[0.85rem] text-dim">
-      Superseded app presets, kept for reference. Hidden from the coverage map above.
+      {m.networks_deprecated_body()}
     </p>
     <div class="overflow-x-auto rounded-xl border border-edge opacity-80">
       <table class="w-full border-collapse text-[0.9rem]">
         <thead>
           <tr class="text-left text-[0.78rem] tracking-wide text-dim uppercase">
-            <th class="border-b border-edge px-3.5 py-2.5">Network</th>
-            <th class="border-b border-edge px-3.5 py-2.5">Scope</th>
-            <th class="border-b border-edge px-3.5 py-2.5">Frequency</th>
+            <th class="border-b border-edge px-3.5 py-2.5">{m.cmd_type_network()}</th>
+            <th class="border-b border-edge px-3.5 py-2.5">{m.networks_scope()}</th>
+            <th class="border-b border-edge px-3.5 py-2.5">{m.networks_col_frequency()}</th>
             <th class="border-b border-edge px-3.5 py-2.5">SF</th>
             <th class="border-b border-edge px-3.5 py-2.5">BW</th>
             <th class="border-b border-edge px-3.5 py-2.5">CR</th>
             {#if LIVE_ENABLED}
               <th class="border-b border-edge px-3.5 py-2.5 text-right">pkt/m</th>
-              <th class="border-b border-edge px-3.5 py-2.5 text-right">Nds</th>
-              <th class="border-b border-edge px-3.5 py-2.5 text-right">Obs</th>
+              <th class="border-b border-edge px-3.5 py-2.5 text-right">{m.networks_col_nodes()}</th>
+              <th class="border-b border-edge px-3.5 py-2.5 text-right">{m.networks_col_observers()}</th>
             {/if}
           </tr>
         </thead>
@@ -376,5 +381,5 @@
     </div>
   {/if}
 {:else}
-  <p class="text-dim">No networks recorded yet.</p>
+  <p class="text-dim">{m.networks_empty()}</p>
 {/if}

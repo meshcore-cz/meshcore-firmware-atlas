@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/heltec-v4-multiboot",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Прошивка вибору завантаження для Heltec WiFi LoRa 32 V4.2, яка встановлює та перемикається між образами MeshCore, Meshtastic, RNode або інших прошивок, зберігаючи окремі налаштування та дані файлової системи для кожного слота.",
+      "sourceHash": "sha256:9368c310d82e7df54cf101aabb14535aa5a1ba4fdd18f18ed3c26dd143dcecb7",
+      "generatedAt": "2026-06-27T15:43:13.564Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7856,
+      "promptTokens": 173,
+      "completionTokens": 1408
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Призначено для апаратної ревізії Heltec WiFi LoRa 32 V4.2 об'ємом 16 MB.",
+      "sourceHash": "sha256:c9e00676692c11c3df4e25af06533fa51a76cd32ad2989b8b28e7d457c77cc2c",
+      "generatedAt": "2026-06-27T15:43:24.043Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10479,
+      "promptTokens": 148,
+      "completionTokens": 1269
+    },
+    "features": {
+      "value": "[\"Чотири налаштовувані слоти прошивки\", \"Ізоляція NVS та файлової системи для кожної прошивки\", \"Меню завантаження OLED із запам'ятовуванням вибору\"]",
+      "sourceHash": "sha256:fd0ecb5dba29620f3c2989b178463ace56a926e20881f8132ec81931ce7405e1",
+      "generatedAt": "2026-06-27T15:43:29.832Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5789,
+      "promptTokens": 152,
+      "completionTokens": 891
+    }
+  }
+}

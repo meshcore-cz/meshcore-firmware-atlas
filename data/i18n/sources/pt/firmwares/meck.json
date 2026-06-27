@@ -1,0 +1,87 @@
+{
+  "resource": "firmware/meck",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um fork de firmware complementar do MeshCore focado em habilitar a conectividade BLE e WiFi para os dispositivos LilyGo T-Deck Pro, T-Deck Max e T5 E-Paper S3 Pro. Conta com uma interface totalmente tátil com teclado integrado, jogos, notas de voz via LoRa, navegador web, SMS e um iniciador de configurações com atualizações OTA.",
+      "sourceHash": "sha256:15dc6e89c7e0a29404155146f970f72df79f9c955441edab5bdf5980028fc282",
+      "generatedAt": "2026-06-27T14:22:35.569Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3787,
+      "promptTokens": 197,
+      "completionTokens": 1124
+    },
+    "deviceNotes.lilygo-tdeck-pro": {
+      "value": "Variante T-Deck Pro com ESP32-S3 e ecrã e-paper.",
+      "sourceHash": "sha256:d3e302e1074ed1b1d941bbca080e2d7eb0df11420b622ce77c92cc8bd934acf8",
+      "generatedAt": "2026-06-27T14:22:37.674Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2105,
+      "promptTokens": 144,
+      "completionTokens": 464
+    },
+    "deviceNotes.lilygo-tdeck-max": {
+      "value": "Variante T-Deck Max com 4G, GPS e ecrã e-paper.",
+      "sourceHash": "sha256:5b8a8cc15b62119e7b55580023bba69260e42db50e2e501ef0201b124ca189ed",
+      "generatedAt": "2026-06-27T14:22:39.538Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1863,
+      "promptTokens": 146,
+      "completionTokens": 405
+    },
+    "deviceNotes.lilygo-t5-pro": {
+      "value": "Variante T5 E-Paper S3 Pro (H752-XX).",
+      "sourceHash": "sha256:2169e8fc229f0a36eb2f61124c5ecd0fdd4129c71425dacd48f6645095bd56c5",
+      "generatedAt": "2026-06-27T14:22:41.236Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1698,
+      "promptTokens": 146,
+      "completionTokens": 397
+    },
+    "deviceNotes.heltec-v3": {
+      "value": "Apenas repetidor remoto.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T14:22:43.282Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2046,
+      "promptTokens": 134,
+      "completionTokens": 434
+    },
+    "deviceNotes.heltec-wsl3": {
+      "value": "Somente repetidor remoto.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T14:22:44.989Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1706,
+      "promptTokens": 134,
+      "completionTokens": 320
+    },
+    "deviceNotes.heltec-v4": {
+      "value": "Apenas repetidor remoto.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T14:22:46.885Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1895,
+      "promptTokens": 134,
+      "completionTokens": 326
+    },
+    "deviceNotes.heltec-v4-exp": {
+      "value": "Apenas repetidor remoto.",
+      "sourceHash": "sha256:8ecf80b1e8ee9e7d45bb29be80b1e1d012f3a01b45f29f35d9f38019fba68736",
+      "generatedAt": "2026-06-27T14:22:48.440Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1554,
+      "promptTokens": 134,
+      "completionTokens": 269
+    },
+    "features": {
+      "value": "[\"Conectividade complementar via BLE e Wi-Fi\",\"Interface tátil com teclado integrado\",\"Jogos (Sokoban, Pong, Snake)\",\"Notas de voz via LoRa\",\"Navegador web e cliente IRC\",\"App de SMS e telefone (apenas modelos 4G)\",\"Preferências de notificação por canal e tons personalizados\",\"Exportação/importação de configurações\",\"Atualização de firmware OTA\",\"Tela de bloqueio e desligamento\"]",
+      "sourceHash": "sha256:bafffdc9f50056a03b4fbf712f3dd7b6da281181ee86af8ac8797bf246382ee3",
+      "generatedAt": "2026-06-27T14:22:51.257Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2816,
+      "promptTokens": 198,
+      "completionTokens": 811
+    }
+  }
+}

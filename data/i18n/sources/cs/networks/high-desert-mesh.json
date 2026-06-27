@@ -1,0 +1,15 @@
+{
+  "resource": "network/high-desert-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní síť pro nouzovou komunikaci pokrývající oblast High Desert v jižní Kalifornii, včetně měst Victorville, Lancaster, Apple Valley, Palmdale, Phelan a Wrightwood. Širší komunita podporuje různé mesh technologie LoRa a aktivní provoz MeshCore je monitorován prostřednictvím regionální instance CoreScope.",
+      "sourceHash": "sha256:f3f1de6314e3d55e90a71b607eaf67ee8eb446890e5870eaef46628920b67626",
+      "generatedAt": "2026-06-27T12:05:29.244Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8055,
+      "promptTokens": 182,
+      "completionTokens": 1272
+    }
+  }
+}

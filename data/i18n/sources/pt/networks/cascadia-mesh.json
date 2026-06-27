@@ -1,0 +1,15 @@
+{
+  "resource": "network/cascadia-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore do Noroeste do Pacífico que abrange a Colúmbia Britânica, Washington, Oregon e o norte da Califórnia, focada em repetidores alimentados por energia solar, canais públicos e num corredor da Interestadual 5 entre clusters regionais.",
+      "sourceHash": "sha256:59d1063bcf4432beef2056063b95af8a347c68944c18553fe09ba25444f55637",
+      "generatedAt": "2026-06-27T14:45:39.827Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4401,
+      "promptTokens": 164,
+      "completionTokens": 1279
+    }
+  }
+}

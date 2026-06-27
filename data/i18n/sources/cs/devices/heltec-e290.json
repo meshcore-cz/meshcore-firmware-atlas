@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-e290",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vývojová deska ESP32-S3R8 s E-Ink displejem, volitelným modulem SX1262 LoRa, 2×20pinovým female headerem kompatibilním s Raspberry Pi a senzorovým portem QuickLink. Kompatibilní s Meshtastic/MeshCore; LoRa je volbou při sestavování a není dostupná u každého SKU.",
+      "sourceHash": "sha256:aab556b44be6a2e20e8b84f24b14998437b32bcaf85b03c19364da17bca2b7c1",
+      "generatedAt": "2026-06-27T10:48:12.724Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

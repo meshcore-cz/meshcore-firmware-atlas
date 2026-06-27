@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/gatiot",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Výrobce hardwaru trackeru GAT562.",
+      "sourceHash": "sha256:81c5392bc5030e71a58819ba54ab7da0168e624e57427962499ff0aa5b0045e1",
+      "generatedAt": "2026-06-27T11:58:33.376Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8353,
+      "promptTokens": 139,
+      "completionTokens": 896
+    }
+  }
+}

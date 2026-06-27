@@ -1,0 +1,15 @@
+{
+  "resource": "device/atlavox-beacon",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Вуличний сонячний вузол Meshtastic/MeshCore на базі RAK19007 + RAK4631, оснащений сонячною панеллю на 5 Вт, акумулятором LiPo на 5000 мА·год та корпусом із захистом IP67. Призначений для автономного розгортання репітерів, підтримує з'єднання через Bluetooth і має захищений від вологи сервісний роз'єм USB-C.",
+      "sourceHash": "sha256:fff8a8024c132e309739ea063a5e03692a4aeab3a8558f65638442b230cf14e6",
+      "generatedAt": "2026-06-27T14:55:54.726Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2734,
+      "promptTokens": 190,
+      "completionTokens": 665
+    }
+  }
+}

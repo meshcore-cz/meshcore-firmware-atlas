@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-rp2040",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa Tiny RP2040 XIAO com gravação por USB, formato de 14 pinos e os LEDs padrão de usuário e de carga da Seeed. Ideal para pequenos projetos de controlador auxiliar e lógica de interligação periférica leve.",
+      "sourceHash": "sha256:7739fe7a96e1757555e7b3844f8bc662880f26b1e66953f556ab966ada5a58e2",
+      "generatedAt": "2026-06-27T14:20:30.983Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2809,
+      "promptTokens": 171,
+      "completionTokens": 742
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resource": "software/mc-webui",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Web client MeshCore tự lưu trữ, tối ưu cho thiết bị di động, tích hợp nhắn tin theo kênh và trực tiếp, quản lý danh bạ, tìm kiếm toàn văn, bản đồ, cấu hình thiết bị, bảng điều khiển tương tác và kho lưu trữ SQLite bền vững.",
+      "sourceHash": "sha256:f3847271d82e9a25774450ab0fb3717f8d00940c92a235b400a3839b328b7b53",
+      "generatedAt": "2026-06-27T16:03:41.752Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5771,
+      "promptTokens": 164,
+      "completionTokens": 845
+    },
+    "screenshots.main-window.png.caption": {
+      "value": "Nhắn tin trong kênh và thanh bên trên máy tính để bàn",
+      "sourceHash": "sha256:dd22b9fa6c337fd6890173c378d7863407657d8423ef7924021a86c5fcf85bca",
+      "generatedAt": "2026-06-27T16:03:47.100Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5348,
+      "promptTokens": 134,
+      "completionTokens": 652
+    },
+    "screenshots.direct-messages.png.caption": {
+      "value": "Tin nhắn trực tiếp và theo dõi giao hàng",
+      "sourceHash": "sha256:cd11cddddbfcb18baab08affc34af5be4101991e45250ca0461e59eb092adced",
+      "generatedAt": "2026-06-27T16:03:50.138Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3037,
+      "promptTokens": 134,
+      "completionTokens": 428
+    },
+    "screenshots.map.png.caption": {
+      "value": "Sơ đồ liên hệ MeshCore",
+      "sourceHash": "sha256:f70256b479c4494cb61f227d5aed4110d2eef182e4826658069efecfd85741c9",
+      "generatedAt": "2026-06-27T16:03:55.177Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5038,
+      "promptTokens": 133,
+      "completionTokens": 489
+    },
+    "screenshots.console.png.caption": {
+      "value": "Bảng điều khiển lệnh tương tác MeshCore",
+      "sourceHash": "sha256:aacdbdce0bb56de663cc75d8fc8c1bf2419ad8d7f72df759409261808350d62f",
+      "generatedAt": "2026-06-27T16:04:00.664Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5485,
+      "promptTokens": 134,
+      "completionTokens": 325
+    },
+    "tags": {
+      "value": "[\"trình khách web\",\"tự lưu trữ\",\"docker\",\"pwa\",\"terminal từ xa\"]",
+      "sourceHash": "sha256:14ef1a4f8c215705ed8f41c0bc25e50afa08029468319d70a965b32536296a82",
+      "generatedAt": "2026-06-27T16:04:09.064Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8399,
+      "promptTokens": 145,
+      "completionTokens": 730
+    },
+    "verificationNotes.designed-for-trusted-local-networks-and-does-not": {
+      "value": "Được thiết kế cho mạng nội bộ đáng tin cậy và không có cơ chế xác thực; không nên để mở trực tiếp ra internet.",
+      "sourceHash": "sha256:69099e5766131adcfcd6e0aed9dbaa78d4848d071c13fafa16c3bd4effc3296c",
+      "generatedAt": "2026-06-27T16:04:18.768Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9703,
+      "promptTokens": 150,
+      "completionTokens": 1142
+    },
+    "verificationNotes.multi-architecture-images-are-published-for-amd6": {
+      "value": "Các ảnh đa kiến trúc được phát hành cho amd64, arm64 và armv7.",
+      "sourceHash": "sha256:9d241895e4202871789f5d01b00c44ca539176696c55f937c893fc6be80da8f6",
+      "generatedAt": "2026-06-27T16:04:23.193Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4424,
+      "promptTokens": 146,
+      "completionTokens": 524
+    }
+  }
+}

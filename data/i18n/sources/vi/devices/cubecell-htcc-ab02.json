@@ -1,0 +1,15 @@
+{
+  "resource": "device/cubecell-htcc-ab02",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển CubeCell LoRa dựa trên ASR6502 + SX1262, tích hợp màn hình OLED 0.96 inch, quản lý pin, hỗ trợ năng lượng mặt trời và cầu chuyển đổi USB-serial CP2102. Đây là nền tảng bộ lặp MeshCore nhỏ gọn, tiết kiệm điện năng.",
+      "sourceHash": "sha256:2c652cd7faa0bf1332fa6483cbdb7ddcec2bf91502e3659e5c5f14c225a92f73",
+      "generatedAt": "2026-06-27T15:32:49.521Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16266,
+      "promptTokens": 180,
+      "completionTokens": 1003
+    }
+  }
+}

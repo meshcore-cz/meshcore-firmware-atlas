@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-wardrive",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Ứng dụng Android lập bản đồ vùng phủ sóng, kết hợp lộ trình GPS với các lệnh ping tự động tới bộ lặp MeshCore, hiển thị trực quan tỷ lệ phản hồi và chất lượng tín hiệu, xuất dữ liệu khảo sát và có thể đóng góp kết quả vào bản đồ web cộng đồng.",
+      "sourceHash": "sha256:0bf32e50f4649df00f6574ed068e3f65c59f38975d0798a66357cc2b8c8f1dd1",
+      "generatedAt": "2026-06-27T16:20:52.929Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9414,
+      "promptTokens": 168,
+      "completionTokens": 796
+    },
+    "screenshots.coverage-map.jpeg.caption": {
+      "value": "Khảo sát vùng phủ sóng MeshCore được mã hóa màu",
+      "sourceHash": "sha256:54fe1479aae2a757567d1aa9f24c888b32cf8c211286d5b8b89079a957cf36e6",
+      "generatedAt": "2026-06-27T16:20:59.343Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6414,
+      "promptTokens": 135,
+      "completionTokens": 914
+    },
+    "screenshots.tracking.jpeg.caption": {
+      "value": "Theo dõi GPS trực tiếp và điều khiển ping tự động",
+      "sourceHash": "sha256:854a4a941e435b6e20e9df1ff95cb3ec61f6a2f5f4dea7bdd015f4821237fc18",
+      "generatedAt": "2026-06-27T16:21:04.860Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5515,
+      "promptTokens": 136,
+      "completionTokens": 548
+    },
+    "screenshots.repeaters.jpeg.caption": {
+      "value": "Kết quả phát hiện bộ lặp và tín hiệu",
+      "sourceHash": "sha256:226a1cda42287e62fbee347e23e23a3466122603e068b93f4969a2488e9fe80d",
+      "generatedAt": "2026-06-27T16:21:08.517Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3656,
+      "promptTokens": 135,
+      "completionTokens": 546
+    },
+    "screenshots.statistics.jpeg.caption": {
+      "value": "Mẫu wardrive và thống kê tỷ lệ thành công",
+      "sourceHash": "sha256:6ac1a2fc0101dc61f80d1bb68e6ca76dc0cd427973a0bd63b09e046a0cec2a0a",
+      "generatedAt": "2026-06-27T16:21:10.736Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2219,
+      "promptTokens": 137,
+      "completionTokens": 396
+    },
+    "tags": {
+      "value": "[\"wardriving\",\"vùng phủ sóng\",\"gps\",\"công cụ thực địa\",\"bản đồ cộng đồng\"]",
+      "sourceHash": "sha256:476d65cd5477dd9cdb10c502d6d5f0a9d945e168289194f4e9ee1e48d1f71890",
+      "generatedAt": "2026-06-27T16:21:14.722Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3986,
+      "promptTokens": 144,
+      "completionTokens": 622
+    },
+    "verificationNotes.application-releases-and-gpl-3-0-source-code-are": {
+      "value": "Các bản phát hành ứng dụng và mã nguồn GPL-3.0 được quản lý trong các kho lưu trữ GitHub riêng biệt.",
+      "sourceHash": "sha256:04f6aa7e0339cd2f5ebbd269912eef7303de3dff89a158dc69f68fa10d6be561",
+      "generatedAt": "2026-06-27T16:21:17.906Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3183,
+      "promptTokens": 146,
+      "completionTokens": 493
+    },
+    "verificationNotes.gps-survey-data-remains-local-unless-the-operato": {
+      "value": "Dữ liệu khảo sát GPS được lưu cục bộ trừ khi người dùng chủ động tải lên bản đồ cộng đồng.",
+      "sourceHash": "sha256:bcf90556001e1aaedcad79974f40ebf6ca7ae030ac966cdb2b4cb52f2cb0d7c1",
+      "generatedAt": "2026-06-27T16:21:23.868Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5961,
+      "promptTokens": 145,
+      "completionTokens": 611
+    }
+  }
+}

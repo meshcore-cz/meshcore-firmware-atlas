@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-solar-p1-pro",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Живлений від сонячної енергії вузол або репітер Meshtastic/MeshCore із вбудованим XIAO L76K GNSS та чотирма попередньо встановленими акумуляторами 18650 ємністю 3350 мА·год. Має ту саму апаратну основу XIAO nRF52840 Plus і Wio-SX1262, що й P1, а також сонячну панель на 5 Вт та корпус для зовнішнього використання з класом захисту IPX6 і портом розширення Grove.",
+      "sourceHash": "sha256:df0994863cd92b04c9f0817be704f226ba72295f3484beb3660364897805cb94",
+      "generatedAt": "2026-06-27T15:13:35.716Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19677,
+      "promptTokens": 209,
+      "completionTokens": 1165
+    }
+  }
+}

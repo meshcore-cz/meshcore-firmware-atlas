@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m2",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Transceptor LoRa compacto para Meshtastic/MeshCore com ESP32-S3, SX1262 e ecrã de estado OLED de 1,3 polegadas. Inclui bateria integrada de 1000 mAh, carregamento por USB-C, Wi-Fi e BLE. É fornecido com caixa em ABS e antena LoRa externa através de conector IPEX interno. Pré-instalado para Meshtastic; sem GPS.",
+      "sourceHash": "sha256:bf2c9723db9873636ebe8cd8bd62c291e5a07287a2e6dc7063797b4aeb9333be",
+      "generatedAt": "2026-06-27T13:58:43.924Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 29146,
+      "promptTokens": 207,
+      "completionTokens": 1343
+    }
+  }
+}

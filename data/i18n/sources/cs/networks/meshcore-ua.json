@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ua",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Veřejná síť MeshCore na Ukrajině, kterou provozují dobrovolníci, zajišťuje odolnou decentralizovanou komunikaci přes LoRa po celé zemi. Je koordinována prostřednictvím meshcore-ua.net a zahrnuje opakovače, boty, kanály, stahování firmwaru a podporu komunity na Telegramu.",
+      "sourceHash": "sha256:c9c47d0b5af794e7fd33a3183ecf5b28b97ee17e874c7176c961d23cc8876d7f",
+      "generatedAt": "2026-06-27T12:13:35.665Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11910,
+      "promptTokens": 170,
+      "completionTokens": 1428
+    }
+  }
+}

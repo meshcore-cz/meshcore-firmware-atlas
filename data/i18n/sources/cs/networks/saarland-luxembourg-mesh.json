@@ -1,0 +1,15 @@
+{
+  "resource": "network/saarland-luxembourg-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Přeshraniční síť MeshCore pokrývající německé Sársko a sousední Lucembursko, která zahrnuje 690+ uzlů v okolí měst Merzig, Saarbrücken a Mamer. Provozuje se v pásmu 868 MHz s předvolbou EU/UK Narrow a vyhrazeným analyzátorem CoreScope.",
+      "sourceHash": "sha256:1e90ca1a0b6ef8b73142ded381f0c3489f03e264ea7e0818f306544ae2387b9e",
+      "generatedAt": "2026-06-27T12:11:42.381Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7156,
+      "promptTokens": 184,
+      "completionTokens": 922
+    }
+  }
+}

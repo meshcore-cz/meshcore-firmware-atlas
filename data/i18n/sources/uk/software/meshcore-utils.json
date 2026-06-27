@@ -1,0 +1,33 @@
+{
+  "resource": "software/meshcore-utils",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Високопродуктивний генератор персоналізованих ключів Ed25519 на Rust для MeshCore з підтримкою пошуку за кількома префіксами, виведенням у форматі JSON, багатопотоковою обробкою на CPU та опціональним прискоренням на GPU за допомогою CUDA або Metal.",
+      "sourceHash": "sha256:c321be6a3e0254f3049599a6bb181f6d8b6e873f4d42b1e0b3e8bf702fbfac10",
+      "generatedAt": "2026-06-27T16:18:03.978Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7272,
+      "promptTokens": 160,
+      "completionTokens": 1381
+    },
+    "tags": {
+      "value": "[\"генератор-ключів\",\"ed25519\",\"gpu\",\"cuda\",\"metal\"]",
+      "sourceHash": "sha256:55134811851e289691b8091d33676c7aa52624ddf7d962ac20c0ac3bff942e48",
+      "generatedAt": "2026-06-27T16:18:09.685Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5706,
+      "promptTokens": 143,
+      "completionTokens": 809
+    },
+    "verificationNotes.cuda-requires-the-nvidia-toolkit-metal-accelerat": {
+      "value": "Для роботи CUDA потрібен набір інструментів NVIDIA; для прискорення Metal — macOS на базі Apple Silicon або з підтримуваним графічним процесором AMD.",
+      "sourceHash": "sha256:91b2a1ada1f9e8e82de7d5110c98a7ce8b90b1292f0cd4d2a0b24d5079753617",
+      "generatedAt": "2026-06-27T16:18:13.992Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4307,
+      "promptTokens": 148,
+      "completionTokens": 754
+    }
+  }
+}

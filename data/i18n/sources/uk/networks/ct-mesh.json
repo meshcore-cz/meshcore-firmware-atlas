@@ -1,0 +1,15 @@
+{
+  "resource": "network/ct-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Волонтерська група користувачів mesh-технологій у Коннектикуті для операторів MeshCore та Meshtastic. Пропонує інтерактивну карту MeshCore, спільноту Discord, інструменти покриття MeshMapper та локальні ресурси MQTT/observer для регіону BDL.",
+      "sourceHash": "sha256:da2736de478db3582619535868e22f7301b9ece6eaa346c66325a80d71818d43",
+      "generatedAt": "2026-06-27T16:49:04.442Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16765,
+      "promptTokens": 172,
+      "completionTokens": 1281
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meshcore-tbeam-1w",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Các bản dựng firmware MeshCore dành riêng cho LilyGo T-Beam 1 Watt, cung cấp tệp nhị phân dựng sẵn để dễ dàng nạp mà không cần biên dịch từ mã nguồn.",
+      "sourceHash": "sha256:c9ab5b9b51d24e4cea0c96361f9f0c4345a8e4f323bdacd0baa14b1f098f27fe",
+      "generatedAt": "2026-06-27T15:56:12.964Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6910,
+      "promptTokens": 159,
+      "completionTokens": 757
+    },
+    "features": {
+      "value": "[\"Firmware dựng sẵn cho T-Beam 1W\",\"Nạp firmware dễ dàng không cần biên dịch\"]",
+      "sourceHash": "sha256:b553b6e4a1ad4a2138ee4306063847631c30fcced206be6d9acd575468399ed2",
+      "generatedAt": "2026-06-27T15:56:57.881Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 44917,
+      "promptTokens": 146,
+      "completionTokens": 675
+    }
+  }
+}

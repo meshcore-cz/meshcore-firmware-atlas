@@ -1,0 +1,15 @@
+{
+  "resource": "device/waveshare-rp2040-lora",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактна плата для розробки RP2040 + SX1262 LoRa, доступна у версіях LF та HF, з контактами GPIO з напіввідверттями, антенним роз'ємом IPEX та опціональним FPC-адаптером USB-C для прошивання та доступу до послідовного порту.",
+      "sourceHash": "sha256:8c4610966e2492749a3ffadd556532226b0b751428664c1e20a105ea3a6886a7",
+      "generatedAt": "2026-06-27T15:18:13.856Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14564,
+      "promptTokens": 175,
+      "completionTokens": 920
+    }
+  }
+}

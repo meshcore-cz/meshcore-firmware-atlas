@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-mesh-solar",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch gốc cấp nguồn và truyền thông ngoài trời hỗ trợ năng lượng mặt trời, tích hợp bo mạch BMS với bo mạch điều khiển BLE + LoRa. Đây là nền tảng của các nút MeshTower — được thiết kế cho các triển khai mạng mesh lâu dài, có khả năng sạc bằng năng lượng mặt trời, hỗ trợ thay thế linh hoạt nhiều loại pin và tùy chọn mở rộng GNSS/màn hình.",
+      "sourceHash": "sha256:bcd12bbc4bc3f77ad20009a1d27afd76ebdf3989342dfa432f6ca2a45b522c1e",
+      "generatedAt": "2026-06-27T15:33:40.228Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12866,
+      "promptTokens": 181,
+      "completionTokens": 766
+    }
+  }
+}

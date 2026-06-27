@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v2",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Класична плата розробника ESP32 + SX1276/SX1278 LoRa з інтегрованим 0.96-дюймовим OLED-дисплеєм, Wi-Fi та BLE. Оснащена портом Micro USB, послідовним інтерфейсом CP2102, роз'ємом для акумулятора SH1.25 із керуванням зарядом та антеною LoRa IPEX. Знято з виробництва — для нових проєктів Heltec рекомендує версію V3 або новішу.",
+      "sourceHash": "sha256:ed8f570f2594d2a0d218ac363bbde03a7d3e46c3ec3f248ac50d5040f37d740e",
+      "generatedAt": "2026-06-27T14:57:33.631Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4926,
+      "promptTokens": 200,
+      "completionTokens": 1560
+    }
+  }
+}

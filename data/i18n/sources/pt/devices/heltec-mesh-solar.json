@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-mesh-solar",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa-base de energia e comunicação para exteriores, pronta para energia solar, que combina uma placa BMS com uma placa de controle BLE + LoRa. A plataforma por trás dos nós MeshTower — projetada para implantações de malha de longa duração, com carregamento solar, suporte a baterias de química intercambiável e expansão opcional de GNSS e display.",
+      "sourceHash": "sha256:bcd12bbc4bc3f77ad20009a1d27afd76ebdf3989342dfa432f6ca2a45b522c1e",
+      "generatedAt": "2026-06-27T14:03:09.077Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9334,
+      "promptTokens": 181,
+      "completionTokens": 715
+    }
+  }
+}

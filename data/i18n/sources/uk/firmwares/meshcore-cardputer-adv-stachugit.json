@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-cardputer-adv-stachugit",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Форк MeshCore з окремим інтерфейсом для TFT-дисплея та клавіатури, призначений для M5Stack Cardputer ADV, оснащеного радіомодулем Cap LoRa-1262.",
+      "sourceHash": "sha256:da9e8e3787b935e723a7bce5501a0a7e7325f061afe8c03cdab62401b27f4437",
+      "generatedAt": "2026-06-27T15:41:11.042Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4144,
+      "promptTokens": 159,
+      "completionTokens": 680
+    },
+    "deviceNotes.m5stack-cardputer-adv": {
+      "value": "Потребує модуля M5Stack Cap LoRa-1262.",
+      "sourceHash": "sha256:413efa7055a21624668b982014fcc0b1bcb7c76dcf9f7e83c07d0843170856f5",
+      "generatedAt": "2026-06-27T15:41:14.552Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3509,
+      "promptTokens": 142,
+      "completionTokens": 645
+    },
+    "features": {
+      "value": "[\"Контакти на пристрої та повідомлення в каналах\",\"Апаратна клавіатура та TFT-інтерфейс\",\"GPS та обмін ключами через QR-коди\",\"Браузерний прошивальник\"]",
+      "sourceHash": "sha256:0e0d4ad9c117fa95f5a96cc65ec7b49b8916982534127d01be86f5c0e8753430",
+      "generatedAt": "2026-06-27T15:41:18.964Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4411,
+      "promptTokens": 154,
+      "completionTokens": 836
+    }
+  }
+}

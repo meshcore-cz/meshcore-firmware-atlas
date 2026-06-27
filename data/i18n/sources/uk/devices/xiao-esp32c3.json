@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-esp32c3",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата ESP32-C3 розміром з великий палець, яка використовується як основна плата в наборі Seeed XIAO C3 + Wio-SX1262. Базова плата забезпечує підтримку Wi-Fi та BLE, прошивання через USB, а також має компактний набір виводів GPIO; зв'язок LoRa реалізується за допомогою окремого модуля Wio-SX1262.",
+      "sourceHash": "sha256:a97c027d339f2c93cc73c1b1c7d39451ca30920c037e92a409825b51cb1e2bd4",
+      "generatedAt": "2026-06-27T15:15:09.135Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17894,
+      "promptTokens": 191,
+      "completionTokens": 1028
+    }
+  }
+}

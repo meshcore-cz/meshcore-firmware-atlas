@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-uk",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới MeshCore toàn quốc trải dài khắp Vương quốc Anh, hoạt động trên kênh công cộng 868 MHz, có vùng phủ sóng của các trạm chuyển tiếp khu vực và bản đồ nút mạng trực tuyến dùng chung.",
+      "sourceHash": "sha256:802137e8eb7a1538be2b3e4b11c5130f8409a36131884a58108f9565c8c36a74",
+      "generatedAt": "2026-06-27T16:54:53.032Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4407,
+      "promptTokens": 159,
+      "completionTokens": 762
+    }
+  }
+}

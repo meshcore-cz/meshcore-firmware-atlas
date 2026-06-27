@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-fi",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore na Finlândia, monitorada por meio de um analisador CoreScope público.",
+      "sourceHash": "sha256:200d8124b2b6bb86914d0721890a65ffbfa9f3ef9e14214055a8049fa701c182",
+      "generatedAt": "2026-06-27T14:46:17.649Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2126,
+      "promptTokens": 143,
+      "completionTokens": 484
+    }
+  }
+}

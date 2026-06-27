@@ -20,6 +20,8 @@ import { fileURLToPath } from 'node:url';
 import { load } from 'js-yaml';
 import { latestReleaseSummary, groupReleases } from '../src/lib/releases.js';
 import { METRICS } from '../src/lib/metrics.js';
+import { loadI18nConfig, publicPathForLocale, compareDisallowPaths } from './route-slugs.js';
+import { buildAllRuntimeOverlays, writeRuntimeOverlays } from './catalog-i18n/build-overlays.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const defaultRoot = join(here, '..');
@@ -160,6 +162,13 @@ function readSchemas(root) {
 // Read the shared parts catalog (data/globals.yaml). Optional.
 function readGlobals(root) {
   const path = join(root, 'data', 'globals.yaml');
+  if (!existsSync(path)) return {};
+  return load(readFileSync(path, 'utf8')) ?? {};
+}
+
+// Fixed enum labels (software capabilities, etc.) — see data/taxonomy.yaml.
+function readTaxonomy(root) {
+  const path = join(root, 'data', 'taxonomy.yaml');
   if (!existsSync(path)) return {};
   return load(readFileSync(path, 'utf8')) ?? {};
 }
@@ -418,17 +427,22 @@ function buildSitemap(root, { devices, firmwares, vendors, networks, software, g
     )
   ];
 
+  const { locales } = loadI18nConfig(root);
   const urls = paths
+    .flatMap((p) => locales.map((locale) => publicPathForLocale(p, locale, root)))
     .map(
-      (p) =>
-        `  <url><loc>${prefix}${p}</loc><lastmod>${lastmod}</lastmod></url>`
+      (path) =>
+        `  <url><loc>${prefix}${path}</loc><lastmod>${lastmod}</lastmod></url>`
     )
     .join('\n');
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 
   // /compare/ is intentionally excluded from the sitemap and disallowed: it's a
   // query-param view with no stable, indexable content.
-  const robots = `User-agent: *\nAllow: /\nDisallow: ${BASE_PATH}/compare/\n\nSitemap: ${prefix}/sitemap.xml\n`;
+  const compareDisallow = compareDisallowPaths(root)
+    .map((p) => `Disallow: ${BASE_PATH}${p}`)
+    .join('\n');
+  const robots = `User-agent: *\nAllow: /\n${compareDisallow}\n\nSitemap: ${prefix}/sitemap.xml\n`;
 
   writeFileSync(join(root, 'static', 'sitemap.xml'), sitemap);
   writeFileSync(join(root, 'static', 'robots.txt'), robots);
@@ -597,6 +611,7 @@ export async function buildData(root = defaultRoot) {
   const rawFirmwares = readDir(root, 'firmwares', 'firmware.yaml', dirDate);
   const compatibility = readCompatibility(root);
   const globals = readGlobals(root);
+  const taxonomy = readTaxonomy(root);
 
   const firmwares = rawFirmwares
     .map((fw) => attachChangelog(root, 'firmwares', fw, renderMarkdown))
@@ -636,10 +651,13 @@ export async function buildData(root = defaultRoot) {
   // Optional GitHub contributors, refreshed out-of-band by enrich-contributors.js
   // (network-backed, so not fetched during build). Absent on a fresh checkout.
   let contributors = [];
+  let repoGithubStars = null;
   const contributorsPath = join(root, 'data', 'contributors.json');
   if (existsSync(contributorsPath)) {
     try {
-      contributors = JSON.parse(readFileSync(contributorsPath, 'utf8')).contributors ?? [];
+      const contributorsFile = JSON.parse(readFileSync(contributorsPath, 'utf8'));
+      contributors = contributorsFile.contributors ?? [];
+      repoGithubStars = contributorsFile.githubStars ?? null;
     } catch {
       contributors = [];
     }
@@ -664,7 +682,9 @@ export async function buildData(root = defaultRoot) {
     software: liteSoftware,
     compatibility,
     contributors,
-    globals
+    repoGithubStars,
+    globals,
+    taxonomy
   };
 
   const json = JSON.stringify(dataset, null, 2) + '\n';
@@ -715,6 +735,18 @@ export async function buildData(root = defaultRoot) {
   });
 
   const releaseFeedItems = buildReleaseFeed(root, { firmwares, software, generatedAt: dataset.generatedAt });
+
+  const catalogOverlays = buildAllRuntimeOverlays(root, {
+    devices,
+    firmwares,
+    software,
+    vendors,
+    networks,
+    compatibility,
+    globals,
+    taxonomy
+  });
+  writeRuntimeOverlays(root, catalogOverlays);
 
   return {
     ...dataset.counts,

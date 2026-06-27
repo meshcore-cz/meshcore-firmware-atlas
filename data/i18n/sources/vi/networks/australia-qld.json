@@ -1,0 +1,15 @@
+{
+  "resource": "network/australia-qld",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cài đặt trước sóng radio chính thức của ứng dụng MeshCore — 923.125MHz / SF8 / BW62.5 / CR5.",
+      "sourceHash": "sha256:45f218c29a90efe01372f7311c1351cb468e298c906d0149e12d4e2d2dbbfcc4",
+      "generatedAt": "2026-06-27T16:45:02.830Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 800,
+      "promptTokens": 154,
+      "completionTokens": 70
+    }
+  }
+}

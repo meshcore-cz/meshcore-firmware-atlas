@@ -1,0 +1,87 @@
+{
+  "resource": "software/meshcore-open",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Multiplatformní Flutter klient pro MeshCore se šifrovanou komunikací, kontakty, kanály, offline mapami, konfigurací uzlů a vzdálenou správou opakovačů přes Bluetooth, USB nebo TCP.",
+      "sourceHash": "sha256:86553be538e69d495d6887a945d4b645ba893e7361cde0c5196a4b95446c72df",
+      "generatedAt": "2026-06-27T11:35:10.082Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9007,
+      "promptTokens": 161,
+      "completionTokens": 955
+    },
+    "screenshots.contacts.jpg.caption": {
+      "value": "Kontakty a okolní mesh uzly",
+      "sourceHash": "sha256:0188a73862f377b4e98b401d58ddbf3da168ed9b09b83ce6b32a96a76c8a5497",
+      "generatedAt": "2026-06-27T11:35:35.959Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25876,
+      "promptTokens": 134,
+      "completionTokens": 457
+    },
+    "screenshots.chat.jpg.caption": {
+      "value": "Šifrované přímé zprávy",
+      "sourceHash": "sha256:f7a506a0dd7aa910aaa85ba60676f98ae484042ff3b925d1c03ab6a7e2fcbefd",
+      "generatedAt": "2026-06-27T11:35:41.427Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5467,
+      "promptTokens": 133,
+      "completionTokens": 491
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Živá mapa sítě a vizualizace trasy",
+      "sourceHash": "sha256:880cfca081c279a8a310f906c2daedd5f092cc0a8ce008f3df7f240073742e3b",
+      "generatedAt": "2026-06-27T11:35:51.002Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9575,
+      "promptTokens": 135,
+      "completionTokens": 691
+    },
+    "screenshots.channels.jpg.caption": {
+      "value": "Zasílání zpráv ve veřejných kanálech",
+      "sourceHash": "sha256:0524de9da954dc8d69c0c05ff16f38137fb1a475337d2a7f7d5ae112b9db916e",
+      "generatedAt": "2026-06-27T11:35:56.971Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5969,
+      "promptTokens": 132,
+      "completionTokens": 417
+    },
+    "verificationNotes.ios-currently-supports-ble-usb-and-tcp-companion": {
+      "value": "iOS v současné době podporuje BLE; připojení doprovodných zařízení přes USB a TCP se teprve připravují.",
+      "sourceHash": "sha256:e4f6c9dcb7b1bfc20094e10b61cdc427a5478d0eca160bdbbe6ffbda7443f5a7",
+      "generatedAt": "2026-06-27T11:36:07.526Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10554,
+      "promptTokens": 144,
+      "completionTokens": 922
+    },
+    "verificationNotes.browser-node-connections-require-chromium-with-w": {
+      "value": "Připojení uzlů prohlížeče vyžaduje Chromium s podporou Web Bluetooth nebo Web Serial.",
+      "sourceHash": "sha256:c512e82f57307b956d06e4b78cdf0a9a9016f89cb7803bd370a28326c5fe2870",
+      "generatedAt": "2026-06-27T11:36:17.106Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9580,
+      "promptTokens": 142,
+      "completionTokens": 877
+    },
+    "verificationNotes.over-the-air-firmware-updates-are-listed-on-the-": {
+      "value": "Bezdrátové aktualizace firmwaru jsou uvedeny v plánu projektu a zatím nejsou k dispozici.",
+      "sourceHash": "sha256:95e6587bf98fee1d3664d79bd093dacdf5e33f92c9400cb3586bc737e22f8ae3",
+      "generatedAt": "2026-06-27T11:36:28.403Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11297,
+      "promptTokens": 146,
+      "completionTokens": 968
+    },
+    "tags": {
+      "value": "[\"flutter\",\"offline\",\"multiplatformní\"]",
+      "sourceHash": "sha256:cb14b62322a4ac0907593c4bb1200390fbfac8cc7b8319d82845362ed71a77cd",
+      "generatedAt": "2026-06-27T13:42:38.027Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16235,
+      "promptTokens": 137,
+      "completionTokens": 145
+    }
+  }
+}

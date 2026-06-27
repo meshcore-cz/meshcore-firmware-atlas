@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-one",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Ứng dụng khách MeshCore gốc và bộ công cụ mạng dành cho iPhone, iPad và Apple Silicon Macs, kết hợp tính năng nhắn tin với bản đồ ngoại tuyến, truy vết đường dẫn, phân tích tầm nhìn thẳng RF, bắt gói tin và quản trị nút từ xa.",
+      "sourceHash": "sha256:0ad0f9e672db68d0c110c07e2cceb64d4c693bf406cfd2885aead1a4e5f26b20",
+      "generatedAt": "2026-06-27T16:13:26.013Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5269,
+      "promptTokens": 169,
+      "completionTokens": 805
+    },
+    "tags": {
+      "value": "[\"apple\",\"gốc\",\"ngoại tuyến\",\"phân tích RF\",\"thiết bị đầu cuối từ xa\"]",
+      "sourceHash": "sha256:866ffd166b164a44156a48135561a0bc8c76b844a8050c6e24abc297310d1b88",
+      "generatedAt": "2026-06-27T16:13:55.516Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 29502,
+      "promptTokens": 142,
+      "completionTokens": 1183
+    },
+    "verificationNotes.requires-ios-or-ipados-18-or-an-apple-silicon-ma": {
+      "value": "Yêu cầu iOS hoặc iPadOS 18, hoặc máy Mac dùng chip Apple Silicon.",
+      "sourceHash": "sha256:6d4b3fd98f6902d22f93ea5ec5983286b0fee9dc24fa4f8bb3051d318fd80ce9",
+      "generatedAt": "2026-06-27T16:13:59.410Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3893,
+      "promptTokens": 142,
+      "completionTokens": 509
+    },
+    "verificationNotes.github-releases-provide-unsigned-ipa-files-testf": {
+      "value": "Các bản phát hành trên GitHub cung cấp tệp IPA chưa ký; TestFlight là cách cài đặt bản beta đơn giản hơn.",
+      "sourceHash": "sha256:41c2973b8f2af1a02f0e6b5ef179a9c5dadde8e4619242b6acaf4e2a7c3e8369",
+      "generatedAt": "2026-06-27T16:14:14.472Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15061,
+      "promptTokens": 145,
+      "completionTokens": 551
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-meshtower-v2",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Robustní venkovní solární uzel využívající technologii Heltec MeshSolar. Je vybaven 10W panelem, integrovaným bateriovým modulem, hliníkovou skříní s krytím IP66 a externí SMA anténou. K dispozici je v pásmech 868 MHz a 915 MHz, s variantami LoRa o výkonu 22 dBm nebo 30 dBm a s volitelnou podporou GNSS.",
+      "sourceHash": "sha256:90b6c2ed85b790c31ac8644edae65c49da2bff25c8a2bca4ed4e8087a73d9d55",
+      "generatedAt": "2026-06-27T10:46:22.202Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

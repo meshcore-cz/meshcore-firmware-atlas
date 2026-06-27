@@ -1,0 +1,15 @@
+{
+  "resource": "network/chicago-offline",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita MeshCore v oblasti Chicaga buduje off-grid mesh komunikaci napříč městem a přilehlou metropolitní oblastí.",
+      "sourceHash": "sha256:e79d42b5af7a001687a7c97e52f3f31c68033b0eca3c39df589d7e00fdbbb6d3",
+      "generatedAt": "2026-06-27T12:02:03.398Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9637,
+      "promptTokens": 147,
+      "completionTokens": 1086
+    }
+  }
+}

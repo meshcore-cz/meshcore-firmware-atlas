@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-bg",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Bulharská komunita MeshCore pro off-grid komunikaci přes LoRa mesh sítě je koordinována prostřednictvím meshcore.bg. Tvoří ji aktivní sítě v Sofii a Plovdivu a dálkové spojení do rumunské Craiovy (~200 km). Systém běží na předvolbě EU/UK (Narrow) v pásmu 869.618 MHz s 2bajtovými hashy cest a zapnutou detekcí smyček na opakovačích.",
+      "sourceHash": "sha256:b7fe5731fe0df758026f69f70f48057b7e2cbc293e2fb54400dca1c7a96ece72",
+      "generatedAt": "2026-06-27T12:01:29.028Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14052,
+      "promptTokens": 205,
+      "completionTokens": 1807
+    }
+  }
+}

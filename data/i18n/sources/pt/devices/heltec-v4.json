@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v4",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Sucessor do Heltec V3 com ESP32-S3R2 + SX1262, equipado com 16 MB de flash, 2 MB de PSRAM e potência de transmissão LoRa de até 28 dBm. Conta com o mesmo display OLED de 0,96 polegadas e uma pinagem amplamente compatível com a V3, além de entrada para energia solar, conector GNSS opcional e antena FPC de 2,4 GHz integrada. Possui USB-C nativo (sem CP2102). É amplamente utilizado no Meshtastic e no MeshCore.",
+      "sourceHash": "sha256:077f6b0df2c7d8f60fcb09d763150df7954cad9b593f449335e2247afdc2f9d2",
+      "generatedAt": "2026-06-27T14:05:29.401Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 22087,
+      "promptTokens": 225,
+      "completionTokens": 1384
+    }
+  }
+}

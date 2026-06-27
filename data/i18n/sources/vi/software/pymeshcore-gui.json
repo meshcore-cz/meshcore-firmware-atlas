@@ -1,0 +1,33 @@
+{
+  "resource": "software/pymeshcore-gui",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Ứng dụng desktop Qt đa nền tảng thử nghiệm, được xây dựng bằng PySide6 và meshcore-py, tập trung vào tính năng trò chuyện MeshCore, tạo nguyên mẫu và quy trình phát triển mã nguồn mở có khả năng mở rộng.",
+      "sourceHash": "sha256:b511a4bd27d32abda5c61a7de848591d5af8d6f282ef0ecdd229dcae8cdccecf",
+      "generatedAt": "2026-06-27T16:34:28.027Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5110,
+      "promptTokens": 163,
+      "completionTokens": 881
+    },
+    "tags": {
+      "value": "[\"qt\",\"pyside6\",\"desktop\",\"thử nghiệm\"]",
+      "sourceHash": "sha256:4b7aac97761cbf530c1106bf29e716bb4e52d5b94c4e74c61b9919ebf2723d6d",
+      "generatedAt": "2026-06-27T16:34:39.185Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11157,
+      "promptTokens": 141,
+      "completionTokens": 950
+    },
+    "verificationNotes.the-project-explicitly-describes-itself-as-an-ea": {
+      "value": "Dự án tự mô tả rõ ràng đây là bản phát hành thử nghiệm ban đầu với API và cấu trúc nội bộ không ổn định.",
+      "sourceHash": "sha256:3a6150ae79fc20e196a4d1c01d94d1b9ec0f7ef55c75323f8256526fd1bb75ea",
+      "generatedAt": "2026-06-27T16:34:43.829Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4643,
+      "promptTokens": 146,
+      "completionTokens": 612
+    }
+  }
+}

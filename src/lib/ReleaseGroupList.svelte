@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { m } from '$lib/paraglide/messages.js';
   import { displayVersion, fmtDateTime, relativeTime } from '$lib/format.js';
   // A list of grouped releases (variants collapsed), with rendered Markdown
   // notes. Shared by the firmware detail page and /firmware/<id>/releases.
@@ -64,7 +65,7 @@
             title="Permalink to this release"
             aria-label="Permalink to {displayVersion(g.version)}"
           >#</a>
-          {#if latest}<span class="rounded bg-accent/15 px-1.5 py-0.5 text-[0.65rem] font-bold tracking-wide text-accent uppercase">Latest</span>{/if}
+          {#if latest}<span class="rounded bg-accent/15 px-1.5 py-0.5 text-[0.65rem] font-bold tracking-wide text-accent uppercase">{m.rel_latest()}</span>{/if}
           {#if g.prerelease}<span class="rounded bg-warn/15 px-1.5 py-0.5 text-[0.65rem] font-bold tracking-wide text-warn uppercase">Pre-release</span>{/if}
           {#if !single}<span class="text-[0.78rem] text-dim">{g.variants.length} variants</span>{/if}
           {#if g.datetime}

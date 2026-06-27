@@ -1,0 +1,15 @@
+{
+  "resource": "network/mesh-rheinland",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng mạng lưới LoRa của Đức dành cho Rheinland và vùng Tây Đức lân cận, bao gồm Meshtastic và MeshCore với tài liệu MeshCore địa phương, cài đặt EU/UK Narrow, phạm vi vùng Rheinland, bản đồ thời gian thực và trình phân tích lưu lượng của CoreScope, cùng kênh điều phối qua WhatsApp.",
+      "sourceHash": "sha256:d728a6384b7f594fbc0385b8d76d2a668551a659f93111cc49357a2685c4f498",
+      "generatedAt": "2026-06-27T16:50:29.536Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4778,
+      "promptTokens": 179,
+      "completionTokens": 860
+    }
+  }
+}

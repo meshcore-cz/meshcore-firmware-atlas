@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-e213",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento ESP32-S3R8 E-Ink com módulo SX1262 LoRa opcional e portas para sensores QuickLink. Compatível com Meshtastic/MeshCore; o LoRa é uma opção de compilação e não está disponível em todos os SKUs.",
+      "sourceHash": "sha256:f6083e6bd25b2901752f726a8f9787234ff22a32ad51d9c7bac3cde7f3a5d8f4",
+      "generatedAt": "2026-06-27T14:06:01.135Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11146,
+      "promptTokens": 178,
+      "completionTokens": 694
+    }
+  }
+}

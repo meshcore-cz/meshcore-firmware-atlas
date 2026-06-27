@@ -1,0 +1,15 @@
+{
+  "resource": "network/eu-uk-narrow",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "A predefinição padrão de banda estreita do MeshCore para a Europa e o Reino Unido na banda de 869.618 MHz (62.5 kHz / SF8 / CR4/8). Um padrão geral — não de uma única comunidade — que os nós em toda a UE e no Reino Unido partilham, para que possam comunicar entre si.",
+      "sourceHash": "sha256:2b077c89e222709b50aa6549bd6586df0d63fa634fea46036399e7434a03c191",
+      "generatedAt": "2026-06-27T14:46:15.522Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5295,
+      "promptTokens": 189,
+      "completionTokens": 1489
+    }
+  }
+}

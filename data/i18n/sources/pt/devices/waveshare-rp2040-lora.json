@@ -1,0 +1,15 @@
+{
+  "resource": "device/waveshare-rp2040-lora",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento compacta RP2040 + SX1262 LoRa, disponível nas variantes LF e HF, com GPIO castelado, conector de antena IPEX e um adaptador FPC USB-C opcional para gravação e acesso serial.",
+      "sourceHash": "sha256:8c4610966e2492749a3ffadd556532226b0b751428664c1e20a105ea3a6886a7",
+      "generatedAt": "2026-06-27T14:21:08.748Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3254,
+      "promptTokens": 175,
+      "completionTokens": 905
+    }
+  }
+}

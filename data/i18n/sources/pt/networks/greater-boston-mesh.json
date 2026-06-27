@@ -1,0 +1,15 @@
+{
+  "resource": "network/greater-boston-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore e Meshtastic liderada por voluntários dedicada a construir comunicações resilientes fora da rede em todo o Massachusetts e na região da Nova Inglaterra. O tráfego mais ativo a nível estadual opera no MeshCore, utilizando a predefinição EUA/Canadá.",
+      "sourceHash": "sha256:40d9619a35ced343277154f716adc03eff3b8ba7e085f4120beb0a0cb25f5433",
+      "generatedAt": "2026-06-27T14:46:32.506Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4516,
+      "promptTokens": 168,
+      "completionTokens": 1321
+    }
+  }
+}

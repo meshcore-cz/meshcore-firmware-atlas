@@ -1,0 +1,15 @@
+{
+  "resource": "network/mcml",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore gerida pela comunidade para a região de Münsterland, na Renânia do Norte-Vestfália, Alemanha, que permite a comunicação de texto de longo alcance totalmente sem internet ou redes móveis.",
+      "sourceHash": "sha256:438f6f3725762ce9131223674d56083bfd5fea34b4ca17f9e93835d9cd7221c9",
+      "generatedAt": "2026-06-27T14:47:53.898Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3777,
+      "promptTokens": 162,
+      "completionTokens": 1096
+    }
+  }
+}

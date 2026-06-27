@@ -1,0 +1,15 @@
+{
+  "resource": "network/brasov-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới cộng đồng MeshCore tại Brașov, Romania, hoạt động theo cấu hình hẹp EU/UK ở tần số 869.618 MHz. Đây là nhóm thân thiện với người mới bắt đầu, nơi chia sẻ hướng dẫn phần cứng, bản đồ vùng phủ sóng và hỗ trợ người Romania làm quen với MeshCore.",
+      "sourceHash": "sha256:8265651024371e1acfe8a8d60d6a6c01c2caa7cce70784c8304547399269354d",
+      "generatedAt": "2026-06-27T16:45:24.189Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9104,
+      "promptTokens": 176,
+      "completionTokens": 710
+    }
+  }
+}

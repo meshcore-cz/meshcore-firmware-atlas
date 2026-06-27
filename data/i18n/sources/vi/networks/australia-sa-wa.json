@@ -1,0 +1,15 @@
+{
+  "resource": "network/australia-sa-wa",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cài đặt sẵn radio chính thức của ứng dụng MeshCore — 923.125MHz / SF8 / BW62.5 / CR8.",
+      "sourceHash": "sha256:7332de9418b38f31bbf2ac5e8608c7c33cbce61a9481ab022a5517729bef1237",
+      "generatedAt": "2026-06-27T16:45:08.031Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5200,
+      "promptTokens": 154,
+      "completionTokens": 885
+    }
+  }
+}

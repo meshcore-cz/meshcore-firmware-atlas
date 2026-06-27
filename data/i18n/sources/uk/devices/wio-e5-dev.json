@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-e5-dev",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактна плата розробника Wio-E5 для прототипування на базі STM32WLE5JC / LoRaWAN із зовнішньою антеною та виведеними контактами GPIO. Призначена для швидкого запуску та радіотестування, а не для використання у готовому корпусі.",
+      "sourceHash": "sha256:23d00d05ce0815a6b3faffc6c1ceae5ed8bb01a5fe843d4e78329d427bd81953",
+      "generatedAt": "2026-06-27T15:14:41.736Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10284,
+      "promptTokens": 173,
+      "completionTokens": 618
+    }
+  }
+}

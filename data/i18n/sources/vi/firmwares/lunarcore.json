@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/lunarcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware LoRa ESP32-S3 đa giao thức kết hợp các chế độ vận hành MeshCore, Meshtastic và RNode/KISS, tích hợp sẵn chế độ repeater MeshCore.",
+      "sourceHash": "sha256:ac0d05c7a09a52174863cf1be3cd3f5a8b4bb020dc5b8b1415640184a63487cf",
+      "generatedAt": "2026-06-27T15:59:29.738Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4430,
+      "promptTokens": 163,
+      "completionTokens": 953
+    },
+    "deviceNotes.heltec-v3": {
+      "value": "Tệp README của dự án xác định Heltec WiFi LoRa 32 V3 là phần cứng mục tiêu.",
+      "sourceHash": "sha256:1e201732a0e1df3b91368bb5b6a564de2d2242f10218836d299a1f720dd20f0e",
+      "generatedAt": "2026-06-27T15:59:32.446Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2707,
+      "promptTokens": 148,
+      "completionTokens": 596
+    },
+    "features": {
+      "value": "[\"Giao thức MeshCore, Meshtastic và RNode/KISS\", \"Chế độ lặp MeshCore tích hợp\", \"BLE, Wi-Fi và cổng nối tiếp USB\"]",
+      "sourceHash": "sha256:5b4db5b9e4b88276452168bed2dabd3306720591313f6fc982bc706f39a4781c",
+      "generatedAt": "2026-06-27T15:59:37.024Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4577,
+      "promptTokens": 159,
+      "completionTokens": 833
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-v3",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển ESP32-S3 + SX1262 LoRa cổ điển, tích hợp màn hình OLED 0.96 inch, Wi-Fi và BLE. Thiết bị cấp nguồn qua USB-C và giao tiếp serial CP2102, có đầu nối pin SH1.25 tích hợp quản lý sạc cùng cổng ăng-ten LoRa IPEX. Được sử dụng rộng rãi làm các nút đồng hành, trạm chuyển tiếp và máy chủ phòng cho Meshtastic và MeshCore.",
+      "sourceHash": "sha256:f2026790eb1a9dc8d3c073c07374388c842e787999570eb9c5f699704e1cd2e9",
+      "generatedAt": "2026-06-27T15:34:23.689Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5420,
+      "promptTokens": 204,
+      "completionTokens": 1240
+    }
+  }
+}

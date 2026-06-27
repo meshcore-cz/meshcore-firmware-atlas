@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-tracker-l1-pro",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị cầm tay Meshtastic/MeshCore sẵn sàng sử dụng, tích hợp bo mạch L1 tương tự trong vỏ chắc chắn, màn hình OLED 1.3 inch, pin 2000 mAh, cần điều khiển 4 hướng và GNSS L76K. Hỗ trợ sạc qua USB-C và năng lượng mặt trời.",
+      "sourceHash": "sha256:ce74e926f7761ab4676c475c46036cd8fa0f941b4038d230659807dfccc2d1e4",
+      "generatedAt": "2026-06-27T15:42:11.231Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3500,
+      "promptTokens": 185,
+      "completionTokens": 593
+    }
+  }
+}

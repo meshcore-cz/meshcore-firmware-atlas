@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-e5-mini",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактна плата розробника Wio-E5 LoRaWAN з підтримкою заводської AT-прошивки та невеликим форм-фактором 50 × 23 мм. Призначена для швидкого запуску LoRa та прототипування на рівні GPIO, а не для використання у готовому корпусі.",
+      "sourceHash": "sha256:f5b089a1b8f3bd8466a5704b2d1b6151b126ef6bba9d46bf52cba42c934716aa",
+      "generatedAt": "2026-06-27T15:14:51.241Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9505,
+      "promptTokens": 176,
+      "completionTokens": 618
+    }
+  }
+}

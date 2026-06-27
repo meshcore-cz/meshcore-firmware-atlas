@@ -1,0 +1,15 @@
+{
+  "resource": "network/cascadia-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Síť MeshCore na Tichomořském severozápadě, pokrývající Britskou Kolumbii, Washington, Oregon a Severní Kalifornii, se zaměřuje na opakovače na solární napájení, veřejné kanály a koridor dálnice Interstate 5 mezi regionálními klastry.",
+      "sourceHash": "sha256:59d1063bcf4432beef2056063b95af8a347c68944c18553fe09ba25444f55637",
+      "generatedAt": "2026-06-27T12:01:53.760Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11841,
+      "promptTokens": 164,
+      "completionTokens": 1505
+    }
+  }
+}

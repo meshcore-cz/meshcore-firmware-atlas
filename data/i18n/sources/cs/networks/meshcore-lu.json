@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-lu",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita MeshCore v Lucembursku a přilehlém Velkém regionu, monitorovaná pomocí veřejného analyzátoru CoreScope.",
+      "sourceHash": "sha256:0e75a80c1315d7aec59d27b69589dc53f6b5d37a9db96da658097aa0639a68de",
+      "generatedAt": "2026-06-27T12:06:51.683Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5846,
+      "promptTokens": 148,
+      "completionTokens": 756
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "compatibility/heltec-v3",
+  "locale": "cs",
+  "fields": {
+    "notes": {
+      "value": "Na Heltec v3 funguje vše s nejnovějším referenčním firmwarem MeshCore.",
+      "sourceHash": "sha256:c61147d5f8e50af0be702d0161f7704361d1976628a2cdaf81f45867cec6a03c",
+      "generatedAt": "2026-06-27T12:14:36.350Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6050,
+      "promptTokens": 144,
+      "completionTokens": 715
+    }
+  }
+}

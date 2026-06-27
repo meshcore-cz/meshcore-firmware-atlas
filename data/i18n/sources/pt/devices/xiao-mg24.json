@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-mg24",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa principal XIAO MG24 combinada com um módulo LoRa SX1262 externo via SPI para compilações do ZephCore MeshCore. O MG24 oferece BLE de baixo consumo e um formato compacto XIAO para pequenas configurações de dispositivos complementares/repetidores.",
+      "sourceHash": "sha256:7a41a1abbde8492cce5274fe3c16087abc16a0a046798d87350b7ca64372baa2",
+      "generatedAt": "2026-06-27T14:20:38.444Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3685,
+      "promptTokens": 177,
+      "completionTokens": 1036
+    }
+  }
+}

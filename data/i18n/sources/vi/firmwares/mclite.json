@@ -1,0 +1,42 @@
+{
+  "resource": "firmware/mclite",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Phần sụn gọn nhẹ cho thiết bị liên lạc ngoại tuyến, dành riêng cho LilyGo T-Deck Plus và T-Watch Ultra. Được thiết kế chuyên biệt cho liên lạc khẩn cấp và ngoài trời — không cần kết nối internet hay trạm phát sóng di động. Hỗ trợ cấu hình qua thẻ SD, trình nạp web và máy chủ phòng. Tương thích với các ứng dụng MeshCore.",
+      "sourceHash": "sha256:bf9588a56b964d087906f1adc025928ed0580aee45ccead56573d78d497d9ead",
+      "generatedAt": "2026-06-27T15:47:28.957Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6421,
+      "promptTokens": 184,
+      "completionTokens": 991
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "T-Deck Plus — nền tảng mục tiêu chính với bàn phím QWERTY, trackball và GPS.",
+      "sourceHash": "sha256:26f79d48321170f5bb0f79014abec8cbfdb66a941238b8d816e2351eaa328409",
+      "generatedAt": "2026-06-27T15:47:34.290Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5332,
+      "promptTokens": 148,
+      "completionTokens": 891
+    },
+    "deviceNotes.lilygo-twatch-ultra": {
+      "value": "T-Watch Ultra — thiết bị đeo cổ tay với màn hình cảm ứng AMOLED.",
+      "sourceHash": "sha256:2cb2634232db27b68aeefc2a8ccc274033588e4e60260ca140f8616a68e55997",
+      "generatedAt": "2026-06-27T15:47:38.559Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4268,
+      "promptTokens": 143,
+      "completionTokens": 633
+    },
+    "features": {
+      "value": "[\"Trình ghi web (Chrome/Edge)\",\"Cấu hình thẻ SD (một người thiết lập, sao chép cho mọi người)\",\"Hỗ trợ máy chủ phòng (tối đa 8)\",\"Bàn phím ảo\",\"Hỗ trợ GPS\",\"Không cần tài khoản, không cần ghép nối, không cần thiết lập từng thiết bị\"]",
+      "sourceHash": "sha256:f4940ce55c19fca46848d92f34f71e0db9ed2244b0dd7c39f84ff37ab3415449",
+      "generatedAt": "2026-06-27T15:47:42.761Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4201,
+      "promptTokens": 178,
+      "completionTokens": 854
+    }
+  }
+}

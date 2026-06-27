@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-pt",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade portuguesa do MeshCore que coordena mensagens em rede LoRa off-grid a nível nacional através de meshcore.pt, disponibilizando configurações de rádio para 433.375 MHz e 869.618 MHz, guias de hardware locais, ferramentas de mapeamento e recursos do LusoApp.",
+      "sourceHash": "sha256:da43baa9a36219e96bf8ded451d1fcfa7bc962250a276947b69ddd38ed10d2b3",
+      "generatedAt": "2026-06-27T14:48:50.031Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3734,
+      "promptTokens": 179,
+      "completionTokens": 1119
+    }
+  }
+}

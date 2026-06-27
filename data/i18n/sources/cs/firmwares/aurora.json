@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/aurora",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Samostatný firmware MeshCore pro textovou komunikaci v LilyGo T-Deck, který umožňuje veřejné, soukromé a přímé zprávy, správu kontaktů, konfiguraci rádia a podporu doprovodné aplikace přes BLE.",
+      "sourceHash": "sha256:1b06c154384ff7052da6435584b0db2d142b14f74538c7daec1f8818b025046d",
+      "generatedAt": "2026-06-27T11:24:49.421Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 20620,
+      "promptTokens": 164,
+      "completionTokens": 1252
+    },
+    "features": {
+      "value": "[\"Veřejné, soukromé a přímé zprávy\",\"Kontakty v zařízení a konfigurace rádia\",\"Import a export konfigurace\",\"Podpora doprovodné aplikace BLE\"]",
+      "sourceHash": "sha256:6e3d2e9dad40ceca1f1ce0c96814bdebf4d3475a964569292707527a6771f4dc",
+      "generatedAt": "2026-06-27T12:35:44.263Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7815,
+      "promptTokens": 154,
+      "completionTokens": 460
+    }
+  }
+}

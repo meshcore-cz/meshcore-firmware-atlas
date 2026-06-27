@@ -1,0 +1,15 @@
+{
+  "resource": "device/ikoka-stick",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Stick mesh compacto baseado nas opções XIAO e EBYTE E22, equipado com um ecrã OLED de 0,96 polegadas e suporte a carregamento de bateria de lítio. O projeto suporta as variantes nRF52840 e ESP32-S3, com a potência e a frequência LoRa definidas em cada compilação.",
+      "sourceHash": "sha256:c1b6c548e498575b8a1d532d53e1b81a0bad08d8a70733b08997f249c011a463",
+      "generatedAt": "2026-06-27T14:08:45.242Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 21543,
+      "promptTokens": 184,
+      "completionTokens": 1460
+    }
+  }
+}

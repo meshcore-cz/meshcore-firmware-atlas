@@ -1,0 +1,12 @@
+{
+  "resource": "device/meshadventurer",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "DIY off-road deska ESP32 + E22 LoRa s 0,96palcovým OLED displejem SSD1306, ovládáním přes rotační enkodér, GPS a volitelnou podporou senzoru BME280. Navrženo pro sestavy s výkonem 1 W na frekvencích 433 nebo 868/915 MHz s externí SMA anténou a širokým rozsahem napájecího napětí 9–28 V.",
+      "sourceHash": "sha256:a8802370c9394182d4e28718a25f2ba11ce913382fa9954b4124dc89ea090eae",
+      "generatedAt": "2026-06-27T10:53:28.273Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

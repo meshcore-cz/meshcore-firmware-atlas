@@ -1,0 +1,78 @@
+{
+  "resource": "software/pymc-console",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Веб-панель для [[software:pymc-repeater|pyMC Repeater]] з аналізом пакетів у реальному часі, аналізом топології та маршрутів, статистикою радіочастот, картографуванням рельєфу, радаром якості зв'язку, моніторингом системи та інтерактивним терміналом репітера.",
+      "sourceHash": "sha256:a7acac247bc01ebaf54919894ea3700ef985bbc35d4b919a9954e9dca2568dfd",
+      "generatedAt": "2026-06-27T16:31:20.355Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10645,
+      "promptTokens": 174,
+      "completionTokens": 1223
+    },
+    "screenshots.topology.png.caption": {
+      "value": "Глибокий аналіз топології та картографування місцевості",
+      "sourceHash": "sha256:5ef9b2bce3a9112ca97cbe0bc37e1d70209b6cc8e01c509408b78408addde66d",
+      "generatedAt": "2026-06-27T16:31:24.993Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4638,
+      "promptTokens": 135,
+      "completionTokens": 670
+    },
+    "screenshots.link-quality.png.caption": {
+      "value": "Радар якості спрямованого з'єднання",
+      "sourceHash": "sha256:b436f75410bfe2d7b667e81f61ca1f4568188a581699a1b35fd437acfc4df281",
+      "generatedAt": "2026-06-27T16:31:28.606Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3613,
+      "promptTokens": 134,
+      "completionTokens": 493
+    },
+    "screenshots.statistics.png.caption": {
+      "value": "Статистика РЧ та часу ефіру",
+      "sourceHash": "sha256:c1bcb6cc6fbf71241605ba2678f9a1c71bcf0f369880b93f80f6121a0ba63d48",
+      "generatedAt": "2026-06-27T16:31:32.627Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4020,
+      "promptTokens": 134,
+      "completionTokens": 606
+    },
+    "screenshots.terminal.png.caption": {
+      "value": "Термінал-репітер, журнали та теми",
+      "sourceHash": "sha256:5bdf11840fdde6fca46a4db9cb02a4088265425aa89a7c1ae8b28434d72f5a63",
+      "generatedAt": "2026-06-27T16:31:37.055Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4428,
+      "promptTokens": 136,
+      "completionTokens": 701
+    },
+    "tags": {
+      "value": "[\"ретранслятор\",\"топологія\",\"аналіз радіочастот\",\"Raspberry Pi\",\"інформаційна панель\"]",
+      "sourceHash": "sha256:ecf0689de1e3a2699e95a41104b8f0b91244a7850a465e01edc9118ccd09b164",
+      "generatedAt": "2026-06-27T16:31:47.725Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10670,
+      "promptTokens": 147,
+      "completionTokens": 841
+    },
+    "verificationNotes.requires-an-existing-pymc-repeater-installation-": {
+      "value": "Потребує встановленого pyMC Repeater і замінює лише ресурси його веб-панелі.",
+      "sourceHash": "sha256:bd48f5322714c6f2bd808cce2148f3fe487ab9e7a8b4faa96a318bd972bcc8b5",
+      "generatedAt": "2026-06-27T16:31:52.305Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4578,
+      "promptTokens": 145,
+      "completionTokens": 773
+    },
+    "verificationNotes.repeater-service-lifecycle-and-radio-configurati": {
+      "value": "Життєвий цикл служби репітера та радіоконфігурація залишаються під управлінням pyMC Repeater.",
+      "sourceHash": "sha256:976d991e2a805116a213b8ff3a67fc48e67084cc503bb69c91130a7b38575890",
+      "generatedAt": "2026-06-27T16:31:57.684Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5379,
+      "promptTokens": 144,
+      "completionTokens": 859
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-tracker-l1-eink",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Енергоефективний вузол Meshtastic/MeshCore з LoRa, GNSS L76K та знімним 2.13-дюймовим E-ink дисплеєм для оновлення статусу з наднизьким енергоспоживанням. Підтримує живлення від USB-C, сонячних панелей та літій-іонного акумулятора.",
+      "sourceHash": "sha256:a718c17fbcc8440fe5a15e0ff19a980501a7856cd30f57332fc93cf0873e2f98",
+      "generatedAt": "2026-06-27T15:14:14.096Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12562,
+      "promptTokens": 180,
+      "completionTokens": 828
+    }
+  }
+}

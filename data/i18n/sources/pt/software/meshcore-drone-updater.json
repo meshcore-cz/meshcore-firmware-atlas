@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-drone-updater",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Serviço automatizado para Raspberry Pi que atualiza via Bluetooth DFU nós MeshCore baseados em nRF52 fisicamente inacessíveis, projetado para manutenção de telhados e torres por aproximação ou com auxílio de drones.",
+      "sourceHash": "sha256:3534430a60ab7a1b54c81e021a5c2030c3213c16c30703289f2babc86744eb90",
+      "generatedAt": "2026-06-27T14:31:05.977Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3396,
+      "promptTokens": 163,
+      "completionTokens": 932
+    },
+    "tags": {
+      "value": "[\"drone\",\"bluetooth-dfu\",\"nrf52\",\"sem intervenção\",\"manutenção em campo\"]",
+      "sourceHash": "sha256:f9396fb8acc0bd2fa06c40de235a282f70115fdbba92487fc042415af0bc4b6e",
+      "generatedAt": "2026-06-27T14:31:08.693Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2716,
+      "promptTokens": 149,
+      "completionTokens": 669
+    },
+    "verificationNotes.supports-nrf52-devices-that-expose-bluetooth-dfu": {
+      "value": "Suporta dispositivos nRF52 que expõem o modo DFU Bluetooth e depende de arquivos de mapeamento de dispositivo para firmware mantidos pelo operador.",
+      "sourceHash": "sha256:02a7ea970ddb0d0b99d848c8318e0b8c2a603c1e1fd9d1a401fdd1cd16852273",
+      "generatedAt": "2026-06-27T14:31:11.588Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2895,
+      "promptTokens": 155,
+      "completionTokens": 809
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "O repositório não declara uma licença SPDX no momento.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:31:13.347Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1759,
+      "promptTokens": 139,
+      "completionTokens": 410
+    }
+  }
+}

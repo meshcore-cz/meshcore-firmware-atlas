@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-hu",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Угорська спільнота MeshCore для автономного обміну повідомленнями на базі LoRa. Координація здійснюється через mc868.hu та групи в Telegram/Facebook, а також передбачено локальний аналізатор CoreScope і радіоналаштування EU/UK Narrow для національної mesh-мережі 868 МГц.",
+      "sourceHash": "sha256:14ec03c5dffa66052854a7b6f715804e1a2289f350102469f6faf39fb478ab63",
+      "generatedAt": "2026-06-27T16:51:24.270Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6156,
+      "promptTokens": 175,
+      "completionTokens": 1006
+    }
+  }
+}

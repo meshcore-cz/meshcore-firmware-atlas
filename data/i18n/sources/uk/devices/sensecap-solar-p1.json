@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-solar-p1",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Економний вузол або репітер Meshtastic/MeshCore на сонячних батареях для використання на відкритому повітрі. Пристрій поєднує XIAO nRF52840 Plus та Wio-SX1262 у корпусі із захистом IPX6, оснащеному вбудованою сонячною панеллю на 5 Вт. Має чотири слоти для акумуляторів 18650 (елементи живлення не входять до комплекту) та опціональний GPS-модуль XIAO L76K; вбудованого GPS та акумуляторів немає.",
+      "sourceHash": "sha256:0862e4405f5d508f3aeb4392889f0b52f9a771cf249a6741826d152c4720c9ab",
+      "generatedAt": "2026-06-27T15:01:31.034Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3889,
+      "promptTokens": 210,
+      "completionTokens": 1154
+    }
+  }
+}

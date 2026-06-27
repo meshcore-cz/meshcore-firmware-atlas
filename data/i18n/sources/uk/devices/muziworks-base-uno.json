@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-base-uno",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактна плата розробника BASE System для односмугових вузлів Meshtastic. Вона поєднує мікроконтролер nRF52840 із SX1262 LoRa, має гнучкі інтерфейси GPIO, підтримує розширення через QWIIC/STEMMA QT, а також оснащена зарядним пристроєм, що підтримує підключення акумулятора та сонячної панелі.",
+      "sourceHash": "sha256:38a65e2c04702e199c97aa65a141478274fd71ee6e70accb9ecbcdeb0cb3dbeb",
+      "generatedAt": "2026-06-27T15:00:22.964Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3644,
+      "promptTokens": 179,
+      "completionTokens": 1056
+    }
+  }
+}

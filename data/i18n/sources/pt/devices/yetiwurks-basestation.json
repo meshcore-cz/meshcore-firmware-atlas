@@ -1,0 +1,15 @@
+{
+  "resource": "device/yetiwurks-basestation",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Estação base e repetidor externo baseado em RAK WisBlock, numa caixa IP65, construído a partir do kit inicial RAK19003 + RAK4631 com antena externa, passagem USB-C e entrada de energia solar. Utiliza células 18650 removíveis em vez de um pacote de baterias integrado.",
+      "sourceHash": "sha256:3adb3696e48f340eee246f16029b2a800bfc47df058f007ef97b75c470d3ef7c",
+      "generatedAt": "2026-06-27T14:21:17.818Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4623,
+      "promptTokens": 187,
+      "completionTokens": 1403
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-paris",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота MeshCore для Парижа та регіону Великий Париж (Grand Paris), яка розгортає автономну mesh-мережу LoRa дальнього радіусу дії по всій території міської агломерації.",
+      "sourceHash": "sha256:0ddef1706e124dd25c6883575fe732d881e30fbb9a14e3fb8a1cab13d5e31109",
+      "generatedAt": "2026-06-27T16:56:08.390Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5822,
+      "promptTokens": 157,
+      "completionTokens": 700
+    }
+  }
+}

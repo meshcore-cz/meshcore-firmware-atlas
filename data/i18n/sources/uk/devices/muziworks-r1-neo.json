@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-r1-neo",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактний портативний пристрій Meshtastic заводського збирання із вбудованим GPS/BDS, герметичним корпусом, стійким до погодних умов, однією кнопкою з м'яким натисканням та часом роботи від вбудованого акумулятора до кількох днів.",
+      "sourceHash": "sha256:646fd9a0a399e51dce7a43fbf086b5ff0e8fbeb9befa6b7e315003c3c9a47a02",
+      "generatedAt": "2026-06-27T15:00:31.699Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5114,
+      "promptTokens": 165,
+      "completionTokens": 1477
+    }
+  }
+}

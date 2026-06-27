@@ -1,0 +1,15 @@
+{
+  "resource": "network/georgia-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tại Bắc Georgia, Hoa Kỳ, với hơn 840 nút trải dài khắp Lawrenceville, Marietta và khu vực miền núi Bắc Georgia. Hoạt động trên băng tần 915 MHz của Mỹ với bộ phân tích CoreScope và một phiên bản riêng tại meshstat.com.",
+      "sourceHash": "sha256:132a5a4a725394a844e322e2c1ec2873f2d8cb26c8035b50651c46152cbffa49",
+      "generatedAt": "2026-06-27T16:47:44.170Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4112,
+      "promptTokens": 181,
+      "completionTokens": 730
+    }
+  }
+}

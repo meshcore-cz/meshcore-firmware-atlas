@@ -1,0 +1,15 @@
+{
+  "resource": "device/uart-solar-node-station",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nút Meshtastic/MeshCore ngoài trời dùng năng lượng mặt trời đã được lắp ráp hoàn chỉnh, chạy trên bo mạch nền μArt Solar Mesh (firmware tương thích RAK4630, RAK4631). Đi kèm tấm pin 10 W và pin; đầu vào năng lượng mặt trời MPPT 7–30 V.",
+      "sourceHash": "sha256:9309653a356e2aa3d6d2453b6d4e397881e866b592acd3397e3bab199bc9511a",
+      "generatedAt": "2026-06-27T15:44:33.592Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5177,
+      "promptTokens": 185,
+      "completionTokens": 997
+    }
+  }
+}

@@ -1,6 +1,7 @@
 <script>
   import { Pagination } from 'bits-ui';
   import { ChevronLeft, ChevronRight } from '@lucide/svelte';
+  import { m } from '$lib/paraglide/messages.js';
 
   /**
    * Page navigation built on bits-ui Pagination. Renders Prev / numbered pages
@@ -26,7 +27,7 @@
   {#snippet children({ pages })}
     <nav class="mt-5 flex flex-wrap items-center justify-center gap-1.5">
       <Pagination.PrevButton class={`${btn} flex items-center gap-1`}>
-        <ChevronLeft class="size-4" /> Prev
+        <ChevronLeft class="size-4" /> {m.pagination_prev()}
       </Pagination.PrevButton>
 
       {#each pages as p (p.key)}
@@ -43,7 +44,7 @@
       {/each}
 
       <Pagination.NextButton class={`${btn} flex items-center gap-1`}>
-        Next <ChevronRight class="size-4" />
+        {m.pagination_next()} <ChevronRight class="size-4" />
       </Pagination.NextButton>
     </nav>
   {/snippet}

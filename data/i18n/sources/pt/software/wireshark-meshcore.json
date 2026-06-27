@@ -1,0 +1,60 @@
+{
+  "resource": "software/wireshark-meshcore",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dissector de protocolo Lua para Wireshark e conversor Python sem dependências para transformar logs de rádio JSON do MeshCore em capturas pcapng, com árvores de pacotes, metadados de rádio, filtros de exibição e suporte ao tshark.",
+      "sourceHash": "sha256:55c12badd1da47c442583ed9cfa2eb0d173b1f74159681a6d1f7c3fff68edd3a",
+      "generatedAt": "2026-06-27T14:43:40.336Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2638,
+      "promptTokens": 167,
+      "completionTokens": 724
+    },
+    "screenshots.packet-tree.png.caption": {
+      "value": "Árvore de pacotes do MeshCore e mensagem de grupo descriptografada",
+      "sourceHash": "sha256:af82484a2bb055ee85b6cb1d99691641d5e4bb1c40061de0815e04b7648425b5",
+      "generatedAt": "2026-06-27T14:43:42.866Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2504,
+      "promptTokens": 137,
+      "completionTokens": 582
+    },
+    "screenshots.io-graph.png.caption": {
+      "value": "Tráfego do MeshCore visualizado com gráficos de E/S do Wireshark",
+      "sourceHash": "sha256:ddcc333c21f64dc0bfafbbe097ca9bfa54267bf7ffbf19bcf960943beb7753d8",
+      "generatedAt": "2026-06-27T14:43:45.269Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2402,
+      "promptTokens": 141,
+      "completionTokens": 591
+    },
+    "tags": {
+      "value": "[\"wireshark\",\"pcapng\",\"dissector\",\"análise de protocolos\"]",
+      "sourceHash": "sha256:95381dfe497f9aac54c557c10e81bcf53133e6b43abb02a9aba43642ae7e87e1",
+      "generatedAt": "2026-06-27T14:43:47.362Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2093,
+      "promptTokens": 144,
+      "completionTokens": 516
+    },
+    "verificationNotes.the-converter-currently-uses-temporary-dlt-user0": {
+      "value": "Atualmente, o conversor utiliza o tipo de camada de enlace temporário DLT_USER0 147; as capturas precisarão ser regeneradas se um LINKTYPE registrado for atribuído.",
+      "sourceHash": "sha256:c51b061d456021064ef4c064c38f470b610621a986036a693a957369b6771780",
+      "generatedAt": "2026-06-27T14:43:50.649Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3287,
+      "promptTokens": 156,
+      "completionTokens": 922
+    },
+    "verificationNotes.the-converter-requires-python-3-6-and-has-no-ext": {
+      "value": "O conversor requer Python 3.6+ e não tem dependências externas em tempo de execução.",
+      "sourceHash": "sha256:f17aa953ada7f04ecb1f20d7427adc98f52c2d64c44460912426f390573e91a6",
+      "generatedAt": "2026-06-27T14:43:52.863Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2214,
+      "promptTokens": 145,
+      "completionTokens": 521
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m1",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị thu phát Meshtastic/MeshCore cầm tay tích hợp nRF52840 + SX1262, trang bị màn hình E-Paper 1.54 inch, đèn nền, GPS, RTC, còi báo và pin 1200 mAh. Sản phẩm được đóng gói trong vỏ ABS+PC đi kèm ăng-ten LoRa RP-SMA và cổng sạc/lập trình USB-C.",
+      "sourceHash": "sha256:39e99825c1389fc4f9833b0df874d4215c09f9531a71d1ed89e325f3e6da76d7",
+      "generatedAt": "2026-06-27T15:30:14.934Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 26293,
+      "promptTokens": 199,
+      "completionTokens": 901
+    }
+  }
+}

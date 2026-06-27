@@ -2,6 +2,8 @@
   // Size breakdown of the compiled JSON data bundle — top-level collections and
   // their records, ranked by byte size, as an expandable tree/table.
   import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
   import { formatBytes } from '$lib/bundleSize.js';
@@ -46,23 +48,23 @@
   const fmtKm2 = (n) => (n == null ? '—' : `${n.toLocaleString()} km²`);
 
   const COLLECTION_META = {
-    devices: { label: 'Device', tw: 'bg-accent/15 text-accent' },
-    vendors: { label: 'Vendor', tw: 'bg-warn/15 text-warn' },
-    software: { label: 'Software', tw: 'bg-ok/15 text-ok' }
+    devices: { label: m.cmd_type_device(), tw: 'bg-accent/15 text-accent' },
+    vendors: { label: m.cmd_type_vendor(), tw: 'bg-warn/15 text-warn' },
+    software: { label: m.cmd_type_software(), tw: 'bg-ok/15 text-ok' }
+  };
+
+  // Inline markup for prose / summaries rendered with {@html}; only our own
+  // trusted markup is injected.
+  const ink = (s) => `<span class="font-medium text-ink">${s}</span>`;
+  const introVars = {
+    dataJson: `<a class="text-accent2 hover:underline" href="${base}/data.json">data.json</a>`
   };
 </script>
 
-<Seo
-  title="Data bundle size"
-  description="Size breakdown of the MeshCore Ninja JSON data bundle — every collection and record ranked by byte size."
-/>
+<Seo title={m.tool_bundle_label()} description={m.bundle_seo_desc()} />
 
 <PageHeader tool="bundle" subtitleClass="mb-5 max-w-2xl">
-  Where the bytes go in the compiled data bundle — each collection and its records,
-  ranked by serialized size. The browsable
-  <a class="text-accent2 hover:underline" href="{base}/data.json">data.json</a>
-  is pretty-printed; the figures below are for the minified bundle that's actually
-  shipped and compressed.
+  {@html m.bundle_intro(introVars)}
 </PageHeader>
 
 <!-- Transfer sizes: the minified bundle and its pre-built gzip / zstd siblings,
@@ -83,19 +85,19 @@
         <span class="font-mono text-[0.72rem] {card.tone}">{card.note}</span>
       </div>
       <div class="mt-0.5 text-2xl font-bold tabular-nums">{formatBytes(card.bytes)}</div>
-      <div class="font-mono text-[0.72rem] text-dim group-hover:text-accent2">{card.bytes.toLocaleString()} bytes · download ↓</div>
+      <div class="font-mono text-[0.72rem] text-dim group-hover:text-accent2">{m.bundle_bytes_download({ bytes: card.bytes.toLocaleString() })}</div>
     </a>
   {/each}
 </div>
 
 <div class="mb-5 flex flex-wrap items-center gap-x-6 gap-y-2">
   <div>
-    <div class="text-[0.75rem] uppercase tracking-wide text-dim">Collections</div>
+    <div class="text-[0.75rem] uppercase tracking-wide text-dim">{m.bundle_collections()}</div>
     <div class="text-lg font-semibold tabular-nums">{data.sections.length}</div>
   </div>
   {#if data.generatedAt}
     <div>
-      <div class="text-[0.75rem] uppercase tracking-wide text-dim">Generated</div>
+      <div class="text-[0.75rem] uppercase tracking-wide text-dim">{m.bundle_generated()}</div>
       <div class="text-[0.95rem]">{fullDateTime(data.generatedAt)}</div>
     </div>
   {/if}
@@ -105,11 +107,11 @@
   <table class="w-full border-collapse text-[0.92rem]">
     <thead>
       <tr class="border-b border-edge bg-elev2 text-left text-[0.8rem] uppercase tracking-wide text-dim">
-        <th class="px-4 py-2.5 font-semibold">Collection</th>
-        <th class="px-4 py-2.5 text-right font-semibold">Items</th>
-        <th class="hidden px-4 py-2.5 font-semibold sm:table-cell">Share</th>
-        <th class="px-4 py-2.5 text-right font-semibold">Size</th>
-        <th class="px-4 py-2.5 text-right font-semibold">Bytes</th>
+        <th class="px-4 py-2.5 font-semibold">{m.bundle_col_collection()}</th>
+        <th class="px-4 py-2.5 text-right font-semibold">{m.bundle_col_items()}</th>
+        <th class="hidden px-4 py-2.5 font-semibold sm:table-cell">{m.bundle_col_share()}</th>
+        <th class="px-4 py-2.5 text-right font-semibold">{m.bundle_col_size()}</th>
+        <th class="px-4 py-2.5 text-right font-semibold">{m.bundle_col_bytes()}</th>
       </tr>
     </thead>
     <tbody>
@@ -142,7 +144,7 @@
             <tr class="border-b border-edge bg-bg/40 text-[0.86rem]">
               <td class="py-1.5 pr-4 pl-11">
                 {#if c.href}
-                  <a class="text-accent2 hover:underline" href="{base}{c.href}">{c.name ?? c.label}</a>
+                  <a class="text-accent2 hover:underline" href={href(c.href)}>{c.name ?? c.label}</a>
                   {#if c.name && c.label !== c.name}<span class="ml-1.5 font-mono text-[0.72rem] text-dim">{c.label}</span>{/if}
                 {:else}
                   <span class="font-mono text-ink/90">{c.label}</span>
@@ -166,12 +168,12 @@
     </tbody>
     <tfoot>
       <tr class="border-t border-edge bg-elev2/60 text-[0.84rem] text-dim">
-        <td class="px-4 py-2.5" colspan="3">Metadata &amp; structural overhead (schemaVersion, counts, object braces…)</td>
+        <td class="px-4 py-2.5" colspan="3">{m.bundle_overhead()}</td>
         <td class="px-4 py-2.5 text-right tabular-nums">{formatBytes(overhead)}</td>
         <td class="px-4 py-2.5 text-right font-mono text-[0.82rem] tabular-nums">{overhead.toLocaleString()}</td>
       </tr>
       <tr class="border-t border-edge bg-elev2 font-semibold">
-        <td class="px-4 py-3" colspan="3">Total</td>
+        <td class="px-4 py-3" colspan="3">{m.bundle_total()}</td>
         <td class="px-4 py-3 text-right tabular-nums">{formatBytes(data.totalBytes)}</td>
         <td class="px-4 py-3 text-right font-mono text-[0.82rem] tabular-nums">{data.totalBytes.toLocaleString()}</td>
       </tr>
@@ -184,12 +186,15 @@
 <section class="mt-9">
   <div class="mb-3 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-edge pb-1.5">
     <div class="flex flex-wrap items-baseline gap-x-2.5 gap-y-0.5">
-      <h2 class="text-[1.1rem] font-semibold">Image assets</h2>
-      <span class="text-[0.78rem] text-dim">Hashed &amp; served separately — not part of the data bundle above</span>
+      <h2 class="text-[1.1rem] font-semibold">{m.bundle_image_assets()}</h2>
+      <span class="text-[0.78rem] text-dim">{m.bundle_image_note()}</span>
     </div>
     <span class="text-[0.8rem] text-dim">
-      {data.images.fileCount} files across {data.images.items.length} items ·
-      <span class="font-medium text-ink">{formatBytes(data.images.total)}</span> total
+      {@html m.bundle_image_summary({
+        files: data.images.fileCount,
+        items: data.images.items.length,
+        total: ink(formatBytes(data.images.total))
+      })}
     </span>
   </div>
 
@@ -197,11 +202,11 @@
     <table class="w-full border-collapse text-[0.92rem]">
       <thead>
         <tr class="border-b border-edge bg-elev2 text-left text-[0.8rem] uppercase tracking-wide text-dim">
-          <th class="px-4 py-2.5 font-semibold">Item</th>
-          <th class="px-4 py-2.5 text-right font-semibold">Files</th>
-          <th class="hidden px-4 py-2.5 font-semibold sm:table-cell">Share</th>
-          <th class="px-4 py-2.5 text-right font-semibold">Size</th>
-          <th class="px-4 py-2.5 text-right font-semibold">Bytes</th>
+          <th class="px-4 py-2.5 font-semibold">{m.bundle_col_item()}</th>
+          <th class="px-4 py-2.5 text-right font-semibold">{m.bundle_col_files()}</th>
+          <th class="hidden px-4 py-2.5 font-semibold sm:table-cell">{m.bundle_col_share()}</th>
+          <th class="px-4 py-2.5 text-right font-semibold">{m.bundle_col_size()}</th>
+          <th class="px-4 py-2.5 text-right font-semibold">{m.bundle_col_bytes()}</th>
         </tr>
       </thead>
       <tbody>
@@ -212,7 +217,7 @@
               <span class="flex items-center gap-1.5">
                 <ChevronRight class="h-4 w-4 shrink-0 text-dim transition-transform {open ? 'rotate-90' : ''}" aria-hidden="true" />
                 <span class="rounded px-1.5 py-0.5 text-[0.66rem] font-semibold uppercase {COLLECTION_META[it.collection]?.tw ?? 'bg-elev2 text-dim'}">{COLLECTION_META[it.collection]?.label ?? it.collection}</span>
-                <a class="font-medium text-accent2 hover:underline" href="{base}{it.href}" onclick={(e) => e.stopPropagation()}>{it.name}</a>
+                <a class="font-medium text-accent2 hover:underline" href={href(it.href)} onclick={(e) => e.stopPropagation()}>{it.name}</a>
               </span>
             </td>
             <td class="px-4 py-2.5 text-right tabular-nums text-dim">{it.files.length}</td>
@@ -250,7 +255,7 @@
         class="rounded-lg border border-edge bg-elev px-3.5 py-1.5 text-[0.85rem] text-dim transition hover:border-accent/60 hover:text-ink"
         onclick={() => (showAllImages = !showAllImages)}
       >
-        {showAllImages ? `Show top ${IMG_TOP}` : `Show all ${data.images.items.length} items`}
+        {showAllImages ? m.bundle_show_top({ count: IMG_TOP }) : m.bundle_show_all_items({ count: data.images.items.length })}
       </button>
     </div>
   {/if}
@@ -262,15 +267,19 @@
 <section class="mt-9">
   <div class="mb-3 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-edge pb-1.5">
     <div class="flex flex-wrap items-baseline gap-x-2.5 gap-y-0.5">
-      <h2 class="text-[1.1rem] font-semibold">Network area shapes</h2>
-      <span class="text-[0.78rem] text-dim">GeoJSON served separately — not part of the data bundle above</span>
+      <h2 class="text-[1.1rem] font-semibold">{m.bundle_geojson_title()}</h2>
+      <span class="text-[0.78rem] text-dim">{m.bundle_geojson_note()}</span>
     </div>
     <span class="text-[0.8rem] text-dim">
-      {data.geojson.count} areas ·
-      <span class="font-medium text-ink">{formatBytes(data.geojson.total)}</span> source
+      {@html m.bundle_geojson_summary({
+        count: data.geojson.count,
+        total: ink(formatBytes(data.geojson.total))
+      })}
       {#if data.geojson.combinedBytes}
-        · <span class="font-medium text-ink">{formatBytes(data.geojson.combinedBytes)}</span> combined
-        (<a class="text-accent2 hover:underline" href="{base}/network-area/all.geojson">all.geojson</a>, one map request)
+        {@html m.bundle_geojson_combined({
+          combined: ink(formatBytes(data.geojson.combinedBytes)),
+          allGeojson: `<a class="text-accent2 hover:underline" href="${base}/network-area/all.geojson">all.geojson</a>`
+        })}
       {/if}
     </span>
   </div>
@@ -279,11 +288,11 @@
     <table class="w-full border-collapse text-[0.92rem]">
       <thead>
         <tr class="border-b border-edge bg-elev2 text-left text-[0.8rem] uppercase tracking-wide text-dim">
-          <th class="px-4 py-2.5 font-semibold">Network</th>
-          <th class="hidden px-4 py-2.5 text-right font-semibold sm:table-cell">Area</th>
-          <th class="hidden px-4 py-2.5 font-semibold sm:table-cell">Share</th>
-          <th class="px-4 py-2.5 text-right font-semibold">Size</th>
-          <th class="px-4 py-2.5 text-right font-semibold">Bytes</th>
+          <th class="px-4 py-2.5 font-semibold">{m.bundle_col_network()}</th>
+          <th class="hidden px-4 py-2.5 text-right font-semibold sm:table-cell">{m.bundle_col_area()}</th>
+          <th class="hidden px-4 py-2.5 font-semibold sm:table-cell">{m.bundle_col_share()}</th>
+          <th class="px-4 py-2.5 text-right font-semibold">{m.bundle_col_size()}</th>
+          <th class="px-4 py-2.5 text-right font-semibold">{m.bundle_col_bytes()}</th>
         </tr>
       </thead>
       <tbody>
@@ -291,7 +300,7 @@
           <tr class="border-b border-edge transition hover:bg-elev">
             <td class="px-4 py-2.5">
               <span class="flex items-center gap-2">
-                <a class="font-medium text-accent2 hover:underline" href="{base}{it.href}">{it.name}</a>
+                <a class="font-medium text-accent2 hover:underline" href={href(it.href)}>{it.name}</a>
                 <span class="font-mono text-[0.72rem] text-dim">{it.id}</span>
               </span>
             </td>
@@ -319,7 +328,7 @@
         class="rounded-lg border border-edge bg-elev px-3.5 py-1.5 text-[0.85rem] text-dim transition hover:border-accent/60 hover:text-ink"
         onclick={() => (showAllGeojson = !showAllGeojson)}
       >
-        {showAllGeojson ? `Show top ${GEO_TOP}` : `Show all ${data.geojson.items.length} areas`}
+        {showAllGeojson ? m.bundle_show_top({ count: GEO_TOP }) : m.bundle_show_all_areas({ count: data.geojson.items.length })}
       </button>
     </div>
   {/if}

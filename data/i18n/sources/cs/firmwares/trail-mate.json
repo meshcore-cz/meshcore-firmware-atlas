@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/trail-mate",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Firmware pro ruční zařízení s prioritou offline režimu, určený pro navigaci a komunikaci přes LoRa. Poskytuje nativní podporu paketových cest MeshCore a Meshtastic, mapy, koordinaci týmu a nástroje pro zařízení optimalizovaná na terénní použití.",
+      "sourceHash": "sha256:8cb098405113beaac49b75d1f6f0c4b36bb66db5b01b843bc955732190a1b632",
+      "generatedAt": "2026-06-27T11:22:30.213Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12205,
+      "promptTokens": 160,
+      "completionTokens": 1062
+    },
+    "features": {
+      "value": "[\"Zasílání zpráv přes MeshCore a Meshtastic\",\"GPS mapy a záznam tras\",\"Poloha týmu a výměna trasových bodů\",\"Datový proud přes USB host-link\"]",
+      "sourceHash": "sha256:4f5cfc1a9dd8e78e478ac5e05d7edb46b058c9998cfcf445be37ea278400e898",
+      "generatedAt": "2026-06-27T12:34:00.390Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17018,
+      "promptTokens": 155,
+      "completionTokens": 1156
+    }
+  }
+}

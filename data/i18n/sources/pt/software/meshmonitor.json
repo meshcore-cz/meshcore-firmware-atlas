@@ -1,0 +1,87 @@
+{
+  "resource": "software/meshmonitor",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Painel multiprotocolo auto-hospedado para monitoramento e administração de redes MeshCore, Meshtastic e MQTT, com mapas unificados, mensagens, telemetria, automação, alertas e controle de acesso por fonte.",
+      "sourceHash": "sha256:a6c85feaaf3174519af608baf8a791fe9286f3ecf778894e7651473723dad7ca",
+      "generatedAt": "2026-06-27T14:38:50.919Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4507,
+      "promptTokens": 167,
+      "completionTokens": 1235
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Painel de rede de múltiplas fontes",
+      "sourceHash": "sha256:c1bb72c6e0ce0b9677118a813002628d624aeea0d3f6711eeae1f3b3c6486e59",
+      "generatedAt": "2026-06-27T14:38:53.299Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2379,
+      "promptTokens": 133,
+      "completionTokens": 546
+    },
+    "screenshots.messages.png.caption": {
+      "value": "Mensagens unificadas em vários canais",
+      "sourceHash": "sha256:a145f79917cf848753c0a42a20216130c9f44d8e34f5bc3cdf26924a3d3379fc",
+      "generatedAt": "2026-06-27T14:38:58.068Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4768,
+      "promptTokens": 132,
+      "completionTokens": 1230
+    },
+    "screenshots.telemetry.png.caption": {
+      "value": "Painéis e gráficos de telemetria",
+      "sourceHash": "sha256:317308994b2481109949c9d55a25d2ab277f00c5420e91560caad43996687b11",
+      "generatedAt": "2026-06-27T14:38:59.985Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1917,
+      "promptTokens": 135,
+      "completionTokens": 440
+    },
+    "screenshots.map.png.caption": {
+      "value": "Mapa de rede interativo",
+      "sourceHash": "sha256:cb079009598d1295b2ba547fb4a6ca95973c2d2b65af661f40fafea125cda621",
+      "generatedAt": "2026-06-27T14:39:02.065Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2079,
+      "promptTokens": 132,
+      "completionTokens": 448
+    },
+    "tags": {
+      "value": "[\"multiprotocolo\",\"auto-hospedado\",\"painel\",\"segurança\",\"mqtt\"]",
+      "sourceHash": "sha256:c1f4079e4d7cb537dfd7d978ba6d5ea4008909cb450ccf89e24b652bc16433f1",
+      "generatedAt": "2026-06-27T14:39:03.458Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1393,
+      "promptTokens": 144,
+      "completionTokens": 206
+    },
+    "verificationNotes.meshcore-devices-connect-over-usb-or-tcp-ble-sup": {
+      "value": "Os dispositivos MeshCore conectam-se via USB ou TCP; o suporte a BLE utiliza um sidecar de ponte.",
+      "sourceHash": "sha256:18ce0554d124e91d491285551078aaed2ed4220c331221d721266ec26059e5b4",
+      "generatedAt": "2026-06-27T14:39:06.348Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2890,
+      "promptTokens": 146,
+      "completionTokens": 668
+    },
+    "verificationNotes.native-windows-and-macos-desktop-installers-are-": {
+      "value": "Os instaladores nativos de desktop para Windows e macOS são publicados nos lançamentos do GitHub.",
+      "sourceHash": "sha256:fc7d60a3e1e548a8858c930b7239604d8e0621bea0fc240e7b0c2cb20d1a727e",
+      "generatedAt": "2026-06-27T14:39:09.163Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2814,
+      "promptTokens": 142,
+      "completionTokens": 675
+    },
+    "verificationNotes.docker-images-are-published-for-amd64-arm64-and-": {
+      "value": "As imagens Docker são publicadas para amd64, arm64 e armv7.",
+      "sourceHash": "sha256:a7e6345d94e9e2d8f8c497919e8e6566d881b02f2ea0ef5a6205114fbffa6efc",
+      "generatedAt": "2026-06-27T14:39:11.939Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2776,
+      "promptTokens": 145,
+      "completionTokens": 659
+    }
+  }
+}

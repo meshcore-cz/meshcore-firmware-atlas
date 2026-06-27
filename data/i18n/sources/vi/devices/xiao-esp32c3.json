@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-esp32c3",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch ESP32-C3 nhỏ gọn bằng ngón tay cái, được dùng làm bo mạch chủ trong bộ kit Seeed XIAO C3 + Wio-SX1262. Bo mạch nền này cung cấp Wi-Fi, BLE, khả năng nạp code qua USB và hệ thống chân GPIO nhỏ gọn; tính năng LoRa được cung cấp bởi mô-đun Wio-SX1262 riêng biệt.",
+      "sourceHash": "sha256:a97c027d339f2c93cc73c1b1c7d39451ca30920c037e92a409825b51cb1e2bd4",
+      "generatedAt": "2026-06-27T15:42:27.836Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5214,
+      "promptTokens": 191,
+      "completionTokens": 1014
+    }
+  }
+}

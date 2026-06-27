@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-web",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Docker-контейнер із вебзбіркою супутнього додатка MeshCore від Liam Cottle, який забезпечує обмін повідомленнями в браузері та керування контактами, каналами, топологією і ретрансляторами через Web Bluetooth або Web Serial.",
+      "sourceHash": "sha256:89170e4e7b963fbbd887c129a826eb3f23262abe694eac9e1776378804035085",
+      "generatedAt": "2026-06-27T16:19:31.060Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8221,
+      "promptTokens": 167,
+      "completionTokens": 927
+    },
+    "tags": {
+      "value": "[\"збірка-клієнта-супутника\",\"docker\",\"web-bluetooth\",\"web-serial\"]",
+      "sourceHash": "sha256:6499c66452a6696ff452599c9a057ceb48aea289a7d95ca53f7b0fbd5d7d7533",
+      "generatedAt": "2026-06-27T16:19:42.085Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11025,
+      "promptTokens": 145,
+      "completionTokens": 1664
+    },
+    "verificationNotes.the-repository-publishes-compiled-closed-source-": {
+      "value": "Репозиторій публікує скомпільовані веб-ресурси Flutter із закритим кодом та образ контейнера, а не вихідний код застосунку.",
+      "sourceHash": "sha256:4c550055308e2ef33e6a4e80b287c6cf6ae21eaf8a4b583e6d2675955bcc2bd4",
+      "generatedAt": "2026-06-27T16:19:47.769Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5683,
+      "promptTokens": 148,
+      "completionTokens": 1016
+    },
+    "verificationNotes.browser-radio-access-requires-chrome-or-edge-ove": {
+      "value": "Доступ до радіо через браузер можливий лише у Chrome або Edge за протоколом HTTPS або на localhost.",
+      "sourceHash": "sha256:24850e70480fd230c4469ba63efbb77a622942bd5d436b9c480ccf922dec8998",
+      "generatedAt": "2026-06-27T16:19:54.715Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6946,
+      "promptTokens": 141,
+      "completionTokens": 863
+    }
+  }
+}

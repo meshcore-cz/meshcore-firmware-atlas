@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tbeam-supreme",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Трекер ESP32-S3 + SX1262 LoRa з L76K GNSS, OLED-дисплеєм SH1106 та розширеним набором датчиків (IMU QMI8658, магнітометр QMC6310, BME280, RTC PCF8563). Керування живленням AXP2101, роз'єм M.2 та розширення micro-SD. USB-C із перетворювачем CH9102.",
+      "sourceHash": "sha256:fa59d9bc7baf64fbd5b4485a2017ae05107046332668046b097120689d8d11d4",
+      "generatedAt": "2026-06-27T14:58:58.072Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5171,
+      "promptTokens": 212,
+      "completionTokens": 1374
+    }
+  }
+}

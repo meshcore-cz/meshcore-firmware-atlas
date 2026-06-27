@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-twatch-ultra",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Смартгодинник ESP32-S3 із SX1262 LoRa, 2,06-дюймовим сенсорним AMOLED-екраном, вбудованим GNSS, NFC, вібромотором, аудіо та підтримкою SD-карт. Носимий пристрій MeshCore для компактного зв'язку на зап'ясті.",
+      "sourceHash": "sha256:46a554e4f73e06914c5c90967f1b9b1a9528ad9dc2f9dc94853ba1809ecf12cf",
+      "generatedAt": "2026-06-27T14:59:54.853Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4723,
+      "promptTokens": 181,
+      "completionTokens": 1325
+    }
+  }
+}

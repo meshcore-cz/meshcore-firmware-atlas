@@ -1,0 +1,15 @@
+{
+  "resource": "network/lehigh-valley-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore tại Lehigh Valley và khu vực Đông Pennsylvania rộng hơn, được hỗ trợ bởi công cụ phân tích CoreScope công khai tại map.lvmesh.com.",
+      "sourceHash": "sha256:56e1b99a43fe6cc25d01abe8ad2257fc708418d260007b41836a6f795d9b45bd",
+      "generatedAt": "2026-06-27T16:49:37.715Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24598,
+      "promptTokens": 157,
+      "completionTokens": 597
+    }
+  }
+}

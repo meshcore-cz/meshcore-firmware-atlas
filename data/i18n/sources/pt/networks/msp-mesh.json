@@ -1,0 +1,15 @@
+{
+  "resource": "network/msp-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Grupo de rede em malha de Minneapolis-Saint Paul e da Grande Minnesota, que se estende até o oeste de Wisconsin devido à proximidade, com encontros da comunidade, sites parceiros, mapas da rede em malha e atividade em tempo real do CoreScope.",
+      "sourceHash": "sha256:c62f38a0dda07dee1c8e8ca318c74c2d9c915bad52aa495e82c6934188db8cb1",
+      "generatedAt": "2026-06-27T14:47:50.121Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3450,
+      "promptTokens": 164,
+      "completionTokens": 991
+    }
+  }
+}

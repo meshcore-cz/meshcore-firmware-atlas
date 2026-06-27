@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-v3",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Klasická vývojová deska ESP32-S3 + SX1262 LoRa s integrovaným 0,96\" OLED displejem, Wi-Fi a BLE. Nabízí napájení přes USB-C a sériový převodník CP2102, bateriový konektor SH1.25 se správou nabíjení a LoRa anténu s konektorem IPEX. Široce se využívá pro uzly Meshtastic a MeshCore, a to pro doprovodná zařízení, opakovače a místní servery.",
+      "sourceHash": "sha256:f2026790eb1a9dc8d3c073c07374388c842e787999570eb9c5f699704e1cd2e9",
+      "generatedAt": "2026-06-27T10:47:21.917Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

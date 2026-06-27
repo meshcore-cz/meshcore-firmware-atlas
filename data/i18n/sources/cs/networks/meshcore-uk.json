@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-uk",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Národní síť MeshCore pokrývající celé Spojené království, provozovaná na veřejném kanálu 868 MHz s regionálním pokrytím opakovači a sdílenou živou mapou uzlů.",
+      "sourceHash": "sha256:802137e8eb7a1538be2b3e4b11c5130f8409a36131884a58108f9565c8c36a74",
+      "generatedAt": "2026-06-27T12:13:46.331Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10664,
+      "promptTokens": 159,
+      "completionTokens": 1290
+    }
+  }
+}

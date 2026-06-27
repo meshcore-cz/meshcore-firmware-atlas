@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-nrf54l15",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Alvo ZephCore XIAO nRF54L15 emparelhado com um módulo LoRa SX1262 externo via SPI. Esta é uma versão de desenvolvimento destinada a testar o firmware complementar BLE/USB do nRF54L15 com roteamento de pacotes LoRa MeshCore.",
+      "sourceHash": "sha256:5e4f27a50621f5b6e8d6032459bf3ef47fb57067a3e9123bc480bff575a3ac40",
+      "generatedAt": "2026-06-27T14:20:42.990Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4546,
+      "promptTokens": 180,
+      "completionTokens": 1311
+    }
+  }
+}

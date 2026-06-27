@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t190",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển ESP32-S3R8 + SX1262 LoRa tùy chọn tích hợp màn hình TFT 1,9 inch (170×320, ST7789) dành cho Meshtastic/MeshCore. Gồm cổng USB-C, đầu nối pin SH1.25 có quản lý sạc, cổng cảm biến QuickLink SH1.0 và ăng-ten IPEX cho Wi-Fi/LoRa. Có hai nút bấm người dùng; không có GPS tích hợp.",
+      "sourceHash": "sha256:7889758862afbe52251c8fb89ac4cd6680fffa76e6622546bf2c661d6cd55431",
+      "generatedAt": "2026-06-27T15:34:12.724Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5868,
+      "promptTokens": 213,
+      "completionTokens": 1239
+    }
+  }
+}

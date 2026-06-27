@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-e213",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển ESP32-S3R8 E-Ink với mô-đun SX1262 LoRa tùy chọn và các cổng cảm biến QuickLink. Tương thích với Meshtastic/MeshCore; LoRa là tùy chọn tại thời điểm build, không có sẵn trên mọi SKU.",
+      "sourceHash": "sha256:f6083e6bd25b2901752f726a8f9787234ff22a32ad51d9c7bac3cde7f3a5d8f4",
+      "generatedAt": "2026-06-27T15:34:39.739Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5518,
+      "promptTokens": 178,
+      "completionTokens": 867
+    }
+  }
+}

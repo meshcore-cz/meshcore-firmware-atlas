@@ -1,0 +1,87 @@
+{
+  "resource": "software/meshmonitor",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bảng điều khiển đa giao thức tự lưu trữ để theo dõi và quản trị mạng MeshCore, Meshtastic và MQTT, với bản đồ thống nhất, nhắn tin, đo lường từ xa, tự động hóa, cảnh báo và kiểm soát truy cập theo từng nguồn.",
+      "sourceHash": "sha256:a6c85feaaf3174519af608baf8a791fe9286f3ecf778894e7651473723dad7ca",
+      "generatedAt": "2026-06-27T16:27:01.959Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12059,
+      "promptTokens": 167,
+      "completionTokens": 1104
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Bảng điều khiển mạng đa nguồn",
+      "sourceHash": "sha256:c1bb72c6e0ce0b9677118a813002628d624aeea0d3f6711eeae1f3b3c6486e59",
+      "generatedAt": "2026-06-27T16:27:04.329Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2368,
+      "promptTokens": 133,
+      "completionTokens": 369
+    },
+    "screenshots.messages.png.caption": {
+      "value": "Nhắn tin hợp nhất đa kênh",
+      "sourceHash": "sha256:a145f79917cf848753c0a42a20216130c9f44d8e34f5bc3cdf26924a3d3379fc",
+      "generatedAt": "2026-06-27T16:27:08.659Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4329,
+      "promptTokens": 132,
+      "completionTokens": 692
+    },
+    "screenshots.telemetry.png.caption": {
+      "value": "Bảng điều khiển và biểu đồ Telemetry",
+      "sourceHash": "sha256:317308994b2481109949c9d55a25d2ab277f00c5420e91560caad43996687b11",
+      "generatedAt": "2026-06-27T16:27:17.880Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9219,
+      "promptTokens": 135,
+      "completionTokens": 1085
+    },
+    "screenshots.map.png.caption": {
+      "value": "Sơ đồ mạng tương tác",
+      "sourceHash": "sha256:cb079009598d1295b2ba547fb4a6ca95973c2d2b65af661f40fafea125cda621",
+      "generatedAt": "2026-06-27T16:27:20.792Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2911,
+      "promptTokens": 132,
+      "completionTokens": 338
+    },
+    "tags": {
+      "value": "[\"đa giao thức\",\"tự lưu trữ\",\"bảng điều khiển\",\"bảo mật\",\"mqtt\"]",
+      "sourceHash": "sha256:c1f4079e4d7cb537dfd7d978ba6d5ea4008909cb450ccf89e24b652bc16433f1",
+      "generatedAt": "2026-06-27T16:27:24.066Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3273,
+      "promptTokens": 144,
+      "completionTokens": 573
+    },
+    "verificationNotes.meshcore-devices-connect-over-usb-or-tcp-ble-sup": {
+      "value": "Thiết bị MeshCore kết nối qua USB hoặc TCP; tính năng hỗ trợ BLE sử dụng sidecar cầu nối.",
+      "sourceHash": "sha256:18ce0554d124e91d491285551078aaed2ed4220c331221d721266ec26059e5b4",
+      "generatedAt": "2026-06-27T16:27:35.220Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11152,
+      "promptTokens": 146,
+      "completionTokens": 546
+    },
+    "verificationNotes.native-windows-and-macos-desktop-installers-are-": {
+      "value": "Các trình cài đặt máy tính gốc cho Windows và macOS được phát hành thông qua GitHub Releases.",
+      "sourceHash": "sha256:fc7d60a3e1e548a8858c930b7239604d8e0621bea0fc240e7b0c2cb20d1a727e",
+      "generatedAt": "2026-06-27T16:27:50.503Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15283,
+      "promptTokens": 142,
+      "completionTokens": 903
+    },
+    "verificationNotes.docker-images-are-published-for-amd64-arm64-and-": {
+      "value": "Các Docker image được phát hành cho amd64, arm64 và armv7.",
+      "sourceHash": "sha256:a7e6345d94e9e2d8f8c497919e8e6566d881b02f2ea0ef5a6205114fbffa6efc",
+      "generatedAt": "2026-06-27T16:27:55.672Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5168,
+      "promptTokens": 145,
+      "completionTokens": 473
+    }
+  }
+}

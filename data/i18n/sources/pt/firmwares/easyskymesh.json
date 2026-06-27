@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/easyskymesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore focado na economia de energia, com funcionalidades avançadas experimentais e correções de erros, destinado a implementações de repetidores e sensores de ultra baixo consumo. O objetivo é prolongar a duração da bateria (ex.: ~16µA quando desligado), com a intenção de integrar as melhorias no MeshCore.",
+      "sourceHash": "sha256:8954ebc43a4d9696ea9afed4ce07f448923acf5f7c2a5e17082a19ddd02e30b8",
+      "generatedAt": "2026-06-27T14:21:49.629Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3690,
+      "promptTokens": 181,
+      "completionTokens": 951
+    },
+    "deviceNotes.xiao-esp32s3": {
+      "value": "Os valores de economia de energia variam de acordo com a revisão da placa.",
+      "sourceHash": "sha256:e106b2db9e31af9877e5d75db8ed875a5bad29caeb620dfd91ecd72b24fc9768",
+      "generatedAt": "2026-06-27T14:21:52.024Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2395,
+      "promptTokens": 137,
+      "completionTokens": 545
+    },
+    "features": {
+      "value": "[\"Operação de consumo ultrabaixo (~16µA desligado)\",\"Integração de sensores\",\"Reinicialização automática / watchdog\",\"Mensagens em malha de longo alcance\"]",
+      "sourceHash": "sha256:ada9a7e303d7fc83eecf0a85cd756872cf8ca4fc0740ac6402968e45f7f7a0cd",
+      "generatedAt": "2026-06-27T14:21:55.961Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3936,
+      "promptTokens": 155,
+      "completionTokens": 1100
+    }
+  }
+}

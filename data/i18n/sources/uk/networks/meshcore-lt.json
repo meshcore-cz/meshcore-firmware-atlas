@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-lt",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Мережа MeshCore, що розвивається в Литві. Відкритої інформації про спільноту чи координацію ще немає; помічено аналізатор, який працює зі стандартним радіопресетом EU/UK Narrow.",
+      "sourceHash": "sha256:53b70aa25d750b556553828471bc18bfba7d1910fc3eaa0cba3c6d6ebad73188",
+      "generatedAt": "2026-06-27T16:52:10.594Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10618,
+      "promptTokens": 163,
+      "completionTokens": 987
+    }
+  }
+}

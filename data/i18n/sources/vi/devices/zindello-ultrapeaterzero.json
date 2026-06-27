@@ -1,0 +1,15 @@
+{
+  "resource": "device/zindello-ultrapeaterzero",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch lặp LoRa hat 1 W có kích thước tương đương Raspberry Pi Zero 2 W, tích hợp bộ thu phát EBYTE E22/E22P với LNA tích hợp và bộ lọc thông dải tùy chọn. Bộ chuyển đổi giảm áp đầu vào rộng cùng script cài đặt pyMC_Repeater giúp thiết bị trở thành một trạm lặp MeshCore nhỏ gọn, di động.",
+      "sourceHash": "sha256:63460016297a8c3c7d830a91f99c4d091f1c4decb845510535fff75bd0734537",
+      "generatedAt": "2026-06-27T15:44:20.737Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6939,
+      "promptTokens": 190,
+      "completionTokens": 1132
+    }
+  }
+}

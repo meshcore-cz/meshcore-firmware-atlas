@@ -1,0 +1,15 @@
+{
+  "resource": "network/rdu-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní off-grid síť MeshCore pokrývající Raleigh, Durham, Chapel Hill a okolní oblast Piedmont v Severní Karolíně. Síť buduje infrastrukturu solárních opakovačů napříč zdokumentovanou obslužnou oblastí Research Triangle, která zahrnuje šestnáct okresů.",
+      "sourceHash": "sha256:e4a771b40a147a032b382c71a6d6214cceca29b6e3c274e06c59baa260a478b1",
+      "generatedAt": "2026-06-27T12:11:26.071Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11970,
+      "promptTokens": 171,
+      "completionTokens": 1415
+    }
+  }
+}

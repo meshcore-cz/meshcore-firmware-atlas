@@ -1,9 +1,31 @@
 <script>
   import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import RecordFooter from '$lib/RecordFooter.svelte';
   import BackLink from '$lib/BackLink.svelte';
   import { pluralize } from '$lib/format.js';
-  import { STATUS_META, TYPE_META, FW_STATUS_TW, LICENSE_TYPE_META, licenseType, groupReleases, getFirmware, deviceMcuLabel, deviceRadioLabel, resolveRefs, descriptionToPlain } from '$lib/data.js';
+  import {
+    STATUS_META,
+    TYPE_META,
+    FW_STATUS_TW,
+    LICENSE_TYPE_META,
+    licenseType,
+    licenseTypeLabel,
+    firmwareTypeLabel,
+    matrixStatusLabel,
+    nodeRoleLabel,
+    firmwareStatusLabel,
+    firmwareMaturityLabel,
+    firmwareLifecycleLabel,
+    firmwareDistributionLabel,
+    groupReleases,
+    getFirmware,
+    deviceMcuLabel,
+    deviceRadioLabel,
+    resolveRefs,
+    descriptionToPlain
+  } from '$lib/data.js';
   import { clampDescription, absUrl, ogImageFor } from '$lib/seo.js';
   import Seo from '$lib/Seo.svelte';
   import RichText from '$lib/RichText.svelte';
@@ -21,26 +43,26 @@
   const FRAMEWORK_LABELS = { arduino: 'Arduino', zephyr: 'Zephyr', 'esp-idf': 'ESP-IDF', other: 'Other' };
   const LANGUAGE_LABELS = { cpp: 'C++', c: 'C', rust: 'Rust' };
   const POPULARITY_LABELS = {
-    githubStars: 'GitHub stars',
-    githubForks: 'Forks',
-    githubWatchers: 'Watchers',
-    githubOpenIssues: 'Open issues',
-    githubContributors: 'Contributors',
-    releaseDownloads: 'Release downloads',
-    latestReleaseDownloads: 'Latest downloads'
+    githubStars: m.spec_github_stars(),
+    githubForks: m.spec_forks(),
+    githubWatchers: m.spec_watchers(),
+    githubOpenIssues: m.spec_open_issues(),
+    githubContributors: m.spec_contributors(),
+    releaseDownloads: m.spec_release_downloads(),
+    latestReleaseDownloads: m.spec_latest_downloads()
   };
   const VERIFICATION_LABELS = {
-    sourceAvailable: 'Source available',
-    releasesAvailable: 'Releases available',
-    signedReleases: 'Signed releases',
-    reproducibleBuilds: 'Reproducible builds',
-    ciBuilds: 'CI builds',
-    webFlasher: 'Web flasher',
-    hasDocumentation: 'Documentation'
+    sourceAvailable: m.license_source_available(),
+    releasesAvailable: m.spec_releases_available(),
+    signedReleases: m.spec_signed_releases(),
+    reproducibleBuilds: m.spec_reproducible_builds(),
+    ciBuilds: m.spec_ci_builds(),
+    webFlasher: m.fw_tog_web_flasher(),
+    hasDocumentation: m.spec_documentation()
   };
-  const numberFmt = new Intl.NumberFormat('en');
+  const numberFmt = new Intl.NumberFormat();
   const formatNumber = (value) => numberFmt.format(value);
-  const boolLabel = (value) => (value ? 'Yes' : 'No');
+  const boolLabel = (value) => (value ? m.common_yes() : m.common_no());
   const boolTone = (value) => (value ? 'border-accent/40 bg-accent/10 text-accent' : 'border-edge bg-elev2 text-dim');
   const runtimeLabel = $derived(
     [FRAMEWORK_LABELS[fw.runtime?.framework] ?? fw.runtime?.framework,
@@ -61,7 +83,11 @@
 
   // Lineage: resolve the upstream firmware to a catalog entry (so we can link)
   // when it's one we know, falling back to a bare repository link.
-  const LINEAGE_VERB = { fork: 'Fork of', reimplementation: 'Reimplementation of', upstream: null };
+  const LINEAGE_VERB = {
+    fork: m.spec_lineage_fork_of(),
+    reimplementation: m.spec_lineage_reimpl_of(),
+    upstream: null
+  };
   let upstream = $derived(
     fw.lineage?.upstreamFirmwareId ? getFirmware(fw.lineage.upstreamFirmwareId) : null
   );
@@ -112,13 +138,13 @@
 
 <Seo title={fw.name} description={fwDescription} type="article" image={ogImageFor('firmware', fw.id)} jsonLd={fwJsonLd} />
 
-<BackLink href="{base}/firmwares/">All firmwares</BackLink>
+<BackLink href={href('/firmwares/')}>{m.back_firmwares()}</BackLink>
 
 <header class="mb-6">
   <div class="flex flex-wrap items-center gap-3">
     <h1 class="text-[clamp(1.5rem,5vw,2rem)] font-bold">{fw.name}</h1>
     <span class="rounded-md px-2 py-0.5 text-[0.72rem] font-bold tracking-wide uppercase {TYPE_META[fw.type]?.tw}">
-      {TYPE_META[fw.type]?.label ?? fw.type}
+      {firmwareTypeLabel(fw.type)}
     </span>
   </div>
   {#if fw.description}<RichText class="max-w-[70ch] text-dim" text={fw.description} />{/if}
@@ -126,7 +152,7 @@
     <p class="mt-1.5 text-[0.9rem] text-dim">
       {lineageVerb}
       {#if upstream}
-        <a class="text-accent2 hover:underline" href="{base}/firmware/{upstream.id}/">{upstream.name}</a>
+        <a class="text-accent2 hover:underline" href={href(`/firmware/${upstream.id}/`)}>{upstream.name}</a>
       {:else if fw.lineage?.upstreamRepository}
         <a class="text-accent2 hover:underline" href={fw.lineage.upstreamRepository} target="_blank" rel="noreferrer">{fw.lineage.upstreamFirmwareId ?? 'upstream'} ↗</a>
       {:else}
@@ -135,8 +161,8 @@
     </p>
   {/if}
   <div class="mt-1.5 flex flex-wrap gap-4">
-    {#if fw.repository}<a class="text-accent2 hover:underline" href={fw.repository} target="_blank" rel="noreferrer">Repository ↗</a>{/if}
-    {#if fw.website}<a class="text-accent2 hover:underline" href={fw.website} target="_blank" rel="noreferrer">Website ↗</a>{/if}
+    {#if fw.repository}<a class="text-accent2 hover:underline" href={fw.repository} target="_blank" rel="noreferrer">{m.spec_repository()} ↗</a>{/if}
+    {#if fw.website}<a class="text-accent2 hover:underline" href={fw.website} target="_blank" rel="noreferrer">{m.spec_website()} ↗</a>{/if}
     {#each refs as ref}
       <a class="text-accent2 hover:underline" href={ref.url} target="_blank" rel="noreferrer">{ref.name} ↗</a>
     {/each}
@@ -147,7 +173,7 @@
   <!-- Maintainer can be a long sentence, so it gets its own row above the
        compact metadata grid instead of distorting the columns. -->
   <div class="mb-3 border-b border-edge pb-3">
-    <dt class="text-[0.72rem] tracking-wide text-dim uppercase">{maintainers.length > 1 ? 'Maintainers' : 'Maintainer'}</dt>
+    <dt class="text-[0.72rem] tracking-wide text-dim uppercase">{maintainers.length > 1 ? m.spec_maintainers() : m.spec_maintainer()}</dt>
     <dd class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.95rem]">
       {#if maintainers.length}
         {#each maintainers as m, i}
@@ -166,37 +192,37 @@
     </dd>
   </div>
   <div class="grid grid-cols-[repeat(auto-fill,minmax(130px,1fr))] gap-x-4 gap-y-3">
-    <div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">Status</dt><dd class="mt-1 text-[0.95rem] {FW_STATUS_TW[fw.status] ?? ''}">{fw.status}</dd></div>
-    {#if fw.maturity}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">Maturity</dt><dd class="mt-1 text-[0.95rem]">{fw.maturity}</dd></div>{/if}
-    {#if fw.lifecycle}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">Lifecycle</dt><dd class="mt-1 text-[0.95rem]">{fw.lifecycle}</dd></div>{/if}
-    {#if fw.latest_version}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">Latest version</dt><dd class="mt-1 text-[0.95rem]">{#if latestReleaseId}<a class="text-accent2 hover:underline" href="#{latestReleaseId}">{fw.latest_version}</a>{:else}{fw.latest_version}{/if}</dd></div>{/if}
-    {#if fw.released}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">Released</dt><dd class="mt-1 text-[0.95rem]">{fw.released}</dd></div>{/if}
-    {#if runtimeLabel}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">Runtime</dt><dd class="mt-1 text-[0.95rem]">{runtimeLabel}</dd></div>{/if}
-    {#if fw.distribution}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">Distribution</dt><dd class="mt-1 text-[0.95rem] capitalize">{fw.distribution}</dd></div>{/if}
-    {#if licensing}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">Licensing</dt><dd class="mt-1"><span class="inline-block rounded px-1.5 py-0.5 text-[0.78rem] font-medium {LICENSE_TYPE_META[licensing]?.tw ?? ''}">{LICENSE_TYPE_META[licensing]?.label ?? licensing}</span></dd></div>{/if}
-    {#if fw.license}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">License</dt><dd class="mt-1 text-[0.95rem]">{fw.license}</dd></div>{/if}
+    <div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.col_status()}</dt><dd class="mt-1 text-[0.95rem] {FW_STATUS_TW[fw.status] ?? ''}">{firmwareStatusLabel(fw.status)}</dd></div>
+    {#if fw.maturity}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.spec_maturity()}</dt><dd class="mt-1 text-[0.95rem]">{firmwareMaturityLabel(fw.maturity)}</dd></div>{/if}
+    {#if fw.lifecycle}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.spec_lifecycle()}</dt><dd class="mt-1 text-[0.95rem]">{firmwareLifecycleLabel(fw.lifecycle)}</dd></div>{/if}
+    {#if fw.latest_version}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.spec_latest_version()}</dt><dd class="mt-1 text-[0.95rem]">{#if latestReleaseId}<a class="text-accent2 hover:underline" href="#{latestReleaseId}">{fw.latest_version}</a>{:else}{fw.latest_version}{/if}</dd></div>{/if}
+    {#if fw.released}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.spec_released()}</dt><dd class="mt-1 text-[0.95rem]">{fw.released}</dd></div>{/if}
+    {#if runtimeLabel}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.fw_facet_runtime()}</dt><dd class="mt-1 text-[0.95rem]">{runtimeLabel}</dd></div>{/if}
+    {#if fw.distribution}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.spec_distribution()}</dt><dd class="mt-1 text-[0.95rem]">{firmwareDistributionLabel(fw.distribution)}</dd></div>{/if}
+    {#if licensing}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.spec_licensing()}</dt><dd class="mt-1"><span class="inline-block rounded px-1.5 py-0.5 text-[0.78rem] font-medium {LICENSE_TYPE_META[licensing]?.tw ?? ''}">{licenseTypeLabel(licensing)}</span></dd></div>{/if}
+    {#if fw.license}<div><dt class="text-[0.72rem] tracking-wide text-dim uppercase">{m.spec_license()}</dt><dd class="mt-1 text-[0.95rem]">{fw.license}</dd></div>{/if}
   </div>
 </dl>
 
 {#if fw.capabilities}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Capabilities</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.spec_capabilities()}</h2>
     <CapabilityMatrix capabilities={fw.capabilities} />
   </section>
 {/if}
 
 {#if fw.roles?.length}
   <section class="mb-7">
-    <h2 class="border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Node roles</h2>
+    <h2 class="border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.spec_node_roles()}</h2>
     <div class="mt-3 flex flex-wrap gap-1.5">
-      {#each fw.roles as r}<span class="rounded-md bg-elev2 px-2.5 py-1 text-[0.85rem]">{r}</span>{/each}
+      {#each fw.roles as r}<span class="rounded-md bg-elev2 px-2.5 py-1 text-[0.85rem]">{nodeRoleLabel(r)}</span>{/each}
     </div>
   </section>
 {/if}
 
 {#if fw.features?.length}
   <section class="mb-7">
-    <h2 class="border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Features</h2>
+    <h2 class="border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.spec_features()}</h2>
     <ul class="mt-3 flex flex-wrap gap-1.5">
       {#each fw.features as f}<li class="rounded-md bg-elev2 px-2.5 py-1 text-[0.85rem]">{f}</li>{/each}
     </ul>
@@ -206,10 +232,10 @@
 {#if popularityEntries.length || verificationEntries.length || fw.verification?.notes?.length}
   <section class="mb-7 rounded-xl border border-edge bg-elev/60 px-3 py-2.5">
     <div class="mb-2 flex flex-wrap items-center justify-between gap-2">
-      <h2 class="text-[0.72rem] font-semibold tracking-wide text-dim uppercase">Project signals</h2>
+      <h2 class="text-[0.72rem] font-semibold tracking-wide text-dim uppercase">{m.detail_project_signals()}</h2>
       <div class="flex flex-wrap gap-x-3 gap-y-1 text-[0.7rem] text-muted">
-        {#if fw.popularity?.lastChecked}<span>popularity {fw.popularity.lastChecked}</span>{/if}
-        {#if fw.verification?.lastChecked}<span>verification {fw.verification.lastChecked}</span>{/if}
+        {#if fw.popularity?.lastChecked}<span>{m.spec_popularity_checked({ date: fw.popularity.lastChecked })}</span>{/if}
+        {#if fw.verification?.lastChecked}<span>{m.spec_verification_checked_label({ date: fw.verification.lastChecked })}</span>{/if}
       </div>
     </div>
 
@@ -250,17 +276,17 @@
 {#if fw.releases?.length}
   <section class="mb-7">
     <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2 border-b border-edge pb-1.5">
-      <h2 class="text-[1.1rem] font-semibold">Releases</h2>
+      <h2 class="text-[1.1rem] font-semibold">{m.spec_releases()}</h2>
       {#if fw.changelogUpdatedAt}
         <span class="text-[0.72rem] text-dim">
-          {fw.changelogSource === 'github' ? 'from GitHub · ' : ''}updated {fw.changelogUpdatedAt.slice(0, 10)}
+          {fw.changelogSource === 'github' ? m.detail_from_github() : ''}{m.detail_updated({ date: fw.changelogUpdatedAt.slice(0, 10) })}
         </span>
       {/if}
     </div>
     <ReleaseGroupList groups={previewGroups} openFirst={false} markFirstLatest={true} />
     {#if releaseGroups.length > PREVIEW}
-      <a class="mt-3 inline-block text-[0.88rem] text-accent2 hover:underline" href="{base}/firmware/{fw.id}/releases/">
-        Show all {releaseGroups.length} releases →
+      <a class="mt-3 inline-block text-[0.88rem] text-accent2 hover:underline" href={href(`/firmware/${fw.id}/releases/`)}>
+        {m.detail_show_all_releases({ count: releaseGroups.length })}
       </a>
     {/if}
   </section>
@@ -270,12 +296,12 @@
   <section class="mb-7">
     <div class="mb-3 flex flex-wrap items-center justify-between gap-3 border-b border-edge pb-1.5">
       <h2 class="text-[1.1rem] font-semibold">
-        Device compatibility
+        {m.fw_compat_title()}
         <span class="ml-1 font-normal text-dim">({data.devices.length})</span>
       </h2>
       <label class="flex cursor-pointer items-center gap-1.5 text-[0.8rem] text-dim select-none">
         <input type="checkbox" bind:checked={showTargets} class="accent-accent" />
-        Show build targets
+        {m.fw_compat_show_targets()}
       </label>
     </div>
 
@@ -283,7 +309,7 @@
     <div class="mb-3 flex flex-wrap gap-1.5">
       {#each Object.entries(statusCounts) as [status, count]}
         {@const meta = STATUS_META[status] ?? { label: status, tw: '' }}
-        <span class="rounded-full px-2.5 py-0.5 text-[0.78rem] {meta.tw}">{meta.symbol ?? ''} {count} {meta.label}</span>
+        <span class="rounded-full px-2.5 py-0.5 text-[0.78rem] {meta.tw}">{meta.symbol ?? ''} {count} {matrixStatusLabel(status)}</span>
       {/each}
     </div>
 
@@ -291,26 +317,26 @@
       <table class="w-full border-collapse text-[0.9rem]">
         <thead>
           <tr class="text-left text-[0.78rem] tracking-wide text-dim uppercase">
-            <th class="border-b border-edge px-2.5 py-2">Device</th>
-            <th class="border-b border-edge px-2.5 py-2">MCU</th>
-            <th class="border-b border-edge px-2.5 py-2">Radio</th>
-            <th class="border-b border-edge px-2.5 py-2">Status</th>
+            <th class="border-b border-edge px-2.5 py-2">{m.col_device()}</th>
+            <th class="border-b border-edge px-2.5 py-2">{m.col_mcu()}</th>
+            <th class="border-b border-edge px-2.5 py-2">{m.col_radio()}</th>
+            <th class="border-b border-edge px-2.5 py-2">{m.col_status()}</th>
             {#if showTargets}
-              <th class="border-b border-edge px-2.5 py-2">Target</th>
-              <th class="border-b border-edge px-2.5 py-2">PlatformIO board</th>
+              <th class="border-b border-edge px-2.5 py-2">{m.col_target()}</th>
+              <th class="border-b border-edge px-2.5 py-2">{m.col_platformio()}</th>
             {/if}
-            <th class="border-b border-edge px-2.5 py-2">Notes</th>
+            <th class="border-b border-edge px-2.5 py-2">{m.col_notes()}</th>
           </tr>
         </thead>
         <tbody>
           {#each data.devices as d}
             {@const meta = STATUS_META[d.status] ?? { label: d.status, tw: '' }}
             <tr>
-              <td class="border-b border-edge px-2.5 py-2 whitespace-nowrap"><a class="text-accent2 hover:underline" href="{base}/device/{d.device.id}/">{d.device.name}</a></td>
+              <td class="border-b border-edge px-2.5 py-2 whitespace-nowrap"><a class="text-accent2 hover:underline" href={href(`/device/${d.device.id}/`)}>{d.device.name}</a></td>
               <td class="border-b border-edge px-2.5 py-2 text-dim">{deviceMcuLabel(d.device)}</td>
               <td class="border-b border-edge px-2.5 py-2 text-dim">{deviceRadioLabel(d.device)}</td>
               <td class="border-b border-edge px-2.5 py-2">
-                <span class="inline-block rounded-full px-2 py-0.5 text-[0.78rem] whitespace-nowrap {meta.tw}">{meta.symbol ?? ''} {meta.label}</span>
+                <span class="inline-block rounded-full px-2 py-0.5 text-[0.78rem] whitespace-nowrap {meta.tw}">{meta.symbol ?? ''} {matrixStatusLabel(d.status)}</span>
               </td>
               {#if showTargets}
                 <td class="border-b border-edge px-2.5 py-2 font-mono text-[0.8rem] text-dim">{d.target ?? '—'}</td>

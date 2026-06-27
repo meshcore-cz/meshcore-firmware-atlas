@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/inkcore",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware đồng hành BLE dựa trên MeshCore dành cho thiết bị e-paper nhỏ, hỗ trợ applet tùy chỉnh, phông chữ đa ngôn ngữ, emoji, xoay màn hình và làm mới toàn bộ định kỳ.",
+      "sourceHash": "sha256:2c0b7e7a13e3385572fc131646952f1c77fdb813ea8da77bc55495353614aaf9",
+      "generatedAt": "2026-06-27T15:48:33.603Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5605,
+      "promptTokens": 159,
+      "completionTokens": 709
+    },
+    "features": {
+      "value": "[\"Applet e-paper có thể cấu hình\", \"Hỗ trợ phông chữ đa ngôn ngữ và emoji\", \"Xoay màn hình\", \"Làm mới toàn bộ định kỳ\"]",
+      "sourceHash": "sha256:bcdfaf43084cb96bbd5397c54645a2ad78dc4ff99ee4281a5346e59872a16b61",
+      "generatedAt": "2026-06-27T15:48:53.315Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19711,
+      "promptTokens": 152,
+      "completionTokens": 945
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/zindello-ultrapeater",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "HAT repetidor LoRa de 1 W projetado para ser montado sobre um Luckfox Pico Ultra/W, equipado com um rádio EBYTE E22/E22P com LNA integrado e filtro passa-faixa opcional. Alimentado via PoE ou USB-C, pronto para montagem em mastro e acompanha scripts de instalação do pyMC_Repeater.",
+      "sourceHash": "sha256:4f7e7ec14c7379ec05bc08a2fc5bfe3a25e7d7cb24595fd312ab14cd48dc3a9d",
+      "generatedAt": "2026-06-27T14:21:21.398Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3579,
+      "promptTokens": 191,
+      "completionTokens": 1029
+    }
+  }
+}

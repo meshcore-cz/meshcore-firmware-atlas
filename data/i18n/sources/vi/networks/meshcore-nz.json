@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-nz",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới cộng đồng MeshCore toàn quốc New Zealand dành cho nhắn tin ngoài lưới bền bỉ, điều phối các trạm lặp, tài nguyên quản trị nút, NZ MeshMapper, giám sát CoreScope, lập kế hoạch tiền tố và hỗ trợ cộng đồng.",
+      "sourceHash": "sha256:33c4f9f0402bddcb17c72d7a00f0ce55bc3cce3429124a7f432f36d317a92ff3",
+      "generatedAt": "2026-06-27T16:51:50.034Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4658,
+      "promptTokens": 165,
+      "completionTokens": 892
+    }
+  }
+}

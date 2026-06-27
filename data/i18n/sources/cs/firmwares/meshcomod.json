@@ -1,0 +1,21 @@
+{
+  "resource": "firmware/meshcomod",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Doprovodný firmware s podporou více přenosových cest, postavený na MeshCore, který současně poskytuje připojení přes USB, Bluetooth a TCP. Díky tomu mohou telefony, weboví klienti a Home Assistant komunikovat s jedním rádiem současně. Přidává konfiguraci Wi-Fi za běhu a uživatelské rozhraní přímo v zařízení.",
+      "sourceHash": "sha256:9d1956cf009425dd2567cd7c7c3ba234ff085b8f9c07af8cdc56382c4e2efc2e",
+      "generatedAt": "2026-06-27T11:13:28.265Z",
+      "model": "glm-5.2:cloud"
+    },
+    "features": {
+      "value": "[\"Souběžná připojení USB + BLE + TCP\",\"Odesílání dat v reálném čase všem připojeným klientům\",\"Integrace do postranního panelu Home Assistant\",\"Nastavení Wi-Fi za běhu (bez nutnosti obnovy přes CLI)\",\"Karty v rozhraní na zařízení (párování BLE, stav TCP)\"]",
+      "sourceHash": "sha256:89f99d048cd36fc259794129449a799830ab405e6dba2f98c4fdf20a0499f873",
+      "generatedAt": "2026-06-27T12:26:32.914Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 17219,
+      "promptTokens": 174,
+      "completionTokens": 1300
+    }
+  }
+}

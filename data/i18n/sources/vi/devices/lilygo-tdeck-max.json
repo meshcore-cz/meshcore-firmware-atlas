@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tdeck-max",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị cầm tay ESP32-S3 dựa trên nền tảng T-Deck Pro, tích hợp SX1262 LoRa, màn hình e-paper 3,1 inch, bàn phím QWERTY, GNSS, âm thanh, hỗ trợ module 4G và hệ thống pin lớn hơn. Được thiết kế cho truyền thông MeshCore và IoT di động.",
+      "sourceHash": "sha256:416caa8b93de794d92fe9e9d053fe83f34c6046ab316b6b0a56570bfa727374f",
+      "generatedAt": "2026-06-27T15:37:08.293Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6715,
+      "promptTokens": 190,
+      "completionTokens": 1170
+    }
+  }
+}

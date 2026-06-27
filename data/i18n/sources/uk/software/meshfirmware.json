@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshfirmware",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Інтерактивні скрипти для Windows і Linux, призначені для виявлення підтримуваних USB-радіомодулів, вибору релізів прошивки MeshCore або Meshtastic, а також встановлення, оновлення або локальної компіляції прошивки.",
+      "sourceHash": "sha256:2c1402214c5f6cee94ce268fbb62816f28da3ee63e87482f620398558a2de963",
+      "generatedAt": "2026-06-27T16:23:32.958Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5129,
+      "promptTokens": 159,
+      "completionTokens": 859
+    },
+    "tags": {
+      "value": "[\"прошивка\",\"usb\",\"кросплатформний\",\"meshtastic\"]",
+      "sourceHash": "sha256:2f5c680007b74b4806a10c47135e644b325e7f588d23eb56fcf067cdb9a88532",
+      "generatedAt": "2026-06-27T16:23:36.617Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3659,
+      "promptTokens": 142,
+      "completionTokens": 552
+    },
+    "verificationNotes.downloads-release-metadata-from-the-upstream-mes": {
+      "value": "Завантажує метадані релізів з upstream-репозиторіїв MeshCore та Meshtastic і зберігає локальний кеш для резервного використання в автономному режимі.",
+      "sourceHash": "sha256:c68444855662cd1c551ec01d4ac3aa0fa3eefc601cfc5b0537ce16752d85b363",
+      "generatedAt": "2026-06-27T16:23:44.441Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7824,
+      "promptTokens": 151,
+      "completionTokens": 1289
+    },
+    "verificationNotes.automatically-detects-matching-usb-devices-and-f": {
+      "value": "Автоматично виявляє відповідні USB-пристрої та файли прошивки перед прошиванням.",
+      "sourceHash": "sha256:5f540f0d0cfdfaeb9f15f191010a1a35f0c954e18dd04486dd85265b1a8ae90c",
+      "generatedAt": "2026-06-27T16:23:48.702Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4261,
+      "promptTokens": 141,
+      "completionTokens": 799
+    }
+  }
+}

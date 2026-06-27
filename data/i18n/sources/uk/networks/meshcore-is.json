@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-is",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Ісландська спільнота MeshCore, яка розгортає автономну mesh-комунікацію по всій Ісландії.",
+      "sourceHash": "sha256:922bf562062900157eadf40e5d5e9fd7ebc9480f040ac663cad9a76f23dc1e4b",
+      "generatedAt": "2026-06-27T16:51:32.926Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8656,
+      "promptTokens": 143,
+      "completionTokens": 674
+    }
+  }
+}

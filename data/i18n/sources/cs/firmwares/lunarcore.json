@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/lunarcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Multiprotokolový LoRa firmware pro ESP32-S3 kombinující provoz MeshCore, Meshtastic a RNode/KISS s integrovaným režimem opakovače MeshCore.",
+      "sourceHash": "sha256:ac0d05c7a09a52174863cf1be3cd3f5a8b4bb020dc5b8b1415640184a63487cf",
+      "generatedAt": "2026-06-27T11:25:48.592Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18916,
+      "promptTokens": 163,
+      "completionTokens": 800
+    },
+    "deviceNotes.heltec-v3": {
+      "value": "Soubor README projektu uvádí jako cílový hardware Heltec WiFi LoRa 32 V3.",
+      "sourceHash": "sha256:1e201732a0e1df3b91368bb5b6a564de2d2242f10218836d299a1f720dd20f0e",
+      "generatedAt": "2026-06-27T11:25:52.991Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4398,
+      "promptTokens": 148,
+      "completionTokens": 344
+    },
+    "features": {
+      "value": "[\"Protokoly MeshCore, Meshtastic a RNode/KISS\", \"Vestavěný režim opakovače MeshCore\", \"BLE, Wi-Fi a sériový port USB\"]",
+      "sourceHash": "sha256:5b4db5b9e4b88276452168bed2dabd3306720591313f6fc982bc706f39a4781c",
+      "generatedAt": "2026-06-27T12:36:22.109Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12774,
+      "promptTokens": 159,
+      "completionTokens": 733
+    }
+  }
+}

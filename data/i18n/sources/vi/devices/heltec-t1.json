@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-t1",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị mesh Heltec nRF52 + SX1262 nhỏ gọn dành cho các bản dựng LoRa di động, công suất thấp. Mục tiêu firmware upstream đã có sẵn, nhưng trang sản phẩm công khai vẫn còn sơ sài.",
+      "sourceHash": "sha256:38aa7a4618890b2960b8385c5e9e4a81933383b669f454a7a79d8f0ad9b0706c",
+      "generatedAt": "2026-06-27T15:33:14.296Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24774,
+      "promptTokens": 164,
+      "completionTokens": 834
+    }
+  }
+}

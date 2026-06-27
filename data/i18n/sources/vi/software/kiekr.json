@@ -1,0 +1,42 @@
+{
+  "resource": "software/kiekr",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bộ công cụ cộng đồng MeshCore độc lập cho iOS và Android, tích hợp nhắn tin mã hóa, ngữ cảnh tuyến đường theo khu vực, chẩn đoán bộ lặp, cầu nối MQTT và tùy chọn đóng góp bản đồ vùng phủ sóng được ký bằng mật mã.",
+      "sourceHash": "sha256:ae5d2e9b9de9156a92fa9c06a20f2f4097827afa83398cb427de86d9991a55ca",
+      "generatedAt": "2026-06-27T16:02:35.109Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 30472,
+      "promptTokens": 162,
+      "completionTokens": 985
+    },
+    "tags": {
+      "value": "[\"bộ công cụ cộng đồng\", \"khu vực\", \"bản đồ vùng phủ sóng\", \"mqtt\", \"mã nguồn đóng\"]",
+      "sourceHash": "sha256:21e1ce603974a39eb8c3319d3860860c35e86de5eb2a3752bf0370dfa8882ea7",
+      "generatedAt": "2026-06-27T16:02:41.113Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6002,
+      "promptTokens": 144,
+      "completionTokens": 641
+    },
+    "verificationNotes.kiekr-is-an-independent-client-compatible-with-s": {
+      "value": "KiekR là ứng dụng độc lập, tương thích với bộ đàm đồng hành MeshCore tiêu chuẩn và các định dạng sao lưu.",
+      "sourceHash": "sha256:945a07e80503c9870986aa6e860fb49f1708e723b439ed4fa6650c1befa6aefd",
+      "generatedAt": "2026-06-27T16:03:05.419Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 24306,
+      "promptTokens": 147,
+      "completionTokens": 639
+    },
+    "verificationNotes.coverage-contribution-is-opt-in-and-offers-multi": {
+      "value": "Việc đóng góp dữ liệu phủ sóng là tùy chọn và cung cấp nhiều cấp độ quyền riêng tư.",
+      "sourceHash": "sha256:d52c341951f6986225fb8e0e43915c6cfe0dddf5141ab0150cb2758ebb840ddb",
+      "generatedAt": "2026-06-27T16:03:11.424Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6003,
+      "promptTokens": 140,
+      "completionTokens": 1028
+    }
+  }
+}

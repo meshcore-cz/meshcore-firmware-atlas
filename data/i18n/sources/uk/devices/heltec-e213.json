@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-e213",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Плата розробника ESP32-S3R8 з екраном E-Ink, опціональним модулем SX1262 LoRa та портами для датчиків QuickLink. Сумісна з Meshtastic/MeshCore; підтримка LoRa визначається під час збирання, тому вона наявна не в усіх модифікаціях.",
+      "sourceHash": "sha256:f6083e6bd25b2901752f726a8f9787234ff22a32ad51d9c7bac3cde7f3a5d8f4",
+      "generatedAt": "2026-06-27T14:57:53.602Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4426,
+      "promptTokens": 178,
+      "completionTokens": 1254
+    }
+  }
+}

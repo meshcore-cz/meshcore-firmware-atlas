@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/saitama",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Um firmware de código aberto e autónomo para dispositivos em malha LoRa, baseado no MeshCore e desenhado para o LilyGo T-Deck e T-Deck Plus. Oferece mensagens ao nível de um smartphone, mapas GPS, comunicações encriptadas e muito mais — tudo a funcionar diretamente no dispositivo, sem necessidade de telemóvel, internet ou licença.",
+      "sourceHash": "sha256:3d224624362fd60e16ed166143ad555021fe2c142b3a3482fd8e3ad864e664bc",
+      "generatedAt": "2026-06-27T14:26:16.910Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3469,
+      "promptTokens": 189,
+      "completionTokens": 1042
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "T-Deck Plus — alvo principal, compilado e testado em hardware.",
+      "sourceHash": "sha256:afbaade2850405a1cf9914b2add3534650c78bc9cfaa6d4f7ad23218a3fc080f",
+      "generatedAt": "2026-06-27T14:26:19.090Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2179,
+      "promptTokens": 142,
+      "completionTokens": 495
+    },
+    "features": {
+      "value": "[\"Mensagens independentes (não requer telefone)\", \"Mapas GPS\", \"Comunicação criptografada\", \"Mensagens diretas e em canais\", \"Sem contas ou licenças\"]",
+      "sourceHash": "sha256:95751333e85508ee8c0aed13e4d748e16790eb7964a15f995e3e625123ff8c92",
+      "generatedAt": "2026-06-27T14:26:22.952Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3862,
+      "promptTokens": 155,
+      "completionTokens": 1075
+    }
+  }
+}

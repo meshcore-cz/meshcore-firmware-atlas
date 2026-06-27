@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshtower-v2",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Node năng lượng mặt trời ngoài trời loại công nghiệp dựa trên công nghệ Heltec MeshSolar, trang bị tấm pin 10 W, khối pin tích hợp, vỏ nhôm chuẩn IP66 và ăng-ten SMA ngoài. Có sẵn ở các băng tần 868 MHz và 915 MHz với tùy chọn LoRa 22 dBm hoặc 30 dBm cùng tùy chọn thêm GNSS.",
+      "sourceHash": "sha256:90b6c2ed85b790c31ac8644edae65c49da2bff25c8a2bca4ed4e8087a73d9d55",
+      "generatedAt": "2026-06-27T15:33:54.430Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7558,
+      "promptTokens": 193,
+      "completionTokens": 1440
+    }
+  }
+}

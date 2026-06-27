@@ -1,0 +1,15 @@
+{
+  "resource": "network/new-england-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunita MeshCore pokrývající celou Novou Anglii (Connecticut, Massachusetts, New Hampshire a Maine) se koordinuje prostřednictvím webu nhmesh.com. Součástí je vlastní mapa v reálném čase na adrese nhmesh.live a analyzátor CoreScope. V regionu je rozmístěno 50+ uzlů od Stamfordu (CT) po Topsham (ME).",
+      "sourceHash": "sha256:4a2367a16b44ec39b1f4efc5e548d594312575d5dc28069f347b71c0e8760955",
+      "generatedAt": "2026-06-27T12:09:13.862Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13945,
+      "promptTokens": 183,
+      "completionTokens": 1623
+    }
+  }
+}

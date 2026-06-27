@@ -1,0 +1,42 @@
+{
+  "resource": "software/picomeshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Lehký doprovodný klient MMBasic MeshCore pro Raspberry Pi Pico s PicoMite, který poskytuje terminálové menu pro zprávy, kontakty, inzeráty, nastavení rádia a diagnostiku přes UART.",
+      "sourceHash": "sha256:4f91c70f8c3a0d47e66111722904d7bac7c97a46bb8a63799296af3dcb59968d",
+      "generatedAt": "2026-06-27T11:47:54.256Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18768,
+      "promptTokens": 167,
+      "completionTokens": 1619
+    },
+    "verificationNotes.requires-custom-uart-companion-firmware-on-the-a": {
+      "value": "Vyžaduje vlastní doprovodný firmware pro UART na připojeném rádiu MeshCore.",
+      "sourceHash": "sha256:dd2921b042040e8ffdc1ce36b83df41eb8b74832e7e3a8f6ba6276dcac9d14ad",
+      "generatedAt": "2026-06-27T11:48:04.358Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10100,
+      "promptTokens": 141,
+      "completionTokens": 677
+    },
+    "verificationNotes.contacts-and-messages-are-not-persisted-across-p": {
+      "value": "Kontakty a zprávy se po restartu Pico neuchovávají.",
+      "sourceHash": "sha256:f193d331cc9d45a3934bfcd8e2b25ca7cd1cfe8dc0ea1693d7aa2f6843b9f3cc",
+      "generatedAt": "2026-06-27T11:48:14.325Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9968,
+      "promptTokens": 141,
+      "completionTokens": 902
+    },
+    "tags": {
+      "value": "[\"raspberry-pi-pico\",\"mmbasic\",\"uart\",\"vestavěný-klient\"]",
+      "sourceHash": "sha256:d0ffcd2aa02df4ded4372b1b389c0d3063c2e74189f8bc501a0374cfa574f804",
+      "generatedAt": "2026-06-27T13:47:45.169Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 22800,
+      "promptTokens": 147,
+      "completionTokens": 486
+    }
+  }
+}

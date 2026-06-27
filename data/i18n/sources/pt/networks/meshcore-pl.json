@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-pl",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade polaca de LoRa MeshCore a construir uma rede mesh de emergência/off-grid a nível nacional na predefinição EU/UK Narrow, coordenada através de lorameshcore.pl, com guias de configuração, orientações sobre repetidores, documentação do analisador e ligações da comunidade.",
+      "sourceHash": "sha256:05e360532fbfed50f9223ee69be6ada19cec17a0cd7e6088f818ebe961811d85",
+      "generatedAt": "2026-06-27T14:48:46.297Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5964,
+      "promptTokens": 173,
+      "completionTokens": 1761
+    }
+  }
+}

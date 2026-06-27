@@ -1,0 +1,15 @@
+{
+  "resource": "network/scandinavian-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore escandinava transfronteiriça que abrange o sul da Suécia e a Dinamarca, com 890+ nós na região de Öresund/Kattegat. Utiliza a predefinição EU/UK Narrow na banda de 868 MHz com um analisador CoreScope dedicado.",
+      "sourceHash": "sha256:57eceb335e85436c3155a3283fc80a044d5cae096a843a3acce6e63c6d46e36b",
+      "generatedAt": "2026-06-27T14:49:11.054Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2949,
+      "promptTokens": 178,
+      "completionTokens": 830
+    }
+  }
+}

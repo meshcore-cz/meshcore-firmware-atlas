@@ -1,0 +1,42 @@
+{
+  "resource": "firmware/mclite",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Легка прошивка автономного комунікатора для LilyGo T-Deck Plus та T-Watch Ultra. Спеціально розроблено для екстреного зв'язку та використання на природі — не потребує інтернету чи стільникових вишок. Підтримує налаштування з SD-карти, веб-прошивальник та сервери кімнат. Сумісний із застосунками MeshCore.",
+      "sourceHash": "sha256:bf9588a56b964d087906f1adc025928ed0580aee45ccead56573d78d497d9ead",
+      "generatedAt": "2026-06-27T15:29:31.456Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18084,
+      "promptTokens": 184,
+      "completionTokens": 1030
+    },
+    "deviceNotes.lilygo-t-deck": {
+      "value": "T-Deck Plus — основний пристрій з QWERTY-клавіатурою, трекболом та GPS.",
+      "sourceHash": "sha256:26f79d48321170f5bb0f79014abec8cbfdb66a941238b8d816e2351eaa328409",
+      "generatedAt": "2026-06-27T15:29:42.571Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11115,
+      "promptTokens": 148,
+      "completionTokens": 563
+    },
+    "deviceNotes.lilygo-twatch-ultra": {
+      "value": "T-Watch Ultra — наручний пристрій із сенсорним AMOLED-екраном.",
+      "sourceHash": "sha256:2cb2634232db27b68aeefc2a8ccc274033588e4e60260ca140f8616a68e55997",
+      "generatedAt": "2026-06-27T15:30:10.299Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 27729,
+      "promptTokens": 143,
+      "completionTokens": 683
+    },
+    "features": {
+      "value": "[\"Веб-прошивальник (Chrome/Edge)\", \"Налаштування SD-карти (налаштовує одна людина, копіює всім)\", \"Підтримка сервера кімнат (до 8)\", \"Екранна клавіатура\", \"Підтримка GPS\", \"Без облікових записів, сполучення та окремого налаштування пристроїв\"]",
+      "sourceHash": "sha256:f4940ce55c19fca46848d92f34f71e0db9ed2244b0dd7c39f84ff37ab3415449",
+      "generatedAt": "2026-06-27T15:30:32.800Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 22500,
+      "promptTokens": 178,
+      "completionTokens": 1236
+    }
+  }
+}

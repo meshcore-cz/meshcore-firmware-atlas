@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ch",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới cộng đồng MeshCore toàn quốc phủ sóng Thụy Sĩ tại băng tần 869.618 MHz (62.5 kHz / SF8 / CR4/8), được điều phối thông qua cộng đồng meshcore.ch với bản đồ thế giới dùng chung và cấu hình chu kỳ hoạt động 10%.",
+      "sourceHash": "sha256:3d2ce4b0b6f915b74cc1b04a24726c148282a2a5effa69ab41eb0c86c12ff745",
+      "generatedAt": "2026-06-27T16:54:36.313Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15321,
+      "promptTokens": 181,
+      "completionTokens": 869
+    }
+  }
+}

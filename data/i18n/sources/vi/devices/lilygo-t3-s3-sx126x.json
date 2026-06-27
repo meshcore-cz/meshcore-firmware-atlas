@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t3-s3-sx126x",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bo mạch phát triển ESP32-S3 + SX1262 LoRa nhỏ gọn, tích hợp màn hình OLED SSD1306, khe cắm micro-SD và đầu nối mở rộng Qwiic. Đi kèm cổng USB-C, đầu nối pin PH2.0 và tùy chọn đầu vào năng lượng mặt trời (V1.3). Không tích hợp BMS — vui lòng sử dụng viên pin Li-ion có mạch bảo vệ.",
+      "sourceHash": "sha256:0490ff8e55dce96f5b86ccd0e2426672e387b45be5321a904663f49ecff27f16",
+      "generatedAt": "2026-06-27T15:38:27.181Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6572,
+      "promptTokens": 192,
+      "completionTokens": 1196
+    }
+  }
+}

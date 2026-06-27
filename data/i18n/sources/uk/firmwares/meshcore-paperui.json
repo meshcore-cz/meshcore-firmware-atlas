@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-paperui",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Прошивка MeshCore для портативного пристрою LilyGo T5 ePaper S3 Pro, спеціалізована для екранів на електронному папері. Вона забезпечує автономний обмін повідомленнями, контакти, виявлення пристроїв, GPS, карти та налаштування пристрою, оптимізовані для сенсорного керування.",
+      "sourceHash": "sha256:2c18c1e23eb96c2ae622588c276ede00f5d447feda3aea55090cf98c0f381f28",
+      "generatedAt": "2026-06-27T15:35:23.933Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9794,
+      "promptTokens": 166,
+      "completionTokens": 1784
+    },
+    "deviceNotes.lilygo-t5-pro": {
+      "value": "Для нормальної роботи потрібні LilyGo T5 ePaper S3 Pro та SD-карта.",
+      "sourceHash": "sha256:89d7b3b5c4c8457715a6fa7b8c0ca4c2e3cef78536e370f478a7564a24eb3a05",
+      "generatedAt": "2026-06-27T15:35:39.850Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15916,
+      "promptTokens": 148,
+      "completionTokens": 634
+    },
+    "features": {
+      "value": "[\"Інтерфейс обміну повідомленнями на E-paper\",\"Контакти та виявлення вузлів\",\"GPS, карти та маршрутні точки\",\"Інструмент для прошивки в браузері\"]",
+      "sourceHash": "sha256:79e44108b22128680d020598974a7c6590788b10015223fc21e6be26d69ac85e",
+      "generatedAt": "2026-06-27T15:35:47.366Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7516,
+      "promptTokens": 151,
+      "completionTokens": 1305
+    }
+  }
+}

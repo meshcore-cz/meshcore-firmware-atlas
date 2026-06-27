@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-lt",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore emergente na Lituânia. Ainda não há informações disponíveis sobre a comunidade pública ou coordenação; foi observado um analisador a operar na predefinição de rádio padrão EU/UK Narrow.",
+      "sourceHash": "sha256:53b70aa25d750b556553828471bc18bfba7d1910fc3eaa0cba3c6d6ebad73188",
+      "generatedAt": "2026-06-27T14:47:05.080Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3897,
+      "promptTokens": 163,
+      "completionTokens": 1070
+    }
+  }
+}

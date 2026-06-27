@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-meshtower",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Venkovní solární opakovač postavený na základní desce Heltec MeshSolar – kombinace desky BMS a řídicí desky s BLE a LoRa pro dlouhodobý provoz a pokrytí sítě mimo síť. První generace MeshTower, později nahrazená verzí MeshTower V2.",
+      "sourceHash": "sha256:e7cacb5cda67a2a3ff7d648a47a62820141546d944915201407c071fdfcdfb50",
+      "generatedAt": "2026-06-27T10:46:20.395Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

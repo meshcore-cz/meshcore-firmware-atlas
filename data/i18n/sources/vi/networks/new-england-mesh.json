@@ -1,0 +1,15 @@
+{
+  "resource": "network/new-england-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore toàn khu vực New England trải dài qua Connecticut, Massachusetts, New Hampshire và Maine, được điều phối thông qua nhmesh.com cùng bản đồ trực tuyến tùy chỉnh tại nhmesh.live và công cụ phân tích CoreScope. Hơn 50 nút mạng rải rác khắp khu vực từ Stamford CT đến Topsham ME.",
+      "sourceHash": "sha256:4a2367a16b44ec39b1f4efc5e548d594312575d5dc28069f347b71c0e8760955",
+      "generatedAt": "2026-06-27T16:51:45.375Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3081,
+      "promptTokens": 183,
+      "completionTokens": 593
+    }
+  }
+}

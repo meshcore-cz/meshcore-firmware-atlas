@@ -1,0 +1,15 @@
+{
+  "resource": "device/zindello-ultrapeaterzero",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Hat repetidor LoRa de 1 W com as dimensões do Raspberry Pi Zero 2 W, equipado com um rádio EBYTE E22/E22P com LNA integrado e filtro passa-faixa opcional. O conversor buck de entrada ampla e os scripts de instalação do pyMC_Repeater fazem dele um repetidor MeshCore compacto e portátil.",
+      "sourceHash": "sha256:63460016297a8c3c7d830a91f99c4d091f1c4decb845510535fff75bd0734537",
+      "generatedAt": "2026-06-27T14:21:24.302Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2903,
+      "promptTokens": 190,
+      "completionTokens": 850
+    }
+  }
+}

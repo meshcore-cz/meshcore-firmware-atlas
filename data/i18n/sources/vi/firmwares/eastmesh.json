@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/eastmesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bản dựng firmware EastMesh dành cho MeshCore, bao gồm bộ lặp MQTT, thiết bị đồng hành WiFi và tệp bản phát hành dễ tải xuống cho các bo mạch được hỗ trợ. Tính năng bao gồm bảng cấu hình HTTPS cục bộ tùy chọn trên các thiết bị ESP32 được hỗ trợ, xác thực JWT bằng danh tính thiết bị và báo cáo tình trạng pin.",
+      "sourceHash": "sha256:bfdf1fefb41d756d5de3270fe6576408d01d22722637da3172d85fa16ee49daa",
+      "generatedAt": "2026-06-27T15:47:17.458Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5883,
+      "promptTokens": 176,
+      "completionTokens": 882
+    },
+    "features": {
+      "value": "[\"Bản dựng bộ chuyển tiếp MQTT\", \"Bản dựng ứng dụng đồng hành WiFi\", \"Bảng cấu hình HTTPS cục bộ tùy chọn (ESP32)\", \"Xác thực JWT bằng định danh thiết bị\", \"Báo cáo pin trên các mục tiêu được hỗ trợ\", \"Hỗ trợ vai trò người quan sát\"]",
+      "sourceHash": "sha256:b5628c7d860b7d95e88f04c4ca314273c8cb8f1278589a7052c8e338f6f79c2a",
+      "generatedAt": "2026-06-27T15:47:22.535Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5077,
+      "promptTokens": 165,
+      "completionTokens": 1064
+    }
+  }
+}

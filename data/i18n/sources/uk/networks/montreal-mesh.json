@@ -1,0 +1,15 @@
+{
+  "resource": "network/montreal-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Спільнота ентузіастів, творців та експериментаторів, які працюють з MeshCore та Meshtastic на острові Монреаль і в його приміських районах. Розгортання MeshCore використовує стаціонарні ретранслятори для покриття всього міста, а в планах на розширення — Лаваль, Лонгей та вся агломерація Великого Монреаля.",
+      "sourceHash": "sha256:460bb38882b7f8608d104b7b2327de81e6748d1917f91c768e88bc1c5c1ba301",
+      "generatedAt": "2026-06-27T16:53:42.069Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10325,
+      "promptTokens": 185,
+      "completionTokens": 1508
+    }
+  }
+}

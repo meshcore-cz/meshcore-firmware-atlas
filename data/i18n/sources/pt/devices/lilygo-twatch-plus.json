@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-twatch-plus",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Smartwatch ESP32-S3 com SX1262 LoRa, ecrã tátil IPS de 1,3 polegadas e GNSS integrado (u-blox MIA-M10Q ou Quectel LS550G). Gestão de energia AXP2101, acelerómetro BMA423, controlador háptico, microfone, altifalante e transmissor de infravermelhos.",
+      "sourceHash": "sha256:d3ea6893229da682763fd4aee64d2bc072233917e24037ddfac845bf153cc12d",
+      "generatedAt": "2026-06-27T14:14:54.318Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19951,
+      "promptTokens": 197,
+      "completionTokens": 1467
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/msp-mesh",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Skupina pro meshové sítě v Minneapolis-Saint Paul a širší Minnesotě, která se díky zeměpisné blízkosti rozšiřuje i do západního Wisconsinu. Pořádá komunitní setkání, nabízí partnerské weby, mapy sítí a živé aktivity CoreScope.",
+      "sourceHash": "sha256:c62f38a0dda07dee1c8e8ca318c74c2d9c915bad52aa495e82c6934188db8cb1",
+      "generatedAt": "2026-06-27T12:08:31.606Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16004,
+      "promptTokens": 164,
+      "completionTokens": 1715
+    }
+  }
+}

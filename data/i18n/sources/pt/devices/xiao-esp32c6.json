@@ -1,0 +1,15 @@
+{
+  "resource": "device/xiao-esp32c6",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa ESP32-C6 XIAO do tamanho de um polegar, com suporte a Wi-Fi 6, BLE 5 e rádio compatível com Thread/Zigbee. A MeshCore a utiliza como um dispositivo complementar compacto ou host repetidor com o módulo LoRa Wio-SX1262 acoplado.",
+      "sourceHash": "sha256:c0446f50916798e71fb5a6560fab218cab55b4ec7e8174c2c819495a25cbcc63",
+      "generatedAt": "2026-06-27T14:20:19.483Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3520,
+      "promptTokens": 184,
+      "completionTokens": 1038
+    }
+  }
+}

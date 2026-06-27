@@ -1,0 +1,15 @@
+{
+  "resource": "device/rak-wismesh-repeater-mini",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Repetidor externo compacto, compatível com energia solar, baseado no RAK4631 e na placa base RAK19003 Mini, montado em um invólucro Unify IP67 com bateria interna, BLE, acesso USB e antena LoRa externa. Disponível em variantes regionais abrangentes 8xx e 9xx para implantação rápida off-grid.",
+      "sourceHash": "sha256:bde7a35d33edd36a5c691d29e51939d71b997101c625aaee101620350d1d29db",
+      "generatedAt": "2026-06-27T14:19:22.219Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6101,
+      "promptTokens": 193,
+      "completionTokens": 1783
+    }
+  }
+}

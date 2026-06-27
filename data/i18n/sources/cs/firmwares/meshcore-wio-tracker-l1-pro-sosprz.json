@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-wio-tracker-l1-pro-sosprz",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Binárně distribuovaný fork MeshCore pro Seeed Studio Wio Tracker L1 Pro, který přidává rozsáhlé doprovodné uživatelské rozhraní přímo v zařízení pro zasílání zpráv, správu kontaktů, nastavení rádia a správu opakovačů.",
+      "sourceHash": "sha256:150f77781c5fcb2bb8279091bb6319f85828ad2299d3282a8a2ba7f4bda69b96",
+      "generatedAt": "2026-06-27T11:19:13.977Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9628,
+      "promptTokens": 166,
+      "completionTokens": 914
+    },
+    "verificationNotes.the-repository-contains-release-binaries-and-usa": {
+      "value": "Repozitář obsahuje vydané binární soubory a poznámky k použití, ale neobsahuje zdrojový kód firmwaru ani licenci.",
+      "sourceHash": "sha256:a5803d718d32e6d7588b32374bf6515d69d627c75fc2c8b24b61b44c60683fe8",
+      "generatedAt": "2026-06-27T11:19:20.619Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6641,
+      "promptTokens": 144,
+      "completionTokens": 736
+    },
+    "features": {
+      "value": "[\"Zasílání přímých zpráv a zpráv do kanálů přímo v zařízení\",\"Kontakty, oznámení a historie zpráv\",\"Správa rádií a opakovačů\",\"Flashování přes UF2 a pomocí prohlížeče\"]",
+      "sourceHash": "sha256:dade16b47333b3fe0ccdc26762eb6628bef64f086fda44badf3cd8f5f3d0b257",
+      "generatedAt": "2026-06-27T12:30:56.392Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11323,
+      "promptTokens": 158,
+      "completionTokens": 1044
+    }
+  }
+}

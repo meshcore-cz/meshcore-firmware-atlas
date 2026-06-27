@@ -1,0 +1,15 @@
+{
+  "resource": "network/chicagoland-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng cộng đồng dành cho những người đam mê MeshCore, Meshtastic, Reticulum và LoRa, xây dựng mạng lưới mesh off-grid bền vững và phi tập trung trên toàn khu vực Chicagoland, tích hợp sẵn công cụ phân tích dựa trên CoreScope, bản đồ trực tuyến, hướng dẫn bắt đầu và điều phối qua Discord.",
+      "sourceHash": "sha256:bf31415233782e90a14065e4001e8ede6b0fe3eae94a0fe9b96729d83150fa4d",
+      "generatedAt": "2026-06-27T16:46:16.052Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13292,
+      "promptTokens": 179,
+      "completionTokens": 1212
+    }
+  }
+}

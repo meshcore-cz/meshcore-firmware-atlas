@@ -1,0 +1,78 @@
+{
+  "resource": "software/remoteterm",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Lokálně hostovaný terminál MeshCore pro pokročilé uživatele s vzdáleným zasíláním zpráv, zachytáváním a dešifrováním paketů na straně serveru, správou rádiových zařízení, boty, mapami, telemetrií opakovačů a integracemi včetně MQTT a Home Assistant.",
+      "sourceHash": "sha256:81e0c5e39c96ace00b373059cf1f6007106f274392cca159e1f8d0874db8bad1",
+      "generatedAt": "2026-06-27T11:52:48.993Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8268,
+      "promptTokens": 167,
+      "completionTokens": 933
+    },
+    "screenshots.desktop.png.caption": {
+      "value": "Desktopový terminál a rozhraní pro správu mesh sítí",
+      "sourceHash": "sha256:504126627db469e9bf82776ae364718309f11c60b0f8b0442bc66a8f42f0ba8d",
+      "generatedAt": "2026-06-27T11:52:53.853Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4859,
+      "promptTokens": 135,
+      "completionTokens": 433
+    },
+    "screenshots.mobile.png.caption": {
+      "value": "Mobilní rozhraní pro zasílání zpráv",
+      "sourceHash": "sha256:482bed51ff9b2ba129e8512d1a7f697f2a342c31539bbf27202d0918d610af4c",
+      "generatedAt": "2026-06-27T11:53:01.447Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7594,
+      "promptTokens": 132,
+      "completionTokens": 691
+    },
+    "screenshots.mobile-map.png.caption": {
+      "value": "Mapa mobilní mesh sítě a detaily uzlů",
+      "sourceHash": "sha256:b864062c045f09a8ff6d27d1f3a9e8b07a4442a40ad5047de5cdc08ccf27bf8f",
+      "generatedAt": "2026-06-27T11:53:08.685Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7238,
+      "promptTokens": 135,
+      "completionTokens": 641
+    },
+    "verificationNotes.intended-for-trusted-networks-its-bot-system-can": {
+      "value": "Určeno pro důvěryhodné sítě. Jeho systém botů dokáže spouštět libovolný kód v Pythonu a nesmí být bez přísnějšího řízení přístupu veřejně zpřístupněn.",
+      "sourceHash": "sha256:332367a485280b438655162dac1f8bfdfaccbe3aa7ee3e78161ae8e8fa5c64e7",
+      "generatedAt": "2026-06-27T11:53:17.291Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8606,
+      "promptTokens": 153,
+      "completionTokens": 1031
+    },
+    "verificationNotes.native-installation-is-recommended-because-docke": {
+      "value": "Doporučuje se nativní instalace, protože Docker může mít občasné problémy s odběrem sériových událostí.",
+      "sourceHash": "sha256:8c6b9e6b0f8d778cdd6c1b28aebbb5855f54fa71e70944ed0f6ee8cb7c82b3d7",
+      "generatedAt": "2026-06-27T11:53:25.413Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8121,
+      "promptTokens": 144,
+      "completionTokens": 892
+    },
+    "verificationNotes.home-assistant-integration-uses-mqtt-discovery-a": {
+      "value": "Integrace s Home Assistantem využívá MQTT Discovery a nevyžaduje vlastní komponentu.",
+      "sourceHash": "sha256:dae8f8b8fd28249cc1a3dc1e262e4c7d147b3c2a759288d681b568b0d23bdb66",
+      "generatedAt": "2026-06-27T11:53:31.081Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5668,
+      "promptTokens": 143,
+      "completionTokens": 582
+    },
+    "tags": {
+      "value": "[\"Vzdálený terminál\", \"Sběr paketů\", \"Boti\", \"Home Assistant\", \"MQTT\", \"Vlastní hosting\"]",
+      "sourceHash": "sha256:054937a5aa47b0663f7a42ba3712ac2aa85c9e33a4372b707232be2e22a5c535",
+      "generatedAt": "2026-06-27T13:49:23.122Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 23062,
+      "promptTokens": 149,
+      "completionTokens": 684
+    }
+  }
+}

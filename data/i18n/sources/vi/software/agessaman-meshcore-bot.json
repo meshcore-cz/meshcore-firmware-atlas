@@ -1,0 +1,42 @@
+{
+  "resource": "software/agessaman-meshcore-bot",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bot dịch vụ MeshCore bằng Python có khả năng mở rộng, hỗ trợ lệnh từ khóa và plugin, dịch vụ thời tiết và cảnh báo, lập lịch, giới hạn tần suất, quản trị web, cùng các tùy chọn tích hợp Discord, Telegram, MQTT, webhook và bản đồ.",
+      "sourceHash": "sha256:8860aebf78934d5f281b72405b9015cb0b1e22c276f1031a6d89800dda370e1a",
+      "generatedAt": "2026-06-27T16:05:24.569Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6810,
+      "promptTokens": 168,
+      "completionTokens": 702
+    },
+    "tags": {
+      "value": "[\"bot lệnh\",\"thời tiết\",\"plugin dịch vụ\",\"tự lưu trữ\",\"bảng điều khiển web\"]",
+      "sourceHash": "sha256:f372d1e638f40699cd8a9fcb57745eaa233914608e2d62da3b81208426676847",
+      "generatedAt": "2026-06-27T16:05:30.694Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6124,
+      "promptTokens": 145,
+      "completionTokens": 562
+    },
+    "verificationNotes.the-project-warns-operators-to-avoid-duplicate-b": {
+      "value": "Dự án cảnh báo người vận hành tránh bot trùng lặp và giới hạn phạm vi phản hồi nhằm bảo vệ thời gian phát sóng của mạng mesh.",
+      "sourceHash": "sha256:bedc45680103f248f0028472622bab941f859a9084f1c0a7ae2472f4772dcb26",
+      "generatedAt": "2026-06-27T16:05:40.136Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9441,
+      "promptTokens": 147,
+      "completionTokens": 797
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Kho lưu trữ hiện chưa khai báo giấy phép SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T16:05:49.352Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9215,
+      "promptTokens": 139,
+      "completionTokens": 404
+    }
+  }
+}

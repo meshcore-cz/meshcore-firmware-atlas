@@ -8,8 +8,226 @@ import { groupReleases } from '$lib/releases.js';
 import { richTextToPlain } from '$lib/richtext.js';
 import { COLLECTIONS } from '$lib/collections.js';
 import { TOOLS } from '$lib/tools.js';
+import { m } from '$lib/paraglide/messages.js';
+import { localizeRecord, firmwareDeviceNote } from '$lib/catalog-overlay.js';
+
+export {
+  localizeRecord,
+  localizeCollection,
+  getTranslatedField,
+  softwareCapabilityLabel,
+  firmwareDeviceNote
+} from '$lib/catalog-overlay.js';
 
 export { groupReleases } from '$lib/releases.js';
+
+// --- Localized labels for the metadata maps below --------------------------
+// Each helper resolves a Paraglide message by key, falling back to the English
+// `.label` baked into the *_META map. Keys replace hyphens with underscores
+// (e.g. `network-app` → `sw_kind_network_app`).
+const msg = (key, fallback) => m[key]?.() ?? fallback;
+const us = (v) => String(v).replaceAll('-', '_');
+
+// Lowercase the first character of a label so capitalized tab/heading labels
+// (e.g. "Univerzální", "Companion radios") read naturally mid-sentence in SEO
+// copy. Handles diacritics via String#toLowerCase.
+export const lcFirst = (s) => (s ? s.charAt(0).toLowerCase() + s.slice(1) : s);
+
+/** @param {string} k software kind */
+export const softwareKindLabel = (k) => msg(`sw_kind_${us(k)}`, SOFTWARE_KIND_META[k]?.label ?? k);
+/** @param {string} t print type */
+export const printTypeLabel = (t) => msg(`print_type_${us(t)}`, PRINT_TYPE_META[t]?.label ?? t);
+/** @param {string} t print type */
+export const printTypeSingular = (t) =>
+  msg(`print_type_${us(t)}_singular`, PRINT_TYPE_META[t]?.singular ?? t);
+/** @param {string} s compatibility status */
+export const matrixStatusLabel = (s) => msg(`matrix_status_${us(s)}`, STATUS_META[s]?.label ?? s);
+/** @param {string} t firmware type */
+export const firmwareTypeLabel = (t) => msg(`fw_type_${us(t)}`, TYPE_META[t]?.label ?? t);
+/** @param {string} t license type */
+export const licenseTypeLabel = (t) => msg(`license_${us(t)}`, LICENSE_TYPE_META[t]?.label ?? t);
+/** @param {string} s network scope */
+export const networkScopeLabel = (s) => msg(`net_scope_${us(s)}`, NETWORK_SCOPE_META[s]?.label ?? s);
+/** @param {string} s network status */
+export const networkStatusLabel = (s) => msg(`status_${us(s)}`, NETWORK_STATUS_META[s]?.label ?? s);
+/** @param {string} s software status */
+export const softwareStatusLabel = (s) =>
+  msg(`status_${us(s)}`, SOFTWARE_STATUS_META[s]?.label ?? s);
+
+/** @param {string} s firmware maintenance status */
+export const firmwareStatusLabel = (s) => {
+  switch (s) {
+    case 'active':
+      return m.status_active();
+    case 'inactive':
+      return m.status_inactive();
+    case 'maintenance':
+      return m.fw_status_maintenance();
+    case 'experimental':
+      return m.fw_status_experimental();
+    default:
+      return s;
+  }
+};
+
+/** @param {string} s firmware maturity */
+export const firmwareMaturityLabel = (s) => {
+  switch (s) {
+    case 'experimental':
+      return m.maturity_experimental();
+    case 'alpha':
+      return m.maturity_alpha();
+    case 'beta':
+      return m.maturity_beta();
+    case 'stable':
+      return m.maturity_stable();
+    default:
+      return s;
+  }
+};
+
+/** @param {string} s firmware lifecycle */
+export const firmwareLifecycleLabel = (s) => {
+  switch (s) {
+    case 'active':
+      return m.lifecycle_active();
+    case 'maintenance':
+      return m.lifecycle_maintenance();
+    case 'archived':
+      return m.lifecycle_archived();
+    default:
+      return s;
+  }
+};
+
+/** @param {string} s firmware distribution channel */
+export const firmwareDistributionLabel = (s) => {
+  switch (s) {
+    case 'vendor':
+      return m.dist_vendor();
+    case 'community':
+      return m.dist_community();
+    case 'personal':
+      return m.dist_personal();
+    default:
+      return s;
+  }
+};
+
+/** @param {string} s device product lifecycle */
+export const deviceLifecycleLabel = (s) => {
+  switch (s) {
+    case 'announced':
+      return m.dev_lifecycle_announced();
+    case 'active':
+      return m.lifecycle_active();
+    case 'discontinued':
+      return m.dev_lifecycle_discontinued();
+    case 'unknown':
+      return m.dev_lifecycle_unknown();
+    default:
+      return s;
+  }
+};
+
+/** @param {string} role MeshCore node role slug */
+export const nodeRoleLabel = (role) => {
+  switch (role) {
+    case 'companion':
+      return m.node_role_companion();
+    case 'repeater':
+      return m.node_role_repeater();
+    case 'room-server':
+      return m.node_role_room_server();
+    case 'observer':
+      return m.node_role_observer();
+    case 'sensor':
+      return m.node_role_sensor();
+    case 'kiss-modem':
+      return m.fw_role_kiss_modem();
+    case 'standalone-ui':
+      return m.fw_role_standalone_ui();
+    default:
+      return role;
+  }
+};
+
+/** Firmware capability matrix groups and items (detail + compare views). */
+export const FIRMWARE_CAPABILITY_GROUPS = [
+  { key: 'transports', items: ['ble', 'usbSerial', 'nativeTcp', 'wifiAp', 'ethernet'] },
+  { key: 'operations', items: ['webFlasher', 'ota', 'bleDfu', 'configurationBackup'] },
+  { key: 'networking', items: ['repeater', 'roomServer', 'observer', 'mqtt', 'kissModem'] },
+  { key: 'hardware', items: ['gps', 'display', 'sensors', 'lowPowerRx'] },
+  { key: 'protocol', items: ['meshcoreCompatible', 'rawPacketSend', 'rawPacketObserve'] }
+];
+
+/** @param {string} groupKey */
+export const firmwareCapabilityGroupLabel = (groupKey) => {
+  switch (groupKey) {
+    case 'transports':
+      return m.fw_cap_group_transports();
+    case 'operations':
+      return m.fw_cap_group_operations();
+    case 'networking':
+      return m.fw_cap_group_networking();
+    case 'hardware':
+      return m.fw_cap_group_hardware();
+    case 'protocol':
+      return m.fw_cap_group_protocol();
+    default:
+      return groupKey;
+  }
+};
+
+/** @param {string} itemKey */
+export const firmwareCapabilityItemLabel = (itemKey) => {
+  switch (itemKey) {
+    case 'ble':
+      return m.fw_cap_ble();
+    case 'usbSerial':
+      return m.fw_cap_usb_serial();
+    case 'nativeTcp':
+      return m.fw_cap_native_tcp();
+    case 'wifiAp':
+      return m.fw_cap_wifi_ap();
+    case 'ethernet':
+      return m.fw_cap_ethernet();
+    case 'webFlasher':
+      return m.fw_cap_web_flasher();
+    case 'ota':
+      return m.fw_cap_ota();
+    case 'bleDfu':
+      return m.fw_cap_ble_dfu();
+    case 'configurationBackup':
+      return m.fw_cap_config_backup();
+    case 'repeater':
+      return m.fw_cap_repeater();
+    case 'roomServer':
+      return m.fw_cap_room_server();
+    case 'observer':
+      return m.fw_cap_observer();
+    case 'mqtt':
+      return m.fw_cap_mqtt();
+    case 'kissModem':
+      return m.fw_cap_kiss_modem();
+    case 'gps':
+      return m.fw_cap_gps();
+    case 'display':
+      return m.fw_cap_display();
+    case 'sensors':
+      return m.fw_cap_sensors();
+    case 'lowPowerRx':
+      return m.fw_cap_low_power_rx();
+    case 'meshcoreCompatible':
+      return m.fw_cap_meshcore_compatible();
+    case 'rawPacketSend':
+      return m.fw_cap_raw_packet_send();
+    case 'rawPacketObserve':
+      return m.fw_cap_raw_packet_observe();
+    default:
+      return itemKey;
+  }
+};
 
 // Images (device thumbnails and vendor logos) must go through the bundler to
 // get hashed asset URLs; map each glob result back to its directory id.
@@ -83,22 +301,29 @@ export const networks = dataset.networks ?? [];
  * scripts/enrich-contributors.js; empty until that has run. */
 export const contributors = dataset.contributors ?? [];
 
+/** GitHub star count for this site’s repo (from contributors.json via build). */
+export const repoGithubStars = dataset.repoGithubStars ?? null;
+
 const networkById = new Map(networks.map((n) => [n.id, n]));
 
 export function getFirmware(id) {
-  return firmwares.find((f) => f.id === id);
+  const fw = firmwares.find((f) => f.id === id);
+  return fw ? localizeRecord('firmware', fw) : undefined;
 }
 
 export function getDevice(id) {
-  return deviceById.get(id);
+  const d = deviceById.get(id);
+  return d ? localizeRecord('device', d) : undefined;
 }
 
 export function getVendor(id) {
-  return vendorById.get(id);
+  const v = vendorById.get(id);
+  return v ? localizeRecord('vendor', v) : undefined;
 }
 
 export function getNetwork(id) {
-  return networkById.get(id);
+  const n = networkById.get(id);
+  return n ? localizeRecord('network', n) : undefined;
 }
 
 /**
@@ -118,7 +343,8 @@ export const software = (dataset.software ?? []).map((s) => ({
 const softwareById = new Map(software.map((s) => [s.id, s]));
 
 export function getSoftware(id) {
-  return softwareById.get(id);
+  const s = softwareById.get(id);
+  return s ? localizeRecord('software', s) : undefined;
 }
 
 // Wikilink type → lookup, used by RichText to resolve [[type:id]] references.
@@ -513,8 +739,8 @@ export function deviceDisplayLabel(display) {
     if (display.size != null && display.size !== '') return `${display.size}″ ${typeName}`;
     return typeName;
   }
-  if (display?.status === 'none') return 'None';
-  return 'Unknown';
+  if (display?.status === 'none') return m.spec_none();
+  return m.spec_unknown();
 }
 
 /** Catalog entry for a GNSS chip string. */
@@ -577,7 +803,7 @@ export function firmwaresForDevice(deviceId) {
       out.push({
         firmware: fw,
         status: entry.status,
-        notes: entry.notes,
+        notes: firmwareDeviceNote(fw.id, deviceId, entry.notes),
         target: entry.target,
         platformio_board: entry.platformio_board
       });
@@ -613,7 +839,7 @@ export function compatibilityMatrix() {
       if (entry) {
         cells[fw.id] = {
           status: entry.status,
-          notes: entry.notes,
+          notes: firmwareDeviceNote(fw.id, device.id, entry.notes),
           target: entry.target,
           platformio_board: entry.platformio_board
         };

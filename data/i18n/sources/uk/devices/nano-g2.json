@@ -1,0 +1,15 @@
+{
+  "resource": "device/nano-g2",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Кишеньковий трекер nRF52840 із SX1262 LoRa, 1.3-дюймовим OLED-дисплеєм, GPS, зумером і вбудованим акумулятором на 1200 mAh. Призначений для використання як компаньйон або репітер у MeshCore з підтримкою Bluetooth 5.4 та компактним форм-фактором із вимикачем.",
+      "sourceHash": "sha256:1f4743e6c70f5755c2e2005df20f33c73beb88ace7a71f322c5c1c5048490835",
+      "generatedAt": "2026-06-27T15:17:28.647Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 26592,
+      "promptTokens": 190,
+      "completionTokens": 1103
+    }
+  }
+}

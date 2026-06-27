@@ -1,0 +1,60 @@
+{
+  "resource": "software/meshcore-mqtt-live-map",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Mapa de tráfego MeshCore em tempo real e auto-hospedado que decodifica fluxos de pacotes MQTT e exibe nós, rotas, pares, calor de atividade, cobertura, linha de visada e dados de propagação em um aplicativo web instalável.",
+      "sourceHash": "sha256:130787bda4571d64a527bd9e3c2c9055c1691b0b193791db319ad7ce3f4634ed",
+      "generatedAt": "2026-06-27T14:34:06.875Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3934,
+      "promptTokens": 172,
+      "completionTokens": 1076
+    },
+    "screenshots.live-map.png.caption": {
+      "value": "Nós ativos, rotas e atividade da malha",
+      "sourceHash": "sha256:6a687b95bbb136e901dd134c79e07747a4c68c4c8478277a7f772ccc71009fa8",
+      "generatedAt": "2026-06-27T14:34:08.915Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2040,
+      "promptTokens": 136,
+      "completionTokens": 445
+    },
+    "screenshots.route-history.png.caption": {
+      "value": "Ferramentas de histórico de rotas e análise de rede",
+      "sourceHash": "sha256:72bcaab386076d69166844e7ac8c89597b6a46b4e1e7f5fa4c0b3f6f348857d3",
+      "generatedAt": "2026-06-27T14:34:10.754Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1838,
+      "promptTokens": 135,
+      "completionTokens": 388
+    },
+    "tags": {
+      "value": "[\"mapa-em-tempo-real\",\"mqtt\",\"auto-hospedado\",\"pwa\",\"propagação\"]",
+      "sourceHash": "sha256:1b7f1ed8a768f00fb41e6c884dbfd4e9b800880c890f94740f26c1d8275c6e2b",
+      "generatedAt": "2026-06-27T14:34:12.907Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2152,
+      "promptTokens": 145,
+      "completionTokens": 508
+    },
+    "verificationNotes.supports-mqtt-over-tcp-or-websockets-with-option": {
+      "value": "Suporta MQTT via TCP ou WebSockets, com TLS opcional e proteção de token de produção.",
+      "sourceHash": "sha256:d6ba6c9dff165e59a92cd93aecdf9076e6183d4067881ef33db009152390a5ef",
+      "generatedAt": "2026-06-27T14:34:15.434Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2527,
+      "promptTokens": 146,
+      "completionTokens": 507
+    },
+    "verificationNotes.the-greater-boston-deployment-is-the-reference-i": {
+      "value": "A implementação da Grande Boston é a instância de referência; várias redes em malha comunitárias operam implementações independentes.",
+      "sourceHash": "sha256:27bc584c41223eae59b8aec84d591abb2d49b6018b2da121335ee2bb680fccd6",
+      "generatedAt": "2026-06-27T14:34:18.798Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3364,
+      "promptTokens": 145,
+      "completionTokens": 832
+    }
+  }
+}

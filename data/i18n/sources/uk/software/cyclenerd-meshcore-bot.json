@@ -1,0 +1,51 @@
+{
+  "resource": "software/cyclenerd-meshcore-bot",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Легкий командний бот на Node.js для приватних каналів MeshCore, який відповідає на ping та запити дати, а також виконує запланований збір статусу репітера та опціональне журналювання телеметрії у форматі CSV.",
+      "sourceHash": "sha256:4872321380e63a901ebc1bbf2f426e32c1ad5106d3bff25112eb85f97e7d9ff8",
+      "generatedAt": "2026-06-27T15:44:12.469Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12449,
+      "promptTokens": 158,
+      "completionTokens": 1056
+    },
+    "screenshots.bot-log.png.caption": {
+      "value": "Відповіді бота MeshCore та журналювання стану",
+      "sourceHash": "sha256:035c1b4057fe8ecdba8af0a24e386edd0aeea0efc372c9b590766337ec4ec604",
+      "generatedAt": "2026-06-27T15:44:15.425Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2955,
+      "promptTokens": 136,
+      "completionTokens": 488
+    },
+    "screenshots.client.jpg.caption": {
+      "value": "Команди, надіслані з клієнта MeshCore",
+      "sourceHash": "sha256:1e85ee33b7036a24e77f26e1704050ecedba9619e97868b2deb57a016f6a3380",
+      "generatedAt": "2026-06-27T15:44:18.558Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3132,
+      "promptTokens": 136,
+      "completionTokens": 539
+    },
+    "tags": {
+      "value": "[\"командний бот\",\"моніторинг репітерів\",\"csv\",\"приватні канали\"]",
+      "sourceHash": "sha256:4c98e7dc48acd7e9f9b576082759421812203d41d54d5728d54c786025f726d2",
+      "generatedAt": "2026-06-27T15:44:25.450Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6892,
+      "promptTokens": 144,
+      "completionTokens": 857
+    },
+    "verificationNotes.responds-only-in-private-channels-to-reduce-publ": {
+      "value": "Відповідає лише у приватних каналах, щоб зменшити спам у публічних.",
+      "sourceHash": "sha256:ae3a81af5d482f5cf1d06f12b06171a911cf4ceed7ab1b735f822ead014e142e",
+      "generatedAt": "2026-06-27T15:44:31.500Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6049,
+      "promptTokens": 141,
+      "completionTokens": 960
+    }
+  }
+}

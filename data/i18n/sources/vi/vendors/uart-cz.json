@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/uart-cz",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nhà sản xuất độc lập bo mạch nền mạng lưới Meshtastic dùng năng lượng mặt trời, bo mạch quản lý pin và trạm nút LoRa ngoài trời lắp ráp hoàn chỉnh.",
+      "sourceHash": "sha256:d7d33a5880e2d3a4948fb1b8f3acd2b461c89527c70fdcb29267ae479a5c0743",
+      "generatedAt": "2026-06-27T16:44:22.534Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4113,
+      "promptTokens": 154,
+      "completionTokens": 628
+    }
+  }
+}

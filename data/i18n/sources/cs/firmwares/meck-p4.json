@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/meck-p4",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Portace Meck (forku MeshCore) pro LilyGo T-Display P4, cílená na hlavní mikrokontrolér ESP32-P4. Integrovaný modul ESP32-C6 zajišťuje WiFi připojení pro aplikaci MeshCore; podpora BLE zatím není aktivována. Součástí je plnohodnotné dotykové uživatelské rozhraní s virtuální klávesnicí, zasíláním zpráv do kanálů, správou opakovačů, trasováním cesty, vysíláním polohy a soukromými kanály.",
+      "sourceHash": "sha256:f7e2233727f31efc01469e501b2791d8ebe90a19dc9ffa0311600dc43a9d33fd",
+      "generatedAt": "2026-06-27T11:16:06.049Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12823,
+      "promptTokens": 207,
+      "completionTokens": 1385
+    },
+    "features": {
+      "value": "[\"ESP32-P4 hlavní MCU s WiFi modulem ESP32-C6\",\"Dotykové uživatelské rozhraní s virtuální klávesnicí\",\"Úsporný režim při vypnuté obrazovce\",\"Zprávy v kanálech a přímé zprávy\",\"Správa opakovačů a server místností\",\"Trasování trasy a zobrazení trasy\",\"Vysílání polohy a sdílení polohy\",\"Soukromé kanály\",\"Editor tras pro jednotlivé kontakty\",\"Rozsah regionu\"]",
+      "sourceHash": "sha256:f81f9509ac8efbb676b7b531d62cdd7bd78579a2f9360fd3cfa79ad41c4af5b8",
+      "generatedAt": "2026-06-27T12:28:22.683Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16050,
+      "promptTokens": 191,
+      "completionTokens": 1083
+    }
+  }
+}

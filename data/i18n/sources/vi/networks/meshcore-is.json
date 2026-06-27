@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-is",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cộng đồng MeshCore Iceland xây dựng mạng lưới truyền thông độc lập trên khắp Iceland.",
+      "sourceHash": "sha256:922bf562062900157eadf40e5d5e9fd7ebc9480f040ac663cad9a76f23dc1e4b",
+      "generatedAt": "2026-06-27T16:48:44.750Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4029,
+      "promptTokens": 143,
+      "completionTokens": 540
+    }
+  }
+}

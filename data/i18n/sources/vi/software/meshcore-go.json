@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-go",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Go SDK độc lập phương thức truyền tải dành cho bộ đàm đồng hành MeshCore, hỗ trợ nhắn tin cấp cao, danh bạ, kênh, khám phá, quản lý trạm lặp và truy cập giao thức thô qua serial, BLE và TCP. Bộ SDK cũng bao gồm trình khách terminal mc và một backend đa phiên tùy chọn.",
+      "sourceHash": "sha256:8d5807ef6d2a0b2bbfedd9216e74bd3bcdf9b54df9f54dbbde28951b3102db96",
+      "generatedAt": "2026-06-27T16:23:05.763Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14670,
+      "promptTokens": 178,
+      "completionTokens": 1118
+    },
+    "tags": {
+      "value": "[\"SDK\", \"giao thức\", \"terminal\", \"daemon\"]",
+      "sourceHash": "sha256:ff01eaeb0d66ea430221178a6fd345664e90ad175d32425eb93675b9766e50b9",
+      "generatedAt": "2026-06-27T16:23:09.968Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4204,
+      "promptTokens": 138,
+      "completionTokens": 731
+    },
+    "verificationNotes.public-apis-may-change-before-the-first-stable-r": {
+      "value": "Các API công khai có thể thay đổi trước khi phát hành phiên bản ổn định đầu tiên.",
+      "sourceHash": "sha256:b800e10978723ff211ec3c12f8dc345a1c23ca6f90d143fa46d3b3acf30c29f9",
+      "generatedAt": "2026-06-27T16:23:13.019Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3050,
+      "promptTokens": 139,
+      "completionTokens": 494
+    },
+    "verificationNotes.no-repository-license-file-or-spdx-license-decla": {
+      "value": "Không tìm thấy tệp giấy phép của kho lưu trữ hoặc khai báo giấy phép SPDX tại thời điểm đánh giá.",
+      "sourceHash": "sha256:71ac0ef045cf4eb43eeb1710b74d5161b7ff6597c1c08e437abd890590b7e2ae",
+      "generatedAt": "2026-06-27T16:24:34.619Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 81600,
+      "promptTokens": 142,
+      "completionTokens": 811
+    }
+  }
+}

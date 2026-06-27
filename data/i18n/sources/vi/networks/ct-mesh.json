@@ -1,0 +1,15 @@
+{
+  "resource": "network/ct-mesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Nhóm người dùng công nghệ mesh tại Connecticut do tình nguyện viên điều hành, dành cho người vận hành MeshCore và Meshtastic. Nhóm cung cấp bản đồ MeshCore trực tuyến, cộng đồng Discord, công cụ đo vùng phủ sóng MeshMapper và tài nguyên MQTT/observer cục bộ cho khu vực BDL.",
+      "sourceHash": "sha256:da2736de478db3582619535868e22f7301b9ece6eaa346c66325a80d71818d43",
+      "generatedAt": "2026-06-27T16:46:35.002Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11718,
+      "promptTokens": 172,
+      "completionTokens": 1077
+    }
+  }
+}

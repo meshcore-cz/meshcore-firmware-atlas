@@ -1,0 +1,15 @@
+{
+  "resource": "device/nibble-screen-connect",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó Nibble compatível com protoboard, com tela integrada, botões e um layout de expansão com furos passantes voltado para o hacking de MeshCore e Meshtastic. O projeto combina um Waveshare ESP32-S3 Zero com um módulo de rádio Seeed Wio SX1262.",
+      "sourceHash": "sha256:1c59ff73a9a80ba21005aa8200e30306ced099554f67224952fc8f76d59deb76",
+      "generatedAt": "2026-06-27T14:17:52.319Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16997,
+      "promptTokens": 185,
+      "completionTokens": 761
+    }
+  }
+}

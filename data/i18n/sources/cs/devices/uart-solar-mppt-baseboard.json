@@ -1,0 +1,12 @@
+{
+  "resource": "device/uart-solar-mppt-baseboard",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Samotná základní deska o rozměrech 70 × 43 mm postavená na RAK4630 (s firmwarem kompatibilním s RAK4631) a vybavená integrovaným MPPT solárním regulátorem. Solární vstup 7–30 V, podporuje baterie 1S Li-Ion/Li-Pol/LiFePO4 a 1S/2S LTO pomocí 3,3V měniče buck/boost. Neobsahuje kryt, panel ani baterii; je určena pro vestavbu do vlastního off-grid uzlu Meshtastic/MeshCore/Reticulum.",
+      "sourceHash": "sha256:3bc70be1008fadcdcc10a4548485bfa7954f6ae550712dca2142e622db8144d8",
+      "generatedAt": "2026-06-27T11:01:47.528Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-sk",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede mesh nacional eslovaca de MeshCore, coordenada através de mesh.om3kff.sk e de um Discord da comunidade. Opera com a predefinição EU/UK (Narrow) na banda de 869.618 MHz (62.5 kHz / SF8) — com a taxa de codificação definida em 4/5 —, partilhando um canal Public internacional interligado às redes mesh da Hungria e da Áustria, além de um canal nacional #slovakia.",
+      "sourceHash": "sha256:687d3b9df7424618168dc42fcefdef6fd9db9013f75f43a95c6823f32cdb20c8",
+      "generatedAt": "2026-06-27T14:49:19.964Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5078,
+      "promptTokens": 214,
+      "completionTokens": 1538
+    }
+  }
+}

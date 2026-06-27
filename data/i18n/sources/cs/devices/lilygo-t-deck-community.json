@@ -1,0 +1,12 @@
+{
+  "resource": "device/lilygo-t-deck-community",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Komunitní sestava firmwaru pro kapesní zařízení LilyGo T-Deck, která přebírá stejný ESP32-S3, SX1262, 2,8palcový IPS displej a rozložení klávesnice/trackballu jako komerční T-Deck.",
+      "sourceHash": "sha256:d55e78ec72e9037f2daa0333105f2b7d4b237c8eb6d038e2d8bca7a21e52a233",
+      "generatedAt": "2026-06-27T10:50:51.179Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

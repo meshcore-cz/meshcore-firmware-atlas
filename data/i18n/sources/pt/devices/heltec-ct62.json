@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-ct62",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Módulo nó LoRa ESP32-C3 + SX1262 compacto, com Wi-Fi de 2,4 GHz integrado, Bluetooth LE e conectores de antena IPEX. Projetado para casos de uso de IoT de baixo consumo, como Meshtastic, MeshCore e LoRaWAN, o CT62 apresenta um encapsulamento stamp-hole com conectividade LoRa de longo alcance e dimensões reduzidas.",
+      "sourceHash": "sha256:adae37720c0d44cc4316f4ebaaa170d02eb650d3e937c5c5b49afe924aebc40e",
+      "generatedAt": "2026-06-27T14:01:15.875Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18947,
+      "promptTokens": 203,
+      "completionTokens": 1052
+    }
+  }
+}

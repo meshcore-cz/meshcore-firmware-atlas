@@ -1,0 +1,12 @@
+{
+  "resource": "device/xiao-esp32s3",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Základní deska ESP32-S3 XIAO o velikosti palce spárovaná s LoRa modulem Wio-SX1262. Poskytuje Wi-Fi, BLE, programování přes USB a stejné kompaktní rozměry jako Seeed XIAO pro stavbu miniaturních doplňků a opakovačů MeshCore.",
+      "sourceHash": "sha256:63f6efb1fe18003eae0b6c5967a412e87a5887aca35cdb38d731c6a7a63ae578",
+      "generatedAt": "2026-06-27T10:59:03.710Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

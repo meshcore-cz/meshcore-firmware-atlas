@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/meshcoreterm",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware đồng hành mang phong cách hoài cổ dựa trên MeshCore, tích hợp bàn phím trên màn hình đa năng, điều hướng bằng phần cứng (D-pad, cần điều khiển, bi xoay) cùng tính năng quản lý tên thiết bị, WiFi, mã PIN BLE, thông số vô tuyến và cấu hình GPS. Hỗ trợ nhiều thiết bị thông qua tệp nhị phân dựng sẵn và không yêu cầu cập nhật trực tuyến.",
+      "sourceHash": "sha256:04b6dcb5dc77fbed177c28f20ff0a6d5e5834ddaa834110b12608a6cd92dd861",
+      "generatedAt": "2026-06-27T15:52:15.922Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4744,
+      "promptTokens": 188,
+      "completionTokens": 830
+    },
+    "deviceNotes.sensecap-indicator-espnow": {
+      "value": "Seeed SenseCAP Indicator (phiên bản TFT).",
+      "sourceHash": "sha256:358d3cb4801701a5ca30bd44c1a404d5e945d3fa4ac70726d44fe4000c4ff570",
+      "generatedAt": "2026-06-27T15:52:17.865Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1942,
+      "promptTokens": 139,
+      "completionTokens": 315
+    },
+    "deviceNotes.thinknode-m3": {
+      "value": "Elecrow 3.5\" ThinkNode M3",
+      "sourceHash": "sha256:c8d11c41466844ccc497d2796bd0d38e418741a5867f216fa1dfc4a62dc23d7a",
+      "generatedAt": "2026-06-27T15:52:23.575Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5710,
+      "promptTokens": 142,
+      "completionTokens": 434
+    },
+    "deviceNotes.thinknode-m5": {
+      "value": "Elecrow 7\" ThinkNode M5.",
+      "sourceHash": "sha256:1a99e1898b2b259887261b363e8233540d247a7085dabe8d0d6a738b0f6a70ac",
+      "generatedAt": "2026-06-27T15:52:25.782Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2206,
+      "promptTokens": 140,
+      "completionTokens": 287
+    },
+    "features": {
+      "value": "[\"Giao diện phong cách retro\",\"Bàn phím trên màn hình với chế độ chữ hoa/chữ thường/ký hiệu\",\"Điều hướng phần cứng (D-pad, cần điều khiển, bi lăn T-Deck)\",\"Quản lý thiết bị (tên, WiFi, mã PIN BLE, thông số vô tuyến, GPS)\",\"Thanh trạng thái với nhãn truyền tải và chỉ báo pin\",\"Lưu trữ bền vững qua NVS/Preferences\"]",
+      "sourceHash": "sha256:eefcd621537126a13a20b73612f742938cbe00b36b233d33bd0493d871a36639",
+      "generatedAt": "2026-06-27T15:52:53.504Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 27722,
+      "promptTokens": 191,
+      "completionTokens": 1087
+    }
+  }
+}

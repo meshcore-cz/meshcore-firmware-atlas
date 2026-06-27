@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-italia",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Mạng lưới MeshCore cộng đồng toàn quốc bao phủ Ý, sử dụng cấu hình sẵn băng hẹp tiêu chuẩn EU/Anh (869.618 MHz / 62.5 kHz / SF8 / CR4/8) để duy trì khả năng tương tác với các mạng châu Âu lân cận. Đây là một cơ sở hạ tầng phân tán, phi tập trung được điều phối bởi cộng đồng meshcoreitalia.",
+      "sourceHash": "sha256:0e1b3ab42ae6a6f9ac46f7509656999219341c56b006f345c5252f311a25348f",
+      "generatedAt": "2026-06-27T16:49:13.115Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11699,
+      "promptTokens": 194,
+      "completionTokens": 958
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/wadamesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore com interface tátil para o LilyGo T-Deck / T-Deck Plus e Heltec V4 TFT (ESP32-S3), desenvolvido com LVGL. Separado do meshcomod. Oferece uma experiência complementar completa controlada por toque, com teclado virtual e conectividade Wi-Fi.",
+      "sourceHash": "sha256:1510fcb84011e150978ce9fd83e9020e0fcc5336b027e9e1e188debccba13b08",
+      "generatedAt": "2026-06-27T14:26:26.575Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3622,
+      "promptTokens": 187,
+      "completionTokens": 1056
+    },
+    "features": {
+      "value": "[\"Interface tátil LVGL\", \"Teclado virtual\", \"Conectividade Wi-Fi complementar\", \"Transportes USB + TCP\", \"Separado de meshcomod (mesmo mantenedor)\"]",
+      "sourceHash": "sha256:2a269869ac6f355b87e448e27b5c77275563ad5e446dd9b2a0bc49fc9fd57103",
+      "generatedAt": "2026-06-27T14:26:30.585Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4009,
+      "promptTokens": 159,
+      "completionTokens": 1106
+    }
+  }
+}

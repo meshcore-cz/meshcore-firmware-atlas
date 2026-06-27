@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-ch",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Загальнонаціональна спільнотна мережа MeshCore, що охоплює Швейцарію у діапазоні 869.618 МГц (62.5 кГц / SF8 / CR4/8). Координується спільнотою meshcore.ch за допомогою спільної карти світу та налаштування робочого циклу 10%.",
+      "sourceHash": "sha256:3d2ce4b0b6f915b74cc1b04a24726c148282a2a5effa69ab41eb0c86c12ff745",
+      "generatedAt": "2026-06-27T16:59:27.159Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6268,
+      "promptTokens": 181,
+      "completionTokens": 1284
+    }
+  }
+}

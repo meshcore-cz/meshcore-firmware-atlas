@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-discord-bridge",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Ponte bidirecional em Node.js entre canais MeshCore e Discord, com roteamento multicanal e multisservidor, fragmentação de mensagens, proteção contra flood, filas de envio com controle de ritmo e controles de pausa para administradores.",
+      "sourceHash": "sha256:b4f9f2980f5fadfbc70686b9077bdd71fcf969307967bd8e747e9195502a50bc",
+      "generatedAt": "2026-06-27T14:30:54.772Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3028,
+      "promptTokens": 164,
+      "completionTokens": 783
+    },
+    "tags": {
+      "value": "[\"discord\",\"ponte\",\"limitação de taxa\",\"fragmentação de mensagens\"]",
+      "sourceHash": "sha256:2b2c61b491b66f0f2285545a863ed0c229bd3d06d19df44e55227e10c9736443",
+      "generatedAt": "2026-06-27T14:30:57.369Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2596,
+      "promptTokens": 143,
+      "completionTokens": 437
+    },
+    "verificationNotes.requires-a-discord-bot-token-and-privileged-mess": {
+      "value": "Requer um token de bot do Discord e a intenção privilegiada de conteúdo de mensagem.",
+      "sourceHash": "sha256:9c44d99aaa32815941054a74c61fb74212ca54c5576e626ad14ce656e75991cf",
+      "generatedAt": "2026-06-27T14:31:00.538Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3168,
+      "promptTokens": 140,
+      "completionTokens": 798
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Atualmente, o repositório não declara uma licença SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T14:31:02.580Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2042,
+      "promptTokens": 139,
+      "completionTokens": 487
+    }
+  }
+}

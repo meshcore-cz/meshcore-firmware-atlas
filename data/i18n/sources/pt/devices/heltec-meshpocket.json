@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshpocket",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "O Heltec MeshPocket é um nó LoRa compacto (nRF52840 + SX1262) integrado a um power bank com carregamento sem fio magnético Qi2, duas portas USB-C (entrada/saída de 5V) e uma pequena tela LCD. Projetado para redes mesh portáteis no Meshtastic e MeshCore, conta com uma bateria de 4000+ mAh e um modo complementar BLE de baixo consumo.",
+      "sourceHash": "sha256:793167c1ea40adc9a499f253389f9774fa8162f76c3f9a80adac8f57af36ae25",
+      "generatedAt": "2026-06-27T14:02:59.743Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19298,
+      "promptTokens": 201,
+      "completionTokens": 1198
+    }
+  }
+}

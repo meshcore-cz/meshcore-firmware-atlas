@@ -1,0 +1,60 @@
+{
+  "resource": "software/pymc-repeater",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Легкий демон-репітер MeshCore на Python для апаратних платформ класу Pi та вбудованих пристроїв на базі Linux, з прямою підтримкою радіомодулів SX1262 або модемів KISS, маршрутизацією пакетів, виявленням сусідніх вузлів та локальною панеллю моніторингу. Сервер для [[software:pymc-console|pyMC Console]].",
+      "sourceHash": "sha256:50a070542b8df7001e27f3367cfb3ed8409aab5e5c1f4e94bc25945ee568bd26",
+      "generatedAt": "2026-06-27T16:32:51.389Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13789,
+      "promptTokens": 182,
+      "completionTokens": 1730
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Панель стану репетитора та моніторингу пакетів",
+      "sourceHash": "sha256:01ad412e72dffcb9f7d354c4ed3fc44407ef2dc32e0a7b22e87d70b2464d20cc",
+      "generatedAt": "2026-06-27T16:32:57.728Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6338,
+      "promptTokens": 136,
+      "completionTokens": 1010
+    },
+    "screenshots.statistics.png.caption": {
+      "value": "Статистика трафіку та продуктивності репітера",
+      "sourceHash": "sha256:810d31e0df6a35c3218e677e61dfbf5bd64aa91c85a3a38c54e141d7ac86c5e5",
+      "generatedAt": "2026-06-27T16:33:23.164Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25436,
+      "promptTokens": 135,
+      "completionTokens": 505
+    },
+    "tags": {
+      "value": "[\"репітер\",\"raspberry-pi\",\"sx1262\",\"kiss\",\"самостійний хостинг\"]",
+      "sourceHash": "sha256:0505e6865d3f5075b970abb6e4a163276b091b0407223fdf7035b1fa40fbce84",
+      "generatedAt": "2026-06-27T16:33:32.455Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9291,
+      "promptTokens": 150,
+      "completionTokens": 964
+    },
+    "verificationNotes.supports-native-spi-sx1262-radios-ch341-usb-to-s": {
+      "value": "Підтримує радіомодулі SX1262 з інтерфейсом SPI, адаптери CH341 з USB на SPI та послідовні модеми KISS; концентратори SX1302/SX1303 не підтримуються.",
+      "sourceHash": "sha256:5a95dfd5135cb40f9f4dd60c4ac2252ebf1feb3932d13dc9a41810b4fc0bc184",
+      "generatedAt": "2026-06-27T16:33:35.979Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3524,
+      "promptTokens": 166,
+      "completionTokens": 661
+    },
+    "verificationNotes.the-project-asks-operators-to-test-carefully-bef": {
+      "value": "Проєкт рекомендує операторам проводити ретельне тестування перед розгортанням у робочому середовищі, оскільки покриття мережі в реальних умовах все ще обмежене.",
+      "sourceHash": "sha256:d32400ec6566f94fd8bb793ad16bc086bc85781315e6737c93ddeaa847f61b75",
+      "generatedAt": "2026-06-27T16:33:43.848Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7868,
+      "promptTokens": 148,
+      "completionTokens": 1031
+    }
+  }
+}

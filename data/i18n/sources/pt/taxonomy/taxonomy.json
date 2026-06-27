@@ -1,0 +1,159 @@
+{
+  "resource": "taxonomy",
+  "locale": "pt",
+  "fields": {
+    "softwareCapabilities.messaging": {
+      "value": "Mensagens",
+      "sourceHash": "sha256:eebdbb25cbbc7651f9519d09e94ca52598e5531655ad0c4f8cf402c4cda1bff1",
+      "generatedAt": "2026-06-27T14:51:03.955Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2448,
+      "promptTokens": 130,
+      "completionTokens": 509
+    },
+    "softwareCapabilities.contacts": {
+      "value": "Contatos",
+      "sourceHash": "sha256:b450645debe2cf0a590edd7f78d36eccd465027d389652dc30d6350542587c04",
+      "generatedAt": "2026-06-27T14:51:06.672Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2717,
+      "promptTokens": 130,
+      "completionTokens": 549
+    },
+    "softwareCapabilities.channels": {
+      "value": "Canais",
+      "sourceHash": "sha256:4c8906cf76f5740ab8792aef9f0033fe21a92045e90b357816064e9f6860a03e",
+      "generatedAt": "2026-06-27T14:51:08.081Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1408,
+      "promptTokens": 130,
+      "completionTokens": 248
+    },
+    "softwareCapabilities.node-configuration": {
+      "value": "Configuração do nó",
+      "sourceHash": "sha256:e0dde250b79923419ea543629f525199103fa150fc1f187ea0124d8f13250b89",
+      "generatedAt": "2026-06-27T14:51:09.588Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1507,
+      "promptTokens": 131,
+      "completionTokens": 300
+    },
+    "softwareCapabilities.remote-administration": {
+      "value": "Administração remota",
+      "sourceHash": "sha256:0059282f62856d1f3e28681b109374a21e3ac317aa6e72ef80d4c77cf9acd3be",
+      "generatedAt": "2026-06-27T14:51:11.322Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1734,
+      "promptTokens": 131,
+      "completionTokens": 360
+    },
+    "softwareCapabilities.monitoring": {
+      "value": "Monitoramento",
+      "sourceHash": "sha256:1dc83f605edf0ae29b9e25c0b6b233972528a78394d5f362b8cbdead1ff75eca",
+      "generatedAt": "2026-06-27T14:51:12.634Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1311,
+      "promptTokens": 130,
+      "completionTokens": 252
+    },
+    "softwareCapabilities.telemetry": {
+      "value": "Telemetria",
+      "sourceHash": "sha256:e87c57f595420aa9027e059cf6e0052e578c1af6eba2d1cf341517c9e9389145",
+      "generatedAt": "2026-06-27T14:51:13.949Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1315,
+      "promptTokens": 131,
+      "completionTokens": 233
+    },
+    "softwareCapabilities.packet-analysis": {
+      "value": "Análise de pacotes",
+      "sourceHash": "sha256:843a795705996506084ca4dec1c4928932f80b1d9f69fce6caac962bd0d8ecba",
+      "generatedAt": "2026-06-27T14:51:15.504Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1554,
+      "promptTokens": 131,
+      "completionTokens": 287
+    },
+    "softwareCapabilities.mapping": {
+      "value": "Mapeamento",
+      "sourceHash": "sha256:1ff9a5f8b4bd530e726c82924b08bf653263a5cf1a9084f782836e3700e73b22",
+      "generatedAt": "2026-06-27T14:51:16.674Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1171,
+      "promptTokens": 130,
+      "completionTokens": 214
+    },
+    "softwareCapabilities.flashing": {
+      "value": "Gravação",
+      "sourceHash": "sha256:7bb5b737b003499407e778e975452a357f8614d4f8400f59103e85e53dffae48",
+      "generatedAt": "2026-06-27T14:51:20.651Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3976,
+      "promptTokens": 131,
+      "completionTokens": 905
+    },
+    "softwareCapabilities.firmware-update": {
+      "value": "Atualização de firmware",
+      "sourceHash": "sha256:b13011c3cb2eaffd3ff5df8a29864300f7d3ab7958296d855f7a80b9a79a03c2",
+      "generatedAt": "2026-06-27T14:51:21.998Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1347,
+      "promptTokens": 132,
+      "completionTokens": 240
+    },
+    "softwareCapabilities.automation": {
+      "value": "Automação",
+      "sourceHash": "sha256:d909750b1bbb71a39b6330ba8f81f4f8f6e889ed96d7ab366e74857909750c64",
+      "generatedAt": "2026-06-27T14:51:23.348Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1349,
+      "promptTokens": 130,
+      "completionTokens": 249
+    },
+    "softwareCapabilities.notifications": {
+      "value": "Notificações",
+      "sourceHash": "sha256:788011833a5a0f22db90c91e8eb7bd8e9f5cd423354ff5ef8c338e7895f44ba9",
+      "generatedAt": "2026-06-27T14:51:24.519Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1171,
+      "promptTokens": 130,
+      "completionTokens": 198
+    },
+    "softwareCapabilities.bridging": {
+      "value": "Interligação",
+      "sourceHash": "sha256:8d0f66fdc53d2a11020048b89c567451bbd567d77d98f895ea48709976460505",
+      "generatedAt": "2026-06-27T14:51:27.275Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2756,
+      "promptTokens": 132,
+      "completionTokens": 621
+    },
+    "softwareCapabilities.proxying": {
+      "value": "Uso de proxy",
+      "sourceHash": "sha256:457f4fde4f667ea60924c095e7d00ef4041b7ffca469fc55b1b042001a5e2756",
+      "generatedAt": "2026-06-27T14:51:29.452Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2176,
+      "promptTokens": 131,
+      "completionTokens": 481
+    },
+    "softwareCapabilities.key-management": {
+      "value": "Gestão de chaves",
+      "sourceHash": "sha256:26870b40df08e701d2c8ed0d3c3f8efc5d2f7aa3add6f2b4386f2937d0146c59",
+      "generatedAt": "2026-06-27T14:51:31.336Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1884,
+      "promptTokens": 131,
+      "completionTokens": 399
+    },
+    "softwareCapabilities.simulation": {
+      "value": "Simulação",
+      "sourceHash": "sha256:45314e97b0c26a862b5411d0a943d801583e13bb5d104382ed7a2f4773969e66",
+      "generatedAt": "2026-06-27T14:51:32.534Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1197,
+      "promptTokens": 130,
+      "completionTokens": 223
+    }
+  }
+}

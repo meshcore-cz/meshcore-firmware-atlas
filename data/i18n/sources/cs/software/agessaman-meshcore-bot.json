@@ -1,0 +1,42 @@
+{
+  "resource": "software/agessaman-meshcore-bot",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Rozšiřitelný službový bot pro MeshCore v Pythonu s příkazy pro klíčová slova a pluginy, službami pro počasí a upozornění, plánováním úloh, limity četnosti, webovou správou a volitelnými integracemi pro Discord, Telegram, MQTT, webhooky a mapy.",
+      "sourceHash": "sha256:8860aebf78934d5f281b72405b9015cb0b1e22c276f1031a6d89800dda370e1a",
+      "generatedAt": "2026-06-27T11:30:12.482Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9430,
+      "promptTokens": 168,
+      "completionTokens": 1292
+    },
+    "verificationNotes.the-project-warns-operators-to-avoid-duplicate-b": {
+      "value": "Projekt upozorňuje operátory, aby se vyhnuli duplicitním botům a omezili rozsah odpovědí, a tím chránili vysílací čas sítě mesh.",
+      "sourceHash": "sha256:bedc45680103f248f0028472622bab941f859a9084f1c0a7ae2472f4772dcb26",
+      "generatedAt": "2026-06-27T11:30:19.270Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6788,
+      "promptTokens": 147,
+      "completionTokens": 853
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Repozitář aktuálně neuvádí licenci SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T11:30:24.710Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5439,
+      "promptTokens": 139,
+      "completionTokens": 445
+    },
+    "tags": {
+      "value": "[\"příkazový bot\",\"počasí\",\"zásuvné moduly služeb\",\"vlastní hostování\",\"webový panel\"]",
+      "sourceHash": "sha256:f372d1e638f40699cd8a9fcb57745eaa233914608e2d62da3b81208426676847",
+      "generatedAt": "2026-06-27T13:40:23.389Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7614,
+      "promptTokens": 145,
+      "completionTokens": 413
+    }
+  }
+}

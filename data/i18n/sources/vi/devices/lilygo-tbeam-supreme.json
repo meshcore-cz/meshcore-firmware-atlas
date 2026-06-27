@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-tbeam-supreme",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Thiết bị theo dõi LoRa ESP32-S3 + SX1262 tích hợp L76K GNSS, màn hình OLED SH1106 và bộ cảm biến đa dạng (IMU QMI8658, từ kế QMC6310, BME280, RTC PCF8563). Tích hợp quản lý nguồn AXP2101, khe cắm M.2 và khe mở rộng thẻ micro-SD. Cổng USB-C sử dụng chip chuyển đổi CH9102.",
+      "sourceHash": "sha256:fa59d9bc7baf64fbd5b4485a2017ae05107046332668046b097120689d8d11d4",
+      "generatedAt": "2026-06-27T15:36:43.493Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7250,
+      "promptTokens": 212,
+      "completionTokens": 1405
+    }
+  }
+}

@@ -1,8 +1,22 @@
 <script>
   import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import RecordFooter from '$lib/RecordFooter.svelte';
   import BackLink from '$lib/BackLink.svelte';
-  import { SOFTWARE_KIND_META, SOFTWARE_STATUS_META, LICENSE_TYPE_META, licenseType, groupReleases, descriptionToPlain } from '$lib/data.js';
+  import {
+    SOFTWARE_KIND_META,
+    SOFTWARE_STATUS_META,
+    LICENSE_TYPE_META,
+    licenseType,
+    licenseTypeLabel,
+    softwareKindLabel,
+    softwareStatusLabel,
+    nodeRoleLabel,
+    softwareCapabilityLabel,
+    groupReleases,
+    descriptionToPlain
+  } from '$lib/data.js';
   import { clampDescription, ogImageFor } from '$lib/seo.js';
   import Seo from '$lib/Seo.svelte';
   import ReleaseGroupList from '$lib/ReleaseGroupList.svelte';
@@ -20,21 +34,13 @@
   let previewGroups = $derived(releaseGroups.slice(0, PREVIEW));
 
   const MATURITY_META = {
-    experimental: { label: 'Experimental', tw: 'bg-bad/15 text-bad' },
-    alpha: { label: 'Alpha', tw: 'bg-warn/15 text-warn' },
-    beta: { label: 'Beta', tw: 'bg-accent2/15 text-accent2' },
-    stable: { label: 'Stable', tw: 'bg-ok/15 text-ok' }
+    experimental: { label: m.maturity_experimental(), tw: 'bg-bad/15 text-bad' },
+    alpha: { label: m.maturity_alpha(), tw: 'bg-warn/15 text-warn' },
+    beta: { label: m.maturity_beta(), tw: 'bg-accent2/15 text-accent2' },
+    stable: { label: m.maturity_stable(), tw: 'bg-ok/15 text-ok' }
   };
   const INTERFACE_LABELS = { gui: 'GUI', mobile: 'Mobile', web: 'Web', cli: 'CLI', tui: 'TUI', api: 'API', headless: 'Headless' };
   const CONNECTION_LABELS = { ble: 'BLE', serial: 'Serial', usb: 'USB', tcp: 'TCP', udp: 'UDP', websocket: 'WebSocket', mqtt: 'MQTT', http: 'HTTP', ipc: 'IPC' };
-  const CAPABILITY_LABELS = {
-    messaging: 'Messaging', contacts: 'Contacts', channels: 'Channels',
-    'node-configuration': 'Node configuration', 'remote-administration': 'Remote administration',
-    monitoring: 'Monitoring', telemetry: 'Telemetry', 'packet-analysis': 'Packet analysis',
-    mapping: 'Mapping', flashing: 'Flashing', 'firmware-update': 'Firmware update',
-    automation: 'Automation', notifications: 'Notifications', bridging: 'Bridging',
-    proxying: 'Proxying', 'key-management': 'Key management', simulation: 'Simulation'
-  };
   const INSTALL_LABELS = {
     'app-store': 'App Store', 'play-store': 'Play Store', zapstore: 'Zapstore', 'github-release': 'GitHub release',
     docker: 'Docker', 'docker-compose': 'Docker Compose', desktop: 'Desktop app', helm: 'Kubernetes / Helm',
@@ -43,24 +49,31 @@
     'go-install': 'go install', hacs: 'HACS', esphome: 'ESPHome', source: 'Source', web: 'Web', manual: 'Manual'
   };
   const POPULARITY_LABELS = {
-    githubStars: 'GitHub stars', githubForks: 'Forks', githubWatchers: 'Watchers',
-    githubOpenIssues: 'Open issues', githubContributors: 'Contributors',
-    releaseDownloads: 'Release downloads', latestReleaseDownloads: 'Latest downloads'
+    githubStars: m.spec_github_stars(),
+    githubForks: m.spec_forks(),
+    githubWatchers: m.spec_watchers(),
+    githubOpenIssues: m.spec_open_issues(),
+    githubContributors: m.spec_contributors(),
+    releaseDownloads: m.spec_release_downloads(),
+    latestReleaseDownloads: m.spec_latest_downloads()
   };
   const VERIFICATION_LABELS = {
-    sourceAvailable: 'Source available', releasesAvailable: 'Releases available',
-    signedReleases: 'Signed releases', ciBuilds: 'CI builds', hasDocumentation: 'Documentation'
+    sourceAvailable: m.license_source_available(),
+    releasesAvailable: m.spec_releases_available(),
+    signedReleases: m.spec_signed_releases(),
+    ciBuilds: m.spec_ci_builds(),
+    hasDocumentation: m.spec_documentation()
   };
-  const numberFmt = new Intl.NumberFormat('en');
+  const numberFmt = new Intl.NumberFormat();
   const formatNumber = (v) => numberFmt.format(v);
-  const boolLabel = (v) => (v ? 'Yes' : 'No');
+  const boolLabel = (v) => (v ? m.common_yes() : m.common_no());
   const boolTone = (v) => (v ? 'border-accent/40 bg-accent/10 text-accent' : 'border-edge bg-elev2 text-dim');
 
   let links = $derived(
     [
-      s.repository ? { label: 'Repository', url: s.repository } : null,
-      s.website ? { label: 'Website', url: s.website } : null,
-      s.documentation ? { label: 'Documentation', url: s.documentation } : null
+      s.repository ? { label: m.spec_repository(), url: s.repository } : null,
+      s.website ? { label: m.spec_website(), url: s.website } : null,
+      s.documentation ? { label: m.spec_documentation(), url: s.documentation } : null
     ].filter(Boolean)
   );
 
@@ -76,30 +89,30 @@
 
   let specs = $derived(
     [
-      meta ? { label: 'Kind', value: meta.label } : null,
-      s.maturity ? { label: 'Maturity', value: MATURITY_META[s.maturity]?.label ?? s.maturity } : null,
+      meta ? { label: m.spec_kind(), value: softwareKindLabel(s.kind) } : null,
+      s.maturity ? { label: m.spec_maturity(), value: MATURITY_META[s.maturity]?.label ?? s.maturity } : null,
       s.languages?.length
-        ? { label: s.languages.length > 1 ? 'Languages' : 'Language', languages: s.languages }
+        ? { label: s.languages.length > 1 ? m.spec_languages() : m.spec_language(), languages: s.languages }
         : null,
-      licensing ? { label: 'Licensing', value: LICENSE_TYPE_META[licensing]?.label ?? licensing, tw: LICENSE_TYPE_META[licensing]?.tw } : null,
+      licensing ? { label: m.spec_licensing(), value: licenseTypeLabel(licensing), tw: LICENSE_TYPE_META[licensing]?.tw } : null,
       s.latest_version
         ? {
-            label: 'Latest version',
+            label: m.spec_latest_version(),
             value: s.released ? `${s.latest_version} · ${s.released}` : s.latest_version,
             anchor: latestReleaseId ? `#${latestReleaseId}` : null
           }
         : null,
-      s.license ? { label: 'License', value: s.license } : null,
-      s.platforms?.length ? { label: 'Platforms', platforms: s.platforms } : null
+      s.license ? { label: m.spec_license(), value: s.license } : null,
+      s.platforms?.length ? { label: m.spec_platforms(), platforms: s.platforms } : null
     ].filter(Boolean)
   );
 
   let chipGroups = $derived(
     [
-      s.interfaces?.length ? { label: 'Interfaces', items: s.interfaces.map((i) => INTERFACE_LABELS[i] ?? i) } : null,
-      s.connections?.length ? { label: 'Connections', items: s.connections.map((c) => CONNECTION_LABELS[c] ?? c) } : null,
-      s.capabilities?.length ? { label: 'Capabilities', items: s.capabilities.map((c) => CAPABILITY_LABELS[c] ?? c) } : null,
-      s.node_roles?.length ? { label: 'Node roles', items: s.node_roles } : null
+      s.interfaces?.length ? { label: m.spec_interfaces(), items: s.interfaces.map((i) => INTERFACE_LABELS[i] ?? i) } : null,
+      s.connections?.length ? { label: m.spec_connections(), items: s.connections.map((c) => CONNECTION_LABELS[c] ?? c) } : null,
+      s.capabilities?.length ? { label: m.spec_capabilities(), items: s.capabilities.map((c) => softwareCapabilityLabel(c)) } : null,
+      s.node_roles?.length ? { label: m.spec_node_roles(), items: s.node_roles.map((r) => nodeRoleLabel(r)) } : null
     ].filter(Boolean)
   );
 
@@ -123,7 +136,7 @@
 
 <Seo title={s.name} description={description} type="article" image={ogImageFor('software', s.id)} />
 
-<BackLink href="{base}/software/">All software</BackLink>
+<BackLink href={href('/software/')}>{m.back_software()}</BackLink>
 
 <header class="mb-6 flex flex-wrap items-start gap-5">
   <SoftwareIcon src={s.imageUrl} name={s.name} kind={s.kind} class="h-24 w-24 rounded-2xl" />
@@ -142,7 +155,7 @@
       {/if}
       {#if s.status && s.status !== 'active'}
         <span class="text-[0.85rem] font-medium {SOFTWARE_STATUS_META[s.status]?.tw ?? 'text-dim'}">
-          {SOFTWARE_STATUS_META[s.status]?.label ?? s.status}
+          {softwareStatusLabel(s.status)}
         </span>
       {/if}
     </div>
@@ -169,7 +182,7 @@
       <!-- Maintainer can be a long list, so it gets its own row above the
            compact metadata grid instead of distorting the columns. -->
       <div class="mb-3 border-b border-edge pb-3">
-        <dt class="text-[0.72rem] tracking-wide text-dim uppercase">{maintainers.length > 1 ? 'Maintainers' : 'Maintainer'}</dt>
+        <dt class="text-[0.72rem] tracking-wide text-dim uppercase">{maintainers.length > 1 ? m.spec_maintainers() : m.spec_maintainer()}</dt>
         <dd class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.95rem]">
           {#each maintainers as m, i (m.name)}
             {#if i > 0}<span class="text-muted">·</span>{/if}
@@ -217,14 +230,14 @@
 
 {#if screenshots.length}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Screenshots</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.spec_screenshots()}</h2>
     <ScreenshotGallery shots={screenshots} alt={s.name} />
   </section>
 {/if}
 
 {#if chipGroups.length}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Capabilities</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.spec_capabilities()}</h2>
     <!-- Grouped cards mirror the firmware CapabilityMatrix; each item is a
          capability the software has, so all entries render as present (✓). -->
     <div class="grid gap-3 [grid-template-columns:repeat(auto-fill,minmax(190px,1fr))]">
@@ -247,7 +260,7 @@
 
 {#if s.install?.length}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Install</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.spec_install()}</h2>
     <ul class="space-y-2">
       {#each s.install as inst (inst.type + (inst.package ?? '') + (inst.url ?? ''))}
         <li class="flex flex-wrap items-center gap-2 rounded-lg border border-edge bg-elev px-3 py-2">
@@ -255,7 +268,7 @@
           {#if inst.package}<code class="font-mono text-[0.82rem]">{inst.package}</code>{/if}
           {#if inst.command}<code class="rounded bg-elev2 px-1.5 py-0.5 font-mono text-[0.78rem] text-dim">{inst.command}</code>{/if}
           {#if inst.url}
-            <a class="ml-auto text-[0.85rem] text-accent2 hover:underline" href={inst.url} target="_blank" rel="noreferrer">Open ↗</a>
+            <a class="ml-auto text-[0.85rem] text-accent2 hover:underline" href={inst.url} target="_blank" rel="noreferrer">{m.detail_open()}</a>
           {/if}
         </li>
       {/each}
@@ -266,17 +279,17 @@
 {#if releaseGroups.length}
   <section class="mb-7">
     <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2 border-b border-edge pb-1.5">
-      <h2 class="text-[1.1rem] font-semibold">Releases</h2>
+      <h2 class="text-[1.1rem] font-semibold">{m.spec_releases()}</h2>
       {#if s.changelogUpdatedAt}
         <span class="text-[0.72rem] text-dim">
-          {s.changelogSource === 'github' ? 'from GitHub · ' : ''}updated {s.changelogUpdatedAt.slice(0, 10)}
+          {s.changelogSource === 'github' ? m.detail_from_github() : ''}{m.detail_updated({ date: s.changelogUpdatedAt.slice(0, 10) })}
         </span>
       {/if}
     </div>
     <ReleaseGroupList groups={previewGroups} openFirst={false} markFirstLatest={true} />
     {#if releaseGroups.length > PREVIEW}
-      <a class="mt-3 inline-block text-[0.88rem] text-accent2 hover:underline" href="{base}/software/{s.id}/releases/">
-        Show all {releaseGroups.length} releases →
+      <a class="mt-3 inline-block text-[0.88rem] text-accent2 hover:underline" href={href(`/software/${s.id}/releases/`)}>
+        {m.detail_show_all_releases({ count: releaseGroups.length })}
       </a>
     {/if}
   </section>
@@ -285,10 +298,10 @@
 {#if popularityEntries.length || verificationEntries.length || s.verification?.notes?.length}
   <section class="mb-7 rounded-xl border border-edge bg-elev/60 px-3 py-2.5">
     <div class="mb-2 flex flex-wrap items-center justify-between gap-2">
-      <h2 class="text-[0.72rem] font-semibold tracking-wide text-dim uppercase">Project signals</h2>
+      <h2 class="text-[0.72rem] font-semibold tracking-wide text-dim uppercase">{m.detail_project_signals()}</h2>
       <div class="flex flex-wrap gap-x-3 gap-y-1 text-[0.7rem] text-muted">
-        {#if s.popularity?.lastChecked}<span>popularity {s.popularity.lastChecked}</span>{/if}
-        {#if s.verification?.lastChecked}<span>verification {s.verification.lastChecked}</span>{/if}
+        {#if s.popularity?.lastChecked}<span>{m.spec_popularity_checked({ date: s.popularity.lastChecked })}</span>{/if}
+        {#if s.verification?.lastChecked}<span>{m.spec_verification_checked_label({ date: s.verification.lastChecked })}</span>{/if}
       </div>
     </div>
 
@@ -328,11 +341,11 @@
 
 {#if s.tags?.length}
   <section class="mb-7">
-    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Tags</h2>
+    <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">{m.spec_tags()}</h2>
     <div class="flex flex-wrap gap-2">
       {#each s.tags as t (t)}
         <a
-          href="{base}/software/"
+          href={href('/software/')}
           class="rounded-full border border-edge bg-elev px-2.5 py-1 font-mono text-[0.8rem] text-dim hover:border-accent hover:text-ink"
         >#{t}</a>
       {/each}

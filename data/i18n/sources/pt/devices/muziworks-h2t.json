@@ -1,0 +1,15 @@
+{
+  "resource": "device/muziworks-h2t",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Dispositivo Meshtastic pronto a usar, baseado no Heltec T114 V2, equipado com módulo GPS, cabo pigtail SMA, antena tipo chicote, bateria LiPo de 2000 mAh e caixa em ASA impressa em 3D.",
+      "sourceHash": "sha256:993f787bf96a166b0645e8c78e71b5eb2ede446761a3ffeb1b8621352c8837c0",
+      "generatedAt": "2026-06-27T14:17:05.355Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14333,
+      "promptTokens": 177,
+      "completionTokens": 700
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "device/wio-tracker-l1-eink",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Nó Meshtastic/MeshCore de baixo consumo com LoRa, GNSS L76K e ecrã E-ink removível de 2,13 polegadas para atualizações de estado com consumo ultrabaixo. Suporta alimentação por USB-C, energia solar e bateria de iões de lítio.",
+      "sourceHash": "sha256:a718c17fbcc8440fe5a15e0ff19a980501a7856cd30f57332fc93cf0873e2f98",
+      "generatedAt": "2026-06-27T14:20:01.412Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5519,
+      "promptTokens": 180,
+      "completionTokens": 1597
+    }
+  }
+}

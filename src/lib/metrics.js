@@ -9,7 +9,6 @@
 //   dir   – default sort: 'desc' (bigger is better/first) or 'asc' (smaller first)
 //   get   – (device) => number | null   (null = device lacks the spec)
 //   fmt   – (value)  => string          display form, unit appended by caller
-
 const maxRadio = (d, key) => {
   const vals = (d.hardware?.radios ?? []).map((r) => r[key]).filter((v) => v != null);
   return vals.length ? Math.max(...vals) : null;

@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/atlavox",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Výrobce a prodejce hardwaru Meshtastic a MeshCore se sídlem v Rhode Islandu, včetně přenosných zařízení a solárních uzlů RAK WisBlock sestavených na zakázku.",
+      "sourceHash": "sha256:0082a3034111ddc0e87a3941aebd5b73f271087be72df0bb5b687a0b47b5e2d1",
+      "generatedAt": "2026-06-27T11:58:18.448Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8695,
+      "promptTokens": 157,
+      "completionTokens": 955
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/seeed",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Công ty phát triển nền tảng phần cứng, đứng sau các dòng sản phẩm XIAO, Wio và SenseCAP LoRa.",
+      "sourceHash": "sha256:4b333ad52a8ce3e55a44f0dfc298b907549cea207ac623b0bb525768c6ec0ef5",
+      "generatedAt": "2026-06-27T16:43:59.499Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4074,
+      "promptTokens": 148,
+      "completionTokens": 783
+    }
+  }
+}

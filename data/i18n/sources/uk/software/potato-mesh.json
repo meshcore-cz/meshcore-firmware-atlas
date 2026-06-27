@@ -1,0 +1,69 @@
+{
+  "resource": "software/potato-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Федераційна інформаційна панель для самостійного розгортання, призначена для локальних спільнот MeshCore та Meshtastic. Вона поєднує карти вузлів, чат, телеметрію, сусідні вузли та трасування маршрутів із віддаленими приймачами радіоданих і відкритим API.",
+      "sourceHash": "sha256:d6987237dca3d371651dcd6589e3c75c80fe0e24c6d832b22e01d3f70f21c579",
+      "generatedAt": "2026-06-27T16:29:29.912Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 12463,
+      "promptTokens": 168,
+      "completionTokens": 1443
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Карта вузлів спільноти, чат та панель телеметрії",
+      "sourceHash": "sha256:6eba836ddc0e30a7cc51a14ead7029ad02d1f3ca9e19a5f22a1bf89f4814cc22",
+      "generatedAt": "2026-06-27T16:29:33.610Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3697,
+      "promptTokens": 137,
+      "completionTokens": 489
+    },
+    "screenshots.matrix-bridge.png.caption": {
+      "value": "Matrix-міст для пересилання повідомлень mesh-мережі",
+      "sourceHash": "sha256:24fea72a24445b01e0ae4ceb8158da9b637499260868620c7e099dd8cd2c24b6",
+      "generatedAt": "2026-06-27T16:29:38.067Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4457,
+      "promptTokens": 134,
+      "completionTokens": 505
+    },
+    "tags": {
+      "value": "[\"федерація\",\"панель спільноти\",\"багатопротокольний\",\"самостійний хостинг\",\"matrix\"]",
+      "sourceHash": "sha256:4ea88e8f1acfb0c31bf7ad5658960cb00b5488df59928ec01ffaf30d49a8a66d",
+      "generatedAt": "2026-06-27T16:30:03.089Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 25022,
+      "promptTokens": 147,
+      "completionTokens": 1660
+    },
+    "verificationNotes.meshcore-ingestors-connect-to-companion-radios-o": {
+      "value": "Збирачі даних MeshCore підключаються до супровідних радіостанцій через BLE, послідовний порт або TCP і надсилають нормалізовані дані до вебслужби.",
+      "sourceHash": "sha256:43cf8c7a1c07bb5508cc2f0fcad421711971a7f814c7cf45503528a2e12d5bf4",
+      "generatedAt": "2026-06-27T16:30:53.075Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 49985,
+      "promptTokens": 152,
+      "completionTokens": 1515
+    },
+    "verificationNotes.federation-is-enabled-by-default-but-can-be-disa": {
+      "value": "Федерацію увімкнено за замовчуванням, але її можна вимкнути для ізольованих або приватних розгортань.",
+      "sourceHash": "sha256:434e7e0c36650ba3acfebb88942b2adad77526fd2bf74ea65f9eba4002e9a72f",
+      "generatedAt": "2026-06-27T16:31:02.049Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8974,
+      "promptTokens": 145,
+      "completionTokens": 473
+    },
+    "verificationNotes.the-mobile-reader-and-matrix-bridge-are-still-de": {
+      "value": "Мобільний додаток для читання та міст Matrix досі описуються як такі, що перебувають у стадії розробки.",
+      "sourceHash": "sha256:e84efa0b42d2db779a80dc7fbfbb2600736252b2b639d0928fce509a5afcef1e",
+      "generatedAt": "2026-06-27T16:31:09.709Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7660,
+      "promptTokens": 143,
+      "completionTokens": 965
+    }
+  }
+}

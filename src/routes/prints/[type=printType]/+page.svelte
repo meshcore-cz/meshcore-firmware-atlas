@@ -1,16 +1,17 @@
 <script>
   import Seo from '$lib/Seo.svelte';
   import PrintList from '$lib/PrintList.svelte';
-  import { PRINT_TYPE_META, printType } from '$lib/data.js';
+  import { printType, printTypeLabel, lcFirst } from '$lib/data.js';
+  import { m } from '$lib/paraglide/messages.js';
   let { data } = $props();
 
-  let meta = $derived(PRINT_TYPE_META[data.type]);
+  let label = $derived(printTypeLabel(data.type));
   let count = $derived(data.prints.filter((p) => printType(p) === data.type).length);
 </script>
 
 <Seo
-  title="3D-printed {meta?.label ?? 'prints'}"
-  description={`${count} 3D-printable ${meta?.label ?? 'print'} for MeshCore hardware — ${meta?.blurb ?? ''}, across every device.`}
+  title={m.seo_prints_type_title({ labelLc: lcFirst(label) })}
+  description={m.seo_prints_type_desc({ count, labelLc: lcFirst(label) })}
 />
 
 <PrintList prints={data.prints} types={data.types} activeType={data.type} />

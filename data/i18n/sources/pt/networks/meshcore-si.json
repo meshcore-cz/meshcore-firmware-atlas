@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-si",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Rede MeshCore nacional na Eslovénia, operada na predefinição padrão de banda estreita da UE/RU, com um mapa CoreScope em tempo real e cobertura regional por repetidores.",
+      "sourceHash": "sha256:322235cd3b5d559cb88597bc39b53f823daef5fc285511e31a1da1c5ec7ea4d3",
+      "generatedAt": "2026-06-27T14:49:22.877Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2913,
+      "promptTokens": 157,
+      "completionTokens": 687
+    }
+  }
+}

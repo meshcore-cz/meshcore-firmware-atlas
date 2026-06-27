@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-team",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Android-клієнт для групового відстеження та обміну повідомленнями, призначений для мисливців та команд у віддалених районах. Використовує телеметрію MeshCore для визначення місцеположення поза зоною покриття мережі, роботи з командними картами та координації дій.",
+      "sourceHash": "sha256:e3e6920c6bfcf47cae16883df832a4b6d678d0c0ff70b8e1cc0fc9ad60e311fb",
+      "generatedAt": "2026-06-27T16:16:46.704Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 14244,
+      "promptTokens": 156,
+      "completionTokens": 1497
+    },
+    "screenshots.home.jpg.caption": {
+      "value": "Статус команди та навігація",
+      "sourceHash": "sha256:12c3c8119e8f946de6eb210f21b2abb34bff63ebaccfb198a3f44aca53804e5d",
+      "generatedAt": "2026-06-27T16:16:49.092Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2388,
+      "promptTokens": 133,
+      "completionTokens": 398
+    },
+    "screenshots.map.jpg.caption": {
+      "value": "Карта розташування команди в автономному режимі",
+      "sourceHash": "sha256:3f1fa2ca86b683d9f746a09c436709d1f42eba5370bc34ccd38c31b2e7dec973",
+      "generatedAt": "2026-06-27T16:16:51.747Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2654,
+      "promptTokens": 134,
+      "completionTokens": 516
+    },
+    "screenshots.messages.jpg.caption": {
+      "value": "Обмін повідомленнями в команді",
+      "sourceHash": "sha256:107eab2a042fb8dbef5e05a47b068f66e6877281bf5d6114a8cd39340e012f86",
+      "generatedAt": "2026-06-27T16:16:59.767Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8020,
+      "promptTokens": 131,
+      "completionTokens": 844
+    },
+    "screenshots.settings.jpg.caption": {
+      "value": "Налаштування застосунка та радіо",
+      "sourceHash": "sha256:d2e0861a50ed378e8c60a729666d5a60f39aa5098aaf1424252017565709af04",
+      "generatedAt": "2026-06-27T16:17:04.907Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5140,
+      "promptTokens": 133,
+      "completionTokens": 568
+    },
+    "tags": {
+      "value": "[\"відстеження команди\", \"дика природа\", \"полювання\", \"закрита бета-версія\"]",
+      "sourceHash": "sha256:8a06cb541974e874adc4f2876730eb0f1dbaf179335232de7f80573ad6eb1fb2",
+      "generatedAt": "2026-06-27T16:17:09.718Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4810,
+      "promptTokens": 142,
+      "completionTokens": 647
+    },
+    "verificationNotes.this-repository-is-deprecated-current-testing-mo": {
+      "value": "Цей репозиторій застарів; поточне тестування перенесено на закритий канал Google Play, доступ до якого здійснюється через пов'язану групу Google.",
+      "sourceHash": "sha256:ce93c1c90cadfd91d97e0dcc0f1052a9b73c0642100a57c8ce231cdcd1ec80c7",
+      "generatedAt": "2026-06-27T16:17:17.186Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7468,
+      "promptTokens": 150,
+      "completionTokens": 1215
+    },
+    "verificationNotes.the-repository-contains-documentation-and-screen": {
+      "value": "Репозиторій містить документацію та скріншоти, але не розповсюджує вихідний код.",
+      "sourceHash": "sha256:2e84105656a98d69955fe80b36b06e0af1a219fd10106bc9ad2831302469470e",
+      "generatedAt": "2026-06-27T16:17:23.559Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6372,
+      "promptTokens": 141,
+      "completionTokens": 730
+    }
+  }
+}

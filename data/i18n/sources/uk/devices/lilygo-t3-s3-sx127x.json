@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-t3-s3-sx127x",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Компактна плата для розробки на базі ESP32-S3 + SX1276 LoRa, оснащена дисплеєм SSD1306 OLED, слотом для micro-SD та роз'ємом розширення Qwiic. Має USB-C, роз'єм для батареї PH2.0 та опціональний вхід для сонячної панелі (V1.3). Вбудованої BMS немає — використовуйте захищений Li-ion акумулятор.",
+      "sourceHash": "sha256:94ec673ed9061cb2baeb90f20149d7cc21fdf26b4972ec4004faa833986c7ff6",
+      "generatedAt": "2026-06-27T15:00:02.150Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3462,
+      "promptTokens": 192,
+      "completionTokens": 1046
+    }
+  }
+}

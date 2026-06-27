@@ -1,0 +1,56 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://meshcore-atlas/schema/i18n-source.yaml
+title: Catalog translation source
+description: >-
+  Machine-managed translation overlay source with per-field source hashes and
+  generation metadata.
+type: object
+additionalProperties: false
+required:
+  - resource
+  - locale
+  - fields
+properties:
+  resource:
+    type: string
+    minLength: 1
+    description: Stable resource key, e.g. software/mc-webui
+  locale:
+    type: string
+    minLength: 2
+  fields:
+    type: object
+    additionalProperties:
+      type: object
+      additionalProperties: false
+      required:
+        - value
+        - sourceHash
+        - generatedAt
+        - model
+      properties:
+        value:
+          type: string
+        sourceHash:
+          type: string
+          pattern: ^sha256:[a-f0-9]{64}$
+        generatedAt:
+          type: string
+          minLength: 1
+          description: When this field was last translated.
+        model:
+          type: string
+          minLength: 1
+          description: Translation model used for this field.
+        durationMs:
+          type: integer
+          minimum: 0
+          description: Wall-clock time for the translation API call, in milliseconds.
+        promptTokens:
+          type: integer
+          minimum: 0
+          description: Input tokens reported by the translation backend, when available.
+        completionTokens:
+          type: integer
+          minimum: 0
+          description: Output tokens reported by the translation backend, when available.

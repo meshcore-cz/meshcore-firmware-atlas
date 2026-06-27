@@ -1,0 +1,24 @@
+{
+  "resource": "firmware/inkcore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Супровідна BLE-прошивка на базі MeshCore для невеликих пристроїв з електронним папером, що підтримує налаштовувані аплети, багатомовні шрифти, емодзі, поворот екрана та періодичне повне оновлення.",
+      "sourceHash": "sha256:2c0b7e7a13e3385572fc131646952f1c77fdb813ea8da77bc55495353614aaf9",
+      "generatedAt": "2026-06-27T15:32:34.430Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5131,
+      "promptTokens": 159,
+      "completionTokens": 876
+    },
+    "features": {
+      "value": "[\"Налаштовувані аплети для електронного паперу\",\"Підтримка багатомовних шрифтів та емодзі\",\"Обертання екрана\",\"Періодичне повне оновлення\"]",
+      "sourceHash": "sha256:bcdfaf43084cb96bbd5397c54645a2ad78dc4ff99ee4281a5346e59872a16b61",
+      "generatedAt": "2026-06-27T15:32:41.155Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6725,
+      "promptTokens": 152,
+      "completionTokens": 1189
+    }
+  }
+}

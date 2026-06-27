@@ -1,0 +1,60 @@
+{
+  "resource": "software/roadstr",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Aplicação descentralizada para reportar eventos de trânsito no Android e na web, que utiliza eventos Nostr assinados, consultas geohash e integração com o OsmAnd. O seu formato de transporte MeshCore compacto já está especificado, mas ainda não foi implementado.",
+      "sourceHash": "sha256:eb34d07ca64bc0887975c09b547d38c93a5fb173c67adcfb8195ff00f70acc61",
+      "generatedAt": "2026-06-27T14:42:21.083Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2861,
+      "promptTokens": 170,
+      "completionTokens": 775
+    },
+    "screenshots.web.png.caption": {
+      "value": "Mapa de eventos de trânsito no navegador",
+      "sourceHash": "sha256:f4b19527b7de259876e1b483e9a13ebb0b3ea1ff4e9f74105586e6267e504967",
+      "generatedAt": "2026-06-27T14:42:23.650Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2567,
+      "promptTokens": 133,
+      "completionTokens": 598
+    },
+    "screenshots.android.png.caption": {
+      "value": "Integração de eventos de trânsito no Android e no OsmAnd",
+      "sourceHash": "sha256:d3be235f51f325cf7192bc9653ae13fd2f4b53a00df4adb6276d737866012ef1",
+      "generatedAt": "2026-06-27T14:42:26.564Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2914,
+      "promptTokens": 137,
+      "completionTokens": 752
+    },
+    "tags": {
+      "value": "[\"nostr\", \"eventos-na-estrada\", \"osmand\", \"descentralizado\", \"meshcore-planejado\"]",
+      "sourceHash": "sha256:22c076958f730e0d394c502b2e69f1e4285561309918e5bee31221fd695f2122",
+      "generatedAt": "2026-06-27T14:42:30.337Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3772,
+      "promptTokens": 149,
+      "completionTokens": 944
+    },
+    "verificationNotes.current-releases-exchange-events-through-nostr-r": {
+      "value": "As versões atuais trocam eventos por meio de relays Nostr; o transporte MeshCore e a ponte de malha para a internet ainda estão previstos.",
+      "sourceHash": "sha256:0dcfc7719035f8568f82e38a69c4c1e6bb2a0287c9b7d1b9017b21b818abe88f",
+      "generatedAt": "2026-06-27T14:42:34.154Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3817,
+      "promptTokens": 152,
+      "completionTokens": 960
+    },
+    "verificationNotes.the-android-application-integrates-with-osmand-f": {
+      "value": "O aplicativo Android integra-se ao OsmAnd para exibição de rotas e alertas de proximidade.",
+      "sourceHash": "sha256:660051f150ead763d1ea83b6e10722b9ebf9f0b3f1a2854f11f50c5662db80fa",
+      "generatedAt": "2026-06-27T14:42:36.263Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2109,
+      "promptTokens": 144,
+      "completionTokens": 513
+    }
+  }
+}

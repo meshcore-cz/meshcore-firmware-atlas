@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-sk",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Словацька національна мережа MeshCore, що координується через mesh.om3kff.sk та Discord спільноти. Вона працює з пресетом EU/UK (Narrow) у діапазоні 869.618 МГц (62.5 кГц / SF8) — зі швидкістю кодування 4/5 — спільно використовуючи міжнародний канал Public, з'єднаний з угорською та австрійською мережами, а також національний канал #slovakia.",
+      "sourceHash": "sha256:687d3b9df7424618168dc42fcefdef6fd9db9013f75f43a95c6823f32cdb20c8",
+      "generatedAt": "2026-06-27T16:58:42.614Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7637,
+      "promptTokens": 214,
+      "completionTokens": 1378
+    }
+  }
+}

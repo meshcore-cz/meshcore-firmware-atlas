@@ -1,0 +1,24 @@
+{
+  "resource": "software/meshcore-map-uploader",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Сервіс автоматизації без графічного інтерфейсу, який відстежує оголошення репітерів та серверів кімнат MeshCore через супутній пристрій USB або Wi-Fi і завантажує їх на публічну карту MeshCore.",
+      "sourceHash": "sha256:2842efadcaea3a72631857cdecc7ef67b18d0806e42f62366f45b77178473d3b",
+      "generatedAt": "2026-06-27T15:53:18.948Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6949,
+      "promptTokens": 161,
+      "completionTokens": 999
+    },
+    "tags": {
+      "value": "[\"Завантажувач карт\", \"Реклама\", \"Автоматизація\", \"Без графічного інтерфейсу\"]",
+      "sourceHash": "sha256:c78b8232205cf80add7a3b424600578be672fed8486639e5e06c81cc89206f18",
+      "generatedAt": "2026-06-27T15:53:25.628Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6679,
+      "promptTokens": 142,
+      "completionTokens": 889
+    }
+  }
+}

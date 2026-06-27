@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Еталонна прошивка MeshCore — легка бібліотека та прошивка на C++ для багатоступеневої маршрутизації пакетів через радіомодулі LoRa. Вона забезпечує роботу децентралізованих самовідновлюваних mesh-мереж для автономного, аварійного та тактичного зв'язку, і постачається з готовими образами та веб-інструментом для прошивки.",
+      "sourceHash": "sha256:123159709a38040b42972325ef252ce34949e5ba91df24b6d741fb7857ae6a76",
+      "generatedAt": "2026-06-27T15:21:20.264Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 19755,
+      "promptTokens": 180,
+      "completionTokens": 1273
+    },
+    "deviceNotes.heltec-meshtower": {
+      "value": "Та сама базова плата MeshSolar; використовує збірку heltec_mesh_solar.",
+      "sourceHash": "sha256:0fe9d96a80f245a3d2335a68e6bf70eccfe70b820e2035f0dcb00ec660ee9697",
+      "generatedAt": "2026-06-27T15:21:52.314Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 32049,
+      "promptTokens": 144,
+      "completionTokens": 149
+    },
+    "features": {
+      "value": "[\"Багатоступенева маршрутизація пакетів\",\"Наскрізь шифровані особисті повідомлення\",\"Супутні клієнти BLE / USB / TCP\",\"Клієнти для Web, iOS, Android, Python та NodeJS\",\"Власне керування трафіком flood-advert (1.16+)\",\"Веб-прошивальник\"]",
+      "sourceHash": "sha256:b40ebfa18391613a9ebb86dc1d7bf8e6126434031883fff89218c89dfbaaf6b6",
+      "generatedAt": "2026-06-27T15:22:04.189Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11874,
+      "promptTokens": 179,
+      "completionTokens": 838
+    }
+  }
+}

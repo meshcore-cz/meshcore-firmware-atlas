@@ -1,0 +1,78 @@
+{
+  "resource": "software/pymc-console",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Webový dashboard pro [[software:pymc-repeater|pyMC Repeater]] nabízí živou inspekci paketů, analýzu topologie a cest, RF statistiky, mapování terénu, radar kvality spojení, monitoring systému a interaktivní terminál opakovače.",
+      "sourceHash": "sha256:a7acac247bc01ebaf54919894ea3700ef985bbc35d4b919a9954e9dca2568dfd",
+      "generatedAt": "2026-06-27T11:49:50.474Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8082,
+      "promptTokens": 174,
+      "completionTokens": 1047
+    },
+    "screenshots.topology.png.caption": {
+      "value": "Hloubková analýza topologie a mapování terénu",
+      "sourceHash": "sha256:5ef9b2bce3a9112ca97cbe0bc37e1d70209b6cc8e01c509408b78408addde66d",
+      "generatedAt": "2026-06-27T11:49:54.601Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4126,
+      "promptTokens": 135,
+      "completionTokens": 424
+    },
+    "screenshots.link-quality.png.caption": {
+      "value": "Směrový radar kvality spojení",
+      "sourceHash": "sha256:b436f75410bfe2d7b667e81f61ca1f4568188a581699a1b35fd437acfc4df281",
+      "generatedAt": "2026-06-27T11:49:58.634Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4033,
+      "promptTokens": 134,
+      "completionTokens": 414
+    },
+    "screenshots.statistics.png.caption": {
+      "value": "Statistiky RF a doby vysílání",
+      "sourceHash": "sha256:c1bcb6cc6fbf71241605ba2678f9a1c71bcf0f369880b93f80f6121a0ba63d48",
+      "generatedAt": "2026-06-27T11:50:04.322Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5688,
+      "promptTokens": 134,
+      "completionTokens": 551
+    },
+    "screenshots.terminal.png.caption": {
+      "value": "Terminál Repeater, protokoly a motivy",
+      "sourceHash": "sha256:5bdf11840fdde6fca46a4db9cb02a4088265425aa89a7c1ae8b28434d72f5a63",
+      "generatedAt": "2026-06-27T11:50:13.749Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9427,
+      "promptTokens": 136,
+      "completionTokens": 347
+    },
+    "verificationNotes.requires-an-existing-pymc-repeater-installation-": {
+      "value": "Vyžaduje existující instalaci pyMC Repeater a nahrazuje pouze soubory webového panelu.",
+      "sourceHash": "sha256:bd48f5322714c6f2bd808cce2148f3fe487ab9e7a8b4faa96a318bd972bcc8b5",
+      "generatedAt": "2026-06-27T11:50:22.453Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8703,
+      "promptTokens": 145,
+      "completionTokens": 863
+    },
+    "verificationNotes.repeater-service-lifecycle-and-radio-configurati": {
+      "value": "Životní cyklus služby opakovače a konfiguraci rádia nadále spravuje pyMC Repeater.",
+      "sourceHash": "sha256:976d991e2a805116a213b8ff3a67fc48e67084cc503bb69c91130a7b38575890",
+      "generatedAt": "2026-06-27T11:50:33.234Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10782,
+      "promptTokens": 144,
+      "completionTokens": 1080
+    },
+    "tags": {
+      "value": "[\"opakovač\",\"topologie\",\"rf-analýza\",\"raspberry-pi\",\"nástěnka\"]",
+      "sourceHash": "sha256:ecf0689de1e3a2699e95a41104b8f0b91244a7850a465e01edc9118ccd09b164",
+      "generatedAt": "2026-06-27T13:48:17.304Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9763,
+      "promptTokens": 147,
+      "completionTokens": 689
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-ng",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Một nhánh phát triển \"thế hệ mới\" của MeshCore được phát triển tại Hà Lan, tập trung vào việc làm cho các bộ tiếp sóng thông minh hơn nhằm giữ cho các mạng mesh lớn và bận rộn luôn ổn định. Nó bổ sung nền tảng mạng mesh dày đặc — bao gồm kiểm soát chuyển tiếp flood-advert, thống kê tắc nghẽn/mật độ, phát hiện kênh bận bằng phần cứng CAD, phân tán truyền lại theo nút và triệt tiêu nhận tín hiệu trùng lặp — cùng với một cầu nối internet tùy chọn để liên kết các cụm RF biệt lập, tất cả đều vẫn đảm bảo tương thích về giao thức với các máy khách MeshCore hiện có.",
+      "sourceHash": "sha256:40b16644194d31d14c2d94726a0be3de1239dd56f785ab7ba9c333d8f2271792",
+      "generatedAt": "2026-06-27T15:52:00.459Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9598,
+      "promptTokens": 219,
+      "completionTokens": 1681
+    },
+    "deviceNotes.heltec-meshtower": {
+      "value": "Cùng bo mạch gốc MeshSolar; sử dụng bản build heltec_mesh_solar.",
+      "sourceHash": "sha256:0fe9d96a80f245a3d2335a68e6bf70eccfe70b820e2035f0dcb00ec660ee9697",
+      "generatedAt": "2026-06-27T15:52:03.731Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3271,
+      "promptTokens": 144,
+      "completionTokens": 564
+    },
+    "features": {
+      "value": "[\"Nền tảng bộ tiếp sóng mạng lưới dày đặc\",\"Điều khiển chuyển tiếp quảng bá lan truyền (flood.advert.base)\",\"Thống kê mạng lưới dày đặc / Đo lường tắc nghẽn và mật độ\",\"Xác suất chuyển tiếp thủ công + chuẩn bị chế độ động\",\"Phát hiện kênh bận bằng CAD phần cứng\",\"Phân tán truyền lại theo nút\",\"Triệt tiêu truyền lại khi nghe trùng lặp\",\"Cầu nối internet tùy chọn (TCP / BLE / RS232 / ESPNow)\",\"Bảo vệ khởi động và runtime khi pin yếu\",\"Trình nạp firmware qua web\",\"Tương thích giao thức với các ứng dụng khách MeshCore hiện có\"]",
+      "sourceHash": "sha256:178e3623fdda17a3ee5df2fe5f77bbc11d82ea731bb100c5de4381d136a9d47f",
+      "generatedAt": "2026-06-27T15:52:11.177Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7445,
+      "promptTokens": 226,
+      "completionTokens": 1440
+    }
+  }
+}

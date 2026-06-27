@@ -1,0 +1,12 @@
+{
+  "resource": "device/waveshare-rp2040-lora",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní vývojová deska RP2040 + SX1262 LoRa je dostupná ve variantách LF a HF. Nabízí GPIO s polovenkovými vývody, anténní konektor IPEX a volitelný USB-C FPC adaptér pro flashování a sériový přístup.",
+      "sourceHash": "sha256:8c4610966e2492749a3ffadd556532226b0b751428664c1e20a105ea3a6886a7",
+      "generatedAt": "2026-06-27T11:00:58.544Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

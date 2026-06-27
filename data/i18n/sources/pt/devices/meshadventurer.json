@@ -1,0 +1,15 @@
+{
+  "resource": "device/meshadventurer",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa DIY todo-o-terreno ESP32 + E22 LoRa com ecrã OLED SSD1306 de 0,96 polegadas, interface por codificador rotativo, GPS e suporte opcional para o sensor BME280. Projetada para configurações de 1 W em 433 ou 868/915 MHz, com antena SMA externa e entrada de alimentação de ampla faixa de 9-28 V.",
+      "sourceHash": "sha256:a8802370c9394182d4e28718a25f2ba11ce913382fa9954b4124dc89ea090eae",
+      "generatedAt": "2026-06-27T14:16:23.915Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 16774,
+      "promptTokens": 199,
+      "completionTokens": 1025
+    }
+  }
+}

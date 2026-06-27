@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-meshtower-v2",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Надійний зовнішній сонячний вузол на базі технології Heltec MeshSolar, оснащений сонячною панеллю на 10 Вт, вбудованим акумулятором, алюмінієвим корпусом із захистом IP66 та зовнішньою антеною SMA. Пристрій доступний у діапазонах 868 МГц та 915 МГц з варіантами LoRa 22 дБм або 30 дБм, а також опціональним GNSS.",
+      "sourceHash": "sha256:90b6c2ed85b790c31ac8644edae65c49da2bff25c8a2bca4ed4e8087a73d9d55",
+      "generatedAt": "2026-06-27T14:57:15.646Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5222,
+      "promptTokens": 193,
+      "completionTokens": 1411
+    }
+  }
+}

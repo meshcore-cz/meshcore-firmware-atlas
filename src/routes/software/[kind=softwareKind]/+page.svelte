@@ -1,16 +1,17 @@
 <script>
   import Seo from '$lib/Seo.svelte';
   import SoftwareList from '$lib/SoftwareList.svelte';
-  import { SOFTWARE_KIND_META } from '$lib/data.js';
+  import { softwareKindLabel, lcFirst } from '$lib/data.js';
+  import { m } from '$lib/paraglide/messages.js';
   let { data } = $props();
 
-  let meta = $derived(SOFTWARE_KIND_META[data.kind]);
+  let label = $derived(softwareKindLabel(data.kind));
   let count = $derived(data.software.filter((s) => s.kind === data.kind).length);
 </script>
 
 <Seo
-  title="{meta?.label ?? 'Software'} — Software"
-  description={`${count} MeshCore ${meta?.label ?? 'software'} — ${meta?.singular ?? 'software'} for the network.`}
+  title={m.seo_software_kind_title({ label })}
+  description={m.seo_software_kind_desc({ count, labelLc: lcFirst(label) })}
 />
 
 <SoftwareList software={data.software} activeKind={data.kind} />

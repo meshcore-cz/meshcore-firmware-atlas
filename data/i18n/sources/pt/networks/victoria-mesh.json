@@ -1,0 +1,15 @@
+{
+  "resource": "network/victoria-mesh",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Comunidade MeshCore em Victoria, na Austrália, com 50+ nós distribuídos pela região de Mallee e pela área de Melbourne. Opera na banda australiana de 915 MHz com um analisador CoreScope.",
+      "sourceHash": "sha256:124281b26ad6be17b53248f30261399002f26014b871cf26bc3b220d1b391601",
+      "generatedAt": "2026-06-27T14:49:54.248Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3779,
+      "promptTokens": 166,
+      "completionTokens": 1013
+    }
+  }
+}

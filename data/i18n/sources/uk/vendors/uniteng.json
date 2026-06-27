@@ -1,0 +1,15 @@
+{
+  "resource": "vendor/uniteng",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Виробник базових станцій Station G2 та Nano G2 MeshCore.",
+      "sourceHash": "sha256:9f358d72f1ae6f86165c6c8adeafa116659ba2bdd49efc02ed3338aa6c4a2cb5",
+      "generatedAt": "2026-06-27T16:45:38.939Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2225,
+      "promptTokens": 144,
+      "completionTokens": 331
+    }
+  }
+}

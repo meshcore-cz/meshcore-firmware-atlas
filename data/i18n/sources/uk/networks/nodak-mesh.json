@@ -1,0 +1,15 @@
+{
+  "resource": "network/nodak-mesh",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Створена спільнотою mesh-мережа, яка розбудовує стійку інфраструктуру автономного зв'язку по всій Північній Дакоті за допомогою MeshCore та Meshtastic. Активні учасники у Фарго, Бісмарку, Гранд-Форкс, Міноті та сільській місцевості працюють на пресеті USA/Canada 915 MHz через публічний канал #nodakmesh.",
+      "sourceHash": "sha256:8944e902331fe40b1429a6868c9f55d84e41bbfcea3d4affe1d990146a889d3a",
+      "generatedAt": "2026-06-27T16:55:06.479Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 21348,
+      "promptTokens": 190,
+      "completionTokens": 1873
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resource": "device/heltec-t190",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vývojářská deska ESP32-S3R8 s volitelným modulem SX1262 LoRa a integrovaným 1,9palcovým displejem TFT (170×320, ST7789) určená pro Meshtastic/MeshCore. Nabízí USB-C, konektor SH1.25 pro baterii se správou nabíjení, senzorový port SH1.0 QuickLink a antény Wi-Fi/LoRa s konektorem IPEX. Obsahuje dvě uživatelská tlačítka, ale nemá integrovaný GPS modul.",
+      "sourceHash": "sha256:7889758862afbe52251c8fb89ac4cd6680fffa76e6622546bf2c661d6cd55431",
+      "generatedAt": "2026-06-27T10:47:00.401Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

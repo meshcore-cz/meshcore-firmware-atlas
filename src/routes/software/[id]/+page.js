@@ -1,6 +1,7 @@
 import { error } from '@sveltejs/kit';
 import { base } from '$app/paths';
 import { software, getSoftware } from '$lib/data.js';
+import { localizeRecord } from '$lib/catalog-overlay.js';
 
 // Tell the static adapter which software pages to prerender.
 export function entries() {
@@ -18,7 +19,11 @@ export async function load({ params, fetch }) {
   const res = await fetch(`${base}/software/${params.id}.json`);
   const full = res.ok ? await res.json() : null;
   const item = full
-    ? { ...full, imageUrl: meta.imageUrl, screenshotUrls: meta.screenshotUrls }
+    ? localizeRecord('software', {
+        ...full,
+        imageUrl: meta.imageUrl,
+        screenshotUrls: meta.screenshotUrls
+      })
     : meta;
   return { software: item };
 }

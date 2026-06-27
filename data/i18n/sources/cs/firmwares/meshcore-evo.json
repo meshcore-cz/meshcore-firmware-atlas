@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/meshcore-evo",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Vylepšený fork MeshCore zaměřený na opakovače, který obsahuje čekající upstreamové PR a vylepšení pro husté mesh sítě – zejména zmírnění zahlcení provozem flood-advert a vylepšené zpracování `denyf *`. Převážně byl nahrazen poté, co referenční verze 1.16.0 přidala nativní správu flood provozu.",
+      "sourceHash": "sha256:74b0b8f373bbaad7d1e360f3ec673cc32bd5505d6ffda873ab6f4c3b2a248665",
+      "generatedAt": "2026-06-27T11:23:26.903Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7680,
+      "promptTokens": 184,
+      "completionTokens": 868
+    },
+    "deviceNotes.station-g2": {
+      "value": "Buildy k dispozici; testovány méně často než základní desky opakovačů.",
+      "sourceHash": "sha256:96af65e2ea41473160fae9bad296c3916c4b52a35a7a587c63ee650e8242e691",
+      "generatedAt": "2026-06-27T11:23:40.397Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 13493,
+      "promptTokens": 142,
+      "completionTokens": 867
+    },
+    "features": {
+      "value": "[\"Zmírnění zahlcení flood-advert provozem\",\"Vylepšené zpracování denyf \\\"*\\\"\",\"Optimalizováno pro husté mesh sítě opakovačů\",\"Sleduje upstream vydání MeshCore\"]",
+      "sourceHash": "sha256:b0035f77f12169a8f00ef0456f32b4d81757e8680adc28dfe45dae58e715aadd",
+      "generatedAt": "2026-06-27T12:35:06.086Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15240,
+      "promptTokens": 160,
+      "completionTokens": 812
+    }
+  }
+}

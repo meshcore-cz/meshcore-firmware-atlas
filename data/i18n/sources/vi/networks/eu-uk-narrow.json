@@ -1,0 +1,15 @@
+{
+  "resource": "network/eu-uk-narrow",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Cấu hình băng hẹp MeshCore tiêu chuẩn dành cho Châu Âu và Vương quốc Anh trên băng tần 869.618 MHz (62.5 kHz / SF8 / CR4/8). Đây là cấu hình mặc định chung — không dành riêng cho một cộng đồng duy nhất — để các nút mạng trên khắp EU và Vương quốc Anh dùng chung nhằm giao tiếp với nhau.",
+      "sourceHash": "sha256:2b077c89e222709b50aa6549bd6586df0d63fa634fea46036399e7434a03c191",
+      "generatedAt": "2026-06-27T16:47:12.374Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7419,
+      "promptTokens": 189,
+      "completionTokens": 1021
+    }
+  }
+}

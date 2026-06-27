@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshfirmware",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Scripts interativos para Windows e Linux que permitem detetar rádios USB compatíveis, selecionar versões de firmware MeshCore ou Meshtastic, e instalar, atualizar ou compilar localmente o firmware.",
+      "sourceHash": "sha256:2c1402214c5f6cee94ce268fbb62816f28da3ee63e87482f620398558a2de963",
+      "generatedAt": "2026-06-27T14:38:37.113Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3661,
+      "promptTokens": 159,
+      "completionTokens": 1012
+    },
+    "tags": {
+      "value": "[\"firmware\",\"usb\",\"multiplataforma\",\"meshtastic\"]",
+      "sourceHash": "sha256:2f5c680007b74b4806a10c47135e644b325e7f588d23eb56fcf067cdb9a88532",
+      "generatedAt": "2026-06-27T14:38:40.367Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3254,
+      "promptTokens": 142,
+      "completionTokens": 741
+    },
+    "verificationNotes.downloads-release-metadata-from-the-upstream-mes": {
+      "value": "Baixa os metadados de lançamento dos repositórios de origem MeshCore e Meshtastic e mantém um cache local para contingência offline.",
+      "sourceHash": "sha256:c68444855662cd1c551ec01d4ac3aa0fa3eefc601cfc5b0537ce16752d85b363",
+      "generatedAt": "2026-06-27T14:38:43.069Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2701,
+      "promptTokens": 151,
+      "completionTokens": 721
+    },
+    "verificationNotes.automatically-detects-matching-usb-devices-and-f": {
+      "value": "Deteta automaticamente os dispositivos USB e os artefactos de firmware correspondentes antes de gravar.",
+      "sourceHash": "sha256:5f540f0d0cfdfaeb9f15f191010a1a35f0c954e18dd04486dd85265b1a8ae90c",
+      "generatedAt": "2026-06-27T14:38:46.412Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3343,
+      "promptTokens": 141,
+      "completionTokens": 803
+    }
+  }
+}

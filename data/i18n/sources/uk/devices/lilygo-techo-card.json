@@ -1,0 +1,15 @@
+{
+  "resource": "device/lilygo-techo-card",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Енергоефективний вузол розміром з картку на базі nRF52840 + SX1262 з 0.42-дюймовим OLED-дисплеєм, L76K GNSS, ICM20948 IMU, динаміком, мікрофоном та WS2812 LED. Сонячна панель для безперебійного живлення. Лише Bluetooth 5 — без Wi-Fi.",
+      "sourceHash": "sha256:59f0497dee00118a2512aa839c63f99a6573a17f0ee06446c2896f8883d0ad5c",
+      "generatedAt": "2026-06-27T14:59:27.467Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5548,
+      "promptTokens": 192,
+      "completionTokens": 1460
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-ha-ui",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bảng điều khiển trên thanh bên Home Assistant được xây dựng dựa trên meshcore-ha, bổ sung kênh liên tục và nhắn tin trực tiếp, danh bạ, bản đồ, thống kê nút thời gian thực, cảm biến cùng bảng điều khiển lệnh MeshCore thô.",
+      "sourceHash": "sha256:b4f0c8ddd5ee034d3cd859e4081e70871d2e2317d5edc604ce75695ffaba60ce",
+      "generatedAt": "2026-06-27T16:20:11.843Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6426,
+      "promptTokens": 164,
+      "completionTokens": 841
+    },
+    "tags": {
+      "value": "[\"home-assistant\", \"hacs\", \"bảng điều khiển\", \"tin nhắn liên tục\"]",
+      "sourceHash": "sha256:4ebd26305d749cb75282b2c923b692e25b951bce289e941971fc1039d86a5c30",
+      "generatedAt": "2026-06-27T16:20:21.148Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9304,
+      "promptTokens": 143,
+      "completionTokens": 1207
+    },
+    "verificationNotes.requires-a-working-meshcore-ha-integration-and-d": {
+      "value": "Yêu cầu tích hợp meshcore-ha đang hoạt động và không kết nối trực tiếp với radio.",
+      "sourceHash": "sha256:60671eecfb398e1daf81603027099e4739d55d07ca11298cce336f841f67ee95",
+      "generatedAt": "2026-06-27T16:20:25.264Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4115,
+      "promptTokens": 145,
+      "completionTokens": 445
+    },
+    "verificationNotes.the-repository-url-currently-redirects-from-an-e": {
+      "value": "URL kho lưu trữ hiện đang chuyển hướng từ vị trí dự án Daring-Designs trước đây.",
+      "sourceHash": "sha256:b82f814a1127fa4904b9ccde2507b772f29b66fd72ed875f5305e0958ca9362c",
+      "generatedAt": "2026-06-27T16:20:29.989Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4725,
+      "promptTokens": 145,
+      "completionTokens": 659
+    }
+  }
+}

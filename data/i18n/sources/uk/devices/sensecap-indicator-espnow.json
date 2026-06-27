@@ -1,0 +1,15 @@
+{
+  "resource": "device/sensecap-indicator-espnow",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "4-дюймова сенсорна платформа SenseCAP Indicator для експериментів з прошивкою та панелей керування mesh-мережами. Версія з підтримкою Meshtastic поєднує мікроконтролери ESP32-S3 та RP2040 із Wi-Fi, BLE, LoRa та ємнісним сенсорним RGB-дисплеєм.",
+      "sourceHash": "sha256:bff8ab70a8fcf00d9862f61c018d030b65b29182a7999b900f8ddb89a4e6a0e6",
+      "generatedAt": "2026-06-27T15:01:27.145Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4027,
+      "promptTokens": 180,
+      "completionTokens": 1199
+    }
+  }
+}

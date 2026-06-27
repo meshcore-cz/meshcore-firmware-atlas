@@ -1,0 +1,78 @@
+{
+  "resource": "software/meshcore-wardrive",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Aplicação Android para mapeamento de cobertura que associa percursos GPS a pings automáticos de repetidores MeshCore, visualiza taxas de resposta e qualidade do sinal, exporta dados de levantamento e pode contribuir com os resultados para um mapa web comunitário.",
+      "sourceHash": "sha256:0bf32e50f4649df00f6574ed068e3f65c59f38975d0798a66357cc2b8c8f1dd1",
+      "generatedAt": "2026-06-27T14:36:45.647Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3718,
+      "promptTokens": 168,
+      "completionTokens": 986
+    },
+    "screenshots.coverage-map.jpeg.caption": {
+      "value": "Levantamento de cobertura do MeshCore codificado por cores",
+      "sourceHash": "sha256:54fe1479aae2a757567d1aa9f24c888b32cf8c211286d5b8b89079a957cf36e6",
+      "generatedAt": "2026-06-27T14:36:48.013Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2365,
+      "promptTokens": 135,
+      "completionTokens": 534
+    },
+    "screenshots.tracking.jpeg.caption": {
+      "value": "Rastreamento por GPS em tempo real e controles automáticos de ping",
+      "sourceHash": "sha256:854a4a941e435b6e20e9df1ff95cb3ec61f6a2f5f4dea7bdd015f4821237fc18",
+      "generatedAt": "2026-06-27T14:36:50.813Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2800,
+      "promptTokens": 136,
+      "completionTokens": 706
+    },
+    "screenshots.repeaters.jpeg.caption": {
+      "value": "Descoberta de repetidores e resultados de sinal",
+      "sourceHash": "sha256:226a1cda42287e62fbee347e23e23a3466122603e068b93f4969a2488e9fe80d",
+      "generatedAt": "2026-06-27T14:36:52.713Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 1900,
+      "promptTokens": 135,
+      "completionTokens": 350
+    },
+    "screenshots.statistics.jpeg.caption": {
+      "value": "Estatísticas de amostra e taxa de sucesso do Wardrive",
+      "sourceHash": "sha256:6ac1a2fc0101dc61f80d1bb68e6ca76dc0cd427973a0bd63b09e046a0cec2a0a",
+      "generatedAt": "2026-06-27T14:36:55.360Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2646,
+      "promptTokens": 137,
+      "completionTokens": 630
+    },
+    "tags": {
+      "value": "[\"wardriving\",\"cobertura\",\"gps\",\"ferramenta-de-campo\",\"mapa-comunitário\"]",
+      "sourceHash": "sha256:476d65cd5477dd9cdb10c502d6d5f0a9d945e168289194f4e9ee1e48d1f71890",
+      "generatedAt": "2026-06-27T14:36:58.712Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3352,
+      "promptTokens": 144,
+      "completionTokens": 811
+    },
+    "verificationNotes.application-releases-and-gpl-3-0-source-code-are": {
+      "value": "Os lançamentos da aplicação e o código-fonte GPL-3.0 são mantidos em repositórios separados no GitHub.",
+      "sourceHash": "sha256:04f6aa7e0339cd2f5ebbd269912eef7303de3dff89a158dc69f68fa10d6be561",
+      "generatedAt": "2026-06-27T14:37:01.743Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3031,
+      "promptTokens": 146,
+      "completionTokens": 794
+    },
+    "verificationNotes.gps-survey-data-remains-local-unless-the-operato": {
+      "value": "Os dados de levantamento GPS permanecem armazenados localmente, a menos que o operador os carregue explicitamente para o mapa da comunidade.",
+      "sourceHash": "sha256:bcf90556001e1aaedcad79974f40ebf6ca7ae030ac966cdb2b4cb52f2cb0d7c1",
+      "generatedAt": "2026-06-27T14:37:04.686Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2942,
+      "promptTokens": 145,
+      "completionTokens": 776
+    }
+  }
+}

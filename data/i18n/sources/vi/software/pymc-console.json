@@ -1,0 +1,78 @@
+{
+  "resource": "software/pymc-console",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Bảng điều khiển web cho [[software:pymc-repeater|pyMC Repeater]] tích hợp kiểm tra gói tin theo thời gian thực, phân tích cấu trúc mạng và đường truyền, thống kê RF, lập bản đồ địa hình, radar chất lượng liên kết, giám sát hệ thống và terminal trạm lặp tương tác.",
+      "sourceHash": "sha256:a7acac247bc01ebaf54919894ea3700ef985bbc35d4b919a9954e9dca2568dfd",
+      "generatedAt": "2026-06-27T16:31:40.036Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6825,
+      "promptTokens": 174,
+      "completionTokens": 1009
+    },
+    "screenshots.topology.png.caption": {
+      "value": "Phân tích tô pô chuyên sâu và lập bản đồ địa hình",
+      "sourceHash": "sha256:5ef9b2bce3a9112ca97cbe0bc37e1d70209b6cc8e01c509408b78408addde66d",
+      "generatedAt": "2026-06-27T16:31:43.632Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3595,
+      "promptTokens": 135,
+      "completionTokens": 456
+    },
+    "screenshots.link-quality.png.caption": {
+      "value": "Ra-đa chất lượng liên kết định hướng",
+      "sourceHash": "sha256:b436f75410bfe2d7b667e81f61ca1f4568188a581699a1b35fd437acfc4df281",
+      "generatedAt": "2026-06-27T16:31:49.182Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5549,
+      "promptTokens": 134,
+      "completionTokens": 637
+    },
+    "screenshots.statistics.png.caption": {
+      "value": "Thống kê RF và thời gian phát sóng",
+      "sourceHash": "sha256:c1bcb6cc6fbf71241605ba2678f9a1c71bcf0f369880b93f80f6121a0ba63d48",
+      "generatedAt": "2026-06-27T16:31:54.612Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5428,
+      "promptTokens": 134,
+      "completionTokens": 528
+    },
+    "screenshots.terminal.png.caption": {
+      "value": "Terminal lặp, nhật ký và chủ đề",
+      "sourceHash": "sha256:5bdf11840fdde6fca46a4db9cb02a4088265425aa89a7c1ae8b28434d72f5a63",
+      "generatedAt": "2026-06-27T16:32:23.468Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 28856,
+      "promptTokens": 136,
+      "completionTokens": 887
+    },
+    "tags": {
+      "value": "[\"bộ lặp\", \"cấu trúc liên kết\", \"phân tích RF\", \"raspberry-pi\", \"bảng điều khiển\"]",
+      "sourceHash": "sha256:ecf0689de1e3a2699e95a41104b8f0b91244a7850a465e01edc9118ccd09b164",
+      "generatedAt": "2026-06-27T16:32:27.753Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4284,
+      "promptTokens": 147,
+      "completionTokens": 729
+    },
+    "verificationNotes.requires-an-existing-pymc-repeater-installation-": {
+      "value": "Yêu cầu đã cài đặt sẵn pyMC Repeater và chỉ thay thế các tài nguyên của bảng điều khiển web.",
+      "sourceHash": "sha256:bd48f5322714c6f2bd808cce2148f3fe487ab9e7a8b4faa96a318bd972bcc8b5",
+      "generatedAt": "2026-06-27T16:32:32.874Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5120,
+      "promptTokens": 145,
+      "completionTokens": 646
+    },
+    "verificationNotes.repeater-service-lifecycle-and-radio-configurati": {
+      "value": "Vòng đời dịch vụ repeater và cấu hình radio vẫn do pyMC Repeater quản lý.",
+      "sourceHash": "sha256:976d991e2a805116a213b8ff3a67fc48e67084cc503bb69c91130a7b38575890",
+      "generatedAt": "2026-06-27T16:32:35.150Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2275,
+      "promptTokens": 144,
+      "completionTokens": 307
+    }
+  }
+}

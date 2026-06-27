@@ -1,0 +1,15 @@
+{
+  "resource": "device/heltec-e290",
+  "locale": "pt",
+  "fields": {
+    "description": {
+      "value": "Placa de desenvolvimento ESP32-S3R8 E-Ink com módulo SX1262 LoRa opcional, barra de pinos fêmea de 2×20 pinos compatível com Raspberry Pi e porta de sensores QuickLink. Compatível com Meshtastic/MeshCore; LoRa é uma opção de tempo de compilação, não presente em todos os SKUs.",
+      "sourceHash": "sha256:aab556b44be6a2e20e8b84f24b14998437b32bcaf85b03c19364da17bca2b7c1",
+      "generatedAt": "2026-06-27T14:06:19.989Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18854,
+      "promptTokens": 191,
+      "completionTokens": 885
+    }
+  }
+}

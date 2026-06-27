@@ -2,7 +2,8 @@
   // Device Gallery — a purely decorative, full-bleed grid of every device
   // thumbnail. Clicking a tile opens a lightbox with a much larger image and a
   // few key specs; a link there leads to the full device profile.
-  import { base } from '$app/paths';
+  import { href } from '$lib/i18n.js';
+  import { m } from '$lib/paraglide/messages.js';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
   import { browser } from '$app/environment';
@@ -10,6 +11,7 @@
   import Seo from '$lib/Seo.svelte';
   import PageHeader from '$lib/PageHeader.svelte';
   import { pluralize } from '$lib/format.js';
+  import { nodeRoleLabel } from '$lib/data.js';
   import X from '@lucide/svelte/icons/x';
   let { data } = $props();
 
@@ -21,35 +23,33 @@
   let open = $derived(!!selected);
 
   function openDevice(id) {
-    goto(`${base}/gallery/?device=${id}`, { keepFocus: true, noScroll: true });
+    goto(href(`/gallery/?device=${id}`), { keepFocus: true, noScroll: true });
   }
   function closeDialog() {
-    goto(`${base}/gallery/`, { keepFocus: true, noScroll: true });
+    goto(href('/gallery/'), { keepFocus: true, noScroll: true });
   }
 
   // A couple of compact spec lines for the lightbox, skipping unknowns.
   let specs = $derived(
     selected
       ? [
-          ['Vendor', selected.vendorName],
-          ['MCU', selected.mcu !== 'Unknown' ? selected.mcu : null],
-          ['Radio', selected.radio !== 'Unknown' ? selected.radio : null],
-          ['Bands', selected.bands.length ? selected.bands.join(', ') : null],
-          ['Price', selected.price]
+          [m.dev_facet_vendor(), selected.vendorName],
+          [m.spec_mcu(), selected.mcu !== 'Unknown' ? selected.mcu : null],
+          [m.dev_facet_radio(), selected.radio !== 'Unknown' ? selected.radio : null],
+          [m.dev_facet_band(), selected.bands.length ? selected.bands.join(', ') : null],
+          [m.dev_range_price(), selected.price]
         ].filter(([, v]) => v)
       : []
   );
 </script>
 
-<Seo
-  title="Device Gallery"
-  description="A wall of every MeshCore device — a purely visual grid of hardware thumbnails."
-/>
+<Seo title={m.tool_gallery_label()} description={m.gallery_seo_desc()} />
 
 <PageHeader tool="gallery" subtitleClass="max-w-2xl">
-  Just the hardware — a wall of every catalogued MeshCore
-  <a class="text-accent2 hover:underline" href="{base}/devices/">device</a>. {pluralize(data.devices.length, 'board')},
-  no specs in sight (until you click one). Every thumbnail is a vector SVG, so it stays crisp at any size.
+  {@html m.gallery_intro({
+    device: `<a class="text-accent2 hover:underline" href="${href('/devices/')}">${m.collection_devices_label().toLowerCase()}</a>`,
+    boards: pluralize(data.devices.length, 'board')
+  })}
 </PageHeader>
 
 <!-- Break out of the layout's centred max-width container to span the viewport. -->
@@ -57,7 +57,7 @@
   <div class="grid gap-2 [grid-template-columns:repeat(auto-fill,minmax(130px,1fr))] sm:gap-3 sm:[grid-template-columns:repeat(auto-fill,minmax(160px,1fr))]">
     {#each data.devices as d (d.id)}
       <a
-        href="{base}/gallery/?device={d.id}"
+        href={href(`/gallery/?device=${d.id}`)}
         onclick={(e) => {
           e.preventDefault();
           openDevice(d.id);
@@ -102,10 +102,10 @@
               {/if}
             </div>
             <a
-              href="{base}/device/{selected.id}/"
+              href={href(`/device/${selected.id}/`)}
               class="inline-flex shrink-0 items-center gap-1 rounded-lg bg-accent px-3.5 py-2 text-[0.88rem] font-medium text-bg transition hover:opacity-90"
             >
-              View full profile →
+              {m.gallery_view_profile()}
             </a>
           </div>
 
@@ -121,7 +121,7 @@
           {#if selected.roles.length}
             <div class="flex flex-wrap gap-1.5">
               {#each selected.roles as role}
-                <span class="rounded bg-elev2 px-2 py-0.5 text-[0.72rem] text-dim">{role}</span>
+                <span class="rounded bg-elev2 px-2 py-0.5 text-[0.72rem] text-dim">{nodeRoleLabel(role)}</span>
               {/each}
             </div>
           {/if}
@@ -129,7 +129,7 @@
       {/if}
       <Dialog.Close
         class="absolute top-3 right-3 rounded-lg border border-edge bg-bg/70 p-1.5 text-dim backdrop-blur-sm transition hover:text-ink"
-        aria-label="Close"
+        aria-label={m.aria_close()}
       >
         <X class="h-4 w-4" />
       </Dialog.Close>

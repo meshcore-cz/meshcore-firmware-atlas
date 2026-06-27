@@ -1,0 +1,15 @@
+{
+  "resource": "device/thinknode-m6",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Вуличний сонячний вузол Meshtastic/MeshCore із захистом IP65 на базі nRF52840, SX1262 LoRa та L76K GPS. Вбудована панель на 6W та акумуляторний блок ~7000 mAh на двох 18650; налаштування лише через BLE — вбудований дисплей відсутній.",
+      "sourceHash": "sha256:7317c284edf0885095e93e1ff6270c4ea6b0cc60b803bf405c8b6808c5e5456a",
+      "generatedAt": "2026-06-27T14:56:27.060Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5861,
+      "promptTokens": 185,
+      "completionTokens": 1793
+    }
+  }
+}

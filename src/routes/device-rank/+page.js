@@ -1,7 +1,7 @@
 import { redirect } from '@sveltejs/kit';
-import { base } from '$app/paths';
+import { href } from '$lib/i18n.js';
 import { METRICS } from '$lib/metrics.js';
 
 export function load() {
-  redirect(307, `${base}/device-rank/${METRICS[0].id}/`);
+  redirect(307, href(`/device-rank/${METRICS[0].id}/`));
 }

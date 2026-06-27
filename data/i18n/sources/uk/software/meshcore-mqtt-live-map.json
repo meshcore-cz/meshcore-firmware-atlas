@@ -1,0 +1,60 @@
+{
+  "resource": "software/meshcore-mqtt-live-map",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Самостійно розміщувана карта трафіку MeshCore у реальному часі, яка декодує потоки пакетів MQTT та візуалізує вузли, маршрути, однорангові вузли, теплову карту активності, зону покриття, пряму видимість і дані про поширення сигналу у вигляді встановлюваного вебзастосунку.",
+      "sourceHash": "sha256:130787bda4571d64a527bd9e3c2c9055c1691b0b193791db319ad7ce3f4634ed",
+      "generatedAt": "2026-06-27T15:53:33.339Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7711,
+      "promptTokens": 172,
+      "completionTokens": 1678
+    },
+    "screenshots.live-map.png.caption": {
+      "value": "Активні вузли, маршрути та активність mesh-мережі",
+      "sourceHash": "sha256:6a687b95bbb136e901dd134c79e07747a4c68c4c8478277a7f772ccc71009fa8",
+      "generatedAt": "2026-06-27T15:53:38.515Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5176,
+      "promptTokens": 136,
+      "completionTokens": 689
+    },
+    "screenshots.route-history.png.caption": {
+      "value": "Інструменти аналізу мережі та історії маршрутів",
+      "sourceHash": "sha256:72bcaab386076d69166844e7ac8c89597b6a46b4e1e7f5fa4c0b3f6f348857d3",
+      "generatedAt": "2026-06-27T15:53:41.614Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3098,
+      "promptTokens": 135,
+      "completionTokens": 612
+    },
+    "tags": {
+      "value": "[\"карта в реальному часі\", \"mqtt\", \"власний хостинг\", \"pwa\", \"поширення\"]",
+      "sourceHash": "sha256:1b7f1ed8a768f00fb41e6c884dbfd4e9b800880c890f94740f26c1d8275c6e2b",
+      "generatedAt": "2026-06-27T15:53:45.551Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3936,
+      "promptTokens": 145,
+      "completionTokens": 708
+    },
+    "verificationNotes.supports-mqtt-over-tcp-or-websockets-with-option": {
+      "value": "Підтримує MQTT через TCP або WebSockets з опціональним TLS та захистом токенів для робочого середовища.",
+      "sourceHash": "sha256:d6ba6c9dff165e59a92cd93aecdf9076e6183d4067881ef33db009152390a5ef",
+      "generatedAt": "2026-06-27T15:53:51.987Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6435,
+      "promptTokens": 146,
+      "completionTokens": 787
+    },
+    "verificationNotes.the-greater-boston-deployment-is-the-reference-i": {
+      "value": "Розгортання у Великому Бостоні є еталонним екземпляром; кілька спільнотних mesh-мереж керують незалежними розгортаннями.",
+      "sourceHash": "sha256:27bc584c41223eae59b8aec84d591abb2d49b6018b2da121335ee2bb680fccd6",
+      "generatedAt": "2026-06-27T15:53:58.261Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6274,
+      "promptTokens": 145,
+      "completionTokens": 1045
+    }
+  }
+}

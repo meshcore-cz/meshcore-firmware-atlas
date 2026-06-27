@@ -1,0 +1,42 @@
+{
+  "resource": "software/esphome-meshcore",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Externí komponenta ESPHome, která přemění hardware XIAO nRF52840 a SX1262 na dálkově spravované senzorové uzly MeshCore. Pomocí příkazů Companion zpřístupňuje přepínače, senzory, ventilátory a světla ESPHome.",
+      "sourceHash": "sha256:ac8a47c596cc50ca5880a0532248a0b3a00c4f94d25ce95483ece8f561ac60d1",
+      "generatedAt": "2026-06-27T11:27:51.588Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8059,
+      "promptTokens": 170,
+      "completionTokens": 944
+    },
+    "verificationNotes.developed-and-tested-specifically-for-the-seeed-": {
+      "value": "Vyvinuto a testováno speciálně pro Seeed XIAO nRF52840 s rádiovým modulem SX1262. ESP32 a ESP8266 nejsou podporovány.",
+      "sourceHash": "sha256:03a8c9b54be993a95e06d4b45f8a8f3ccbd012c17b3c86df88dd6b73d2d632f9",
+      "generatedAt": "2026-06-27T11:27:58.776Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7187,
+      "promptTokens": 164,
+      "completionTokens": 810
+    },
+    "verificationNotes.the-repository-does-not-currently-declare-an-spd": {
+      "value": "Repozitář v současné době nedeklaruje licenci SPDX.",
+      "sourceHash": "sha256:6953ed4e959c60149fa03d1e62eefbc2e6c18749308de11b4461c31fb47be7d0",
+      "generatedAt": "2026-06-27T11:28:03.615Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4839,
+      "promptTokens": 139,
+      "completionTokens": 488
+    },
+    "tags": {
+      "value": "[\"esphome\",\"senzorový-uzel\",\"xiao\",\"nrf52840\",\"sx1262\"]",
+      "sourceHash": "sha256:3782293dd5996cb3bf104ab000f1d628dca15df4f6965092c384513f5baa7d90",
+      "generatedAt": "2026-06-27T13:39:19.587Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 9374,
+      "promptTokens": 150,
+      "completionTokens": 483
+    }
+  }
+}

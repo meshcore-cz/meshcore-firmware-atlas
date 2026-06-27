@@ -1,0 +1,12 @@
+{
+  "resource": "device/muziworks-base-uno",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Kompaktní vývojová deska BASE System pro jednopásmové uzly Meshtastic kombinuje MCU nRF52840 s LoRa SX1262. Nabízí flexibilní GPIO, rozšíření QWIIC/STEMMA QT a nabíječku s podporou bateriového a solárního napájení.",
+      "sourceHash": "sha256:38a65e2c04702e199c97aa65a141478274fd71ee6e70accb9ecbcdeb0cb3dbeb",
+      "generatedAt": "2026-06-27T10:53:49.341Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

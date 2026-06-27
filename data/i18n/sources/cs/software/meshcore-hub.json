@@ -1,0 +1,51 @@
+{
+  "resource": "software/meshcore-hub",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Platforma pro sběr dat ze sítě MeshCore s vlastním hostováním, která přijímá dekódované události paketů přes MQTT, trvale ukládá zprávy a telemetrická data a poskytuje webový dashboard, REST API, autentizaci, metriky a podporu vzdálených pozorovatelů.",
+      "sourceHash": "sha256:7eb1062b7e025acc76ed0b0fee12851f254760722dcdc7228f00c44ce6a3d76a",
+      "generatedAt": "2026-06-27T11:32:31.914Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 7608,
+      "promptTokens": 168,
+      "completionTokens": 1012
+    },
+    "screenshots.dashboard.png.caption": {
+      "value": "Řídicí panel sítě MeshCore Hub",
+      "sourceHash": "sha256:59fc6c58003249c55003c9238aff44bd410289d069d4e8d436aa9fae441fc20d",
+      "generatedAt": "2026-06-27T11:32:36.117Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4203,
+      "promptTokens": 134,
+      "completionTokens": 484
+    },
+    "verificationNotes.uses-meshcore-packet-capture-observers-to-decode": {
+      "value": "Využívá pozorovatele meshcore-packet-capture k dekódování RF provozu a publikování normalizovaných událostí do MQTT.",
+      "sourceHash": "sha256:53f3ba05809ee2b0e3dcae2a7babfff26b91c1bc65716b03ba92c99deeaf6e20",
+      "generatedAt": "2026-06-27T11:32:42.031Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5914,
+      "promptTokens": 148,
+      "completionTokens": 710
+    },
+    "verificationNotes.postgresql-is-becoming-the-required-database-bac": {
+      "value": "PostgreSQL se stává vyžadovaným databázovým backendem; během migrace zůstává SQLite dočasně podporován.",
+      "sourceHash": "sha256:06c3aa26048c4748b3db746dfa7c518c6d43d46e6b6ceeb75c155b10ff283034",
+      "generatedAt": "2026-06-27T11:32:46.539Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4507,
+      "promptTokens": 145,
+      "completionTokens": 588
+    },
+    "tags": {
+      "value": "[\"kolektor\",\"mqtt\",\"samostatně hostované\",\"pozorovatelnost\",\"více pozorovatelů\"]",
+      "sourceHash": "sha256:31117120c11128f0411d1d25be7950d5268504ff509f514a86a49ce979c425a5",
+      "generatedAt": "2026-06-27T13:41:23.961Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8291,
+      "promptTokens": 145,
+      "completionTokens": 378
+    }
+  }
+}

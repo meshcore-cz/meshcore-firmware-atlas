@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-ha-ui",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Postranní panel Home Assistant postavený na meshcore-ha, který přidává trvalý kanál a přímé zprávy, kontakty, mapy, statistiky uzlů v reálném čase, senzory a konzoli pro přímé příkazy MeshCore.",
+      "sourceHash": "sha256:b4f0c8ddd5ee034d3cd859e4081e70871d2e2317d5edc604ce75695ffaba60ce",
+      "generatedAt": "2026-06-27T11:39:53.512Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 8712,
+      "promptTokens": 164,
+      "completionTokens": 1083
+    },
+    "verificationNotes.requires-a-working-meshcore-ha-integration-and-d": {
+      "value": "Vyžaduje funkční integraci meshcore-ha a nepřipojuje se přímo k rádiím.",
+      "sourceHash": "sha256:60671eecfb398e1daf81603027099e4739d55d07ca11298cce336f841f67ee95",
+      "generatedAt": "2026-06-27T11:40:09.115Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15603,
+      "promptTokens": 145,
+      "completionTokens": 782
+    },
+    "verificationNotes.the-repository-url-currently-redirects-from-an-e": {
+      "value": "Aktuální URL repozitáře přesměrovává z dřívějšího umístění projektu Daring-Designs.",
+      "sourceHash": "sha256:b82f814a1127fa4904b9ccde2507b772f29b66fd72ed875f5305e0958ca9362c",
+      "generatedAt": "2026-06-27T11:40:19.930Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10813,
+      "promptTokens": 145,
+      "completionTokens": 1230
+    },
+    "tags": {
+      "value": "[\"home-assistant\",\"hacs\",\"řídicí panel\",\"trvalé zprávy\"]",
+      "sourceHash": "sha256:4ebd26305d749cb75282b2c923b692e25b951bce289e941971fc1039d86a5c30",
+      "generatedAt": "2026-06-27T13:44:03.104Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 18942,
+      "promptTokens": 143,
+      "completionTokens": 731
+    }
+  }
+}

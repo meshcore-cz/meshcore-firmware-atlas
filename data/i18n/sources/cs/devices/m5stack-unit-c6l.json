@@ -1,0 +1,12 @@
+{
+  "resource": "device/m5stack-unit-c6l",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "LoRa jednotka ESP32-C6 s vestavěným rádiovým modulem SX1262, stavovým OLED displejem, RGB indikátorem, bzučákem a uživatelským tlačítkem. Dokumentace výrobce zdůrazňuje podporu Wi-Fi 6 a Meshtastic a dvojici anténních konektorů RP-SMA.",
+      "sourceHash": "sha256:d8741705041a787f7bae0b0238c3655b8e8af4748e64e53be386c8848a21fe3d",
+      "generatedAt": "2026-06-27T10:53:21.860Z",
+      "model": "glm-5.2:cloud"
+    }
+  }
+}

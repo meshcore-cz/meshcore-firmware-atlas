@@ -1,0 +1,15 @@
+{
+  "resource": "network/meshcore-pt",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Portugalská komunita MeshCore koordinuje přes web meshcore.pt celonárodní komunikaci v off-grid síti LoRa typu mesh. Zveřejňuje nastavení rádia pro 433.375 MHz a 869.618 MHz, lokální příručky k hardwaru, mapové nástroje a zdroje pro LusoApp.",
+      "sourceHash": "sha256:da43baa9a36219e96bf8ded451d1fcfa7bc962250a276947b69ddd38ed10d2b3",
+      "generatedAt": "2026-06-27T12:11:03.367Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10257,
+      "promptTokens": 179,
+      "completionTokens": 1387
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "software/meshcore-companion-c",
+  "locale": "cs",
+  "fields": {
+    "description": {
+      "value": "Přenosná klientská knihovna v jazyce C99 pro sériový protokol MeshCore Companion Radio, která poskytuje lehký obal v jazyce Arduino C++ pro vestavěné systémy a přímou podporu jazyka C pro aplikace na desktopu, Linuxu, ESP-IDF a STM32.",
+      "sourceHash": "sha256:8c4078495fd327bc9ca40041b6d19f9adfd58c9bae8b75e4f782bfbf0250cc26",
+      "generatedAt": "2026-06-27T11:43:43.320Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 10378,
+      "promptTokens": 170,
+      "completionTokens": 1554
+    },
+    "verificationNotes.the-github-repository-is-a-mirror-the-canonical-": {
+      "value": "Repozitář na GitHubu slouží jako zrcadlo; hlavní zdroj je umístěn na SH3D Gitea.",
+      "sourceHash": "sha256:2a34310f336548064beac19391d90ac95917b4ee3bb6270aafc7e26932ca54a2",
+      "generatedAt": "2026-06-27T11:43:55.267Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 11947,
+      "promptTokens": 149,
+      "completionTokens": 1279
+    },
+    "verificationNotes.version-0-2-2-is-declared-in-library-properties-": {
+      "value": "Verze 0.2.2 je uvedena v souboru library.properties; na GitHubu nebylo publikováno žádné vydání.",
+      "sourceHash": "sha256:5a47fb0605ffce21acfaf3c0e864c410e3b79d536c68bec79673e55c0fa46057",
+      "generatedAt": "2026-06-27T11:44:01.108Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5841,
+      "promptTokens": 148,
+      "completionTokens": 854
+    },
+    "tags": {
+      "value": "[\"SDK\", \"protokol\", \"vestavěné\", \"Arduino\"]",
+      "sourceHash": "sha256:ef484d50ce94b3be1b175b3a99952c8dba240f8091892878206564afe544e06b",
+      "generatedAt": "2026-06-27T13:46:23.244Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15526,
+      "promptTokens": 138,
+      "completionTokens": 798
+    }
+  }
+}

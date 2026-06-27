@@ -1,0 +1,33 @@
+{
+  "resource": "firmware/easyskymesh",
+  "locale": "vi",
+  "fields": {
+    "description": {
+      "value": "Firmware MeshCore tối ưu tiết kiệm điện, tích hợp các tính năng nâng cao đang thử nghiệm và các bản sửa lỗi, dành cho việc triển khai bộ lặp và cảm biến siêu tiết kiệm năng lượng. Phiên bản này hướng tới việc kéo dài thời lượng pin (ví dụ: ~16µA khi tắt nguồn) với mục đích đưa các cải tiến ngược lên MeshCore.",
+      "sourceHash": "sha256:8954ebc43a4d9696ea9afed4ce07f448923acf5f7c2a5e17082a19ddd02e30b8",
+      "generatedAt": "2026-06-27T15:44:58.208Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6019,
+      "promptTokens": 181,
+      "completionTokens": 1040
+    },
+    "deviceNotes.xiao-esp32s3": {
+      "value": "Mức tiết kiệm điện năng thay đổi tùy theo phiên bản bo mạch.",
+      "sourceHash": "sha256:e106b2db9e31af9877e5d75db8ed875a5bad29caeb620dfd91ecd72b24fc9768",
+      "generatedAt": "2026-06-27T15:45:01.159Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 2950,
+      "promptTokens": 137,
+      "completionTokens": 472
+    },
+    "features": {
+      "value": "[\"Hoạt động siêu tiết kiệm điện năng (~16µA khi tắt nguồn)\",\"Tích hợp cảm biến\",\"Khởi động lại tự động / watchdog\",\"Truyền tin mạng mesh tầm xa\"]",
+      "sourceHash": "sha256:ada9a7e303d7fc83eecf0a85cd756872cf8ca4fc0740ac6402968e45f7f7a0cd",
+      "generatedAt": "2026-06-27T15:45:07.886Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 6726,
+      "promptTokens": 155,
+      "completionTokens": 928
+    }
+  }
+}

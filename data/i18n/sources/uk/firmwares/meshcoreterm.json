@@ -1,0 +1,51 @@
+{
+  "resource": "firmware/meshcoreterm",
+  "locale": "uk",
+  "fields": {
+    "description": {
+      "value": "Супутня прошивка з ретро-дизайном на основі MeshCore, оснащена багатофункціональною екранною клавіатурою, апаратною навігацією (D-pad, джойстик, трекбол) та функціями керування назвою пристрою, WiFi, PIN-кодом BLE, радіопараметрами й налаштуваннями GPS. Підтримує різні пристрої за допомогою готових бінарних файлів і не потребує онлайн-оновлення.",
+      "sourceHash": "sha256:04b6dcb5dc77fbed177c28f20ff0a6d5e5834ddaa834110b12608a6cd92dd861",
+      "generatedAt": "2026-06-27T15:37:27.961Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5962,
+      "promptTokens": 188,
+      "completionTokens": 1233
+    },
+    "deviceNotes.sensecap-indicator-espnow": {
+      "value": "Seeed SenseCAP Indicator (TFT-версія).",
+      "sourceHash": "sha256:358d3cb4801701a5ca30bd44c1a404d5e945d3fa4ac70726d44fe4000c4ff570",
+      "generatedAt": "2026-06-27T15:37:31.401Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 3435,
+      "promptTokens": 139,
+      "completionTokens": 503
+    },
+    "deviceNotes.thinknode-m3": {
+      "value": "Elecrow 3.5\" ThinkNode M3.",
+      "sourceHash": "sha256:c8d11c41466844ccc497d2796bd0d38e418741a5867f216fa1dfc4a62dc23d7a",
+      "generatedAt": "2026-06-27T15:37:46.934Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 15532,
+      "promptTokens": 142,
+      "completionTokens": 373
+    },
+    "deviceNotes.thinknode-m5": {
+      "value": "Elecrow 7\" ThinkNode M5.",
+      "sourceHash": "sha256:1a99e1898b2b259887261b363e8233540d247a7085dabe8d0d6a738b0f6a70ac",
+      "generatedAt": "2026-06-27T15:37:51.576Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 4642,
+      "promptTokens": 140,
+      "completionTokens": 546
+    },
+    "features": {
+      "value": "[\"Інтерфейс у ретро-стилі\",\"Екранна клавіатура з режимами великих/малих літер та символів\",\"Апаратна навігація (D-pad, джойстик, трекбол T-Deck)\",\"Керування пристроєм (ім'я, WiFi, PIN-код BLE, радіопараметри, GPS)\",\"Рядок стану зі значками транспорту та індикатором заряду батареї\",\"Збереження даних через NVS/Preferences\"]",
+      "sourceHash": "sha256:eefcd621537126a13a20b73612f742938cbe00b36b233d33bd0493d871a36639",
+      "generatedAt": "2026-06-27T15:37:56.881Z",
+      "model": "glm-5.2:cloud",
+      "durationMs": 5310,
+      "promptTokens": 191,
+      "completionTokens": 963
+    }
+  }
+}
