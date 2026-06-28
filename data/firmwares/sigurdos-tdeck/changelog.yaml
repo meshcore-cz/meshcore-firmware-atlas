@@ -1,7 +1,104 @@
 source: github
 repo: hermes-gadget/SigurdOS-tdeck
-updatedAt: '2026-06-24T03:23:03.235Z'
+updatedAt: '2026-06-28T13:52:12.369Z'
 releases:
+  - version: beta-0.1.43-RC5
+    name: beta-0.1.43-RC5
+    datetime: '2026-06-28T13:43:54Z'
+    url: https://github.com/hermes-gadget/SigurdOS-tdeck/releases/tag/beta-0.1.43-RC5
+    prerelease: true
+    notes: >-
+      ## beta-0.1.43-RC5
+
+
+      Release candidate 5 toward stable-1.0.0. 41 commits, 38 files changed (+2,437 / −226 lines).
+
+
+      ### 🔒 Security
+
+      - **Decoupled BLE PIN from screen-lock PIN** — random BLE pairing PIN stored separately,
+      preventing Settings/Terminal lockout on first boot
+
+      - Per-device random BLE PIN (replaced hardcoded 123456) (#742, #743)
+
+      - PIN grace timing switched from mesh epoch to millis() (#740, #741)
+
+      - Reproducible WebServer security patches in CI + OTA CSRF protection (#725)
+
+      - SPIFFS.begin(false) + removed nvs_flash_erase from factory reset (#744, #745)
+
+      - URL-encoding for contact/channel names in MeshCore QR share URIs (#738, #739)
+
+
+      ### 🆕 Companion Protocol (Major)
+
+      - Complete companion settings, telemetry, flood scope, and login frames (#732, #733)
+
+      - USB serial companion transport (#737, #736)
+
+      - Missing upstream command families and advert path semantics (#734, #735)
+
+      - Fixed companion channel slots and slot clearing (#730, #731)
+
+      - Per-message companion delivery tracking and metadata preservation (#726, #727)
+
+      - Contact crypto state reload after companion private-key import (#728, #729)
+
+      - Companion compatibility audit (#723)
+
+
+      ### 🐛 Stability & Crash Fixes
+
+      - SD card zero-length write support and display boot loop recovery (#748, #749)
+
+      - LVGL async deletion + lv_obj_is_valid() guard in chat screen (#711, #714, #719)
+
+      - UTF-8 truncation: strip orphaned multi-byte start bytes (#708, #718)
+
+      - 22-day persistence gap: modulo arithmetic for save_counter (#707, #717)
+
+      - Atomic message store writes to prevent data loss on power failure (#713, #721)
+
+      - 4-byte blob key prefix to prevent hash collisions (#706, #716)
+
+      - Clear companion bridge signing state on BLE disconnect (#712, #720)
+
+      - Trace timer UAF on rapid contact taps (#697)
+
+      - Click button deadtime enforcement (#696)
+
+      - Div-by-zero guard in battery percentage lookup (#699)
+
+      - Sender timestamp for incoming messages (#698)
+
+      - I2C clock moved to shared init at 400 kHz (#705)
+
+      - Input and small-screen reliability improvements (#746, #747)
+
+
+      ### 🔧 Build & CI
+
+      - Upgraded Espressif32 platform 6.11.0 → 7.0.1
+
+      - Fixed CI esptool merged binary step (installed intelhex)
+
+      - Included webflasher assets in release artifacts
+
+
+      ### 📝 Documentation
+
+      - Audit documentation: all findings resolved or marked
+
+      - Removed stale binary
+
+      - PR merge log for 2026-06-26 batch review
+
+
+      ---
+
+
+      **Full Changelog**:
+      https://github.com/hermes-gadget/SigurdOS-tdeck/compare/beta-0.1.42-RC4...beta-0.1.43-RC5
   - version: beta-0.1.42-RC4
     name: beta-0.1.42-RC4
     datetime: '2026-06-20T21:09:13Z'
@@ -1593,24 +1690,3 @@ releases:
 
       **Full Changelog**:
       https://github.com/hermes-gadget/SlopOS-tdeck/compare/beta-0.1.24...beta-0.1.25
-  - version: beta-0.1.24
-    name: beta-0.1.24
-    datetime: '2026-05-15T22:58:41Z'
-    url: https://github.com/hermes-gadget/SigurdOS-tdeck/releases/tag/beta-0.1.24
-    prerelease: true
-    notes: >-
-      **SlopOS T-Deck Firmware** — beta-0.1.24
-
-
-      | File | Use |
-
-      |------|-----|
-
-      | `firmware.bin` | OTA update (app only, flash at 0x10000) |
-
-      | `firmware-merged.bin` | Full flash (bootloader + partitions + app, flash at 0x0) |
-
-
-
-      **Full Changelog**:
-      https://github.com/hermes-gadget/SlopOS-tdeck/compare/beta-0.1.23...beta-0.1.24
