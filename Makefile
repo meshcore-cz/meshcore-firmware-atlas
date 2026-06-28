@@ -8,6 +8,7 @@ API_DIR    := api
 API_BIN    := $(API_DIR)/bin/meshcore-ninja-api
 API_ADDR   ?= :8089
 DATA_DIR   ?= data
+TANGLEVEIL_URL ?= wss://tangleveil.meshcore.ninja/ws
 GO         ?= go
 NPM        ?= npm
 REMOTE     ?= origin
@@ -114,7 +115,7 @@ build-api: ## Compile the Go API to api/bin/
 
 .PHONY: run-api
 run-api: ## Run the Go API (override DATA_DIR/API_ADDR as needed)
-	cd $(API_DIR) && $(GO) run . --data ../$(DATA_DIR) --addr $(API_ADDR)
+	cd $(API_DIR) && $(GO) run . --data ../$(DATA_DIR) --addr $(API_ADDR) --tangleveil $(TANGLEVEIL_URL)
 
 .PHONY: test-api
 test-api: ## Run Go tests
