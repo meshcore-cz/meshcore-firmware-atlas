@@ -1,0 +1,93 @@
+name: PommeCore
+kind: client
+status: active
+maturity: beta
+description: >-
+  Native SwiftUI companion app for MeshCore LoRa mesh radio devices running on
+  iPhone, iPad, Mac, and Apple Watch, with messaging, mesh map, RF tools,
+  line-of-sight analysis, remote administration, and OTA firmware updates.
+image: pommecore.jpg
+screenshots:
+  - file: screen-1.webp
+  - file: screen-2.webp
+  - file: screen-3.webp
+  - file: screen-4.webp
+
+maintainers:
+  - name: mbedworth
+    url: https://github.com/mbedworth
+
+repository: https://github.com/mbedworth/PommeCore
+documentation: https://github.com/mbedworth/PommeCore/tree/main/docs
+license: Apache-2.0
+
+languages:
+  - swift
+
+platforms:
+  - ios
+  - ipados
+  - macos
+  - watchos
+interfaces:
+  - mobile
+  - gui
+connections:
+  - ble
+  - tcp
+  - usb
+node_roles:
+  - companion
+  - repeater
+  - room-server
+capabilities:
+  - messaging
+  - contacts
+  - channels
+  - node-configuration
+  - remote-administration
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - mapping
+  - notifications
+  - key-management
+  - firmware-update
+
+install:
+  - type: app-store
+    package: App Store
+    url: https://apps.apple.com/app/pommecore/id6760626211
+  - type: source
+    url: https://github.com/mbedworth/PommeCore
+
+popularity:
+  githubStars: 1
+  githubForks: 0
+  githubWatchers: 1
+  githubOpenIssues: 0
+  githubContributors: 1
+  lastChecked: 2026-06-29
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: false
+  signedReleases: false
+  ciBuilds: false
+  hasDocumentation: true
+  lastChecked: 2026-06-29
+  notes:
+    - Requires iOS or iPadOS 18.0, macOS 15.0 (Apple Silicon or Intel), or watchOS 11.0.
+    - Build from source with Xcode 16+; also available on the App Store.
+    - Messages and contacts are interoperable with MeshCore One.
+
+tags:
+  - apple
+  - native
+  - offline
+  - rf-analysis
+  - remote-terminal
+  - watchos
+  - icloud
+
+last_reviewed: 2026-06-29

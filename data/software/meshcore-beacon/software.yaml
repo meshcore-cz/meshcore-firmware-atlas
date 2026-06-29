@@ -1,0 +1,91 @@
+name: MeshCore Beacon
+short_name: Beacon
+kind: monitoring
+status: active
+maturity: beta
+description: >-
+  Real-time LoRa mesh network observation stack: a Go backend subscribes to
+  MeshCore MQTT brokers, decodes and deduplicates packets, stores nodes, routes,
+  traces and channel messages in PostgreSQL, and streams live events via
+  WebSocket and REST API — paired with a React web frontend for packet
+  inspection, node tracking, channel messages, stats and mesh maps.
+
+image: beacon.png
+
+maintainers:
+  - name: MeshCore-Beacon
+    url: https://github.com/MeshCore-Beacon
+
+repository: https://github.com/MeshCore-Beacon/beacon-server
+documentation: https://github.com/MeshCore-Beacon/beacon-docs
+license: AGPL-3.0
+
+languages:
+  - go
+  - typescript
+
+latest_version: v1.5.4
+released: 2026-06-24
+
+platforms:
+  - docker
+  - linux
+  - web
+interfaces:
+  - web
+  - api
+connections:
+  - mqtt
+  - websocket
+  - http
+capabilities:
+  - monitoring
+  - telemetry
+  - packet-analysis
+  - mapping
+  - bridging
+
+install:
+  - type: docker-compose
+    url: https://github.com/MeshCore-Beacon/beacon-docs
+  - type: docker
+    package: ghcr.io/meshcore-beacon/beacon-server
+    url: https://github.com/MeshCore-Beacon/beacon-server/pkgs/container/beacon-server
+  - type: docker
+    package: ghcr.io/meshcore-beacon/beacon-web
+    url: https://github.com/MeshCore-Beacon/beacon-web/pkgs/container/beacon-web
+  - type: source
+    url: https://github.com/MeshCore-Beacon/beacon-server
+  - type: source
+    url: https://github.com/MeshCore-Beacon/beacon-web
+
+popularity:
+  githubStars: 6
+  githubForks: 1
+  githubWatchers: 6
+  githubOpenIssues: 8
+  githubContributors: 3
+  releaseDownloads: 2
+  lastChecked: 2026-06-29
+
+verification:
+  sourceAvailable: true
+  releasesAvailable: true
+  signedReleases: false
+  ciBuilds: true
+  hasDocumentation: true
+  lastChecked: 2026-06-29
+  notes:
+    - API authentication is not yet implemented; intended for trusted internal or reverse-proxy deployments.
+    - Full-stack Docker Compose configs (server + web + PostgreSQL + Redis + Caddy TLS) are in the beacon-docs repo.
+    - Swagger UI available at /swagger/index.html on a running instance.
+
+tags:
+  - self-hosted
+  - postgresql
+  - redis
+  - rest-api
+  - websocket-api
+  - react
+
+last_reviewed: 2026-06-29
