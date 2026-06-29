@@ -1,0 +1,55 @@
+name: PiMesh-1W
+vendorId: meshsmith
+kind: product
+category: companion-radio
+lifecycle: active
+product_url: https://shop.meshsmith.net/products/pimesh-1w-basic
+price:
+  amount: 60
+  currency: USD
+  asOf: 2026-06
+  url: https://shop.meshsmith.net/products/pimesh-1w-basic
+description: >-
+  1-watt LoRa HAT for Raspberry Pi (full-size and Zero-style boards) built
+  around the Ebyte E22P (SX1262 compatible) radio module. Delivers 30 dBm
+  transmit power for long-range repeater and gateway deployments. Optional GPS
+  (ATGM336H), optional PoE module (Pi 3/4 or Pi 5 headers), and a Stemma
+  QT/Qwiic I2C port for sensors. Sold in 915 MHz and 868 MHz variants.
+image: pimesh-1w.svg
+roles:
+  - repeater
+  - room-server
+transports:
+  - tcp
+  - usb
+variants:
+  - name: 915 MHz
+    bands:
+      - "915"
+  - name: 868 MHz
+    bands:
+      - "868"
+hardware:
+  mcu: {}
+  radios:
+    - technology: lora
+      chip: sx1262
+      txPowerDbm: 30
+      bands:
+        - "868"
+        - "915"
+      antenna: SMA
+  display:
+    status: none
+  gnss:
+    status: present
+    chip: ATGM336H
+  power:
+    batterySupported: false
+    batteryBuiltIn: false
+    solarInput: false
+  expansion:
+    - type: stemma-qt
+      count: 1
+      interfaces:
+        - I2C

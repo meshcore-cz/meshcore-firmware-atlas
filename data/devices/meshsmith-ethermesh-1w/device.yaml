@@ -1,0 +1,60 @@
+name: EtherMesh-1W
+vendorId: meshsmith
+kind: kit
+category: standalone
+lifecycle: active
+product_url: https://shop.meshsmith.net/products/ethermesh-1w
+price:
+  amount: 60
+  currency: USD
+  asOf: 2026-06
+  url: https://shop.meshsmith.net/products/ethermesh-1w
+description: >-
+  Fixed-install MeshCore node combining the Waveshare ESP32-P4-POE development
+  platform with MeshSmith's 1-watt Ebyte E22P LoRa radio (30 dBm). Designed
+  for tower, rooftop, and backbone deployments with hardwired Ethernet. PoE
+  powered via a Waveshare PoE module; USB and PoE can be connected
+  simultaneously. No GPS or display — just the essentials for a reliable fixed
+  repeater or gateway. Sold in 915 MHz and 868 MHz variants.
+image: ethermesh-1w.svg
+roles:
+  - repeater
+  - room-server
+transports:
+  - ethernet
+  - tcp
+  - usb
+variants:
+  - name: 915 MHz
+    bands:
+      - "915"
+  - name: 868 MHz
+    bands:
+      - "868"
+hardware:
+  mcu:
+    model: esp32-p4
+  radios:
+    - technology: lora
+      chip: sx1262
+      txPowerDbm: 30
+      bands:
+        - "868"
+        - "915"
+      antenna: SMA
+  display:
+    status: none
+  gnss:
+    status: none
+  power:
+    batterySupported: false
+    batteryBuiltIn: false
+    solarInput: false
+interfaces:
+  usb:
+    connector: USB-C
+    capabilities:
+      - power
+      - serial
+  wifi:
+    status: none

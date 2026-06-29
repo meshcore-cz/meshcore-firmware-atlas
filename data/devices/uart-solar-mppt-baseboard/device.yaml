@@ -18,6 +18,7 @@ description: >-
   7–30 V, supports 1S Li-Ion/Li-Pol/LiFePO4 and 1S/2S LTO batteries with a
   3.3V buck/boost converter. No enclosure, panel, or battery included; meant
   to be built into a custom off-grid Meshtastic/MeshCore/Reticulum node.
+image: uart-solar-mesh-baseboard.svg
 roles:
   - companion
   - repeater

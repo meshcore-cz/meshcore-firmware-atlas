@@ -1,0 +1,8 @@
+name: MeshSmith
+website: https://meshsmith.net
+country: United States
+description: >-
+  MeshSmith designs and hand-builds high-power 1W LoRa hardware for MeshCore
+  and Meshtastic, including Raspberry Pi HATs, solar-ready embedded boards, and
+  ethernet-first fixed-install nodes.
+logo: MeshSmithLogo.png

@@ -1,0 +1,65 @@
+name: Photon-1W
+vendorId: meshsmith
+kind: kit
+category: development-board
+lifecycle: active
+product_url: https://shop.meshsmith.net/products/photon-1w
+price:
+  amount: 65
+  currency: USD
+  asOf: 2026-06
+  url: https://shop.meshsmith.net/products/photon-1w
+description: >-
+  1-watt LoRa board built for the Seeed Xiao MCU ecosystem with an Ebyte E22P
+  (SX1262) radio delivering 30 dBm output and a built-in ATGM336H GPS. Ships
+  as a $65 DIY kit (no MCU), a $75 build with a Xiao nRF52840 or ESP32-C6, or
+  $95 with solar management and a 3×18650 holder using the Waveshare Solar
+  Power Manager (D). Power-source agnostic: the main board has no built-in
+  charger — external regulated 5 V powers the board. Battery sense connector
+  for monitoring charge state. Stemma QT/Qwiic I2C expansion port included.
+image: photon-1w.svg
+roles:
+  - companion
+  - repeater
+  - room-server
+transports:
+  - ble
+  - usb
+variants:
+  - name: 915 MHz
+    bands:
+      - "915"
+  - name: 868 MHz
+    bands:
+      - "868"
+hardware:
+  mcu: {}
+  radios:
+    - technology: lora
+      chip: sx1262
+      txPowerDbm: 30
+      bands:
+        - "868"
+        - "915"
+      antenna: SMA
+  display:
+    status: none
+  gnss:
+    status: present
+    chip: ATGM336H
+  power:
+    batterySupported: true
+    batteryBuiltIn: false
+    solarInput: true
+    charging: false
+  expansion:
+    - type: stemma-qt
+      count: 1
+      interfaces:
+        - I2C
+interfaces:
+  bluetooth:
+    ble: true
+  wifi:
+    status: present
+    standard: 802.11 b/g/n/ax
