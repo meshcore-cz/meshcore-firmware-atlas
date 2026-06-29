@@ -1,0 +1,42 @@
+# Source: https://idahomesh.org/meshcore/
+name: Idaho Mesh
+short_name: Idaho Mesh
+description: >-
+  MeshCore community for Idaho, with an active and growing mesh in Southwest
+  Idaho (Treasure Valley) and developing coverage in North and Eastern Idaho.
+  Uses the standard USA/Canada preset.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - US
+
+regions:
+  - code: us
+    name: United States
+  - code: idaho
+    name: Idaho
+    parent: us
+
+radio:
+  frequency: "915"
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/5
+  public_channel: idahomesh
+
+community:
+  website: https://idahomesh.org
+  discord: https://discord.gg/8mKr4RCznS
+
+maps:
+  - name: MeshCore Network Map
+    url: https://meshcore.co.uk/map.html
+
+analyzers:
+  - name: analyzer.letsmesh.net
+    url: https://analyzer.letsmesh.net

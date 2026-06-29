@@ -1,0 +1,47 @@
+# Source: https://meshcoretx.net/
+name: MeshCore TX
+short_name: MeshCore TX
+description: >-
+  Community standard for MeshCore in Texas. Publishes recommended radio
+  parameters to give Texas nodes a guard-band separation from Meshtastic
+  at 906.875 MHz. Two presets: one for users migrating fully from
+  Meshtastic and one for running concurrent networks or new meshes.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - US
+
+regions:
+  - code: us
+    name: United States
+  - code: texas
+    name: Texas
+    parent: us
+
+radios:
+  - name: TX Primary (Meshtastic migration)
+    description: For nodes switching fully from Meshtastic. Provides guard-band separation from 906.875 MHz.
+    frequency: "915"
+    frequency_mhz: 907.875
+    bandwidth_khz: 62.5
+    spreading_factor: 7
+    coding_rate: 4/5
+  - name: TX Secondary (concurrent / new mesh)
+    description: For running a new or concurrent mesh alongside Meshtastic.
+    frequency: "915"
+    frequency_mhz: 910.525
+    bandwidth_khz: 62.5
+    spreading_factor: 7
+    coding_rate: 4/5
+
+community:
+  website: https://meshcoretx.net/
+
+resources:
+  links:
+    - name: Texas meshes directory
+      url: https://meshcoretx.net/meshes/
