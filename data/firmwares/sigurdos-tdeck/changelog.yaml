@@ -1,7 +1,126 @@
 source: github
 repo: hermes-gadget/SigurdOS-tdeck
-updatedAt: '2026-06-24T03:23:03.235Z'
+updatedAt: '2026-06-28T15:20:02.458Z'
 releases:
+  - version: beta-0.1.43-RC5
+    name: beta-0.1.43-RC5
+    datetime: '2026-06-28T13:56:23Z'
+    url: https://github.com/hermes-gadget/SigurdOS-tdeck/releases/tag/beta-0.1.43-RC5
+    prerelease: true
+    notes: >-
+      **SigurdOS T-Deck Firmware** — beta-0.1.43-RC5
+
+
+      ### Flash with esptool
+
+      ```bash
+
+      # Full flash (first install):
+
+      esptool.py --chip esp32s3 --port /dev/ttyACM0 write_flash 0x0 firmware-merged.bin
+
+
+      # App update (keep settings):
+
+      esptool.py --chip esp32s3 --port /dev/ttyACM0 \
+        write_flash 0x10000 firmware.bin
+      ```
+
+
+      ### Web Flasher
+
+      Use `manifest.json` with [esptool.js](https://espressif.github.io/esptool-js/).
+
+
+      | File | Use |
+
+      |------|-----|
+
+      | `firmware.bin` | App only (flash at 0x10000) |
+
+      | `firmware-merged.bin` | Full flash (flash at 0x0) |
+
+      | `SigurdOS-tdeck-launcher.bin` | For bmorcelli/Launcher install |
+
+      | `firmware-debug.bin` | Debug build with verbose logging |
+
+      | `manifest.json` | Web flasher manifest |
+
+      | `sigurdos-tdeck-bootloader.bin` | Bootloader (web flasher) |
+
+      | `sigurdos-tdeck-partitions.bin` | Partition table (web flasher) |
+
+      | `sigurdos-tdeck-boot_app0.bin` | Boot app0 (web flasher) |
+
+      | `sigurdos-tdeck-firmware.bin` | App firmware (web flasher) |
+
+      | `sigurdos-tdeck-full.bin` | Full image (web flasher) |
+
+
+
+      ## What's Changed
+
+      * fix: add click button deadtime enforcement by @hermes-gadget in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/696
+
+      * fix: prevent trace timer UAF on rapid contact taps by @hermes-gadget in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/697
+
+      * fix: use sender timestamp for incoming messages by @hermes-gadget in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/698
+
+      * fix: add div-by-zero guard to battery percentage lookup by @hermes-gadget in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/699
+
+      * docs: remove stale binary and add audit documentation by @hermes-gadget in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/700
+
+      * fix: move I2C clock to shared init at 400 kHz by @hermes-gadget in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/705
+
+      * fix: use 4-byte blob key prefix to prevent hash collisions (Closes #706) by @hermes-gadget
+      in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/716
+
+      * fix: clear companion bridge signing state on BLE disconnect (Closes #712) by @hermes-gadget
+      in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/720
+
+      * fix: use atomic rename for message store updates to prevent data loss on power failure
+      (Closes #713) by @hermes-gadget in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/721
+
+      * fix: use modulo arithmetic for save_counter to prevent 22-day persistence gap (Closes #707)
+      by @hermes-gadget in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/717
+
+      * fix: strip orphaned UTF-8 multi-byte start byte after truncation (Closes #708) by
+      @hermes-gadget in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/718
+
+      * fix: use lv_obj_del_async() and add lv_obj_is_valid() guard in chat screen (Closes #711,
+      Closes #714) by @hermes-gadget in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/719
+
+      * [codex] Add companion compatibility audit by @gadgethd in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/723
+
+      * Fix reproducible WebServer security patches in CI by @gadgethd in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/725
+
+      * fix: use millis() for PIN grace timing instead of mesh epoch (Closes #740) by @hermes-gadget
+      in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/741
+
+      * fix: generate random per-device BLE PIN instead of hardcoded 123456 (Closes #742) by
+      @hermes-gadget in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/743
+
+      * fix: use SPIFFS.begin(false) and remove nvs_flash_erase from factory reset (Closes #744) by
+      @hermes-gadget in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/745
+
+      * fix: input and small-screen reliability improvements (Closes #746) by @hermes-gadget in
+      https://github.com/hermes-gadget/SigurdOS-tdeck/pull/747
+
+      * fix: per-message companion delivery tracking and metadata preservation (Closes #726) by
+      @hermes-gadget in https://github.com/hermes-gadget/SigurdOS-tdeck/pull/727
+
+      * fix: reload contact crypto state after companion private-key import (Closes #728) by
+      @hermes-gadget in https://github.com/hermes-gadget/S
+
+      …
   - version: beta-0.1.42-RC4
     name: beta-0.1.42-RC4
     datetime: '2026-06-20T21:09:13Z'
@@ -1593,24 +1712,3 @@ releases:
 
       **Full Changelog**:
       https://github.com/hermes-gadget/SlopOS-tdeck/compare/beta-0.1.24...beta-0.1.25
-  - version: beta-0.1.24
-    name: beta-0.1.24
-    datetime: '2026-05-15T22:58:41Z'
-    url: https://github.com/hermes-gadget/SigurdOS-tdeck/releases/tag/beta-0.1.24
-    prerelease: true
-    notes: >-
-      **SlopOS T-Deck Firmware** — beta-0.1.24
-
-
-      | File | Use |
-
-      |------|-----|
-
-      | `firmware.bin` | OTA update (app only, flash at 0x10000) |
-
-      | `firmware-merged.bin` | Full flash (bootloader + partitions + app, flash at 0x0) |
-
-
-
-      **Full Changelog**:
-      https://github.com/hermes-gadget/SlopOS-tdeck/compare/beta-0.1.23...beta-0.1.24

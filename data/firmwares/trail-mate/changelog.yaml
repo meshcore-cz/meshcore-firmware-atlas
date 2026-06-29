@@ -1,13 +1,13 @@
 source: github
 repo: vicliu624/trail-mate
-updatedAt: '2026-06-28T08:56:44.703Z'
+updatedAt: '2026-06-28T17:16:19.586Z'
 releases:
   - version: v0.1.33-alpha
     name: v0.1.33-alpha
     datetime: '2026-06-28T06:24:08Z'
     url: https://github.com/vicliu624/trail-mate/releases/tag/v0.1.33-alpha
     prerelease: true
-    notes: "## [0.1.33-alpha] - 2026-06-28\r\n### Fixed / 修复\r\n- Fixed Meshtastic Android/iOS peer identity projection for MQTT map-report nodes by decoding `MAP_REPORT_APP` through the shared node metadata path, preserving public-key state correctly, and preventing map reports from being retransmitted as normal LoRa downlink packets. / 修复 Meshtastic Android/iOS 中 MQTT 地图上报节点的对方身份展示：通过共享节点元数据路径解析 `MAP_REPORT_APP`，正确保留公钥状态，并防止地图上报被当成普通 LoRa 下行包转发。\r\n- Fixed route/track file loading so GPX and KML files are parsed through bounded streaming readers, including KML `<coordinates>` token parsing and active route overlay loading from `route_path`. / 修复路线/轨迹文件加载：GPX 与 KML 均通过有界流式读取解析，包括 KML `<coordinates>` token 流式解析，以及从 `route_path` 加载活动路线 overlay。\r\n\r\n\n\n## What's Changed\n* fix gpx track crash by @vicliu624 in https://github.com/vicliu624/trail-mate/pull/65\n* Fix pager lr1121 by @vicliu624 in https://github.com/vicliu624/trail-mate/pull/66\n* Prepare nRF52 BLE and UF2 prerelease by @vicliu624 in https://github.com/vicliu624/trail-mate/pull/67\n\n\n**Full Changelog**: https://github.com/vicliu624/trail-mate/compare/v0.1.30-alpha...v0.1.33-alpha"
+    notes: "## [0.1.33-alpha] - 2026-06-28\r\n### Fixed / 修复\r\n- Fixed Meshtastic Android/iOS peer identity projection for MQTT map-report nodes by decoding `MAP_REPORT_APP` through the shared node metadata path, preserving public-key state correctly, and preventing map reports from being retransmitted as normal LoRa downlink packets. / 修复 Meshtastic Android/iOS 中 MQTT 地图上报节点的对方身份展示：通过共享节点元数据路径解析 `MAP_REPORT_APP`，正确保留公钥状态，并防止地图上报被当成普通 LoRa 下行包转发。\r\n- Fixed route/track file loading so GPX and KML files are parsed through bounded streaming readers, including KML `<coordinates>` token parsing and active route overlay loading from `route_path`. / 修复路线/轨迹文件加载：GPX 与 KML 均通过有界流式读取解析，包括 KML `<coordinates>` token 流式解析，以及从 `route_path` 加载活动路线 overlay。\r\n\r\n\n\n**Full Changelog**: https://github.com/vicliu624/trail-mate/compare/v0.1.32-alpha...v0.1.33-alpha"
   - version: v0.1.32-alpha
     name: v0.1.32-alpha
     datetime: '2026-06-28T05:37:25Z'
