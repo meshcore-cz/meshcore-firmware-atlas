@@ -82,7 +82,8 @@ export const LOCALE_META = {
     ogLocale: 'isv',
     greeting: 'Privět! Ta stranica jest takože dostupna na medžuslovjanskom jezyku.',
     cta: 'Pogleděti na medžuslovjanskom',
-    dismiss: 'Zatvoriti'
+    dismiss: 'Zatvoriti',
+    hidden: true
   }
 };
 

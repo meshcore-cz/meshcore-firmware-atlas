@@ -25,7 +25,8 @@
   let currentPath = $derived(routePath($page.url.pathname));
   let active = $derived(getLocale());
 
-  const items = locales.map((loc) => ({ value: loc, label: meta(loc).name }));
+  const visibleLocales = locales.filter((loc) => !LOCALE_META[loc]?.hidden);
+  const items = visibleLocales.map((loc) => ({ value: loc, label: meta(loc).name }));
 
   function onValueChange(loc) {
     if (loc && loc !== active && typeof window !== 'undefined') {
@@ -50,7 +51,7 @@
       sideOffset={6}
     >
       <Select.Viewport>
-        {#each locales as loc (loc)}
+        {#each visibleLocales as loc (loc)}
           <Select.Item
             value={loc}
             label={meta(loc).name}
