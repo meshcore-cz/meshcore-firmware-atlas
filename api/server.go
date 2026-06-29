@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"sort"
 	"strings"
+	"time"
 )
 
 // Server exposes the read-only REST API the frontend polls.
@@ -565,13 +566,16 @@ func (s *Server) handleSearch(w http.ResponseWriter, r *http.Request) {
 		limit = maxSearchLimit
 	}
 
+	started := time.Now()
 	results, total, capped := s.mergedSearch(p, limit)
+	computeMS := float64(time.Since(started).Microseconds()) / 1000
 	w.Header().Set("Cache-Control", "public, max-age=15")
 	writeJSON(w, http.StatusOK, map[string]any{
-		"results":  results,
-		"returned": len(results),
-		"total":    total,
-		"capped":   capped,
+		"results":   results,
+		"returned":  len(results),
+		"total":     total,
+		"capped":    capped,
+		"computeMs": computeMS,
 	})
 }
 
