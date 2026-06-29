@@ -1,0 +1,51 @@
+name: STMesh
+also_known_as:
+- Southern Tier Mesh
+- Southern Tier NY Mesh
+short_name: STMesh
+description: Community-built LoRa mesh networks across New York's Southern Tier,
+  covering both Meshtastic and MeshCore deployments.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+coverage:
+  countries:
+  - US
+regions:
+- code: us
+  name: United States
+- code: us-ny
+  name: New York
+  parent: us
+- code: us-ny-st
+  name: Southern Tier
+  parent: us-ny
+radios:
+- name: USA/Canada (Southern Tier)
+  frequency: '915'
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/5
+  tx_power_dbm: 22
+  public_channel: Public
+community:
+  website: https://www.stmesh.net/
+  discord: https://discord.gg/FwMV4M59DF
+maps:
+- name: STMesh Meshtastic Map
+  url: https://www.stmesh.net/stmesh/stmeshtastic.html
+- name: STMeshCore Map
+  url: https://www.stmesh.net/stmesh/stmeshcore.html
+analyzers:
+# needs login
+#- name: STMesh CoreScope
+#  url: https://corescope.stmesh.net/
+resources:
+  getting_started: https://www.stmesh.net/docs/
+  links:
+  - name: STMeshtastic
+    url: https://www.stmesh.net/stmesh/stmeshtastic.html
+  - name: STMeshCore
+    url: https://www.stmesh.net/stmesh/stmeshcore.html

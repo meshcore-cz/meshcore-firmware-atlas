@@ -1,0 +1,38 @@
+# Source: https://corescope.firstroute.net/api/observers
+name: Berlin Mesh
+short_name: Berlin Mesh
+description: >-
+  MeshCore community for Berlin and the surrounding Brandenburg region,
+  using EU/UK Narrow settings on 869.618 MHz.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+
+coverage:
+  countries:
+    - DE
+
+regions:
+  - code: europe
+    name: Europe
+  - code: eu
+    name: European Union
+  - code: de
+    name: Germany
+  - code: de-berlin
+    name: Berlin
+    parent: de
+
+radio:
+  frequency: "868"
+  frequency_mhz: 869.618
+  bandwidth_khz: 62.5
+  spreading_factor: 8
+  coding_rate: 4/8
+  tx_power_dbm: 22
+  duty_cycle_pct: 10
+
+analyzers:
+  - name: corescope.firstroute.net
+    url: https://corescope.firstroute.net
