@@ -215,7 +215,7 @@ function cleanGeneratedDir(root, dir) {
   rmSync(join(root, 'static', dir), { recursive: true, force: true });
 }
 
-function buildRecordJson(root, { devices, firmwares, vendors, networks, software, compatibility }) {
+function buildRecordJson(root, { devices, firmwares, vendors, networks, software, compatibility, globals }) {
   for (const dir of ['device', 'firmware', 'vendor', 'network', 'software', 'compatibility']) {
     cleanGeneratedDir(root, dir);
   }
@@ -269,6 +269,10 @@ function buildRecordJson(root, { devices, firmwares, vendors, networks, software
   ]) {
     writeJsonRecord(join(root, 'static', `${name}.json`), records);
   }
+
+  // Catalog slices from data/globals.yaml — verbatim, no derived fields.
+  writeJsonRecord(join(root, 'static', 'bands.json'), globals.frequency ?? {});
+  writeJsonRecord(join(root, 'static', 'globals.json'), globals);
 
   return count;
 }
@@ -750,7 +754,15 @@ export async function buildData(root = defaultRoot) {
 
   return {
     ...dataset.counts,
-    recordsJson: buildRecordJson(root, { devices, firmwares, vendors, networks, software, compatibility }),
+    recordsJson: buildRecordJson(root, {
+      devices,
+      firmwares,
+      vendors,
+      networks,
+      software,
+      compatibility,
+      globals
+    }),
     sitemapUrls,
     releaseFeedItems,
     bundleBytes

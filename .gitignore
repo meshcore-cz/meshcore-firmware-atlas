@@ -11,6 +11,8 @@ node_modules
 /static/networks.json
 /static/compatibility.json
 /static/software.json
+/static/bands.json
+/static/globals.json
 /static/schema/
 /static/device/
 /static/firmware/
