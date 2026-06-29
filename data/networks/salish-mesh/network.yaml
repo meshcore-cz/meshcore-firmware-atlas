@@ -1,0 +1,44 @@
+name: Salish Mesh
+also_known_as:
+- Salish Mesh Network
+short_name: Salish Mesh
+description: MeshCore community network serving the Salish Sea region of southwest
+  British Columbia and surrounding areas.
+scope: regional
+status: active
+visibility: public
+area: area.geojson
+coverage:
+  countries:
+  - CA
+regions:
+- code: ca
+  name: Canada
+- code: ca-bc
+  name: British Columbia
+  parent: ca
+- code: ca-bc-sw
+  name: Southwest BC
+  parent: ca-bc
+radios:
+- name: North America 915 MHz
+  frequency: '915'
+  frequency_mhz: 910.525
+  bandwidth_khz: 62.5
+  spreading_factor: 7
+  coding_rate: 4/5
+  tx_power_dbm: 22
+  public_channel: Public
+community:
+  website: https://salishmesh.net/
+maps:
+- name: Southwest BC Coverage
+  url: https://swbc.meshmapper.net/?coverage-only
+resources:
+  links:
+  - name: Salish Mesh About
+    url: https://salishmesh.net/about/
+  - name: Coverage
+    url: https://salishmesh.net/coverage/
+  - name: How-To
+    url: https://salishmesh.net/how-to/
