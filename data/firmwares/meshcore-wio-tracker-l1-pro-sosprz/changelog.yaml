@@ -1,7 +1,13 @@
 source: github
 repo: sosprz/Meshcore-Wio-Tracker-L1-Pro
-updatedAt: '2026-06-26T17:51:18.664Z'
+updatedAt: '2026-06-29T21:28:27.831Z'
 releases:
+  - version: v1.16.88
+    name: v1.16.88
+    datetime: '2026-06-29T20:16:59Z'
+    url: https://github.com/sosprz/Meshcore-Wio-Tracker-L1-Pro/releases/tag/v1.16.88
+    prerelease: false
+    notes: "- **LoRaGotchi MVP** - Added `Tools -> LoRaGotchi` mesh pet that derives level, mood, stats, and five badges from existing local packet/contact counters.\r\n- **Sound mute/volume split** - Triple-back now only mutes or unmutes sound, while the Sound UI cycles the selected volume level separately."
   - version: v1.16.87
     name: v1.16.87
     datetime: '2026-06-26T15:59:56Z'
@@ -136,9 +142,3 @@ releases:
     url: https://github.com/sosprz/Meshcore-Wio-Tracker-L1-Pro/releases/tag/v1.13.0.66
     prerelease: false
     notes: "- **ROOM send gate hardening** - Sending to ROOM now requires an active transport session (not only short post-login fallback state), reducing cases where UI showed delivered `*` but the room server did not publish the message.\r\n- **ROOM send/read session alignment** - ROOM send now also accepts recent confirmed ROOM traffic as a valid send-session signal, reducing cases where reading/receiving worked but compose still asked for the password again.\r\n- **ROOM send grace after login** - After a successful ROOM login, compose now gets a short send window immediately, so sending right after auth does not re-prompt for the room password while transport/session flags catch up.\r\n- **Remote Admin (repeaters + rooms)** - Added one shared `Admin` submenu for repeaters and room servers with admin login, remote tools (`Sync time`, `Show time`, `Stats`, `Telemetry`, `Send advert`, `Owner info`, `Neighbours`), saved-password hint, proper scrolling, popup-based progress/results, and clearer neighbour list / empty-state handling.\r\n- **Radio Settings bug fix** - `Power` now changes directly with `LEFT/RIGHT` when highlighted (instead of page up/down taking over)"
-  - version: v1.13.0.65
-    name: v1.13.0.65
-    datetime: '2026-02-28T17:07:15Z'
-    url: https://github.com/sosprz/Meshcore-Wio-Tracker-L1-Pro/releases/tag/v1.13.0.65
-    prerelease: false
-    notes: "- **Incoming message auto-jump guard** - New DM/channel traffic and serial sync queue updates no longer kick the UI out of active workflows (password entry, settings, contact actions, etc.). Auto-switch / forced Home return is now limited to passive landing screens only.\r\n- **Contact Actions: Reset path (all contacts)** - Added `Reset path` for every contact type (`contacts`, `repeaters`, `rooms`, `sensors`) to clear cached route and force path relearn.\r\n- **Per-contact saved login passwords** - Login passwords are now stored by contact `pubkey` and mode (`guest/admin/room`) instead of one global value per mode.\r\n- **Room auto-login policy update** - Auto-login now uses only saved per-contact password (no automatic `hello` fallback).\r\n- **ROOM history scope clarified** - Opening ROOM shows local cached history plus new traffic; full server-side backfill is not pulled automatically in this build.\r\n- **Contacts load stability fix** - Boot-time contact load now restores all persisted contacts (auto-add type filter no longer drops saved entries), preventing partial/short lists after reboot/sync.\r\n- **Manual contact add/update hardening** - `Add/Update Contact` path now always applies updates/additions from app/UI (not blocked by auto-add type filter), fixing cases where removed contacts could not be added back.\r\n- **Favorites overwrite protection** - Favorite flag is now preserved during external contact updates, reducing accidental eviction when `Overwrite oldest` is enabled.\r\n- **Companion contacts limit (optimization)** - Wio/Cardputer companion builds use `MAX_CONTACTS=200` by design (memory/stability optimization), instead of `350`."
