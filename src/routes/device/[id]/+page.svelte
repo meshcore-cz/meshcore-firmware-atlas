@@ -557,6 +557,7 @@
     rows([
       { label: m.spec_kind(), value: d.kind && titleCase(d.kind) },
       { label: m.spec_lifecycle(), value: d.lifecycle && deviceLifecycleLabel(d.lifecycle) },
+      { label: m.spec_released(), value: d.releasedAt },
       { label: m.spec_revision(), value: d.revision },
       { label: m.spec_family(), value: d.familyId },
       { label: m.spec_firmware_support(), value: `${data.firmwares.length}`, metric: 'firmware-support' },

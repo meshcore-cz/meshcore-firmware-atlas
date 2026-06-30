@@ -588,6 +588,7 @@
   "spec_maintainer": "Poddržavatelj",
   "spec_based_on": "Osnovano na",
   "spec_lifecycle": "Životny cikl",
+  "spec_released": "Izdano",
   "spec_latest_version": "Najnovějša verzija",
   "spec_node_roles": "Rola uzla",
   "spec_github_stars": "Zvězdy na GitHubu",

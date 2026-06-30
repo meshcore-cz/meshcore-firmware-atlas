@@ -434,6 +434,7 @@
   "spec_maintainer": "Супровідник",
   "spec_based_on": "На основі",
   "spec_lifecycle": "Життєвий цикл",
+  "spec_released": "Випущено",
   "spec_latest_version": "Остання версія",
   "spec_node_roles": "Роль вузла",
   "spec_github_stars": "Зірки GitHub",

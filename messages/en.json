@@ -434,6 +434,7 @@
   "spec_maintainer": "Maintainer",
   "spec_based_on": "Based on",
   "spec_lifecycle": "Lifecycle",
+  "spec_released": "Released",
   "spec_latest_version": "Latest version",
   "spec_node_roles": "Node role",
   "spec_github_stars": "GitHub stars",

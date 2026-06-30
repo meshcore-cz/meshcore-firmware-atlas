@@ -434,6 +434,7 @@
   "spec_maintainer": "Responsável",
   "spec_based_on": "Baseado em",
   "spec_lifecycle": "Ciclo de vida",
+  "spec_released": "Lançado",
   "spec_latest_version": "Versão mais recente",
   "spec_node_roles": "Função de nó",
   "spec_github_stars": "Estrelas no GitHub",

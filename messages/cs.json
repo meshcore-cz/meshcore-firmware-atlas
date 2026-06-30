@@ -434,6 +434,7 @@
   "spec_maintainer": "Správce",
   "spec_based_on": "Založeno na",
   "spec_lifecycle": "Životní cyklus",
+  "spec_released": "Vydáno",
   "spec_latest_version": "Nejnovější verze",
   "spec_node_roles": "Role uzlu",
   "spec_github_stars": "Hvězdy na GitHubu",

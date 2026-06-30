@@ -434,6 +434,7 @@
   "spec_maintainer": "Người bảo trì",
   "spec_based_on": "Dựa trên",
   "spec_lifecycle": "Vòng đời",
+  "spec_released": "Phát hành",
   "spec_latest_version": "Phiên bản mới nhất",
   "spec_node_roles": "Vai trò nút",
   "spec_github_stars": "Sao GitHub",
