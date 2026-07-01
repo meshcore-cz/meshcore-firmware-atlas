@@ -1,7 +1,65 @@
 source: github
 repo: ALLFATHER-BV/wadamesh
-updatedAt: '2026-06-30T17:06:34.401Z'
+updatedAt: '2026-07-01T09:53:18.581Z'
 releases:
+  - version: beta_23
+    name: wadamesh beta_23 (test)
+    datetime: '2026-07-01T08:17:34Z'
+    url: https://github.com/ALLFATHER-BV/wadamesh/releases/tag/beta_23
+    prerelease: true
+    notes: >-
+      **wadamesh beta_23 — test build.** Opt in via **Settings → About → "Get test builds (beta)"**,
+      or the flasher's Beta toggle.
+
+
+      ## Fixed
+
+
+      - **Bluetooth companion reliability — messages and repeater admin.** When a phone or Mac was
+      connected over Bluetooth, the device sent it a log entry for *every* LoRa packet it heard,
+      which on a busy mesh swamped the Bluetooth link and starved the frames that actually matter.
+      It no longer sends that packet log over Bluetooth (USB and Wi-Fi companions still get it), so
+      **incoming messages reach the app** and **repeater / room-server admin** (Manage Regions,
+      saving parameters) stops timing out and dropping the connection. (#46, #54.)
+
+
+      Also carried in this test line (from beta_22):
+
+      - **Signal probe** now sends a directed trace "ping" to your nearest repeater, which replies,
+      instead of a zero-hop advert nothing answers. Thanks to **Tarmo**.
+
+      - **Contacts discovered while your phone is connected** now also show on the device's own
+      screen, not just in the phone app. (#73.)
+
+
+      Everything from the stable beta_21 is included.
+  - version: beta_22
+    name: wadamesh beta_22 (test)
+    datetime: '2026-07-01T06:49:26Z'
+    url: https://github.com/ALLFATHER-BV/wadamesh/releases/tag/beta_22
+    prerelease: true
+    notes: >-
+      **wadamesh beta_22 — test build.** Opt in on-device via **Settings → About → "Get test builds
+      (beta)"**, or the flasher's Beta toggle. Two fixes on top of the stable beta_21:
+
+
+      ## Fixed
+
+
+      - **The signal probe reads a real signal again.** beta_21 made the probe a zero-hop advert so
+      it could never be re-flooded across the mesh — but nothing answers a zero-hop advert, so the
+      reading stopped updating. It now sends a **directed trace "ping" to your nearest repeater**:
+      the repeater replies directly (it still never floods the mesh) and the device reads the link
+      signal from that reply. No flooding *and* a live signal. Thanks to **Tarmo** for spotting this
+      and suggesting the fix.
+
+      - **Contacts discovered while your phone is connected now show on the device too.** A node
+      heard while the T-Deck was Bluetooth-connected to the MeshCore phone app appeared on the phone
+      but not on the device's own screen, and the Contacts list didn't refresh. It now updates
+      either way. (#73, reported by @1nerdherder.)
+
+
+      Everything from beta_21, the first stable, is included.
   - version: beta_21
     name: wadamesh beta_21
     datetime: '2026-06-30T15:39:05Z'
@@ -1121,34 +1179,3 @@ releases:
     notes: >-
       Touch firmware **beta_3** for the LilyGo T-Deck and Heltec V4 + TFT. Built by CI from
       `058721fdbc572b4332ad55df12c750331d38aa9a`.
-  - version: beta_2
-    name: wadamesh beta_2
-    datetime: '2026-06-13T13:52:48Z'
-    url: https://github.com/ALLFATHER-BV/wadamesh/releases/tag/beta_2
-    prerelease: false
-    notes: >-
-      Touch firmware for the **LilyGo T-Deck / T-Deck Plus** and **Heltec V4 + TFT**.
-
-
-      ### What's new since beta_1
-
-      - **WADAMESH boot logo** — the old MESHCOMOD wordmark is replaced by the brand logo: an
-      anti-aliased mesh mark with the teal dots, on screen from power-on and carried seamlessly into
-      the colour LVGL splash. Brand teal (`#15B6A6`) is now the default UI accent and is in the
-      Theme-colour picker.
-
-      - **Wi-Fi scan no longer crashes** — "Wi-Fi on but no network connected" could trip the 5 s
-      task watchdog and reboot. The scan is now a single bounded, yielding async pass.
-
-      - **Wi-Fi settings apply live** — saving credentials or scanning no longer prompts for /
-      forces a reboot (Wi-Fi and BLE coexist via NimBLE).
-
-      - **Factory reset actually wipes** — on SD-card storage it crashed mid-erase and left
-      everything intact; it now wipes SD + NVS cleanly and reboots into a fresh device. (Also fixes
-      the file-manager recursive folder delete.)
-
-
-      ### Install
-
-      Flash the `*-merged.bin` for your board at `0x0` with erase (or use the web flasher at
-      flasher.wadamesh.com). The `*.bin` (no `-merged`) is the app-only image for OTA / Launcher.
