@@ -365,6 +365,21 @@ function publishNetworkAreas(root, networks) {
   return count;
 }
 
+function attachNetworkRelations(networks) {
+  const byParent = new Map();
+  for (const network of networks) {
+    for (const parentId of network.part_of ?? []) {
+      const children = byParent.get(parentId) ?? [];
+      children.push(network.id);
+      byParent.set(parentId, children);
+    }
+  }
+  for (const network of networks) {
+    const subnetworks = byParent.get(network.id) ?? [];
+    if (subnetworks.length) network.subnetworks = subnetworks;
+  }
+}
+
 // Normalize any GeoJSON value (FeatureCollection, Feature, or bare geometry)
 // to a flat list of Feature objects.
 function geojsonFeatures(geojson) {
@@ -592,6 +607,7 @@ export async function buildData(root = defaultRoot) {
   const networks = readDir(root, 'networks', 'network.yaml', dirDate).sort((a, b) =>
     a.name.localeCompare(b.name)
   );
+  attachNetworkRelations(networks);
   const networkAreas = publishNetworkAreas(root, networks);
 
   const software = readDir(root, 'software', 'software.yaml', dirDate)

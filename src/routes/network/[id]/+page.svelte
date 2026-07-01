@@ -97,6 +97,8 @@
 
   let maps = $derived(n.maps ?? []);
   let analyzers = $derived(n.analyzers ?? []);
+  let parentNetworks = $derived(data.parentNetworks ?? []);
+  let subnetworks = $derived(data.subnetworks ?? []);
 
   const RESOURCE_LABELS = {
     getting_started: m.nd_getting_started(),
@@ -191,6 +193,48 @@
     </div>
   {/if}
 </header>
+
+{#snippet networkCards(items)}
+  <div class="grid gap-2 [grid-template-columns:repeat(auto-fill,minmax(240px,1fr))]">
+    {#each items as item (item.id)}
+      <a class="flex min-w-0 items-start gap-3 rounded-xl border border-edge bg-elev px-3.5 py-2.5 hover:border-accent" href={href(`/network/${item.id}/`)}>
+        <div class="mt-0.5 flex min-w-0 flex-1 flex-col">
+          <span class="truncate text-[0.92rem] font-medium">{item.name}</span>
+          <span class="mt-1 flex flex-wrap items-center gap-1.5 text-[0.74rem] text-dim">
+            {#each networkFlags(item) as flag (flag.code)}
+              <span
+                class="inline-flex h-4 w-6 shrink-0 overflow-hidden rounded-[3px] ring-1 ring-edge [&>svg]:h-full [&>svg]:w-full [&>svg]:object-cover"
+                title={flag.code}
+                aria-hidden="true"
+              >
+                {@html flag.svg}
+              </span>
+            {/each}
+            {#if item.scope}<span>{networkScopeLabel(item.scope)}</span>{/if}
+            {#if networkBandLabel(item)}<span class="font-mono">{networkBandLabel(item)}</span>{/if}
+          </span>
+        </div>
+      </a>
+    {/each}
+  </div>
+{/snippet}
+
+{#if parentNetworks.length || subnetworks.length}
+  <section class="mb-7 space-y-5">
+    {#if parentNetworks.length}
+      <div>
+        <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Part of</h2>
+        {@render networkCards(parentNetworks)}
+      </div>
+    {/if}
+    {#if subnetworks.length}
+      <div>
+        <h2 class="mb-3 border-b border-edge pb-1.5 text-[1.1rem] font-semibold">Subnetworks ({subnetworks.length})</h2>
+        {@render networkCards(subnetworks)}
+      </div>
+    {/if}
+  </section>
+{/if}
 
 {#if joinPresets.length}
   <section class="mb-7">
