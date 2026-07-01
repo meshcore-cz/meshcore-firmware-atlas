@@ -30,6 +30,14 @@ EU27 = ["austria","belgium","bulgaria","croatia","cyprus","czechia","denmark",
         "italy","latvia","lithuania","luxembourg","malta","netherlands","poland",
         "portugal","romania","slovakia","slovenia","spain","sweden"]
 
+# Per-country mainland windows — drop overseas territories before EU union.
+EU_MAINLAND_CLIP = {
+    "denmark": box(-8.5, 54.5, 15.5, 58.2),   # mainland DK; drops Faroe + Greenland
+    "portugal": box(-10.0, 36.8, -6.0, 42.2),  # continental PT; drops Azores
+    "spain": box(-9.5, 36.0, 4.5, 43.8),      # Iberian + Balearics; drops Canaries
+    "france": box(-5.5, 41.3, 9.6, 51.2),     # metropolitan France
+}
+
 
 def fetch(path):
     local = os.path.join(CACHE, path.replace("/", "_"))
@@ -63,6 +71,27 @@ def round_coords(obj):
     if isinstance(obj, list):
         return [round_coords(x) for x in obj]
     return obj
+
+
+def drop_remote_eu_parts(geom):
+    """Drop remaining Atlantic / Arctic island fragments after mainland clipping."""
+    if geom.geom_type != "MultiPolygon":
+        return geom
+    kept = []
+    for p in geom.geoms:
+        lon, lat = p.centroid.x, p.centroid.y
+        if 61.0 <= lat <= 63.0 and -8.5 <= lon <= -5.5:  # Faroe Islands
+            continue
+        if lat > 70.5 and lon < 5:  # Jan Mayen / high Arctic islets
+            continue
+        if 36.5 <= lat <= 40.0 and -31.0 <= lon <= -24.5:  # Azores
+            continue
+        if 27.0 <= lat <= 29.5 and -18.5 <= lon <= -13.0:  # Canaries
+            continue
+        kept.append(p)
+    if not kept:
+        return geom
+    return kept[0] if len(kept) == 1 else MultiPolygon(kept)
 
 
 def drop_islets(geom, min_area):
@@ -131,9 +160,17 @@ for nid, name in [("vietnam-narrow", "Vietnam (Narrow)"),
     write_area(nid, name, vn,
                f"{SRC_GEO} VNM ADM0, simplified {TOL}deg / {DECIMALS}dp", min_area=0.001)
 
-eu = unary_union([clean(country(c)) for c in EU27])
-write_area("eu-433mhz-long-range", "EU 433MHz (Long Range)", eu,
-           f"{SRC_GEO} EU-27 members dissolved (UK excluded), European window, simplified 0.05deg / {DECIMALS}dp",
+def eu_mainland():
+    geoms = []
+    for c in EU27:
+        g = clean(country(c))
+        if c in EU_MAINLAND_CLIP:
+            g = g.intersection(EU_MAINLAND_CLIP[c])
+        geoms.append(g)
+    return drop_remote_eu_parts(unary_union(geoms))
+
+write_area("eu-433mhz-long-range", "EU 433MHz (Long Range)", eu_mainland(),
+           f"{SRC_GEO} EU-27 members dissolved (UK excluded), European mainland window with overseas territories omitted, simplified 0.05deg / {DECIMALS}dp",
            tol=0.05, window=EU_WIN, min_area=0.002)
 
 # Identical coverage to shapes already in the repo — reuse them.
